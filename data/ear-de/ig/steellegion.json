@@ -13,8 +13,8 @@
     { "formations": ["*"], "value": "2+" }
   ],
   "units": {
-    "supreme-commander": { "name": "Oberbefehlshaber der Stahllegion", "from": "IG.json", "type": "CH" },
-    "commander": { "name": "Befehlshaber der Stahllegion", "from": "IG.json", "type": "CH" },
+    "supreme-commander": { "name": "Oberbefehlshaber der Stahllegion", "from": "IG.json",     "type": "INF" },
+        "commander": { "name": "Befehlshaber der Stahllegion", "from": "IG.json", "type": "INF" },
     "commissar": { "name": "Kommissar", "from": "IG.json", "type": "CH" },
     "infantry": { "name": "Infanterie", "from": "IG.json", "type": "INF" },
     "ogryn": { "name": "Ogryns", "from": "IG.json", "type": "INF" },
@@ -273,6 +273,7 @@
       "vehicle": "chimera", "capacity": 2, "pts": 25,
       "appliesTo": ["tag:company"],
       "carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["mounted", "jump-pack"] },
+      "hint": "Mechanisierte Verbände haben ihre Chimären bereits im Grundpreis; zusätzliche Chimären für Aufwertungen sind erlaubt, aber meist nicht sinnvoll.",
       "rule": "Chimären werden nach Bedarf hinzugefügt (INF / 2, aufgerundet). Enthält der Verband Chimären, müssen alle transportierbaren INF transportiert werden."
     }
   ],
