@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
-  createState, addFormation, setUpgrade, setChoice, summarize, validate,
+  createState, addFormation, setUpgrade, setChoice, summarize, validate, moveFormation, sortFormations,
 } from "../engine/engine.js";
 
 const data = JSON.parse(readFileSync(new URL("../data/ear-de/ig/steellegion.json", import.meta.url), "utf8"));
@@ -149,4 +149,20 @@ test("transport: Rough Riders are never carried", () => {
   // an Ogryn upgrade on the company still only counts the company's own INF
   s = setUpgrade(s, c, "ogryns", "1", 1);
   assert.deepEqual(codes(s), []);
+});
+
+test("moveFormation swaps neighbours and stops at the ends", () => {
+  const [s, [a, b, c]] = army("inf-company", "sentinels", "flak-battery");
+  const ids = (st) => st.formations.map((e) => e.uid);
+  assert.deepEqual(ids(moveFormation(s, b, -1)), [b, a, c]);
+  assert.deepEqual(ids(moveFormation(s, b, 1)), [a, c, b]);
+  assert.deepEqual(ids(moveFormation(s, a, -1)), [a, b, c]);
+  assert.deepEqual(ids(moveFormation(s, c, 1)), [a, b, c]);
+});
+
+test("sortFormations: by section keeps list order inside a section; by points is descending", () => {
+  const [s, [sen, reaver, co1, flak, co2]] = army("sentinels", "reaver", "inf-company", "flak-battery", "rhq");
+  const ids = (st) => st.formations.map((e) => e.uid);
+  assert.deepEqual(ids(sortFormations(data, s, "section")), [co1, co2, sen, flak, reaver]);
+  assert.deepEqual(ids(sortFormations(data, s, "points")), [reaver, co2, co1, flak, sen]);
 });

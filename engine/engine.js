@@ -52,6 +52,26 @@ export const removeFormation = (state, uid) => ({
   formations: state.formations.filter((e) => e.uid !== uid),
 });
 
+// Moves one entry up (-1) or down (+1); does nothing at the ends.
+export function moveFormation(state, uid, delta) {
+  const from = state.formations.findIndex((e) => e.uid === uid);
+  const to = from + delta;
+  if (from < 0 || to < 0 || to >= state.formations.length) return state;
+  const formations = [...state.formations];
+  [formations[from], formations[to]] = [formations[to], formations[from]];
+  return { ...state, formations };
+}
+
+// mode "section": army-list section order; "points": highest first. Stable, so ties keep their order.
+export function sortFormations(data, state, mode) {
+  const sectionOf = {};
+  data.sections.forEach((s, i) => s.formations.forEach((id) => (sectionOf[id] = i)));
+  const ptsOf = Object.fromEntries(summarize(data, state).entries.map((e) => [e.uid, e.pts]));
+  const key = mode === "points" ? (e) => -ptsOf[e.uid] : (e) => sectionOf[e.formation] ?? 99;
+  const formations = state.formations.map((e, i) => ({ e, i })).sort((a, b) => key(a.e) - key(b.e) || a.i - b.i).map((x) => x.e);
+  return { ...state, formations };
+}
+
 // Distribution of a oneOf slot, e.g. { baneblade: 2, shadowsword: 1 }
 export const setChoice = (state, uid, slot, distribution) =>
   mapEntry(state, uid, (e) => ({ ...e, choices: { ...e.choices, [slot]: distribution } }));

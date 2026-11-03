@@ -1,5 +1,5 @@
 import {
-  createState, addFormation, removeFormation, setChoice, setUpgrade, removeUpgrade,
+  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade,
   summarize, validate, withProfiles, rosterProfiles, matches,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
@@ -18,11 +18,23 @@ const upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
 const $ = (s) => document.querySelector(s);
 const app = $("#app");
 const open = new Set();
+let view = localStorage.getItem("eab:view") === "overview" ? "overview" : "build";
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const text = (d) => (Array.isArray(d) ? d.join(" ") : d || "");
 const unitName = (id) => (data.units[id] ? data.units[id].name : id);
 const names = { upgrade: (id) => (upgradeById[id] ? upgradeById[id].name : id), unit: unitName };
+
+// Theme: no stored choice means "follow the system"; the button then sets an explicit choice.
+function currentTheme() {
+  return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+}
+function applyTheme(t) {
+  document.documentElement.dataset.theme = t;
+  localStorage.setItem("eab:theme", t);
+  document.querySelector('meta[name="theme-color"]').content = t === "light" ? "#f3f4f6" : "#0b0f17";
+}
+applyTheme(currentTheme());
 
 // Persistence: drop entries that no longer exist in the data.
 function load() {
@@ -109,30 +121,22 @@ function upgradeControls(entry, def) {
   }).join("");
 }
 
-function render() {
-  const { total, entries } = summarize(data, state);
-  const violations = validate(data, state);
-  $("#total").textContent = total;
-  $("#army-name").textContent = base.name;
-  $("#army-sub").textContent = `${base.faction} · v${base.version} · Strategiewert ${base.strategy}`;
+const problemsFor = (violations, uid) =>
+  violations.filter((v) => v.refs && (v.refs.uid === uid || (v.refs.uids && v.refs.uids.includes(uid))));
+const problemTexts = (probs) => [...new Set(probs.map((v) => messageFor(v, names)))];
 
-  if (!state.formations.length) {
-    app.innerHTML = `<p class="empty">Noch keine Verbände.<br>Tippe auf „+ Verband“, um zu beginnen.</p>`;
-    return;
-  }
-  const problemsFor = (uid) => violations.filter((v) => (v.refs && v.refs.uid === uid) || (v.refs && v.refs.uids && v.refs.uids.includes(uid)));
-
-  app.innerHTML = state.formations.map((entry, i) => {
+function renderBuild(entries, violations) {
+  return state.formations.map((entry, i) => {
     const def = formationById[entry.formation];
     const calc = entries[i];
-    const probs = problemsFor(entry.uid);
+    const probs = problemsFor(violations, entry.uid);
     const key = `f${entry.uid}`;
     return `<details class="entry${probs.length ? " has-problem" : ""}" data-key="${key}"${open.has(key) ? " open" : ""}>
       <summary><div class="entry-head">
         <span class="name">${esc(def.name)}</span><span class="pts">${calc.pts} Pkt.</span>
         <button class="icon" type="button" aria-label="Verband entfernen" data-act="remove" data-uid="${entry.uid}">×</button>
       </div>
-      ${probs.length ? `<ul class="problems">${[...new Set(probs.map((v) => messageFor(v, names)))].map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
+      ${probs.length ? `<ul class="problems">${problemTexts(probs).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
       </summary>
       <div class="entry-body">
         ${choiceControls(entry, def)}
@@ -143,44 +147,145 @@ function render() {
   }).join("");
 }
 
+const plus = (v) => (typeof v === "number" ? `${v}+` : v);
+function compactStats(p) {
+  if (!p) return "";
+  const parts = [p.type, p.speed != null ? `${p.speed} cm` : null, p.armour != null ? `RS ${plus(p.armour)}` : null, p.cc != null ? `NK ${plus(p.cc)}` : null, p.ff != null ? `FF ${plus(p.ff)}` : null];
+  return parts.filter(Boolean).join(" · ");
+}
+
+// Game-time view: final units per formation and the chosen upgrades, no controls.
+function renderOverview(entries, violations, total) {
+  const cards = state.formations.map((entry, i) => {
+    const def = formationById[entry.formation];
+    const calc = entries[i];
+    const probs = problemTexts(problemsFor(violations, entry.uid));
+    const ups = entry.upgrades
+      .map((sel) => {
+        const u = upgradeById[sel.upgrade];
+        const v = u && u.variants.find((x) => x.id === sel.variant);
+        return v ? `${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
+      })
+      .filter(Boolean);
+    return `<section class="ov${probs.length ? " has-problem" : ""}">
+      <div class="ov-head"><span class="name">${esc(def.name)}</span><span class="pts">${calc.pts} Pkt.</span></div>
+      <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span></li>`).join("")}</ul>
+      ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
+      ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
+    </section>`;
+  }).join("");
+  return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
+}
+
+function render() {
+  const { total, entries } = summarize(data, state);
+  const violations = validate(data, state);
+  $("#total").textContent = total;
+  $("#army-name").textContent = base.name;
+  $("#army-sub").textContent = `${base.faction} · v${base.version}`;
+  document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.view === view));
+  $("#sort").disabled = state.formations.length < 2;
+
+  if (!state.formations.length) {
+    app.innerHTML = `<p class="empty">Noch keine Verbände.<br>Tippe auf „+ Verband“, um zu beginnen.</p>`;
+    return;
+  }
+  app.innerHTML = view === "overview" ? renderOverview(entries, violations, total) : renderBuild(entries, violations);
+}
+
 function armyText() {
   const { total, entries } = summarize(data, state);
   const lines = [`${base.name} (${base.faction}) – ${total} Pkt.`, ""];
-  entries.forEach((e) => {
+  entries.forEach((e, i) => {
     lines.push(`${e.name} – ${e.pts} Pkt.`);
     lines.push("  " + rosterProfiles(data, e.roster).map((r) => `${r.count}× ${r.name}`).join(", "));
+    state.formations[i].upgrades.forEach((sel) => {
+      const u = upgradeById[sel.upgrade];
+      const v = u && u.variants.find((x) => x.id === sel.variant);
+      if (v) lines.push(`  + ${v.label}${sel.chimeras ? `, ${sel.chimeras} Chimäre(n)` : ""}`);
+    });
   });
   return lines.join("\n");
 }
 
+const dlg = $("#picker");
+const sheet = (title, body) => {
+  dlg.innerHTML = `<div class="picker-head"><h2>${esc(title)}</h2><button class="icon" type="button" data-act="close" aria-label="Schließen">×</button></div>${body}`;
+  if (!dlg.open) dlg.showModal();
+};
+
 function openPicker() {
-  const dlg = $("#picker");
-  dlg.innerHTML = `<div class="picker-head"><h2>Verband hinzufügen</h2><button class="icon" type="button" data-act="close" aria-label="Schließen">×</button></div>` +
-    base.sections.map((s) => `<section class="picker-section"><h3>${esc(s.name)}</h3>${s.description ? `<p>${esc(s.description)}</p>` : ""}
-      ${s.formations.map((id) => {
-        const f = formationById[id];
-        return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.pts} Pkt.</span></button>`;
-      }).join("")}</section>`).join("");
-  dlg.showModal();
+  sheet("Verband hinzufügen", base.sections.map((s) => `<section class="picker-section"><h3>${esc(s.name)}</h3>${s.description ? `<p>${esc(s.description)}</p>` : ""}
+    ${s.formations.map((id) => {
+      const f = formationById[id];
+      return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.pts} Pkt.</span></button>`;
+    }).join("")}</section>`).join(""));
+}
+
+function openSort() {
+  const last = state.formations.length - 1;
+  sheet("Verbände sortieren", `<div class="sheet-pad">
+    <button type="button" data-act="sort-auto" data-mode="section">Nach Abschnitt der Armeeliste</button>
+    <button type="button" data-act="sort-auto" data-mode="points">Nach Punkten (höchste zuerst)</button>
+    <div>${state.formations.map((e, i) => `<div class="order-row">
+      <span class="name">${esc(formationById[e.formation].name)}</span>
+      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="-1" aria-label="Nach oben"${i === 0 ? " disabled" : ""}>▲</button>
+      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="1" aria-label="Nach unten"${i === last ? " disabled" : ""}>▼</button>
+    </div>`).join("")}</div></div>`);
+}
+
+function openMore() {
+  sheet("Menü", `<div class="sheet-pad">
+    <button type="button" data-act="copy">Liste als Text kopieren</button>
+    <button type="button" data-act="theme-toggle">Design wechseln (${currentTheme() === "dark" ? "hell" : "dunkel"})</button>
+    <button type="button" class="danger" data-act="reset">Alle Verbände entfernen</button>
+  </div>`);
 }
 
 document.addEventListener("click", (e) => {
-  const el = e.target.closest("[data-act], #add, #copy, #reset");
+  const el = e.target.closest("[data-act], [data-view], #add, #sort, #more, #theme");
   if (!el) return;
+  if (el.dataset.view) {
+    view = el.dataset.view;
+    localStorage.setItem("eab:view", view);
+    return render();
+  }
   const act = el.dataset.act || el.id;
-  if (act === "remove") {
-    e.preventDefault();
-    update(removeFormation(state, Number(el.dataset.uid)));
-  } else if (act === "add" && el.dataset.formation) {
-    update(addFormation(state, el.dataset.formation));
-    open.add(`f${state.nextUid - 1}`);
-    $("#picker").close();
-    render();
-  } else if (act === "add") openPicker();
-  else if (act === "close") $("#picker").close();
-  else if (act === "copy") {
-    navigator.clipboard.writeText(armyText()).then(() => toast("Liste kopiert"), () => toast("Kopieren nicht möglich"));
-  } else if (act === "reset" && state.formations.length && confirm("Alle Verbände entfernen?")) update(createState());
+  switch (act) {
+    case "remove":
+      e.preventDefault();
+      return update(removeFormation(state, Number(el.dataset.uid)));
+    case "add":
+      if (!el.dataset.formation) return openPicker();
+      view = "build";
+      localStorage.setItem("eab:view", view);
+      update(addFormation(state, el.dataset.formation));
+      open.add(`f${state.nextUid - 1}`);
+      dlg.close();
+      return render();
+    case "sort":
+      return openSort();
+    case "sort-auto":
+      update(sortFormations(data, state, el.dataset.mode));
+      return openSort();
+    case "move":
+      update(moveFormation(state, Number(el.dataset.uid), Number(el.dataset.delta)));
+      return openSort();
+    case "more":
+      return openMore();
+    case "theme":
+    case "theme-toggle":
+      applyTheme(currentTheme() === "dark" ? "light" : "dark");
+      return act === "theme-toggle" ? openMore() : undefined;
+    case "close":
+      return dlg.close();
+    case "copy":
+      dlg.close();
+      return navigator.clipboard.writeText(armyText()).then(() => toast("Liste kopiert"), () => toast("Kopieren nicht möglich"));
+    case "reset":
+      dlg.close();
+      if (state.formations.length && confirm("Alle Verbände entfernen?")) update(createState());
+  }
 });
 
 document.addEventListener("change", (e) => {
