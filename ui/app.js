@@ -13,9 +13,9 @@ let base, data, formationById, upgradeById;
 async function loadArmy(id) {
   const [b, p] = await Promise.all([
     fetch(`data/${id}.json`).then((r) => r.json()),
-    fetch(`data/${id}.profiles.json`).then((r) => r.json()),
+    fetch(`data/${id}.profiles.json`).then((r) => (r.ok ? r.json() : { units: {}, specialRules: [] })).catch(() => ({ units: {}, specialRules: [] })),
   ]);
-  return { base: b, data: withProfiles(b, p) };
+  return { base: b, data: withProfiles(b, p || { units: {}, specialRules: [] }) };
 }
 async function useArmy(id) {
   ({ base, data } = await loadArmy(id));
