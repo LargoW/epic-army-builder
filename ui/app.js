@@ -365,6 +365,22 @@ function currentExport() {
 }
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9äöüß]+/g, "-").replace(/^-|-$/g, "") || "liste";
 
+function openQr() {
+  const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
+  let svg;
+  try {
+    const q = qrcode(0, "L");
+    q.addData(url);
+    q.make();
+    svg = q.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
+  } catch {
+    return sheet("QR-Code", `<div class="sheet-pad"><p class="problems">Diese Liste ist für einen QR-Code zu groß. Bitte den Link oder die Datei verwenden.</p></div>`);
+  }
+  const { total } = summarize(data, state);
+  sheet("QR-Code", `<div class="sheet-pad"><div class="qr">${svg}</div>
+    <p class="qr-cap"><b>${esc(cur().name)}</b> · ${total} Pkt.<br>Mit der Kamera des anderen Telefons scannen.</p></div>`);
+}
+
 function shareLink() {
   const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
   const { total } = summarize(data, state);
@@ -415,6 +431,7 @@ async function previewImport(text) {
 function openMore() {
   sheet("Menü", `<div class="sheet-pad">
     <button type="button" data-act="share">Liste teilen (Link)</button>
+    <button type="button" data-act="qr">QR-Code anzeigen</button>
     <button type="button" data-act="export-file">Als Datei exportieren</button>
     ${exchangeButtons()}
     <button type="button" data-act="copy">Liste als Text kopieren</button>
@@ -468,6 +485,8 @@ document.addEventListener("click", async (e) => {
     case "share":
       dlg.close();
       return shareLink();
+    case "qr":
+      return openQr();
     case "export-file":
       dlg.close();
       return exportFile();
