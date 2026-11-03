@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/bloodangels-epicuk",
+  "id": "euk/sm/sm_bloodangels-epicuk_canonical",
   "name": "Blood Angels",
   "faction": "Space Marines",
   "version": "Epic-UK v070414",

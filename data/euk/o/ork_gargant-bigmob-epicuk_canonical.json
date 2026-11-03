@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ork/gargant-bigmob-epicuk",
+  "id": "euk/o/ork_gargant-bigmob-epicuk_canonical",
   "name": "Gargant Bigmob",
   "faction": "Orks",
   "version": "EpicUK v130125",

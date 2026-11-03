@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/amtl/skitarii-epicuk",
+  "id": "euk/amtl/amtl_skitarii-epicuk_canonical",
   "name": "EpicUK Skitarii",
   "faction": "Adeptus Mechanicus",
   "version": "170924",

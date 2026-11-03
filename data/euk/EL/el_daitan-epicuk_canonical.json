@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/daitan-epicuk",
+  "id": "euk/EL/el_daitan-epicuk_canonical",
   "name": "Dai-Tan Craftworld",
   "faction": "Eldar",
   "version": "EpicUK",

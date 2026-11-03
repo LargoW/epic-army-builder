@@ -1,6 +1,628 @@
 {
-  "army": "euk/chaos/ts",
-  "specialRules": [],
-  "units": {}
+   "army": "euk/chaos/ts",
+  "source":{
+    "file": "ThousandSonsReference.pdf",
+    "version": "1.0.0",
+    "commit": null
+  },
+  "units": {
+    "ts-warlord": {
+      "name": "Thousand Sons Warlord",
+      "type": "CH",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Warp Bolt",
+          "range": "(15cm)",
+          "firepower": "Small Arms, MW, EA (+1)"
+        }
+      ],
+      "notes": "Fearless, Invulnerable Save, Supreme Commander"
+    },
+    "csm-lord": {
+      "name": "Chaos Space Marine Lord",
+      "type": "CH",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Warp Bolt",
+          "range": "(15cm)",
+          "firepower": "Small Arms, MW, EA (+1)"
+        }
+      ],
+      "notes": "Invulnerable Save, Commander, Leader"
+    },
+    "csm-champion": {
+      "name": "Chaos Space Marine Champion",
+      "type": "CH",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Daemonic Bolt",
+          "range": "(15cm)",
+          "firepower": "Small Arms, EA (+1), First Strike"
+        },
+        {
+          "name": "Warp Blade",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, MW, EA (+1)"
+        }
+      ],
+      "notes": "Augment Summoning (2D3), Invulnerable Save"
+    },
+    "csm-icon-bearer": {
+      "name": "Chaos Space Marine Icon Bearer",
+      "type": "CH",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [],
+      "notes": "Sacrifice to gain Augment Summoning (6)"
+    },
+    "ts-daemon-prince": {
+      "name": "Thousand Sons Daemon Prince",
+      "type": "WE",
+      "speed": "15cm (30cm)",
+      "armour": "3+ (4+)",
+      "cc": "3+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Bolt of Change",
+          "range": "30cm",
+          "firepower": "MW5+"
+        },
+        {
+          "name": "Flames of Tzeentch",
+          "range": "(15cm)",
+          "firepower": "Small Arms, MW, EA (+1) and Small Arms, EA (+1)"
+        }
+      ],
+      "notes": "Daemonic Focus, Invulnerable Save, Leader, Commander, Fearless, Reinforced Armour, Teleport. May have wings for speed 30cm, Armour 4+"
+    },
+    "ts-daemon-prince-supreme": {
+      "name": "Thousand Sons Daemon Prince (Supreme Commander)",
+      "type": "WE",
+      "speed": "15cm (30cm)",
+      "armour": "3+ (4+)",
+      "cc": "3+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Bolt of Change",
+          "range": "30cm",
+          "firepower": "MW5+"
+        },
+        {
+          "name": "Flames of Tzeentch",
+          "range": "(15cm)",
+          "firepower": "Small Arms, MW, EA (+1) and Small Arms, EA (+1)"
+        }
+      ],
+      "notes": "Supreme Commander, Daemonic Focus, Invulnerable Save, Leader, Fearless, Reinforced Armour, Teleport. May have wings for speed 30cm, Armour 4+"
+    },
+    "ts-terminators": {
+      "name": "Thousand Sons Terminators",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Combi-Bolters",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        },
+        {
+          "name": "Power Weapons",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, MW, EA (+1)"
+        },
+        {
+          "name": "Flames of Tzeentch",
+          "range": "(15cm)",
+          "firepower": "Small Arms, EA (+1)"
+        }
+      ],
+      "notes": "Fearless, Reinforced Armour, Thick Rear Armour"
+    },
+    "cabal-of-sorcerers": {
+      "name": "Cabal of Sorcerers",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Sorcerous Powers",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        }
+      ],
+      "notes": "Commander, Daemonic Pact, Invulnerable Save, Leader"
+    },
+    "thousand-sons": {
+      "name": "Thousand Sons",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Bolters",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        }
+      ],
+      "notes": "Fearless, Reinforced Armour"
+    },
+    "ts-disc-riders": {
+      "name": "Thousand Sons Disc Riders",
+      "type": "INF",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Sorcerous Powers",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        },
+        {
+          "name": "Claws and Fangs",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns"
+        }
+      ],
+      "notes": "Jump Packs"
+    },
+    "tzaangor": {
+      "name": "Tzaangor",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "6+",
+      "cc": "4+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Assorted weapons",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns"
+        }
+      ],
+      "notes": "Invulnerable Save"
+    },
+    "chaos-spawn": {
+      "name": "Chaos Spawn",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "3+",
+      "cc": "3+",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Horrific Mutations",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns EA (+D3)"
+        }
+      ],
+      "notes": "Fearless, Invulnerable Save"
+    },
+    "chaos-dreadnought": {
+      "name": "Chaos Dreadnought",
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Power Fist",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, MW, EA (+1)"
+        },
+        {
+          "name": "Twin Autocannons",
+          "range": "45cm",
+          "firepower": "AP4+/AT5+"
+        }
+      ],
+      "notes": "Fearless, Walker"
+    },
+    "csm-rhino": {
+      "name": "Chaos Space Marine Rhino",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Twin Bolters",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        }
+      ],
+      "notes": "Transport (up to two: Cabal of Sorcerers, Thousand Sons)"
+    },
+    "chaos-predator": {
+      "name": "Chaos Space Marine Predator",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "2 x Heavy Bolter",
+          "range": "30cm",
+          "firepower": "AP5+"
+        },
+        {
+          "name": "Twin Lascannons",
+          "range": "45cm",
+          "firepower": "AT4+"
+        }
+      ],
+      "notes": ""
+    },
+    "csm-land-raider": {
+      "name": "Chaos Space Marine Land Raider",
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Twin Heavy Bolters",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "name": "2 x Twin Lascannons",
+          "range": "45cm",
+          "firepower": "AT4+"
+        }
+      ],
+      "notes": "Reinforced Armour, Thick Rear Armour, Transport (one Thousand Sons Terminator or up to two: Cabal of Sorcerers, Thousand Sons)"
+    },
+    "csm-vindicator": {
+      "name": "Chaos Space Marine Vindicator",
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Demolisher Cannon",
+          "range": "30cm",
+          "firepower": "AP3+/AT4+, Ignore Cover"
+        }
+      ],
+      "notes": "Walker"
+    },
+    "ts-defiler": {
+      "name": "Thousand Sons Defiler",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Eye of Magnus",
+          "range": "45cm",
+          "firepower": "2x AP5+/AT5+/AA6+"
+        },
+        {
+          "name": "Battlecannon",
+          "range": "75cm",
+          "firepower": "AP4+/AT4+"
+        },
+        {
+          "name": "Battle Claws",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, MW, EA (+1)"
+        },
+        {
+          "name": "Twin Heavy Flamers",
+          "range": "15cm",
+          "firepower": "AP3+"
+        },
+        {
+          "name": "Twin Heavy Flamers",
+          "range": "(15cm)",
+          "firepower": "Small Arms, Ignore Cover"
+        }
+      ],
+      "notes": "Fearless, Infiltrator, Invulnerable Save, Walker"
+    },
+    "chaos-silver-tower": {
+      "name": "Chaos Silver Tower",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Beam of Power",
+          "range": "60cm",
+          "firepower": "MW5+"
+        },
+        {
+          "name": "Arcane Cannons",
+          "range": "45cm",
+          "firepower": "3 x AP4+/AT4+"
+        }
+      ],
+      "notes": "Fearless, Invulnerable Save, Skimmer"
+    },
+    "chaos-doomwing": {
+      "name": "Chaos Doomwing",
+      "type": "Air",
+      "speed": "Fighter",
+      "armour": "6+",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Flame Cannon",
+          "range": "30cm",
+          "firepower": "AP4+/AT5+/AA5+, Ignore Cover, FF Arc"
+        }
+      ],
+      "notes": "Invulnerable Save"
+    },
+    "chaos-firelord": {
+      "name": "Chaos Firelord",
+      "type": "Air",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Incendiary Bombs",
+          "range": "15cm",
+          "firepower": "2BP, Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Flame Cannon",
+          "range": "30cm",
+          "firepower": "AP4+/AT5+/AA5+, Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Twin Lascannons",
+          "range": "45cm",
+          "firepower": "AT4+/AA4+, FF Arc"
+        }
+      ],
+      "notes": "Invulnerable Save"
+    },
+    "warphound-titan": {
+      "name": "Chaos Warphound Titan",
+      "type": "WE",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Daemon Maw",
+          "range": "(15cm)",
+          "firepower": "Small Arms, EA (+2), Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Gaze of Tzeentch",
+          "range": "30cm",
+          "firepower": "3 x MW4+, F Arc"
+        },
+        {
+          "name": "Arcane Cannons",
+          "range": "45cm",
+          "firepower": "3 x AP4+/AT4+, F Arc"
+        }
+      ],
+      "notes": "Fearless, Reinforced Armour, Walker, May step over units and terrain lower than knees and 2cm across. Dam Cap: 3, Void Shields: 2. Crit: +1 dam, staggers D6cm in random direction, models contacted hit on 6+."
+    },
+    "mutator-titan": {
+      "name": "Chaos Mutator Titan",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Daemon Maw",
+          "range": "(15cm)",
+          "firepower": "Small Arms, EA (+2), Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Gaze of Tzeentch",
+          "range": "30cm",
+          "firepower": "3 x MW4+, FF Arc"
+        },
+        {
+          "name": "Warp Storm",
+          "range": "45cm",
+          "firepower": "3BP, Ignore Cover, F Arc"
+        },
+        {
+          "name": "Arcane Cannons",
+          "range": "45cm",
+          "firepower": "3 x AP4+/AT4+, F Arc"
+        },
+        {
+          "name": "Tail",
+          "range": "75cm",
+          "firepower": "AP4+/AT4+"
+        },
+        {
+          "name": "Tail",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, EA (+1)"
+        }
+      ],
+      "notes": "Fearless, Reinforced Armour, Walker, May step over units and terrain lower than knees and 2cm across. Dam Cap: 6, Void Shields: 4. Crit: Roll a D6 every turn: on 1 destroyed, units within 5cm hit on 5+, on 2-3 +1 dam, on 4-6 repaired no further trouble."
+    },
+    "warplord-titan": {
+      "name": "Chaos Warplord Titan",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Daemon Maw",
+          "range": "(15cm)",
+          "firepower": "Small Arms, EA (+2), Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Warp Storm",
+          "range": "45cm",
+          "firepower": "3BP, Ignore Cover, FF Arc"
+        },
+        {
+          "name": "Beam of Change",
+          "range": "60cm",
+          "firepower": "3 x MW3+, TK (1), FF Arc"
+        },
+        {
+          "name": "2 x Tzeentch Cannon",
+          "range": "60cm",
+          "firepower": "3 x AP3+/AT3+, F Arc"
+        },
+        {
+          "name": "Tail",
+          "range": "75cm",
+          "firepower": "AP4+/AT4+"
+        },
+        {
+          "name": "Tail",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns, EA (+1)"
+        }
+      ],
+      "notes": "Fearless, Reinforced Armour, Thick Rear Armour, Walker, May step over units and terrain lower than knees and 2cm across. Dam Cap: 8, Void Shields: 6. Crit: Roll a D6 every turn: on 1 destroyed, units within 5cm hit on 4+, on 2-3 +1 dam, on 4-6 repaired no further trouble."
+    },
+    "devastation-cruiser": {
+      "name": "Chaos Devastation Class Cruiser",
+      "type": "Space",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Pin-point Attack",
+          "range": "-",
+          "firepower": "MW2+, TK (D3)"
+        },
+        {
+          "name": "Orbital Bombardment",
+          "range": "-",
+          "firepower": "3BP, MW"
+        }
+      ],
+      "notes": "May carry up to twenty units to deploy in Dreadclaws."
+    },
+    "despoiler-battleship": {
+      "name": "Chaos Despoiler Class Battleship",
+      "type": "Space",
+      "speed": "-",
+      "armour": "-",
+      "cc": "-",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "3 x Pin-point Attack",
+          "range": "-",
+          "firepower": "MW2+, TK (D3)"
+        },
+        {
+          "name": "Orbital Bombardment",
+          "range": "-",
+          "firepower": "3BP, MW"
+        }
+      ],
+      "notes": "May carry up to forty units to deploy in Dreadclaws. Slow and Steady"
+    },
+    "lord-of-change": {
+      "name": "Lord of Change - Greater Daemon of Tzeentch",
+      "type": "WE",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Bedlam Staff",
+          "range": "(base contact)",
+          "firepower": "Assault Wpn, MW, EA (+1)"
+        },
+        {
+          "name": "Withering Gaze",
+          "range": "45cm",
+          "firepower": "2 x MW3+"
+        },
+        {
+          "name": "Withering Gaze",
+          "range": "(15cm)",
+          "firepower": "Small Arms, MW, EA (+1)"
+        }
+      ],
+      "notes": "Daemonic Focus, Fearless, Inspiring, Invulnerable Save, Jump Pack, Reinforced Armour, Walker, Summoning Cost (8), Dam Cap: 3, Crit: Destroyed, daemons within 5cm destroyed on 6+."
+    },
+    "flamers": {
+      "name": "Flamers - Lesser Daemons of Tzeentch",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "3+",
+      "weapons": [
+        {
+          "name": "Flames of Tzeentch",
+          "range": "(15cm)",
+          "firepower": "Small Arms"
+        }
+      ],
+      "notes": "Invulnerable Save, Summoning Cost (1)"
+    },
+    "screamers": {
+      "name": "Screamers - Lesser Daemons of Tzeentch",
+      "type": "INF",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "-",
+      "weapons": [
+        {
+          "name": "Claws",
+          "range": "(base contact)",
+          "firepower": "Assault Wpns"
+        }
+      ],
+      "notes": "Invulnerable Save, Jump Packs, Summoning Cost (1)"
+    }
+  }
 }
-

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/ulthwe-epicuk",
+  "id": "euk/EL/el_ulthwe-epicuk_canonical",
   "name": "Ulthw&eacute; Craftworld",
   "faction": "Eldar",
   "version": "Epic-UK v121013",

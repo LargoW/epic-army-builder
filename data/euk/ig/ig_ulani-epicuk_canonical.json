@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ig/ulani-epicuk",
+  "id": "euk/ig/ig_ulani-epicuk_canonical",
   "name": "Ulani Tank Regiment",
   "faction": "Astra Militarum",
   "version": "Epic UK v090625",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/dark-epicuk",
+  "id": "euk/sm/sm_dark-epicuk_canonical",
   "name": "Dark Angels",
   "faction": "Space Marines",
   "version": "Epic-UK 120618",

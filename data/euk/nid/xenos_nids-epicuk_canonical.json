@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/xenos/nids-epicuk",
+  "id": "euk/nid/xenos_nids-epicuk_canonical",
   "name": "Tyranids",
   "faction": "Xenos",
   "version": "310325",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/ymeloc-epicuk",
+  "id": "euk/EL/el_ymeloc-epicuk_canonical",
   "name": "Yme-Loc Craftworld",
   "faction": "Eldar",
   "version": "Epic_UK 140516",

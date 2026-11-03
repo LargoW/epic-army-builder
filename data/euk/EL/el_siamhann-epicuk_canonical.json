@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/siamhann-epicuk",
+  "id": "euk/EL/el_siamhann-epicuk_canonical",
   "name": "Saim-Hann Craftworld",
   "faction": "Eldar",
   "version": "Epic-UK v121013",

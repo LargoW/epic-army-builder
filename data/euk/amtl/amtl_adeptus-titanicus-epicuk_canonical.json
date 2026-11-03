@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/amtl/adeptus-titanicus-epicuk",
+  "id": "euk/amtl/amtl_adeptus-titanicus-epicuk_canonical",
   "name": "Adeptus Titanicus",
   "faction": "Adeptus Mechanicus",
   "version": "EpicUK200323",

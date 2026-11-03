@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/amtl/epicuk",
+  "id": "euk/amtl/amtl_epicuk_canonical",
   "name": "AMTL",
   "faction": "Adeptus Mechanicus",
   "version": "EpicUK121013",

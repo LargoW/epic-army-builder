@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/chaos/damned-epicuk",
+  "id": "euk/chaos/chaos_damned-epicuk_canonical",
   "name": "EpicUK Lost And The Damned",
   "faction": "Chaos",
   "version": "120623",

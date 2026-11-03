@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/amtl/knights-epicuk",
+  "id": "euk/amtl/amtl_knights-epicuk_canonical",
   "name": "Knight World",
   "faction": "Adeptus Mechanicus",
   "version": "EpicUK 290515",

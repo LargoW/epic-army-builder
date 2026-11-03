@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/impfists-epicuk",
+  "id": "euk/sm/sm_impfists-epicuk_canonical",
   "name": "Imperial Fists",
   "faction": "Space Marines",
   "version": "Epic UK",

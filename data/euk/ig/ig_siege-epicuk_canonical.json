@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ig/siege-epicuk",
+  "id": "euk/ig/ig_siege-epicuk_canonical",
   "name": "Baran Siege Masters",
   "faction": "Astra Militarum",
   "version": "Epic UK v15022013",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/chaos/legion-epicuk",
+  "id": "euk/chaos/chaos_legion-epicuk_canonical",
   "name": "Black Legion",
   "faction": "Chaos",
   "version": "Epic UK v280726",

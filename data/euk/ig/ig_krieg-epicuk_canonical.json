@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ig/krieg-epicuk",
+  "id": "euk/ig/ig_krieg-epicuk_canonical",
   "name": "Death Korps of Krieg",
   "faction": "Astra Militarum",
   "version": "EpicUK v01122014",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ork/feral-epicuk",
+  "id": "euk/o/ork_feral-epicuk_canonical",
   "name": "Snagga-Snagga's Feral Orks",
   "faction": "Orks",
   "version": "Epic UK v100909",

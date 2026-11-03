@@ -14,13 +14,21 @@ const index = (list) => Object.fromEntries(list.map((x) => [x.id, x]));
 
 // Merges a profile bundle into army data: unit type and special-rule names come from the profiles.
 export function withProfiles(data, profiles) {
+  const profUnits = (profiles && (profiles.units || profiles.profiles)) || {};
+  const armyRules = (profiles && (profiles.specialRules || profiles.rules)) || [];
+  const baseUnits = data.units || {};
+  const mergedUnits = { ...baseUnits };
+  for (const [id, p] of Object.entries(profUnits)) {
+    if (!mergedUnits[id]) mergedUnits[id] = { name: p.name || id, type: p.type };
+  }
   const units = Object.fromEntries(
-    Object.entries(data.units).map(([id, u]) => {
-      const p = profiles.units[id];
-      return [id, p ? { ...u, type: p.type || u.type, rules: p.specialRules.map((r) => r.name) } : u];
+    Object.entries(mergedUnits).map(([id, u]) => {
+      const p = profUnits[id];
+      const rules = p && Array.isArray(p.specialRules) ? p.specialRules.map((r) => r.name || r) : (u.rules || []);
+      return [id, p ? { ...u, type: p.type || u.type, rules } : u];
     })
   );
-  return { ...data, units, profiles: profiles.units, armyRules: profiles.specialRules };
+  return { ...data, units, profiles: profUnits, armyRules };
 }
 
 // Profile + count for each unit of a computed roster, in roster order.
@@ -28,7 +36,7 @@ export function rosterProfiles(data, roster) {
   return Object.entries(roster).map(([unit, count]) => ({
     unit,
     count,
-    name: data.units[unit].name,
+    name: data.units && data.units[unit] ? data.units[unit].name : unit,
     profile: (data.profiles || {})[unit] || null,
   }));
 }

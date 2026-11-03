@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/xenos/tau-viorla-epicuk",
+  "id": "euk/tau/xenos_tau-viorla-epicuk_canonical",
   "name": "Epic UK Tau Vior'la",
   "faction": "Xenos",
   "version": "1.42",

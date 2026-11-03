@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/spacewolves-epicuk",
+  "id": "euk/sm/sm_spacewolves-epicuk_canonical",
   "name": "Space Wolves",
   "faction": "Space Marines",
   "version": "Epic-UK v070414",

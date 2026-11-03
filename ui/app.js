@@ -115,10 +115,12 @@ function toast(msg) {
 const stat = (label, v) => (v == null ? "" : `<span><b>${label}</b>${esc(v)}</span>`);
 
 function weaponLine(w) {
-  const modes = w.modes
+  const modesList = w.modes || [{ range: w.range, firepower: w.firepower, specialRules: [] }];
+  const modes = modesList
     .map((m) => {
-      const rules = (m.specialRules || []).map((r) => esc(r.name)).join(", ");
-      return `${m.join ? `<i>${esc(m.join)}</i> ` : ""}${m.range ? `${esc(m.range)} cm ` : ""}${esc(m.firepower)}${rules ? ` (${rules})` : ""}`;
+      const rules = (m.specialRules || []).map((r) => esc(r.name || r)).join(", ");
+      const rangeStr = m.range ? (typeof m.range === "number" || /^\d+$/.test(m.range) ? `${esc(m.range)} cm ` : `${esc(m.range)} `) : "";
+      return `${m.join ? `<i>${esc(m.join)}</i> ` : ""}${rangeStr}${esc(m.firepower || "")}${rules ? ` (${rules})` : ""}`.trim();
     })
     .join(" ");
   return `<li><b>${w.count ? `${esc(w.count)}× ` : ""}${esc(w.name)}</b> ${modes}</li>`;
@@ -127,11 +129,13 @@ function weaponLine(w) {
 function unitBlock(entryUid, r) {
   const p = r.profile;
   const key = `u${entryUid}:${r.unit}`;
+  const wp = p && Array.isArray(p.weapons) ? p.weapons : [];
+  const sr = p && Array.isArray(p.specialRules) ? p.specialRules : [];
   const body = p
     ? `<div class="stats">${stat("Typ", p.type)}${stat("Geschw.", p.speed)}${stat("ARM", p.armour != null ? plus(p.armour) : null)}${stat("CC", p.cc != null ? plus(p.cc) : null)}${stat("FF", p.ff != null ? plus(p.ff) : null)}</div>
-       ${p.weapons.length ? `<ul class="weapons">${p.weapons.map(weaponLine).join("")}</ul>` : ""}
+       ${wp.length ? `<ul class="weapons">${wp.map(weaponLine).join("")}</ul>` : ""}
        ${p.notes ? `<p class="note">${esc(p.notes)}</p>` : ""}
-       ${p.specialRules.length ? `<dl class="rules">${p.specialRules.map((r2) => `<dt>${esc(r2.name)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}`
+       ${sr.length ? `<dl class="rules">${sr.map((r2) => `<dt>${esc(r2.name || r2)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}`
     : `<p class="muted">Kein Profil vorhanden.</p>`;
   return `<details class="unit" data-key="${key}"${open.has(key) ? " open" : ""}>
     <summary><span>${r.count}× ${esc(r.name)}</span>${p && p.type ? `<span class="type">${esc(p.type)}</span>` : ""}</summary>${body}</details>`;
@@ -261,7 +265,7 @@ function renderOverview(entries, violations, total) {
     return `<section class="ov${probs.length ? " has-problem" : ""}">
       <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
             ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-            <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
+            <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;
@@ -270,9 +274,9 @@ function renderOverview(entries, violations, total) {
 }
 
 function armyButtons() {
-  return index.rulesets.map((r) => {
+  return index.rulesets.filter((r) => !r.hidden && !r.disabled).map((r) => {
     const byFaction = {};
-    index.armies.filter((a) => a.ruleset === r.id).forEach((a) => (byFaction[a.faction] ||= []).push(a));
+    index.armies.filter((a) => a.ruleset === r.id && !a.hidden && !a.disabled).forEach((a) => (byFaction[a.faction] ||= []).push(a));
     return `<section class="picker-section"><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
       `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
   }).join("");
@@ -362,9 +366,9 @@ function openLists() {
       <button class="icon" type="button" data-act="delete-list" data-id="${l.id}" aria-label="Löschen">🗑</button>
     </div>`;
   }).join("");
-  const rs = index.rulesets.map((r) => {
+  const rs = index.rulesets.filter((r) => !r.hidden && !r.disabled).map((r) => {
     const byFaction = {};
-    index.armies.filter((a) => a.ruleset === r.id).forEach((a) => (byFaction[a.faction] ||= []).push(a));
+    index.armies.filter((a) => a.ruleset === r.id && !a.hidden && !a.disabled).forEach((a) => (byFaction[a.faction] ||= []).push(a));
     return `<section class="picker-section" data-search><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
       `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">+ ${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
   }).join("");

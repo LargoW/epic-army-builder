@@ -1,15 +1,415 @@
 {
   "rulesets": [
-    { "id": "ear-de", "name": "Epic: Armageddon – Ragnarök (DE)" },
-    { "id": "euk", "name": "Epic: Armageddon – EpicUK" }
+    {
+      "id": "ear-de",
+      "name": "Epic: Armageddon – Ragnarök (DE)"
+    },
+    {
+      "id": "euk",
+      "name": "Epic: Armageddon – EpicUK"
+    }
   ],
   "armies": [
-    { "id": "ear-de/ig/steellegion", "ruleset": "ear-de", "faction": "Astra Militarum", "name": "Stahllegion", "version": "1.0.2" },
-    { "id": "ear-de/sm/codexastartes", "ruleset": "ear-de", "faction": "Space Marines", "name": "Codex Astartes", "version": "1.0" },
-    { "id": "ear-de/o/goffsclan", "ruleset": "ear-de", "faction": "Orks", "name": "Goffs-Klan – WAAAGH! Ghazghkull", "version": "1.0" },
-    { "id": "ear-de/tau/sacea", "ruleset": "ear-de", "faction": "T'au", "name": "Sa'cea", "version": "1.0" },
-    { "id": "ear-de/tau/viorla", "ruleset": "ear-de", "faction": "T'au", "name": "Vior'la", "version": "1.0.2" },
-    { "id": "ear-de/sq/squats", "ruleset": "ear-de", "faction": "Squats", "name": "Wodanaz-Feste", "version": "1.0" },
-    { "id": "euk/chaos/ts", "ruleset": "euk", "faction": "Chaos", "name": "Thousand Sons", "version": "v280726" }
+    {
+      "id": "ear-de/ig/steellegion",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Stahllegion",
+      "version": "1.0.2"
+    },
+    {
+      "id": "ear-de/sm/codexastartes",
+      "ruleset": "ear-de",
+      "faction": "Space Marines",
+      "name": "Codex Astartes",
+      "version": "1.0"
+    },
+    {
+      "id": "ear-de/o/goffsclan",
+      "ruleset": "ear-de",
+      "faction": "Orks",
+      "name": "Goffs-Klan – WAAAGH! Ghazghkull",
+      "version": "1.0"
+    },
+    {
+      "id": "ear-de/tau/sacea",
+      "ruleset": "ear-de",
+      "faction": "T'au",
+      "name": "Sa'cea",
+      "version": "1.0"
+    },
+    {
+      "id": "ear-de/tau/viorla",
+      "ruleset": "ear-de",
+      "faction": "T'au",
+      "name": "Vior'la",
+      "version": "1.0.2"
+    },
+    {
+      "id": "ear-de/sq/squats",
+      "ruleset": "ear-de",
+      "faction": "Squats",
+      "name": "Wodanaz-Feste",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/amtl/amtl_adeptus-titanicus-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Adeptus Mechanicus",
+      "name": "Adeptus Titanicus",
+      "version": "EpicUK200323",
+      "hidden": true
+    },
+    {
+      "id": "euk/amtl/amtl_epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Adeptus Mechanicus",
+      "name": "AMTL",
+      "version": "EpicUK121013",
+      "hidden": true
+    },
+    {
+      "id": "euk/amtl/amtl_skitarii-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Adeptus Mechanicus",
+      "name": "EpicUK Skitarii",
+      "version": "170924",
+      "hidden": true
+    },
+    {
+      "id": "euk/amtl/amtl_knights-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Adeptus Mechanicus",
+      "name": "Knight World",
+      "version": "EpicUK 290515",
+      "hidden": true
+    },
+    {
+      "id": "euk/ig/ig_siege-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Astra Militarum",
+      "name": "Baran Siege Masters",
+      "version": "Epic UK v15022013",
+      "hidden": true
+    },
+    {
+      "id": "euk/ig/ig_krieg-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Astra Militarum",
+      "name": "Death Korps of Krieg",
+      "version": "EpicUK v01122014",
+      "hidden": true
+    },
+    {
+      "id": "euk/ig/ig_steellegion-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Astra Militarum",
+      "name": "Steel Legion",
+      "version": "Epic UK V03112019",
+      "hidden": true
+    },
+    {
+      "id": "euk/ig/ig_ulani-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Astra Militarum",
+      "name": "Ulani Tank Regiment",
+      "version": "Epic UK v090625",
+      "hidden": true
+    },
+    {
+      "id": "euk/ig/ig_vanaheim-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Astra Militarum",
+      "name": "Vanaheim 7th Air Cavalry",
+      "version": "Epic UK v090625",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_legion-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Black Legion",
+      "version": "Epic UK v280726",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_dg-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Death Guard",
+      "version": "Epic UK v270826",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_ec-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Emperors Children",
+      "version": "Epic UK v280726",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_damned-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "EpicUK Lost And The Damned",
+      "version": "120623",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_latd-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "EpicUK Lost And The Damned",
+      "version": "120623",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_ironwarriors-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Iron Warriors",
+      "version": "Epic-UK 280726",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/chaos_corsairs-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Red Corsairs",
+      "version": "v280726",
+      "hidden": true
+    },
+    {
+      "id": "euk/chaos/ts",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "Thousand Sons",
+      "version": "v280726"
+    },
+    {
+      "id": "euk/chaos/chaos_we-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Chaos",
+      "name": "World Eaters",
+      "version": "Epic UK v280726",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_alaitoc-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Alaitoc Craftworld",
+      "version": "Epic-UK v070414",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_bieltan-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Biel-Tan Craftworld",
+      "version": "Epic-UK v121013",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_daitan-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Dai-Tan Craftworld",
+      "version": "EpicUK",
+      "hidden": true
+    },
+    {
+      "id": "euk/DE/el_dark-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Dark Eldar",
+      "version": "EpicUK V.10042013",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_iyanden-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Iyanden Craftworld",
+      "version": "Epic-UK v121013",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_siamhann-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Saim-Hann Craftworld",
+      "version": "Epic-UK v121013",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_ulthwe-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Ulthw&eacute; Craftworld",
+      "version": "Epic-UK v121013",
+      "hidden": true
+    },
+    {
+      "id": "euk/EL/el_ymeloc-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Eldar",
+      "name": "Yme-Loc Craftworld",
+      "version": "Epic_UK 140516",
+      "hidden": true
+    },
+    {
+      "id": "euk/iq/inq_sisters-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Inquisition",
+      "name": "Adepta Sororitas",
+      "version": "161117",
+      "hidden": true
+    },
+    {
+      "id": "euk/o/ork_kult-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Orks",
+      "name": "Burning Death Speed Freeks",
+      "version": "Epic UK v011214",
+      "hidden": true
+    },
+    {
+      "id": "euk/o/ork_gargant-bigmob-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Orks",
+      "name": "Gargant Bigmob",
+      "version": "EpicUK v130125",
+      "hidden": true
+    },
+    {
+      "id": "euk/o/ork_ghazgkhull-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Orks",
+      "name": "Ghazgkhull Thraka's War Horde",
+      "version": "Epic UK v100909",
+      "hidden": true
+    },
+    {
+      "id": "euk/o/ork_bad-moons-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Orks",
+      "name": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
+      "version": "3.2 - EpicUK",
+      "hidden": true
+    },
+    {
+      "id": "euk/o/ork_feral-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Orks",
+      "name": "Snagga-Snagga's Feral Orks",
+      "version": "Epic UK v100909",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_templars-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Black Templars",
+      "version": "Epic-UK 031119",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_bloodangels-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Blood Angels",
+      "version": "Epic-UK v070414",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_codex-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Codex Marines",
+      "version": "170711",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_dark-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Dark Angels",
+      "version": "Epic-UK 120618",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_impfists-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Imperial Fists",
+      "version": "Epic UK",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_spacewolves-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Space Wolves",
+      "version": "Epic-UK v070414",
+      "hidden": true
+    },
+    {
+      "id": "euk/sm/sm_scars-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "White Scars",
+      "version": "Epic-UK v070414",
+      "hidden": true
+    },
+    {
+      "id": "euk/tau/xenos_tau-viorla-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Epic UK Tau Vior'la",
+      "version": "1.42",
+      "hidden": true
+    },
+    {
+      "id": "euk/sq/xenos_squats-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "EpicUK Squats",
+      "version": "EpicUK 260424",
+      "hidden": true
+    },
+    {
+      "id": "euk/nc/xenos_necron-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Necrons",
+      "version": "EpicUK v140516",
+      "hidden": true
+    },
+    {
+      "id": "euk/tau/xenos_tau-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Tau Third Phase Expansion",
+      "version": "6.8 Approved",
+      "hidden": true
+    },
+    {
+      "id": "euk/nid/xenos_nidtitan-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Tyranid Bio-Titan",
+      "version": "EpicUK",
+      "hidden": true
+    },
+    {
+      "id": "euk/nid/xenos_nids-epicuk_canonical",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Tyranids",
+      "version": "310325",
+      "hidden": true
+    }
   ]
 }

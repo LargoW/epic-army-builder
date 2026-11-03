@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ork/bad-moons-epicuk",
+  "id": "euk/o/ork_bad-moons-epicuk_canonical",
   "name": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
   "faction": "Orks",
   "version": "3.2 - EpicUK",

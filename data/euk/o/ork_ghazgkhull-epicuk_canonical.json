@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ork/ghazgkhull-epicuk",
+  "id": "euk/o/ork_ghazgkhull-epicuk_canonical",
   "name": "Ghazgkhull Thraka's War Horde",
   "faction": "Orks",
   "version": "Epic UK v100909",

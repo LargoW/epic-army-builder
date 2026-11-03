@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/xenos/nidtitan-epicuk",
+  "id": "euk/nid/xenos_nidtitan-epicuk_canonical",
   "name": "Tyranid Bio-Titan",
   "faction": "Xenos",
   "version": "EpicUK",

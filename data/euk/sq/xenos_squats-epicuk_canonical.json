@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/xenos/squats-epicuk",
+  "id": "euk/sq/xenos_squats-epicuk_canonical",
   "name": "EpicUK Squats",
   "faction": "Xenos",
   "version": "EpicUK 260424",

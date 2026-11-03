@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/scars-epicuk",
+  "id": "euk/sm/sm_scars-epicuk_canonical",
   "name": "White Scars",
   "faction": "Space Marines",
   "version": "Epic-UK v070414",

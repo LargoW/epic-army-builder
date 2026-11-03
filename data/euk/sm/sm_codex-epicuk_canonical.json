@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/codex-epicuk",
+  "id": "euk/sm/sm_codex-epicuk_canonical",
   "name": "Codex Marines",
   "faction": "Space Marines",
   "version": "170711",

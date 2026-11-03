@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/sm/templars-epicuk",
+  "id": "euk/sm/sm_templars-epicuk_canonical",
   "name": "Black Templars",
   "faction": "Space Marines",
   "version": "Epic-UK 031119",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/ig/vanaheim-epicuk",
+  "id": "euk/ig/ig_vanaheim-epicuk_canonical",
   "name": "Vanaheim 7th Air Cavalry",
   "faction": "Astra Militarum",
   "version": "Epic UK v090625",

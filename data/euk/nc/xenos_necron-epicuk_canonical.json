@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/xenos/necron-epicuk",
+  "id": "euk/nc/xenos_necron-epicuk_canonical",
   "name": "Necrons",
   "faction": "Xenos",
   "version": "EpicUK v140516",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/chaos/ec-epicuk",
+  "id": "euk/chaos/chaos_ec-epicuk_canonical",
   "name": "Emperors Children",
   "faction": "Chaos",
   "version": "Epic UK v280726",

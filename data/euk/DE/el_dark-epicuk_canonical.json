@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/dark-epicuk",
+  "id": "euk/DE/el_dark-epicuk_canonical",
   "name": "Dark Eldar",
   "faction": "Eldar",
   "version": "EpicUK V.10042013",

@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/el/alaitoc-epicuk",
+  "id": "euk/EL/el_alaitoc-epicuk_canonical",
   "name": "Alaitoc Craftworld",
   "faction": "Eldar",
   "version": "Epic-UK v070414",

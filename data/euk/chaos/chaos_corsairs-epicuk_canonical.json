@@ -1,8 +1,8 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/chaos/corsairs-epicuk",
+  "id": "euk/chaos/chaos_corsairs-epicuk_canonical",
   "name": "Red Corsairs",
   "faction": "Chaos",
   "version": "v280726",
