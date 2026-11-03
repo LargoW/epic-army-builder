@@ -57,5 +57,22 @@ upgrade variants and replacements as found in Ragnarök lists.
   `max`/`min`, `maxPercent` of army points, `perArmy`, `forEach` (limit per selected parent formation),
   `appliesTo` (formation ids or tags).
 - Engine validation returns `{ code, params, refs }` so the UI can localise messages.
-- Open: how to model replacements ("Ersetze 6 Basilisken durch Mantikors") and transport rules
-  ("*" upgrades adding Chimären). Decide with the Steel Legion overlay.
+## Unit-level model (decided)
+Unit profiles and weapons must be shown later, so formations are modelled as unit slots, not text.
+- `formation.units`: `[{ "unit": "<unit id>", "count": n }]`. Unit ids resolve to profiles
+  (stats, weapons, special rules) in a per-faction unit table.
+- Upgrades have `effects` that act on that roster, so the engine can compute the final unit list:
+  - `add`: `{ "op": "add", "unit": "hellhound", "count": 1 }`
+  - `replace`: `{ "op": "replace", "from": "basilisk", "to": "manticore", "count": 6 }`
+    (the formation must contain at least `count` of `from`)
+- Choice slots (e.g. "6 Basilisks or 6 Manticores") are `choice` groups with exactly one pick,
+  instead of adam77's "min 1 / max 1" upgrade constraints.
+
+## Computed transport (Steel Legion)
+Chimeras are not fixed upgrade variants (as in the snapfire lists, e.g. "4 Fire Support Squads,
+2 Chimeras"). Instead, `transport` rules compute the limit:
+`allowedChimeras = ceil(count of INF units in the formation that can be carried / 2)`,
+where Rough Riders and units with Mounted / Jump Pack are not carriable. Each chimera costs
+25 pts. Declared as data: `{ "op": "transport", "vehicle": "chimera", "capacity": 2,
+"carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["mounted", "jump-pack"] },
+"pts": 25 }`.
