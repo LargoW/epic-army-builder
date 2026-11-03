@@ -3,6 +3,7 @@ const constraintTexts = {
   "support-per-company": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
   "scouts-per-detachment": (p) => `Zu viele Scout-Trupps: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Verband ohne Scouts).`,
   "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+  "kroozer-once": (p) => `Ein Kroozer darf nur einmal gewählt werden (gewählt: ${p.count}).`,
 };
 
 export function messageFor(v, names = {}) {
@@ -28,6 +29,10 @@ export function messageFor(v, names = {}) {
       return `Die Aufwertung „${up}“ darf keine Chimären hinzufügen.`;
     case "transport-too-many":
       return `„${up}“: Höchstens ${p.max} zusätzliche Chimäre(n) erlaubt.`;
+    case "variant-max":
+      return `„${p.label}“: höchstens ${p.max} erlaubt.`;
+    case "variant-requires":
+      return `„${p.label}“ benötigt eine der Einheiten: ${p.units.map(unit).join(", ")}.`;
     case "vehicle-surplus":
       return `Zu viele ${unit(p.unit)}: höchstens ${p.max} nötig, um den Verband zu transportieren.`;
     case "variant-army-limit":

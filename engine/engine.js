@@ -76,11 +76,14 @@ export function sortFormations(data, state, mode) {
 export const setChoice = (state, uid, slot, distribution) =>
   mapEntry(state, uid, (e) => ({ ...e, choices: { ...e.choices, [slot]: distribution } }));
 
-export const setUpgrade = (state, uid, upgrade, variant, chimeras = 0) =>
+export const setUpgrade = (state, uid, upgrade, variant, chimeras = 0, count = 1) =>
   mapEntry(state, uid, (e) => ({
     ...e,
-    upgrades: [...e.upgrades.filter((u) => u.upgrade !== upgrade), { upgrade, variant, chimeras }],
+    upgrades: [...e.upgrades.filter((u) => u.upgrade !== upgrade), { upgrade, variant, chimeras, count }],
   }));
+
+// Switching size resets unit choices, because slot totals change with the size.
+export const setSize = (state, uid, size) => mapEntry(state, uid, (e) => ({ ...e, size, choices: {} }));
 
 export const removeUpgrade = (state, uid, upgrade) =>
   mapEntry(state, uid, (e) => ({ ...e, upgrades: e.upgrades.filter((u) => u.upgrade !== upgrade) }));
@@ -97,6 +100,8 @@ function isCarriable(data, rule, unitId) {
   return !(unit.rules || []).some((r) => excluded.includes(r));
 }
 
+export const sizeOf = (def, entry) => (def.sizes ? def.sizes.find((s) => s.id === entry.size) || def.sizes[0] : null);
+
 // Final unit list of one formation entry, plus problems found while building it.
 export function computeEntry(data, entry) {
   const formations = index(data.formations);
@@ -105,14 +110,17 @@ export function computeEntry(data, entry) {
   const problems = [];
   const roster = {};
   const add = (unit, n) => (roster[unit] = (roster[unit] || 0) + n);
-  let pts = def.pts;
+  const size = sizeOf(def, entry);
+  const mult = size ? size.mult : 1;
+  let pts = size ? size.pts : def.pts;
 
   def.units.forEach((slot, i) => {
-    if (!slot.oneOf) return add(slot.unit, slot.count);
-    const dist = entry.choices[i] || { [slot.oneOf[0]]: slot.count };
+    const slotCount = slot.count * mult;
+    if (!slot.oneOf) return add(slot.unit, slotCount);
+    const dist = entry.choices[i] || { [slot.oneOf[0]]: slotCount };
     const total = Object.values(dist).reduce((a, b) => a + b, 0);
     const valid =
-      total === slot.count &&
+      total === slotCount &&
       Object.entries(dist).every(([u, n]) => slot.oneOf.includes(u) && Number.isInteger(n) && n >= 0) &&
       (slot.mixed || Object.values(dist).filter((n) => n > 0).length <= 1);
     if (!valid) problems.push({ code: "choice-invalid", params: { slot }, refs: { uid: entry.uid } });
@@ -129,12 +137,16 @@ export function computeEntry(data, entry) {
     if (!def.upgrades.includes(sel.upgrade))
       problems.push({ code: "upgrade-not-allowed", params: { upgrade: sel.upgrade }, refs: { uid: entry.uid } });
 
-    pts += variant.pts;
+    // perUnit variants ("add any number") are priced and applied per chosen unit; limits scale with formation size.
+    const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+    if (variant.max != null && n > variant.max * mult)
+      problems.push({ code: "variant-max", params: { label: variant.label, max: variant.max * mult }, refs: { uid: entry.uid } });
+    pts += variant.pts * n;
     addedCarriable = 0;
     variant.effects.forEach((fx) => {
       if (fx.op === "add") {
-        add(fx.unit, fx.count);
-        if (rule && isCarriable(data, rule, fx.unit)) addedCarriable += fx.count;
+        add(fx.unit, fx.count * n);
+        if (rule && isCarriable(data, rule, fx.unit)) addedCarriable += fx.count * n;
       } else if (fx.op === "replace") {
         if ((roster[fx.from] || 0) < fx.count)
           problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: fx.count }, refs: { uid: entry.uid } });
@@ -156,6 +168,13 @@ export function computeEntry(data, entry) {
         pts += chimeras * rule.pts;
       }
     }
+  });
+
+  // Variants that can only be taken together with certain units (e.g. an Oddboy joins a specific vehicle).
+  entry.upgrades.forEach((sel) => {
+    const variant = upgrades[sel.upgrade] && upgrades[sel.upgrade].variants.find((v) => v.id === sel.variant);
+    if (variant && variant.requires && !variant.requires.some((u) => (roster[u] || 0) > 0))
+      problems.push({ code: "variant-requires", params: { label: variant.label, units: variant.requires }, refs: { uid: entry.uid } });
   });
 
   // Free automatic transports (Space Marine Rhinos): bought vehicles (Razorbacks, Land Raiders) carry first,

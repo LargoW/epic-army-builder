@@ -2,6 +2,7 @@
   "rulesets": [{ "id": "ear-de", "name": "Epic: Armageddon – Ragnarök (DE)" }],
   "armies": [
     { "id": "ear-de/ig/steellegion", "ruleset": "ear-de", "faction": "Astra Militarum", "name": "Stahllegion", "version": "1.0.2" },
-    { "id": "ear-de/sm/codexastartes", "ruleset": "ear-de", "faction": "Space Marines", "name": "Codex Astartes", "version": "1.0" }
+    { "id": "ear-de/sm/codexastartes", "ruleset": "ear-de", "faction": "Space Marines", "name": "Codex Astartes", "version": "1.0" },
+    { "id": "ear-de/o/goffsclan", "ruleset": "ear-de", "faction": "Orks", "name": "Goffs-Klan – WAAAGH! Ghazghkull", "version": "1.0" }
   ]
 }

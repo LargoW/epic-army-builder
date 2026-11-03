@@ -1,0 +1,1214 @@
+{
+  "army": "ear-de/o/goffsclan",
+  "source": {
+    "file": "lists_de/O/goffsclan.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Köppe zählen",
+      "description": [
+        "Orks glauben, dass sie immer eine Chance auf den Sieg haben, solange noch eine ganze Menge von ihnen gemeinsam kämpfen (am besten etwas mehr, als sie zählen können), ganz gleich, wie schlecht die Chancen stehen. Deshalb erhalten Ork-Verbände mit mehr als fünf Einheiten (also mehr, als an einer Hand abzählbar sind; Grots und Kanonänbatterie werden nicht mitgezählt) einen Modifikator von +1 auf Sammelwürfe. Verbände mit mehr als 10 solchen Einheiten erhalten einen Modifikator von +2. Für diese Regel zählt jeder Punkt anfangs vorhandener Schadenskapazität einer Kriegsmaschine als eine Einheit. Kriegsmaschinen mit der Sonderregel Göttermaschine gelten immer als hätten sie mehr als 10 Einheiten."
+      ]
+    },
+    {
+      "name": "Macht des Waaagh!",
+      "description": [
+        "Orks sind nicht für ihre organisatorischen Fähigkeiten bekannt und haben daher meist einen niedrigen Initiativewert. Doch nichts spornt eine Ork-Kriegsbande so sehr an wie die Aussicht auf eine gute Rauferei! Deshalb erhalten Ork-Verbände bei Versuchen, eine Offensive oder einen Eilschritt durchzuführen, einen Modifikator von +2 auf ihren Aktionstest. Auch Ork-Piloten können es kaum erwarten, Dinge unter Beschuss zu nehmen, und erhalten bei Versuchen, Abfangen oder Bodenangriff durchzuführen, einen Modifikator von +2 auf ihren Aktionstest (siehe Flugzeuge)."
+      ]
+    },
+    {
+      "name": "Waaaghboss des Goffs-Klans",
+      "description": [
+        "Jede Kriegerbande muss einen kostenlosen Oberbefehlshaber namens Waaaghboss enthalten. Enthält die Armee Große Garganten, muss der Waaaghboss einem davon angeschlossen werden. Andernfalls schließt er sich einer Gargant- oder Bosse-Einheit an."
+      ]
+    }
+  ],
+  "units": {
+    "oddboy": {
+      "name": "Oddboy",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Supa-Zzap-Geschütz",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mega Kanonä",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "W3+1 Schpezialfelda",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": [
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ersetze eine Kanonä entweder durch ein Supa-Zzap-Geschütz oder durch eine Mega Kanonä; alternativ kann die Einheit W3+1 Kraftfelder erhalten.",
+          "description": null
+        }
+      ]
+    },
+    "boss": {
+      "name": "Bosse",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Fette Spalta",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "boys": {
+      "name": "Boys",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "grots": {
+      "name": "Grots",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Grot-Knarren und Messer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Super-Entbehrlich",
+          "description": [
+            "Ein Verband erhält keine Beschussmarke, wenn eine Einheit mit Super-Entbehrlich zerstört wird. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Wird eine Super-Entbehrlich-Einheit von einer Waffe mit Versprengen getroffen, verursacht sie keine Beschussmarke.",
+            "Im Nahkampf getötete Super-Entbehrlich-Einheiten werden bei der Ermittlung des Ergebnisses nicht mitgezählt.",
+            "Verbände, die ausschliesslich aus Verbrauchbar- und/oder Super-Entbehrlich-Einheiten bestehen, profitieren nicht von den obigen Regeln."
+          ]
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "kanonen": {
+      "name": "Kanonänbatterie",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "commandos": {
+      "name": "Kommandos",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "stormboys": {
+      "name": "Stormboys",
+      "type": "INF",
+      "speed": 30,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Knarren",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "waaghbike": {
+      "name": "Waaghbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Zwillings-Abgesägtä Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "deffkopta": {
+      "name": "Deffkopta",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "brennabuggy": {
+      "name": "Brennabuggy",
+      "type": "LV",
+      "speed": 35,
+      "armour": 6,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Brenna",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "buggy": {
+      "name": "Buggy",
+      "type": "LV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "transportpanza": {
+      "name": "Transportpanza",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "2 Einheiten Boys, Bosse, Posas, Kommandos oder Grots. Kanonänbatterien belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten darf 1 Einheit Grots mitgeführt werden.",
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "kampfpanza": {
+      "name": "Kampfpanza",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "1 Einheit Boys, Bosse, Posas, Kommandos oder Grots.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "flakpanza": {
+      "name": "Flakpanza",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "1 Einheit Boys, Bosse, Posas, Kommandos oder Grots.",
+      "weapons": [
+        {
+          "name": "Flakgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP6+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "killa-bot": {
+      "name": "Killa Bot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "deff-dread": {
+      "name": "Deff-Dread",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "stampfa": {
+      "name": "Stampfa",
+      "type": "H-AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Bewaffnet entweder mit drei Kanonän oder mit zwei Kanonän und einem Kampfhammer.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "count": "2-3",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfhammer",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "mega-transportpanza": {
+      "name": "Mega Transportpanza",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "notes": "8 Boys, Posas, Bosse, Kommandos oder Grots. Kanonänbatterien belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 4 Grots-Einheiten mitgeführt werden.",
+      "crit": "Der Mega Transportpanza wird zerstört, alle transportierten Einheiten werden getötet, ausser sie würfeln eine 6+.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Fette Wumme",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "mega-wummenpanza": {
+      "name": "Mega Wummenpanza",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "notes": "4 Boys, Bosse, Posas, Kommandos oder Grots. Kanonänbatterien belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 2 Grots-Einheiten mitgeführt werden.",
+      "crit": "Der Mega Wummenpanza wird zerstört, alle transportierten Einheiten werden getötet, ausser sie würfeln eine 6+.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Fette Wumme",
+          "count": 5,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "supa-stampfa": {
+      "name": "Supa-Stampfa",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Kopf des Supa-Stampfa wird weggeschossen und er erhält für den Rest des Spiels einen Modifikator von -1 auf alle Trefferwürfe beim Schiessen. Weitere kritische Treffer verursachen stattdessen 1 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Blick des Mork",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mega Kanonä",
+          "count": "2-3",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Killa-Spalta",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Schpezialfelda 1D3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "gargant": {
+      "name": "Gargant",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Gargant fängt Feuer. Würfle in der Endphase jeder Runde 1W6 für jedes auf der Einheit brennende Feuer. 1: Ein weiteres Feuer entsteht. 5-6: Das Feuer wird gelöscht. Jeder Wurf von 1-4 verursacht 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Blick des Mork",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mega Kanonä",
+          "count": "2-3",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Supa-Zzap-Geschütz",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Megaspalta",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 7",
+          "description": null
+        },
+        {
+          "name": "Schpezialfelda 1D3+3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Bewaffnet entweder mit drei Mega Kanonäs oder mit zwei Mega Kanonäs und entweder einem Supa-Zzap-Geschütz oder einer Mega-Choppa",
+          "description": null
+        }
+      ]
+    },
+    "great-gargant": {
+      "name": "Großer Gargant",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Große Gargant fängt Feuer. Würfle in der Endphase jeder Runde 1W6 für jedes auf der Einheit brennende Feuer. 1: Ein weiteres Feuer entsteht. 5-6: Das Feuer wird gelöscht. Jeder Wurf von 1-4 verursacht 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Blick des Mork",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kanonä",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Mega Kanonä",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Mega Kanonä",
+          "count": "1-2",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lifta Droppa",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 10",
+          "description": null
+        },
+        {
+          "name": "Schpezialfelda 1D3+6",
+          "description": null
+        },
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Bewaffnet entweder mit zwei Zwillings-Mega-Kanonäs oder mit einer Zwillings-Mega-Kanonä und einem Lifta Droppa",
+          "description": null
+        }
+      ]
+    },
+    "jagdbomma": {
+      "name": "Jagdbomma",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Panzerknacker-Raketen",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "landing-craft": {
+      "name": "Landungsschiff",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "10 Killa Bots, Waaghbikes, Boys, Bosse, Kommandos, Stormboys oder Grots. Kanonänbatterie, Warbuggies, Brennabuggies und Deff Dreads belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 4 Grots-Einheiten mitgeführt werden.",
+      "crit": "Das Landungsschiff und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Flakka-Dakka-Türme",
+          "modes": [
+            {
+              "firepower": "W3+1x AP5+/AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC-Panzerknacker-Raketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "kill-kroozer": {
+      "name": "Kill-Kreuzer",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "1D6BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "battlekroozer": {
+      "name": "Schlachtkreuzer",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "1D6+4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        },
+        {
+          "name": "Transport: Kann 12 Landungsschiffe und die auf ihnen mitgeführten Einheiten transportieren",
+          "description": null
+        }
+      ]
+    }
+  }
+}

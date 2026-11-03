@@ -1,5 +1,5 @@
 import {
-  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade,
+  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf,
   summarize, validate, withProfiles, rosterProfiles, matches,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
@@ -137,31 +137,54 @@ function unitBlock(entryUid, r) {
     <summary><span>${r.count}× ${esc(r.name)}</span>${p && p.type ? `<span class="type">${esc(p.type)}</span>` : ""}</summary>${body}</details>`;
 }
 
+const sizeSuffix = (def, entry) => {
+  const s = sizeOf(def, entry);
+  return s && s.mult > 1 ? ` (${s.label.replace(/ \(.*/, "")})` : "";
+};
+
+function sizeControls(entry, def) {
+  if (!def.sizes) return "";
+  const cur = sizeOf(def, entry).id;
+  return `<h3>Größe</h3><div class="row"><label for="s${entry.uid}">Verbandsgröße</label>
+    <select id="s${entry.uid}" data-act="size" data-uid="${entry.uid}">
+      ${def.sizes.map((s) => `<option value="${s.id}"${s.id === cur ? " selected" : ""}>${esc(s.label)} – ${s.pts} Pkt.</option>`).join("")}
+    </select></div>`;
+}
+
 function choiceControls(entry, def) {
+  const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
   const slots = def.units.map((s, i) => ({ s, i })).filter((x) => x.s.oneOf);
   if (!slots.length) return "";
   return `<h3>Einheiten wählen</h3>` + slots.map(({ s, i }) => {
-    const dist = entry.choices[i] || { [s.oneOf[0]]: s.count };
+    const count = s.count * mult;
+    const dist = entry.choices[i] || { [s.oneOf[0]]: count };
     if (!s.mixed) {
       const cur = Object.keys(dist).find((u) => dist[u] > 0) || s.oneOf[0];
-      return `<div class="row"><label>${s.count}×</label>
-        <select data-act="choice-single" data-uid="${entry.uid}" data-slot="${i}" data-count="${s.count}">
+      return `<div class="row"><label>${count}×</label>
+        <select data-act="choice-single" data-uid="${entry.uid}" data-slot="${i}" data-count="${count}">
           ${s.oneOf.map((u) => `<option value="${u}"${u === cur ? " selected" : ""}>${esc(unitName(u))}</option>`).join("")}
         </select></div>`;
     }
     return s.oneOf.map((u) => `<div class="row"><label>${esc(unitName(u))}</label>
-      <input type="number" min="0" max="${s.count}" inputmode="numeric" value="${dist[u] || 0}"
+      <input type="number" min="0" max="${count}" inputmode="numeric" value="${dist[u] || 0}"
         data-act="choice-mixed" data-uid="${entry.uid}" data-slot="${i}" data-unit="${u}"></div>`).join("")
-      + `<p class="note">Summe muss ${s.count} ergeben.</p>`;
+      + `<p class="note">Summe muss ${count} ergeben.</p>`;
   }).join("");
 }
 
 function upgradeControls(entry, def) {
   if (!def.upgrades.length) return "";
   const canTransport = (data.transport || []).find((t) => matches(t.appliesTo, def));
+  const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
   return `<h3>Aufwertungen</h3>` + def.upgrades.map((id) => {
     const u = upgradeById[id];
     const sel = entry.upgrades.find((x) => x.upgrade === id);
+    const v0 = u.variants[0];
+    if (u.variants.length === 1 && v0.perUnit) {
+      const max = v0.max != null ? ` max="${v0.max * mult}"` : "";
+      return `<div class="row"><label for="u${entry.uid}-${id}">${esc(v0.label)} (+${v0.pts} je${v0.max != null ? `, 0–${v0.max * mult}` : ""})</label>
+        <input id="u${entry.uid}-${id}" type="number" min="0"${max} inputmode="numeric" value="${sel ? sel.count || 1 : 0}" data-act="perunit" data-uid="${entry.uid}" data-upgrade="${id}" data-variant="${v0.id}"></div>`;
+    }
     return `<div class="row"><label for="u${entry.uid}-${id}">${esc(u.name)}</label>
       <select id="u${entry.uid}-${id}" data-act="upgrade" data-uid="${entry.uid}" data-upgrade="${id}">
         <option value="">–</option>
@@ -198,13 +221,14 @@ function renderBuild(entries, violations) {
     const key = `f${entry.uid}`;
     return `<details class="entry${probs.length ? " has-problem" : ""}" data-key="${key}"${open.has(key) ? " open" : ""}>
       <summary><div class="entry-head">
-        <span class="name">${esc(def.name)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span>
+        <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span>
         <button class="icon" type="button" aria-label="Verband entfernen" data-act="remove" data-uid="${entry.uid}">×</button>
       </div>
       ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
       ${probs.length ? `<ul class="problems">${problemTexts(probs).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
       </summary>
       <div class="entry-body">
+        ${sizeControls(entry, def)}
         ${choiceControls(entry, def)}
         ${upgradeControls(entry, def)}
         <h3>Einheiten</h3>
@@ -231,11 +255,11 @@ function renderOverview(entries, violations, total) {
       .map((sel) => {
         const u = upgradeById[sel.upgrade];
         const v = u && u.variants.find((x) => x.id === sel.variant);
-        return v ? `${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
+        return v ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
       })
       .filter(Boolean);
     return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head">      <span class="name">${esc(def.name)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
+      <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
             ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
             <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
@@ -287,12 +311,12 @@ function armyText() {
   const { total, entries } = summarize(data, state);
   const lines = [`${base.name} (${base.faction}) – ${total} Pkt.`, ""];
   entries.forEach((e, i) => {
-    lines.push(`${e.name} – ${e.pts} Pkt.`);
+    lines.push(`${e.name}${sizeSuffix(formationById[e.formation], state.formations[i])} – ${e.pts} Pkt.`);
     lines.push("  " + rosterProfiles(data, e.roster).map((r) => `${r.count}× ${r.name}`).join(", "));
     state.formations[i].upgrades.forEach((sel) => {
       const u = upgradeById[sel.upgrade];
       const v = u && u.variants.find((x) => x.id === sel.variant);
-      if (v) lines.push(`  + ${v.label}${sel.chimeras ? `, ${sel.chimeras} Chimäre(n)` : ""}`);
+      if (v) lines.push(`  + ${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${v.label}${sel.chimeras ? `, ${sel.chimeras} Chimäre(n)` : ""}`);
     });
   });
   return lines.join("\n");
@@ -308,7 +332,7 @@ function openPicker() {
   sheet("Verband hinzufügen", base.sections.map((s) => `<section class="picker-section"><h3>${esc(s.name)}</h3>${s.description ? `<p>${esc(s.description)}</p>` : ""}
     ${s.formations.map((id) => {
       const f = formationById[id];
-      return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.pts} Pkt.</span></button>`;
+      return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.sizes ? "ab " : ""}${f.pts} Pkt.</span></button>`;
     }).join("")}</section>`).join(""));
 }
 
@@ -559,6 +583,14 @@ document.addEventListener("change", (e) => {
     case "upgrade":
       update(el.value ? setUpgrade(state, uid, el.dataset.upgrade, el.value, 0) : removeUpgrade(state, uid, el.dataset.upgrade));
       break;
+    case "size":
+      update(setSize(state, uid, el.value));
+      break;
+    case "perunit": {
+      const n = Math.max(0, parseInt(el.value, 10) || 0);
+      update(n ? setUpgrade(state, uid, el.dataset.upgrade, el.dataset.variant, 0, n) : removeUpgrade(state, uid, el.dataset.upgrade));
+      break;
+    }
     case "chimeras": {
       const sel = entry.upgrades.find((x) => x.upgrade === el.dataset.upgrade);
       update(setUpgrade(state, uid, el.dataset.upgrade, sel.variant, Math.max(0, parseInt(el.value, 10) || 0)));
@@ -569,7 +601,8 @@ document.addEventListener("change", (e) => {
       break;
     case "choice-mixed": {
       const def = formationById[entry.formation].units[el.dataset.slot];
-      const dist = { ...(entry.choices[el.dataset.slot] || { [def.oneOf[0]]: def.count }) };
+      const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || { mult: 1 }).mult;
+      const dist = { ...(entry.choices[el.dataset.slot] || { [def.oneOf[0]]: slotCount }) };
       dist[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
       update(setChoice(state, uid, el.dataset.slot, dist));
       break;

@@ -1,0 +1,1171 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/o/goffsclan",
+  "name": "Goffs-Klan – WAAAGH! Ghazghkull",
+  "faction": "Orks",
+  "version": "1.0",
+  "source": {
+    "file": "lists_de/O/goffsclan.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "strategy": 3,
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "3+"
+    }
+  ],
+  "units": {
+    "oddboy": {
+      "name": "Oddboy",
+      "from": "ORK.json",
+      "type": "CH"
+    },
+    "boss": {
+      "name": "Bosse",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "boys": {
+      "name": "Boys",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "grots": {
+      "name": "Grots",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "kanonen": {
+      "name": "Kanonänbatterie",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "commandos": {
+      "name": "Kommandos",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "stormboys": {
+      "name": "Stormboys",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "waaghbike": {
+      "name": "Waaghbikes",
+      "from": "ORK.json",
+      "type": "INF"
+    },
+    "deffkopta": {
+      "name": "Deffkopta",
+      "from": "ORK.json"
+    },
+    "brennabuggy": {
+      "name": "Brennabuggy",
+      "from": "ORK.json"
+    },
+    "buggy": {
+      "name": "Buggy",
+      "from": "ORK.json"
+    },
+    "transportpanza": {
+      "name": "Transportpanza",
+      "from": "ORK.json"
+    },
+    "kampfpanza": {
+      "name": "Kampfpanza",
+      "from": "ORK.json"
+    },
+    "flakpanza": {
+      "name": "Flakpanza",
+      "from": "ORK.json"
+    },
+    "killa-bot": {
+      "name": "Killa Bot",
+      "from": "ORK.json"
+    },
+    "deff-dread": {
+      "name": "Deff-Dread",
+      "from": "ORK.json"
+    },
+    "stampfa": {
+      "name": "Stampfa",
+      "from": "ORK.json"
+    },
+    "mega-transportpanza": {
+      "name": "Mega Transportpanza",
+      "from": "ORK.json"
+    },
+    "mega-wummenpanza": {
+      "name": "Mega Wummenpanza",
+      "from": "ORK.json"
+    },
+    "supa-stampfa": {
+      "name": "Supa-Stampfa",
+      "from": "ORK.json"
+    },
+    "gargant": {
+      "name": "Gargant",
+      "from": "ORK.json"
+    },
+    "great-gargant": {
+      "name": "Großer Gargant",
+      "from": "ORK.json"
+    },
+    "jagdbomma": {
+      "name": "Jagdbomma",
+      "from": "ORK.json"
+    },
+    "landing-craft": {
+      "name": "Landungsschiff",
+      "from": "ORK.json"
+    },
+    "kill-kroozer": {
+      "name": "Kill-Kreuzer",
+      "from": "ORK.json"
+    },
+    "battlekroozer": {
+      "name": "Schlachtkreuzer",
+      "from": "ORK.json"
+    }
+  },
+  "sections": [
+    {
+      "id": "main",
+      "name": "Ork-Verbände",
+      "description": "Normal, groß (doppelt so viele Einheiten und doppelte Aufwertungslimits) oder riesig (dreifach).",
+      "formations": [
+        "goffs-mob",
+        "blitz",
+        "heizakult",
+        "commandos",
+        "stormboyz",
+        "mekwummen",
+        "mek-stampfa",
+        "mek-dread"
+      ]
+    },
+    {
+      "id": "fleet",
+      "name": "Raumschiffe und Gargant-Verbände der Goffs",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+      "formations": [
+        "jagdbommas",
+        "landing-craft",
+        "gargant",
+        "great-gargant",
+        "kroozer"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "goffs-mob",
+      "name": "Mob der Goffs",
+      "pts": 200,
+      "sizes": [
+        {
+          "id": "n",
+          "label": "Normal",
+          "mult": 1,
+          "pts": 200
+        },
+        {
+          "id": "g",
+          "label": "Groß (×2)",
+          "mult": 2,
+          "pts": 350
+        },
+        {
+          "id": "r",
+          "label": "Riesig (×3)",
+          "mult": 3,
+          "pts": 500
+        }
+      ],
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "boss",
+          "count": 2
+        },
+        {
+          "unit": "boys",
+          "count": 6
+        },
+        {
+          "unit": "grots",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "add-boys-15",
+        "add-transportpanza-20",
+        "add-killa-bot-25",
+        "add-kanonen-25",
+        "add-commandos-25",
+        "add-brennabuggy-25",
+        "add-waaghbike-25",
+        "add-buggy-25",
+        "add-flakpanza-30",
+        "add-kampfpanza-30",
+        "add-deff-dread-35",
+        "add-deffkopta-35",
+        "add-boys-grots-35",
+        "add-mega-transportpanza-100-max1",
+        "add-mega-wummenpanza-100-max2",
+        "add-stampfa-60-max2",
+        "add-boss-35-max2",
+        "add-oddboy-50-max1-req-mega-transportpanza+mega-wummenpanza+kampfpanza+kanonen"
+      ]
+    },
+    {
+      "id": "blitz",
+      "name": "Blitz-Brigade",
+      "pts": 150,
+      "sizes": [
+        {
+          "id": "n",
+          "label": "Normal",
+          "mult": 1,
+          "pts": 150
+        },
+        {
+          "id": "g",
+          "label": "Groß (×2)",
+          "mult": 2,
+          "pts": 250
+        },
+        {
+          "id": "r",
+          "label": "Riesig (×3)",
+          "mult": 3,
+          "pts": 350
+        }
+      ],
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "deffkopta",
+            "flakpanza",
+            "kampfpanza"
+          ],
+          "count": 4,
+          "mixed": true
+        }
+      ],
+      "upgrades": [
+        "add-brennabuggy-25",
+        "add-waaghbike-25",
+        "add-buggy-25",
+        "add-flakpanza-30",
+        "add-kampfpanza-30",
+        "add-deffkopta-30",
+        "add-mega-wummenpanza-100-max1",
+        "add-oddboy-50-max1-req-mega-wummenpanza+kampfpanza"
+      ]
+    },
+    {
+      "id": "heizakult",
+      "name": "Kult des Heizakults",
+      "pts": 200,
+      "sizes": [
+        {
+          "id": "n",
+          "label": "Normal",
+          "mult": 1,
+          "pts": 200
+        },
+        {
+          "id": "g",
+          "label": "Groß (×2)",
+          "mult": 2,
+          "pts": 350
+        },
+        {
+          "id": "r",
+          "label": "Riesig (×3)",
+          "mult": 3,
+          "pts": 500
+        }
+      ],
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "brennabuggy",
+            "waaghbike",
+            "buggy"
+          ],
+          "count": 8,
+          "mixed": true
+        }
+      ],
+      "upgrades": [
+        "add-brennabuggy-25",
+        "add-waaghbike-25",
+        "add-buggy-25",
+        "add-flakpanza-30",
+        "add-kampfpanza-30",
+        "add-deffkopta-35",
+        "add-oddboy-50-max1-req-kampfpanza"
+      ]
+    },
+    {
+      "id": "commandos",
+      "name": "Kommando-Mob",
+      "pts": 150,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "commandos",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "add-brennabuggy-25",
+        "add-waaghbike-25",
+        "add-buggy-25",
+        "add-commandos-25",
+        "add-stormboys-25",
+        "add-deffkopta-35"
+      ]
+    },
+    {
+      "id": "stormboyz",
+      "name": "Stormboyz-Mob",
+      "pts": 150,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "stormboys",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "add-brennabuggy-25",
+        "add-waaghbike-25",
+        "add-buggy-25",
+        "add-commandos-25",
+        "add-stormboys-25",
+        "add-deffkopta-35"
+      ]
+    },
+    {
+      "id": "mekwummen",
+      "name": "Mekwummen-Mob",
+      "pts": 125,
+      "sizes": [
+        {
+          "id": "n",
+          "label": "Normal",
+          "mult": 1,
+          "pts": 125
+        },
+        {
+          "id": "g",
+          "label": "Groß (×2)",
+          "mult": 2,
+          "pts": 225
+        },
+        {
+          "id": "r",
+          "label": "Riesig (×3)",
+          "mult": 3,
+          "pts": 325
+        }
+      ],
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "kanonen",
+          "count": 5
+        }
+      ],
+      "upgrades": [
+        "add-transportpanza-20",
+        "add-kanonen-20",
+        "add-flakpanza-30",
+        "add-boss-35-max1",
+        "add-oddboy-50-max1-req-kanonen"
+      ]
+    },
+    {
+      "id": "mek-stampfa",
+      "name": "Mek-Stampfa-Mob",
+      "pts": 250,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "stampfa",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "add-killa-bot-25",
+        "add-flakpanza-30",
+        "add-deff-dread-35",
+        "add-stampfa-60-max2",
+        "add-supa-stampfa-225-max1"
+      ]
+    },
+    {
+      "id": "mek-dread",
+      "name": "Mek-Dread-Mob",
+      "pts": 150,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "deff-dread",
+          "count": 1
+        },
+        {
+          "unit": "killa-bot",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "add-killa-bot-25",
+        "add-deff-dread-35",
+        "add-flakpanza-35"
+      ]
+    },
+    {
+      "id": "jagdbommas",
+      "name": "Jagdbomma-Staffel",
+      "pts": 175,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "jagdbomma",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "add-jagdbomma-50-max6"
+      ]
+    },
+    {
+      "id": "landing-craft",
+      "name": "Landungsschiff",
+      "pts": 225,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "landing-craft",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "gargant",
+      "name": "Gargant",
+      "pts": 575,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "gargant",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "great-gargant",
+      "name": "Großer Gargant",
+      "pts": 750,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "great-gargant",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "kroozer",
+      "name": "0–1 Kroozer",
+      "pts": 100,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "kill-kroozer",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "battlekroozer"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "add-boys-15",
+      "name": "Boys",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Boys",
+          "pts": 15,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "boys",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-transportpanza-20",
+      "name": "Transportpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Transportpanza",
+          "pts": 20,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "transportpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-killa-bot-25",
+      "name": "Killa Bot",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Killa Bot",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "killa-bot",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-kanonen-25",
+      "name": "Kanonänbatterie",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kanonänbatterie",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kanonen",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-commandos-25",
+      "name": "Kommandos",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kommandos",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "commandos",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-brennabuggy-25",
+      "name": "Brennabuggy",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Brennabuggy",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "brennabuggy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-waaghbike-25",
+      "name": "Waaghbikes",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Waaghbikes",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "waaghbike",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-buggy-25",
+      "name": "Buggy",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Buggy",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "buggy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-flakpanza-30",
+      "name": "Flakpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Flakpanza",
+          "pts": 30,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "flakpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-kampfpanza-30",
+      "name": "Kampfpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kampfpanza",
+          "pts": 30,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kampfpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-deff-dread-35",
+      "name": "Deff-Dread",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Deff-Dread",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "deff-dread",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-deffkopta-35",
+      "name": "Deffkopta",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Deffkopta",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "deffkopta",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-boys-grots-35",
+      "name": "Boys + Grots",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Boys + Grots (Paar)",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "boys",
+              "count": 1
+            },
+            {
+              "op": "add",
+              "unit": "grots",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-mega-transportpanza-100-max1",
+      "name": "Mega Transportpanza (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Mega Transportpanza",
+          "pts": 100,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "mega-transportpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-mega-wummenpanza-100-max2",
+      "name": "Mega Wummenpanza (0–2)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Mega Wummenpanza",
+          "pts": 100,
+          "perUnit": true,
+          "max": 2,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "mega-wummenpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-stampfa-60-max2",
+      "name": "Stampfa (0–2)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Stampfa",
+          "pts": 60,
+          "perUnit": true,
+          "max": 2,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "stampfa",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-boss-35-max2",
+      "name": "Bosse (0–2)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Bosse",
+          "pts": 35,
+          "perUnit": true,
+          "max": 2,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "boss",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-oddboy-50-max1-req-mega-transportpanza+mega-wummenpanza+kampfpanza+kanonen",
+      "name": "Oddboy (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Oddboy",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "requires": [
+            "mega-transportpanza",
+            "mega-wummenpanza",
+            "kampfpanza",
+            "kanonen"
+          ],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "oddboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-deffkopta-30",
+      "name": "Deffkopta",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Deffkopta",
+          "pts": 30,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "deffkopta",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-mega-wummenpanza-100-max1",
+      "name": "Mega Wummenpanza (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Mega Wummenpanza",
+          "pts": 100,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "mega-wummenpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-oddboy-50-max1-req-mega-wummenpanza+kampfpanza",
+      "name": "Oddboy (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Oddboy",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "requires": [
+            "mega-wummenpanza",
+            "kampfpanza"
+          ],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "oddboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-oddboy-50-max1-req-kampfpanza",
+      "name": "Oddboy (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Oddboy",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "requires": [
+            "kampfpanza"
+          ],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "oddboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-stormboys-25",
+      "name": "Stormboys",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Stormboys",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "stormboys",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-kanonen-20",
+      "name": "Kanonänbatterie",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kanonänbatterie",
+          "pts": 20,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kanonen",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-boss-35-max1",
+      "name": "Bosse (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Bosse",
+          "pts": 35,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "boss",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-oddboy-50-max1-req-kanonen",
+      "name": "Oddboy (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Oddboy",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "requires": [
+            "kanonen"
+          ],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "oddboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-supa-stampfa-225-max1",
+      "name": "Supa-Stampfa (0–1)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Supa-Stampfa",
+          "pts": 225,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "supa-stampfa",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-flakpanza-35",
+      "name": "Flakpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Flakpanza",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "flakpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-jagdbomma-50-max6",
+      "name": "Jagdbomma (0–6)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Jagdbomma",
+          "pts": 50,
+          "perUnit": true,
+          "max": 6,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "jagdbomma",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battlekroozer",
+      "name": "Schlachtkreuzer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kill-Kreuzer durch Schlachtkreuzer ersetzen",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "kill-kroozer",
+              "to": "battlekroozer",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fleet-share",
+      "from": [
+        "tag:fleet"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "kroozer-once",
+      "from": [
+        "kroozer"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
+  ]
+}

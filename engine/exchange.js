@@ -15,8 +15,9 @@ export function buildExport({ army, armyVersion, name, state, entries, total }) 
       formation: e.formation,
       name: entries && entries[i] ? entries[i].name : undefined,
       points: entries && entries[i] ? entries[i].pts : undefined,
+      ...(e.size ? { size: e.size } : {}),
       choices: e.choices,
-      upgrades: e.upgrades.map((u) => ({ upgrade: u.upgrade, variant: u.variant, chimeras: u.chimeras || 0 })),
+      upgrades: e.upgrades.map((u) => ({ upgrade: u.upgrade, variant: u.variant, chimeras: u.chimeras || 0, ...(u.count > 1 ? { count: u.count } : {}) })),
     })),
   };
 }
@@ -71,10 +72,12 @@ export function sanitize(obj, data) {
     const upgrades = [];
     for (const u of Array.isArray(f.upgrades) ? f.upgrades : []) {
       const def = u && upgradeById[u.upgrade];
-      if (def && def.variants.some((v) => v.id === u.variant)) upgrades.push({ upgrade: u.upgrade, variant: u.variant, chimeras: nonNegInt(u.chimeras) });
+      if (def && def.variants.some((v) => v.id === u.variant)) upgrades.push({ upgrade: u.upgrade, variant: u.variant, chimeras: nonNegInt(u.chimeras), count: Math.max(1, nonNegInt(u.count)) });
       else dropped++;
     }
-    formations.push({ uid: formations.length + 1, formation: f.formation, choices, upgrades });
+    const sizes = formationById[f.formation].sizes;
+    const size = sizes && sizes.some((s) => s.id === f.size) ? f.size : undefined;
+    formations.push({ uid: formations.length + 1, formation: f.formation, ...(size ? { size } : {}), choices, upgrades });
   }
   return { state: { nextUid: formations.length + 1, formations }, dropped, name: String(obj.name || "").slice(0, 40) };
 }

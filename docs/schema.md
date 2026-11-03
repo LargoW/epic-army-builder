@@ -84,3 +84,11 @@ where Rough Riders and units with Mounted / Jump Pack are not carriable. Each ch
 25 pts. Declared as data: `{ "op": "transport", "vehicle": "chimera", "capacity": 2,
 "carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["mounted", "jump-pack"] },
 "pts": 25 }`.
+
+## Erweiterungen (Space Marines, Orks)
+
+- utoTransport: kostenlose automatische Transporter (Rhinos); gekaufte Fahrzeuge (others: Einheit -> Kapazität) transportieren zuerst.
+- Formation sizes: [{id,label,mult,pts}]: Normal/Groß/Riesig. Einheitenzahlen und Variant-max werden mit mult multipliziert; Preis = pts der Größe. Zustand: entry.size.
+- Variante perUnit: true: beliebig viele (count im Zustand), Preis je Stück, optional max (skaliert mit der Größe) und equires (mindestens eine dieser Einheiten muss im Verband sein).
+- Variante perArmy: n: höchstens n-mal pro Armee.
+
