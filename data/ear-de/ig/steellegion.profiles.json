@@ -1575,7 +1575,7 @@
           ]
         },
         {
-          "name": "AC Underwing Raketen",
+          "name": "AC Unterflügelraketen",
           "modes": [
             {
               "firepower": "AT4+",
@@ -1610,7 +1610,7 @@
     "marauder": {
       "name": "Marauder-Bomber (B)",
       "type": "AC",
-      "speed": "Bomber (B) (B)",
+      "speed": "Bomber (B)",
       "armour": 4,
       "weapons": [
         {
@@ -1647,7 +1647,7 @@
           ]
         },
         {
-          "name": "AC Bombe Racks",
+          "name": "AC Bombenträger",
           "modes": [
             {
               "firepower": "3BP",
@@ -1662,7 +1662,7 @@
           ]
         },
         {
-          "name": "AC-Zwillings-Schwerbolterturm",
+          "name": "AC Zwillings-schwerer Bolter-Turm",
           "count": 2,
           "modes": [
             {
