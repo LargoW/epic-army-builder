@@ -2,7 +2,7 @@
 const CACHE = "eab-v1";
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "ui/app.js", "ui/style.css", "ui/messages.de.js",
-  "engine/engine.js", "data/index.json", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
+  "engine/engine.js", "engine/exchange.js", "data/index.json", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
 ];
 
 // Shell plus every army listed in the index, so a fresh install works offline right away.

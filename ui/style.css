@@ -48,6 +48,13 @@ body {
 .list-row.cur .pick { border-color: var(--gold); }
 .list-row .sub { display: block; font-size: .8rem; color: var(--mut); font-weight: 400; }
 .sheet-search { width: calc(100% - 28px); margin: 10px 14px 0; padding: 10px 12px; font: inherit; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: inherit; }
+.start { padding: 4px 0 24px; }
+.start h2 { margin: 8px 0 4px; }
+.start > p { color: var(--mut); margin: 0 0 8px; }
+.start .picker-section { padding: 10px 0 0; }
+body.no-list .actions, body.no-list .tabs { display: none; }
+.sheet-area { width: calc(100% - 28px); margin: 10px 14px 0; min-height: 110px; padding: 10px 12px; font: inherit; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: inherit; box-sizing: border-box; }
+.import-sum { margin: 0; padding: 10px 14px; border: 1px solid var(--gold); border-radius: 10px; }
 .bar-total { white-space: nowrap; color: var(--mut); }
 .bar-total strong { font-size: 1.5rem; color: var(--gold); }
 

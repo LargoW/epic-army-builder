@@ -3,19 +3,22 @@ import {
   summarize, validate, withProfiles, rosterProfiles, matches,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
+import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
 
 const LEGACY = "eab:ear-de/ig/steellegion";
 const index = await fetch("data/index.json").then((r) => r.json());
 const armyInfo = (id) => index.armies.find((a) => a.id === id);
 
 let base, data, formationById, upgradeById;
-async function useArmy(id) {
+async function loadArmy(id) {
   const [b, p] = await Promise.all([
     fetch(`data/${id}.json`).then((r) => r.json()),
     fetch(`data/${id}.profiles.json`).then((r) => r.json()),
   ]);
-  base = b;
-  data = withProfiles(b, p);
+  return { base: b, data: withProfiles(b, p) };
+}
+async function useArmy(id) {
+  ({ base, data } = await loadArmy(id));
   formationById = Object.fromEntries(data.formations.map((f) => [f.id, f]));
   upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
 }
@@ -56,7 +59,8 @@ const cur = () => lists.find((l) => l.id === currentId);
 
 const persist = () => {
   localStorage.setItem("eab:lists", JSON.stringify(lists));
-  localStorage.setItem("eab:current", currentId);
+  if (currentId) localStorage.setItem("eab:current", currentId);
+  else localStorage.removeItem("eab:current");
 };
 const save = () => {
   const l = cur();
@@ -91,11 +95,9 @@ async function createList(armyId, name, from) {
   save();
 }
 
-if (!cur()) {
-  if (lists.length) currentId = lists[0].id;
-  else { await useArmy(index.armies[0].id); await createList(index.armies[0].id); }
-}
-if (!state) await openList(currentId);
+// First visit: no default list. The start screen asks the user to pick an army.
+if (!cur() && lists.length) currentId = lists[0].id;
+if (cur()) await openList(currentId);
 
 function update(next) {
   state = next;
@@ -243,7 +245,28 @@ function renderOverview(entries, violations, total) {
   return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
+function armyButtons() {
+  return index.rulesets.map((r) => {
+    const byFaction = {};
+    index.armies.filter((a) => a.ruleset === r.id).forEach((a) => (byFaction[a.faction] ||= []).push(a));
+    return `<section class="picker-section"><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
+      `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
+  }).join("");
+}
+
+function renderStart() {
+  $("#total").textContent = 0;
+  $("#army-name").textContent = "Armee wählen";
+  $("#army-sub").textContent = "Tippe hier, um eine Armee zu wählen";
+  document.body.classList.add("no-list");
+  app.innerHTML = `<div class="start"><h2>Willkommen!</h2><p>Wähle eine Armee, um eine neue Liste zu beginnen. Die Armee kannst du später jederzeit oben über den Titel wechseln.</p>
+    ${armyButtons()}
+    <section class="picker-section"><h3>Liste erhalten?</h3><button class="pick" type="button" data-act="import"><span class="name">Liste importieren</span></button></section></div>`;
+}
+
 function render() {
+  if (!cur()) return renderStart();
+  document.body.classList.remove("no-list");
   const { total, entries } = summarize(data, state);
   const violations = validate(data, state);
   $("#total").textContent = total;
@@ -301,6 +324,10 @@ function openSort() {
     </div>`).join("")}</div></div>`);
 }
 
+function exchangeButtons() {
+  return `<button type="button" data-act="import">Liste importieren</button>`;
+}
+
 function openLists() {
   const rows = lists.map((l) => {
     const a = armyInfo(l.army);
@@ -318,11 +345,78 @@ function openLists() {
       `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">+ ${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
   }).join("");
   sheet("Meine Listen", `<section class="picker-section">${rows}</section>
+    <div class="sheet-pad">${exchangeButtons()}</div>
     <input class="sheet-search" type="search" data-act="search" placeholder="Neue Liste: Armee suchen …" aria-label="Armee suchen">${rs}`);
+}
+
+// --- Import / export ---
+const IMPORT_ERRORS = {
+  empty: "Nichts zum Importieren gefunden.",
+  unreadable: "Das ist keine gültige Liste.",
+  format: "Das ist keine gültige Liste.",
+  version: "Die Liste stammt aus einer neueren Version der App. Bitte die App aktualisieren.",
+  army: "Diese Armee gibt es in dieser App nicht.",
+};
+let pendingImport = null;
+
+function currentExport() {
+  const { total, entries } = summarize(data, state);
+  return buildExport({ army: cur().army, armyVersion: base.version, name: cur().name, state, entries, total });
+}
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9äöüß]+/g, "-").replace(/^-|-$/g, "") || "liste";
+
+function shareLink() {
+  const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
+  const { total } = summarize(data, state);
+  if (navigator.share) return navigator.share({ title: cur().name, text: `${cur().name} – ${total} Pkt.`, url }).catch(() => {});
+  return navigator.clipboard.writeText(url).then(() => toast("Link kopiert"), () => toast("Kopieren nicht möglich"));
+}
+
+function exportFile() {
+  const file = new File([JSON.stringify(currentExport(), null, 2)], `${slug(cur().name)}.json`, { type: "application/json" });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({ files: [file], title: cur().name }).catch(() => {});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(file);
+  a.download = file.name;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  toast("Datei gespeichert");
+}
+
+function openImport(msg) {
+  sheet("Liste importieren", `<div class="sheet-pad">
+    ${msg ? `<p class="problems">${esc(msg)}</p>` : ""}
+    <label>Datei auswählen<input type="file" accept=".json,application/json" data-act="import-file"></label>
+    <textarea class="sheet-area" id="import-text" placeholder="Oder Link / Listentext hier einfügen" aria-label="Link oder Listentext"></textarea>
+    <button class="primary" type="button" data-act="import-check">Prüfen</button></div>`);
+}
+
+async function previewImport(text) {
+  try {
+    const obj = parseInput(text);
+    if (!obj || obj.format !== "epic-army-builder") throw new Error("format");
+    if (!armyInfo(obj.army)) throw new Error("army");
+    const { data: d, base: b } = await loadArmy(obj.army);
+    const r = sanitize(obj, d);
+    const total = summarize(d, r.state).total;
+    pendingImport = { army: obj.army, name: r.name, state: r.state };
+    const notes = [];
+    if (r.dropped) notes.push(`${r.dropped} Einträge passen nicht zu dieser Armeeversion und wurden ausgelassen.`);
+    if (obj.armyVersion && obj.armyVersion !== b.version) notes.push(`Erstellt mit Version ${obj.armyVersion}, aktuell ist ${b.version}.`);
+    sheet("Liste importieren", `<div class="sheet-pad">
+      <div class="import-sum"><b>${esc(r.name || newName(obj.army))}</b><br>${esc(b.name)} · v${esc(b.version)}<br>${r.state.formations.length} Verbände · ${total} Pkt.</div>
+      ${notes.map((n) => `<p class="problems">${esc(n)}</p>`).join("")}
+      <button class="primary" type="button" data-act="import-confirm">Als neue Liste hinzufügen</button></div>`);
+  } catch (err) {
+    openImport(IMPORT_ERRORS[err.message] || IMPORT_ERRORS.unreadable);
+  }
 }
 
 function openMore() {
   sheet("Menü", `<div class="sheet-pad">
+    <button type="button" data-act="share">Liste teilen (Link)</button>
+    <button type="button" data-act="export-file">Als Datei exportieren</button>
+    ${exchangeButtons()}
     <button type="button" data-act="copy">Liste als Text kopieren</button>
     <button type="button" data-act="theme-toggle">Design wechseln (${currentTheme() === "dark" ? "hell" : "dunkel"})</button>
     <button type="button" class="danger" data-act="reset">Alle Verbände entfernen</button>
@@ -367,10 +461,29 @@ document.addEventListener("click", async (e) => {
       lists = lists.filter((l) => l !== target);
       if (target.id === currentId) {
         if (lists.length) await openList(lists[0].id);
-        else await createList(index.armies[0].id);
+        else { currentId = null; state = null; persist(); }
       } else persist();
       render();
       return openLists();
+    case "share":
+      dlg.close();
+      return shareLink();
+    case "export-file":
+      dlg.close();
+      return exportFile();
+    case "import":
+      return openImport();
+    case "import-check":
+      return previewImport($("#import-text").value);
+    case "import-confirm": {
+      const p = pendingImport;
+      pendingImport = null;
+      await createList(p.army, p.name || undefined, p.state);
+      view = "build";
+      dlg.close();
+      render();
+      return toast("Liste importiert");
+    }
     case "remove":
       e.preventDefault();
       return update(removeFormation(state, Number(el.dataset.uid)));
@@ -415,6 +528,11 @@ document.addEventListener("input", (e) => {
 
 document.addEventListener("change", (e) => {
   const el = e.target;
+  if (el.dataset.act === "import-file") {
+    const f = el.files && el.files[0];
+    if (f) f.text().then(previewImport);
+    return;
+  }
   const uid = Number(el.dataset.uid);
   const entry = state.formations.find((x) => x.uid === uid);
   if (!el.dataset.act || !entry) return;
@@ -448,5 +566,15 @@ app.addEventListener("toggle", (e) => {
 }, true);
 
 render();
+
+// A share link opens the import preview directly (also when the app is already running).
+function checkHash() {
+  if (!location.hash.startsWith("#l=")) return;
+  const h = location.hash;
+  history.replaceState(null, "", location.pathname + location.search);
+  previewImport(h);
+}
+checkHash();
+addEventListener("hashchange", checkHash);
 
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
