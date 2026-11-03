@@ -1,11 +1,11 @@
 {
   "schema": 0,
-  "ruleset": "netea",
+  "ruleset": "euk",
   "lang": "en",
-  "id": "netea/chaos/ts-epicuk",
+  "id": "euk/chaos/ts",
   "name": "Thousand Sons",
   "faction": "Chaos",
-  "version": "Epic UK v280726",
+  "version": "v280726",
   "source": {
     "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_ts_EPICUK.json",
     "by": "Kyussinchains",
@@ -17,7 +17,7 @@
   "sections": [
     {
       "id": "core",
-      "name": "CORE",
+      "name": "Core",
       "formations": [
         "501-thousand-sons-retinue",
         "502-tzaangor-herd",
@@ -26,7 +26,7 @@
     },
     {
       "id": "elite",
-      "name": "ELITE",
+      "name": "Elite",
       "formations": [
         "503-terminators",
         "507-spawn-horde"
@@ -34,7 +34,7 @@
     },
     {
       "id": "support",
-      "name": "SUPPORT",
+      "name": "Support",
       "formations": [
         "506-defiler-pack",
         "508-disc-riders",
@@ -44,7 +44,7 @@
     },
     {
       "id": "chaos-titans",
-      "name": "CHAOS TITANS",
+      "name": "Chaos Titans",
       "formations": [
         "520-warplord-titan",
         "521-mutator-titan",

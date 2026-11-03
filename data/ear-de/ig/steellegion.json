@@ -14,7 +14,7 @@
   ],
   "units": {
     "supreme-commander": { "name": "Oberbefehlshaber der Stahllegion", "from": "IG.json",     "type": "INF" },
-        "commander": { "name": "Befehlshaber der Stahllegion", "from": "IG.json", "type": "INF" },
+    "commander": { "name": "Befehlshaber der Stahllegion", "from": "IG.json", "type": "INF" },
     "commissar": { "name": "Kommissar", "from": "IG.json", "type": "CH" },
     "infantry": { "name": "Infanterie", "from": "IG.json", "type": "INF" },
     "ogryn": { "name": "Ogryns", "from": "IG.json", "type": "INF" },
