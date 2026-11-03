@@ -1,0 +1,855 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/raven-guard",
+  "name": "Raven Guard",
+  "faction": "Space Marines",
+  "version": "NetEA 2026-02-04",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_Raven_Guard_NETEA.json",
+    "by": "Dave, updated 2026-02-07 by antitimm",
+    "notes": [
+      "Up to a third of the points available may be spent on Imperial Navy Aircraft and Titan Legion Battlegroup formations."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "raven-guard-detachments",
+      "name": "Raven Guard Detachments",
+      "formations": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical"
+      ]
+    },
+    {
+      "id": "raven-guard-elite-detachments",
+      "name": "Raven Guard Elite Detachments",
+      "formations": [
+        "510-sternguard-veteran",
+        "511-terminator",
+        "512-vanguard-assault-veteran",
+        "513-vanguard-veteran"
+      ]
+    },
+    {
+      "id": "raven-guard-support-detachments",
+      "name": "Raven Guard Support Detachments",
+      "formations": [
+        "520-bike",
+        "521-land-speeder",
+        "522-strike-cruiser"
+      ]
+    },
+    {
+      "id": "raven-guard-aircraft",
+      "name": "Raven Guard Aircraft",
+      "formations": [
+        "532-storm-talon-squadron",
+        "530-storm-eagle",
+        "531-thunderhawk-gunship"
+      ]
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "name": "Imperial Navy Aircraft",
+      "formations": [
+        "540-marauder-squadron",
+        "541-thunderbolt-squadron"
+      ]
+    },
+    {
+      "id": "titan-legion-battlegroups",
+      "name": "Titan Legion Battlegroups",
+      "formations": [
+        "550-warhound",
+        "551-warhound-pack"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-assault",
+      "name": "Assault",
+      "pts": 175,
+      "tags": [
+        "raven-guard-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon"
+      ],
+      "_unitsText": "Four Assault units"
+    },
+    {
+      "id": "501-devastator",
+      "name": "Devastator",
+      "pts": 250,
+      "tags": [
+        "raven-guard-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon",
+        "8-hunter",
+        "9-razorback",
+        "10-rhino"
+      ],
+      "_unitsText": "Four Devastator units"
+    },
+    {
+      "id": "502-scout",
+      "name": "Scout",
+      "pts": 150,
+      "tags": [
+        "raven-guard-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "17-sniper",
+        "19-land-speeder-storm",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon"
+      ],
+      "_unitsText": "Four Scout units"
+    },
+    {
+      "id": "503-tactical",
+      "name": "Tactical",
+      "pts": 200,
+      "tags": [
+        "raven-guard-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon",
+        "8-hunter",
+        "9-razorback",
+        "10-rhino"
+      ],
+      "_unitsText": "Four Tactical units"
+    },
+    {
+      "id": "510-sternguard-veteran",
+      "name": "Sternguard Veteran",
+      "pts": 250,
+      "tags": [
+        "raven-guard-elite-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon",
+        "8-hunter",
+        "9-razorback",
+        "10-rhino",
+        "11-ambush"
+      ],
+      "_unitsText": "Four Sternguard Veteran units"
+    },
+    {
+      "id": "511-terminator",
+      "name": "Terminator",
+      "pts": 350,
+      "tags": [
+        "raven-guard-elite-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian"
+      ],
+      "_unitsText": "Four Terminator units"
+    },
+    {
+      "id": "512-vanguard-assault-veteran",
+      "name": "Vanguard Assault Veteran",
+      "pts": 250,
+      "tags": [
+        "raven-guard-elite-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon"
+      ],
+      "_unitsText": "Four Vanguard Assault Veteran units"
+    },
+    {
+      "id": "513-vanguard-veteran",
+      "name": "Vanguard Veteran",
+      "pts": 250,
+      "tags": [
+        "raven-guard-elite-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon",
+        "8-hunter",
+        "9-razorback",
+        "10-rhino"
+      ],
+      "_unitsText": "Four Vanguard Veteran units"
+    },
+    {
+      "id": "520-bike",
+      "name": "Bike",
+      "pts": 200,
+      "tags": [
+        "raven-guard-support-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "12-bike",
+        "13-attack-bike"
+      ]
+    },
+    {
+      "id": "521-land-speeder",
+      "name": "Land Speeder",
+      "pts": 25,
+      "tags": [
+        "raven-guard-support-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian",
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "14-land-speeder-tempest",
+        "7-land-speeder-typhoon",
+        "15-planetfall"
+      ]
+    },
+    {
+      "id": "522-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 200,
+      "tags": [
+        "raven-guard-support-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-battle-barge"
+      ],
+      "_unitsText": "One Strike Cruiser"
+    },
+    {
+      "id": "532-storm-talon-squadron",
+      "name": "Storm Talon Squadron",
+      "pts": 200,
+      "tags": [
+        "raven-guard-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Two Storm Talons"
+    },
+    {
+      "id": "530-storm-eagle",
+      "name": "Storm Eagle",
+      "pts": 150,
+      "tags": [
+        "raven-guard-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "One Storm Eagle"
+    },
+    {
+      "id": "531-thunderhawk-gunship",
+      "name": "Thunderhawk Gunship",
+      "pts": 200,
+      "tags": [
+        "raven-guard-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "One Thunderhawk Gunship"
+    },
+    {
+      "id": "540-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "541-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 175,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    },
+    {
+      "id": "550-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Class Titan"
+    },
+    {
+      "id": "551-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Class Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-razorback",
+      "name": "Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-rhino",
+      "name": "Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhino",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-ambush",
+      "name": "Ambush",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ambush",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-bike",
+      "name": "Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bike",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-attack-bike",
+      "name": "Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-land-speeder-tempest",
+      "name": "Land Speeder Tempest",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tempest",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-planetfall",
+      "name": "Planetfall",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Planetfall",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Barge",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-sniper",
+      "name": "Sniper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-land-speeder-storm",
+      "name": "Land Speeder Storm",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Storm",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-multi-melta-attack-bike",
+      "name": "Multi-melta Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Multi-melta Attack Bike",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "terminator",
+      "from": [
+        "511-terminator"
+      ],
+      "max": 1
+    },
+    {
+      "id": "strike-cruiser",
+      "from": [
+        "522-strike-cruiser"
+      ],
+      "max": 1
+    },
+    {
+      "id": "elite-detachment",
+      "from": [
+        "510-sternguard-veteran",
+        "511-terminator",
+        "512-vanguard-assault-veteran",
+        "513-vanguard-veteran"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical"
+      ],
+      "_name2": "Detachment"
+    },
+    {
+      "id": "support-detachment",
+      "from": [
+        "520-bike",
+        "521-land-speeder",
+        "522-strike-cruiser"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical"
+      ],
+      "_name2": "Detachment"
+    },
+    {
+      "id": "aircraft",
+      "from": [
+        "530-storm-eagle",
+        "531-thunderhawk-gunship"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "511-terminator",
+        "512-vanguard-assault-veteran",
+        "513-vanguard-veteran",
+        "520-bike",
+        "521-land-speeder",
+        "522-strike-cruiser"
+      ],
+      "_name2": "Detachment, Elite Detachment or Support Detachment"
+    },
+    {
+      "id": "imperial-ally-and-ravenguard-aircraft-formations",
+      "from": [
+        "530-storm-eagle",
+        "531-thunderhawk-gunship",
+        "532-storm-talon-squadron",
+        "540-marauder-squadron",
+        "541-thunderbolt-squadron",
+        "550-warhound",
+        "551-warhound-pack"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "1-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "1-supreme-commander",
+        "2-captain",
+        "3-chaplain",
+        "4-librarian"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "511-terminator",
+        "512-vanguard-assault-veteran",
+        "513-vanguard-veteran",
+        "520-bike",
+        "521-land-speeder"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon",
+        "14-land-speeder-tempest"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "521-land-speeder"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "5-land-speeder",
+        "6-land-speeder-tornado",
+        "7-land-speeder-typhoon"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "500-assault",
+        "501-devastator",
+        "502-scout",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "512-vanguard-assault-veteran",
+        "513-vanguard-veteran"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "8-hunter"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-devastator",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "513-vanguard-veteran"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "9-razorback"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "501-devastator",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "513-vanguard-veteran"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "10-rhino"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-devastator",
+        "503-tactical",
+        "510-sternguard-veteran",
+        "513-vanguard-veteran"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "11-ambush"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-sternguard-veteran"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "13-attack-bike",
+        "12-bike",
+        "20-multi-melta-attack-bike"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "520-bike"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "15-planetfall"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-land-speeder"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "16-battle-barge"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-strike-cruiser"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "17-sniper"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "502-scout"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "19-land-speeder-storm"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "502-scout"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

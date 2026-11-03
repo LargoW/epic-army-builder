@@ -1,0 +1,1257 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/minervan",
+  "name": "Minervan Tank Legion",
+  "faction": "Astra Militarum",
+  "version": "NetEA Tournament Pack",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\IG_minervan_NETEA.json",
+    "by": "Iron Bloke, Parintachin, Kyussinchains, last update 2026-08-10 by Abetillo",
+    "notes": [
+      "One Commissar character may be added per five hundred points, or part thereof"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "companies",
+      "name": "COMPANIES",
+      "formations": [
+        "517-artillery-company",
+        "516-super-heavy-tank-company",
+        "515-tank-company",
+        "514-tank-demi-company"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "502-artillery-battery",
+        "511-assault-gun-platoon",
+        "512-basilisk-battery",
+        "509-deathstrike-missile-battery",
+        "527-griffon-battery",
+        "528-hellhound-platoon",
+        "529-destroyer-squadron",
+        "506-flak-battery",
+        "505-mechanized-platoon",
+        "504-salamander-scout-platoon",
+        "508-storm-trooper-platoon",
+        "503-super-heavy-tank-platoon",
+        "501-tank-platoon",
+        "507-vulture-squadron"
+      ]
+    },
+    {
+      "id": "imperial-navy-assets",
+      "name": "IMPERIAL NAVY ASSETS",
+      "formations": [
+        "520-marauder-bombers",
+        "519-thunderbolt-fighters",
+        "510-orbital-support"
+      ]
+    },
+    {
+      "id": "titan-legion-battlegroups",
+      "name": "TITAN LEGION BATTLEGROUPS",
+      "formations": [
+        "523-reaver",
+        "524-warhound",
+        "526-warhound-pack",
+        "522-warlord"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "517-artillery-company",
+      "name": "Artillery Company",
+      "pts": 550,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "51-supreme-commander",
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra",
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds",
+        "55-griffon-battery-3x-griffons",
+        "56-salamander-command-vehicle",
+        "57-tank-squadron-3x-russ-variants",
+        "61-leman-russ-surcharge-for-tank-squadron",
+        "62-demolisher-surcharge-for-tank-squadron",
+        "63-conqueror-surcharge-for-tank-squadron",
+        "64-exterminator-surcharge-for-tank-squadron"
+      ]
+    },
+    {
+      "id": "516-super-heavy-tank-company",
+      "name": "Super-heavy Tank Company",
+      "pts": 500,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "51-supreme-commander",
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra",
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds",
+        "55-griffon-battery-3x-griffons",
+        "56-salamander-command-vehicle",
+        "57-tank-squadron-3x-russ-variants",
+        "61-leman-russ-surcharge-for-tank-squadron",
+        "62-demolisher-surcharge-for-tank-squadron",
+        "63-conqueror-surcharge-for-tank-squadron",
+        "64-exterminator-surcharge-for-tank-squadron"
+      ]
+    },
+    {
+      "id": "515-tank-company",
+      "name": "Tank Company",
+      "pts": 425,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "51-supreme-commander",
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra",
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds",
+        "55-griffon-battery-3x-griffons",
+        "56-salamander-command-vehicle",
+        "57-tank-squadron-3x-russ-variants",
+        "61-leman-russ-surcharge-for-tank-squadron",
+        "62-demolisher-surcharge-for-tank-squadron",
+        "63-conqueror-surcharge-for-tank-squadron",
+        "64-exterminator-surcharge-for-tank-squadron"
+      ]
+    },
+    {
+      "id": "514-tank-demi-company",
+      "name": "Tank Demi-Company",
+      "pts": 280,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "51-supreme-commander",
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra",
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds",
+        "55-griffon-battery-3x-griffons",
+        "56-salamander-command-vehicle",
+        "57-tank-squadron-3x-russ-variants",
+        "61-leman-russ-surcharge-for-tank-squadron",
+        "62-demolisher-surcharge-for-tank-squadron",
+        "63-conqueror-surcharge-for-tank-squadron",
+        "64-exterminator-surcharge-for-tank-squadron"
+      ]
+    },
+    {
+      "id": "502-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ]
+    },
+    {
+      "id": "511-assault-gun-platoon",
+      "name": "Assault Gun Platoon",
+      "pts": 150,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "3x Medusa"
+    },
+    {
+      "id": "512-basilisk-battery",
+      "name": "Basilisk Battery",
+      "pts": 225,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "3x Basilisk"
+    },
+    {
+      "id": "509-deathstrike-missile-battery",
+      "name": "Deathstrike Missile Battery",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "2x Deathstrike Missile Launcher"
+    },
+    {
+      "id": "527-griffon-battery",
+      "name": "Griffon Battery",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "6x Griffon"
+    },
+    {
+      "id": "528-hellhound-platoon",
+      "name": "Hellhound platoon",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "6x Hellhound"
+    },
+    {
+      "id": "529-destroyer-squadron",
+      "name": "Destroyer squadron",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "3x Destroyer Tank hunter"
+    },
+    {
+      "id": "506-flak-battery",
+      "name": "Flak Battery",
+      "pts": 150,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "3x Hydra"
+    },
+    {
+      "id": "505-mechanized-platoon",
+      "name": "Mechanized Platoon",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "71-salamander-command-vehicle"
+      ],
+      "_unitsText": "10x Infantry, 5x Chimera"
+    },
+    {
+      "id": "504-salamander-scout-platoon",
+      "name": "Salamander Scout Platoon",
+      "pts": 100,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "71-salamander-command-vehicle"
+      ],
+      "_unitsText": "3x Salamanders"
+    },
+    {
+      "id": "508-storm-trooper-platoon",
+      "name": "Storm Trooper Platoon",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar",
+        "70-valkyrie-transport",
+        "72-chimera-transport"
+      ],
+      "_unitsText": "8x Storm Troopers"
+    },
+    {
+      "id": "503-super-heavy-tank-platoon",
+      "name": "Super-Heavy Tank Platoon",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ]
+    },
+    {
+      "id": "501-tank-platoon",
+      "name": "Tank Platoon",
+      "pts": 280,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ]
+    },
+    {
+      "id": "507-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-commissar"
+      ],
+      "_unitsText": "4x Vultures"
+    },
+    {
+      "id": "520-marauder-bombers",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-assets"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2x Marauders"
+    },
+    {
+      "id": "519-thunderbolt-fighters",
+      "name": "Thunderbolt Fighters",
+      "pts": 150,
+      "tags": [
+        "imperial-navy-assets"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2x Thunderbolts"
+    },
+    {
+      "id": "510-orbital-support",
+      "name": "Orbital Support",
+      "pts": 150,
+      "tags": [
+        "imperial-navy-assets"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "523-reaver",
+      "name": "Reaver",
+      "pts": 650,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Reaver Class Titan"
+    },
+    {
+      "id": "524-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Class Titan"
+    },
+    {
+      "id": "526-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Class Titans"
+    },
+    {
+      "id": "522-warlord",
+      "name": "Warlord",
+      "pts": 825,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warlord Class Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "14-commissar",
+      "name": "Commissar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Commissar",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-basilisk",
+      "name": "Basilisk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Basilisk",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-manticore",
+      "name": "Manticore",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Manticore",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-baneblade",
+      "name": "Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baneblade",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-shadowsword",
+      "name": "Shadowsword",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shadowsword",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-stormhammer",
+      "name": "Stormhammer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormhammer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-stormblade",
+      "name": "Stormblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormblade",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-stormsword",
+      "name": "Stormsword",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormsword",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-thunderer",
+      "name": "Thunderer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-conqueror",
+      "name": "Conqueror",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Conqueror",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-exterminator",
+      "name": "Exterminator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exterminator",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-demolisher",
+      "name": "Demolisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Demolisher",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-leman-russ",
+      "name": "Leman Russ",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Leman Russ",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-executioner",
+      "name": "Executioner",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Executioner",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-vanquisher",
+      "name": "Vanquisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vanquisher",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-destroyer",
+      "name": "Destroyer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Destroyer",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-lunar-class-cruiser",
+      "name": "Lunar Class Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lunar Class Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-emperor-class-battleship",
+      "name": "Emperor Class Battleship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperor Class Battleship",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-3x-bombard",
+      "name": "3x Bombard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3x Bombard",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-3x-manticore",
+      "name": "3x Manticore",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3x Manticore",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "81-thunderer",
+      "name": "Thunderer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "82-conqueror",
+      "name": "Conqueror",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Conqueror",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "83-exterminator",
+      "name": "Exterminator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exterminator",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "84-demolisher",
+      "name": "Demolisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Demolisher",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "85-leman-russ",
+      "name": "Leman Russ",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Leman Russ",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "86-executioner",
+      "name": "Executioner",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Executioner",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "87-vanquisher",
+      "name": "Vanquisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vanquisher",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "88-destroyer",
+      "name": "Destroyer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Destroyer",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-flak-support-hydra",
+      "name": "Flak Support (Hydra)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flak Support (Hydra)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-flak-support-2-hydra",
+      "name": "Flak Support (2 Hydra)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flak Support (2 Hydra)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-hellhound-squadron-1x-hellhounds",
+      "name": "Hellhound Squadron (1x Hellhounds)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hellhound Squadron (1x Hellhounds)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-hellhound-squadron-2x-hellhounds",
+      "name": "Hellhound Squadron (2x Hellhounds)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hellhound Squadron (2x Hellhounds)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-hellhound-squadron-3x-hellhounds",
+      "name": "Hellhound Squadron (3x Hellhounds)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hellhound Squadron (3x Hellhounds)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-griffon-battery-3x-griffons",
+      "name": "Griffon Battery (3x Griffons)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Griffon Battery (3x Griffons)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-salamander-command-vehicle",
+      "name": "Salamander Command Vehicle",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Salamander Command Vehicle",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-tank-squadron-3x-russ-variants",
+      "name": "Tank Squadron (3x Russ Variants)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tank Squadron (3x Russ Variants)",
+          "pts": 140,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-leman-russ-surcharge-for-tank-squadron",
+      "name": "(Leman Russ Surcharge for Tank Squadron)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Leman Russ Surcharge for Tank Squadron)",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-demolisher-surcharge-for-tank-squadron",
+      "name": "(Demolisher Surcharge for Tank Squadron)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Demolisher Surcharge for Tank Squadron)",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-conqueror-surcharge-for-tank-squadron",
+      "name": "(Conqueror Surcharge for Tank Squadron)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Conqueror Surcharge for Tank Squadron)",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-exterminator-surcharge-for-tank-squadron",
+      "name": "(Exterminator Surcharge for Tank Squadron)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Exterminator Surcharge for Tank Squadron)",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "70-valkyrie-transport",
+      "name": "Valkyrie Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Valkyrie Transport",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-salamander-command-vehicle",
+      "name": "Salamander Command Vehicle",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Salamander Command Vehicle",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-chimera-transport",
+      "name": "Chimera Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chimera Transport",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "titans-navy",
+      "from": [
+        "522-warlord",
+        "523-reaver",
+        "526-warhound-pack",
+        "524-warhound",
+        "519-thunderbolt-fighters",
+        "520-marauder-bombers",
+        "510-orbital-support"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "501-tank-platoon",
+        "502-artillery-battery",
+        "503-super-heavy-tank-platoon",
+        "504-salamander-scout-platoon",
+        "505-mechanized-platoon",
+        "506-flak-battery",
+        "507-vulture-squadron",
+        "508-storm-trooper-platoon",
+        "509-deathstrike-missile-battery",
+        "511-assault-gun-platoon",
+        "512-basilisk-battery",
+        "527-griffon-battery",
+        "528-hellhound-platoon",
+        "529-destroyer-squadron"
+      ],
+      "max": 2,
+      "forEach": [
+        "514-tank-demi-company",
+        "515-tank-company",
+        "516-super-heavy-tank-company",
+        "517-artillery-company"
+      ],
+      "_name2": "Company"
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "510-orbital-support"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "509-deathstrike-missile-battery"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "11-basilisk",
+        "13-manticore"
+      ],
+      "max": 9,
+      "min": 9,
+      "appliesTo": [
+        "517-artillery-company"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "15-baneblade",
+        "16-shadowsword",
+        "17-stormhammer",
+        "18-stormblade",
+        "19-stormsword"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "516-super-heavy-tank-company"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "21-thunderer",
+        "22-conqueror",
+        "23-exterminator",
+        "24-demolisher",
+        "25-leman-russ",
+        "26-executioner",
+        "27-vanquisher",
+        "28-destroyer"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "514-tank-demi-company"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "21-thunderer",
+        "22-conqueror",
+        "23-exterminator",
+        "24-demolisher",
+        "25-leman-russ",
+        "26-executioner",
+        "27-vanquisher",
+        "28-destroyer"
+      ],
+      "max": 10,
+      "min": 10,
+      "appliesTo": [
+        "515-tank-company"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "30-lunar-class-cruiser",
+        "31-emperor-class-battleship"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "510-orbital-support"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "15-baneblade",
+        "16-shadowsword",
+        "17-stormhammer",
+        "18-stormblade",
+        "19-stormsword"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "503-super-heavy-tank-platoon"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "42-3x-bombard",
+        "43-3x-manticore"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-artillery-battery"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "81-thunderer",
+        "82-conqueror",
+        "83-exterminator",
+        "84-demolisher",
+        "85-leman-russ",
+        "86-executioner",
+        "87-vanquisher",
+        "88-destroyer"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "501-tank-platoon"
+      ]
+    },
+    {
+      "id": "rare-variants",
+      "from": [
+        "26-executioner",
+        "27-vanquisher",
+        "28-destroyer"
+      ],
+      "max": 2
+    },
+    {
+      "id": "rare-variants",
+      "from": [
+        "86-executioner",
+        "87-vanquisher",
+        "88-destroyer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "51-supreme-commander",
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra",
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds",
+        "55-griffon-battery-3x-griffons",
+        "56-salamander-command-vehicle",
+        "57-tank-squadron-3x-russ-variants"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "51-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "14-commissar"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "52-flak-support-hydra",
+        "53-flak-support-2-hydra"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "54-hellhound-squadron-1x-hellhounds",
+        "58-hellhound-squadron-2x-hellhounds",
+        "59-hellhound-squadron-3x-hellhounds"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "55-griffon-battery-3x-griffons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "56-salamander-command-vehicle"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "57-tank-squadron-3x-russ-variants"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "61-leman-russ-surcharge-for-tank-squadron",
+        "62-demolisher-surcharge-for-tank-squadron",
+        "63-conqueror-surcharge-for-tank-squadron",
+        "64-exterminator-surcharge-for-tank-squadron"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "70-valkyrie-transport",
+        "72-chimera-transport"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "71-salamander-command-vehicle"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

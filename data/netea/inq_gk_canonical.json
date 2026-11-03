@@ -1,0 +1,878 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/inq/gk",
+  "name": "Grey Knights",
+  "faction": "Inquisition",
+  "version": "V1.3.2",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\INQ_gk_NETEA.json",
+    "by": "freefall",
+    "notes": [
+      "If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
+      "Drop pods require space craft.",
+      "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights.",
+      "Stormraven may carry a Dreadnought or Dreadknight in addition to infantry."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "grey-knights-core-formations",
+      "name": "GREY KNIGHTS CORE FORMATIONS",
+      "formations": [
+        "500-grey-knights-strike-team",
+        "501-grey-knights-terminators",
+        "502-inquisitorial-warband"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "600-grey-knights-interceptor-squad",
+        "601-grey-knights-purgation-squad",
+        "602-grey-knights-land-raider",
+        "603-grey-knights-thunderhawk-gunship",
+        "604-grey-knights-thunderhawk-transporters",
+        "605-grey-knights-landing-craft",
+        "606-grey-knights-strike-cruiser",
+        "607-stormraven-flight"
+      ]
+    },
+    {
+      "id": "restricted-support-formations",
+      "name": "RESTRICTED SUPPORT FORMATIONS",
+      "formations": [
+        "700-stormtalons",
+        "701-thunderhawk-bomber",
+        "702-psi-pattern-warlord-titan",
+        "703-reaver",
+        "704-warhound-pack",
+        "705-warhound"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-grey-knights-strike-team",
+      "name": "Grey Knights Strike Team",
+      "pts": 300,
+      "tags": [
+        "grey-knights-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion",
+        "5-grey-knights-dreadnought",
+        "6-nemesis-dreadknight",
+        "7-1-hunter",
+        "8-2-hunters",
+        "14-transport-drop-pod",
+        "15-transport-rhino",
+        "16-transport-razorback",
+        "17-transport-stormraven"
+      ],
+      "_unitsText": "6 Grey Knights plus transports"
+    },
+    {
+      "id": "501-grey-knights-terminators",
+      "name": "Grey Knights Terminators",
+      "pts": 350,
+      "tags": [
+        "grey-knights-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion",
+        "5-grey-knights-dreadnought",
+        "6-nemesis-dreadknight",
+        "17-transport-stormraven",
+        "18-transport-land-raider",
+        "19-transport-land-raider-crusader",
+        "20-transport-land-raider-redeemer"
+      ],
+      "_unitsText": "4 Grey Knights Terminators"
+    },
+    {
+      "id": "502-inquisitorial-warband",
+      "name": "Inquisitorial Warband",
+      "pts": 175,
+      "tags": [
+        "grey-knights-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-warrior-acolyte",
+        "10-death-cult-assassins",
+        "11-imperial-servitors",
+        "12-psyker-battle-squad",
+        "13-vindicare-assasin",
+        "21-aquila-lander-and-3-arvus-lighters",
+        "22-transport-4-chimeras"
+      ],
+      "_unitsText": "Inqusitor"
+    },
+    {
+      "id": "600-grey-knights-interceptor-squad",
+      "name": "Grey Knights Interceptor Squad",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion",
+        "5-grey-knights-dreadnought",
+        "6-nemesis-dreadknight",
+        "17-transport-stormraven"
+      ],
+      "_unitsText": "4 Grey Knights Interceptor"
+    },
+    {
+      "id": "601-grey-knights-purgation-squad",
+      "name": "Grey Knights Purgation Squad",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion",
+        "5-grey-knights-dreadnought",
+        "6-nemesis-dreadknight",
+        "7-1-hunter",
+        "8-2-hunters",
+        "14-transport-drop-pod",
+        "15-transport-rhino",
+        "16-transport-razorback",
+        "17-transport-stormraven",
+        "18-transport-land-raider",
+        "19-transport-land-raider-crusader",
+        "20-transport-land-raider-redeemer"
+      ],
+      "_unitsText": "4 Grey Knights Purgation plus transports"
+    },
+    {
+      "id": "602-grey-knights-land-raider",
+      "name": "Grey Knights Land Raider",
+      "pts": 50,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion",
+        "23-land-raider",
+        "24-land-raider-crusader",
+        "25-land-raider-redeemer"
+      ]
+    },
+    {
+      "id": "603-grey-knights-thunderhawk-gunship",
+      "name": "Grey Knights Thunderhawk Gunship",
+      "pts": 225,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "604-grey-knights-thunderhawk-transporters",
+      "name": "Grey Knights Thunderhawk Transporters",
+      "pts": 75,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "26-grey-knights-thunderhawk-transport"
+      ]
+    },
+    {
+      "id": "605-grey-knights-landing-craft",
+      "name": "Grey Knights Landing Craft",
+      "pts": 350,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Grey Knigths Landing Craft"
+    },
+    {
+      "id": "606-grey-knights-strike-cruiser",
+      "name": "Grey Knights Strike Cruiser",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Grey Knights Strike Cruiser"
+    },
+    {
+      "id": "607-stormraven-flight",
+      "name": "Stormraven Flight",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion"
+      ],
+      "_unitsText": "4 Grey Knights Stormraven Gunships"
+    },
+    {
+      "id": "700-stormtalons",
+      "name": "Stormtalons",
+      "pts": 200,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Stormtalon Gunship Fighter-Bomber Aircraft"
+    },
+    {
+      "id": "701-thunderhawk-bomber",
+      "name": "Thunderhawk Bomber",
+      "pts": 250,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Saturation Thunderhawk Bomber Aircraft"
+    },
+    {
+      "id": "702-psi-pattern-warlord-titan",
+      "name": "Psi-Pattern Warlord Titan",
+      "pts": 850,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Psi-Pattern Warlord Titan"
+    },
+    {
+      "id": "703-reaver",
+      "name": "Reaver",
+      "pts": 650,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Reaver Titan"
+    },
+    {
+      "id": "704-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Scout Titans"
+    },
+    {
+      "id": "705-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "restricted-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Scout Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-grand-master",
+      "name": "Grand Master",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grand Master",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-brother-captain",
+      "name": "Brother Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brother Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-brotherhood-champion",
+      "name": "Brotherhood Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brotherhood Champion",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-grey-knights-dreadnought",
+      "name": "Grey Knights Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grey Knights Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-nemesis-dreadknight",
+      "name": "Nemesis Dreadknight",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nemesis Dreadknight",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-1-hunter",
+      "name": "1 Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-2-hunters",
+      "name": "2 Hunters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Hunters",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-warrior-acolyte",
+      "name": "Warrior Acolyte",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warrior Acolyte",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-death-cult-assassins",
+      "name": "Death Cult Assassins",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Cult Assassins",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-imperial-servitors",
+      "name": "Imperial Servitors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Imperial Servitors",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-psyker-battle-squad",
+      "name": "Psyker Battle Squad",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Psyker Battle Squad",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-vindicare-assasin",
+      "name": "Vindicare Assasin",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicare Assasin",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-transport-drop-pod",
+      "name": "Transport: Drop pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Drop pod",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-transport-rhino",
+      "name": "Transport: Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Rhino",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-transport-razorback",
+      "name": "Transport: Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-transport-stormraven",
+      "name": "Transport: Stormraven",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Stormraven",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-transport-land-raider",
+      "name": "Transport: Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-transport-land-raider-crusader",
+      "name": "Transport: Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Land Raider Crusader",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-transport-land-raider-redeemer",
+      "name": "Transport: Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Land Raider Redeemer",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-aquila-lander-and-3-arvus-lighters",
+      "name": "Aquila lander and 3 Arvus Lighters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aquila lander and 3 Arvus Lighters",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-transport-4-chimeras",
+      "name": "Transport: 4 Chimeras",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: 4 Chimeras",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-land-raider-redeemer",
+      "name": "Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Redeemer",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-grey-knights-thunderhawk-transport",
+      "name": "Grey Knights Thunderhawk Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grey Knights Thunderhawk Transport",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "502-inquisitorial-warband"
+      ],
+      "max": 3
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "606-grey-knights-strike-cruiser"
+      ],
+      "max": 3
+    },
+    {
+      "id": "restricted-support-formations",
+      "from": [
+        "700-stormtalons",
+        "701-thunderhawk-bomber",
+        "702-psi-pattern-warlord-titan",
+        "703-reaver",
+        "704-warhound-pack",
+        "705-warhound"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "600-grey-knights-interceptor-squad",
+        "601-grey-knights-purgation-squad",
+        "602-grey-knights-land-raider",
+        "603-grey-knights-thunderhawk-gunship",
+        "604-grey-knights-thunderhawk-transporters",
+        "605-grey-knights-landing-craft",
+        "606-grey-knights-strike-cruiser",
+        "607-stormraven-flight"
+      ],
+      "max": 2,
+      "forEach": [
+        "500-grey-knights-strike-team",
+        "501-grey-knights-terminators",
+        "502-inquisitorial-warband"
+      ],
+      "_name2": "Core Formation"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "1-grand-master"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "1-grand-master",
+        "2-librarian",
+        "3-brother-captain",
+        "4-brotherhood-champion"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-grey-knights-strike-team",
+        "501-grey-knights-terminators",
+        "600-grey-knights-interceptor-squad",
+        "601-grey-knights-purgation-squad",
+        "602-grey-knights-land-raider",
+        "607-stormraven-flight"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "5-grey-knights-dreadnought",
+        "6-nemesis-dreadknight"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "500-grey-knights-strike-team",
+        "501-grey-knights-terminators",
+        "600-grey-knights-interceptor-squad",
+        "601-grey-knights-purgation-squad"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "7-1-hunter",
+        "8-2-hunters"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-grey-knights-strike-team",
+        "601-grey-knights-purgation-squad"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "14-transport-drop-pod",
+        "15-transport-rhino",
+        "16-transport-razorback",
+        "17-transport-stormraven"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "500-grey-knights-strike-team"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "14-transport-drop-pod",
+        "15-transport-rhino",
+        "16-transport-razorback"
+      ],
+      "max": 4,
+      "min": 0,
+      "appliesTo": [
+        "601-grey-knights-purgation-squad"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "17-transport-stormraven",
+        "18-transport-land-raider",
+        "19-transport-land-raider-crusader",
+        "20-transport-land-raider-redeemer"
+      ],
+      "max": 4,
+      "min": 0,
+      "appliesTo": [
+        "501-grey-knights-terminators"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "17-transport-stormraven",
+        "18-transport-land-raider",
+        "19-transport-land-raider-crusader",
+        "20-transport-land-raider-redeemer"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "601-grey-knights-purgation-squad"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "17-transport-stormraven"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "600-grey-knights-interceptor-squad"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "23-land-raider",
+        "24-land-raider-crusader",
+        "25-land-raider-redeemer"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "602-grey-knights-land-raider"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "21-aquila-lander-and-3-arvus-lighters",
+        "22-transport-4-chimeras"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-inquisitorial-warband"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "9-warrior-acolyte",
+        "10-death-cult-assassins",
+        "11-imperial-servitors",
+        "12-psyker-battle-squad",
+        "13-vindicare-assasin"
+      ],
+      "max": 8,
+      "min": 8,
+      "appliesTo": [
+        "502-inquisitorial-warband"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "10-death-cult-assassins",
+        "11-imperial-servitors",
+        "12-psyker-battle-squad",
+        "13-vindicare-assasin"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "502-inquisitorial-warband"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "13-vindicare-assasin"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-inquisitorial-warband"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "26-grey-knights-thunderhawk-transport"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "604-grey-knights-thunderhawk-transporters"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,978 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/legion",
+  "name": "13TH BLACK CRUSADE BLACK LEGION",
+  "faction": "Chaos",
+  "version": "netEA Tournament Pack (2023-01-03)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_legion_NETEA.json",
+    "by": "Iron Bloke, last edit 2023-01-07 Abetillo",
+    "notes": [
+      "If a Daemon Prince is selected, then it also replaces the Chaos Marine unit the Lord is in.",
+      "Maximum one Daemon Prince per faction present in the army",
+      "Add one free Lesser Daemon to Daemon pool per Daemonic Pact"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "daemons",
+      "name": "DAEMONS",
+      "formations": [
+        "551-daemon-pool"
+      ]
+    },
+    {
+      "id": "black-legion-retinues",
+      "name": "BLACK LEGION RETINUES",
+      "formations": [
+        "501-retinue",
+        "502-armoured-company"
+      ]
+    },
+    {
+      "id": "black-legion-elite-formations",
+      "name": "BLACK LEGION ELITE FORMATIONS",
+      "formations": [
+        "503-chaos-terminators",
+        "504-chosen"
+      ]
+    },
+    {
+      "id": "black-legion-support-formations",
+      "name": "BLACK LEGION SUPPORT FORMATIONS",
+      "formations": [
+        "508-bike-company",
+        "509-defiler-assault-pack",
+        "510-raptor-cult",
+        "511-havoc-retinue"
+      ]
+    },
+    {
+      "id": "chaos-navy-formations",
+      "name": "CHAOS NAVY FORMATIONS",
+      "formations": [
+        "532-harbinger",
+        "530-hell-blades",
+        "531-hell-talons",
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship"
+      ]
+    },
+    {
+      "id": "chaos-war-engine-formations",
+      "name": "CHAOS WAR ENGINE FORMATIONS",
+      "formations": [
+        "522-banelord-titan",
+        "523-death-wheel-squadron",
+        "521-decimators",
+        "524-feral-titan",
+        "525-ravager-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "551-daemon-pool",
+      "name": "Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "daemons"
+      ],
+      "units": [],
+      "upgrades": [
+        "50-greater-daemon",
+        "51-lesser-daemon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-retinue",
+      "name": "Retinue",
+      "pts": 275,
+      "tags": [
+        "black-legion-retinues"
+      ],
+      "units": [],
+      "upgrades": [
+        "52-chaos-champion",
+        "53-chaos-land-raider",
+        "54-chaos-vindicator",
+        "55-4-cult-marines",
+        "56-daemonic-pact",
+        "57-defiler",
+        "58-dreadclaw-drop-pod",
+        "59-4-havocs",
+        "60-icon-bearer",
+        "61-obliterator",
+        "62-rhino",
+        "63-dreadnought"
+      ],
+      "_unitsText": "8 Chaos Space Marines"
+    },
+    {
+      "id": "502-armoured-company",
+      "name": "Armoured Company",
+      "pts": 0,
+      "tags": [
+        "black-legion-retinues"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-chaos-predator",
+        "28-chaos-land-raider",
+        "57-defiler",
+        "54-chaos-vindicator"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "503-chaos-terminators",
+      "name": "Chaos Terminators",
+      "pts": 35,
+      "tags": [
+        "black-legion-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "32-chaos-terminator",
+        "52-chaos-champion",
+        "56-daemonic-pact",
+        "57-defiler",
+        "58-dreadclaw-drop-pod",
+        "63-dreadnought",
+        "60-icon-bearer",
+        "53-chaos-land-raider",
+        "61-obliterator"
+      ]
+    },
+    {
+      "id": "504-chosen",
+      "name": "Chosen",
+      "pts": 125,
+      "tags": [
+        "black-legion-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "56-daemonic-pact",
+        "58-dreadclaw-drop-pod",
+        "63-dreadnought",
+        "62-rhino"
+      ],
+      "_unitsText": "4 Chaos Space Marine Scouts"
+    },
+    {
+      "id": "508-bike-company",
+      "name": "Bike Company",
+      "pts": 300,
+      "tags": [
+        "black-legion-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "60-icon-bearer",
+        "56-daemonic-pact"
+      ],
+      "_unitsText": "8 Chaos Space Marines Bikes"
+    },
+    {
+      "id": "509-defiler-assault-pack",
+      "name": "Defiler Assault Pack",
+      "pts": 275,
+      "tags": [
+        "black-legion-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Defilers"
+    },
+    {
+      "id": "510-raptor-cult",
+      "name": "Raptor Cult",
+      "pts": 35,
+      "tags": [
+        "black-legion-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-raptor",
+        "56-daemonic-pact"
+      ]
+    },
+    {
+      "id": "511-havoc-retinue",
+      "name": "Havoc Retinue",
+      "pts": 225,
+      "tags": [
+        "black-legion-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "63-dreadnought",
+        "56-daemonic-pact",
+        "60-icon-bearer",
+        "52-chaos-champion"
+      ],
+      "_unitsText": "4 Havoc units"
+    },
+    {
+      "id": "532-harbinger",
+      "name": "Harbinger",
+      "pts": 400,
+      "tags": [
+        "chaos-navy-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Harbinger Bomber"
+    },
+    {
+      "id": "530-hell-blades",
+      "name": "Hell Blades",
+      "pts": 200,
+      "tags": [
+        "chaos-navy-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Hell Blade Fighters"
+    },
+    {
+      "id": "531-hell-talons",
+      "name": "Hell Talons",
+      "pts": 225,
+      "tags": [
+        "chaos-navy-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Hell Talon Bombers"
+    },
+    {
+      "id": "533-devastation-class-cruiser",
+      "name": "Devastation Class Cruiser",
+      "pts": 150,
+      "tags": [
+        "chaos-navy-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "534-despoiler-class-battleship",
+      "name": "Despoiler Class Battleship",
+      "pts": 250,
+      "tags": [
+        "chaos-navy-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "522-banelord-titan",
+      "name": "Banelord Titan",
+      "pts": 800,
+      "tags": [
+        "chaos-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "523-death-wheel-squadron",
+      "name": "Death Wheel Squadron",
+      "pts": 0,
+      "tags": [
+        "chaos-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "23-death-wheel"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "521-decimators",
+      "name": "Decimators",
+      "pts": 0,
+      "tags": [
+        "chaos-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "25-decimator",
+        "57-defiler"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "524-feral-titan",
+      "name": "Feral Titan",
+      "pts": 275,
+      "tags": [
+        "chaos-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "525-ravager-titan",
+      "name": "Ravager Titan",
+      "pts": 650,
+      "tags": [
+        "chaos-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "15-chaos-undivided",
+      "name": "(Chaos Undivided)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Chaos Undivided)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-khorne",
+      "name": "(Khorne)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Khorne)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-nurgle",
+      "name": "(Nurgle)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Nurgle)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-slaanesh",
+      "name": "(Slaanesh)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Slaanesh)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-tzeentch",
+      "name": "(Tzeentch)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Tzeentch)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-chaos-lord",
+      "name": "Chaos Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-sorcerer-lord",
+      "name": "Sorcerer Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sorcerer Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-daemon-prince",
+      "name": "Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-chaos-warlord-supreme-commander",
+      "name": "Chaos Warlord (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Warlord (Supreme Commander)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-daemon-prince-supreme-commander",
+      "name": "Daemon Prince (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince (Supreme Commander)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-chaos-predator",
+      "name": "Chaos Predator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Predator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-chaos-land-raider",
+      "name": "Chaos Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-raptor",
+      "name": "Raptor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raptor",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-chaos-terminator",
+      "name": "Chaos Terminator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Terminator",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-death-wheel",
+      "name": "Death Wheel",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Wheel",
+          "pts": 275,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-decimator",
+      "name": "Decimator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Decimator",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-greater-daemon",
+      "name": "Greater Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Greater Daemon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-lesser-daemon",
+      "name": "Lesser Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-chaos-champion",
+      "name": "Chaos Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Champion",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-chaos-land-raider",
+      "name": "Chaos Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-chaos-vindicator",
+      "name": "Chaos Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Vindicator",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-4-cult-marines",
+      "name": "4 Cult Marines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Cult Marines",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-daemonic-pact",
+      "name": "Daemonic Pact",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonic Pact",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-defiler",
+      "name": "Defiler",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Defiler",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-dreadclaw-drop-pod",
+      "name": "Dreadclaw Drop Pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadclaw Drop Pod",
+          "pts": 5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-4-havocs",
+      "name": "4 Havocs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havocs",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-icon-bearer",
+      "name": "Icon Bearer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Icon Bearer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-obliterator",
+      "name": "Obliterator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obliterator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-rhino",
+      "name": "Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhino",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-dreadnought",
+      "name": "Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-2-rhinos",
+      "name": "2 Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "65-2-land-raiders",
+      "name": "2 Land Raiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Land Raiders",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "elite-formation",
+      "from": [
+        "503-chaos-terminators",
+        "504-chosen"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-retinue"
+      ],
+      "_name2": "Retinue"
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "508-bike-company",
+        "509-defiler-assault-pack",
+        "510-raptor-cult",
+        "511-havoc-retinue"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-retinue",
+        "502-armoured-company"
+      ],
+      "_name2": "Retinue or Armoured Company"
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "551-daemon-pool"
+      ],
+      "max": 1
+    },
+    {
+      "id": "chaos-navy-and-war-engines",
+      "from": [
+        "530-hell-blades",
+        "531-hell-talons",
+        "532-harbinger",
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship",
+        "521-decimators",
+        "522-banelord-titan",
+        "523-death-wheel-squadron",
+        "524-feral-titan",
+        "525-ravager-titan"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "15-chaos-undivided",
+        "11-khorne",
+        "12-nurgle",
+        "13-slaanesh",
+        "14-tzeentch"
+      ],
+      "max": 1,
+      "min": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "17-chaos-lord",
+        "18-sorcerer-lord",
+        "19-daemon-prince",
+        "20-chaos-warlord-supreme-commander",
+        "21-daemon-prince-supreme-commander"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-retinue",
+        "503-chaos-terminators",
+        "511-havoc-retinue"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "17-chaos-lord",
+        "18-sorcerer-lord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "508-bike-company",
+        "510-raptor-cult"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "20-chaos-warlord-supreme-commander",
+        "21-daemon-prince-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "vehicles",
+      "from": [
+        "27-chaos-predator",
+        "28-chaos-land-raider"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "502-armoured-company"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "30-raptor"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "510-raptor-cult"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "32-chaos-terminator"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "503-chaos-terminators"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "23-death-wheel"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "523-death-wheel-squadron"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "25-decimator"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "521-decimators"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "52-chaos-champion"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "53-chaos-land-raider"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "54-chaos-vindicator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "55-4-cult-marines"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "56-daemonic-pact"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "57-defiler"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "59-4-havocs"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "60-icon-bearer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "61-obliterator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "63-dreadnought"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "64-2-rhinos",
+        "65-2-land-raiders"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "511-havoc-retinue"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

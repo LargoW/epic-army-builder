@@ -1,0 +1,618 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/house-devine",
+  "name": "House Devine Hedonic Crusade",
+  "faction": "Chaos",
+  "version": "2023-08-22",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_House_Devine_NETEA.json",
+    "by": "Dave",
+    "notes": [
+      "Any one Vassal formation may be fielded per each House Devine Household formation.",
+      "Up to a third of the points available may be spent on Chaos Navy and War Engine formations.",
+      "Each Daemonic Pact adds one Lesser Daemon to the Daemon Pool."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "house-devine-households",
+      "name": "House Devine Households",
+      "formations": [
+        "500-knight-household",
+        "501-hell-strider-household"
+      ]
+    },
+    {
+      "id": "vassal-formations",
+      "name": "Vassal Formations",
+      "formations": [
+        "502-cultists",
+        "503-debasers",
+        "504-noise-marines"
+      ]
+    },
+    {
+      "id": "chaos-navy-and-war-engine-formations",
+      "name": "Chaos Navy and War Engine Formations",
+      "formations": [
+        "505-hell-blades",
+        "506-hell-talons",
+        "507-questor",
+        "508-subjugator",
+        "509-ravisher",
+        "510-painlord"
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Daemon Pool",
+      "formations": [
+        "511-daemon-pool"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-knight-household",
+      "name": "Knight Household",
+      "pts": 55,
+      "tags": [
+        "house-devine-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-hell-knight",
+        "2-hell-slicer",
+        "3-hell-scourge",
+        "4-voluptuary",
+        "5-arch-hedonist"
+      ]
+    },
+    {
+      "id": "501-hell-strider-household",
+      "name": "Hell-Strider Household",
+      "pts": 0,
+      "tags": [
+        "house-devine-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "6-hell-strider",
+        "4-voluptuary"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-cultists",
+      "name": "Cultists",
+      "pts": 0,
+      "tags": [
+        "vassal-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-cultists",
+        "10-mutants",
+        "11-land-transporter",
+        "12-daemonic-pact",
+        "13-icon-bearer",
+        "14-debaser"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "503-debasers",
+      "name": "Debasers",
+      "pts": 75,
+      "tags": [
+        "vassal-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-debaser"
+      ]
+    },
+    {
+      "id": "504-noise-marines",
+      "name": "Noise Marines",
+      "pts": 275,
+      "tags": [
+        "vassal-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-3-chaos-rhinos",
+        "12-daemonic-pact",
+        "13-icon-bearer",
+        "16-champion-of-slaanesh",
+        "14-debaser"
+      ],
+      "_unitsText": "6 Noise Marines, one with a Chaos Lord or Sorcerer Lord character"
+    },
+    {
+      "id": "505-hell-blades",
+      "name": "Hell Blades",
+      "pts": 200,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Hell Blades"
+    },
+    {
+      "id": "506-hell-talons",
+      "name": "Hell Talons",
+      "pts": 225,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Hell Talons"
+    },
+    {
+      "id": "507-questor",
+      "name": "Questor",
+      "pts": 275,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "508-subjugator",
+      "name": "Subjugator",
+      "pts": 225,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "509-ravisher",
+      "name": "Ravisher",
+      "pts": 650,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "510-painlord",
+      "name": "Painlord",
+      "pts": 800,
+      "tags": [
+        "chaos-navy-and-war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "511-daemon-pool",
+      "name": "Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-greater-daemon",
+        "18-lesser-daemon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-hell-knight",
+      "name": "Hell-Knight",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Knight",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-hell-slicer",
+      "name": "Hell-Slicer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Slicer",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-hell-scourge",
+      "name": "Hell-Scourge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Scourge",
+          "pts": 80,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-voluptuary",
+      "name": "Voluptuary",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Voluptuary",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-arch-hedonist",
+      "name": "Arch-Hedonist",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Arch-Hedonist",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-hell-strider",
+      "name": "Hell-Strider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Strider",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-demagogue",
+      "name": "Demagogue",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Demagogue",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-chaos-marine-aspiring-champion",
+      "name": "Chaos Marine Aspiring Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Marine Aspiring Champion",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-cultists",
+      "name": "Cultists",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cultists",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-mutants",
+      "name": "Mutants",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mutants",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-land-transporter",
+      "name": "Land Transporter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Transporter",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-daemonic-pact",
+      "name": "Daemonic Pact",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonic Pact",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-icon-bearer",
+      "name": "Icon Bearer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Icon Bearer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-debaser",
+      "name": "Debaser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Debaser",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-3-chaos-rhinos",
+      "name": "3 Chaos Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Chaos Rhinos",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-champion-of-slaanesh",
+      "name": "Champion of Slaanesh",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Champion of Slaanesh",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-greater-daemon",
+      "name": "Greater Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Greater Daemon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-lesser-daemon",
+      "name": "Lesser Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "vassal-formation",
+      "from": [
+        "502-cultists",
+        "503-debasers",
+        "504-noise-marines"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-knight-household",
+        "501-hell-strider-household"
+      ],
+      "_name2": "House Devine Household"
+    },
+    {
+      "id": "chaos-navy-and-war-engine-formations",
+      "from": [
+        "505-hell-blades",
+        "506-hell-talons",
+        "507-questor",
+        "508-subjugator",
+        "509-ravisher",
+        "510-painlord"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "from": [
+        "511-daemon-pool"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "5-arch-hedonist"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "4-voluptuary",
+        "5-arch-hedonist"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-knight-household",
+        "501-hell-strider-household"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "1-hell-knight",
+        "2-hell-slicer",
+        "3-hell-scourge"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "500-knight-household"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "6-hell-strider"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "501-hell-strider-household"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "7-demagogue",
+        "8-chaos-marine-aspiring-champion"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-cultists"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "9-cultists",
+        "10-mutants"
+      ],
+      "max": 19,
+      "min": 11,
+      "appliesTo": [
+        "502-cultists"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "11-land-transporter"
+      ],
+      "max": 10,
+      "appliesTo": [
+        "502-cultists"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "12-daemonic-pact"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-cultists",
+        "504-noise-marines"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "13-icon-bearer"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-cultists",
+        "504-noise-marines"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "14-debaser"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "502-cultists",
+        "504-noise-marines"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "14-debaser"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "503-debasers"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "15-3-chaos-rhinos"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "504-noise-marines"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "16-champion-of-slaanesh"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "504-noise-marines"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

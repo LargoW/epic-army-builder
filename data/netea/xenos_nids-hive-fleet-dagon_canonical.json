@@ -1,0 +1,1156 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/nids-hive-fleet-dagon",
+  "name": "Hive Fleet Dagon",
+  "faction": "Xenos",
+  "version": "4.5 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_nids_Hive_Fleet_Dagon_NETEA.json",
+    "by": "Argol & MrDieAlot",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "primary-nexus-swarms",
+      "name": "Primary Nexus Swarms",
+      "formations": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms",
+        "502-major-swarm-3-5-instinctive-swarms",
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "secondary-nexus-swarms-one-secondary-nexus-swarm-may-be-taken-for-each-primary-nexus-swarm",
+      "name": "Secondary Nexus Swarms (One Secondary Nexus Swarm may be taken for each Primary Nexus Swarm)",
+      "formations": [
+        "509-attack-swarm-1-2-instinctive-swarms",
+        "504-infestation-swarm-1-2-instinctive-swarms",
+        "505-harasser-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "common-independent-swarms-one-common-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section",
+      "name": "Common Independent Swarms (One Common Independent Swarm may be taken for each Primary Nexus Swarm. // Max 33% of the list may be taken from this section)",
+      "formations": [
+        "506-genestealer-swarm",
+        "507-lictor-swarm"
+      ]
+    },
+    {
+      "id": "rare-independent-swarms-one-rare-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section",
+      "name": "Rare Independent Swarms (One Rare Independent Swarm may be taken for each Primary Nexus Swarm. // Max 33% of the list may be taken from this section)",
+      "formations": [
+        "510-bio-titan",
+        "511-bio-vessel"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-hive-nexus-swarm-3-5-instinctive-swarms",
+      "name": "Hive Nexus Swarm (3-5 Instinctive Swarms)",
+      "pts": 400,
+      "tags": [
+        "primary-nexus-swarms"
+      ],
+      "units": [],
+      "upgrades": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners"
+      ],
+      "_unitsText": "Dagon Dominatrix"
+    },
+    {
+      "id": "502-major-swarm-3-5-instinctive-swarms",
+      "name": "Major Swarm (3-5 Instinctive Swarms)",
+      "pts": 150,
+      "tags": [
+        "primary-nexus-swarms"
+      ],
+      "units": [],
+      "upgrades": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners",
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ]
+    },
+    {
+      "id": "503-minor-swarm-2-4-instinctive-swarms",
+      "name": "Minor Swarm (2-4 Instinctive Swarms)",
+      "pts": 100,
+      "tags": [
+        "primary-nexus-swarms"
+      ],
+      "units": [],
+      "upgrades": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners",
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ]
+    },
+    {
+      "id": "509-attack-swarm-1-2-instinctive-swarms",
+      "name": "Attack Swarm (1-2 Instinctive Swarms)",
+      "pts": 0,
+      "tags": [
+        "secondary-nexus-swarms-one-secondary-nexus-swarm-may-be-taken-for-each-primary-nexus-swarm"
+      ],
+      "units": [],
+      "upgrades": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "504-infestation-swarm-1-2-instinctive-swarms",
+      "name": "Infestation Swarm (1-2 Instinctive Swarms)",
+      "pts": 0,
+      "tags": [
+        "secondary-nexus-swarms-one-secondary-nexus-swarm-may-be-taken-for-each-primary-nexus-swarm"
+      ],
+      "units": [],
+      "upgrades": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "505-harasser-swarm-1-2-instinctive-swarms",
+      "name": "Harasser Swarm (1-2 Instinctive Swarms)",
+      "pts": 0,
+      "tags": [
+        "secondary-nexus-swarms-one-secondary-nexus-swarm-may-be-taken-for-each-primary-nexus-swarm"
+      ],
+      "units": [],
+      "upgrades": [
+        "109-gargoyles-4-dagon-gargoyles",
+        "107-bio-bomber-2-harpies",
+        "130-harridan"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "506-genestealer-swarm",
+      "name": "Genestealer Swarm",
+      "pts": 0,
+      "tags": [
+        "common-independent-swarms-one-common-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section"
+      ],
+      "units": [],
+      "upgrades": [
+        "140-genestealers",
+        "141-broodlord"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "507-lictor-swarm",
+      "name": "Lictor Swarm",
+      "pts": 100,
+      "tags": [
+        "common-independent-swarms-one-common-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section"
+      ],
+      "units": [],
+      "upgrades": [
+        "142-dagon-lictors"
+      ]
+    },
+    {
+      "id": "510-bio-titan",
+      "name": "Bio-Titan",
+      "pts": 0,
+      "tags": [
+        "rare-independent-swarms-one-rare-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "511-bio-vessel",
+      "name": "Bio-Vessel",
+      "pts": 0,
+      "tags": [
+        "rare-independent-swarms-one-rare-independent-swarm-may-be-taken-for-each-primary-nexus-swarm-max-33-of-the-list-may-be-taken-from-this-section"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "101-gaunts-4-termagaunts",
+      "name": "Gaunts (4 Termagaunts)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gaunts (4 Termagaunts)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "102-gaunts-3-termagaunts-1-hormagaunt",
+      "name": "Gaunts (3 Termagaunts, 1 Hormagaunt)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gaunts (3 Termagaunts, 1 Hormagaunt)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-gaunts-2-termagaunts-2-hormagaunts",
+      "name": "Gaunts (2 Termagaunts, 2 Hormagaunts)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gaunts (2 Termagaunts, 2 Hormagaunts)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "104-gaunts-1-termagaunts-3-hormagaunts",
+      "name": "Gaunts (1 Termagaunts, 3 Hormagaunts)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gaunts (1 Termagaunts, 3 Hormagaunts)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "105-gaunts-4-hormagaunts",
+      "name": "Gaunts (4 Hormagaunts)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gaunts (4 Hormagaunts)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "107-bio-bomber-2-harpies",
+      "name": "Bio-Bomber (2 Harpies)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Bomber (2 Harpies)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "108-biovores-4-biovores",
+      "name": "Biovores (4 Biovores)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Biovores (4 Biovores)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "109-gargoyles-4-dagon-gargoyles",
+      "name": "Gargoyles (4 Dagon Gargoyles)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gargoyles (4 Dagon Gargoyles)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-carnifex-3-carnifex",
+      "name": "Carnifex (3 Carnifex)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Carnifex (3 Carnifex)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "111-bio-support-3-dagon-dactylis",
+      "name": "Bio-Support (3 Dagon Dactylis)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Support (3 Dagon Dactylis)",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "112-bio-support-3-dagon-exocrine",
+      "name": "Bio-Support (3 Dagon Exocrine)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Support (3 Dagon Exocrine)",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "113-bio-attack-2-dagon-haruspex",
+      "name": "Bio-Attack (2 Dagon Haruspex)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Attack (2 Dagon Haruspex)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "114-bio-attack-2-malefactors",
+      "name": "Bio-Attack (2 Malefactors)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Attack (2 Malefactors)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "115-hierodule-1-barbed-hierodule",
+      "name": "Hierodule (1 Barbed Hierodule)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hierodule (1 Barbed Hierodule)",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "116-hierodule-1-scythed-hierodule",
+      "name": "Hierodule (1 Scythed Hierodule)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hierodule (1 Scythed Hierodule)",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "117-burrower-1-trygon",
+      "name": "Burrower (1 Trygon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Burrower (1 Trygon)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "118-burrower-3-dagon-raveners",
+      "name": "Burrower (3 Dagon Raveners)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Burrower (3 Dagon Raveners)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings",
+      "name": "Mycetic Spore // May transport Termagaunts, Hormagaunts, Biovores, Carnifex, Raveners, Hive Tyrants, Dagon Overlord, Tyranid Warriors, Zoanthropes // Transported units may not have Wings",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mycetic Spore // May transport Termagaunts, Hormagaunts, Biovores, Carnifex, Raveners, Hive Tyrants, Dagon Overlord, Tyranid Warriors, Zoanthropes // Transported units may not have Wings",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "130-harridan",
+      "name": "Harridan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Harridan",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "140-genestealers",
+      "name": "Genestealers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Genestealers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "141-broodlord",
+      "name": "Broodlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Broodlord",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "142-dagon-lictors",
+      "name": "Dagon Lictors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dagon Lictors",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "150-harpies",
+      "name": "Harpies",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Harpies",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "160-dagon-hierophant",
+      "name": "Dagon Hierophant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dagon Hierophant",
+          "pts": 350,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "161-hydraphant",
+      "name": "Hydraphant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hydraphant",
+          "pts": 550,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "170-razorfiend-may-carry-2-mycetic-spores-including-cargo",
+      "name": "Razorfiend (May carry 2 Mycetic Spores including cargo)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorfiend (May carry 2 Mycetic Spores including cargo)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "171-hive-ship-may-carry-5-mycetic-spores-including-cargo",
+      "name": "Hive Ship (May carry 5 Mycetic Spores including cargo)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hive Ship (May carry 5 Mycetic Spores including cargo)",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "201-tyranid-warriors",
+      "name": "Tyranid Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tyranid Warriors",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "202-zoanthrope",
+      "name": "Zoanthrope",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Zoanthrope",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "203-hive-tyrant",
+      "name": "Hive Tyrant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hive Tyrant",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "204-dagon-overlord",
+      "name": "Dagon Overlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dagon Overlord",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "205-dagon-overlord-shrike-wings",
+      "name": "Dagon Overlord Shrike (Wings)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dagon Overlord Shrike (Wings)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "209-barbed-hierodule",
+      "name": "Barbed Hierodule",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Barbed Hierodule",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "210-scythed-hierodule",
+      "name": "Scythed Hierodule",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scythed Hierodule",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "211-tyranid-warrior-shrikes-wings",
+      "name": "Tyranid Warrior Shrikes (Wings)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tyranid Warrior Shrikes (Wings)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "213-hive-tyrant-shrike-wings",
+      "name": "Hive Tyrant Shrike (Wings)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hive Tyrant Shrike (Wings)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "214-trygon-prime",
+      "name": "Trygon Prime",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Trygon Prime",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "215-3-ravener-alphas",
+      "name": "3 Ravener Alphas",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Ravener Alphas",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "216-barbed-hierodule-prime",
+      "name": "Barbed Hierodule Prime",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Barbed Hierodule Prime",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "217-scythed-hierodule-prime",
+      "name": "Scythed Hierodule Prime",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scythed Hierodule Prime",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "511-bio-vessel"
+      ],
+      "max": 1
+    },
+    {
+      "id": "common-independent-swarms",
+      "from": [
+        "506-genestealer-swarm",
+        "507-lictor-swarm"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "secondary-nexus-swarms",
+      "from": [
+        "504-infestation-swarm-1-2-instinctive-swarms",
+        "505-harasser-swarm-1-2-instinctive-swarms",
+        "509-attack-swarm-1-2-instinctive-swarms"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms",
+        "502-major-swarm-3-5-instinctive-swarms",
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ],
+      "_name2": "Primary Nexus Swarm"
+    },
+    {
+      "id": "common-independent-swarms",
+      "from": [
+        "506-genestealer-swarm",
+        "507-lictor-swarm"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms",
+        "502-major-swarm-3-5-instinctive-swarms",
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ],
+      "_name2": "Primary Nexus Swarm"
+    },
+    {
+      "id": "rare-independent-swarms",
+      "from": [
+        "unknown-508",
+        "510-bio-titan",
+        "511-bio-vessel",
+        "unknown-512",
+        "unknown-513"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "rare-independent-swarms",
+      "from": [
+        "unknown-508",
+        "510-bio-titan",
+        "511-bio-vessel"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms",
+        "502-major-swarm-3-5-instinctive-swarms",
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ],
+      "_name2": "Primary Nexus Swarm"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "mycetic-spore",
+      "from": [
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-major-swarm-3-5-instinctive-swarms",
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "mycetic-spore",
+      "from": [
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ],
+      "max": 5,
+      "perArmy": true
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "204-dagon-overlord",
+        "205-dagon-overlord-shrike-wings"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "300-300",
+        "301-301"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners"
+      ],
+      "max": 5,
+      "min": 3,
+      "appliesTo": [
+        "501-hive-nexus-swarm-3-5-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "203-hive-tyrant",
+        "204-dagon-overlord",
+        "205-dagon-overlord-shrike-wings",
+        "213-hive-tyrant-shrike-wings"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-major-swarm-3-5-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "201-tyranid-warriors",
+        "202-zoanthrope",
+        "211-tyranid-warrior-shrikes-wings"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "502-major-swarm-3-5-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners",
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ],
+      "max": 5,
+      "min": 3,
+      "appliesTo": [
+        "502-major-swarm-3-5-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "201-tyranid-warriors",
+        "202-zoanthrope",
+        "211-tyranid-warrior-shrikes-wings"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "202-zoanthrope"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "107-bio-bomber-2-harpies",
+        "108-biovores-4-biovores",
+        "109-gargoyles-4-dagon-gargoyles",
+        "110-carnifex-3-carnifex",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners",
+        "120-mycetic-spore-may-transport-termagaunts-hormagaunts-biovores-carnifex-raveners-hive-tyrants-dagon-overlord-tyranid-warriors-zoanthropes-transported-units-may-not-have-wings"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "503-minor-swarm-2-4-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "216-barbed-hierodule-prime",
+        "217-scythed-hierodule-prime"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "509-attack-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "110-carnifex-3-carnifex",
+        "111-bio-support-3-dagon-dactylis",
+        "112-bio-support-3-dagon-exocrine",
+        "113-bio-attack-2-dagon-haruspex",
+        "114-bio-attack-2-malefactors",
+        "115-hierodule-1-barbed-hierodule",
+        "116-hierodule-1-scythed-hierodule"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "509-attack-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "215-3-ravener-alphas",
+        "214-trygon-prime"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "504-infestation-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts",
+        "117-burrower-1-trygon",
+        "118-burrower-3-dagon-raveners"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "504-infestation-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "101-gaunts-4-termagaunts",
+        "102-gaunts-3-termagaunts-1-hormagaunt",
+        "103-gaunts-2-termagaunts-2-hormagaunts",
+        "104-gaunts-1-termagaunts-3-hormagaunts",
+        "105-gaunts-4-hormagaunts"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "504-infestation-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "130-harridan"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "505-harasser-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "109-gargoyles-4-dagon-gargoyles",
+        "107-bio-bomber-2-harpies"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "505-harasser-swarm-1-2-instinctive-swarms"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "140-genestealers"
+      ],
+      "max": 9,
+      "min": 6,
+      "appliesTo": [
+        "506-genestealer-swarm"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "141-broodlord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "506-genestealer-swarm"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "142-dagon-lictors"
+      ],
+      "max": 7,
+      "min": 5,
+      "appliesTo": [
+        "507-lictor-swarm"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "150-harpies"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "unknown-508"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "160-dagon-hierophant",
+        "161-hydraphant"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "510-bio-titan"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "170-razorfiend-may-carry-2-mycetic-spores-including-cargo",
+        "171-hive-ship-may-carry-5-mycetic-spores-including-cargo"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "511-bio-vessel"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

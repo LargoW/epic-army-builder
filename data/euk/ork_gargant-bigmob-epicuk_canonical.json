@@ -1,0 +1,1054 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ork/gargant-bigmob-epicuk",
+  "name": "Gargant Bigmob",
+  "faction": "Orks",
+  "version": "EpicUK v130125",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\ORK_Gargant_Bigmob_EPICUK.json",
+    "by": "EpicUK",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "gargant-formations",
+      "name": "GARGANT FORMATIONS",
+      "formations": [
+        "532-mega-gargant-unlocks-4-support-mobs",
+        "533-great-gargant-unlocks-3-support-mobs",
+        "534-gargant-unlocks-2-support-mobs"
+      ]
+    },
+    {
+      "id": "support-mobs",
+      "name": "SUPPORT MOBS",
+      "formations": [
+        "535-supa-stompa-mob",
+        "560-stompa-mob-normal",
+        "561-stompa-mob-big",
+        "562-stompa-mob-uge",
+        "541-kamp-followers-normal",
+        "542-kamp-followers-big",
+        "543-kamp-followers-uge",
+        "544-loota-boyz"
+      ]
+    },
+    {
+      "id": "aviation",
+      "name": "AVIATION",
+      "formations": [
+        "551-fighta-bommers",
+        "552-bommer",
+        "553-spacecraft"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "532-mega-gargant-unlocks-4-support-mobs",
+      "name": "Mega Gargant - Unlocks 4 support mobs",
+      "pts": 1000,
+      "tags": [
+        "gargant-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz",
+        "34-mekboy-big-boss"
+      ]
+    },
+    {
+      "id": "533-great-gargant-unlocks-3-support-mobs",
+      "name": "Great Gargant - Unlocks 3 support mobs",
+      "pts": 850,
+      "tags": [
+        "gargant-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz",
+        "34-mekboy-big-boss"
+      ]
+    },
+    {
+      "id": "534-gargant-unlocks-2-support-mobs",
+      "name": "Gargant - Unlocks 2 support mobs",
+      "pts": 650,
+      "tags": [
+        "gargant-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz",
+        "34-mekboy-big-boss"
+      ]
+    },
+    {
+      "id": "535-supa-stompa-mob",
+      "name": "Supa Stompa Mob",
+      "pts": 300,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts",
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz"
+      ]
+    },
+    {
+      "id": "560-stompa-mob-normal",
+      "name": "Stompa Mob (Normal)",
+      "pts": 225,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts",
+        "18-oddboy"
+      ],
+      "_unitsText": "4 Stompas"
+    },
+    {
+      "id": "561-stompa-mob-big",
+      "name": "Stompa Mob (Big)",
+      "pts": 375,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts",
+        "18-oddboy"
+      ],
+      "_unitsText": "8 Stompas"
+    },
+    {
+      "id": "562-stompa-mob-uge",
+      "name": "Stompa Mob (Uge)",
+      "pts": 525,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts",
+        "18-oddboy"
+      ],
+      "_unitsText": "12 Stompas"
+    },
+    {
+      "id": "541-kamp-followers-normal",
+      "name": "Kamp Followers (Normal)",
+      "pts": -5,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "542-kamp-followers-big",
+      "name": "Kamp Followers (Big)",
+      "pts": -60,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "543-kamp-followers-uge",
+      "name": "Kamp Followers (Uge)",
+      "pts": -140,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-killa-kan",
+        "13-dreadnoughts"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "544-loota-boyz",
+      "name": "Loota Boyz",
+      "pts": 175,
+      "tags": [
+        "support-mobs"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "551-fighta-bommers",
+      "name": "Fighta-Bommers",
+      "pts": 0,
+      "tags": [
+        "aviation"
+      ],
+      "units": [],
+      "upgrades": [
+        "35-fighta-bommers"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "552-bommer",
+      "name": "Bommer",
+      "pts": 175,
+      "tags": [
+        "aviation"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "553-spacecraft",
+      "name": "Spacecraft",
+      "pts": 0,
+      "tags": [
+        "aviation"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-killa-kan",
+      "name": "Killa Kan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Killa Kan",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-dreadnoughts",
+      "name": "Dreadnoughts",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnoughts",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-oddboy",
+      "name": "Oddboy",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Oddboy",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-soopagun",
+      "name": "Soopagun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Soopagun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-deth-kannon",
+      "name": "Deth Kannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Deth Kannon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-gatling-kannon",
+      "name": "Gatling Kannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gatling Kannon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-grot-mega-missile",
+      "name": "Grot Mega Missile",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grot Mega Missile",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-lifta-droppa",
+      "name": "Lifta Droppa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lifta Droppa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-twin-soopagun",
+      "name": "Twin Soopagun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Twin Soopagun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-mega-choppa",
+      "name": "Mega Choppa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Choppa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-lobba",
+      "name": "Lobba",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lobba",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-snappa",
+      "name": "Snappa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snappa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-grot-ultra-missile",
+      "name": "Grot Ultra Missile",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grot Ultra Missile",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-ultra-lobba",
+      "name": "Ultra Lobba",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ultra Lobba",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-soopa-zzap-gun",
+      "name": "Soopa Zzap Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Soopa Zzap Gun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "47-mega-lobba",
+      "name": "Mega Lobba",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Lobba",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-mega-gatling-kannon",
+      "name": "Mega Gatling Kannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Gatling Kannon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-stompin-legs",
+      "name": "Stompin Legs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stompin Legs",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "46-wrecker",
+      "name": "Wrecker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wrecker",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "48-scorcha",
+      "name": "Scorcha",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scorcha",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "49-mega-snappa",
+      "name": "Mega Snappa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Snappa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-ultra-gatling-kannon",
+      "name": "Ultra Gatling Kannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ultra Gatling Kannon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-ultra-snappa",
+      "name": "Ultra Snappa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ultra Snappa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-ultra-wrecker",
+      "name": "Ultra Wrecker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ultra Wrecker",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-killkrooza",
+      "name": "KillKrooza",
+      "variants": [
+        {
+          "id": "1",
+          "label": "KillKrooza",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-battlekrooza",
+      "name": "Battlekrooza",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battlekrooza",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-mekboy-big-boss",
+      "name": "Mekboy Big Boss",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mekboy Big Boss",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-fighta-bommers",
+      "name": "Fighta-Bommers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fighta-Bommers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-kustom-flak-gunz",
+      "name": "(Kustom) Flak Gunz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Kustom) Flak Gunz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-kustom-bigga-generatas",
+      "name": "(Kustom) Bigga Generatas",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Kustom) Bigga Generatas",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-kustom-extra-armour",
+      "name": "(Kustom) Extra Armour",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Kustom) Extra Armour",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-kustom-boss-nobz",
+      "name": "(Kustom) Boss Nobz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "(Kustom) Boss Nobz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "553-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "loota-boyz",
+      "from": [
+        "544-loota-boyz"
+      ],
+      "max": 2
+    },
+    {
+      "id": "aviation-formations",
+      "from": [
+        "551-fighta-bommers",
+        "552-bommer",
+        "553-spacecraft"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "21-soopagun",
+        "24-grot-mega-missile",
+        "42-soopa-zzap-gun",
+        "28-lobba",
+        "27-mega-choppa",
+        "23-gatling-kannon",
+        "29-snappa"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "535-supa-stompa-mob"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "28-lobba",
+        "29-snappa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "535-supa-stompa-mob"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "24-grot-mega-missile",
+        "27-mega-choppa"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "535-supa-stompa-mob"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "21-soopagun",
+        "24-grot-mega-missile",
+        "42-soopa-zzap-gun",
+        "28-lobba",
+        "27-mega-choppa",
+        "23-gatling-kannon",
+        "29-snappa",
+        "47-mega-lobba",
+        "44-mega-gatling-kannon",
+        "46-wrecker",
+        "48-scorcha",
+        "49-mega-snappa"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "534-gargant-unlocks-2-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "28-lobba",
+        "29-snappa",
+        "47-mega-lobba",
+        "49-mega-snappa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "534-gargant-unlocks-2-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "24-grot-mega-missile",
+        "27-mega-choppa",
+        "46-wrecker"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "534-gargant-unlocks-2-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "21-soopagun",
+        "24-grot-mega-missile",
+        "42-soopa-zzap-gun",
+        "28-lobba",
+        "27-mega-choppa",
+        "23-gatling-kannon",
+        "29-snappa",
+        "47-mega-lobba",
+        "44-mega-gatling-kannon",
+        "46-wrecker",
+        "48-scorcha",
+        "49-mega-snappa",
+        "22-deth-kannon",
+        "25-lifta-droppa",
+        "26-twin-soopagun",
+        "30-grot-ultra-missile",
+        "31-ultra-lobba",
+        "50-ultra-gatling-kannon",
+        "51-ultra-snappa",
+        "52-ultra-wrecker"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "28-lobba",
+        "29-snappa",
+        "47-mega-lobba",
+        "49-mega-snappa",
+        "31-ultra-lobba",
+        "51-ultra-snappa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "24-grot-mega-missile",
+        "27-mega-choppa",
+        "46-wrecker",
+        "26-twin-soopagun",
+        "25-lifta-droppa",
+        "22-deth-kannon",
+        "30-grot-ultra-missile",
+        "52-ultra-wrecker"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "50-ultra-gatling-kannon",
+        "22-deth-kannon",
+        "25-lifta-droppa",
+        "26-twin-soopagun",
+        "30-grot-ultra-missile",
+        "31-ultra-lobba",
+        "51-ultra-snappa",
+        "52-ultra-wrecker"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "532-mega-gargant-unlocks-4-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "31-ultra-lobba",
+        "51-ultra-snappa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "532-mega-gargant-unlocks-4-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "26-twin-soopagun",
+        "25-lifta-droppa",
+        "22-deth-kannon",
+        "30-grot-ultra-missile",
+        "52-ultra-wrecker"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "532-mega-gargant-unlocks-4-support-mobs"
+      ]
+    },
+    {
+      "id": "kustom-upgrades",
+      "from": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "532-mega-gargant-unlocks-4-support-mobs"
+      ]
+    },
+    {
+      "id": "kustom-upgrades",
+      "from": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "kustom-upgrade",
+      "from": [
+        "36-kustom-flak-gunz",
+        "38-kustom-bigga-generatas",
+        "43-kustom-boss-nobz"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "534-gargant-unlocks-2-support-mobs",
+        "535-supa-stompa-mob"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "11-killa-kan"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "541-kamp-followers-normal"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "11-killa-kan"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "542-kamp-followers-big"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "11-killa-kan"
+      ],
+      "min": 9,
+      "appliesTo": [
+        "543-kamp-followers-uge"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "13-dreadnoughts"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "541-kamp-followers-normal"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "13-dreadnoughts"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "542-kamp-followers-big"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "13-dreadnoughts"
+      ],
+      "min": 9,
+      "appliesTo": [
+        "543-kamp-followers-uge"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "32-killkrooza",
+        "33-battlekrooza"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "553-spacecraft"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "36-kustom-flak-gunz"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "38-kustom-bigga-generatas"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "40-kustom-extra-armour"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "43-kustom-boss-nobz"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "533-great-gargant-unlocks-3-support-mobs"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "18-oddboy"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "560-stompa-mob-normal"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "18-oddboy"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "561-stompa-mob-big"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "18-oddboy"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "562-stompa-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "35-fighta-bommers"
+      ],
+      "max": 9,
+      "min": 3,
+      "appliesTo": [
+        "551-fighta-bommers"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "34-mekboy-big-boss"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

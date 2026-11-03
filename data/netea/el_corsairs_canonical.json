@@ -1,0 +1,852 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/el/corsairs",
+  "name": "Eldar Corsairs",
+  "faction": "Eldar",
+  "version": "Experimental",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\EL_corsairs_NETEA.json",
+    "by": "Kyussinchains",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "eldar-corsair-core-formations",
+      "name": "Eldar Corsair Core Formations",
+      "formations": [
+        "511-corsair-warband",
+        "512-voidstorm-warband"
+      ]
+    },
+    {
+      "id": "eldar-corsair-support-formations",
+      "name": "Eldar Corsair Support Formations",
+      "formations": [
+        "521-ghost-walkers",
+        "522-cloud-dancers",
+        "523-wasp-squadron",
+        "524-hornet-squadron",
+        "525-balestrike-band",
+        "526-falcon-formation"
+      ]
+    },
+    {
+      "id": "eldar-corsair-elite-formations",
+      "name": "Eldar Corsair Elite Formations",
+      "formations": [
+        "531-lynx-squadron",
+        "532-0-1-harlequin-troop",
+        "533-0-1-kabal-syndicate"
+      ]
+    },
+    {
+      "id": "spaceships-aircraft-titans",
+      "name": "SPACESHIPS, AIRCRAFT & TITANS",
+      "formations": [
+        "540-nightwings",
+        "541-void-dragon-phoenix-bombers",
+        "542-vampire-raider",
+        "543-vampire-hunter",
+        "544-eclipse-cruiser",
+        "545-void-dragon-battleship"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "511-corsair-warband",
+      "name": "Corsair Warband",
+      "pts": 250,
+      "tags": [
+        "eldar-corsair-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-shimmershield",
+        "15-corsair-jumpacks",
+        "18-venom",
+        "19-falcon"
+      ],
+      "_unitsText": "8 Corsairs"
+    },
+    {
+      "id": "512-voidstorm-warband",
+      "name": "Voidstorm Warband",
+      "pts": 300,
+      "tags": [
+        "eldar-corsair-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-corsair-jumpacks"
+      ],
+      "_unitsText": "4 Voidstorms"
+    },
+    {
+      "id": "521-ghost-walkers",
+      "name": "Ghost Walkers",
+      "pts": 125,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-sniper-ability"
+      ],
+      "_unitsText": "4 Ghost Walkers"
+    },
+    {
+      "id": "522-cloud-dancers",
+      "name": "Cloud Dancers",
+      "pts": 225,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-spirit-stones"
+      ],
+      "_unitsText": "6 Cloud Dancers"
+    },
+    {
+      "id": "523-wasp-squadron",
+      "name": "Wasp Squadron",
+      "pts": 200,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-spirit-stones"
+      ],
+      "_unitsText": "4 Wasp Walkers"
+    },
+    {
+      "id": "524-hornet-squadron",
+      "name": "Hornet Squadron",
+      "pts": 225,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-spirit-stones"
+      ],
+      "_unitsText": "5 Hornets"
+    },
+    {
+      "id": "525-balestrike-band",
+      "name": "Balestrike Band",
+      "pts": 250,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-corsair-jumpacks"
+      ],
+      "_unitsText": "4 Balestrikes"
+    },
+    {
+      "id": "526-falcon-formation",
+      "name": "Falcon Formation",
+      "pts": 25,
+      "tags": [
+        "eldar-corsair-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-spirit-stones"
+      ]
+    },
+    {
+      "id": "531-lynx-squadron",
+      "name": "Lynx Squadron",
+      "pts": 300,
+      "tags": [
+        "eldar-corsair-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-spirit-stones",
+        "17-kinetic-shroud"
+      ],
+      "_unitsText": "2 Lynx Heavy Grav Tanks"
+    },
+    {
+      "id": "532-0-1-harlequin-troop",
+      "name": "0-1 Harlequin Troop",
+      "pts": 450,
+      "tags": [
+        "eldar-corsair-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "36-death-jester",
+        "37-solitaire"
+      ],
+      "_unitsText": "5 Players"
+    },
+    {
+      "id": "533-0-1-kabal-syndicate",
+      "name": "0-1 Kabal Syndicate",
+      "pts": 250,
+      "tags": [
+        "eldar-corsair-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Dracon"
+    },
+    {
+      "id": "540-nightwings",
+      "name": "Nightwings",
+      "pts": 300,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Nightwing Interceptors"
+    },
+    {
+      "id": "541-void-dragon-phoenix-bombers",
+      "name": "Void Dragon Phoenix Bombers",
+      "pts": 325,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Phoenix Bombers"
+    },
+    {
+      "id": "542-vampire-raider",
+      "name": "Vampire Raider",
+      "pts": 200,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "543-vampire-hunter",
+      "name": "Vampire Hunter",
+      "pts": 200,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "544-eclipse-cruiser",
+      "name": "Eclipse Cruiser",
+      "pts": 150,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Eclipse Cruiser"
+    },
+    {
+      "id": "545-void-dragon-battleship",
+      "name": "Void Dragon Battleship",
+      "pts": 300,
+      "tags": [
+        "spaceships-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Void Dragon Battleship"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-corsair-prince",
+      "name": "Corsair Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Corsair Prince",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-felarch",
+      "name": "Felarch",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Felarch",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-void-dreamer",
+      "name": "Void Dreamer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Void Dreamer",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-sniper-ability",
+      "name": "Sniper Ability",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper Ability",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-shimmershield",
+      "name": "Shimmershield",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shimmershield",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-corsair-jumpacks",
+      "name": "Corsair Jumpacks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Corsair Jumpacks",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-spirit-stones",
+      "name": "Spirit Stones",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Spirit Stones",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-kinetic-shroud",
+      "name": "Kinetic Shroud",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kinetic Shroud",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-venom",
+      "name": "Venom",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venom",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-falcon",
+      "name": "Falcon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Falcon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-6-dark-eldar-warriors",
+      "name": "6 Dark Eldar Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Dark Eldar Warriors",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-8-dark-eldar-warriors",
+      "name": "8 Dark Eldar Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Dark Eldar Warriors",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-6-dark-eldar-warriors-and-2-wyches",
+      "name": "6 Dark Eldar Warriors and 2 Wyches",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Dark Eldar Warriors and 2 Wyches",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-firestrorm",
+      "name": "Firestrorm",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Firestrorm",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-warp-hunter",
+      "name": "Warp Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warp Hunter",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-3-raiders",
+      "name": "3 Raiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Raiders",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-2-raiders-2-venoms",
+      "name": "2 Raiders, 2 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Raiders, 2 Venoms",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-1-raider-4-venoms",
+      "name": "1 Raider, 4 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Raider, 4 Venoms",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-6-venoms",
+      "name": "6 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Venoms",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-4-raiders",
+      "name": "4 Raiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Raiders",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-3-raiders-2-venoms",
+      "name": "3 Raiders, 2 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Raiders, 2 Venoms",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-2-raider-4-venoms",
+      "name": "2 Raider, 4 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Raider, 4 Venoms",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-1-raider-6-venoms",
+      "name": "1 Raider 6 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Raider 6 Venoms",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-8-venoms",
+      "name": "8 Venoms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Venoms",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-troop-leader",
+      "name": "Troop Leader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Troop Leader",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-shadowseer",
+      "name": "Shadowseer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shadowseer",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-death-jester",
+      "name": "Death Jester",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Jester",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-solitaire",
+      "name": "Solitaire",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Solitaire",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support",
+      "from": [
+        "521-ghost-walkers",
+        "522-cloud-dancers",
+        "523-wasp-squadron",
+        "524-hornet-squadron",
+        "525-balestrike-band",
+        "526-falcon-formation"
+      ],
+      "max": 2,
+      "forEach": [
+        "511-corsair-warband",
+        "512-voidstorm-warband"
+      ],
+      "_name2": "Core"
+    },
+    {
+      "id": "elite",
+      "from": [
+        "531-lynx-squadron",
+        "532-0-1-harlequin-troop",
+        "533-0-1-kabal-syndicate"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-corsair-warband",
+        "512-voidstorm-warband"
+      ],
+      "_name2": "Core"
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "532-0-1-harlequin-troop"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "533-0-1-kabal-syndicate"
+      ],
+      "max": 1
+    },
+    {
+      "id": "aircraft-titans",
+      "from": [
+        "540-nightwings",
+        "541-void-dragon-phoenix-bombers",
+        "542-vampire-raider",
+        "543-vampire-hunter",
+        "544-eclipse-cruiser",
+        "545-void-dragon-battleship"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "spacecraft",
+      "from": [
+        "544-eclipse-cruiser",
+        "545-void-dragon-battleship"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "10-corsair-prince"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "532-532"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "533-533"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "13-sniper-ability"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "14-shimmershield"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "36-death-jester"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "37-solitaire"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "15-corsair-jumpacks"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "16-spirit-stones"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "17-kinetic-shroud"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "34-troop-leader",
+        "35-shadowseer"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "532-0-1-harlequin-troop"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "20-6-dark-eldar-warriors",
+        "21-8-dark-eldar-warriors",
+        "22-6-dark-eldar-warriors-and-2-wyches"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "533-0-1-kabal-syndicate"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "25-3-raiders",
+        "26-2-raiders-2-venoms",
+        "27-1-raider-4-venoms",
+        "28-6-venoms",
+        "29-4-raiders",
+        "30-3-raiders-2-venoms",
+        "31-2-raider-4-venoms",
+        "32-1-raider-6-venoms",
+        "33-8-venoms"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "533-0-1-kabal-syndicate"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "19-falcon",
+        "23-firestrorm",
+        "24-warp-hunter"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "526-falcon-formation"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "23-firestrorm",
+        "24-warp-hunter"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "526-falcon-formation"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "11-felarch",
+        "10-corsair-prince",
+        "12-void-dreamer"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "511-corsair-warband",
+        "512-voidstorm-warband",
+        "525-balestrike-band"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "11-felarch"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "522-cloud-dancers"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

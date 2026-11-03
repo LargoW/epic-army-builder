@@ -1,0 +1,563 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/miraliskyraiders",
+  "name": "Mirali Skyraiders",
+  "faction": "Astra Militarum",
+  "version": "Mirali Skyraiders 2.0",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\IG_miraliSkyraiders_NETEA.json",
+    "by": "LargoW",
+    "notes": [
+      "Mirali Skyraiders may include 1 Commissar per 500 points or part thereof",
+      "If any Vendetta is chosen, select the free upgrade to make sure upgrades are counted correctly"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "special",
+      "name": "SPECIAL",
+      "formations": [
+        "500-forward-operating-base"
+      ]
+    },
+    {
+      "id": "companies",
+      "name": "COMPANIES",
+      "formations": [
+        "511-mirali-hq-company",
+        "512-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "501-vulture-squadron",
+        "502-vulture-punisher-squadron",
+        "503-vulture-slick-squadron",
+        "504-regimental-artillery-battery",
+        "505-regimental-anti-air-battery",
+        "506-deathstrike-missile-battery",
+        "507-firebase-defense-company",
+        "508-mirali-trackers-company"
+      ]
+    },
+    {
+      "id": "imperial-navy",
+      "name": "IMPERIAL NAVY",
+      "formations": [
+        "521-thunderbolt-flight",
+        "522-lightning-strike-flight",
+        "523-marauder",
+        "524-marauder-destroyer"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-forward-operating-base",
+      "name": "Forward Operating Base",
+      "pts": 50,
+      "tags": [
+        "special"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Forward Operating Base"
+    },
+    {
+      "id": "511-mirali-hq-company",
+      "name": "Mirali HQ Company",
+      "pts": 350,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-2-fire-support-units-1-valkyrie",
+        "13-2-fire-support-units-1-mirali-vendetta",
+        "14-3-fire-support-units-1-bunker",
+        "15-2-infantry-units-1-valkyrie",
+        "16-2-infantry-units-1-mirali-vendetta",
+        "17-3-infantry-units-1-bunker",
+        "18-2-sniper-units-1-valkyrie",
+        "19-2-sniper-units-1-mirali-vendetta",
+        "20-3-sniper-units-1-bunker",
+        "21-1-vulture",
+        "22-1-vulture-punisher",
+        "23-mirali-vendetta-upgrade-taken"
+      ],
+      "_unitsText": "Supreme Commander, 8 Infantry Units, 3 Bunkers"
+    },
+    {
+      "id": "512-air-cavalry-company",
+      "name": "Air Cavalry Company",
+      "pts": 250,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-2-fire-support-units-1-valkyrie",
+        "14-3-fire-support-units-1-bunker",
+        "15-2-infantry-units-1-valkyrie",
+        "17-3-infantry-units-1-bunker",
+        "18-2-sniper-units-1-valkyrie",
+        "20-3-sniper-units-1-bunker",
+        "21-1-vulture",
+        "22-1-vulture-punisher",
+        "23-mirali-vendetta-upgrade-taken"
+      ],
+      "_unitsText": "Commander, 8 Infantry Units"
+    },
+    {
+      "id": "501-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Vultures"
+    },
+    {
+      "id": "502-vulture-punisher-squadron",
+      "name": "Vulture Punisher Squadron",
+      "pts": 400,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Vulture Punishers"
+    },
+    {
+      "id": "503-vulture-slick-squadron",
+      "name": "Vulture Slick Squadron",
+      "pts": 125,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Vulture Slicks"
+    },
+    {
+      "id": "504-regimental-artillery-battery",
+      "name": "Regimental Artillery Battery",
+      "pts": 150,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Howitzer Weapons Platforms, 3 Gun Emplacements"
+    },
+    {
+      "id": "505-regimental-anti-air-battery",
+      "name": "Regimental Anti-Air Battery",
+      "pts": 125,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Blitzen Weapons Platforms, 3 Gun Emplacements"
+    },
+    {
+      "id": "506-deathstrike-missile-battery",
+      "name": "Deathstrike Missile Battery",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Deathstrike Erector-Launchers, 2 Gun Emplacements"
+    },
+    {
+      "id": "507-firebase-defense-company",
+      "name": "Firebase Defense Company",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Commander, 8 Infantry Units, 3 Bunkers"
+    },
+    {
+      "id": "508-mirali-trackers-company",
+      "name": "Mirali Trackers Company",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Mirali Trackers"
+    },
+    {
+      "id": "521-thunderbolt-flight",
+      "name": "Thunderbolt Flight",
+      "pts": 150,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    },
+    {
+      "id": "522-lightning-strike-flight",
+      "name": "Lightning Strike Flight",
+      "pts": 200,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Lightning Strike Fighters"
+    },
+    {
+      "id": "523-marauder",
+      "name": "Marauder",
+      "pts": 150,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Marauder Heavy Bomber"
+    },
+    {
+      "id": "524-marauder-destroyer",
+      "name": "Marauder Destroyer",
+      "pts": 175,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Mirali Heavy Marauder Destroyer"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-valkyrie",
+      "name": "Valkyrie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Valkyrie",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-mirali-vendetta",
+      "name": "Mirali Vendetta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mirali Vendetta",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-2-fire-support-units-1-valkyrie",
+      "name": "2 Fire Support Units, 1 Valkyrie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Fire Support Units, 1 Valkyrie",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-2-fire-support-units-1-mirali-vendetta",
+      "name": "2 Fire Support Units, 1 Mirali Vendetta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Fire Support Units, 1 Mirali Vendetta",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-3-fire-support-units-1-bunker",
+      "name": "3 Fire Support Units, 1 Bunker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Fire Support Units, 1 Bunker",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-2-infantry-units-1-valkyrie",
+      "name": "2 Infantry Units, 1 Valkyrie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Infantry Units, 1 Valkyrie",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-2-infantry-units-1-mirali-vendetta",
+      "name": "2 Infantry Units, 1 Mirali Vendetta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Infantry Units, 1 Mirali Vendetta",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-3-infantry-units-1-bunker",
+      "name": "3 Infantry Units, 1 Bunker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Infantry Units, 1 Bunker",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-2-sniper-units-1-valkyrie",
+      "name": "2 Sniper Units, 1 Valkyrie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Sniper Units, 1 Valkyrie",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-2-sniper-units-1-mirali-vendetta",
+      "name": "2 Sniper Units, 1 Mirali Vendetta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Sniper Units, 1 Mirali Vendetta",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-3-sniper-units-1-bunker",
+      "name": "3 Sniper Units, 1 Bunker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Sniper Units, 1 Bunker",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-1-vulture",
+      "name": "1 Vulture",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Vulture",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-1-vulture-punisher",
+      "name": "1 Vulture Punisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Vulture Punisher",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-mirali-vendetta-upgrade-taken",
+      "name": "Mirali Vendetta Upgrade taken",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mirali Vendetta Upgrade taken",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-formations",
+      "from": [
+        "501-vulture-squadron",
+        "502-vulture-punisher-squadron",
+        "503-vulture-slick-squadron",
+        "504-regimental-artillery-battery",
+        "505-regimental-anti-air-battery",
+        "506-deathstrike-missile-battery",
+        "507-firebase-defense-company",
+        "508-mirali-trackers-company"
+      ],
+      "max": 2,
+      "forEach": [
+        "511-mirali-hq-company",
+        "512-air-cavalry-company"
+      ],
+      "_name2": "Company"
+    },
+    {
+      "id": "navy",
+      "from": [
+        "521-thunderbolt-flight",
+        "522-lightning-strike-flight",
+        "523-marauder",
+        "524-marauder-destroyer"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "500-forward-operating-base"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "511-mirali-hq-company"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-4",
+      "from": [
+        "506-deathstrike-missile-battery"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "upgrades",
+      "from": [
+        "12-2-fire-support-units-1-valkyrie",
+        "13-2-fire-support-units-1-mirali-vendetta",
+        "14-3-fire-support-units-1-bunker",
+        "15-2-infantry-units-1-valkyrie",
+        "16-2-infantry-units-1-mirali-vendetta",
+        "17-3-infantry-units-1-bunker",
+        "18-2-sniper-units-1-valkyrie",
+        "19-2-sniper-units-1-mirali-vendetta",
+        "20-3-sniper-units-1-bunker",
+        "21-1-vulture",
+        "22-1-vulture-punisher",
+        "23-mirali-vendetta-upgrade-taken"
+      ],
+      "max": 3
+    },
+    {
+      "id": "valkyries",
+      "from": [
+        "10-valkyrie",
+        "11-mirali-vendetta"
+      ],
+      "min": 5,
+      "appliesTo": [
+        "512-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "vendettas",
+      "from": [
+        "11-mirali-vendetta",
+        "13-2-fire-support-units-1-mirali-vendetta",
+        "16-2-infantry-units-1-mirali-vendetta",
+        "19-2-sniper-units-1-mirali-vendetta"
+      ],
+      "max": 2
+    },
+    {
+      "id": "fire-support-upgrade",
+      "from": [
+        "12-2-fire-support-units-1-valkyrie",
+        "13-2-fire-support-units-1-mirali-vendetta",
+        "14-3-fire-support-units-1-bunker"
+      ],
+      "max": 1
+    },
+    {
+      "id": "infantry-upgrade",
+      "from": [
+        "15-2-infantry-units-1-valkyrie",
+        "16-2-infantry-units-1-mirali-vendetta",
+        "17-3-infantry-units-1-bunker"
+      ],
+      "max": 1
+    },
+    {
+      "id": "sniper-upgrade",
+      "from": [
+        "18-2-sniper-units-1-valkyrie",
+        "19-2-sniper-units-1-mirali-vendetta",
+        "20-3-sniper-units-1-bunker"
+      ],
+      "max": 1
+    },
+    {
+      "id": "vulture-variant",
+      "from": [
+        "21-1-vulture",
+        "22-1-vulture-punisher"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "23-mirali-vendetta-upgrade-taken"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

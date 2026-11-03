@@ -1,0 +1,1415 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/squats",
+  "name": "Grindel Stronghold Squats",
+  "faction": "Xenos",
+  "version": "NetEA Tournament Pack",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_squats_NETEA.json",
+    "by": "Dave, last update 2026-08-10 Abetillo",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "brotherhoods",
+      "name": "Brotherhoods",
+      "formations": [
+        "100-berserker",
+        "101-berserker-m",
+        "102-berserker-l",
+        "110-thunderer",
+        "111-thunderer-m",
+        "112-thunderer-l",
+        "120-warrior",
+        "121-warrior-m",
+        "122-warrior-l"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "Support Formations",
+      "formations": [
+        "220-air-attack-corps",
+        "221-air-attack-corps-m",
+        "222-air-attack-corps-l",
+        "230-artillery-battery",
+        "231-artillery-battery-m",
+        "232-artillery-battery-l",
+        "240-gyrocopter-wing",
+        "241-gyrocopter-wing-m",
+        "242-gyrocopter-wing-l",
+        "260-guild-robot-squadron",
+        "270-guild-squadron",
+        "271-guild-squadron-m",
+        "272-guild-squadron-l",
+        "280-super-heavy-artillery-battery",
+        "281-super-heavy-artillery-battery-m",
+        "282-super-heavy-artillery-battery-l",
+        "290-thunderfire-battery"
+      ]
+    },
+    {
+      "id": "war-engines",
+      "name": "War Engines",
+      "formations": [
+        "300-colossus",
+        "310-cyclops",
+        "320-land-train",
+        "330-leviathan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "100-berserker",
+      "name": "Berserker",
+      "pts": 25,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-berserkers",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ]
+    },
+    {
+      "id": "101-berserker-m",
+      "name": "Berserker (M)",
+      "pts": 0,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-berserkers",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "102-berserker-l",
+      "name": "Berserker (L)",
+      "pts": -25,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-berserkers",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "110-thunderer",
+      "name": "Thunderer",
+      "pts": 25,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-rapier",
+        "16-thunderers",
+        "8-hearthguard",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ]
+    },
+    {
+      "id": "111-thunderer-m",
+      "name": "Thunderer (M)",
+      "pts": 0,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-rapier",
+        "16-thunderers",
+        "8-hearthguard",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "112-thunderer-l",
+      "name": "Thunderer (L)",
+      "pts": -25,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-rapier",
+        "16-thunderers",
+        "8-hearthguard",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "120-warrior",
+      "name": "Warrior",
+      "pts": 20,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-warriors",
+        "12-rapier",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ]
+    },
+    {
+      "id": "121-warrior-m",
+      "name": "Warrior (M)",
+      "pts": -10,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-warriors",
+        "12-rapier",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "122-warrior-l",
+      "name": "Warrior (L)",
+      "pts": -40,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-warriors",
+        "12-rapier",
+        "28-rhino",
+        "29-termite",
+        "30-mole"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "220-air-attack-corps",
+      "name": "Air Attack Corps",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "Overlord"
+    },
+    {
+      "id": "221-air-attack-corps-m",
+      "name": "Air Attack Corps (M)",
+      "pts": 450,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "2x Overlords"
+    },
+    {
+      "id": "222-air-attack-corps-l",
+      "name": "Air Attack Corps (L)",
+      "pts": 650,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "3x Overlords"
+    },
+    {
+      "id": "230-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 25,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ]
+    },
+    {
+      "id": "231-artillery-battery-m",
+      "name": "Artillery Battery (M)",
+      "pts": 25,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ]
+    },
+    {
+      "id": "232-artillery-battery-l",
+      "name": "Artillery Battery (L)",
+      "pts": 0,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "240-gyrocopter-wing",
+      "name": "Gyrocopter Wing",
+      "pts": 75,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ]
+    },
+    {
+      "id": "241-gyrocopter-wing-m",
+      "name": "Gyrocopter Wing (M)",
+      "pts": 75,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ]
+    },
+    {
+      "id": "242-gyrocopter-wing-l",
+      "name": "Gyrocopter Wing (L)",
+      "pts": 75,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ]
+    },
+    {
+      "id": "260-guild-robot-squadron",
+      "name": "Guild Robot Squadron",
+      "pts": 0,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-colossus-class-robot",
+        "3-conqueror-class-robot"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "270-guild-squadron",
+      "name": "Guild Squadron",
+      "pts": -25,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "271-guild-squadron-m",
+      "name": "Guild Squadron (M)",
+      "pts": -100,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "272-guild-squadron-l",
+      "name": "Guild Squadron (L)",
+      "pts": -175,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "280-super-heavy-artillery-battery",
+      "name": "Super-Heavy Artillery Battery",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "Goliath"
+    },
+    {
+      "id": "281-super-heavy-artillery-battery-m",
+      "name": "Super-Heavy Artillery Battery (M)",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "2x Goliaths"
+    },
+    {
+      "id": "282-super-heavy-artillery-battery-l",
+      "name": "Super-Heavy Artillery Battery (L)",
+      "pts": 400,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "3x Goliaths"
+    },
+    {
+      "id": "290-thunderfire-battery",
+      "name": "Thunderfire Battery",
+      "pts": 100,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-thunderfire"
+      ]
+    },
+    {
+      "id": "300-colossus",
+      "name": "Colossus",
+      "pts": 600,
+      "tags": [
+        "war-engines"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "Colossus<br>Recon Iron Eagle"
+    },
+    {
+      "id": "310-cyclops",
+      "name": "Cyclops",
+      "pts": 600,
+      "tags": [
+        "war-engines"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "Cyclops"
+    },
+    {
+      "id": "320-land-train",
+      "name": "Land Train",
+      "pts": 225,
+      "tags": [
+        "war-engines"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-berserker-battlecar",
+        "22-dragon-battlecar",
+        "23-fire-shield-battlecar",
+        "24-skyhammer-battlecar",
+        "25-mortar-battlecar",
+        "26-iron-eagle-battlecar-and-1x-recon-iron-eagle",
+        "27-bomb-battlecar",
+        "10-living-ancestor",
+        "4-grand-warlord"
+      ],
+      "_unitsText": "Land Train"
+    },
+    {
+      "id": "330-leviathan",
+      "name": "Leviathan",
+      "pts": 400,
+      "tags": [
+        "war-engines"
+      ],
+      "units": [],
+      "upgrades": [
+        "4-grand-warlord",
+        "10-living-ancestor"
+      ],
+      "_unitsText": "Leviathan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-berserkers",
+      "name": "Berserkers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Berserkers",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-colossus-class-robot",
+      "name": "Colossus Class Robot",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Colossus Class Robot",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-conqueror-class-robot",
+      "name": "Conqueror Class Robot",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Conqueror Class Robot",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-grand-warlord",
+      "name": "Grand Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grand Warlord",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-guild-bikers",
+      "name": "Guild Bikers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guild Bikers",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-guild-trike",
+      "name": "Guild Trike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guild Trike",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-guildmaster",
+      "name": "Guildmaster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guildmaster",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-hearthguard",
+      "name": "Hearthguard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hearthguard",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-iron-eagle",
+      "name": "Iron Eagle",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Eagle",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-living-ancestor",
+      "name": "Living Ancestor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Living Ancestor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-mole-mortar",
+      "name": "Mole Mortar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mole Mortar",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-rapier",
+      "name": "Rapier",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rapier",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-steel-hawk",
+      "name": "Steel Hawk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Steel Hawk",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-tarantula",
+      "name": "Tarantula",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tarantula",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-thudd-gun",
+      "name": "Thudd Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thudd Gun",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-thunderers",
+      "name": "Thunderers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderers",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-thunderfire",
+      "name": "Thunderfire",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderfire",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-war-hawk",
+      "name": "War Hawk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "War Hawk",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-warlord",
+      "name": "Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-warriors",
+      "name": "Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warriors",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-berserker-battlecar",
+      "name": "Berserker Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Berserker Battlecar",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-dragon-battlecar",
+      "name": "Dragon Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dragon Battlecar",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-fire-shield-battlecar",
+      "name": "Fire Shield Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Shield Battlecar",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-skyhammer-battlecar",
+      "name": "Skyhammer Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skyhammer Battlecar",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-mortar-battlecar",
+      "name": "Mortar Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mortar Battlecar",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-iron-eagle-battlecar-and-1x-recon-iron-eagle",
+      "name": "Iron Eagle Battlecar (and 1x Recon Iron Eagle)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Eagle Battlecar (and 1x Recon Iron Eagle)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-bomb-battlecar",
+      "name": "Bomb Battlecar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bomb Battlecar",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-rhino",
+      "name": "Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhino",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-termite",
+      "name": "Termite",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Termite",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-mole",
+      "name": "Mole",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mole",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-warlord-with-grand-warlord",
+      "name": "Warlord with Grand Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord with Grand Warlord",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-warlord-with-grand-warlord-and-living-ancestor",
+      "name": "Warlord with Grand Warlord and Living Ancestor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord with Grand Warlord and Living Ancestor",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-guildmaster-with-grand-warlord",
+      "name": "Guildmaster with Grand Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guildmaster with Grand Warlord",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-warlord-with-living-ancestor",
+      "name": "Warlord with Living Ancestor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord with Living Ancestor",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-formations",
+      "from": [
+        "220-air-attack-corps",
+        "221-air-attack-corps-m",
+        "222-air-attack-corps-l",
+        "230-artillery-battery",
+        "231-artillery-battery-m",
+        "232-artillery-battery-l",
+        "240-gyrocopter-wing",
+        "241-gyrocopter-wing-m",
+        "242-gyrocopter-wing-l",
+        "260-guild-robot-squadron",
+        "270-guild-squadron",
+        "271-guild-squadron-m",
+        "272-guild-squadron-l",
+        "280-super-heavy-artillery-battery",
+        "281-super-heavy-artillery-battery-m",
+        "282-super-heavy-artillery-battery-l",
+        "290-thunderfire-battery"
+      ],
+      "max": 2,
+      "forEach": [
+        "100-berserker",
+        "101-berserker-m",
+        "102-berserker-l",
+        "110-thunderer",
+        "111-thunderer-m",
+        "112-thunderer-l",
+        "120-warrior",
+        "121-warrior-m",
+        "122-warrior-l"
+      ],
+      "_name2": "Brotherhood"
+    },
+    {
+      "id": "war-engines",
+      "from": [
+        "300-colossus",
+        "310-cyclops",
+        "320-land-train",
+        "330-leviathan"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "1-berserkers"
+      ],
+      "min": 5,
+      "appliesTo": [
+        "100-berserker"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "1-berserkers"
+      ],
+      "min": 10,
+      "appliesTo": [
+        "101-berserker-m"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "1-berserkers"
+      ],
+      "min": 15,
+      "appliesTo": [
+        "102-berserker-l"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "12-rapier"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "110-thunderer",
+        "120-warrior"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "12-rapier"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "111-thunderer-m",
+        "121-warrior-m"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "12-rapier"
+      ],
+      "max": 9,
+      "appliesTo": [
+        "112-thunderer-l",
+        "122-warrior-l"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "2-colossus-class-robot",
+        "3-conqueror-class-robot"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "260-guild-robot-squadron"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "4-grand-warlord",
+        "40-warlord-with-grand-warlord",
+        "41-warlord-with-grand-warlord-and-living-ancestor",
+        "42-guildmaster-with-grand-warlord"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "min": 5,
+      "appliesTo": [
+        "270-guild-squadron"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "min": 10,
+      "appliesTo": [
+        "271-guild-squadron-m"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "5-guild-bikers",
+        "6-guild-trike"
+      ],
+      "min": 15,
+      "appliesTo": [
+        "272-guild-squadron-l"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "7-guildmaster",
+        "42-guildmaster-with-grand-warlord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "270-guild-squadron"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "7-guildmaster",
+        "42-guildmaster-with-grand-warlord"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "271-guild-squadron-m"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "7-guildmaster",
+        "42-guildmaster-with-grand-warlord"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "272-guild-squadron-l"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "8-hearthguard"
+      ],
+      "min": 1,
+      "appliesTo": [
+        "100-berserker"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "8-hearthguard"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "110-thunderer"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "8-hearthguard"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "101-berserker-m"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "8-hearthguard"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "111-thunderer-m"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "8-hearthguard"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "102-berserker-l"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "8-hearthguard"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "112-thunderer-l"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "8-hearthguard",
+        "19-warlord",
+        "40-warlord-with-grand-warlord",
+        "41-warlord-with-grand-warlord-and-living-ancestor",
+        "43-warlord-with-living-ancestor"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "120-warrior"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "8-hearthguard",
+        "19-warlord",
+        "40-warlord-with-grand-warlord",
+        "41-warlord-with-grand-warlord-and-living-ancestor",
+        "43-warlord-with-living-ancestor"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "121-warrior-m"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "8-hearthguard",
+        "19-warlord",
+        "40-warlord-with-grand-warlord",
+        "41-warlord-with-grand-warlord-and-living-ancestor",
+        "43-warlord-with-living-ancestor"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "122-warrior-l"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "240-gyrocopter-wing"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "241-gyrocopter-wing-m"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "9-iron-eagle",
+        "13-steel-hawk",
+        "18-war-hawk"
+      ],
+      "min": 9,
+      "appliesTo": [
+        "242-gyrocopter-wing-l"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "10-living-ancestor",
+        "41-warlord-with-grand-warlord-and-living-ancestor",
+        "43-warlord-with-living-ancestor"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ],
+      "min": 5,
+      "appliesTo": [
+        "230-artillery-battery"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ],
+      "min": 10,
+      "appliesTo": [
+        "231-artillery-battery-m"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "11-mole-mortar",
+        "14-tarantula",
+        "15-thudd-gun"
+      ],
+      "min": 15,
+      "appliesTo": [
+        "232-artillery-battery-l"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "16-thunderers"
+      ],
+      "min": 5,
+      "appliesTo": [
+        "110-thunderer"
+      ]
+    },
+    {
+      "id": "uc-31",
+      "from": [
+        "16-thunderers"
+      ],
+      "min": 10,
+      "appliesTo": [
+        "111-thunderer-m"
+      ]
+    },
+    {
+      "id": "uc-32",
+      "from": [
+        "16-thunderers"
+      ],
+      "min": 15,
+      "appliesTo": [
+        "112-thunderer-l"
+      ]
+    },
+    {
+      "id": "uc-33",
+      "from": [
+        "17-thunderfire"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "290-thunderfire-battery"
+      ]
+    },
+    {
+      "id": "uc-34",
+      "from": [
+        "20-warriors"
+      ],
+      "min": 9,
+      "appliesTo": [
+        "120-warrior"
+      ]
+    },
+    {
+      "id": "uc-35",
+      "from": [
+        "20-warriors"
+      ],
+      "min": 18,
+      "appliesTo": [
+        "121-warrior-m"
+      ]
+    },
+    {
+      "id": "uc-36",
+      "from": [
+        "20-warriors"
+      ],
+      "min": 27,
+      "appliesTo": [
+        "122-warrior-l"
+      ]
+    },
+    {
+      "id": "uc-37",
+      "from": [
+        "21-berserker-battlecar",
+        "22-dragon-battlecar",
+        "23-fire-shield-battlecar",
+        "24-skyhammer-battlecar",
+        "25-mortar-battlecar",
+        "26-iron-eagle-battlecar-and-1x-recon-iron-eagle",
+        "27-bomb-battlecar"
+      ],
+      "max": 4,
+      "min": 1,
+      "appliesTo": [
+        "320-land-train"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

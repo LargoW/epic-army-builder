@@ -1,0 +1,1193 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/corsairs-33",
+  "name": "Red Corsairs",
+  "faction": "Chaos",
+  "version": "3.3",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_corsairs_3.3.json",
+    "by": "Parintachin, last update 2013-10-16",
+    "notes": [
+      "This list is rated 'Developmental'",
+      "Formations deploying by drop pod or Rhino must take just enough to transport the entire formation.",
+      "Cult engines can only be added to formations that contain marines from the same cult",
+      "Add one free Lesser Daemon to Daemon pool per Daemonic Pact"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "daemon-pool",
+      "name": "Daemon Pool",
+      "formations": [
+        "500-daemon-pool"
+      ]
+    },
+    {
+      "id": "red-corsairs-core-formations",
+      "name": "Red Corsairs Core Formations",
+      "formations": [
+        "501-hounds-squadron",
+        "502-terminator-retinue",
+        "503-renegade-warband"
+      ]
+    },
+    {
+      "id": "red-corsairs-support-formatons",
+      "name": "Red Corsairs Support Formatons",
+      "formations": [
+        "510-armoured-company",
+        "511-spaceship",
+        "512-chaos-thunderhawk",
+        "513-chosen",
+        "514-khornate-cult-marines",
+        "515-tzeenchian-cult-marines",
+        "516-nurglish-cult-marines",
+        "517-slaaneeshi-cult-marines",
+        "518-defiler-assaut-force",
+        "519-blood-slaughterer-pack",
+        "520-brass-scorpion-onlsaught",
+        "521-silver-tower-circle",
+        "522-blight-drone-swarm",
+        "523-daemon-knight-pavane",
+        "524-raptor-cult"
+      ]
+    },
+    {
+      "id": "chaos-navy-aircraft",
+      "name": "Chaos Navy Aircraft",
+      "formations": [
+        "531-three-hellblade-interceptors",
+        "532-two-hell-talon-fighter-bombers",
+        "533-one-harbinger-bomber"
+      ]
+    },
+    {
+      "id": "chaos-titan-legion-battlegroups",
+      "name": "Chaos Titan Legion Battlegroups",
+      "formations": [
+        "540-one-chaos-warlord-class-titan",
+        "541-one-chaos-reaver-class-titan",
+        "542-one-chaos-warhound-class-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-daemon-pool",
+      "name": "Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-greater-daemon",
+        "12-lesser-daemons"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-hounds-squadron",
+      "name": "Hounds Squadron",
+      "pts": 300,
+      "tags": [
+        "red-corsairs-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-daemonic-pact",
+        "14-icon-bearer"
+      ],
+      "_unitsText": "8 Chaos Space Marine Bike units"
+    },
+    {
+      "id": "502-terminator-retinue",
+      "name": "Terminator Retinue",
+      "pts": 35,
+      "tags": [
+        "red-corsairs-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "50-terminator-unit",
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "18-chaos-hunter",
+        "19-chaos-land-raider",
+        "21-chaos-spawn",
+        "22-chaos-vindicator",
+        "13-daemonic-pact",
+        "28-defiler",
+        "29-desecrator",
+        "14-icon-bearer",
+        "35-obliterators"
+      ]
+    },
+    {
+      "id": "503-renegade-warband",
+      "name": "Renegade Warband",
+      "pts": 275,
+      "tags": [
+        "red-corsairs-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-daemonic-pact",
+        "14-icon-bearer",
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "18-chaos-hunter",
+        "19-chaos-land-raider",
+        "20-chaos-rhino",
+        "21-chaos-spawn",
+        "22-chaos-vindicator",
+        "28-defiler",
+        "29-desecrator",
+        "30-blood-slaughterer",
+        "31-silver-tower",
+        "32-blight-drone",
+        "33-daemon-knight",
+        "35-obliterators"
+      ]
+    },
+    {
+      "id": "510-armoured-company",
+      "name": "Armoured Company",
+      "pts": 0,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "51-chaos-predator",
+        "19-chaos-land-raider",
+        "18-chaos-hunter",
+        "22-chaos-vindicator",
+        "28-defiler",
+        "29-desecrator"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "511-spaceship",
+      "name": "Spaceship",
+      "pts": 0,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "512-chaos-thunderhawk",
+      "name": "Chaos Thunderhawk",
+      "pts": 250,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Chaos Thunderhawk Gunship"
+    },
+    {
+      "id": "513-chosen",
+      "name": "Chosen",
+      "pts": 200,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-chaos-champion",
+        "17-chaos-drop-pod",
+        "20-chaos-rhino",
+        "13-daemonic-pact"
+      ],
+      "_unitsText": "6 Chaos Space Marine Units - all have the Scout ability"
+    },
+    {
+      "id": "514-khornate-cult-marines",
+      "name": "Khornate Cult Marines",
+      "pts": 275,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "20-chaos-rhino",
+        "13-daemonic-pact",
+        "28-defiler",
+        "29-desecrator",
+        "30-blood-slaughterer"
+      ],
+      "_unitsText": "6 Khorne Berzerker units"
+    },
+    {
+      "id": "515-tzeenchian-cult-marines",
+      "name": "Tzeenchian Cult Marines",
+      "pts": 275,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "20-chaos-rhino",
+        "13-daemonic-pact",
+        "28-defiler",
+        "29-desecrator",
+        "31-silver-tower"
+      ],
+      "_unitsText": "6 Thousand Sons units"
+    },
+    {
+      "id": "516-nurglish-cult-marines",
+      "name": "Nurglish Cult Marines",
+      "pts": 275,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "20-chaos-rhino",
+        "13-daemonic-pact",
+        "28-defiler",
+        "29-desecrator",
+        "32-blight-drone"
+      ],
+      "_unitsText": "6 Plague Marine units"
+    },
+    {
+      "id": "517-slaaneeshi-cult-marines",
+      "name": "Slaaneeshi Cult Marines",
+      "pts": 275,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-chaos-champion",
+        "16-chaos-dreadnaught",
+        "17-chaos-drop-pod",
+        "20-chaos-rhino",
+        "13-daemonic-pact",
+        "28-defiler",
+        "29-desecrator",
+        "33-daemon-knight"
+      ],
+      "_unitsText": "6 Noise Marine units"
+    },
+    {
+      "id": "518-defiler-assaut-force",
+      "name": "Defiler Assaut Force",
+      "pts": 250,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator"
+      ],
+      "_unitsText": "4 Defilers"
+    },
+    {
+      "id": "519-blood-slaughterer-pack",
+      "name": "Blood Slaughterer Pack",
+      "pts": 225,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator",
+        "30-blood-slaughterer"
+      ],
+      "_unitsText": "5 Blood Slaughterers"
+    },
+    {
+      "id": "520-brass-scorpion-onlsaught",
+      "name": "Brass Scorpion Onlsaught",
+      "pts": 250,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator",
+        "30-blood-slaughterer"
+      ],
+      "_unitsText": "2 Brass Scorpions"
+    },
+    {
+      "id": "521-silver-tower-circle",
+      "name": "Silver Tower Circle",
+      "pts": 250,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator",
+        "31-silver-tower"
+      ],
+      "_unitsText": "4 Silver Towers"
+    },
+    {
+      "id": "522-blight-drone-swarm",
+      "name": "Blight Drone Swarm",
+      "pts": 300,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator",
+        "32-blight-drone"
+      ],
+      "_unitsText": "6 Blight Drones"
+    },
+    {
+      "id": "523-daemon-knight-pavane",
+      "name": "Daemon Knight Pavane",
+      "pts": 250,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-defiler",
+        "29-desecrator",
+        "33-daemon-knight"
+      ],
+      "_unitsText": "4 Daemon Knights"
+    },
+    {
+      "id": "524-raptor-cult",
+      "name": "Raptor Cult",
+      "pts": 35,
+      "tags": [
+        "red-corsairs-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "54-raptor-unit",
+        "13-daemonic-pact"
+      ]
+    },
+    {
+      "id": "531-three-hellblade-interceptors",
+      "name": "Three Hellblade Interceptors",
+      "pts": 200,
+      "tags": [
+        "chaos-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "532-two-hell-talon-fighter-bombers",
+      "name": "Two Hell Talon Fighter-Bombers",
+      "pts": 225,
+      "tags": [
+        "chaos-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "533-one-harbinger-bomber",
+      "name": "One Harbinger Bomber",
+      "pts": 400,
+      "tags": [
+        "chaos-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "540-one-chaos-warlord-class-titan",
+      "name": "One Chaos Warlord Class Titan",
+      "pts": 800,
+      "tags": [
+        "chaos-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "541-one-chaos-reaver-class-titan",
+      "name": "One Chaos Reaver Class Titan",
+      "pts": 625,
+      "tags": [
+        "chaos-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "542-one-chaos-warhound-class-titan",
+      "name": "One Chaos Warhound Class Titan",
+      "pts": 300,
+      "tags": [
+        "chaos-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-greater-daemon",
+      "name": "Greater daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Greater daemon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-lesser-daemons",
+      "name": "Lesser Daemons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemons",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-daemonic-pact",
+      "name": "Daemonic Pact",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonic Pact",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-icon-bearer",
+      "name": "Icon Bearer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Icon Bearer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-chaos-champion",
+      "name": "Chaos Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Champion",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-chaos-dreadnaught",
+      "name": "Chaos Dreadnaught",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Dreadnaught",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-chaos-drop-pod",
+      "name": "Chaos Drop Pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Drop Pod",
+          "pts": 5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-chaos-hunter",
+      "name": "Chaos Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Hunter",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-chaos-land-raider",
+      "name": "Chaos Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-chaos-rhino",
+      "name": "Chaos Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Rhino",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-chaos-spawn",
+      "name": "Chaos Spawn",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Spawn",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-chaos-vindicator",
+      "name": "Chaos Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Vindicator",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-8-chaos-space-marine-units",
+      "name": "8 Chaos Space Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Chaos Space Marine units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-4-chaos-space-marine-units-4-khorne-berzerker-units",
+      "name": "4 Chaos Space Marine units, 4 Khorne Berzerker units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chaos Space Marine units, 4 Khorne Berzerker units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-4-chaos-space-marine-units-4-noise-marine-units",
+      "name": "4 Chaos Space Marine units, 4  Noise Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chaos Space Marine units, 4  Noise Marine units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-4-chaos-space-marine-units-4-plague-marine-units",
+      "name": "4 Chaos Space Marine units, 4 Plague Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chaos Space Marine units, 4 Plague Marine units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-4-chaos-space-marine-units-4-thousand-sons-units",
+      "name": "4 Chaos Space Marine units, 4 Thousand Sons units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chaos Space Marine units, 4 Thousand Sons units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-4-chaos-space-marine-units-4-havoc-units",
+      "name": "4 Chaos Space Marine units, 4 Havoc units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chaos Space Marine units, 4 Havoc units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-4-havoc-units-4-khorne-berzerker-units",
+      "name": "4 Havoc units, 4 Khorne Berzerker units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havoc units, 4 Khorne Berzerker units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-4-havoc-units-4-noise-marine-units",
+      "name": "4 Havoc units, 4  Noise Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havoc units, 4  Noise Marine units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-4-havoc-units-4-plague-marine-units",
+      "name": "4 Havoc units, 4 Plague Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havoc units, 4 Plague Marine units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-4-havoc-units-4-thousand-sons-units",
+      "name": "4 Havoc units, 4 Thousand Sons units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havoc units, 4 Thousand Sons units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-defiler",
+      "name": "Defiler",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Defiler",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-desecrator",
+      "name": "Desecrator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Desecrator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-blood-slaughterer",
+      "name": "Blood Slaughterer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Slaughterer",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-silver-tower",
+      "name": "Silver Tower",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Silver Tower",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-blight-drone",
+      "name": "Blight Drone",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blight Drone",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-daemon-knight",
+      "name": "Daemon Knight",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Knight",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-obliterators",
+      "name": "Obliterators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obliterators",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-terminator-unit",
+      "name": "Terminator unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Terminator unit",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-chaos-predator",
+      "name": "Chaos Predator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Predator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-chaos-strike-cruiser",
+      "name": "Chaos Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Strike Cruiser",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-chaos-battle-barge",
+      "name": "Chaos Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Battle Barge",
+          "pts": 350,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-raptor-unit",
+      "name": "Raptor Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raptor Unit",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "90-chaos-lord",
+      "name": "Chaos Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "91-sorceror-lord",
+      "name": "Sorceror Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sorceror Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "92-chaos-warlord",
+      "name": "Chaos Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Warlord",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "93-swap-the-chaos-lord-and-his-unit-for-a-daemon-prince",
+      "name": "Swap the chaos Lord and his unit for a Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swap the chaos Lord and his unit for a Daemon Prince",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "500-daemon-pool"
+      ],
+      "max": 1
+    },
+    {
+      "id": "spaceship",
+      "from": [
+        "511-spaceship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "unknown-510.511",
+        "512-chaos-thunderhawk",
+        "513-chosen",
+        "514-khornate-cult-marines",
+        "515-tzeenchian-cult-marines",
+        "516-nurglish-cult-marines",
+        "517-slaaneeshi-cult-marines",
+        "518-defiler-assaut-force",
+        "519-blood-slaughterer-pack",
+        "520-brass-scorpion-onlsaught",
+        "521-silver-tower-circle",
+        "522-blight-drone-swarm",
+        "523-daemon-knight-pavane",
+        "524-raptor-cult",
+        "unknown-525"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-hounds-squadron",
+        "502-terminator-retinue",
+        "503-renegade-warband"
+      ],
+      "_name2": "Core Formation"
+    },
+    {
+      "id": "chaos-navy-and-titan-formations",
+      "from": [
+        "531-three-hellblade-interceptors",
+        "532-two-hell-talon-fighter-bombers",
+        "533-one-harbinger-bomber",
+        "540-one-chaos-warlord-class-titan",
+        "541-one-chaos-reaver-class-titan",
+        "542-one-chaos-warhound-class-titan"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "90-chaos-lord",
+        "91-sorceror-lord",
+        "92-chaos-warlord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-hounds-squadron",
+        "514-khornate-cult-marines",
+        "515-tzeenchian-cult-marines",
+        "516-nurglish-cult-marines",
+        "517-slaaneeshi-cult-marines",
+        "524-raptor-cult"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "90-chaos-lord",
+        "91-sorceror-lord",
+        "92-chaos-warlord",
+        "93-swap-the-chaos-lord-and-his-unit-for-a-daemon-prince"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-terminator-retinue",
+        "503-renegade-warband",
+        "unknown-525"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "23-8-chaos-space-marine-units",
+        "24-4-chaos-space-marine-units-4-khorne-berzerker-units",
+        "25-4-chaos-space-marine-units-4-noise-marine-units",
+        "26-4-chaos-space-marine-units-4-plague-marine-units",
+        "27-4-chaos-space-marine-units-4-thousand-sons-units",
+        "36-4-chaos-space-marine-units-4-havoc-units",
+        "37-4-havoc-units-4-khorne-berzerker-units",
+        "38-4-havoc-units-4-noise-marine-units",
+        "39-4-havoc-units-4-plague-marine-units",
+        "40-4-havoc-units-4-thousand-sons-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "503-renegade-warband"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "13-daemonic-pact"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "14-icon-bearer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "15-chaos-champion"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "16-chaos-dreadnaught"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "18-chaos-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "19-chaos-land-raider"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "502-terminator-retinue",
+        "503-renegade-warband"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "21-chaos-spawn"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "22-chaos-vindicator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "23-8-chaos-space-marine-units",
+        "24-4-chaos-space-marine-units-4-khorne-berzerker-units",
+        "25-4-chaos-space-marine-units-4-noise-marine-units",
+        "26-4-chaos-space-marine-units-4-plague-marine-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "93-swap-the-chaos-lord-and-his-unit-for-a-daemon-prince"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "92-chaos-warlord"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "28-defiler",
+        "29-desecrator",
+        "30-blood-slaughterer",
+        "32-blight-drone",
+        "32-blight-drone",
+        "33-daemon-knight"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "34-34"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "35-obliterators"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "50-terminator-unit"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "502-terminator-retinue"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "51-chaos-predator",
+        "19-chaos-land-raider"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "510-armoured-company"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "52-chaos-strike-cruiser",
+        "53-chaos-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "511-spaceship"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "54-raptor-unit"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "524-raptor-cult"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,1286 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ork/bad-moons-epicuk",
+  "name": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
+  "faction": "Orks",
+  "version": "3.2 - EpicUK",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\ORK_Bad_moons_EPICUK.json",
+    "by": "Reedar + Kyussinchains",
+    "notes": [
+      "If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit.",
+      "Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "war-hordes",
+      "name": "WAR HORDES",
+      "formations": [
+        "500-bad-moons-warband",
+        "501-bad-moons-warband-big",
+        "502-bad-moons-warband-uge",
+        "503-flash-gitz",
+        "533-flash-gitz-big",
+        "504-eavy-walker-mob",
+        "530-eavy-walker-mob-big",
+        "531-eavy-walker-mob-uge",
+        "505-mekboy-eavy-tanks-mob",
+        "532-mekboy-eavy-tanks-mob-big",
+        "513-grot-horde",
+        "514-grot-horde-big",
+        "515-grot-horde-uge",
+        "510-mekboy-walker-mob",
+        "511-mekboy-walker-mob-big",
+        "599-tellyporta-array"
+      ]
+    },
+    {
+      "id": "aircraft-spacecraft-and-gargants",
+      "name": "AIRCRAFT, SPACECRAFT AND GARGANTS",
+      "formations": [
+        "520-spacecraft",
+        "517-fighta-skwadron",
+        "518-bommer",
+        "522-gargant",
+        "523-great-gargant"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-bad-moons-warband",
+      "name": "Bad Moons Warband",
+      "pts": -25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord",
+        "50-boyz",
+        "82-boyz-grotz",
+        "10-meganobz",
+        "11-flash-gits",
+        "12-ardwagon",
+        "13-gorkanaut",
+        "14-morkanaut",
+        "57-killa-kan",
+        "60-dreadnought",
+        "61-flakwagon",
+        "71-stompa",
+        "72-mega-dread",
+        "43-big-gunz",
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-bad-moons-warband-big",
+      "name": "Bad Moons Warband (Big)",
+      "pts": -100,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord",
+        "50-boyz",
+        "82-boyz-grotz",
+        "10-meganobz",
+        "11-flash-gits",
+        "12-ardwagon",
+        "13-gorkanaut",
+        "14-morkanaut",
+        "57-killa-kan",
+        "60-dreadnought",
+        "61-flakwagon",
+        "71-stompa",
+        "72-mega-dread",
+        "43-big-gunz",
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-bad-moons-warband-uge",
+      "name": "Bad Moons Warband ('Uge)",
+      "pts": -175,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord",
+        "50-boyz",
+        "82-boyz-grotz",
+        "10-meganobz",
+        "11-flash-gits",
+        "12-ardwagon",
+        "13-gorkanaut",
+        "14-morkanaut",
+        "57-killa-kan",
+        "60-dreadnought",
+        "61-flakwagon",
+        "71-stompa",
+        "72-mega-dread",
+        "43-big-gunz",
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "503-flash-gitz",
+      "name": "Flash Gitz",
+      "pts": 60,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-meganobz",
+        "11-flash-gits",
+        "12-ardwagon",
+        "67-oddboy-d3-1-powerfields"
+      ]
+    },
+    {
+      "id": "533-flash-gitz-big",
+      "name": "Flash Gitz (Big)",
+      "pts": 70,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-meganobz",
+        "11-flash-gits",
+        "12-ardwagon",
+        "67-oddboy-d3-1-powerfields"
+      ]
+    },
+    {
+      "id": "504-eavy-walker-mob",
+      "name": "'Eavy Walker Mob",
+      "pts": 25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-flakwagon",
+        "81-warlord",
+        "13-gorkanaut",
+        "14-morkanaut"
+      ]
+    },
+    {
+      "id": "530-eavy-walker-mob-big",
+      "name": "'Eavy Walker Mob (Big)",
+      "pts": 0,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-flakwagon",
+        "81-warlord",
+        "13-gorkanaut",
+        "14-morkanaut"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "531-eavy-walker-mob-uge",
+      "name": "'Eavy Walker Mob ('Uge)",
+      "pts": -25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-flakwagon",
+        "81-warlord",
+        "13-gorkanaut",
+        "14-morkanaut"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "505-mekboy-eavy-tanks-mob",
+      "name": "Mekboy 'Eavy Tanks Mob",
+      "pts": 0,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-flakwagon",
+        "81-warlord",
+        "15-kill-blasta",
+        "16-kill-bursta"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "532-mekboy-eavy-tanks-mob-big",
+      "name": "Mekboy 'Eavy Tanks Mob (Big)",
+      "pts": -50,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-flakwagon",
+        "81-warlord",
+        "15-kill-blasta",
+        "16-kill-bursta"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "513-grot-horde",
+      "name": "Grot Horde",
+      "pts": 25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "57-killa-kan",
+        "43-big-gunz",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ]
+    },
+    {
+      "id": "514-grot-horde-big",
+      "name": "Grot Horde (Big)",
+      "pts": 0,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "57-killa-kan",
+        "43-big-gunz",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "515-grot-horde-uge",
+      "name": "Grot Horde ('Uge)",
+      "pts": -25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "57-killa-kan",
+        "43-big-gunz",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "510-mekboy-walker-mob",
+      "name": "Mekboy Walker mob",
+      "pts": 25,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun",
+        "71-stompa",
+        "72-mega-dread",
+        "57-killa-kan",
+        "60-dreadnought",
+        "61-flakwagon"
+      ]
+    },
+    {
+      "id": "511-mekboy-walker-mob-big",
+      "name": "Mekboy Walker mob (Big)",
+      "pts": 0,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun",
+        "71-stompa",
+        "72-mega-dread",
+        "57-killa-kan",
+        "60-dreadnought",
+        "61-flakwagon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "599-tellyporta-array",
+      "name": "Tellyporta Array",
+      "pts": 50,
+      "tags": [
+        "war-hordes"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "520-spacecraft",
+      "name": "Spacecraft",
+      "pts": 100,
+      "tags": [
+        "aircraft-spacecraft-and-gargants"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "517-fighta-skwadron",
+      "name": "Fighta Skwadron",
+      "pts": 0,
+      "tags": [
+        "aircraft-spacecraft-and-gargants"
+      ],
+      "units": [],
+      "upgrades": [
+        "49-fighta-bomba"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "518-bommer",
+      "name": "Bommer",
+      "pts": 175,
+      "tags": [
+        "aircraft-spacecraft-and-gargants"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "522-gargant",
+      "name": "Gargant",
+      "pts": 650,
+      "tags": [
+        "aircraft-spacecraft-and-gargants"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord"
+      ]
+    },
+    {
+      "id": "523-great-gargant",
+      "name": "Great Gargant",
+      "pts": 850,
+      "tags": [
+        "aircraft-spacecraft-and-gargants"
+      ],
+      "units": [],
+      "upgrades": [
+        "81-warlord"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "81-warlord",
+      "name": "Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-boyz",
+      "name": "Boyz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Boyz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-grotz",
+      "name": "Grotz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grotz",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "82-boyz-grotz",
+      "name": "Boyz + Grotz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Boyz + Grotz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-meganobz",
+      "name": "Meganobz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Meganobz",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-flash-gits",
+      "name": "Flash Gits",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flash Gits",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-ardwagon",
+      "name": "'Ardwagon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "'Ardwagon",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-gorkanaut",
+      "name": "Gorkanaut",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gorkanaut",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-morkanaut",
+      "name": "Morkanaut",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Morkanaut",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-kill-blasta",
+      "name": "Kill Blasta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kill Blasta",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-kill-bursta",
+      "name": "Kill Bursta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kill Bursta",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-killa-kan",
+      "name": "Killa Kan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Killa Kan",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-dreadnought",
+      "name": "Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-flakwagon",
+      "name": "Flakwagon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flakwagon",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "67-oddboy-d3-1-powerfields",
+      "name": "Oddboy - D3+1 Powerfields",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Oddboy - D3+1 Powerfields",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "68-oddboy-zzap",
+      "name": "Oddboy - Zzap",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Oddboy - Zzap",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "69-oddboy-soopagun",
+      "name": "Oddboy - Soopagun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Oddboy - Soopagun",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-stompa",
+      "name": "Stompa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stompa",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-mega-dread",
+      "name": "Mega Dread",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Dread",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-big-gunz",
+      "name": "Big Gunz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Big Gunz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "49-fighta-bomba",
+      "name": "Fighta Bomba",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fighta Bomba",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "80-kill-kroozer",
+      "name": "Kill Kroozer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kill Kroozer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "91-battle-kroozer",
+      "name": "Battle Kroozer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Kroozer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "92-soopagun",
+      "name": "Soopagun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Soopagun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "93-twin-soopagun",
+      "name": "Twin Soopagun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Twin Soopagun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "94-supa-zzap-gun",
+      "name": "Supa-Zzap Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supa-Zzap Gun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "95-mega-choppa",
+      "name": "Mega Choppa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mega Choppa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "96-lifta-droppa",
+      "name": "Lifta droppa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lifta droppa",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "520-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "tellyporta-array",
+      "from": [
+        "599-tellyporta-array"
+      ],
+      "max": 3
+    },
+    {
+      "id": "eavy-walker-mob",
+      "from": [
+        "504-eavy-walker-mob",
+        "530-eavy-walker-mob-big",
+        "531-eavy-walker-mob-uge"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-bad-moons-warband",
+        "501-bad-moons-warband-big",
+        "502-bad-moons-warband-uge"
+      ],
+      "_name2": "Bad Moons Warband"
+    },
+    {
+      "id": "gargants-aircraft-and-spacecraft",
+      "from": [
+        "520-spacecraft",
+        "517-fighta-skwadron",
+        "518-bommer",
+        "522-gargant",
+        "523-great-gargant"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "81-warlord"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "92-soopagun",
+        "94-supa-zzap-gun",
+        "95-mega-choppa"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "522-gargant"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "94-supa-zzap-gun",
+        "95-mega-choppa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-gargant"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "92-soopagun"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "523-great-gargant"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "93-twin-soopagun",
+        "96-lifta-droppa"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "523-great-gargant"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "96-lifta-droppa"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "523-great-gargant"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "504-eavy-walker-mob",
+        "unknown-507",
+        "510-mekboy-walker-mob",
+        "513-grot-horde"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-bad-moons-warband"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "505-mekboy-eavy-tanks-mob",
+        "unknown-508",
+        "511-mekboy-walker-mob-big",
+        "514-grot-horde-big"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-bad-moons-warband-big"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "unknown-506",
+        "unknown-509",
+        "515-grot-horde-uge"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "67-oddboy-d3-1-powerfields",
+        "68-oddboy-zzap",
+        "69-oddboy-soopagun"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "502-bad-moons-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "67-oddboy-d3-1-powerfields"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "503-flash-gitz"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "67-oddboy-d3-1-powerfields"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "533-flash-gitz-big"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "11-flash-gits"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "503-flash-gitz"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "503-flash-gitz"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "11-flash-gits"
+      ],
+      "min": 8,
+      "appliesTo": [
+        "533-flash-gitz-big"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "533-flash-gitz-big"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "13-gorkanaut",
+        "14-morkanaut"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "504-eavy-walker-mob"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "13-gorkanaut",
+        "14-morkanaut"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "530-eavy-walker-mob-big"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "13-gorkanaut",
+        "14-morkanaut"
+      ],
+      "max": 12,
+      "min": 6,
+      "appliesTo": [
+        "531-eavy-walker-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "15-kill-blasta",
+        "16-kill-bursta"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "505-mekboy-eavy-tanks-mob"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "15-kill-blasta",
+        "16-kill-bursta"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "532-mekboy-eavy-tanks-mob-big"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "10-meganobz"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "500-bad-moons-warband"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "10-meganobz"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "501-bad-moons-warband-big"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "10-meganobz"
+      ],
+      "max": 12,
+      "min": 6,
+      "appliesTo": [
+        "502-bad-moons-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "50-boyz"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "500-bad-moons-warband"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "50-boyz"
+      ],
+      "min": 12,
+      "appliesTo": [
+        "501-bad-moons-warband-big"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "50-boyz"
+      ],
+      "min": 18,
+      "appliesTo": [
+        "502-bad-moons-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "500-bad-moons-warband"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "501-bad-moons-warband-big"
+      ]
+    },
+    {
+      "id": "uc-31",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "502-bad-moons-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-32",
+      "from": [
+        "11-flash-gits"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "500-bad-moons-warband"
+      ]
+    },
+    {
+      "id": "uc-33",
+      "from": [
+        "11-flash-gits"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "501-bad-moons-warband-big"
+      ]
+    },
+    {
+      "id": "uc-34",
+      "from": [
+        "11-flash-gits"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "502-bad-moons-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-35",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "513-grot-horde"
+      ]
+    },
+    {
+      "id": "uc-36",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "514-grot-horde-big"
+      ]
+    },
+    {
+      "id": "uc-37",
+      "from": [
+        "20-grotz"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "515-grot-horde-uge"
+      ]
+    },
+    {
+      "id": "uc-38",
+      "from": [
+        "71-stompa",
+        "72-mega-dread"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "510-mekboy-walker-mob"
+      ]
+    },
+    {
+      "id": "uc-39",
+      "from": [
+        "71-stompa",
+        "72-mega-dread"
+      ],
+      "min": 8,
+      "appliesTo": [
+        "511-mekboy-walker-mob-big"
+      ]
+    },
+    {
+      "id": "uc-40",
+      "from": [
+        "43-big-gunz",
+        "57-killa-kan"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "513-grot-horde"
+      ]
+    },
+    {
+      "id": "uc-41",
+      "from": [
+        "43-big-gunz",
+        "57-killa-kan"
+      ],
+      "min": 12,
+      "appliesTo": [
+        "514-grot-horde-big"
+      ]
+    },
+    {
+      "id": "uc-42",
+      "from": [
+        "43-big-gunz",
+        "57-killa-kan"
+      ],
+      "min": 18,
+      "appliesTo": [
+        "515-grot-horde-uge"
+      ]
+    },
+    {
+      "id": "uc-43",
+      "from": [
+        "49-fighta-bomba"
+      ],
+      "max": 9,
+      "min": 3,
+      "appliesTo": [
+        "517-fighta-skwadron"
+      ]
+    },
+    {
+      "id": "uc-44",
+      "from": [
+        "80-kill-kroozer",
+        "91-battle-kroozer"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "520-spacecraft"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

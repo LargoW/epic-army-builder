@@ -1,0 +1,850 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/squats-armorbreaker",
+  "name": "Squat Armorbreaker",
+  "faction": "Xenos",
+  "version": "2.1.12 *FANLIST*",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_squats_Armorbreaker_NETEA.json",
+    "by": "Parintachin, 2013-11-8",
+    "notes": [
+      "Maximum one Warlord and one Master Craftsman allowed per 1000 points of the army",
+      "For every 2 WE formations, you must take a brotherhood",
+      "Hold Guard units can only be taken if the army contains a Living Ancestor, Grand Master or Warlord"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "war-engine-formations",
+      "name": "WAR ENGINE FORMATIONS",
+      "formations": [
+        "500-colossus",
+        "501-leviathan",
+        "502-land-train",
+        "503-overlord-squad"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "510-iron-eagle-squadron",
+        "511-iron-hawk-squadron",
+        "512-skysweepers-unit",
+        "513-cyclops",
+        "514-goliath-mega-cannon-battery",
+        "515-vongal-cruiser"
+      ]
+    },
+    {
+      "id": "brotherhoods",
+      "name": "BROTHERHOODS",
+      "formations": [
+        "520-hold-guard",
+        "521-azdak-sappers-guild",
+        "522-ironsmash-guild",
+        "523-gravebellows-league",
+        "524-khondgin-trikers",
+        "525-rockbreaker-league"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-colossus",
+      "name": "Colossus",
+      "pts": 450,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-warlord",
+        "2-grand-master-of-the-guild",
+        "3-living-ancestor",
+        "4-master-craftsman",
+        "10-iron-hawk-gyrocopter"
+      ],
+      "_unitsText": "1 Colossus"
+    },
+    {
+      "id": "501-leviathan",
+      "name": "Leviathan",
+      "pts": 450,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "3-living-ancestor",
+        "4-master-craftsman",
+        "12-4-thunderer-units",
+        "14-4-berzerker-units",
+        "15-2-hearthguard-units"
+      ],
+      "_unitsText": "1 Leviathan, 1 Hearthguard unit"
+    },
+    {
+      "id": "502-land-train",
+      "name": "Land Train",
+      "pts": 250,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "3-living-ancestor",
+        "4-master-craftsman",
+        "60-berserker-battle-car",
+        "61-bomb-battle-car",
+        "62-dragon-battle-car",
+        "63-mortar-battle-car",
+        "64-sky-hammer-battle-car",
+        "65-iron-eagle-battle-car",
+        "66-plasma-battle-car"
+      ],
+      "_unitsText": "1 Colossus"
+    },
+    {
+      "id": "503-overlord-squad",
+      "name": "Overlord Squad",
+      "pts": 0,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "52-overlord"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "510-iron-eagle-squadron",
+      "name": "Iron Eagle Squadron",
+      "pts": 375,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Iron Eagle Gyrocopters"
+    },
+    {
+      "id": "511-iron-hawk-squadron",
+      "name": "Iron Hawk Squadron",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Iron Hawk Gyrocopters"
+    },
+    {
+      "id": "512-skysweepers-unit",
+      "name": "Skysweepers unit",
+      "pts": 150,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Skysweepers"
+    },
+    {
+      "id": "513-cyclops",
+      "name": "Cyclops",
+      "pts": 500,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Cyclops"
+    },
+    {
+      "id": "514-goliath-mega-cannon-battery",
+      "name": "Goliath mega-cannon battery",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Goliath Mega-Cannons"
+    },
+    {
+      "id": "515-vongal-cruiser",
+      "name": "Vongal cruiser",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "53-kazad-grim-battleship"
+      ]
+    },
+    {
+      "id": "520-hold-guard",
+      "name": "Hold Guard",
+      "pts": 325,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-spartan",
+        "6-termite-tunneller",
+        "7-mole-tunneller",
+        "8-hellbore-tunneller",
+        "13-skysweeper"
+      ]
+    },
+    {
+      "id": "521-azdak-sappers-guild",
+      "name": "Azdak sappers guild",
+      "pts": 250,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-spartan",
+        "6-termite-tunneller",
+        "7-mole-tunneller",
+        "8-hellbore-tunneller",
+        "11-4-warrior-units",
+        "13-skysweeper"
+      ],
+      "_unitsText": "1 Heartguard unit"
+    },
+    {
+      "id": "522-ironsmash-guild",
+      "name": "Ironsmash Guild",
+      "pts": 275,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-spartan",
+        "6-termite-tunneller",
+        "7-mole-tunneller",
+        "8-hellbore-tunneller",
+        "11-4-warrior-units",
+        "13-skysweeper"
+      ],
+      "_unitsText": "1 Heartguard unit"
+    },
+    {
+      "id": "523-gravebellows-league",
+      "name": "Gravebellows League",
+      "pts": 275,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-spartan",
+        "6-termite-tunneller",
+        "7-mole-tunneller",
+        "8-hellbore-tunneller",
+        "12-4-thunderer-units",
+        "14-4-berzerker-units",
+        "13-skysweeper"
+      ],
+      "_unitsText": "1 Heartguard unit, 8 Warrior units"
+    },
+    {
+      "id": "524-khondgin-trikers",
+      "name": "Khondgin Trikers",
+      "pts": 275,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Guildmaster & 5 Guild Trikest"
+    },
+    {
+      "id": "525-rockbreaker-league",
+      "name": "Rockbreaker League",
+      "pts": 225,
+      "tags": [
+        "brotherhoods"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Guildmaster & 7 Guild Bikes"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-warlord",
+      "name": "Warlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warlord",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-grand-master-of-the-guild",
+      "name": "Grand Master of the Guild",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grand Master of the Guild",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-living-ancestor",
+      "name": "Living Ancestor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Living Ancestor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-master-craftsman",
+      "name": "Master Craftsman",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Master Craftsman",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-spartan",
+      "name": "Spartan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Spartan",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-termite-tunneller",
+      "name": "Termite Tunneller",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Termite Tunneller",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-mole-tunneller",
+      "name": "Mole Tunneller",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mole Tunneller",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-hellbore-tunneller",
+      "name": "Hellbore Tunneller",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hellbore Tunneller",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-gorgon",
+      "name": "Gorgon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gorgon",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-iron-hawk-gyrocopter",
+      "name": "Iron Hawk Gyrocopter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Hawk Gyrocopter",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-4-warrior-units",
+      "name": "4 Warrior units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Warrior units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-4-thunderer-units",
+      "name": "4 Thunderer units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Thunderer units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-skysweeper",
+      "name": "Skysweeper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skysweeper",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-4-berzerker-units",
+      "name": "4 Berzerker units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Berzerker units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-2-hearthguard-units",
+      "name": "2 Hearthguard units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Hearthguard units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-8-warrior-units",
+      "name": "8 Warrior Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Warrior Units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-12-warrior-units",
+      "name": "12 Warrior Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "12 Warrior Units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-overlord",
+      "name": "Overlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Overlord",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-kazad-grim-battleship",
+      "name": "Kazad Grim battleship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kazad Grim battleship",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-6-hearth-guard-units",
+      "name": "6 Hearth Guard units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Hearth Guard units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-8-hearth-guard-units",
+      "name": "8 Hearth Guard units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Hearth Guard units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-5-berzerker-units",
+      "name": "5 Berzerker units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Berzerker units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-9-berzerker-units",
+      "name": "9 Berzerker units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "9 Berzerker units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-5-thunderer-units",
+      "name": "5 Thunderer units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Thunderer units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-9-thunderer-units",
+      "name": "9 Thunderer units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "9 Thunderer units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-berserker-battle-car",
+      "name": "Berserker Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Berserker Battle Car",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-bomb-battle-car",
+      "name": "Bomb Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bomb Battle Car",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-dragon-battle-car",
+      "name": "Dragon Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dragon Battle Car",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-mortar-battle-car",
+      "name": "Mortar Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mortar Battle Car",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-sky-hammer-battle-car",
+      "name": "Sky hammer Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sky hammer Battle Car",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "65-iron-eagle-battle-car",
+      "name": "Iron eagle Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron eagle Battle Car",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "66-plasma-battle-car",
+      "name": "Plasma Battle Car",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plasma Battle Car",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-formation",
+      "from": [
+        "510-iron-eagle-squadron",
+        "511-iron-hawk-squadron",
+        "512-skysweepers-unit",
+        "513-cyclops",
+        "514-goliath-mega-cannon-battery",
+        "515-vongal-cruiser"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-colossus",
+        "501-leviathan",
+        "502-land-train",
+        "503-overlord-squad"
+      ],
+      "_name2": "War Engine"
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "515-vongal-cruiser"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "1-warlord"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "2-grand-master-of-the-guild"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "3-living-ancestor"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "4-master-craftsman"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "10-iron-hawk-gyrocopter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "11-4-warrior-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "12-4-thunderer-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "13-skysweeper"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "14-4-berzerker-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "15-2-hearthguard-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "battle-cars",
+      "from": [
+        "60-berserker-battle-car",
+        "61-bomb-battle-car",
+        "62-dragon-battle-car",
+        "63-mortar-battle-car",
+        "64-sky-hammer-battle-car",
+        "65-iron-eagle-battle-car",
+        "66-plasma-battle-car"
+      ],
+      "max": 6,
+      "min": 2,
+      "appliesTo": [
+        "502-land-train"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "64-sky-hammer-battle-car"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "52-overlord"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "503-overlord-squad"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "54-6-hearth-guard-units",
+        "55-8-hearth-guard-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "520-hold-guard"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "56-5-berzerker-units",
+        "57-9-berzerker-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "521-azdak-sappers-guild"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "58-5-thunderer-units",
+        "59-9-thunderer-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "522-ironsmash-guild"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

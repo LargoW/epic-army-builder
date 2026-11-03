@@ -1,0 +1,893 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/ironwarriors",
+  "name": "Iron Warriors",
+  "faction": "Chaos",
+  "version": "NetEA Tournament Pack (2023-01-03)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_ironwarriors_NETEA.json",
+    "by": "Onyx, last update 2023-01-07 Abetillo",
+    "notes": [
+      "If a Daemon Prince is selected, then it replaces the unit with an Iron Warrior Lord."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "core",
+      "name": "CORE",
+      "formations": [
+        "501-iron-warriors-company",
+        "502-defiler-assault-pack",
+        "540-grand-battery",
+        "541-armoured-assault-company"
+      ]
+    },
+    {
+      "id": "siege-assault-0-1-per-core-formation",
+      "name": "SIEGE ASSAULT 0-1 per Core formation",
+      "formations": [
+        "503-iron-warrior-terminators",
+        "504-chosen",
+        "511-obliterator-cult",
+        "510-raptors",
+        "512-havoc-company",
+        "513-siegehammer-company",
+        "514-dreadnought-assault-pack"
+      ]
+    },
+    {
+      "id": "siege-support-0-2-per-core-formation",
+      "name": "SIEGE SUPPORT 0-2 per Core formation",
+      "formations": [
+        "507-armoured-company",
+        "508-artillery-battery",
+        "509-daemonic-artillery",
+        "505-super-heavy-company-decimator"
+      ]
+    },
+    {
+      "id": "chaos-navy",
+      "name": "CHAOS NAVY",
+      "formations": [
+        "530-hellblade-flight",
+        "531-helltalon-flight",
+        "532-harbinger-bomber",
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship"
+      ]
+    },
+    {
+      "id": "chaos-war-engines",
+      "name": "CHAOS WAR ENGINES",
+      "formations": [
+        "520-siegelord-titan",
+        "521-ravager-titan",
+        "522-ordinatus-medrengard"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-iron-warriors-company",
+      "name": "Iron Warriors Company",
+      "pts": 300,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "53-chaos-land-raider",
+        "54-chaos-vindicator",
+        "59-4-havocs",
+        "61-obliterator",
+        "62-chaos-rhino",
+        "63-chaos-dreadnought",
+        "66-stalker",
+        "67-4-iron-warrior-assault-marines",
+        "68-chaos-siege-dreadnought"
+      ],
+      "_unitsText": "6 Chaos Space Marines and 2 Havocs"
+    },
+    {
+      "id": "502-defiler-assault-pack",
+      "name": "Defiler Assault Pack",
+      "pts": 425,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "57-defiler",
+        "63-chaos-dreadnought",
+        "68-chaos-siege-dreadnought"
+      ],
+      "_unitsText": "6 Defilers"
+    },
+    {
+      "id": "540-grand-battery",
+      "name": "Grand Battery",
+      "pts": 650,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "64-emplacements",
+        "66-stalker"
+      ],
+      "_unitsText": "9 Chaos Basilisks"
+    },
+    {
+      "id": "541-armoured-assault-company",
+      "name": "Armoured Assault Company",
+      "pts": 250,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "54-chaos-vindicator"
+      ],
+      "_unitsText": "6 Chaos Vindicators"
+    },
+    {
+      "id": "503-iron-warrior-terminators",
+      "name": "Iron Warrior Terminators",
+      "pts": 35,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "32-iron-warrior-terminator",
+        "53-chaos-land-raider",
+        "61-obliterator"
+      ]
+    },
+    {
+      "id": "504-chosen",
+      "name": "Chosen",
+      "pts": 125,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "62-chaos-rhino",
+        "58-dreadclaw-drop-pod",
+        "63-chaos-dreadnought"
+      ],
+      "_unitsText": "4 Chaos Space Marine Scouts"
+    },
+    {
+      "id": "511-obliterator-cult",
+      "name": "Obliterator Cult",
+      "pts": 350,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Obliterators"
+    },
+    {
+      "id": "510-raptors",
+      "name": "Raptors",
+      "pts": 35,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-raptor",
+        "63-chaos-dreadnought"
+      ]
+    },
+    {
+      "id": "512-havoc-company",
+      "name": "Havoc Company",
+      "pts": 325,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "59-4-havocs",
+        "63-chaos-dreadnought",
+        "57-defiler",
+        "28-chaos-land-raider",
+        "66-stalker"
+      ],
+      "_unitsText": "4 Havocs and 2 Land Raiders"
+    },
+    {
+      "id": "513-siegehammer-company",
+      "name": "Siegehammer Company",
+      "pts": 225,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "67-4-iron-warrior-assault-marines",
+        "62-chaos-rhino",
+        "63-chaos-dreadnought",
+        "54-chaos-vindicator",
+        "66-stalker",
+        "58-dreadclaw-drop-pod",
+        "68-chaos-siege-dreadnought"
+      ],
+      "_unitsText": "6 Iron Warrior Assault Marines"
+    },
+    {
+      "id": "514-dreadnought-assault-pack",
+      "name": "Dreadnought Assault Pack",
+      "pts": 225,
+      "tags": [
+        "siege-assault-0-1-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-dreadnought-warsmith-supreme-commander",
+        "58-dreadclaw-drop-pod",
+        "68-chaos-siege-dreadnought"
+      ],
+      "_unitsText": "5 Chaos Dreadnoughts"
+    },
+    {
+      "id": "507-armoured-company",
+      "name": "Armoured Company",
+      "pts": 0,
+      "tags": [
+        "siege-support-0-2-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-chaos-predator",
+        "28-chaos-land-raider",
+        "54-chaos-vindicator",
+        "66-stalker"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "508-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 325,
+      "tags": [
+        "siege-support-0-2-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "64-emplacements",
+        "66-stalker"
+      ],
+      "_unitsText": "4 Chaos Basilisks"
+    },
+    {
+      "id": "509-daemonic-artillery",
+      "name": "Daemonic Artillery",
+      "pts": 325,
+      "tags": [
+        "siege-support-0-2-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "64-emplacements",
+        "66-stalker"
+      ],
+      "_unitsText": "3 Daemonic Artillery units"
+    },
+    {
+      "id": "505-super-heavy-company-decimator",
+      "name": "Super Heavy Company - Decimator",
+      "pts": 0,
+      "tags": [
+        "siege-support-0-2-per-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "25-decimator"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "530-hellblade-flight",
+      "name": "Hellblade Flight",
+      "pts": 200,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Fighters"
+    },
+    {
+      "id": "531-helltalon-flight",
+      "name": "Helltalon Flight",
+      "pts": 225,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Fighter Bombers"
+    },
+    {
+      "id": "532-harbinger-bomber",
+      "name": "Harbinger Bomber",
+      "pts": 450,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "533-devastation-class-cruiser",
+      "name": "Devastation Class Cruiser",
+      "pts": 150,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "534-despoiler-class-battleship",
+      "name": "Despoiler Class Battleship",
+      "pts": 250,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "520-siegelord-titan",
+      "name": "Siegelord Titan",
+      "pts": 850,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "521-ravager-titan",
+      "name": "Ravager Titan",
+      "pts": 650,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "522-ordinatus-medrengard",
+      "name": "Ordinatus Medrengard",
+      "pts": 625,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "17-iron-warriors-lord",
+      "name": "Iron Warriors Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Warriors Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-daemon-prince-supreme-commander",
+      "name": "Daemon Prince (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince (Supreme Commander)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-warsmith-supreme-commander",
+      "name": "Warsmith (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warsmith (Supreme Commander)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-dreadnought-warsmith-supreme-commander",
+      "name": "Dreadnought Warsmith (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought Warsmith (Supreme Commander)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-chaos-predator",
+      "name": "Chaos Predator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Predator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-chaos-land-raider",
+      "name": "Chaos Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-raptor",
+      "name": "Raptor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raptor",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-iron-warrior-terminator",
+      "name": "Iron Warrior Terminator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Warrior Terminator",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-decimator",
+      "name": "Decimator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Decimator",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-chaos-land-raider",
+      "name": "Chaos Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-chaos-vindicator",
+      "name": "Chaos Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Vindicator",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-defiler",
+      "name": "Defiler",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Defiler",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-dreadclaw-drop-pod",
+      "name": "Dreadclaw Drop Pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadclaw Drop Pod",
+          "pts": 5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-4-havocs",
+      "name": "4 Havocs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Havocs",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-obliterator",
+      "name": "Obliterator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obliterator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-chaos-rhino",
+      "name": "Chaos Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Rhino",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-chaos-dreadnought",
+      "name": "Chaos Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-emplacements",
+      "name": "Emplacements",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emplacements",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "66-stalker",
+      "name": "Stalker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stalker",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "67-4-iron-warrior-assault-marines",
+      "name": "4 Iron Warrior Assault Marines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Iron Warrior Assault Marines",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "68-chaos-siege-dreadnought",
+      "name": "Chaos Siege Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Siege Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "69-chaos-basilisks",
+      "name": "Chaos Basilisks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Basilisks",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "obliterator-cult",
+      "from": [
+        "511-obliterator-cult"
+      ],
+      "max": 1
+    },
+    {
+      "id": "spacecraft",
+      "from": [
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "siege-assault-formation",
+      "from": [
+        "503-iron-warrior-terminators",
+        "504-chosen",
+        "510-raptors",
+        "511-obliterator-cult",
+        "512-havoc-company",
+        "513-siegehammer-company",
+        "514-dreadnought-assault-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-iron-warriors-company",
+        "502-defiler-assault-pack",
+        "540-grand-battery",
+        "541-armoured-assault-company"
+      ],
+      "_name2": "Core formation"
+    },
+    {
+      "id": "siege-support-formations",
+      "from": [
+        "505-super-heavy-company-decimator",
+        "unknown-506",
+        "507-armoured-company",
+        "508-artillery-battery",
+        "509-daemonic-artillery"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-iron-warriors-company",
+        "502-defiler-assault-pack",
+        "540-grand-battery",
+        "541-armoured-assault-company"
+      ],
+      "_name2": "Core Formation"
+    },
+    {
+      "id": "chaos-navy-and-war-engine-formations",
+      "from": [
+        "530-hellblade-flight",
+        "531-helltalon-flight",
+        "532-harbinger-bomber",
+        "533-devastation-class-cruiser",
+        "534-despoiler-class-battleship",
+        "520-siegelord-titan",
+        "521-ravager-titan",
+        "522-ordinatus-medrengard"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "17-iron-warriors-lord",
+        "19-daemon-prince-supreme-commander",
+        "20-warsmith-supreme-commander"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-iron-warriors-company",
+        "503-iron-warrior-terminators",
+        "510-raptors",
+        "512-havoc-company",
+        "513-siegehammer-company"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "19-daemon-prince-supreme-commander",
+        "20-warsmith-supreme-commander",
+        "21-dreadnought-warsmith-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "vehicles",
+      "from": [
+        "27-chaos-predator",
+        "28-chaos-land-raider"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "507-armoured-company"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "30-raptor"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "510-raptors"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "32-iron-warrior-terminator"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "503-iron-warrior-terminators"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "25-decimator"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "505-super-heavy-company-decimator"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "65-65"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "unknown-506"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "53-chaos-land-raider"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "54-chaos-vindicator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "57-defiler"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "69-chaos-basilisks"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "59-4-havocs"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "66-stalker"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "68-chaos-siege-dreadnought"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "61-obliterator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "63-chaos-dreadnought"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "27-chaos-predator"
+      ],
+      "max": 8
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "64-emplacements"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "67-4-iron-warrior-assault-marines"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

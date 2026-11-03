@@ -1,0 +1,985 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/ironhands-v11",
+  "name": "Codex Iron Hands",
+  "faction": "Space Marines",
+  "version": "v1.1 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_IronHands_v1.1_NETEA.json",
+    "by": "freefall 2017-02",
+    "notes": [
+      "Iron Father MUST be placed in a Venerable Dreadnought if one is present in the formation",
+      "ONLY Venerable Dreadnought may be upgraded to Supreme Commander",
+      "When selecting transports for your formation please be reasonable. For example you CAN'T have 3 Land Raiders and 3 Rhinos"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "iron-hands-detachments",
+      "name": "IRON HANDS DETACHMENTS",
+      "formations": [
+        "500-iron-hands-clan",
+        "501-dreadnought-talon",
+        "502-assault-detachment",
+        "503-land-raider-detachment",
+        "504-landing-craft",
+        "505-predator-detachment",
+        "506-scout-detachment",
+        "507-strike-cruiser",
+        "508-vindicator-detachment",
+        "509-whirlwind-detachment"
+      ]
+    },
+    {
+      "id": "iron-hands-navy-titan-legion-battlegroups",
+      "name": "IRON HANDS NAVY & TITAN LEGION BATTLEGROUPS",
+      "formations": [
+        "700-thunderhawk",
+        "701-storm-talon-gunship",
+        "702-warlord-titan",
+        "703-reaver-titan",
+        "704-warhound-pack",
+        "705-warhound"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-iron-hands-clan",
+      "name": "Iron Hands Clan",
+      "pts": 300,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "3-venerable-dreadnought-iron-father",
+        "4-venerable-dreadnought-iron-father-supreme-commander-upgrade",
+        "5-hunter",
+        "9-armoured-support-predator-anihilator",
+        "10-armoured-support-predator-destructor",
+        "11-armoured-support-vindicator",
+        "15-dreadnought",
+        "16-ironclad-dreadnought",
+        "17-venerable-dreadnought",
+        "19-transport-land-raider",
+        "20-transport-razorback",
+        "21-transport-4-razorbacks",
+        "22-transport-rhinos",
+        "23-transport-drop-pods",
+        "24-swap-one-unit-for-a-dreadnought",
+        "25-swap-one-unit-for-a-ironclad-dreadnought"
+      ],
+      "_unitsText": [
+        "4 Tacticals",
+        "2 Iron Hand Devastators"
+      ]
+    },
+    {
+      "id": "501-dreadnought-talon",
+      "name": "Dreadnought Talon",
+      "pts": 0,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "3-venerable-dreadnought-iron-father",
+        "4-venerable-dreadnought-iron-father-supreme-commander-upgrade",
+        "5-hunter",
+        "12-vindicator",
+        "15-dreadnought",
+        "16-ironclad-dreadnought",
+        "17-venerable-dreadnought",
+        "23-transport-drop-pods"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-assault-detachment",
+      "name": "Assault Detachment",
+      "pts": 175,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "12-vindicator"
+      ],
+      "_unitsText": "4 Assaults"
+    },
+    {
+      "id": "503-land-raider-detachment",
+      "name": "Land Raider Detachment",
+      "pts": 325,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "5-hunter",
+        "9-armoured-support-predator-anihilator",
+        "10-armoured-support-predator-destructor",
+        "11-armoured-support-vindicator",
+        "18-land-raider"
+      ]
+    },
+    {
+      "id": "504-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Landing Craft"
+    },
+    {
+      "id": "505-predator-detachment",
+      "name": "Predator Detachment",
+      "pts": 250,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "5-hunter",
+        "7-predator-anihilator",
+        "8-predator-destructor",
+        "9-armoured-support-predator-anihilator",
+        "10-armoured-support-predator-destructor",
+        "11-armoured-support-vindicator"
+      ]
+    },
+    {
+      "id": "506-scout-detachment",
+      "name": "Scout Detachment",
+      "pts": 150,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "21-transport-4-razorbacks",
+        "22-transport-rhinos"
+      ],
+      "_unitsText": "4 Scouts"
+    },
+    {
+      "id": "507-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 0,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-strike-cruiser",
+        "14-battle-barge"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "508-vindicator-detachment",
+      "name": "Vindicator Detachment",
+      "pts": 225,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "5-hunter",
+        "9-armoured-support-predator-anihilator",
+        "10-armoured-support-predator-destructor",
+        "11-armoured-support-vindicator"
+      ],
+      "_unitsText": "4 Vindicators"
+    },
+    {
+      "id": "509-whirlwind-detachment",
+      "name": "Whirlwind Detachment",
+      "pts": 300,
+      "tags": [
+        "iron-hands-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-iron-father",
+        "2-veteran-sergeant",
+        "5-hunter"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "700-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Thunderhawk Gunship"
+    },
+    {
+      "id": "701-storm-talon-gunship",
+      "name": "Storm Talon Gunship",
+      "pts": 200,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Storm Talon Gunships"
+    },
+    {
+      "id": "702-warlord-titan",
+      "name": "Warlord Titan",
+      "pts": 825,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warlord Titan"
+    },
+    {
+      "id": "703-reaver-titan",
+      "name": "Reaver Titan",
+      "pts": 650,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Reaver Titan"
+    },
+    {
+      "id": "704-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhounds"
+    },
+    {
+      "id": "705-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "iron-hands-navy-titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-iron-father",
+      "name": "Iron Father",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Iron Father",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-veteran-sergeant",
+      "name": "Veteran Sergeant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Veteran Sergeant",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-venerable-dreadnought-iron-father",
+      "name": "Venerable Dreadnought: Iron Father",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venerable Dreadnought: Iron Father",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-venerable-dreadnought-iron-father-supreme-commander-upgrade",
+      "name": "Venerable Dreadnought: Iron Father Supreme Commander upgrade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venerable Dreadnought: Iron Father Supreme Commander upgrade",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-bionics",
+      "name": "Bionics",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bionics",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-predator-anihilator",
+      "name": "Predator Anihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Anihilator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-armoured-support-predator-anihilator",
+      "name": "Armoured Support: Predator Anihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Armoured Support: Predator Anihilator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-armoured-support-predator-destructor",
+      "name": "Armoured Support: Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Armoured Support: Predator Destructor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-armoured-support-vindicator",
+      "name": "Armoured Support: Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Armoured Support: Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-strike-cruiser",
+      "name": "Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strike Cruiser",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Barge",
+          "pts": 350,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-dreadnought",
+      "name": "Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-ironclad-dreadnought",
+      "name": "Ironclad Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ironclad Dreadnought",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-venerable-dreadnought",
+      "name": "Venerable Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venerable Dreadnought",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-transport-land-raider",
+      "name": "Transport: Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-transport-razorback",
+      "name": "Transport: Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-transport-4-razorbacks",
+      "name": "Transport: 4 Razorbacks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: 4 Razorbacks",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-transport-rhinos",
+      "name": "Transport: Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-transport-drop-pods",
+      "name": "Transport: Drop pods",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Transport: Drop pods",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-swap-one-unit-for-a-dreadnought",
+      "name": "Swap one unit for a Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swap one unit for a Dreadnought",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-swap-one-unit-for-a-ironclad-dreadnought",
+      "name": "Swap one unit for a Ironclad Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swap one unit for a Ironclad Dreadnought",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-whirlwind",
+      "name": "Whirlwind",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Whirlwind",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "500-iron-hands-clan"
+      ],
+      "min": 1
+    },
+    {
+      "id": "navy-titans",
+      "from": [
+        "700-thunderhawk",
+        "701-storm-talon-gunship",
+        "702-warlord-titan",
+        "703-reaver-titan",
+        "704-warhound-pack",
+        "705-warhound"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "supreme-commander",
+      "from": [
+        "4-venerable-dreadnought-iron-father-supreme-commander-upgrade"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "veteran-sergeant",
+      "from": [
+        "2-veteran-sergeant"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-dreadnought-talon",
+        "502-assault-detachment",
+        "503-land-raider-detachment",
+        "505-predator-detachment",
+        "506-scout-detachment",
+        "508-vindicator-detachment",
+        "509-whirlwind-detachment"
+      ]
+    },
+    {
+      "id": "veteran-sergeant",
+      "from": [
+        "2-veteran-sergeant"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "iron-father",
+      "from": [
+        "1-iron-father"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "502-assault-detachment",
+        "503-land-raider-detachment",
+        "505-predator-detachment",
+        "506-scout-detachment",
+        "508-vindicator-detachment",
+        "509-whirlwind-detachment"
+      ]
+    },
+    {
+      "id": "iron-father",
+      "from": [
+        "1-iron-father",
+        "3-venerable-dreadnought-iron-father"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan",
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "supreme-commander",
+      "from": [
+        "4-venerable-dreadnought-iron-father-supreme-commander-upgrade"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan",
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "hunter",
+      "from": [
+        "5-hunter"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan",
+        "501-dreadnought-talon",
+        "503-land-raider-detachment",
+        "505-predator-detachment",
+        "508-vindicator-detachment",
+        "509-whirlwind-detachment"
+      ]
+    },
+    {
+      "id": "bionics",
+      "from": [
+        "6-bionics"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "armoured-support",
+      "from": [
+        "9-armoured-support-predator-anihilator",
+        "10-armoured-support-predator-destructor",
+        "11-armoured-support-vindicator"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan",
+        "503-land-raider-detachment",
+        "505-predator-detachment",
+        "508-vindicator-detachment"
+      ]
+    },
+    {
+      "id": "vindicator",
+      "from": [
+        "12-vindicator"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "501-dreadnought-talon",
+        "502-assault-detachment"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "7-predator-anihilator",
+        "8-predator-destructor"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "505-predator-detachment"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "15-dreadnought",
+        "16-ironclad-dreadnought",
+        "17-venerable-dreadnought"
+      ],
+      "max": 7,
+      "min": 4,
+      "appliesTo": [
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "15-dreadnought",
+        "16-ironclad-dreadnought"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "16-ironclad-dreadnought"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "17-venerable-dreadnought"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "15-dreadnought",
+        "16-ironclad-dreadnought",
+        "17-venerable-dreadnought"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "15-dreadnought",
+        "16-ironclad-dreadnought"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "17-venerable-dreadnought"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "18-land-raider"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "503-land-raider-detachment"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "19-transport-land-raider"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "20-transport-razorback"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "21-transport-4-razorbacks"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan",
+        "506-scout-detachment"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "19-transport-land-raider",
+        "20-transport-razorback",
+        "21-transport-4-razorbacks"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "22-transport-rhinos",
+        "23-transport-drop-pods"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "22-transport-rhinos"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "506-scout-detachment"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "23-transport-drop-pods"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-dreadnought-talon"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "24-swap-one-unit-for-a-dreadnought",
+        "25-swap-one-unit-for-a-ironclad-dreadnought"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-iron-hands-clan"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "13-strike-cruiser",
+        "14-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "507-strike-cruiser"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

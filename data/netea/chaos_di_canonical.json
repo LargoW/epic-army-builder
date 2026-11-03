@@ -1,0 +1,1382 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/di",
+  "name": "Daemonic Incursion",
+  "faction": "Chaos",
+  "version": "3.0 / v2015 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_di_NETEA.json",
+    "by": "freefall",
+    "notes": [
+      "Great Abomination is an upgrade for Herlad, Daemon Prince and Greater Daemon and grants Supreme Commander ability",
+      "Daemon Lord is and further upgrade for the Greater Daemon that has been upgraded to Great Abomination"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "special-selections",
+      "name": "SPECIAL SELECTIONS",
+      "formations": [
+        "1000-warp-rift"
+      ]
+    },
+    {
+      "id": "daemonic-hordes",
+      "name": "DAEMONIC HORDES",
+      "formations": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "greater-daemon-hordes",
+      "name": "GREATER DAEMON HORDES",
+      "formations": [
+        "501-khorne-greater-daemons",
+        "601-nurgle-greater-daemons",
+        "701-slaanesh-greater-daemons",
+        "801-tzeentch-greater-daemons"
+      ]
+    },
+    {
+      "id": "followers-of-chaos",
+      "name": "FOLLOWERS OF CHAOS",
+      "formations": [
+        "502-followers-of-khorne",
+        "602-followers-of-nurgle",
+        "702-followers-of-slaanesh",
+        "802-followers-of-tzeentch",
+        "901-undivided-fury-flight",
+        "902-undivided-spawn-pack",
+        "903-undivided-soulgrinder-maniple"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "1000-warp-rift",
+      "name": "Warp Rift",
+      "pts": 75,
+      "tags": [
+        "special-selections"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "500-khorne-horde",
+      "name": "Khorne Horde",
+      "pts": 250,
+      "tags": [
+        "daemonic-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "95-bloodthrister-of-khorne",
+        "99-great-abomination",
+        "100-herald",
+        "101-daemon-prince",
+        "102-blooletters",
+        "103-fleshhounds",
+        "104-bloodcrushers",
+        "105-skull-cannon",
+        "200-upgrade-chaos-altar",
+        "201-upgrade-furies",
+        "202-upgrade-chaos-spawn",
+        "203-upgrade-soulgrinder"
+      ],
+      "_unitsText": "6 Bloodletter units"
+    },
+    {
+      "id": "600-nurgle-horde",
+      "name": "Nurgle Horde",
+      "pts": 250,
+      "tags": [
+        "daemonic-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "96-great-unclean-one",
+        "99-great-abomination",
+        "100-herald",
+        "101-daemon-prince",
+        "106-plaguebearers",
+        "107-nurglings",
+        "108-beast-of-nurgle",
+        "109-plague-drone",
+        "200-upgrade-chaos-altar",
+        "201-upgrade-furies",
+        "202-upgrade-chaos-spawn",
+        "203-upgrade-soulgrinder"
+      ],
+      "_unitsText": "6 Plaguebearer units"
+    },
+    {
+      "id": "700-slaanesh-horde",
+      "name": "Slaanesh Horde",
+      "pts": 250,
+      "tags": [
+        "daemonic-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "97-keeper-of-secrets",
+        "99-great-abomination",
+        "100-herald",
+        "101-daemon-prince",
+        "110-daemonettes",
+        "111-seekers",
+        "112-seeker-chariot",
+        "113-fiends",
+        "200-upgrade-chaos-altar",
+        "201-upgrade-furies",
+        "202-upgrade-chaos-spawn",
+        "203-upgrade-soulgrinder"
+      ],
+      "_unitsText": "6 Daemonette units"
+    },
+    {
+      "id": "800-tzeentch-horde",
+      "name": "Tzeentch Horde",
+      "pts": 250,
+      "tags": [
+        "daemonic-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "98-lord-of-change",
+        "99-great-abomination",
+        "100-herald",
+        "101-daemon-prince",
+        "114-horrors",
+        "115-screamers",
+        "116-flamers",
+        "117-burning-chariot",
+        "200-upgrade-chaos-altar",
+        "201-upgrade-furies",
+        "202-upgrade-chaos-spawn",
+        "203-upgrade-soulgrinder"
+      ],
+      "_unitsText": "6 Horror units"
+    },
+    {
+      "id": "501-khorne-greater-daemons",
+      "name": "Khorne Greater Daemons",
+      "pts": 0,
+      "tags": [
+        "greater-daemon-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "84-daemon-lord",
+        "99-great-abomination",
+        "85-bloodthrister-of-khorne"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "601-nurgle-greater-daemons",
+      "name": "Nurgle Greater Daemons",
+      "pts": 0,
+      "tags": [
+        "greater-daemon-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "84-daemon-lord",
+        "99-great-abomination",
+        "86-great-unclean-one"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "701-slaanesh-greater-daemons",
+      "name": "Slaanesh Greater Daemons",
+      "pts": 0,
+      "tags": [
+        "greater-daemon-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "84-daemon-lord",
+        "99-great-abomination",
+        "87-keeper-of-secrets"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "801-tzeentch-greater-daemons",
+      "name": "Tzeentch Greater Daemons",
+      "pts": 0,
+      "tags": [
+        "greater-daemon-hordes"
+      ],
+      "units": [],
+      "upgrades": [
+        "84-daemon-lord",
+        "99-great-abomination",
+        "88-lord-of-change"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-followers-of-khorne",
+      "name": "Followers of Khorne",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "103-fleshhounds",
+        "104-bloodcrushers",
+        "105-skull-cannon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "602-followers-of-nurgle",
+      "name": "Followers of Nurgle",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "107-nurglings",
+        "108-beast-of-nurgle",
+        "109-plague-drone"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "702-followers-of-slaanesh",
+      "name": "Followers of Slaanesh",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "111-seekers",
+        "112-seeker-chariot",
+        "113-fiends"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "802-followers-of-tzeentch",
+      "name": "Followers of Tzeentch",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "115-screamers",
+        "116-flamers",
+        "117-burning-chariot"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "901-undivided-fury-flight",
+      "name": "Undivided: Fury Flight",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "120-furies"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "902-undivided-spawn-pack",
+      "name": "Undivided: Spawn Pack",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "121-chaos-spawn"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "903-undivided-soulgrinder-maniple",
+      "name": "Undivided: Soulgrinder Maniple",
+      "pts": 0,
+      "tags": [
+        "followers-of-chaos"
+      ],
+      "units": [],
+      "upgrades": [
+        "122-soulgrinder"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "84-daemon-lord",
+      "name": "Daemon Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Lord",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "85-bloodthrister-of-khorne",
+      "name": "Bloodthrister of Khorne",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bloodthrister of Khorne",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "86-great-unclean-one",
+      "name": "Great Unclean One",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Great Unclean One",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "87-keeper-of-secrets",
+      "name": "Keeper of Secrets",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Keeper of Secrets",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "88-lord-of-change",
+      "name": "Lord of Change",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lord of Change",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "95-bloodthrister-of-khorne",
+      "name": "Bloodthrister of Khorne",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bloodthrister of Khorne",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "96-great-unclean-one",
+      "name": "Great Unclean One",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Great Unclean One",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "97-keeper-of-secrets",
+      "name": "Keeper of Secrets",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Keeper of Secrets",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "98-lord-of-change",
+      "name": "Lord of Change",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lord of Change",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "99-great-abomination",
+      "name": "Great Abomination",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Great Abomination",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "100-herald",
+      "name": "Herald",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Herald",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "101-daemon-prince",
+      "name": "Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "102-blooletters",
+      "name": "Blooletters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blooletters",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-fleshhounds",
+      "name": "Fleshhounds",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fleshhounds",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "104-bloodcrushers",
+      "name": "Bloodcrushers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bloodcrushers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "105-skull-cannon",
+      "name": "Skull Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skull Cannon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "106-plaguebearers",
+      "name": "Plaguebearers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plaguebearers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "107-nurglings",
+      "name": "Nurglings",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nurglings",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "108-beast-of-nurgle",
+      "name": "Beast of Nurgle",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Beast of Nurgle",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "109-plague-drone",
+      "name": "Plague Drone",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plague Drone",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-daemonettes",
+      "name": "Daemonettes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonettes",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "111-seekers",
+      "name": "Seekers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seekers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "112-seeker-chariot",
+      "name": "Seeker Chariot",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seeker Chariot",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "113-fiends",
+      "name": "Fiends",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fiends",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "114-horrors",
+      "name": "Horrors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Horrors",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "115-screamers",
+      "name": "Screamers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Screamers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "116-flamers",
+      "name": "Flamers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flamers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "117-burning-chariot",
+      "name": "Burning Chariot",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Burning Chariot",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "120-furies",
+      "name": "Furies",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Furies",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "121-chaos-spawn",
+      "name": "Chaos Spawn",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Spawn",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "122-soulgrinder",
+      "name": "Soulgrinder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Soulgrinder",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "200-upgrade-chaos-altar",
+      "name": "Upgrade: Chaos Altar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Upgrade: Chaos Altar",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "201-upgrade-furies",
+      "name": "Upgrade: Furies",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Upgrade: Furies",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "202-upgrade-chaos-spawn",
+      "name": "Upgrade: Chaos Spawn",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Upgrade: Chaos Spawn",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "203-upgrade-soulgrinder",
+      "name": "Upgrade: Soulgrinder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Upgrade: Soulgrinder",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "1000-warp-rift"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "501-khorne-greater-daemons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "601-nurgle-greater-daemons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "701-slaanesh-greater-daemons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-4",
+      "from": [
+        "801-tzeentch-greater-daemons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "khorne-greater-deamons",
+      "from": [
+        "501-khorne-greater-daemons"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-khorne-horde"
+      ],
+      "_name2": "Khorne Deamonic Hordes"
+    },
+    {
+      "id": "followers-of-khorne",
+      "from": [
+        "502-followers-of-khorne"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-khorne-horde"
+      ],
+      "_name2": "Khorne Deamonic Hordes"
+    },
+    {
+      "id": "nurgle-greater-deamons",
+      "from": [
+        "601-nurgle-greater-daemons"
+      ],
+      "max": 1,
+      "forEach": [
+        "600-nurgle-horde"
+      ],
+      "_name2": "Nurgle Deamonic Hordes"
+    },
+    {
+      "id": "followers-of-nurgle",
+      "from": [
+        "602-followers-of-nurgle"
+      ],
+      "max": 1,
+      "forEach": [
+        "600-nurgle-horde"
+      ],
+      "_name2": "Nurgle Deamonic Hordes"
+    },
+    {
+      "id": "slaanesh-greater-deamons",
+      "from": [
+        "701-slaanesh-greater-daemons"
+      ],
+      "max": 1,
+      "forEach": [
+        "700-slaanesh-horde"
+      ],
+      "_name2": "Slaanesh Deamonic Hordes"
+    },
+    {
+      "id": "followers-of-slaanesh",
+      "from": [
+        "702-followers-of-slaanesh"
+      ],
+      "max": 1,
+      "forEach": [
+        "700-slaanesh-horde"
+      ],
+      "_name2": "Slaanesh Deamonic Hordes"
+    },
+    {
+      "id": "tzeentch-greater-deamons",
+      "from": [
+        "801-tzeentch-greater-daemons"
+      ],
+      "max": 1,
+      "forEach": [
+        "800-tzeentch-horde"
+      ],
+      "_name2": "Tzeentch Deamonic Hordes"
+    },
+    {
+      "id": "followers-of-tzeentch",
+      "from": [
+        "802-followers-of-tzeentch"
+      ],
+      "max": 1,
+      "forEach": [
+        "800-tzeentch-horde"
+      ],
+      "_name2": "Tzeentch Deamonic Hordes"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "84-daemon-lord",
+        "99-great-abomination"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "84-daemon-lord",
+        "99-great-abomination"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde",
+        "501-khorne-greater-daemons",
+        "601-nurgle-greater-daemons",
+        "701-slaanesh-greater-daemons",
+        "801-tzeentch-greater-daemons"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "100-herald",
+        "101-daemon-prince"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "85-bloodthrister-of-khorne"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "501-khorne-greater-daemons"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "95-bloodthrister-of-khorne"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "102-blooletters",
+        "103-fleshhounds"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "104-bloodcrushers",
+        "105-skull-cannon"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "103-fleshhounds",
+        "104-bloodcrushers",
+        "105-skull-cannon"
+      ],
+      "max": 27,
+      "min": 6,
+      "appliesTo": [
+        "502-followers-of-khorne"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "103-fleshhounds"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "502-followers-of-khorne"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "104-bloodcrushers"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "502-followers-of-khorne"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "105-skull-cannon"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "502-followers-of-khorne"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "86-great-unclean-one"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "601-nurgle-greater-daemons"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "96-great-unclean-one"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "600-nurgle-horde"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "106-plaguebearers",
+        "107-nurglings"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "600-nurgle-horde"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "108-beast-of-nurgle",
+        "109-plague-drone"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "600-nurgle-horde"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "107-nurglings",
+        "108-beast-of-nurgle",
+        "109-plague-drone"
+      ],
+      "max": 27,
+      "min": 6,
+      "appliesTo": [
+        "602-followers-of-nurgle"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "107-nurglings"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "602-followers-of-nurgle"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "108-beast-of-nurgle"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "602-followers-of-nurgle"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "109-plague-drone"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "602-followers-of-nurgle"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "87-keeper-of-secrets"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "701-slaanesh-greater-daemons"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "97-keeper-of-secrets"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "700-slaanesh-horde"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "110-daemonettes",
+        "111-seekers"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "700-slaanesh-horde"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "112-seeker-chariot",
+        "113-fiends"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "700-slaanesh-horde"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "111-seekers",
+        "112-seeker-chariot",
+        "113-fiends"
+      ],
+      "max": 27,
+      "min": 6,
+      "appliesTo": [
+        "702-followers-of-slaanesh"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "111-seekers"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "702-followers-of-slaanesh"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "112-seeker-chariot"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "702-followers-of-slaanesh"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "113-fiends"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "702-followers-of-slaanesh"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "88-lord-of-change"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "801-tzeentch-greater-daemons"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "98-lord-of-change"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "114-horrors",
+        "115-screamers",
+        "116-flamers"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "117-burning-chariot"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "uc-31",
+      "from": [
+        "115-screamers",
+        "116-flamers",
+        "117-burning-chariot"
+      ],
+      "max": 27,
+      "min": 6,
+      "appliesTo": [
+        "802-followers-of-tzeentch"
+      ]
+    },
+    {
+      "id": "uc-32",
+      "from": [
+        "115-screamers"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "802-followers-of-tzeentch"
+      ]
+    },
+    {
+      "id": "uc-33",
+      "from": [
+        "116-flamers"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "802-followers-of-tzeentch"
+      ]
+    },
+    {
+      "id": "uc-34",
+      "from": [
+        "117-burning-chariot"
+      ],
+      "max": 9,
+      "min": 0,
+      "appliesTo": [
+        "802-followers-of-tzeentch"
+      ]
+    },
+    {
+      "id": "uc-35",
+      "from": [
+        "120-furies"
+      ],
+      "max": 8,
+      "min": 6,
+      "appliesTo": [
+        "901-undivided-fury-flight"
+      ]
+    },
+    {
+      "id": "uc-36",
+      "from": [
+        "121-chaos-spawn"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "902-undivided-spawn-pack"
+      ]
+    },
+    {
+      "id": "uc-37",
+      "from": [
+        "122-soulgrinder"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "903-undivided-soulgrinder-maniple"
+      ]
+    },
+    {
+      "id": "horde-upgrades",
+      "from": [
+        "200-upgrade-chaos-altar"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "horde-upgrades",
+      "from": [
+        "201-upgrade-furies"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "horde-upgrades",
+      "from": [
+        "202-upgrade-chaos-spawn"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    },
+    {
+      "id": "horde-upgrades",
+      "from": [
+        "203-upgrade-soulgrinder"
+      ],
+      "max": 3,
+      "min": 0,
+      "appliesTo": [
+        "500-khorne-horde",
+        "600-nurgle-horde",
+        "700-slaanesh-horde",
+        "800-tzeentch-horde"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

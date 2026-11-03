@@ -1,0 +1,598 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/necron",
+  "name": "Necrons",
+  "faction": "Xenos",
+  "version": "NetEA Tournament Pack (2024-02-12)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_necron_NETEA.json",
+    "by": "Iron Bloke, last update 2024-03-29 Abetillo",
+    "notes": [
+      "A Warbarque in the army may be given a Necron Overlord, or a Necron Lord may be replaced with a Necron Overlord, if a C’tan is not fielded."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "necron-individuals",
+      "name": "NECRON INDIVIDUALS",
+      "formations": [
+        "601-tomb-complex"
+      ]
+    },
+    {
+      "id": "necron-phalanxes",
+      "name": "NECRON PHALANXES",
+      "formations": [
+        "701-infantry-phalanx"
+      ]
+    },
+    {
+      "id": "necron-support-formations",
+      "name": "NECRON SUPPORT FORMATIONS",
+      "formations": [
+        "505-armored-phalanx",
+        "502-eques-maniple",
+        "503-monolith-maniple",
+        "504-monolith-phalanx",
+        "501-venator-maniple"
+      ]
+    },
+    {
+      "id": "necron-harvesters",
+      "name": "NECRON HARVESTERS",
+      "formations": [
+        "602-c-tan",
+        "803-harvester-engine",
+        "506-pylon",
+        "802-spacecraft",
+        "805-warbarque"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "601-tomb-complex",
+      "name": "Tomb Complex",
+      "pts": 75,
+      "tags": [
+        "necron-individuals"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "701-infantry-phalanx",
+      "name": "Infantry Phalanx",
+      "pts": 200,
+      "tags": [
+        "necron-phalanxes"
+      ],
+      "units": [],
+      "upgrades": [
+        "102-immortals",
+        "100-tomb-spyders",
+        "103-wraiths",
+        "101-pariahs"
+      ],
+      "_unitsText": "6x Warriors"
+    },
+    {
+      "id": "505-armored-phalanx",
+      "name": "Armored Phalanx",
+      "pts": 300,
+      "tags": [
+        "necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6x Obelisks"
+    },
+    {
+      "id": "502-eques-maniple",
+      "name": "Eques Maniple",
+      "pts": 0,
+      "tags": [
+        "necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "104-necron-lord",
+        "109-destroyers",
+        "110-heavy-destroyers",
+        "107-necron-overlord",
+        "103-wraiths"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "503-monolith-maniple",
+      "name": "Monolith Maniple",
+      "pts": 25,
+      "tags": [
+        "necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "105-obelisk",
+        "106-monolith"
+      ]
+    },
+    {
+      "id": "504-monolith-phalanx",
+      "name": "Monolith Phalanx",
+      "pts": 275,
+      "tags": [
+        "necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "105-obelisk"
+      ],
+      "_unitsText": "3x Monoliths"
+    },
+    {
+      "id": "501-venator-maniple",
+      "name": "Venator Maniple",
+      "pts": 200,
+      "tags": [
+        "necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "104-necron-lord",
+        "107-necron-overlord",
+        "100-tomb-spyders",
+        "103-wraiths",
+        "101-pariahs"
+      ],
+      "_unitsText": "6x Flayed Ones"
+    },
+    {
+      "id": "602-c-tan",
+      "name": "C`Tan",
+      "pts": 0,
+      "tags": [
+        "necron-harvesters"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "803-harvester-engine",
+      "name": "Harvester Engine",
+      "pts": 600,
+      "tags": [
+        "necron-harvesters"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "506-pylon",
+      "name": "Pylon",
+      "pts": 200,
+      "tags": [
+        "necron-harvesters"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "802-spacecraft",
+      "name": "Spacecraft",
+      "pts": 350,
+      "tags": [
+        "necron-harvesters"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "One Scythe Class Harvester"
+    },
+    {
+      "id": "805-warbarque",
+      "name": "Warbarque",
+      "pts": 300,
+      "tags": [
+        "necron-harvesters"
+      ],
+      "units": [],
+      "upgrades": [
+        "107-necron-overlord"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-nightbringer",
+      "name": "Nightbringer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nightbringer",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-deceiver",
+      "name": "Deceiver",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Deceiver",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "100-tomb-spyders",
+      "name": "Tomb Spyders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tomb Spyders",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "101-pariahs",
+      "name": "Pariahs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Pariahs",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "102-immortals",
+      "name": "Immortals",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Immortals",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-wraiths",
+      "name": "Wraiths",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wraiths",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "104-necron-lord",
+      "name": "Necron Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Lord",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "109-destroyers",
+      "name": "Destroyers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Destroyers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-heavy-destroyers",
+      "name": "Heavy Destroyers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Heavy Destroyers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "106-monolith",
+      "name": "Monolith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Monolith",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "105-obelisk",
+      "name": "Obelisk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obelisk",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "107-necron-overlord",
+      "name": "Necron Overlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Overlord",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "108-necron-overlord",
+      "name": "Necron Overlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Overlord",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-abattoir",
+      "name": "Abattoir",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Abattoir",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-aeonic-orb",
+      "name": "Aeonic Orb",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aeonic Orb",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "601-tomb-complex"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "602-c-tan"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "802-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "necron-harvesters",
+      "from": [
+        "602-c-tan",
+        "506-pylon",
+        "802-spacecraft",
+        "803-harvester-engine",
+        "unknown-804",
+        "805-warbarque"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "necron-support-formations",
+      "from": [
+        "501-venator-maniple",
+        "502-eques-maniple",
+        "503-monolith-maniple",
+        "504-monolith-phalanx",
+        "505-armored-phalanx"
+      ],
+      "max": 3,
+      "forEach": [
+        "701-infantry-phalanx"
+      ],
+      "_name2": "Necron Phalanx"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "11-nightbringer",
+        "12-deceiver",
+        "107-necron-overlord",
+        "108-necron-overlord"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "11-nightbringer",
+        "12-deceiver"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "602-c-tan"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "104-necron-lord",
+        "108-necron-overlord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "701-infantry-phalanx"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "100-tomb-spyders"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "701-infantry-phalanx",
+        "501-venator-maniple"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "101-pariahs"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "701-infantry-phalanx",
+        "501-venator-maniple"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "102-immortals"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "701-infantry-phalanx"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "103-wraiths"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "701-infantry-phalanx",
+        "501-venator-maniple"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "104-necron-lord",
+        "107-necron-overlord"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-venator-maniple",
+        "502-eques-maniple"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "109-destroyers",
+        "110-heavy-destroyers",
+        "103-wraiths"
+      ],
+      "max": 9,
+      "min": 6,
+      "appliesTo": [
+        "502-eques-maniple"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "105-obelisk"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "503-monolith-maniple"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "106-monolith"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "503-monolith-maniple"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "105-obelisk"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "504-monolith-phalanx"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "20-abattoir",
+        "21-aeonic-orb"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "803-harvester-engine"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

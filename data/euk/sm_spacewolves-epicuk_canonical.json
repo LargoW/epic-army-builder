@@ -1,0 +1,1015 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/spacewolves-epicuk",
+  "name": "Space Wolves",
+  "faction": "Space Marines",
+  "version": "Epic-UK v070414",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_spacewolves_EPICUK.json",
+    "by": "Kyussinchains",
+    "notes": [
+      "Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders (These must be used to transport any Wolf Guard units first). Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "great-company",
+      "name": "Great Company",
+      "formations": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "space-wolves-packs",
+      "name": "SPACE WOLVES PACKS",
+      "formations": [
+        "512-wolf-scouts",
+        "513-long-fangs",
+        "514-blood-claws",
+        "516-swift-claws",
+        "517-fenrisian-wolves"
+      ]
+    },
+    {
+      "id": "space-wolves-support",
+      "name": "SPACE WOLVES SUPPORT",
+      "formations": [
+        "521-land-speeders",
+        "522-land-raiders",
+        "523-predators",
+        "524-vindicators",
+        "525-whirlwinds",
+        "526-strike-cruiser",
+        "527-thunderhawk",
+        "528-landing-craft"
+      ]
+    },
+    {
+      "id": "imperial-navy",
+      "name": "IMPERIAL NAVY",
+      "formations": [
+        "549-thunderbolt-squadron",
+        "550-marauder-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-great-company",
+      "name": "Great Company",
+      "pts": 325,
+      "tags": [
+        "great-company"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-razorbacks",
+        "13-2-grey-hunters",
+        "16-wolf-guard-terminators",
+        "21-land-raider",
+        "37-vindicator",
+        "40-2-vindicators",
+        "38-hunter",
+        "35-venerable-dreadnought",
+        "39-dreadnought-pf",
+        "36-dreadnought-las",
+        "47-2x-dreadnought-pf",
+        "48-2x-dreadnought-las",
+        "49-dreadnought-pf-dreadnought-las"
+      ],
+      "_unitsText": "8 Grey Hunter units plus transport"
+    },
+    {
+      "id": "512-wolf-scouts",
+      "name": "Wolf Scouts",
+      "pts": 175,
+      "tags": [
+        "space-wolves-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "34-sniper-all-space-wolves-scout-units-in-the-formation-gain-the-sniper-ability"
+      ],
+      "_unitsText": "4 Wolf Scouts plus transport"
+    },
+    {
+      "id": "513-long-fangs",
+      "name": "Long Fangs",
+      "pts": 300,
+      "tags": [
+        "space-wolves-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-razorbacks",
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "38-hunter",
+        "55-land-raider",
+        "35-venerable-dreadnought",
+        "39-dreadnought-pf",
+        "36-dreadnought-las",
+        "47-2x-dreadnought-pf",
+        "48-2x-dreadnought-las",
+        "49-dreadnought-pf-dreadnought-las"
+      ],
+      "_unitsText": "4 Long Fangs units plus transport"
+    },
+    {
+      "id": "514-blood-claws",
+      "name": "Blood Claws",
+      "pts": 250,
+      "tags": [
+        "space-wolves-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "41-jump-packs-all-infantry-units-gain-a-speed-of-30cm-and-the-jump-packs-ability-but-lose-the-plus-transport-rule",
+        "35-venerable-dreadnought",
+        "39-dreadnought-pf",
+        "36-dreadnought-las",
+        "47-2x-dreadnought-pf",
+        "48-2x-dreadnought-las",
+        "49-dreadnought-pf-dreadnought-las"
+      ],
+      "_unitsText": "6 Blood Claws units plus transport"
+    },
+    {
+      "id": "516-swift-claws",
+      "name": "Swift Claws",
+      "pts": 200,
+      "tags": [
+        "space-wolves-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord"
+      ]
+    },
+    {
+      "id": "517-fenrisian-wolves",
+      "name": "Fenrisian Wolves",
+      "pts": 175,
+      "tags": [
+        "space-wolves-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord"
+      ],
+      "_unitsText": "5 Fenrisian Wolves units"
+    },
+    {
+      "id": "521-land-speeders",
+      "name": "Land Speeders",
+      "pts": 200,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord"
+      ]
+    },
+    {
+      "id": "522-land-raiders",
+      "name": "Land Raiders",
+      "pts": 350,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "38-hunter",
+        "37-vindicator",
+        "40-2-vindicators"
+      ]
+    },
+    {
+      "id": "523-predators",
+      "name": "Predators",
+      "pts": 25,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "38-hunter",
+        "37-vindicator",
+        "40-2-vindicators",
+        "46-predator-destructor"
+      ]
+    },
+    {
+      "id": "524-vindicators",
+      "name": "Vindicators",
+      "pts": 250,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "38-hunter"
+      ],
+      "_unitsText": "4 Vindicators"
+    },
+    {
+      "id": "525-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 300,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord",
+        "38-hunter"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "526-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 200,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "26-space-wolves-battle-barge"
+      ]
+    },
+    {
+      "id": "527-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Thunderhawk Gunship"
+    },
+    {
+      "id": "528-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "space-wolves-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Landing Craft"
+    },
+    {
+      "id": "549-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 150,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighter-Bombers"
+    },
+    {
+      "id": "550-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauders Bombers"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorbacks",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-2-grey-hunters",
+      "name": "2 Grey hunters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Grey hunters",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-wolf-guard-terminators",
+      "name": "Wolf Guard Terminators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Guard Terminators",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-2-x-predator-destructors",
+      "name": "2 x Predator Destructors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 x Predator Destructors",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-2-x-predator-annihilators",
+      "name": "2 x Predator Annihilators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 x Predator Annihilators",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "46-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-space-wolves-strike-cruiser",
+      "name": "Space Wolves Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Space Wolves Strike Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-space-wolves-battle-barge",
+      "name": "Space Wolves Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Space Wolves Battle Barge",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-battle-leader",
+      "name": "Battle Leader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Leader",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-rune-priest",
+      "name": "Rune Priest",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rune Priest",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-wolf-priest",
+      "name": "Wolf Priest",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Priest",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-wolf-lord",
+      "name": "Wolf Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Lord",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-battle-leader",
+      "name": "Battle Leader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Leader",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-rune-priest",
+      "name": "Rune Priest",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rune Priest",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-wolf-priest",
+      "name": "Wolf Priest",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Priest",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-wolf-lord",
+      "name": "Wolf Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Lord",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-bikes",
+      "name": "Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-attack-bikes",
+      "name": "Attack Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Attack Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-sniper-all-space-wolves-scout-units-in-the-formation-gain-the-sniper-ability",
+      "name": "Sniper (all space wolves scout units in the formation gain the sniper ability)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper (all space wolves scout units in the formation gain the sniper ability)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-venerable-dreadnought",
+      "name": "Venerable Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venerable Dreadnought",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-dreadnought-pf",
+      "name": "Dreadnought PF",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought PF",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-dreadnought-las",
+      "name": "Dreadnought LAS",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought LAS",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "47-2x-dreadnought-pf",
+      "name": "2x Dreadnought PF",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Dreadnought PF",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "48-2x-dreadnought-las",
+      "name": "2x Dreadnought LAS",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Dreadnought LAS",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "49-dreadnought-pf-dreadnought-las",
+      "name": "Dreadnought PF, Dreadnought LAS",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought PF, Dreadnought LAS",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-2-vindicators",
+      "name": "2 Vindicators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Vindicators",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-jump-packs-all-infantry-units-gain-a-speed-of-30cm-and-the-jump-packs-ability-but-lose-the-plus-transport-rule",
+      "name": "Jump Packs (all infantry units gain a speed of 30cm and the jump packs ability but lose the plus transport rule)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Jump Packs (all infantry units gain a speed of 30cm and the jump packs ability but lose the plus transport rule)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "526-strike-cruiser"
+      ],
+      "max": 1
+    },
+    {
+      "id": "great-company",
+      "from": [
+        "501-great-company"
+      ],
+      "min": 1
+    },
+    {
+      "id": "space-wolves-packs",
+      "from": [
+        "512-wolf-scouts",
+        "513-long-fangs",
+        "514-blood-claws",
+        "516-swift-claws",
+        "517-fenrisian-wolves"
+      ],
+      "max": 3,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "space-wolves-support",
+      "from": [
+        "521-land-speeders",
+        "522-land-raiders",
+        "523-predators",
+        "524-vindicators",
+        "525-whirlwinds",
+        "526-strike-cruiser",
+        "527-thunderhawk",
+        "528-landing-craft"
+      ],
+      "max": 3,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "aircraft",
+      "from": [
+        "527-thunderhawk",
+        "549-thunderbolt-squadron",
+        "550-marauder-squadron"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "16-wolf-guard-terminators"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "13-2-grey-hunters"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "18-land-speeder",
+        "19-land-speeder-typhoon",
+        "20-land-speeder-tornado"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "521-land-speeders"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "55-land-raider"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "513-long-fangs"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "21-land-raider"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "23-2-x-predator-destructors",
+        "24-2-x-predator-annihilators"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "523-predators"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "25-space-wolves-strike-cruiser",
+        "26-space-wolves-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "526-strike-cruiser"
+      ]
+    },
+    {
+      "id": "hero",
+      "from": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "27-battle-leader",
+        "28-rune-priest",
+        "29-wolf-priest",
+        "30-wolf-lord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "wolf-lord",
+      "from": [
+        "30-wolf-lord",
+        "45-wolf-lord"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "32-bikes",
+        "33-attack-bikes"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "516-swift-claws"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "34-sniper-all-space-wolves-scout-units-in-the-formation-gain-the-sniper-ability"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "46-predator-destructor"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "38-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "13-2-grey-hunters"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "14-14"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "15-15"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "39-dreadnought-pf",
+        "36-dreadnought-las",
+        "35-venerable-dreadnought",
+        "47-2x-dreadnought-pf",
+        "48-2x-dreadnought-las",
+        "49-dreadnought-pf-dreadnought-las"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "40-2-vindicators",
+        "37-vindicator"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "17-17"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "31-31"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "36-dreadnought-las"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "37-vindicator"
+      ],
+      "max": 2
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/tau-xarka",
+  "name": "Tau Xar'Ka Armored Strike Force",
+  "faction": "Xenos",
+  "version": "EXPERIMENTAL. Version V1.0.1",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_tau_XarKa_NETEA.json",
+    "by": "Parintachin",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "tau-hunter-cadres",
+      "name": "Tau Hunter Cadres",
+      "formations": [
+        "500-armored-cadre",
+        "501-mechanised-cadre"
+      ]
+    },
+    {
+      "id": "tau-support-cadres",
+      "name": "Tau Support Cadres",
+      "formations": [
+        "510-harassment-cadre",
+        "511-recon-cadre",
+        "512-scorpionfish-cadre",
+        "513-sentry-drone-turrets",
+        "514-skysweep-cadre"
+      ]
+    },
+    {
+      "id": "air-caste-formations",
+      "name": "Air Caste Formations",
+      "formations": [
+        "520-ax-1-0-squadron",
+        "521-barracuda-squadron",
+        "522-manta-dropship",
+        "525-spacecraft",
+        "526-tiger-shark-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-armored-cadre",
+      "name": "Armored Cadre",
+      "pts": 300,
+      "tags": [
+        "tau-hunter-cadres"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-xar-shas-o-commander",
+        "11-command-node",
+        "20-2-ion-plasma-or-missile-pods-hammerhead-gunships",
+        "21-1-rail-or-fusion-hammerhead-gunship",
+        "22-2-rail-or-fusion-hammerhead-gunships",
+        "40-skyray"
+      ],
+      "_unitsText": "6 Hammerhead Gunships"
+    },
+    {
+      "id": "501-mechanised-cadre",
+      "name": "Mechanised Cadre",
+      "pts": 350,
+      "tags": [
+        "tau-hunter-cadres"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-command-node",
+        "12-ethereal-character",
+        "20-2-ion-plasma-or-missile-pods-hammerhead-gunships",
+        "21-1-rail-or-fusion-hammerhead-gunship",
+        "22-2-rail-or-fusion-hammerhead-gunships"
+      ],
+      "_unitsText": "2 Hammerhead Gunships, 1 Skyray"
+    },
+    {
+      "id": "510-harassment-cadre",
+      "name": "Harassment Cadre",
+      "pts": 225,
+      "tags": [
+        "tau-support-cadres"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-2-gun-drone-units"
+      ],
+      "_unitsText": "6 Stealth Battlesuit units"
+    },
+    {
+      "id": "511-recon-cadre",
+      "name": "Recon Cadre",
+      "pts": 150,
+      "tags": [
+        "tau-support-cadres"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "512-scorpionfish-cadre",
+      "name": "Scorpionfish Cadre",
+      "pts": 50,
+      "tags": [
+        "tau-support-cadres"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-xar-shas-o-commander",
+        "11-command-node",
+        "42-scorpionfish-super-heavy-missile-gunship"
+      ]
+    },
+    {
+      "id": "513-sentry-drone-turrets",
+      "name": "Sentry Drone Turrets",
+      "pts": 175,
+      "tags": [
+        "tau-support-cadres"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Sentry Drone turrets"
+    },
+    {
+      "id": "514-skysweep-cadre",
+      "name": "Skysweep Cadre",
+      "pts": 250,
+      "tags": [
+        "tau-support-cadres"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Skyrays"
+    },
+    {
+      "id": "520-ax-1-0-squadron",
+      "name": "AX-1-0 Squadron",
+      "pts": 350,
+      "tags": [
+        "air-caste-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2x Tiger Shark AX-1-0"
+    },
+    {
+      "id": "521-barracuda-squadron",
+      "name": "Barracuda Squadron",
+      "pts": 0,
+      "tags": [
+        "air-caste-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "45-barracuda-fighter"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "522-manta-dropship",
+      "name": "Manta Dropship",
+      "pts": 650,
+      "tags": [
+        "air-caste-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "525-spacecraft",
+      "name": "Spacecraft",
+      "pts": 0,
+      "tags": [
+        "air-caste-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "526-tiger-shark-squadron",
+      "name": "Tiger Shark Squadron",
+      "pts": 175,
+      "tags": [
+        "air-caste-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "60-6-gun-drones"
+      ],
+      "_unitsText": "2 Tiger Sharks"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-xar-shas-o-commander",
+      "name": "Xar’Shas’O Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Xar’Shas’O Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-command-node",
+      "name": "Command node",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Command node",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-ethereal-character",
+      "name": "Ethereal character",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ethereal character",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-2-gun-drone-units",
+      "name": "2 Gun drone Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Gun drone Units",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-2-ion-plasma-or-missile-pods-hammerhead-gunships",
+      "name": "2 Ion, Plasma or Missile Pods Hammerhead Gunships",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Ion, Plasma or Missile Pods Hammerhead Gunships",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-1-rail-or-fusion-hammerhead-gunship",
+      "name": "1 Rail or Fusion Hammerhead Gunship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Rail or Fusion Hammerhead Gunship",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-2-rail-or-fusion-hammerhead-gunships",
+      "name": "2 Rail or Fusion Hammerhead Gunships",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Rail or Fusion Hammerhead Gunships",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-tetra",
+      "name": "Tetra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tetra",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-piranha",
+      "name": "Piranha",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Piranha",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-piranha-tx42",
+      "name": "Piranha TX42",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Piranha TX42",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-4-fire-warrior-units-2-devilfishes",
+      "name": "4 Fire Warrior units, 2 Devilfishes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Fire Warrior units, 2 Devilfishes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-6-fire-warrior-units-3-devilfishes",
+      "name": "6 Fire Warrior units, 3 Devilfishes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Fire Warrior units, 3 Devilfishes",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-skyray",
+      "name": "Skyray",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skyray",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-scorpionfish-super-heavy-missile-gunship",
+      "name": "Scorpionfish Super-Heavy Missile Gunship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scorpionfish Super-Heavy Missile Gunship",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-barracuda-fighter",
+      "name": "Barracuda Fighter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Barracuda Fighter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-protector-class-cruiser",
+      "name": "Protector Class cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Protector Class cruiser",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-custodian-class-battleship",
+      "name": "Custodian Class Battleship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Custodian Class Battleship",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-6-gun-drones",
+      "name": "6 Gun Drones",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Gun Drones",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "513-sentry-drone-turrets"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "525-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "air-caste-formations",
+      "from": [
+        "520-ax-1-0-squadron",
+        "521-barracuda-squadron",
+        "522-manta-dropship",
+        "unknown-523",
+        "unknown-524",
+        "525-spacecraft",
+        "526-tiger-shark-squadron"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-cadres",
+      "from": [
+        "510-harassment-cadre",
+        "511-recon-cadre",
+        "512-scorpionfish-cadre",
+        "513-sentry-drone-turrets",
+        "514-skysweep-cadre"
+      ],
+      "max": 3,
+      "forEach": [
+        "500-armored-cadre",
+        "501-mechanised-cadre"
+      ],
+      "_name2": "Hunter Cadre"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "10-xar-shas-o-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "10-xar-shas-o-commander",
+        "11-command-node"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "12-ethereal-character"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "15-2-gun-drone-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "20-2-ion-plasma-or-missile-pods-hammerhead-gunships",
+        "21-1-rail-or-fusion-hammerhead-gunship",
+        "22-2-rail-or-fusion-hammerhead-gunships"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "40-skyray"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "60-6-gun-drones"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "35-4-fire-warrior-units-2-devilfishes",
+        "36-6-fire-warrior-units-3-devilfishes"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-mechanised-cadre"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "30-tetra",
+        "31-piranha",
+        "32-piranha-tx42"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "511-recon-cadre"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "42-scorpionfish-super-heavy-missile-gunship"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "512-scorpionfish-cadre"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "45-barracuda-fighter"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "521-barracuda-squadron"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "50-protector-class-cruiser",
+        "51-custodian-class-battleship"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "525-spacecraft"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

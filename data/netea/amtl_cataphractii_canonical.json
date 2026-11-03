@@ -1,0 +1,1568 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/amtl/cataphractii",
+  "name": "ADEPTUS MECHANICUS – Gryphonne IV Cataphractii",
+  "faction": "Adeptus Mechanicus",
+  "version": "Experimental",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\AMTL_Cataphractii_NETEA.json",
+    "by": "Norto",
+    "notes": [
+      "If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "skitarii-cataphractii-core-formations",
+      "name": "Skitarii Cataphractii Core Formations",
+      "formations": [
+        "501-leman-russ-maniple",
+        "502-dunecrawler-onager-maniple",
+        "503-dunecrawler-annihilator-maniple"
+      ]
+    },
+    {
+      "id": "cataphractii-support-formations",
+      "name": "Cataphractii Support Formations",
+      "formations": [
+        "510-conqueror-maniple",
+        "511-icarian-cohort",
+        "512-ironstrider-cohort",
+        "513-avenger-squadron",
+        "514-lightning-squadron",
+        "515-tetrarch-heavy-lander",
+        "516-orbital-support"
+      ]
+    },
+    {
+      "id": "skitarii-cataphractii-heavy-assault-formations",
+      "name": "Skitarii Cataphractii Heavy Assault Formations",
+      "formations": [
+        "520-heavy-tank-century",
+        "521-super-heavy-tank-century"
+      ]
+    },
+    {
+      "id": "atml-allies",
+      "name": "ATML ALLIES",
+      "formations": [
+        "530-skitarii-demi-century",
+        "531-sagitarii-demi-century",
+        "532-ordinatus-minorus",
+        "537-emperor-titan",
+        "533-warlord-titan",
+        "534-reaver-titan",
+        "535-warhound-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-leman-russ-maniple",
+      "name": "Leman Russ Maniple",
+      "pts": 400,
+      "tags": [
+        "skitarii-cataphractii-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "109-strategos",
+        "110-skitarii-alpha",
+        "111-add-3x-leman-russ-vanquishers",
+        "112-add-3x-leman-russ-executioners",
+        "115-dunecrawler-icarian"
+      ]
+    },
+    {
+      "id": "502-dunecrawler-onager-maniple",
+      "name": "Dunecrawler Onager Maniple",
+      "pts": 250,
+      "tags": [
+        "skitarii-cataphractii-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "109-strategos",
+        "110-skitarii-alpha",
+        "113-add-3x-dunecrawler-onagers",
+        "114-add-3x-dunecrawler-annihilators",
+        "115-dunecrawler-icarian"
+      ],
+      "_unitsText": "5x Dunecrawler Onagers"
+    },
+    {
+      "id": "503-dunecrawler-annihilator-maniple",
+      "name": "Dunecrawler Annihilator Maniple",
+      "pts": 400,
+      "tags": [
+        "skitarii-cataphractii-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha",
+        "113-add-3x-dunecrawler-onagers",
+        "114-add-3x-dunecrawler-annihilators",
+        "115-dunecrawler-icarian"
+      ],
+      "_unitsText": "5x Dunecrawler Annihilators"
+    },
+    {
+      "id": "510-conqueror-maniple",
+      "name": "Conqueror Maniple",
+      "pts": 275,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "5x Skitarii Leman Russ Conquerors"
+    },
+    {
+      "id": "511-icarian-cohort",
+      "name": "Icarian Cohort",
+      "pts": 150,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "3x Dunecrawler Icarians"
+    },
+    {
+      "id": "512-ironstrider-cohort",
+      "name": "Ironstrider Cohort",
+      "pts": 200,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ]
+    },
+    {
+      "id": "513-avenger-squadron",
+      "name": "Avenger Squadron",
+      "pts": 225,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "2 Avenger Strike Fighters"
+    },
+    {
+      "id": "514-lightning-squadron",
+      "name": "Lightning Squadron",
+      "pts": 175,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "2 Lightning Primaris Interceptors"
+    },
+    {
+      "id": "515-tetrarch-heavy-lander",
+      "name": "Tetrarch Heavy Lander",
+      "pts": 475,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "1 Tetrarch Heavy Lander"
+    },
+    {
+      "id": "516-orbital-support",
+      "name": "Orbital Support",
+      "pts": 200,
+      "tags": [
+        "cataphractii-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-skitarii-alpha"
+      ],
+      "_unitsText": "1 Ark Mechanicus"
+    },
+    {
+      "id": "520-heavy-tank-century",
+      "name": "Heavy Tank Century",
+      "pts": 340,
+      "tags": [
+        "skitarii-cataphractii-heavy-assault-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "109-strategos",
+        "110-skitarii-alpha"
+      ]
+    },
+    {
+      "id": "521-super-heavy-tank-century",
+      "name": "Super Heavy Tank Century",
+      "pts": 500,
+      "tags": [
+        "skitarii-cataphractii-heavy-assault-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "109-strategos",
+        "110-skitarii-alpha"
+      ]
+    },
+    {
+      "id": "530-skitarii-demi-century",
+      "name": "Skitarii Demi-Century",
+      "pts": 225,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "141-hydra",
+        "142-10-chimedons",
+        "125-minorus-with-apocalypse-missile-launcher",
+        "126-minorus-with-laser-burner",
+        "127-minorus-with-corvus-assault-pod",
+        "128-minorus-with-carapace-landing-pad",
+        "129-minorus-with-plasma-cannon",
+        "130-minorus-with-gatling-blaster",
+        "131-minorus-with-close-combat-weapon",
+        "132-minorus-with-melta-cannon",
+        "133-minorus-with-laser-blaster",
+        "134-minorus-with-volcano-cannon",
+        "135-minorus-with-plasma-destructor",
+        "137-minorus-with-quake-cannon",
+        "138-minorus-with-support-missile"
+      ]
+    },
+    {
+      "id": "531-sagitarii-demi-century",
+      "name": "Sagitarii Demi-Century",
+      "pts": 250,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "141-hydra",
+        "142-10-chimedons",
+        "125-minorus-with-apocalypse-missile-launcher",
+        "126-minorus-with-laser-burner",
+        "127-minorus-with-corvus-assault-pod",
+        "128-minorus-with-carapace-landing-pad",
+        "129-minorus-with-plasma-cannon",
+        "130-minorus-with-gatling-blaster",
+        "131-minorus-with-close-combat-weapon",
+        "132-minorus-with-melta-cannon",
+        "133-minorus-with-laser-blaster",
+        "134-minorus-with-volcano-cannon",
+        "135-minorus-with-plasma-destructor",
+        "137-minorus-with-quake-cannon",
+        "138-minorus-with-support-missile"
+      ],
+      "_unitsText": "5 Sagitarii units"
+    },
+    {
+      "id": "532-ordinatus-minorus",
+      "name": "Ordinatus Minorus",
+      "pts": 50,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "125-minorus-with-apocalypse-missile-launcher",
+        "126-minorus-with-laser-burner",
+        "127-minorus-with-corvus-assault-pod",
+        "128-minorus-with-carapace-landing-pad",
+        "129-minorus-with-plasma-cannon",
+        "130-minorus-with-gatling-blaster",
+        "131-minorus-with-close-combat-weapon",
+        "132-minorus-with-melta-cannon",
+        "133-minorus-with-laser-blaster",
+        "134-minorus-with-volcano-cannon",
+        "135-minorus-with-plasma-destructor",
+        "137-minorus-with-quake-cannon",
+        "138-minorus-with-support-missile"
+      ]
+    },
+    {
+      "id": "537-emperor-titan",
+      "name": "Emperor Titan",
+      "pts": 1250,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "82-veteran-princeps",
+        "83-carapace-multi-lasers",
+        "84-sacred-icon"
+      ]
+    },
+    {
+      "id": "533-warlord-titan",
+      "name": "Warlord Titan",
+      "pts": 725,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "80-single-weapon-system-surcharge",
+        "82-veteran-princeps",
+        "83-carapace-multi-lasers",
+        "84-sacred-icon"
+      ]
+    },
+    {
+      "id": "534-reaver-titan",
+      "name": "Reaver Titan",
+      "pts": 575,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "80-single-weapon-system-surcharge",
+        "82-veteran-princeps",
+        "83-carapace-multi-lasers",
+        "84-sacred-icon"
+      ]
+    },
+    {
+      "id": "535-warhound-titan",
+      "name": "Warhound Titan",
+      "pts": 275,
+      "tags": [
+        "atml-allies"
+      ],
+      "units": [],
+      "upgrades": [
+        "80-single-weapon-system-surcharge",
+        "82-veteran-princeps"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-imperator-configuration",
+      "name": "Imperator Configuration",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Imperator Configuration",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-warmonger-configuration",
+      "name": "Warmonger Configuration",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warmonger Configuration",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-inferno-gun",
+      "name": "Inferno Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Inferno Gun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-vulcan-megabolter",
+      "name": "Vulcan Megabolter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vulcan Megabolter",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-plasma-blastgun",
+      "name": "Plasma Blastgun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plasma Blastgun",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-turbo-laser-destructor",
+      "name": "Turbo-laser Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Turbo-laser Destructor",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-apocalypse-missile-launcher",
+      "name": "Apocalypse Missile Launcher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Apocalypse Missile Launcher",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-laser-burner",
+      "name": "Laser Burner",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Laser Burner",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-corvus-assault-pod",
+      "name": "Corvus Assault Pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Corvus Assault Pod",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-carapace-landing-pad",
+      "name": "Carapace Landing Pad",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Carapace Landing Pad",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-plasma-cannon",
+      "name": "Plasma Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plasma Cannon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-gatling-blaster",
+      "name": "Gatling Blaster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gatling Blaster",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-close-combat-weapon",
+      "name": "Close Combat Weapon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Close Combat Weapon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-melta-cannon",
+      "name": "Melta Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Melta Cannon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-laser-blaster",
+      "name": "Laser Blaster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Laser Blaster",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-volcano-cannon",
+      "name": "Volcano Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Volcano Cannon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-plasma-destructor",
+      "name": "Plasma Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plasma Destructor",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-support-missile",
+      "name": "Support Missile",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Support Missile",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-quake-cannon",
+      "name": "Quake Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Quake Cannon",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-minorus-support-missile",
+      "name": "Minorus Support Missile",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus Support Missile",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "80-single-weapon-system-surcharge",
+      "name": "Single Weapon System Surcharge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Single Weapon System Surcharge",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "82-veteran-princeps",
+      "name": "Veteran Princeps",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Veteran Princeps",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "83-carapace-multi-lasers",
+      "name": "Carapace Multi-Lasers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Carapace Multi-Lasers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "84-sacred-icon",
+      "name": "Sacred Icon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sacred Icon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "101-5x-leman-russ-vanquishers",
+      "name": "5x Leman Russ Vanquishers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5x Leman Russ Vanquishers",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "102-5x-leman-russ-executioners",
+      "name": "5x Leman Russ Executioners",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5x Leman Russ Executioners",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-5x-dunecrawler-onagers",
+      "name": "5x Dunecrawler Onagers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5x Dunecrawler Onagers",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "104-5x-dunecrawler-annihilators",
+      "name": "5x Dunecrawler Annihilators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5x Dunecrawler Annihilators",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "105-skitarii-leman-russ-conquerors",
+      "name": "Skitarii Leman Russ Conquerors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skitarii Leman Russ Conquerors",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "106-dunecrawler-icarians",
+      "name": "Dunecrawler Icarians",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dunecrawler Icarians",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "107-4x-ironstrider-balistarii",
+      "name": "4x Ironstrider Balistarii",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4x Ironstrider Balistarii",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "108-4x-ironstrider-dragoons",
+      "name": "4x Ironstrider Dragoons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4x Ironstrider Dragoons",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "109-strategos",
+      "name": "Strategos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strategos",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-skitarii-alpha",
+      "name": "Skitarii Alpha",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skitarii Alpha",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "111-add-3x-leman-russ-vanquishers",
+      "name": "Add 3x Leman Russ Vanquishers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3x Leman Russ Vanquishers",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "112-add-3x-leman-russ-executioners",
+      "name": "Add 3x Leman Russ Executioners",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3x Leman Russ Executioners",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "113-add-3x-dunecrawler-onagers",
+      "name": "Add 3x Dunecrawler Onagers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3x Dunecrawler Onagers",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "114-add-3x-dunecrawler-annihilators",
+      "name": "Add 3x Dunecrawler Annihilators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3x Dunecrawler Annihilators",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "115-dunecrawler-icarian",
+      "name": "Dunecrawler Icarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dunecrawler Icarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "116-macharius-heavy-tank",
+      "name": "Macharius Heavy Tank",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Macharius Heavy Tank",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "117-macharius-vulcan",
+      "name": "Macharius Vulcan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Macharius Vulcan",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "118-macharius-vanquisher",
+      "name": "Macharius Vanquisher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Macharius Vanquisher",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "119-2-secutor-units-8-hypaspist-units",
+      "name": "2 Secutor units, 8 Hypaspist units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Secutor units, 8 Hypaspist units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "120-5-secutor-units-5-gun-servitor-units",
+      "name": "5 Secutor units, 5 Gun Servitor Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Secutor units, 5 Gun Servitor Units",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "121-2-secutor-units-3-hypaspist-units-5-gun-servitor-units",
+      "name": "2 Secutor units, 3 Hypaspist units, 5 Gun Servitor Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Secutor units, 3 Hypaspist units, 5 Gun Servitor Units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "122-5-secutor-units-5-hypaspist-units",
+      "name": "5 Secutor units, 5 Hypaspist units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Secutor units, 5 Hypaspist units",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "123-5-gun-servitor-unit",
+      "name": "5 Gun Servitor Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Gun Servitor Unit",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "124-5-rapier-laser-destroyer-unit",
+      "name": "5 Rapier Laser Destroyer Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Rapier Laser Destroyer Unit",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "125-minorus-with-apocalypse-missile-launcher",
+      "name": "Minorus with Apocalypse Missile Launcher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Apocalypse Missile Launcher",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "126-minorus-with-laser-burner",
+      "name": "Minorus with Laser Burner",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Laser Burner",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "127-minorus-with-corvus-assault-pod",
+      "name": "Minorus with Corvus Assault Pod",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Corvus Assault Pod",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "128-minorus-with-carapace-landing-pad",
+      "name": "Minorus with Carapace Landing Pad",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Carapace Landing Pad",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "129-minorus-with-plasma-cannon",
+      "name": "Minorus with Plasma Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Plasma Cannon",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "130-minorus-with-gatling-blaster",
+      "name": "Minorus with Gatling Blaster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Gatling Blaster",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "131-minorus-with-close-combat-weapon",
+      "name": "Minorus with Close Combat Weapon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Close Combat Weapon",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "132-minorus-with-melta-cannon",
+      "name": "Minorus with Melta Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Melta Cannon",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "133-minorus-with-laser-blaster",
+      "name": "Minorus with Laser Blaster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Laser Blaster",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "134-minorus-with-volcano-cannon",
+      "name": "Minorus with Volcano Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Volcano Cannon",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "135-minorus-with-plasma-destructor",
+      "name": "Minorus with Plasma Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Plasma Destructor",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "137-minorus-with-quake-cannon",
+      "name": "Minorus with Quake Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Quake Cannon",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "138-minorus-with-support-missile",
+      "name": "Minorus with Support Missile",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Minorus with Support Missile",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "139-baneblades",
+      "name": "Baneblades",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baneblades",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "140-stormblades",
+      "name": "Stormblades",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormblades",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "141-hydra",
+      "name": "Hydra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hydra",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "142-10-chimedons",
+      "name": "10 Chimedons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "10 Chimedons",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "unknown-561"
+      ],
+      "max": 1
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "510-conqueror-maniple",
+        "511-icarian-cohort",
+        "512-ironstrider-cohort",
+        "513-avenger-squadron",
+        "514-lightning-squadron",
+        "515-tetrarch-heavy-lander",
+        "516-orbital-support"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-leman-russ-maniple",
+        "502-dunecrawler-onager-maniple",
+        "503-dunecrawler-annihilator-maniple"
+      ],
+      "_name2": "CORE FORMATIONS"
+    },
+    {
+      "id": "heavy-assault-formations",
+      "from": [
+        "520-heavy-tank-century",
+        "521-super-heavy-tank-century"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-leman-russ-maniple",
+        "502-dunecrawler-onager-maniple",
+        "503-dunecrawler-annihilator-maniple"
+      ],
+      "_name2": "CORE FORMATIONS"
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "530-skitarii-demi-century",
+        "531-sagitarii-demi-century",
+        "532-ordinatus-minorus",
+        "533-warlord-titan",
+        "534-reaver-titan",
+        "535-warhound-titan",
+        "unknown-536"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "skitarii-support",
+      "from": [
+        "530-skitarii-demi-century",
+        "531-sagitarii-demi-century",
+        "532-ordinatus-minorus"
+      ],
+      "max": 1
+    },
+    {
+      "id": "collegia-titanica-support",
+      "from": [
+        "533-warlord-titan",
+        "534-reaver-titan",
+        "535-warhound-titan",
+        "537-emperor-titan"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "109-strategos"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "110-skitarii-alpha"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "113-add-3x-dunecrawler-onagers"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "114-add-3x-dunecrawler-annihilators"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "104-5x-dunecrawler-annihilators"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "115-dunecrawler-icarian"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "111-add-3x-leman-russ-vanquishers"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "112-add-3x-leman-russ-executioners"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "109-strategos"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "107-4x-ironstrider-balistarii",
+        "108-4x-ironstrider-dragoons"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "512-ironstrider-cohort"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "117-macharius-vulcan",
+        "118-macharius-vanquisher"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "520-heavy-tank-century"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "116-macharius-heavy-tank",
+        "117-macharius-vulcan",
+        "118-macharius-vanquisher"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "520-heavy-tank-century"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "139-baneblades",
+        "140-stormblades"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "521-super-heavy-tank-century"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "101-5x-leman-russ-vanquishers",
+        "102-5x-leman-russ-executioners"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-leman-russ-maniple"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "119-2-secutor-units-8-hypaspist-units",
+        "120-5-secutor-units-5-gun-servitor-units",
+        "121-2-secutor-units-3-hypaspist-units-5-gun-servitor-units",
+        "122-5-secutor-units-5-hypaspist-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "530-skitarii-demi-century"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "123-5-gun-servitor-unit",
+        "124-5-rapier-laser-destroyer-unit"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "531-sagitarii-demi-century"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "11-imperator-configuration",
+        "12-warmonger-configuration"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "537-emperor-titan"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "13-inferno-gun",
+        "14-vulcan-megabolter",
+        "15-plasma-blastgun",
+        "16-turbo-laser-destructor"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "535-warhound-titan"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "30-apocalypse-missile-launcher",
+        "13-inferno-gun",
+        "14-vulcan-megabolter",
+        "15-plasma-blastgun",
+        "16-turbo-laser-destructor",
+        "25-laser-burner",
+        "26-corvus-assault-pod",
+        "27-carapace-landing-pad",
+        "28-plasma-cannon",
+        "29-gatling-blaster",
+        "31-close-combat-weapon",
+        "32-melta-cannon",
+        "33-laser-blaster",
+        "34-volcano-cannon",
+        "35-plasma-destructor",
+        "36-support-missile",
+        "37-quake-cannon"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "534-reaver-titan"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "16-turbo-laser-destructor",
+        "13-inferno-gun",
+        "14-vulcan-megabolter",
+        "15-plasma-blastgun",
+        "25-laser-burner",
+        "26-corvus-assault-pod",
+        "27-carapace-landing-pad",
+        "28-plasma-cannon",
+        "29-gatling-blaster",
+        "30-apocalypse-missile-launcher",
+        "31-close-combat-weapon",
+        "32-melta-cannon",
+        "33-laser-blaster",
+        "34-volcano-cannon",
+        "35-plasma-destructor",
+        "36-support-missile",
+        "37-quake-cannon"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "533-warlord-titan"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "35-plasma-destructor",
+        "36-support-missile"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "533-warlord-titan"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "35-plasma-destructor",
+        "36-support-missile"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "534-reaver-titan"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "125-minorus-with-apocalypse-missile-launcher",
+        "126-minorus-with-laser-burner",
+        "127-minorus-with-corvus-assault-pod",
+        "128-minorus-with-carapace-landing-pad",
+        "129-minorus-with-plasma-cannon",
+        "130-minorus-with-gatling-blaster",
+        "131-minorus-with-close-combat-weapon",
+        "132-minorus-with-melta-cannon",
+        "133-minorus-with-laser-blaster",
+        "134-minorus-with-volcano-cannon",
+        "135-minorus-with-plasma-destructor",
+        "136-136",
+        "137-minorus-with-quake-cannon",
+        "138-minorus-with-support-missile"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "125-minorus-with-apocalypse-missile-launcher",
+        "126-minorus-with-laser-burner",
+        "127-minorus-with-corvus-assault-pod",
+        "128-minorus-with-carapace-landing-pad",
+        "129-minorus-with-plasma-cannon",
+        "130-minorus-with-gatling-blaster",
+        "131-minorus-with-close-combat-weapon",
+        "132-minorus-with-melta-cannon",
+        "133-minorus-with-laser-blaster",
+        "134-minorus-with-volcano-cannon",
+        "135-minorus-with-plasma-destructor",
+        "137-minorus-with-quake-cannon",
+        "138-minorus-with-support-missile"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "532-ordinatus-minorus"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "80-single-weapon-system-surcharge"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "82-veteran-princeps"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "83-carapace-multi-lasers"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "141-hydra"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "142-10-chimedons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "84-sacred-icon"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

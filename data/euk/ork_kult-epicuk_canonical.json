@@ -1,0 +1,1046 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ork/kult-epicuk",
+  "name": "Burning Death Speed Freeks",
+  "faction": "Orks",
+  "version": "Epic UK v011214",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\ORK_kult_EPICUK.json",
+    "by": "Kyussinchains",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "formations",
+      "name": "FORMATIONS",
+      "formations": [
+        "500-speed-freaks-warband",
+        "501-speed-freaks-warband-big",
+        "502-speed-freaks-warband-uge",
+        "503-kult-of-speed",
+        "504-kult-of-speed-big",
+        "505-kult-of-speed-uge",
+        "506-blitz-brigade",
+        "507-blitz-brigade-big",
+        "508-blitz-brigade-uge",
+        "509-warbike-outriders",
+        "510-warbike-outriders-big",
+        "511-warbike-outriders-uge",
+        "512-fortress-mob",
+        "513-fortress-mob-big",
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "aircraft-and-spacecraft",
+      "name": "AIRCRAFT and SPACECRAFT",
+      "formations": [
+        "516-fighta-squadron",
+        "517-landa",
+        "519-kill-kroozer",
+        "520-battle-kroozer"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-speed-freaks-warband",
+      "name": "Speed Freaks Warband",
+      "pts": -10,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-nobz-trukk",
+        "120-nobz-bikes",
+        "101-boyz-trukk",
+        "68-stormboyz",
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "72-big-gun",
+        "73-battlewagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-speed-freaks-warband-big",
+      "name": "Speed Freaks Warband (Big)",
+      "pts": -45,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-nobz-trukk",
+        "120-nobz-bikes",
+        "101-boyz-trukk",
+        "68-stormboyz",
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "72-big-gun",
+        "73-battlewagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-speed-freaks-warband-uge",
+      "name": "Speed Freaks Warband ('Uge)",
+      "pts": -80,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-nobz-trukk",
+        "120-nobz-bikes",
+        "101-boyz-trukk",
+        "68-stormboyz",
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "72-big-gun",
+        "73-battlewagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "503-kult-of-speed",
+      "name": "Kult of Speed",
+      "pts": 0,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "504-kult-of-speed-big",
+      "name": "Kult of Speed (Big)",
+      "pts": -50,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "505-kult-of-speed-uge",
+      "name": "Kult of Speed ('Uge)",
+      "pts": -100,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon",
+        "87-mekboy-speedsta",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "506-blitz-brigade",
+      "name": "Blitz Brigade",
+      "pts": 10,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "77-gunwagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "87-mekboy-speedsta",
+        "95-extra-gunfortress",
+        "79-nobz",
+        "120-nobz-bikes",
+        "110-mekboy-bad-ork-bikeboy"
+      ]
+    },
+    {
+      "id": "507-blitz-brigade-big",
+      "name": "Blitz Brigade (Big)",
+      "pts": -30,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "77-gunwagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "87-mekboy-speedsta",
+        "95-extra-gunfortress",
+        "79-nobz",
+        "120-nobz-bikes",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "508-blitz-brigade-uge",
+      "name": "Blitz Brigade ('Uge)",
+      "pts": -70,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha",
+        "77-gunwagon",
+        "74-deth-kopta",
+        "76-flakwagon",
+        "87-mekboy-speedsta",
+        "95-extra-gunfortress",
+        "79-nobz",
+        "120-nobz-bikes",
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "509-warbike-outriders",
+      "name": "Warbike Outriders",
+      "pts": 150,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_unitsText": "5 Warbikes"
+    },
+    {
+      "id": "510-warbike-outriders-big",
+      "name": "Warbike Outriders (Big)",
+      "pts": 250,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_unitsText": "10 Warbikes"
+    },
+    {
+      "id": "511-warbike-outriders-uge",
+      "name": "Warbike Outriders ('Uge)",
+      "pts": 350,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "_unitsText": "15 Warbikes"
+    },
+    {
+      "id": "512-fortress-mob",
+      "name": "Fortress Mob",
+      "pts": 275,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "66-boyz",
+        "76-flakwagon",
+        "79-nobz",
+        "120-nobz-bikes",
+        "91-extra-battlefortress",
+        "95-extra-gunfortress",
+        "110-mekboy-bad-ork-bikeboy"
+      ]
+    },
+    {
+      "id": "513-fortress-mob-big",
+      "name": "Fortress Mob (Big)",
+      "pts": 475,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "66-boyz",
+        "76-flakwagon",
+        "79-nobz",
+        "120-nobz-bikes",
+        "91-extra-battlefortress",
+        "95-extra-gunfortress",
+        "110-mekboy-bad-ork-bikeboy"
+      ]
+    },
+    {
+      "id": "514-fortress-mob-uge",
+      "name": "Fortress Mob ('Uge)",
+      "pts": 675,
+      "tags": [
+        "formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "66-boyz",
+        "76-flakwagon",
+        "79-nobz",
+        "120-nobz-bikes",
+        "91-extra-battlefortress",
+        "95-extra-gunfortress",
+        "110-mekboy-bad-ork-bikeboy"
+      ]
+    },
+    {
+      "id": "516-fighta-squadron",
+      "name": "Fighta Squadron",
+      "pts": 0,
+      "tags": [
+        "aircraft-and-spacecraft"
+      ],
+      "units": [],
+      "upgrades": [
+        "65-fighta-bomba"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "517-landa",
+      "name": "Landa",
+      "pts": 200,
+      "tags": [
+        "aircraft-and-spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "519-kill-kroozer",
+      "name": "Kill Kroozer",
+      "pts": 100,
+      "tags": [
+        "aircraft-and-spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "520-battle-kroozer",
+      "name": "Battle Kroozer",
+      "pts": 150,
+      "tags": [
+        "aircraft-and-spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "12-nobz-trukk",
+      "name": "Nobz (trukk)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nobz (trukk)",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "120-nobz-bikes",
+      "name": "Nobz (bikes)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nobz (bikes)",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "101-boyz-trukk",
+      "name": "Boyz (trukk)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Boyz (trukk)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "68-stormboyz",
+      "name": "Stormboyz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormboyz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-buggy",
+      "name": "Buggy",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Buggy",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-warbike",
+      "name": "Warbike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warbike",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-skorcha",
+      "name": "Skorcha",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skorcha",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-big-gun",
+      "name": "Big Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Big Gun",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "73-battlewagon",
+      "name": "Battlewagon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battlewagon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "74-deth-kopta",
+      "name": "Deth Kopta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Deth Kopta",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "76-flakwagon",
+      "name": "Flakwagon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Flakwagon",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "77-gunwagon",
+      "name": "Gunwagon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gunwagon",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "87-mekboy-speedsta",
+      "name": "Mekboy Speedsta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mekboy Speedsta",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-mekboy-bad-ork-bikeboy",
+      "name": "Mekboy Bad Ork Bikeboy",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mekboy Bad Ork Bikeboy",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "95-extra-gunfortress",
+      "name": "Extra Gunfortress",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Extra Gunfortress",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "79-nobz",
+      "name": "Nobz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Nobz",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-battlefortress",
+      "name": "Battlefortress",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battlefortress",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-gunfortress",
+      "name": "Gunfortress",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gunfortress",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "66-boyz",
+      "name": "Boyz",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Boyz",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "91-extra-battlefortress",
+      "name": "Extra Battlefortress",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Extra Battlefortress",
+          "pts": 115,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "65-fighta-bomba",
+      "name": "Fighta Bomba",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fighta Bomba",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "519-kill-kroozer",
+        "520-battle-kroozer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "war-engines-allies",
+      "from": [
+        "516-fighta-squadron",
+        "517-landa",
+        "519-kill-kroozer",
+        "520-battle-kroozer"
+      ],
+      "maxShare": [
+        1,
+        4
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "12-nobz-trukk",
+        "120-nobz-bikes"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "500-speed-freaks-warband"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "101-boyz-trukk"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "500-speed-freaks-warband"
+      ]
+    },
+    {
+      "id": "bikes",
+      "from": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "500-speed-freaks-warband"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "87-mekboy-speedsta"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-speed-freaks-warband",
+        "503-kult-of-speed",
+        "506-blitz-brigade"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "110-mekboy-bad-ork-bikeboy"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-speed-freaks-warband",
+        "501-speed-freaks-warband-big",
+        "502-speed-freaks-warband-uge",
+        "503-kult-of-speed",
+        "504-kult-of-speed-big",
+        "505-kult-of-speed-uge",
+        "506-blitz-brigade",
+        "507-blitz-brigade-big",
+        "508-blitz-brigade-uge",
+        "509-warbike-outriders",
+        "510-warbike-outriders-big",
+        "511-warbike-outriders-uge",
+        "512-fortress-mob",
+        "513-fortress-mob-big",
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "12-nobz-trukk",
+        "120-nobz-bikes"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "501-speed-freaks-warband-big"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "101-boyz-trukk"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "501-speed-freaks-warband-big"
+      ]
+    },
+    {
+      "id": "bikes",
+      "from": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha"
+      ],
+      "min": 8,
+      "appliesTo": [
+        "501-speed-freaks-warband-big",
+        "503-kult-of-speed"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "87-mekboy-speedsta"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-speed-freaks-warband-big",
+        "504-kult-of-speed-big",
+        "507-blitz-brigade-big"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "12-nobz-trukk",
+        "120-nobz-bikes"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "502-speed-freaks-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "101-boyz-trukk"
+      ],
+      "min": 9,
+      "appliesTo": [
+        "502-speed-freaks-warband-uge"
+      ]
+    },
+    {
+      "id": "bikes",
+      "from": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha"
+      ],
+      "min": 12,
+      "appliesTo": [
+        "502-speed-freaks-warband-uge"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "87-mekboy-speedsta"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "502-speed-freaks-warband-uge",
+        "505-kult-of-speed-uge",
+        "508-blitz-brigade-uge"
+      ]
+    },
+    {
+      "id": "bikes",
+      "from": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha"
+      ],
+      "min": 16,
+      "appliesTo": [
+        "504-kult-of-speed-big"
+      ]
+    },
+    {
+      "id": "bikes",
+      "from": [
+        "20-buggy",
+        "21-warbike",
+        "22-skorcha"
+      ],
+      "min": 24,
+      "appliesTo": [
+        "505-kult-of-speed-uge"
+      ]
+    },
+    {
+      "id": "wagonz",
+      "from": [
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "506-blitz-brigade"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "95-extra-gunfortress"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "506-blitz-brigade",
+        "512-fortress-mob"
+      ]
+    },
+    {
+      "id": "nobz",
+      "from": [
+        "79-nobz",
+        "120-nobz-bikes"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "506-blitz-brigade",
+        "512-fortress-mob"
+      ]
+    },
+    {
+      "id": "wagonz",
+      "from": [
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon"
+      ],
+      "min": 8,
+      "appliesTo": [
+        "507-blitz-brigade-big"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "95-extra-gunfortress"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "507-blitz-brigade-big",
+        "513-fortress-mob-big"
+      ]
+    },
+    {
+      "id": "nobz",
+      "from": [
+        "79-nobz",
+        "120-nobz-bikes"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "507-blitz-brigade-big",
+        "513-fortress-mob-big"
+      ]
+    },
+    {
+      "id": "wagonz",
+      "from": [
+        "74-deth-kopta",
+        "76-flakwagon",
+        "77-gunwagon"
+      ],
+      "min": 12,
+      "appliesTo": [
+        "508-blitz-brigade-uge"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "95-extra-gunfortress"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "508-blitz-brigade-uge",
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "nobz",
+      "from": [
+        "79-nobz",
+        "120-nobz-bikes"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "508-blitz-brigade-uge",
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "56-battlefortress",
+        "57-gunfortress"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "512-fortress-mob"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "91-extra-battlefortress"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "512-fortress-mob"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "56-battlefortress",
+        "57-gunfortress"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "513-fortress-mob-big"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "91-extra-battlefortress"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "513-fortress-mob-big"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "56-battlefortress",
+        "57-gunfortress"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "91-extra-battlefortress"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "514-fortress-mob-uge"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "65-fighta-bomba"
+      ],
+      "max": 9,
+      "min": 3,
+      "appliesTo": [
+        "516-fighta-squadron"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

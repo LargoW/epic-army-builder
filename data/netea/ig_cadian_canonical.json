@@ -1,0 +1,766 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/cadian",
+  "name": "Cadian Shock Troopers",
+  "faction": "Astra Militarum",
+  "version": "NetEA v1.5 *DEVELOPMENT*",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\IG_cadian_NETEA.json",
+    "by": "uvenlord",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "cadian-shock-companies",
+      "name": "CADIAN SHOCK COMPANIES",
+      "formations": [
+        "500-cadian-infantry-company",
+        "501-cadian-regimental-headquarters",
+        "502-cadian-whiteshield-company",
+        "503-kasrkin-infantry-company"
+      ]
+    },
+    {
+      "id": "cadian-shock-support-formations",
+      "name": "CADIAN SHOCK SUPPORT FORMATIONS",
+      "formations": [
+        "510-mechanized-kasrkin",
+        "512-artillery-battery",
+        "513-deathstrike-battery",
+        "514-flak-battery",
+        "515-griffon-platoon",
+        "516-hellhound-platoon",
+        "517-sentinel-squadron",
+        "518-super-heavy-tank-platoon",
+        "519-tank-platoon",
+        "520-vulture-squadron"
+      ]
+    },
+    {
+      "id": "adeptus-mechanicus",
+      "name": "ADEPTUS MECHANICUS",
+      "formations": [
+        "521-warlord-class-titan",
+        "522-reaver-class-titan",
+        "523-ordinatus-cadia"
+      ]
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "name": "IMPERIAL NAVY AIRCRAFT",
+      "formations": [
+        "524-thunderbolt-fighters",
+        "525-marauder-bombers",
+        "526-colossus-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-cadian-infantry-company",
+      "name": "Cadian Infantry Company",
+      "pts": 250,
+      "tags": [
+        "cadian-shock-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords",
+        "12-fire-support-platoon-4-support-squad-units",
+        "13-infantry-platoon-6-imperial-guard-infantry-units",
+        "14-kasrkin-platoon-4-kasrkin-units",
+        "15-sabre-platforms-3-sabre-platforms",
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units",
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units",
+        "20-commissar"
+      ],
+      "_unitsText": "1 Imperial Guard Commander unit and 12 Imperial Guard units"
+    },
+    {
+      "id": "501-cadian-regimental-headquarters",
+      "name": "Cadian Regimental Headquarters",
+      "pts": 550,
+      "tags": [
+        "cadian-shock-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords",
+        "12-fire-support-platoon-4-support-squad-units",
+        "13-infantry-platoon-6-imperial-guard-infantry-units",
+        "14-kasrkin-platoon-4-kasrkin-units",
+        "15-sabre-platforms-3-sabre-platforms",
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units",
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units",
+        "20-commissar"
+      ],
+      "_unitsText": "1 Imperial Guard Supreme Commander unit, 7 Kasrkin units and 1 Leviathan Mobile Command Centre"
+    },
+    {
+      "id": "502-cadian-whiteshield-company",
+      "name": "Cadian Whiteshield Company",
+      "pts": 200,
+      "tags": [
+        "cadian-shock-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords",
+        "12-fire-support-platoon-4-support-squad-units",
+        "13-infantry-platoon-6-imperial-guard-infantry-units",
+        "14-kasrkin-platoon-4-kasrkin-units",
+        "15-sabre-platforms-3-sabre-platforms",
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units",
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units",
+        "20-commissar"
+      ],
+      "_unitsText": "1 Imperial Guard Commander unit and 12 Imperial Guard units"
+    },
+    {
+      "id": "503-kasrkin-infantry-company",
+      "name": "Kasrkin Infantry Company",
+      "pts": 175,
+      "tags": [
+        "cadian-shock-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords",
+        "12-fire-support-platoon-4-support-squad-units",
+        "13-infantry-platoon-6-imperial-guard-infantry-units",
+        "14-kasrkin-platoon-4-kasrkin-units",
+        "15-sabre-platforms-3-sabre-platforms",
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units",
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units",
+        "20-commissar"
+      ],
+      "_unitsText": "1 Imperial Guard Commander unit and 7 Kasrkin units"
+    },
+    {
+      "id": "510-mechanized-kasrkin",
+      "name": "Mechanized Kasrkin",
+      "pts": 250,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "1 Imperial Guard Commander unit, 7 Kasrkin units"
+    },
+    {
+      "id": "512-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 250,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ]
+    },
+    {
+      "id": "513-deathstrike-battery",
+      "name": "Deathstrike Battery",
+      "pts": 200,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "2 Deathstrike Missile Launchers"
+    },
+    {
+      "id": "514-flak-battery",
+      "name": "Flak Battery",
+      "pts": 150,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "3 hydras"
+    },
+    {
+      "id": "515-griffon-platoon",
+      "name": "Griffon Platoon",
+      "pts": 200,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "6 Griffons"
+    },
+    {
+      "id": "516-hellhound-platoon",
+      "name": "Hellhound Platoon",
+      "pts": 250,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "6 Hellhounds"
+    },
+    {
+      "id": "517-sentinel-squadron",
+      "name": "Sentinel Squadron",
+      "pts": 125,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "6 Cadian Sentinels"
+    },
+    {
+      "id": "518-super-heavy-tank-platoon",
+      "name": "Super Heavy Tank Platoon",
+      "pts": 200,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ]
+    },
+    {
+      "id": "519-tank-platoon",
+      "name": "Tank Platoon",
+      "pts": 400,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ]
+    },
+    {
+      "id": "520-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": [
+        "cadian-shock-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "20-commissar"
+      ],
+      "_unitsText": "4 Vultures"
+    },
+    {
+      "id": "521-warlord-class-titan",
+      "name": "Warlord Class Titan",
+      "pts": 825,
+      "tags": [
+        "adeptus-mechanicus"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "522-reaver-class-titan",
+      "name": "Reaver Class Titan",
+      "pts": 650,
+      "tags": [
+        "adeptus-mechanicus"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "523-ordinatus-cadia",
+      "name": "Ordinatus Cadia",
+      "pts": 550,
+      "tags": [
+        "adeptus-mechanicus"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "524-thunderbolt-fighters",
+      "name": "Thunderbolt Fighters",
+      "pts": 150,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolts"
+    },
+    {
+      "id": "525-marauder-bombers",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "526-colossus-squadron",
+      "name": "Colossus Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Marauder Colossus"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-assault-transport-1-stormlord",
+      "name": "Assault Transport (1 Stormlord)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Assault Transport (1 Stormlord)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-assault-transport-2-stormlords",
+      "name": "Assault Transport (2 Stormlords)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Assault Transport (2 Stormlords)",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-fire-support-platoon-4-support-squad-units",
+      "name": "Fire Support Platoon (4 support Squad units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Support Platoon (4 support Squad units)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-infantry-platoon-6-imperial-guard-infantry-units",
+      "name": "Infantry Platoon (6 Imperial Guard Infantry units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Infantry Platoon (6 Imperial Guard Infantry units)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-kasrkin-platoon-4-kasrkin-units",
+      "name": "Kasrkin Platoon (4 Kasrkin units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kasrkin Platoon (4 Kasrkin units)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-sabre-platforms-3-sabre-platforms",
+      "name": "Sabre Platforms (3 Sabre Platforms)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sabre Platforms (3 Sabre Platforms)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+      "name": "Sanctioned Psykers (1 Sanctioned Psyker unit)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sanctioned Psykers (1 Sanctioned Psyker unit)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-sanctioned-psykers-2-sanctioned-psyker-units",
+      "name": "Sanctioned Psykers (2 Sanctioned Psyker units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sanctioned Psykers (2 Sanctioned Psyker units)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-snipers-1-sniper-unit",
+      "name": "Snipers (1 Sniper unit)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snipers (1 Sniper unit)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-snipers-2-sniper-units",
+      "name": "Snipers (2 Sniper units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snipers (2 Sniper units)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-commissar",
+      "name": "Commissar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Commissar",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-3-basilisks",
+      "name": "3 Basilisks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Basilisks",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-3-bombards",
+      "name": "3 Bombards",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Bombards",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-3-manticores",
+      "name": "3 Manticores",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Manticores",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-4-chimeras",
+      "name": "4 Chimeras",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Chimeras",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-4-valkyries",
+      "name": "4 Valkyries",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Valkyries",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-baneblade",
+      "name": "Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baneblade",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-shadowsword",
+      "name": "Shadowsword",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shadowsword",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-stormsword",
+      "name": "Stormsword",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormsword",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-6-lehman-russ-tanks",
+      "name": "6 Lehman Russ Tanks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Lehman Russ Tanks",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-6-lehman-russ-demolisher-tanks",
+      "name": "6 Lehman Russ Demolisher Tanks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Lehman Russ Demolisher Tanks",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "501-cadian-regimental-headquarters"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "502-cadian-whiteshield-company"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "522-reaver-class-titan"
+      ],
+      "max": 1
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "510-mechanized-kasrkin",
+        "unknown-511",
+        "512-artillery-battery",
+        "513-deathstrike-battery",
+        "514-flak-battery",
+        "515-griffon-platoon",
+        "516-hellhound-platoon",
+        "517-sentinel-squadron",
+        "518-super-heavy-tank-platoon",
+        "519-tank-platoon",
+        "520-vulture-squadron"
+      ],
+      "max": 2,
+      "forEach": [
+        "500-cadian-infantry-company",
+        "501-cadian-regimental-headquarters",
+        "502-cadian-whiteshield-company",
+        "503-kasrkin-infantry-company"
+      ],
+      "_name2": "Company"
+    },
+    {
+      "id": "imperial-allies-formations",
+      "from": [
+        "521-warlord-class-titan",
+        "522-reaver-class-titan",
+        "523-ordinatus-cadia",
+        "524-thunderbolt-fighters",
+        "525-marauder-bombers",
+        "526-colossus-squadron"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "10-assault-transport-1-stormlord",
+        "11-assault-transport-2-stormlords",
+        "12-fire-support-platoon-4-support-squad-units",
+        "13-infantry-platoon-6-imperial-guard-infantry-units",
+        "14-kasrkin-platoon-4-kasrkin-units",
+        "15-sabre-platforms-3-sabre-platforms",
+        "16-sanctioned-psykers-1-sanctioned-psyker-unit",
+        "17-sanctioned-psykers-2-sanctioned-psyker-units",
+        "18-snipers-1-sniper-unit",
+        "19-snipers-2-sniper-units"
+      ],
+      "max": 3
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "20-commissar"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "33-4-chimeras",
+        "34-4-valkyries"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "510-mechanized-kasrkin"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "30-3-basilisks",
+        "31-3-bombards",
+        "32-3-manticores"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "512-artillery-battery"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "35-baneblade",
+        "36-shadowsword",
+        "37-stormsword"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "518-super-heavy-tank-platoon"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "38-6-lehman-russ-tanks",
+        "39-6-lehman-russ-demolisher-tanks"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "519-tank-platoon"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

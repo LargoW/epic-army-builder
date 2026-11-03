@@ -1,0 +1,708 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/genestealercult",
+  "name": "Dark Imperium – Genestealer Cult",
+  "faction": "Xenos",
+  "version": "Experimental",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_genestealercult_NETEA.json",
+    "by": "Kendall",
+    "notes": [
+      ""
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "genestealer-cult-broods",
+      "name": "Genestealer Cult Broods",
+      "formations": [
+        "501-brood-brothers",
+        "502-hybrid-brood",
+        "503-purestrain-brood",
+        "504-lictors",
+        "505-0-1-the-brood-coven"
+      ]
+    },
+    {
+      "id": "genestealer-cult-pdf-forces",
+      "name": "Genestealer Cult PDF Forces",
+      "formations": [
+        "521-pdf-heavy-tanks",
+        "522-pdf-leman-russ",
+        "523-pdf-artillery",
+        "524-pdf-sentinels",
+        "525-0-1-deathstrike-silo",
+        "526-pdf-avenger-fighter"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-brood-brothers",
+      "name": "Brood Brothers",
+      "pts": 200,
+      "tags": [
+        "genestealer-cult-broods"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-add-1-civilian-transport",
+        "47-add-1-pdf-chimera",
+        "13-brood-lord",
+        "45-add-4-fire-support-units",
+        "41-add-6-brood-brothers",
+        "42-add-4-genesetealer-hybrid-units",
+        "43-add-3-genestealer-units",
+        "44-add-aberration-units",
+        "48-add-1-pdf-hydra-flak-tank",
+        "49-add-3-leman-russ-ryza-pattern"
+      ],
+      "_unitsText": "11 Brood Brother Units and a Hybrid Demagogue Unit"
+    },
+    {
+      "id": "502-hybrid-brood",
+      "name": "Hybrid Brood",
+      "pts": 250,
+      "tags": [
+        "genestealer-cult-broods"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-add-1-civilian-transport",
+        "47-add-1-pdf-chimera",
+        "13-brood-lord",
+        "48-add-1-pdf-hydra-flak-tank",
+        "41-add-6-brood-brothers",
+        "44-add-aberration-units",
+        "42-add-4-genesetealer-hybrid-units"
+      ],
+      "_unitsText": "7 Hybrid units"
+    },
+    {
+      "id": "503-purestrain-brood",
+      "name": "Purestrain Brood",
+      "pts": 150,
+      "tags": [
+        "genestealer-cult-broods"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-brood-lord",
+        "43-add-3-genestealer-units"
+      ],
+      "_unitsText": "6 Genestealer Units"
+    },
+    {
+      "id": "504-lictors",
+      "name": "Lictors",
+      "pts": 200,
+      "tags": [
+        "genestealer-cult-broods"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Lictor Units"
+    },
+    {
+      "id": "505-0-1-the-brood-coven",
+      "name": "0-1 The Brood Coven",
+      "pts": 300,
+      "tags": [
+        "genestealer-cult-broods"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-add-1-civilian-transport",
+        "47-add-1-pdf-chimera",
+        "41-add-6-brood-brothers",
+        "42-add-4-genesetealer-hybrid-units",
+        "44-add-aberration-units",
+        "13-brood-lord",
+        "48-add-1-pdf-hydra-flak-tank",
+        "52-the-ark-unit"
+      ],
+      "_unitsText": "4 Hybrids Units, 3 Dark Princelings"
+    },
+    {
+      "id": "521-pdf-heavy-tanks",
+      "name": "PDF Heavy Tanks",
+      "pts": 300,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [
+        "48-add-1-pdf-hydra-flak-tank",
+        "49-add-3-leman-russ-ryza-pattern"
+      ],
+      "_unitsText": "Macharius Command Tank"
+    },
+    {
+      "id": "522-pdf-leman-russ",
+      "name": "PDF Leman Russ",
+      "pts": 325,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [
+        "48-add-1-pdf-hydra-flak-tank",
+        "49-add-3-leman-russ-ryza-pattern"
+      ],
+      "_unitsText": "6 Leman Russ Ryza pattern"
+    },
+    {
+      "id": "523-pdf-artillery",
+      "name": "PDF Artillery",
+      "pts": 225,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Bombard Units"
+    },
+    {
+      "id": "524-pdf-sentinels",
+      "name": "PDF Sentinels",
+      "pts": 100,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 PDF Sentinels"
+    },
+    {
+      "id": "525-0-1-deathstrike-silo",
+      "name": "0-1 Deathstrike Silo",
+      "pts": 225,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 PDF Deathstrike Defense Silo"
+    },
+    {
+      "id": "526-pdf-avenger-fighter",
+      "name": "PDF Avenger Fighter",
+      "pts": 150,
+      "tags": [
+        "genestealer-cult-pdf-forces"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 PDF Avenger Fighter"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-patriarch",
+      "name": "Patriarch",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Patriarch",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-magus",
+      "name": "Magus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Magus",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-brood-lord",
+      "name": "Brood Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brood Lord",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-dark-fissure",
+      "name": "Dark Fissure",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Fissure",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-brood-brother-units",
+      "name": "Brood Brother Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brood Brother Units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-hybrid-demagogue-unit",
+      "name": "Hybrid Demagogue Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hybrid Demagogue Unit",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-hybrids-units",
+      "name": "Hybrids Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hybrids Units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-dark-princelings",
+      "name": "Dark Princelings",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Princelings",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-primus-unit",
+      "name": "Primus Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Primus Unit",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-macharius-heavy-tanks",
+      "name": "Macharius Heavy Tanks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Macharius Heavy Tanks",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-macharius-omega",
+      "name": "Macharius Omega",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Macharius Omega",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-add-6-brood-brothers",
+      "name": "Add 6 Brood Brothers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 6 Brood Brothers",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-add-4-genesetealer-hybrid-units",
+      "name": "Add 4 Genesetealer Hybrid Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 4 Genesetealer Hybrid Units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-add-3-genestealer-units",
+      "name": "Add 3 Genestealer Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3 Genestealer Units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-add-aberration-units",
+      "name": "Add Aberration Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add Aberration Units",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-add-4-fire-support-units",
+      "name": "Add 4 Fire Support Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 4 Fire Support Units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "46-add-1-civilian-transport",
+      "name": "Add 1 Civilian Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 1 Civilian Transport",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "47-add-1-pdf-chimera",
+      "name": "Add 1 PDF Chimera",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 1 PDF Chimera",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "48-add-1-pdf-hydra-flak-tank",
+      "name": "Add 1 PDF Hydra Flak Tank",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 1 PDF Hydra Flak Tank",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "49-add-3-leman-russ-ryza-pattern",
+      "name": "Add 3 Leman Russ Ryza pattern",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 3 Leman Russ Ryza pattern",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-brood-demagogue",
+      "name": "Brood Demagogue",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brood Demagogue",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-add-1-broodlord-to-formation",
+      "name": "Add 1 Broodlord to Formation",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add 1 Broodlord to Formation",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-the-ark-unit",
+      "name": "The Ark Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "The Ark Unit",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "503-purestrain-brood"
+      ],
+      "max": 1
+    },
+    {
+      "id": "genestealer-cult-pdf-forces",
+      "from": [
+        "521-pdf-heavy-tanks",
+        "522-pdf-leman-russ",
+        "523-pdf-artillery",
+        "524-pdf-sentinels",
+        "525-0-1-deathstrike-silo",
+        "526-pdf-avenger-fighter"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-brood-brothers",
+        "502-hybrid-brood",
+        "503-purestrain-brood",
+        "504-lictors",
+        "505-0-1-the-brood-coven"
+      ],
+      "_name2": "CORE FORMATIONS"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "50-brood-demagogue",
+        "12-magus"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-brood-brothers"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "50-brood-demagogue",
+        "12-magus"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-hybrid-brood"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "25-primus-unit",
+        "11-patriarch"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "505-0-1-the-brood-coven"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "31-macharius-heavy-tanks",
+        "32-macharius-omega"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "521-pdf-heavy-tanks"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "64-64"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "525-525"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "505-505"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "11-patriarch"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "12-magus"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "13-brood-lord"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "14-dark-fissure"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "22-hybrid-demagogue-unit"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "23-hybrids-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "24-dark-princelings"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "25-primus-unit"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "42-add-4-genesetealer-hybrid-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "43-add-3-genestealer-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "44-add-aberration-units"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "45-add-4-fire-support-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "48-add-1-pdf-hydra-flak-tank"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "49-add-3-leman-russ-ryza-pattern"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "50-brood-demagogue"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "51-add-1-broodlord-to-formation"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "52-the-ark-unit"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

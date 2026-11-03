@@ -1,0 +1,1169 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/amtl/marsprime",
+  "name": "ADEPTUS MECHANICUS – Explorator Fleet",
+  "faction": "Adeptus Mechanicus",
+  "version": "Version 1.2 Developmental",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\AMTL_MarsPrime_NETEA.json",
+    "by": "Norto",
+    "notes": [
+      "Arch Magos, Magos and Tech Priests replace units in the formation when taken as an upgrade."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "core-formations",
+      "name": "Core Formations",
+      "formations": [
+        "501-vanguard-maniple",
+        "502-skorpius-cohort"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "Support Formations",
+      "formations": [
+        "510-ranger-centuria",
+        "514-ironstrider-cavaliers",
+        "515-sydonian-dragoons"
+      ]
+    },
+    {
+      "id": "elite-formations",
+      "name": "Elite Formations",
+      "formations": [
+        "511-sicarian-infiltrators",
+        "512-sicarian-rustalkers",
+        "513-fulgurite-electro-priests",
+        "516-onager-cohort",
+        "517-kataphron-maniple",
+        "519-kastelan-maniple",
+        "520-hounds",
+        "521-pteraxii-maniple"
+      ]
+    },
+    {
+      "id": "knights-support",
+      "name": "Knights Support",
+      "formations": [
+        "552-armigers",
+        "553-questoris-reliquae",
+        "554-acastus-reliquae"
+      ]
+    },
+    {
+      "id": "explorator-fleet-navy",
+      "name": "Explorator Fleet Navy ",
+      "formations": [
+        "551-avenger-strike-fighters"
+      ]
+    },
+    {
+      "id": "spacecraft",
+      "name": "Spacecraft",
+      "formations": [
+        "561-ark-mechanicus-battleship"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-vanguard-maniple",
+      "name": "Vanguard Maniple",
+      "pts": 225,
+      "tags": [
+        "core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-tech-priest-dominus",
+        "63-magos",
+        "64-archmagos",
+        "17-4-duneriders",
+        "97-skorpius-disintegrator"
+      ]
+    },
+    {
+      "id": "502-skorpius-cohort",
+      "name": "Skorpius Cohort",
+      "pts": 25,
+      "tags": [
+        "core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "97-skorpius-disintegrator"
+      ]
+    },
+    {
+      "id": "510-ranger-centuria",
+      "name": "Ranger Centuria",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Skitarii Rangers"
+    },
+    {
+      "id": "514-ironstrider-cavaliers",
+      "name": "Ironstrider Cavaliers",
+      "pts": 50,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "52-ironstrider-ballistarius-twin-cognis-autocannon",
+        "53-ironstrider-ballistarius-twin-cognis-lascannon"
+      ]
+    },
+    {
+      "id": "515-sydonian-dragoons",
+      "name": "Sydonian Dragoons",
+      "pts": 50,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "54-sydonian-dragoon"
+      ]
+    },
+    {
+      "id": "511-sicarian-infiltrators",
+      "name": "Sicarian Infiltrators",
+      "pts": 250,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-tech-priest-dominus",
+        "63-magos",
+        "17-4-duneriders",
+        "16-8-archaeopters",
+        "97-skorpius-disintegrator"
+      ],
+      "_unitsText": "8 Sicarian Infiltrators"
+    },
+    {
+      "id": "512-sicarian-rustalkers",
+      "name": "Sicarian Rustalkers",
+      "pts": 250,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-tech-priest-dominus",
+        "63-magos",
+        "17-4-duneriders",
+        "16-8-archaeopters",
+        "97-skorpius-disintegrator"
+      ],
+      "_unitsText": "8 Sicarian Rustalkers"
+    },
+    {
+      "id": "513-fulgurite-electro-priests",
+      "name": "Fulgurite Electro-Priests",
+      "pts": 200,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-tech-priest-dominus",
+        "63-magos",
+        "23-3-duneriders",
+        "97-skorpius-disintegrator"
+      ],
+      "_unitsText": "6 Fulgurite Electro-Priests"
+    },
+    {
+      "id": "516-onager-cohort",
+      "name": "Onager Cohort",
+      "pts": 0,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "77-onager-dunecrawler-icarus-array",
+        "40-onager-dunecrawler-neutron-laser"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "517-kataphron-maniple",
+      "name": "Kataphron Maniple",
+      "pts": 225,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-tech-priest-dominus",
+        "63-magos"
+      ],
+      "_unitsText": "6 Kataphrons"
+    },
+    {
+      "id": "519-kastelan-maniple",
+      "name": "Kastelan Maniple",
+      "pts": 275,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "5 Kastelan Robots and a Cybernetica Datasmith."
+    },
+    {
+      "id": "520-hounds",
+      "name": "Hounds",
+      "pts": 175,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Serberys Sulphurhounds"
+    },
+    {
+      "id": "521-pteraxii-maniple",
+      "name": "Pteraxii Maniple",
+      "pts": 225,
+      "tags": [
+        "elite-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Pteraxii"
+    },
+    {
+      "id": "552-armigers",
+      "name": "Armigers",
+      "pts": 200,
+      "tags": [
+        "knights-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Armigers"
+    },
+    {
+      "id": "553-questoris-reliquae",
+      "name": "Questoris Reliquae",
+      "pts": 350,
+      "tags": [
+        "knights-support"
+      ],
+      "units": [],
+      "upgrades": [
+        "99-seneschal"
+      ]
+    },
+    {
+      "id": "554-acastus-reliquae",
+      "name": "Acastus Reliquae",
+      "pts": 450,
+      "tags": [
+        "knights-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Seneschal"
+    },
+    {
+      "id": "551-avenger-strike-fighters",
+      "name": "Avenger Strike Fighters",
+      "pts": 200,
+      "tags": [
+        "explorator-fleet-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Avenger Strike Fighters"
+    },
+    {
+      "id": "561-ark-mechanicus-battleship",
+      "name": "Ark Mechanicus Battleship",
+      "pts": 200,
+      "tags": [
+        "spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "61-tech-priest-dominus",
+      "name": "Tech-Priest Dominus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tech-Priest Dominus",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-cybernetica-datasmith",
+      "name": "Cybernetica Datasmith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cybernetica Datasmith",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-magos",
+      "name": "Magos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Magos",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-archmagos",
+      "name": "Archmagos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Archmagos",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "66-onager-dunecrawler-daedalus-missile-launcher",
+      "name": "Onager Dunecrawler - Daedalus Missile Launcher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Onager Dunecrawler - Daedalus Missile Launcher",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "67-ironstrider-ballistarius-twin-cognis-autocannon",
+      "name": "Ironstrider Ballistarius - Twin Cognis Autocannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ironstrider Ballistarius - Twin Cognis Autocannon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-ironstrider-ballistarius-twin-cognis-lascannon",
+      "name": "Ironstrider Ballistarius - Twin Cognis Lascannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ironstrider Ballistarius - Twin Cognis Lascannon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "68-sydonian-dragoon",
+      "name": "Sydonian Dragoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sydonian Dragoon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "69-terrax-pattern-termite-assault-drill",
+      "name": "Terrax Pattern Termite Assault Drill",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Terrax Pattern Termite Assault Drill",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "70-terrax-pattern-termite-assault-drill",
+      "name": "Terrax Pattern Termite Assault Drill",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Terrax Pattern Termite Assault Drill",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-tech-priest-enginseer",
+      "name": "Tech-Priest Enginseer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tech-Priest Enginseer",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "73-skitarii-servitors",
+      "name": "Skitarii Servitors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skitarii Servitors",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "77-onager-dunecrawler-icarus-array",
+      "name": "Onager Dunecrawler - Icarus array",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Onager Dunecrawler - Icarus array",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-onager-dunecrawler-neutron-laser",
+      "name": "Onager Dunecrawler - Neutron Laser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Onager Dunecrawler - Neutron Laser",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-ordinatus-minorus-ulator-sonic-destroyer",
+      "name": "Ordinatus Minorus - Ulator Sonic Destroyer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ordinatus Minorus - Ulator Sonic Destroyer",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-ordinatus-minorus-bellacosa-volcano-cannon",
+      "name": "Ordinatus Minorus - Bellacosa Volcano cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ordinatus Minorus - Bellacosa Volcano cannon",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-ironstrider-ballistarius-twin-cognis-autocannon",
+      "name": "Ironstrider Ballistarius - Twin Cognis Autocannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ironstrider Ballistarius - Twin Cognis Autocannon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-ironstrider-ballistarius-twin-cognis-lascannon",
+      "name": "Ironstrider Ballistarius - Twin Cognis Lascannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ironstrider Ballistarius - Twin Cognis Lascannon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-sydonian-dragoon",
+      "name": "Sydonian Dragoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sydonian Dragoon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-secutarii-hoplite",
+      "name": "Secutarii Hoplite",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Secutarii Hoplite",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-dunecrawler-onager",
+      "name": "Dunecrawler Onager",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dunecrawler Onager",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-dunecrawler-annihilator",
+      "name": "Dunecrawler Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dunecrawler Annihilator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-dunecrawler-icarian",
+      "name": "Dunecrawler Icarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dunecrawler Icarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-knight-errant",
+      "name": "Knight Errant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Errant",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-knight-crusader",
+      "name": "Knight Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Crusader",
+          "pts": 115,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-8-skitarii-vanguard",
+      "name": "8 Skitarii Vanguard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Skitarii Vanguard",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-4-skitarii-vanguard-4-secutarii-peltasts",
+      "name": "4 Skitarii Vanguard, 4 Secutarii Peltasts",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Skitarii Vanguard, 4 Secutarii Peltasts",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-4-skitarii-vanguard-4-secutarii-hoplites",
+      "name": "4 Skitarii Vanguard, 4 Secutarii Hoplites",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Skitarii Vanguard, 4 Secutarii Hoplites",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-4-secutarii-peltasts-4-skitarii-hoplites",
+      "name": "4 Secutarii Peltasts, 4 Skitarii Hoplites",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Secutarii Peltasts, 4 Skitarii Hoplites",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-8-archaeopters",
+      "name": "8 Archaeopters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Archaeopters",
+          "pts": 120,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-4-duneriders",
+      "name": "4 Duneriders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Duneriders",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-3-duneriders",
+      "name": "3 Duneriders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Duneriders",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "93-seneschal",
+      "name": "Seneschal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seneschal",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "94-skorpius-duneriders",
+      "name": "Skorpius Duneriders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skorpius Duneriders",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "95-4-termite-assault-drills",
+      "name": "4 Termite Assault Drills",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Termite Assault Drills",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "96-skorpius-duneriders",
+      "name": "Skorpius Duneriders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skorpius Duneriders",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "97-skorpius-disintegrator",
+      "name": "Skorpius Disintegrator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Skorpius Disintegrator",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "99-seneschal",
+      "name": "Seneschal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seneschal",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-relic-knight-styrix",
+      "name": "Relic Knight Styrix",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Relic Knight Styrix",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "46-relic-knight-magaera",
+      "name": "Relic Knight Magaera",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Relic Knight Magaera",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "98-acastus-knight-mechanicus-seneschal",
+      "name": "Acastus Knight Mechanicus (Seneschal)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Acastus Knight Mechanicus (Seneschal)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-acastus-knight-porphyrion",
+      "name": "Acastus Knight Porphyrion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Acastus Knight Porphyrion",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-acastus-knight-mechanicus",
+      "name": "Acastus Knight Mechanicus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Acastus Knight Mechanicus",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "561-ark-mechanicus-battleship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "510-ranger-centuria",
+        "514-ironstrider-cavaliers",
+        "515-sydonian-dragoons"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-vanguard-maniple"
+      ],
+      "_name2": "Vanguard Maniple"
+    },
+    {
+      "id": "elite-formations",
+      "from": [
+        "511-sicarian-infiltrators",
+        "512-sicarian-rustalkers",
+        "513-fulgurite-electro-priests",
+        "517-kataphron-maniple",
+        "unknown-518",
+        "519-kastelan-maniple",
+        "516-onager-cohort",
+        "520-hounds",
+        "521-pteraxii-maniple"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-vanguard-maniple"
+      ],
+      "_name2": "Vanguard Maniple"
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "552-armigers",
+        "553-questoris-reliquae",
+        "554-acastus-reliquae",
+        "551-avenger-strike-fighters",
+        "561-ark-mechanicus-battleship"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "80-80"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "64-archmagos"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "13-4-skitarii-vanguard-4-secutarii-peltasts",
+        "14-4-skitarii-vanguard-4-secutarii-hoplites",
+        "15-4-secutarii-peltasts-4-skitarii-hoplites",
+        "16-8-archaeopters"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "unknown-543"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "16-8-archaeopters"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "95-4-termite-assault-drills"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "17-4-duneriders"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "23-3-duneriders"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "70-terrax-pattern-termite-assault-drill"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "62-cybernetica-datasmith"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "69-terrax-pattern-termite-assault-drill"
+      ],
+      "max": 7
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "82-82"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "93-seneschal"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "97-skorpius-disintegrator"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "65-65"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "501-vanguard-maniple"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "97-skorpius-disintegrator"
+      ],
+      "max": 8,
+      "min": 5,
+      "appliesTo": [
+        "502-skorpius-cohort"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "12-8-skitarii-vanguard",
+        "13-4-skitarii-vanguard-4-secutarii-peltasts",
+        "14-4-skitarii-vanguard-4-secutarii-hoplites",
+        "15-4-secutarii-peltasts-4-skitarii-hoplites"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-vanguard-maniple"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "54-sydonian-dragoon"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "515-sydonian-dragoons"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "52-ironstrider-ballistarius-twin-cognis-autocannon",
+        "53-ironstrider-ballistarius-twin-cognis-lascannon"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "514-ironstrider-cavaliers"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "91-91",
+        "92-92"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "unknown-531"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "93-seneschal",
+        "94-skorpius-duneriders",
+        "95-4-termite-assault-drills"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "unknown-532"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "71-tech-priest-enginseer"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "unknown-531"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "58-dunecrawler-icarian"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "516-onager-cohort"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "45-relic-knight-styrix",
+        "46-relic-knight-magaera",
+        "65-65",
+        "98-acastus-knight-mechanicus-seneschal"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "553-questoris-reliquae"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "99-seneschal",
+        "65-65",
+        "98-acastus-knight-mechanicus-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "553-questoris-reliquae"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "50-acastus-knight-porphyrion",
+        "51-acastus-knight-mechanicus"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "554-acastus-reliquae"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "71-tech-priest-enginseer"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "unknown-532"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "56-dunecrawler-onager",
+        "57-dunecrawler-annihilator",
+        "58-dunecrawler-icarian"
+      ],
+      "max": 7,
+      "min": 5,
+      "appliesTo": [
+        "516-onager-cohort"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "77-onager-dunecrawler-icarus-array"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "516-onager-cohort"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "61-tech-priest-dominus",
+        "63-magos",
+        "64-archmagos"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

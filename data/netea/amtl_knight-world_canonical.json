@@ -1,0 +1,615 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/amtl/knight-world",
+  "name": "Knight World",
+  "faction": "Adeptus Mechanicus",
+  "version": "NetEA v2.2.2 *APPROVED*",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\AMTL_knight_world_NETEA.json",
+    "by": "Dave",
+    "notes": [
+      "Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "knight-households",
+      "name": "Knight Households",
+      "formations": [
+        "500-knight-household"
+      ]
+    },
+    {
+      "id": "support-households",
+      "name": "Support Households",
+      "formations": [
+        "510-custodian-household",
+        "511-lancer-household",
+        "512-warden-household"
+      ]
+    },
+    {
+      "id": "support-levy",
+      "name": "Support Levy",
+      "formations": [
+        "520-aa-gun-battery",
+        "521-howitzer-battery",
+        "522-infantry-platoon",
+        "523-rough-rider-platoon"
+      ]
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "name": "Imperial Navy Aircraft",
+      "formations": [
+        "530-marauder-squadron",
+        "531-thunderbolt-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-knight-household",
+      "name": "Knight Household",
+      "pts": 30,
+      "tags": [
+        "knight-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "8-knight-errant",
+        "10-knight-paladin",
+        "13-seneschal",
+        "2-baron"
+      ]
+    },
+    {
+      "id": "510-custodian-household",
+      "name": "Custodian Household",
+      "pts": 30,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "6-knight-castellan",
+        "7-knight-crusader",
+        "13-seneschal"
+      ]
+    },
+    {
+      "id": "511-lancer-household",
+      "name": "Lancer Household",
+      "pts": 30,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-knight-lancer",
+        "13-seneschal",
+        "2-baron"
+      ]
+    },
+    {
+      "id": "512-warden-household",
+      "name": "Warden Household",
+      "pts": 20,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-warden",
+        "13-seneschal"
+      ]
+    },
+    {
+      "id": "520-aa-gun-battery",
+      "name": "AA Gun Battery",
+      "pts": 125,
+      "tags": [
+        "support-levy"
+      ],
+      "units": [],
+      "upgrades": [
+        "3-3-gun-emplacements",
+        "4-3-gun-transporters"
+      ],
+      "_unitsText": "3 AA Guns"
+    },
+    {
+      "id": "521-howitzer-battery",
+      "name": "Howitzer Battery",
+      "pts": 175,
+      "tags": [
+        "support-levy"
+      ],
+      "units": [],
+      "upgrades": [
+        "3-3-gun-emplacements",
+        "4-3-gun-transporters"
+      ],
+      "_unitsText": "3 Howitzers"
+    },
+    {
+      "id": "522-infantry-platoon",
+      "name": "Infantry Platoon",
+      "pts": 175,
+      "tags": [
+        "support-levy"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-aspirant",
+        "5-2-infantry-levy",
+        "14-snipers",
+        "11-rapier",
+        "15-thudd-gun",
+        "17-52cm-of-trench-and-52cm-of-razor-wire"
+      ],
+      "_unitsText": "1 Levy Command, 8 Infantry Levy"
+    },
+    {
+      "id": "523-rough-rider-platoon",
+      "name": "Rough Rider Platoon",
+      "pts": 150,
+      "tags": [
+        "support-levy"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-aspirant"
+      ],
+      "_unitsText": "6 Rough Riders"
+    },
+    {
+      "id": "530-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "531-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 150,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-aspirant",
+      "name": "Aspirant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aspirant",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-baron",
+      "name": "Baron",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baron",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-3-gun-emplacements",
+      "name": "3 Gun Emplacements",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Gun Emplacements",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-3-gun-transporters",
+      "name": "3 Gun Transporters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Gun Transporters",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-2-infantry-levy",
+      "name": "2 Infantry Levy",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Infantry Levy",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-knight-castellan",
+      "name": "Knight Castellan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Castellan",
+          "pts": 115,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-knight-crusader",
+      "name": "Knight Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Crusader",
+          "pts": 115,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-knight-errant",
+      "name": "Knight Errant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Errant",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-knight-lancer",
+      "name": "Knight Lancer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Lancer",
+          "pts": 90,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-knight-paladin",
+      "name": "Knight Paladin",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Paladin",
+          "pts": 90,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-rapier",
+      "name": "Rapier",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rapier",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-seneschal",
+      "name": "Seneschal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seneschal",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-snipers",
+      "name": "Snipers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snipers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-thudd-gun",
+      "name": "Thudd Gun",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thudd Gun",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-warden",
+      "name": "Warden",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warden",
+          "pts": 85,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-52cm-of-trench-and-52cm-of-razor-wire",
+      "name": "52cm of Trench and 52cm of Razor Wire",
+      "variants": [
+        {
+          "id": "1",
+          "label": "52cm of Trench and 52cm of Razor Wire",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-household",
+      "from": [
+        "510-custodian-household",
+        "511-lancer-household",
+        "512-warden-household"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-knight-household"
+      ],
+      "_name2": "Knight Household"
+    },
+    {
+      "id": "support-levy",
+      "from": [
+        "520-aa-gun-battery",
+        "521-howitzer-battery",
+        "522-infantry-platoon",
+        "523-rough-rider-platoon"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-knight-household"
+      ],
+      "_name2": "Knight Household"
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "from": [
+        "530-marauder-squadron",
+        "531-thunderbolt-squadron"
+      ],
+      "maxShare": [
+        1,
+        4
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "2-baron"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "10-knight-paladin",
+        "8-knight-errant"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "500-knight-household"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "2-baron",
+        "13-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-knight-household"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "6-knight-castellan",
+        "7-knight-crusader"
+      ],
+      "max": 4,
+      "min": 3,
+      "appliesTo": [
+        "510-custodian-household"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "13-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-custodian-household"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "9-knight-lancer"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "511-lancer-household"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "2-baron",
+        "13-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "511-lancer-household"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "16-warden"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "512-warden-household"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "13-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "512-warden-household"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "4-3-gun-transporters",
+        "3-3-gun-emplacements"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "520-aa-gun-battery"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "4-3-gun-transporters",
+        "3-3-gun-emplacements"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "521-howitzer-battery"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "1-aspirant"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-infantry-platoon"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "5-2-infantry-levy"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "522-infantry-platoon"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "11-rapier",
+        "15-thudd-gun"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "522-infantry-platoon"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "14-snipers"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "522-infantry-platoon"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "17-52cm-of-trench-and-52cm-of-razor-wire"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-infantry-platoon"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "1-aspirant"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "523-rough-rider-platoon"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,779 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/scars",
+  "name": "White Scars",
+  "faction": "Space Marines",
+  "version": "NetEA Tournament Pack (2026-02-04)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_scars_NETEA.json",
+    "by": "lindstrom, last edit 2026-02-07 by antitimm",
+    "notes": [
+      "The Thunderhawk counts towards the 1/3 points limit, but other Space Marine Fleet units do not"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "white-scar-detachments",
+      "name": "WHITE SCAR DETACHMENTS",
+      "formations": [
+        "501-bike",
+        "502-bike-close-assault",
+        "511-tactical",
+        "500-assault",
+        "507-scout",
+        "512-terminator",
+        "504-land-speeder",
+        "506-predator",
+        "516-vindicators",
+        "515-whirlwinds"
+      ]
+    },
+    {
+      "id": "space-marine-fleet",
+      "name": "SPACE MARINE  FLEET",
+      "formations": [
+        "513-thunderhawk",
+        "505-landing-craft",
+        "509-strike-cruiser",
+        "510-battle-barge"
+      ]
+    },
+    {
+      "id": "imperial-navy",
+      "name": "IMPERIAL NAVY",
+      "formations": [
+        "517-thunderbolt-fighters",
+        "518-marauder-bombers"
+      ]
+    },
+    {
+      "id": "titan-legions",
+      "name": "TITAN LEGIONS",
+      "formations": [
+        "522-warhound",
+        "524-warhound-pack"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-bike",
+      "name": "Bike",
+      "pts": 250,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander"
+      ]
+    },
+    {
+      "id": "502-bike-close-assault",
+      "name": "Bike (Close Assault)",
+      "pts": 245,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander"
+      ]
+    },
+    {
+      "id": "511-tactical",
+      "name": "Tactical",
+      "pts": 275,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "38-razorback-twin-heavy-bolter",
+        "39-razorback-twin-laser-cannon",
+        "11-rhinos",
+        "12-drop-pods",
+        "31-hunter",
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ],
+      "_unitsText": "6 Tacticals"
+    },
+    {
+      "id": "500-assault",
+      "name": "Assault",
+      "pts": 175,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ],
+      "_unitsText": "4 Assault Units"
+    },
+    {
+      "id": "507-scout",
+      "name": "Scout",
+      "pts": 150,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "35-sniper",
+        "38-razorback-twin-heavy-bolter",
+        "39-razorback-twin-laser-cannon",
+        "11-rhinos",
+        "12-drop-pods"
+      ]
+    },
+    {
+      "id": "512-terminator",
+      "name": "Terminator",
+      "pts": 575,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "31-hunter",
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ],
+      "_unitsText": "4 Terminators, 4 Land Raiders"
+    },
+    {
+      "id": "504-land-speeder",
+      "name": "Land Speeder",
+      "pts": 200,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander"
+      ]
+    },
+    {
+      "id": "506-predator",
+      "name": "Predator",
+      "pts": 250,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "31-hunter",
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ]
+    },
+    {
+      "id": "516-vindicators",
+      "name": "Vindicators",
+      "pts": 200,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "31-hunter",
+        "37-2x-white-scars-vindicator"
+      ],
+      "_unitsText": "4 White Scars Vindicators"
+    },
+    {
+      "id": "515-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 275,
+      "tags": [
+        "white-scar-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander",
+        "31-hunter",
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "513-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "space-marine-fleet"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "505-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "space-marine-fleet"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "509-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 200,
+      "tags": [
+        "space-marine-fleet"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "510-battle-barge",
+      "name": "Battle Barge",
+      "pts": 350,
+      "tags": [
+        "space-marine-fleet"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "517-thunderbolt-fighters",
+      "name": "Thunderbolt Fighters",
+      "pts": 175,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Fighters"
+    },
+    {
+      "id": "518-marauder-bombers",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Bombers"
+    },
+    {
+      "id": "522-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "titan-legions"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Class Titan"
+    },
+    {
+      "id": "524-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "titan-legions"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2x Warhound Class Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-rhinos",
+      "name": "Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-drop-pods",
+      "name": "Drop Pods",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Drop Pods",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-white-scar-attack-bike",
+      "name": "White Scar Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "White Scar Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-white-scar-bikes",
+      "name": "White Scar Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "White Scar Bikes",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-multi-melta-attack-bike",
+      "name": "Multi-melta Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Multi-melta Attack Bike",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-annihilator",
+      "name": "Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Annihilator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-destructor",
+      "name": "Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Destructor",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-landspeeder",
+      "name": "Landspeeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Landspeeder",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-tornado",
+      "name": "Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tornado",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-typhoon",
+      "name": "Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Typhoon",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-2x-land-raider",
+      "name": "2x Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-scout",
+      "name": "Scout",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scout",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-sniper",
+      "name": "Sniper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-white-scars-vindicator",
+      "name": "White Scars Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "White Scars Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-2x-white-scars-vindicator",
+      "name": "2x White Scars Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x White Scars Vindicator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-razorback-twin-heavy-bolter",
+      "name": "Razorback (Twin Heavy Bolter)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (Twin Heavy Bolter)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-razorback-twin-laser-cannon",
+      "name": "Razorback (Twin Laser Cannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (Twin Laser Cannon)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "509-strike-cruiser",
+        "510-battle-barge"
+      ],
+      "max": 1
+    },
+    {
+      "id": "imperial-ally-and-white-scar-aircraft-formations",
+      "from": [
+        "513-thunderhawk",
+        "517-thunderbolt-fighters",
+        "518-marauder-bombers",
+        "524-warhound-pack",
+        "522-warhound"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "transport",
+      "from": [
+        "11-rhinos",
+        "12-drop-pods"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "28-landspeeder",
+        "29-tornado",
+        "30-typhoon"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "504-land-speeder"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "13-white-scar-attack-bike",
+        "14-white-scar-bikes",
+        "19-multi-melta-attack-bike"
+      ],
+      "max": 8,
+      "min": 8,
+      "appliesTo": [
+        "501-bike"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "14-white-scar-bikes",
+        "19-multi-melta-attack-bike"
+      ],
+      "max": 8,
+      "min": 8,
+      "appliesTo": [
+        "502-bike-close-assault"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "24-annihilator",
+        "25-destructor"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "506-predator"
+      ]
+    },
+    {
+      "id": "cmdr",
+      "from": [
+        "15-captain",
+        "16-chaplain",
+        "17-librarian",
+        "18-supreme-commander"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "18-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "31-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "32-land-raider",
+        "33-2x-land-raider"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "36-white-scars-vindicator",
+        "37-2x-white-scars-vindicator"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "38-razorback-twin-heavy-bolter",
+        "39-razorback-twin-laser-cannon"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "511-tactical"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "38-razorback-twin-heavy-bolter",
+        "39-razorback-twin-laser-cannon"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "507-scout"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "34-scout"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "507-scout"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "35-sniper"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "507-scout"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,896 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/ec",
+  "name": "Emperor's Children",
+  "faction": "Chaos",
+  "version": "4.1 - Approved",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_ec_NETEA.json",
+    "by": "Kyussinchains",
+    "notes": [
+      "Dreadnoughts, Land Raiders, Chaos Marines, Dreadclaws and Rhinos count towards the maximum number of upgrades available to a formation"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "daemon-pool",
+      "name": "Daemon Pool",
+      "formations": [
+        "500-daemon-pool"
+      ]
+    },
+    {
+      "id": "emperors-children-core-formations",
+      "name": "Emperor's Children Core formations",
+      "formations": [
+        "501-retinue"
+      ]
+    },
+    {
+      "id": "emperors-children-elite-formations",
+      "name": "Emperor's Children Elite formations",
+      "formations": [
+        "510-chosen",
+        "511-noise-marine-retinue",
+        "512-emperors-children-terminators"
+      ]
+    },
+    {
+      "id": "emperors-children-support-formatons",
+      "name": "Emperor's Children Support Formatons",
+      "formations": [
+        "521-bike-company",
+        "522-raptor-cult",
+        "523-armoured-company"
+      ]
+    },
+    {
+      "id": "chaos-war-engines",
+      "name": "Chaos War Engines",
+      "formations": [
+        "531-questor-titan",
+        "532-subjugator-titan",
+        "533-chaos-thunderhawk",
+        "534-knight-pack"
+      ]
+    },
+    {
+      "id": "chaos-navy",
+      "name": "Chaos Navy ",
+      "formations": [
+        "541-hellblade-squadron",
+        "542-helltalon-squadron",
+        "543-harbinger"
+      ]
+    },
+    {
+      "id": "chaos-spacecraft",
+      "name": "Chaos Spacecraft",
+      "formations": [
+        "551-devastation-class-cruiser",
+        "552-despoiler-class-battleship"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-daemon-pool",
+      "name": "Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-greater-daemon",
+        "12-lesser-daemon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-retinue",
+      "name": "Retinue",
+      "pts": 225,
+      "tags": [
+        "emperors-children-core-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-emperors-children-dreadnought",
+        "18-chaos-marine",
+        "19-daemonic-pact",
+        "20-dreadclaws",
+        "21-icon-bearer",
+        "22-chaos-champion",
+        "23-replace-2-chaos-marine-units-with-2-noise-marine-units",
+        "24-replace-4-chaos-marine-units-with-4-noise-marine-units",
+        "25-replace-2-chaos-marine-units-with-2-havok-units",
+        "26-replace-4-chaos-marine-units-with-4-havok-units",
+        "27-stalker",
+        "29-rhino",
+        "30-emperors-children-land-raider"
+      ],
+      "_unitsText": "6 Chaos Marine units"
+    },
+    {
+      "id": "510-chosen",
+      "name": "Chosen",
+      "pts": 125,
+      "tags": [
+        "emperors-children-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "19-daemonic-pact",
+        "20-dreadclaws",
+        "17-emperors-children-dreadnought",
+        "29-rhino"
+      ],
+      "_unitsText": "4 Chaos Space Marine Chosen"
+    },
+    {
+      "id": "511-noise-marine-retinue",
+      "name": "Noise Marine Retinue",
+      "pts": 90,
+      "tags": [
+        "emperors-children-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "31-noise-marine",
+        "22-chaos-champion",
+        "19-daemonic-pact",
+        "20-dreadclaws",
+        "17-emperors-children-dreadnought",
+        "21-icon-bearer",
+        "30-emperors-children-land-raider",
+        "29-rhino"
+      ]
+    },
+    {
+      "id": "512-emperors-children-terminators",
+      "name": "Emperor's Children Terminators",
+      "pts": 35,
+      "tags": [
+        "emperors-children-elite-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "37-terminator",
+        "22-chaos-champion",
+        "19-daemonic-pact",
+        "20-dreadclaws",
+        "17-emperors-children-dreadnought",
+        "21-icon-bearer",
+        "30-emperors-children-land-raider"
+      ]
+    },
+    {
+      "id": "521-bike-company",
+      "name": "Bike Company",
+      "pts": 300,
+      "tags": [
+        "emperors-children-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "19-daemonic-pact",
+        "21-icon-bearer"
+      ],
+      "_unitsText": "8 Emperor's Children Bike units"
+    },
+    {
+      "id": "522-raptor-cult",
+      "name": "Raptor Cult",
+      "pts": 35,
+      "tags": [
+        "emperors-children-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "33-raptor",
+        "19-daemonic-pact"
+      ]
+    },
+    {
+      "id": "523-armoured-company",
+      "name": "Armoured Company",
+      "pts": 0,
+      "tags": [
+        "emperors-children-support-formatons"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-emperors-children-predator",
+        "30-emperors-children-land-raider",
+        "27-stalker"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "531-questor-titan",
+      "name": "Questor Titan",
+      "pts": 300,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "532-subjugator-titan",
+      "name": "Subjugator Titan",
+      "pts": 250,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "533-chaos-thunderhawk",
+      "name": "Chaos Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "534-knight-pack",
+      "name": "Knight Pack",
+      "pts": 0,
+      "tags": [
+        "chaos-war-engines"
+      ],
+      "units": [],
+      "upgrades": [
+        "34-hell-strider",
+        "35-hell-knight",
+        "36-hell-scourge"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "541-hellblade-squadron",
+      "name": "Hellblade Squadron",
+      "pts": 200,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Hellblade Interceptors"
+    },
+    {
+      "id": "542-helltalon-squadron",
+      "name": "Helltalon Squadron",
+      "pts": 225,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Helltalon Fighter Bombers"
+    },
+    {
+      "id": "543-harbinger",
+      "name": "Harbinger",
+      "pts": 400,
+      "tags": [
+        "chaos-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Harbinger Bomber"
+    },
+    {
+      "id": "551-devastation-class-cruiser",
+      "name": "Devastation Class Cruiser",
+      "pts": 150,
+      "tags": [
+        "chaos-spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "552-despoiler-class-battleship",
+      "name": "Despoiler Class Battleship",
+      "pts": 250,
+      "tags": [
+        "chaos-spacecraft"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-greater-daemon",
+      "name": "Greater daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Greater daemon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-lesser-daemon",
+      "name": "Lesser Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-chaos-lord",
+      "name": "Chaos Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-sorcerer-lord",
+      "name": "Sorcerer Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sorcerer Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-chaos-warlord-supreme-commander",
+      "name": "Chaos Warlord (Supreme Commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Warlord (Supreme Commander)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-daemon-prince",
+      "name": "Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-emperors-children-dreadnought",
+      "name": "Emperors Children Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperors Children Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-chaos-marine",
+      "name": "Chaos Marine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Marine",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-daemonic-pact",
+      "name": "Daemonic Pact",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonic Pact",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-dreadclaws",
+      "name": "Dreadclaws",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadclaws",
+          "pts": 5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-icon-bearer",
+      "name": "Icon Bearer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Icon Bearer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-chaos-champion",
+      "name": "Chaos Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Champion",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-replace-2-chaos-marine-units-with-2-noise-marine-units",
+      "name": "Replace 2 chaos marine units with 2 Noise Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace 2 chaos marine units with 2 Noise Marine units",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-replace-4-chaos-marine-units-with-4-noise-marine-units",
+      "name": "Replace 4 chaos marine units with 4 Noise Marine units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace 4 chaos marine units with 4 Noise Marine units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-replace-2-chaos-marine-units-with-2-havok-units",
+      "name": "Replace 2 chaos marine units with 2 Havok units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace 2 chaos marine units with 2 Havok units",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-replace-4-chaos-marine-units-with-4-havok-units",
+      "name": "Replace 4 chaos marine units with 4 Havok units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace 4 chaos marine units with 4 Havok units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-stalker",
+      "name": "Stalker",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stalker",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-emperors-children-predator",
+      "name": "Emperors Children Predator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperors Children Predator",
+          "pts": 55,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-rhino",
+      "name": "Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhino",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-emperors-children-land-raider",
+      "name": "Emperors Children Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperors Children Land Raider",
+          "pts": 80,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-noise-marine",
+      "name": "Noise Marine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Noise Marine",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-daemon-prince-supreme-commander",
+      "name": "Daemon Prince (supreme commander)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince (supreme commander)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-raptor",
+      "name": "Raptor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raptor",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-hell-strider",
+      "name": "Hell-Strider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Strider",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-hell-knight",
+      "name": "Hell-Knight",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Knight",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-hell-scourge",
+      "name": "Hell-Scourge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hell-Scourge",
+          "pts": 90,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-terminator",
+      "name": "Terminator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Terminator",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spaceship",
+      "from": [
+        "551-devastation-class-cruiser",
+        "552-despoiler-class-battleship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "knight-pack",
+      "from": [
+        "534-knight-pack"
+      ],
+      "max": 1
+    },
+    {
+      "id": "elite-formation",
+      "from": [
+        "510-chosen",
+        "511-noise-marine-retinue",
+        "512-emperors-children-terminators"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-retinue"
+      ],
+      "_name2": "Retinue"
+    },
+    {
+      "id": "support-formation",
+      "from": [
+        "521-bike-company",
+        "522-raptor-cult",
+        "523-armoured-company"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-retinue"
+      ],
+      "_name2": "Retinue"
+    },
+    {
+      "id": "chaos-navy-and-titan-formations",
+      "from": [
+        "531-questor-titan",
+        "532-subjugator-titan",
+        "533-chaos-thunderhawk",
+        "534-knight-pack",
+        "541-hellblade-squadron",
+        "542-helltalon-squadron",
+        "543-harbinger",
+        "551-devastation-class-cruiser",
+        "552-despoiler-class-battleship"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "supreme-commander",
+      "from": [
+        "15-chaos-warlord-supreme-commander",
+        "32-daemon-prince-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "13-chaos-lord",
+        "14-sorcerer-lord",
+        "16-daemon-prince",
+        "15-chaos-warlord-supreme-commander",
+        "32-daemon-prince-supreme-commander"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-retinue",
+        "512-emperors-children-terminators",
+        "521-bike-company",
+        "522-raptor-cult",
+        "511-noise-marine-retinue"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "17-emperors-children-dreadnought"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "19-daemonic-pact"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "25-replace-2-chaos-marine-units-with-2-havok-units",
+        "26-replace-4-chaos-marine-units-with-4-havok-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "21-icon-bearer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "22-chaos-champion"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "23-replace-2-chaos-marine-units-with-2-noise-marine-units",
+        "24-replace-4-chaos-marine-units-with-4-noise-marine-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "daemon-prince",
+      "from": [
+        "16-daemon-prince",
+        "32-daemon-prince-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "18-chaos-marine"
+      ],
+      "max": 6
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "34-hell-strider",
+        "35-hell-knight",
+        "36-hell-scourge"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "534-knight-pack"
+      ]
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "15-chaos-warlord-supreme-commander",
+        "16-daemon-prince",
+        "19-daemonic-pact",
+        "21-icon-bearer",
+        "22-chaos-champion",
+        "23-replace-2-chaos-marine-units-with-2-noise-marine-units",
+        "24-replace-4-chaos-marine-units-with-4-noise-marine-units",
+        "25-replace-2-chaos-marine-units-with-2-havok-units",
+        "25-replace-2-chaos-marine-units-with-2-havok-units",
+        "27-stalker",
+        "32-daemon-prince-supreme-commander"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "501-retinue",
+        "510-chosen",
+        "511-noise-marine-retinue",
+        "512-emperors-children-terminators",
+        "521-bike-company",
+        "522-raptor-cult",
+        "523-armoured-company"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "37-terminator"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "512-emperors-children-terminators"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "31-noise-marine"
+      ],
+      "max": 10,
+      "min": 6,
+      "appliesTo": [
+        "511-noise-marine-retinue"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "33-raptor"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "522-raptor-cult"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "28-emperors-children-predator",
+        "30-emperors-children-land-raider"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "523-armoured-company"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "27-stalker"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "28-emperors-children-predator"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "unknown-524"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

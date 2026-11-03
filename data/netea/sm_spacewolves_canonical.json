@@ -1,0 +1,1128 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/spacewolves",
+  "name": "Space Wolves",
+  "faction": "Space Marines",
+  "version": "NetEA Tournament pack",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_spacewolves_NETEA.json",
+    "by": "uvenlord, last update 2026-02-21 by Abetillo",
+    "notes": [
+      "A minimum of one Great Company must be taken"
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "great-company",
+      "name": "Great Company",
+      "formations": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "hunting-packs",
+      "name": "HUNTING PACKS",
+      "formations": [
+        "514-blood-claws-pack",
+        "517-fenrisian-wolves",
+        "513-long-fangs-pack",
+        "515-skyclaws-assault-pack",
+        "516-swiftclaw-bikes-pack",
+        "511-wolf-guard-terminators",
+        "512-wolf-scouts-pack"
+      ]
+    },
+    {
+      "id": "support-packs",
+      "name": "SUPPORT PACKS",
+      "formations": [
+        "528-landing-craft",
+        "522-land-raiders",
+        "521-land-speeders",
+        "523-predators",
+        "526-strike-cruiser",
+        "527-thunderhawk",
+        "524-vindicators",
+        "525-whirlwinds"
+      ]
+    },
+    {
+      "id": "imperial-navy",
+      "name": "IMPERIAL NAVY",
+      "formations": [
+        "549-thunderbolt-squadron",
+        "550-marauder-squadron"
+      ]
+    },
+    {
+      "id": "titan-legions",
+      "name": "TITAN LEGIONS",
+      "formations": [
+        "552-warlord-class-titan",
+        "553-reaver-class-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-great-company",
+      "name": "Great Company",
+      "pts": 250,
+      "tags": [
+        "great-company"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-razorbacks",
+        "13-2-grey-hunters",
+        "14-2-blood-claws",
+        "15-2-long-fangs",
+        "16-wolf-guard-terminators",
+        "17-2-wolf-guard-terminators",
+        "21-land-raider",
+        "41-2x-land-raider",
+        "22-land-raider-crusader",
+        "42-2x-land-raider-crusader",
+        "37-vindicator",
+        "47-2x-vindicator",
+        "38-hunter",
+        "11-rhinos",
+        "35-venerable-dreadnought",
+        "36-dreadnought"
+      ],
+      "_unitsText": "6 Grey Hunters"
+    },
+    {
+      "id": "514-blood-claws-pack",
+      "name": "Blood Claws Pack",
+      "pts": 200,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "14-2-blood-claws",
+        "37-vindicator",
+        "47-2x-vindicator",
+        "11-rhinos",
+        "35-venerable-dreadnought",
+        "36-dreadnought"
+      ],
+      "_unitsText": "6 Blood Claws"
+    },
+    {
+      "id": "517-fenrisian-wolves",
+      "name": "Fenrisian Wolves",
+      "pts": 150,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian"
+      ],
+      "_unitsText": "6 Fenrisian Wolves"
+    },
+    {
+      "id": "513-long-fangs-pack",
+      "name": "Long Fangs Pack",
+      "pts": 300,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "10-razorbacks",
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "21-land-raider",
+        "41-2x-land-raider",
+        "22-land-raider-crusader",
+        "42-2x-land-raider-crusader",
+        "38-hunter",
+        "11-rhinos",
+        "35-venerable-dreadnought",
+        "36-dreadnought"
+      ],
+      "_unitsText": "4 Long Fangs"
+    },
+    {
+      "id": "515-skyclaws-assault-pack",
+      "name": "Skyclaws Assault Pack",
+      "pts": 225,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "31-2-skyclaws"
+      ],
+      "_unitsText": "6 Sky Claws"
+    },
+    {
+      "id": "516-swiftclaw-bikes-pack",
+      "name": "Swiftclaw Bikes Pack",
+      "pts": 200,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian"
+      ]
+    },
+    {
+      "id": "511-wolf-guard-terminators",
+      "name": "Wolf Guard Terminators",
+      "pts": 325,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "30-supreme-commander",
+        "21-land-raider",
+        "41-2x-land-raider",
+        "22-land-raider-crusader",
+        "42-2x-land-raider-crusader",
+        "12-drop-pods",
+        "35-venerable-dreadnought",
+        "36-dreadnought"
+      ],
+      "_unitsText": "4 Wolf Guard Terminators"
+    },
+    {
+      "id": "512-wolf-scouts-pack",
+      "name": "Wolf Scouts Pack",
+      "pts": 225,
+      "tags": [
+        "hunting-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "34-2-snipers",
+        "39-4-snipers"
+      ],
+      "_unitsText": "4 Wolf Scouts"
+    },
+    {
+      "id": "528-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Landing Craft"
+    },
+    {
+      "id": "522-land-raiders",
+      "name": "Land Raiders",
+      "pts": 25,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "38-hunter"
+      ]
+    },
+    {
+      "id": "521-land-speeders",
+      "name": "Land Speeders",
+      "pts": 200,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian"
+      ]
+    },
+    {
+      "id": "523-predators",
+      "name": "Predators",
+      "pts": 250,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "38-hunter"
+      ]
+    },
+    {
+      "id": "526-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 200,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "527-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Thunderhawk Gunship"
+    },
+    {
+      "id": "524-vindicators",
+      "name": "Vindicators",
+      "pts": 200,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "38-hunter"
+      ],
+      "_unitsText": "4 Vindicators"
+    },
+    {
+      "id": "525-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 300,
+      "tags": [
+        "support-packs"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "38-hunter"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "549-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 175,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighter-Bombers"
+    },
+    {
+      "id": "550-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauders Bombers"
+    },
+    {
+      "id": "552-warlord-class-titan",
+      "name": "Warlord Class Titan",
+      "pts": 825,
+      "tags": [
+        "titan-legions"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "553-reaver-class-titan",
+      "name": "Reaver Class Titan",
+      "pts": 650,
+      "tags": [
+        "titan-legions"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-rhinos",
+      "name": "Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-drop-pods",
+      "name": "Drop Pods",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Drop Pods",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorbacks",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-2-grey-hunters",
+      "name": "2 Grey hunters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Grey hunters",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-2-blood-claws",
+      "name": "2 Blood Claws",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Blood Claws",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-2-long-fangs",
+      "name": "2 Long Fangs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Long Fangs",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-wolf-guard-terminators",
+      "name": "Wolf Guard Terminators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wolf Guard Terminators",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-2-wolf-guard-terminators",
+      "name": "2 Wolf Guard Terminators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Wolf Guard Terminators",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-2x-land-raider",
+      "name": "2x Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-2x-land-raider-crusader",
+      "name": "2x Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider Crusader",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-predator-annihilator",
+      "name": "Predator Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Annihilator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-space-wolves-strike-cruiser",
+      "name": "Space Wolves Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Space Wolves Strike Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-space-wolves-battle-barge",
+      "name": "Space Wolves Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Space Wolves Battle Barge",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-2-skyclaws",
+      "name": "2 Skyclaws",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Skyclaws",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-swiftclaw-bikes",
+      "name": "Swiftclaw Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swiftclaw Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-swiftclaw-attack-bikes",
+      "name": "Swiftclaw Attack Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swiftclaw Attack Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-2-snipers",
+      "name": "2 Snipers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Snipers",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-4-snipers",
+      "name": "4 Snipers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Snipers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-venerable-dreadnought",
+      "name": "Venerable Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Venerable Dreadnought",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-dreadnought",
+      "name": "Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "47-2x-vindicator",
+      "name": "2x Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Vindicator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "526-strike-cruiser"
+      ],
+      "max": 1
+    },
+    {
+      "id": "wolf-guard-terminators",
+      "from": [
+        "511-wolf-guard-terminators"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "wolf-scouts-pack",
+      "from": [
+        "512-wolf-scouts-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "long-fangs-pack",
+      "from": [
+        "513-long-fangs-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "blod-claws-pack",
+      "from": [
+        "514-blood-claws-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "skyclaws-assault-pack",
+      "from": [
+        "515-skyclaws-assault-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "swiftclaw-bikes-pack",
+      "from": [
+        "516-swiftclaw-bikes-pack"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "fenrisian-wolfs",
+      "from": [
+        "517-fenrisian-wolves"
+      ],
+      "max": 1,
+      "forEach": [
+        "501-great-company"
+      ],
+      "_name2": "Great Company"
+    },
+    {
+      "id": "great-company",
+      "from": [
+        "501-great-company"
+      ],
+      "min": 1
+    },
+    {
+      "id": "navy-titans",
+      "from": [
+        "549-thunderbolt-squadron",
+        "550-marauder-squadron",
+        "552-warlord-class-titan",
+        "553-reaver-class-titan"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "transport",
+      "from": [
+        "11-rhinos",
+        "12-drop-pods"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "13-2-grey-hunters",
+        "14-2-blood-claws",
+        "15-2-long-fangs",
+        "16-wolf-guard-terminators",
+        "17-2-wolf-guard-terminators"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "16-wolf-guard-terminators",
+        "17-2-wolf-guard-terminators"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "18-land-speeder",
+        "19-land-speeder-typhoon",
+        "20-land-speeder-tornado"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "521-land-speeders"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "21-land-raider",
+        "22-land-raider-crusader"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "522-land-raiders"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "21-land-raider",
+        "22-land-raider-crusader",
+        "41-2x-land-raider",
+        "42-2x-land-raider-crusader"
+      ],
+      "max": 2,
+      "min": 0,
+      "appliesTo": [
+        "501-great-company",
+        "511-wolf-guard-terminators",
+        "513-long-fangs-pack",
+        "514-blood-claws-pack"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "23-predator-annihilator",
+        "24-predator-destructor"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "523-predators"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "25-space-wolves-strike-cruiser",
+        "26-space-wolves-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "526-strike-cruiser"
+      ]
+    },
+    {
+      "id": "cmdr",
+      "from": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "30-supreme-commander"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "30-supreme-commander",
+        "39-4-snipers"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "27-captain",
+        "28-chaplain",
+        "29-librarian",
+        "30-supreme-commander"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-great-company"
+      ]
+    },
+    {
+      "id": "supreme-commander",
+      "from": [
+        "30-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "venerable-dreadnought",
+      "from": [
+        "35-venerable-dreadnought"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "32-swiftclaw-bikes",
+        "33-swiftclaw-attack-bikes"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "516-swiftclaw-bikes-pack"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "34-2-snipers",
+        "39-4-snipers"
+      ],
+      "max": 1,
+      "min": 0
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "38-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "13-2-grey-hunters"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "14-2-blood-claws"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "15-2-long-fangs"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "16-wolf-guard-terminators"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "17-2-wolf-guard-terminators"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "31-2-skyclaws"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "36-dreadnought"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "37-vindicator",
+        "47-2x-vindicator"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

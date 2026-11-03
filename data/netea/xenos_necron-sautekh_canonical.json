@@ -1,0 +1,1050 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/necron-sautekh",
+  "name": "Necron Sautekh Legion",
+  "faction": "Xenos",
+  "version": "0.5",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_necron_Sautekh_NETEA.json",
+    "by": "Atension, 2015-01-10",
+    "notes": [
+      "A Warbarque in the army may be given the Supreme Commander ability if a C’tan is not fielded."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "individuals",
+      "name": "INDIVIDUALS",
+      "formations": [
+        "500-tomb-complex"
+      ]
+    },
+    {
+      "id": "sautekh-necron-phalanxes",
+      "name": "SAUTEKH NECRON PHALANXES",
+      "formations": [
+        "600-warrior-phalanx",
+        "601-warrior-phalanx-in-ghost-arks",
+        "602-immortal-phalanx"
+      ]
+    },
+    {
+      "id": "sautekh-necron-support-formations",
+      "name": "SAUTEKH NECRON SUPPORT FORMATIONS",
+      "formations": [
+        "700-iudicium-maniple",
+        "701-eques-maniple",
+        "702-monolith-maniple",
+        "703-venator-maniple",
+        "704-letum-maniple",
+        "705-triarch-maniple",
+        "706-blade-maniple",
+        "708-stalker-maniple",
+        "709-sentry-pylon"
+      ]
+    },
+    {
+      "id": "sautekh-necron-harvesters-and-aircraft",
+      "name": "SAUTEKH NECRON HARVESTERS AND AIRCRAFT",
+      "formations": [
+        "800-harvester-engine",
+        "801-spacecraft",
+        "802-warbarques",
+        "803-pylon",
+        "804-tesseract-vault",
+        "805-doom-scythes",
+        "806-night-scythes",
+        "807-night-shroud-bomber"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-tomb-complex",
+      "name": "Tomb Complex",
+      "pts": 75,
+      "tags": [
+        "individuals"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "600-warrior-phalanx",
+      "name": "Warrior Phalanx",
+      "pts": 25,
+      "tags": [
+        "sautekh-necron-phalanxes"
+      ],
+      "units": [],
+      "upgrades": [
+        "50-sautekh-warrior-unit",
+        "21-tomb-spyder",
+        "22-wraith",
+        "23-triarch-stalkers",
+        "24-ctan-shard",
+        "25-annihilation-barge"
+      ]
+    },
+    {
+      "id": "601-warrior-phalanx-in-ghost-arks",
+      "name": "Warrior Phalanx in Ghost Arks",
+      "pts": 25,
+      "tags": [
+        "sautekh-necron-phalanxes"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-tomb-spyder",
+        "22-wraith",
+        "23-triarch-stalkers",
+        "24-ctan-shard",
+        "25-annihilation-barge"
+      ]
+    },
+    {
+      "id": "602-immortal-phalanx",
+      "name": "Immortal Phalanx",
+      "pts": 250,
+      "tags": [
+        "sautekh-necron-phalanxes"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-tomb-spyder",
+        "22-wraith",
+        "23-triarch-stalkers",
+        "24-ctan-shard",
+        "25-annihilation-barge"
+      ]
+    },
+    {
+      "id": "700-iudicium-maniple",
+      "name": "Iudicium Maniple",
+      "pts": 250,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-necron-lord",
+        "3-necron-lord-in-command-barge"
+      ]
+    },
+    {
+      "id": "701-eques-maniple",
+      "name": "Eques Maniple",
+      "pts": 300,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-necron-lord"
+      ]
+    },
+    {
+      "id": "702-monolith-maniple",
+      "name": "Monolith Maniple",
+      "pts": 175,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "26-obelisk",
+        "27-monolith"
+      ]
+    },
+    {
+      "id": "703-venator-maniple",
+      "name": "Venator Maniple",
+      "pts": 200,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "22-wraith"
+      ],
+      "_unitsText": "6 Flayed Ones units"
+    },
+    {
+      "id": "704-letum-maniple",
+      "name": "Letum Maniple",
+      "pts": 200,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-necron-lord",
+        "5-canoptek-character"
+      ],
+      "_unitsText": "4 Deathmark units"
+    },
+    {
+      "id": "705-triarch-maniple",
+      "name": "Triarch Maniple",
+      "pts": 275,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-necron-lord",
+        "2-necron-overlord",
+        "5-canoptek-character",
+        "25-annihilation-barge",
+        "23-triarch-stalkers",
+        "24-ctan-shard"
+      ]
+    },
+    {
+      "id": "706-blade-maniple",
+      "name": "Blade Maniple",
+      "pts": 200,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Tomb Blade units"
+    },
+    {
+      "id": "708-stalker-maniple",
+      "name": "Stalker Maniple",
+      "pts": 200,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Triarch Stalkers"
+    },
+    {
+      "id": "709-sentry-pylon",
+      "name": "Sentry Pylon",
+      "pts": 250,
+      "tags": [
+        "sautekh-necron-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Sentry pylons"
+    },
+    {
+      "id": "800-harvester-engine",
+      "name": "Harvester Engine",
+      "pts": 600,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "801-spacecraft",
+      "name": "Spacecraft",
+      "pts": 250,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Scythe Class Harvester"
+    },
+    {
+      "id": "802-warbarques",
+      "name": "Warbarques",
+      "pts": 300,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warbarque"
+    },
+    {
+      "id": "803-pylon",
+      "name": "Pylon",
+      "pts": 25,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [
+        "72-pylon"
+      ]
+    },
+    {
+      "id": "804-tesseract-vault",
+      "name": "Tesseract Vault",
+      "pts": 300,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Tesseract Vault"
+    },
+    {
+      "id": "805-doom-scythes",
+      "name": "Doom Scythes",
+      "pts": 0,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [
+        "73-doom-scythe"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "806-night-scythes",
+      "name": "Night Scythes",
+      "pts": 175,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Night Scythes"
+    },
+    {
+      "id": "807-night-shroud-bomber",
+      "name": "Night Shroud Bomber",
+      "pts": 275,
+      "tags": [
+        "sautekh-necron-harvesters-and-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Night Shroud Bombers"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-necron-lord",
+      "name": "Necron Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Lord",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-necron-overlord",
+      "name": "Necron Overlord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Overlord",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-necron-lord-in-command-barge",
+      "name": "Necron Lord in Command Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Lord in Command Barge",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-necron-overlord-in-command-barge",
+      "name": "Necron Overlord in Command Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Necron Overlord in Command Barge",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-canoptek-character",
+      "name": "Canoptek character",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Canoptek character",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-3-ghost-arks",
+      "name": "3 Ghost Arks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Ghost Arks",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-tomb-spyder",
+      "name": "Tomb Spyder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tomb Spyder",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-wraith",
+      "name": "Wraith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wraith",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-triarch-stalkers",
+      "name": "Triarch Stalkers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Triarch Stalkers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-ctan-shard",
+      "name": "C'Tan Shard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "C'Tan Shard",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-annihilation-barge",
+      "name": "Annihilation Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Annihilation Barge",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-obelisk",
+      "name": "Obelisk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obelisk",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-monolith",
+      "name": "Monolith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Monolith",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-sautekh-warrior-unit",
+      "name": "Sautekh Warrior unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sautekh Warrior unit",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-6-immortal-units",
+      "name": "6 Immortal units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Immortal units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-7-immortal-units",
+      "name": "7 Immortal units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "7 Immortal units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-8-immortal-units",
+      "name": "8 Immortal units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Immortal units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-4-doomsday-ark-units",
+      "name": "4 Doomsday Ark units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Doomsday Ark units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-5-doomsday-ark-units",
+      "name": "5 Doomsday Ark units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Doomsday Ark units",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-6-doomsday-ark-units",
+      "name": "6 Doomsday Ark units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Doomsday Ark units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-destroyer",
+      "name": "Destroyer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Destroyer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-heavy-destroyer",
+      "name": "Heavy Destroyer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Heavy Destroyer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-2-monolith",
+      "name": "2 Monolith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Monolith",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-4-triarch-praetorian-units",
+      "name": "4 Triarch Praetorian Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Triarch Praetorian Units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-5-triarch-praetorian-units",
+      "name": "5 Triarch Praetorian Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Triarch Praetorian Units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-6-triarch-praetorian-units",
+      "name": "6 Triarch Praetorian Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Triarch Praetorian Units",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "70-abattoir",
+      "name": "Abattoir",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Abattoir",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-aeonic-orb",
+      "name": "Aeonic Orb",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aeonic Orb",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-pylon",
+      "name": "Pylon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Pylon",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "73-doom-scythe",
+      "name": "Doom Scythe",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Doom Scythe",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "74-monolith",
+      "name": "Monolith",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Monolith",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "75-obelisk",
+      "name": "Obelisk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Obelisk",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "500-tomb-complex"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "800-harvester-engine"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "801-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "802-warbarques"
+      ],
+      "max": 2
+    },
+    {
+      "id": "fc-4",
+      "from": [
+        "804-tesseract-vault"
+      ],
+      "max": 1
+    },
+    {
+      "id": "harvesters-and-aircraft",
+      "from": [
+        "800-harvester-engine",
+        "801-spacecraft",
+        "802-warbarques",
+        "803-pylon",
+        "804-tesseract-vault",
+        "805-doom-scythes",
+        "806-night-scythes",
+        "807-night-shroud-bomber"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "700-iudicium-maniple",
+        "701-eques-maniple",
+        "702-monolith-maniple",
+        "703-venator-maniple",
+        "704-letum-maniple",
+        "705-triarch-maniple",
+        "706-blade-maniple",
+        "unknown-707",
+        "708-stalker-maniple"
+      ],
+      "max": 3,
+      "forEach": [
+        "600-warrior-phalanx",
+        "601-warrior-phalanx-in-ghost-arks",
+        "602-immortal-phalanx"
+      ],
+      "_name2": "Necron Phalanx"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "2-necron-overlord",
+        "4-necron-overlord-in-command-barge"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "1-necron-lord"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "3-necron-lord-in-command-barge"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "5-canoptek-character"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "20-3-ghost-arks"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "601-warrior-phalanx-in-ghost-arks"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "21-tomb-spyder"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "22-wraith"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "23-triarch-stalkers"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "24-ctan-shard"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "25-annihilation-barge"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "27-monolith"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "26-obelisk"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "72-pylon"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "1-necron-lord",
+        "2-necron-overlord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "600-warrior-phalanx",
+        "601-warrior-phalanx-in-ghost-arks"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "1-necron-lord"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "602-immortal-phalanx"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "50-sautekh-warrior-unit"
+      ],
+      "max": 10,
+      "min": 6,
+      "appliesTo": [
+        "600-warrior-phalanx"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "50-sautekh-warrior-unit"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "601-warrior-phalanx-in-ghost-arks"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "51-6-immortal-units",
+        "52-7-immortal-units",
+        "53-8-immortal-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "602-immortal-phalanx"
+      ]
+    },
+    {
+      "id": "lord",
+      "from": [
+        "1-necron-lord",
+        "3-necron-lord-in-command-barge"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "700-iudicium-maniple"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "54-4-doomsday-ark-units",
+        "55-5-doomsday-ark-units",
+        "56-6-doomsday-ark-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "700-iudicium-maniple"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "57-destroyer",
+        "58-heavy-destroyer"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "701-eques-maniple"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "59-2-monolith"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "702-monolith-maniple"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "61-4-triarch-praetorian-units",
+        "62-5-triarch-praetorian-units",
+        "63-6-triarch-praetorian-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "705-triarch-maniple"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "70-abattoir",
+        "71-aeonic-orb"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "800-harvester-engine"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "72-pylon"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "803-pylon"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "73-doom-scythe"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "805-doom-scythes"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

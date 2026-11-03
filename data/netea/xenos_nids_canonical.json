@@ -1,0 +1,1095 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/nids",
+  "name": "Tyranids",
+  "faction": "Xenos",
+  "version": "NetEA Tournament Pack",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_nids_NETEA.json",
+    "by": "Borka, last update 2026-02-21 Abetillo",
+    "notes": [
+      "A symbiote character may only be added to a Hive Tyrant or Dominatrix unit.",
+      "Up to one Dominatrix may be taken per full two thousand points."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "tyranid-individuals",
+      "name": "TYRANID INDIVIDUALS",
+      "formations": [
+        "400-brood-nest"
+      ]
+    },
+    {
+      "id": "synapse-swarm-formations",
+      "name": "SYNAPSE SWARM FORMATIONS",
+      "formations": [
+        "500-tyranid-swarm",
+        "501-tyranid-swarm-medium",
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "independent-swarm-formations",
+      "name": "INDEPENDENT SWARM FORMATIONS",
+      "formations": [
+        "517-biovore-swarm",
+        "518-dactylis-swarm",
+        "519-exocrine-swarm",
+        "520-genestealer-swarm",
+        "524-lictor-swarm"
+      ]
+    },
+    {
+      "id": "war-engine-formations",
+      "name": "WAR ENGINE FORMATIONS",
+      "formations": [
+        "521-harridian-swarm",
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan",
+        "526-trygon-swarm"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "400-brood-nest",
+      "name": "Brood Nest",
+      "pts": 50,
+      "tags": [
+        "tyranid-individuals"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "500-tyranid-swarm",
+      "name": "Tyranid swarm",
+      "pts": 10,
+      "tags": [
+        "synapse-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-symbiote",
+        "11-termagants",
+        "12-hormagaunts",
+        "15-tyranid-warriors",
+        "16-biovore",
+        "21-gargoyles",
+        "22-zoanthrope",
+        "23-malefactor",
+        "24-carnifex",
+        "25-haruspex",
+        "26-raveners",
+        "27-dactylis",
+        "28-exocrine",
+        "35-trygon"
+      ]
+    },
+    {
+      "id": "501-tyranid-swarm-medium",
+      "name": "Tyranid swarm (medium)",
+      "pts": -5,
+      "tags": [
+        "synapse-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-symbiote",
+        "11-termagants",
+        "12-hormagaunts",
+        "15-tyranid-warriors",
+        "16-biovore",
+        "21-gargoyles",
+        "22-zoanthrope",
+        "23-malefactor",
+        "24-carnifex",
+        "25-haruspex",
+        "26-raveners",
+        "27-dactylis",
+        "28-exocrine",
+        "35-trygon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "502-tyranid-swarm-large",
+      "name": "Tyranid swarm (Large)",
+      "pts": -45,
+      "tags": [
+        "synapse-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "9-symbiote",
+        "11-termagants",
+        "12-hormagaunts",
+        "15-tyranid-warriors",
+        "16-biovore",
+        "21-gargoyles",
+        "22-zoanthrope",
+        "23-malefactor",
+        "24-carnifex",
+        "25-haruspex",
+        "26-raveners",
+        "27-dactylis",
+        "28-exocrine",
+        "35-trygon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "517-biovore-swarm",
+      "name": "Biovore Swarm",
+      "pts": 0,
+      "tags": [
+        "independent-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-biovore"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "518-dactylis-swarm",
+      "name": "Dactylis Swarm",
+      "pts": 0,
+      "tags": [
+        "independent-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-dactylis"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "519-exocrine-swarm",
+      "name": "Exocrine Swarm",
+      "pts": 0,
+      "tags": [
+        "independent-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "28-exocrine"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "520-genestealer-swarm",
+      "name": "Genestealer Swarm",
+      "pts": 30,
+      "tags": [
+        "independent-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "80-genestealers",
+        "81-brood-lord"
+      ]
+    },
+    {
+      "id": "524-lictor-swarm",
+      "name": "Lictor Swarm",
+      "pts": 10,
+      "tags": [
+        "independent-swarm-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-lictors"
+      ]
+    },
+    {
+      "id": "521-harridian-swarm",
+      "name": "Harridian Swarm",
+      "pts": 0,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "38-harridan",
+        "21-gargoyles",
+        "90-4x-gargoyles"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "522-hierodule-bio-titan",
+      "name": "Hierodule Bio-Titan",
+      "pts": 350,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "523-hierophant-bio-titan",
+      "name": "Hierophant Bio-Titan",
+      "pts": 525,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "526-trygon-swarm",
+      "name": "Trygon Swarm",
+      "pts": 20,
+      "tags": [
+        "war-engine-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "29-trygon",
+        "26-raveners"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-termagants",
+      "name": "Termagants",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Termagants",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-hormagaunts",
+      "name": "Hormagaunts",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hormagaunts",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-2x-tyranid-warriors",
+      "name": "2x Tyranid Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Tyranid Warriors",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-hive-tyrant",
+      "name": "Hive tyrant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hive tyrant",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-tyranid-warriors",
+      "name": "Tyranid Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tyranid Warriors",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-dominatrix",
+      "name": "Dominatrix",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dominatrix",
+          "pts": 325,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-symbiote",
+      "name": "Symbiote",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Symbiote",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-3x-tyranid-warriors",
+      "name": "3x Tyranid Warriors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3x Tyranid Warriors",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-biovore",
+      "name": "Biovore",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Biovore",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "160-5-biovores-small-swarm",
+      "name": "5 Biovores (Small Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Biovores (Small Swarm)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "161-10-biovores-medium-swarm",
+      "name": "10 Biovores (Medium Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "10 Biovores (Medium Swarm)",
+          "pts": 275,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "162-15-biovores-large-swarm",
+      "name": "15 Biovores (Large Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "15 Biovores (Large Swarm)",
+          "pts": 375,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-gargoyles",
+      "name": "Gargoyles",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gargoyles",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-zoanthrope",
+      "name": "Zoanthrope",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Zoanthrope",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-malefactor",
+      "name": "Malefactor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Malefactor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-carnifex",
+      "name": "Carnifex",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Carnifex",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-haruspex",
+      "name": "Haruspex",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Haruspex",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-raveners",
+      "name": "Raveners",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raveners",
+          "pts": 30,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-dactylis",
+      "name": "Dactylis",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dactylis",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-3-dactylis-small-swarm",
+      "name": "3 Dactylis (Small Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Dactylis (Small Swarm)",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-6-dactylis-medium-swarm",
+      "name": "6 Dactylis (Medium Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Dactylis (Medium Swarm)",
+          "pts": 475,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-9-dactylis-large-swarm",
+      "name": "9 Dactylis (Large Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "9 Dactylis (Large Swarm)",
+          "pts": 675,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-exocrine",
+      "name": "Exocrine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exocrine",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "280-3-exocrines-small-swarm",
+      "name": "3 Exocrines (Small Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Exocrines (Small Swarm)",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "281-6-exocrines-medium-swarm",
+      "name": "6 Exocrines (Medium Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Exocrines (Medium Swarm)",
+          "pts": 325,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "282-9-exocrines-large-swarm",
+      "name": "9 Exocrines (Large Swarm)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "9 Exocrines (Large Swarm)",
+          "pts": 450,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-harridan",
+      "name": "Harridan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Harridan",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-lictors",
+      "name": "Lictors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lictors",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-trygon",
+      "name": "Trygon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Trygon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-trygon",
+      "name": "Trygon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Trygon",
+          "pts": 60,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-bile-launcher",
+      "name": "Bile Launcher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bile Launcher",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-bio-titan-bio-cannon",
+      "name": "Bio-Titan Bio-Cannon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bio-Titan Bio-Cannon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-cluster-spines",
+      "name": "Cluster Spines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cluster Spines",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-pyro-acid-spray",
+      "name": "Pyro-Acid Spray",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Pyro-Acid Spray",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "64-razorclaw",
+      "name": "Razorclaw",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorclaw",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "80-genestealers",
+      "name": "Genestealers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Genestealers",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "81-brood-lord",
+      "name": "Brood Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Brood Lord",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "90-4x-gargoyles",
+      "name": "4x Gargoyles",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4x Gargoyles",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "brood-nest",
+      "from": [
+        "400-brood-nest"
+      ],
+      "max": 1
+    },
+    {
+      "id": "independent-swarm",
+      "from": [
+        "517-biovore-swarm",
+        "518-dactylis-swarm",
+        "519-exocrine-swarm",
+        "520-genestealer-swarm",
+        "524-lictor-swarm"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-tyranid-swarm",
+        "501-tyranid-swarm-medium",
+        "502-tyranid-swarm-large"
+      ],
+      "_name2": "Synapse Swarm"
+    },
+    {
+      "id": "lictor-swarms",
+      "from": [
+        "524-lictor-swarm"
+      ],
+      "max": 2
+    },
+    {
+      "id": "war-engine-formations",
+      "from": [
+        "521-harridian-swarm",
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan",
+        "526-trygon-swarm"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "10-dominatrix"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-tyranid-swarm",
+        "501-tyranid-swarm-medium",
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "10-dominatrix"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "9-symbiote"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "15-tyranid-warriors"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-tyranid-swarm"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "8-3x-tyranid-warriors",
+        "15-tyranid-warriors"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-tyranid-swarm"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "8-3x-tyranid-warriors",
+        "15-tyranid-warriors"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-tyranid-swarm-medium"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "8-3x-tyranid-warriors",
+        "15-tyranid-warriors"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "30-30"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "500-tyranid-swarm"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "30-30"
+      ],
+      "max": 12,
+      "appliesTo": [
+        "501-tyranid-swarm-medium"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "30-30"
+      ],
+      "max": 18,
+      "appliesTo": [
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "gaunts",
+      "from": [
+        "11-termagants",
+        "12-hormagaunts"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "500-tyranid-swarm"
+      ]
+    },
+    {
+      "id": "synapse",
+      "from": [
+        "13-2x-tyranid-warriors",
+        "14-hive-tyrant",
+        "10-dominatrix",
+        "8-3x-tyranid-warriors"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "500-tyranid-swarm"
+      ]
+    },
+    {
+      "id": "gaunts",
+      "from": [
+        "11-termagants",
+        "12-hormagaunts"
+      ],
+      "min": 12,
+      "appliesTo": [
+        "501-tyranid-swarm-medium"
+      ]
+    },
+    {
+      "id": "synapse",
+      "from": [
+        "13-2x-tyranid-warriors",
+        "14-hive-tyrant",
+        "10-dominatrix",
+        "8-3x-tyranid-warriors"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "501-tyranid-swarm-medium"
+      ]
+    },
+    {
+      "id": "gaunts",
+      "from": [
+        "11-termagants",
+        "12-hormagaunts"
+      ],
+      "min": 18,
+      "appliesTo": [
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "synapse",
+      "from": [
+        "13-2x-tyranid-warriors",
+        "14-hive-tyrant",
+        "10-dominatrix",
+        "8-3x-tyranid-warriors"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "502-tyranid-swarm-large"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "160-5-biovores-small-swarm",
+        "161-10-biovores-medium-swarm",
+        "162-15-biovores-large-swarm"
+      ],
+      "min": 1,
+      "appliesTo": [
+        "517-biovore-swarm"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "32-3-dactylis-small-swarm",
+        "33-6-dactylis-medium-swarm",
+        "34-9-dactylis-large-swarm"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "518-dactylis-swarm"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "280-3-exocrines-small-swarm",
+        "281-6-exocrines-medium-swarm",
+        "282-9-exocrines-large-swarm"
+      ],
+      "min": 1,
+      "appliesTo": [
+        "519-exocrine-swarm"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "80-genestealers"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "520-genestealer-swarm"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "81-brood-lord"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "520-genestealer-swarm"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "38-harridan"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "521-harridian-swarm"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "41-lictors"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "524-lictor-swarm"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "29-trygon"
+      ],
+      "max": 6,
+      "min": 3,
+      "appliesTo": [
+        "526-trygon-swarm"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "64-razorclaw",
+        "60-bile-launcher",
+        "61-bio-titan-bio-cannon",
+        "62-cluster-spines",
+        "63-pyro-acid-spray"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "60-bile-launcher"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "61-bio-titan-bio-cannon"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "62-cluster-spines"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "63-pyro-acid-spray"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-hierodule-bio-titan",
+        "523-hierophant-bio-titan"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/elysian",
+  "name": "Elysian Drop Troop Regiment",
+  "faction": "Astra Militarum",
+  "version": "NetEA Army Compendium v20120208 *EXPERIMENTAL*",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\IG_Elysian_NETEA.json",
+    "by": "Parintachin",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "elysian-drop-troop-companies",
+      "name": "ELYSIAN DROP TROOP COMPANIES",
+      "formations": [
+        "500-regimental-hq",
+        "501-drop-troop-company"
+      ]
+    },
+    {
+      "id": "elysian-drop-troop-support-formations",
+      "name": "ELYSIAN DROP TROOP SUPPORT FORMATIONS",
+      "formations": [
+        "510-drop-sentinel-squadron",
+        "511-storm-trooper-platoon",
+        "512-tauros-squadron",
+        "513-vulture-squadron"
+      ]
+    },
+    {
+      "id": "imperial-navy-support",
+      "name": "IMPERIAL NAVY SUPPORT",
+      "formations": [
+        "520-spacecraft",
+        "521-lightning-squadron",
+        "522-strike-squadron",
+        "523-destroyer-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 275,
+      "tags": [
+        "elysian-drop-troop-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-4-valkyries-or-vendettas",
+        "10-drop-sentinel-platoon-4-drop-sentinels",
+        "11-fire-support-platoon-2-elysian-support-squad-units",
+        "12-hardened-veterans-1-hardened-veteran-unit",
+        "13-hardened-veterans-2-hardened-veteran-units",
+        "14-infantry-platoon-4-elysian-drop-troop-infantry-units",
+        "15-mortar-platoon-1-mortar-squad-unit",
+        "16-mortar-platoon-2-mortar-squad-units"
+      ],
+      "_unitsText": "1 Elysian Supreme Commander unit, 7 Elysian Drop Troop Infantry units"
+    },
+    {
+      "id": "501-drop-troop-company",
+      "name": "Drop Troop Company",
+      "pts": 200,
+      "tags": [
+        "elysian-drop-troop-companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-4-valkyries-or-vendettas",
+        "10-drop-sentinel-platoon-4-drop-sentinels",
+        "11-fire-support-platoon-2-elysian-support-squad-units",
+        "12-hardened-veterans-1-hardened-veteran-unit",
+        "13-hardened-veterans-2-hardened-veteran-units",
+        "14-infantry-platoon-4-elysian-drop-troop-infantry-units",
+        "15-mortar-platoon-1-mortar-squad-unit",
+        "16-mortar-platoon-2-mortar-squad-units"
+      ],
+      "_unitsText": "1 Elysian Commander unit, 7 Elysian Drop Troop Infantry units May have 4 Valkyries or Vendettas"
+    },
+    {
+      "id": "510-drop-sentinel-squadron",
+      "name": "Drop Sentinel Squadron",
+      "pts": 150,
+      "tags": [
+        "elysian-drop-troop-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "31-4-valkyrie-sky-talons"
+      ],
+      "_unitsText": "4 Drop Sentinels"
+    },
+    {
+      "id": "511-storm-trooper-platoon",
+      "name": "Storm Trooper Platoon",
+      "pts": 350,
+      "tags": [
+        "elysian-drop-troop-support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "8 Elysian Storm Trooper Units and 4 Valkyries"
+    },
+    {
+      "id": "512-tauros-squadron",
+      "name": "Tauros Squadron",
+      "pts": 150,
+      "tags": [
+        "elysian-drop-troop-support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "31-4-valkyrie-sky-talons"
+      ]
+    },
+    {
+      "id": "513-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": [
+        "elysian-drop-troop-support-formations"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "520-spacecraft",
+      "name": "Spacecraft",
+      "pts": 0,
+      "tags": [
+        "imperial-navy-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "521-lightning-squadron",
+      "name": "Lightning Squadron",
+      "pts": 300,
+      "tags": [
+        "imperial-navy-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Lightning Interceptors"
+    },
+    {
+      "id": "522-strike-squadron",
+      "name": "Strike Squadron",
+      "pts": 200,
+      "tags": [
+        "imperial-navy-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Lightning Strike Fighters"
+    },
+    {
+      "id": "523-destroyer-squadron",
+      "name": "Destroyer Squadron",
+      "pts": 375,
+      "tags": [
+        "imperial-navy-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Destroyers"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-drop-sentinel-platoon-4-drop-sentinels",
+      "name": "Drop Sentinel Platoon (4 Drop Sentinels)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Drop Sentinel Platoon (4 Drop Sentinels)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-fire-support-platoon-2-elysian-support-squad-units",
+      "name": "Fire Support Platoon (2 Elysian Support Squad units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Support Platoon (2 Elysian Support Squad units)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-hardened-veterans-1-hardened-veteran-unit",
+      "name": "Hardened Veterans (1 Hardened Veteran unit)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hardened Veterans (1 Hardened Veteran unit)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-hardened-veterans-2-hardened-veteran-units",
+      "name": "Hardened Veterans (2 Hardened Veteran units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hardened Veterans (2 Hardened Veteran units)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-infantry-platoon-4-elysian-drop-troop-infantry-units",
+      "name": "Infantry Platoon (4 Elysian Drop Troop Infantry units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Infantry Platoon (4 Elysian Drop Troop Infantry units)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-mortar-platoon-1-mortar-squad-unit",
+      "name": "Mortar platoon (1 Mortar Squad unit)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mortar platoon (1 Mortar Squad unit)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-mortar-platoon-2-mortar-squad-units",
+      "name": "Mortar platoon (2 Mortar Squad units)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mortar platoon (2 Mortar Squad units)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-4-valkyries-or-vendettas",
+      "name": "4 Valkyries or Vendettas",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Valkyries or Vendettas",
+          "pts": 160,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-4-valkyrie-sky-talons",
+      "name": "4 Valkyrie Sky Talons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Valkyrie Sky Talons",
+          "pts": 160,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-tauros",
+      "name": "Tauros",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tauros",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-tauros-venator",
+      "name": "Tauros Venator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tauros Venator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-4-vultures",
+      "name": "4 Vultures",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Vultures",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-2-vultures-2-vulture-punishers",
+      "name": "2 Vultures, 2 Vulture Punishers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Vultures, 2 Vulture Punishers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-lunar-class-cruiser",
+      "name": "Lunar Class Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lunar Class Cruiser",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-emperor-class-battleship",
+      "name": "Emperor Class Battleship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperor Class Battleship",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "500-regimental-hq"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "520-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "510-drop-sentinel-squadron",
+        "511-storm-trooper-platoon",
+        "512-tauros-squadron",
+        "513-vulture-squadron"
+      ],
+      "max": 2,
+      "forEach": [
+        "500-regimental-hq",
+        "501-drop-troop-company"
+      ],
+      "_name2": "Company"
+    },
+    {
+      "id": "navy-support-formations",
+      "from": [
+        "520-spacecraft",
+        "521-lightning-squadron",
+        "522-strike-squadron",
+        "523-destroyer-squadron"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "12-hardened-veterans-1-hardened-veteran-unit",
+        "13-hardened-veterans-2-hardened-veteran-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "15-mortar-platoon-1-mortar-squad-unit",
+        "16-mortar-platoon-2-mortar-squad-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "30-4-valkyries-or-vendettas"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "31-4-valkyrie-sky-talons"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "32-tauros",
+        "33-tauros-venator"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "512-tauros-squadron"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "34-4-vultures",
+        "35-2-vultures-2-vulture-punishers"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "513-vulture-squadron"
+      ]
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "10-drop-sentinel-platoon-4-drop-sentinels",
+        "11-fire-support-platoon-2-elysian-support-squad-units",
+        "12-hardened-veterans-1-hardened-veteran-unit",
+        "13-hardened-veterans-2-hardened-veteran-units",
+        "14-infantry-platoon-4-elysian-drop-troop-infantry-units",
+        "15-mortar-platoon-1-mortar-squad-unit",
+        "16-mortar-platoon-2-mortar-squad-units",
+        "17-17",
+        "18-18",
+        "19-19",
+        "20-20"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "36-lunar-class-cruiser",
+        "37-emperor-class-battleship"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "520-spacecraft"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

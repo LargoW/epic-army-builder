@@ -1,0 +1,898 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/bloodangels-epicuk",
+  "name": "Blood Angels",
+  "faction": "Space Marines",
+  "version": "Epic-UK v070414",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_bloodAngels_EPICUK.json",
+    "by": "Epic-UK",
+    "notes": [
+      "Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "detachments",
+      "name": "Detachments",
+      "formations": [
+        "501-assault",
+        "515-baal-predators",
+        "502-bike",
+        "504-land-raider",
+        "505-land-speeder",
+        "506-landing-craft",
+        "507-predators",
+        "508-scout",
+        "509-spaceship",
+        "510-tactical",
+        "511-terminator",
+        "512-thunderhawk",
+        "513-vindicator",
+        "514-whirlwind"
+      ]
+    },
+    {
+      "id": "titan-air",
+      "name": "Titan/Air",
+      "formations": [
+        "551-thunderbolts",
+        "552-marauders",
+        "553-warlord-titan",
+        "554-reaver-titan",
+        "555-warhound-pack",
+        "556-warhound-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-assault",
+      "name": "Assault",
+      "pts": 250,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "15-vindicators"
+      ],
+      "_unitsText": "6 Assault units"
+    },
+    {
+      "id": "515-baal-predators",
+      "name": "Baal Predators",
+      "pts": 275,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "15-vindicators",
+        "19-hunter"
+      ],
+      "_unitsText": "4 Baal Predators"
+    },
+    {
+      "id": "502-bike",
+      "name": "Bike",
+      "pts": 200,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "16-attack-bikes"
+      ]
+    },
+    {
+      "id": "504-land-raider",
+      "name": "Land Raider",
+      "pts": 350,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "19-hunter",
+        "15-vindicators"
+      ],
+      "_unitsText": "4 Land Raiders"
+    },
+    {
+      "id": "505-land-speeder",
+      "name": "Land Speeder",
+      "pts": 0,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "506-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Landing Craft"
+    },
+    {
+      "id": "507-predators",
+      "name": "Predators",
+      "pts": 0,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "19-hunter",
+        "15-vindicators"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "508-scout",
+      "name": "Scout",
+      "pts": 150,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "21-razorback-hb",
+        "22-razorback-las",
+        "28-snipers"
+      ],
+      "_unitsText": "4 Scouts plus Transport"
+    },
+    {
+      "id": "509-spaceship",
+      "name": "Spaceship",
+      "pts": 0,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "29-strike-cruiser",
+        "30-battle-barge"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "510-tactical",
+      "name": "Tactical",
+      "pts": 300,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "18-dreadnought-cc",
+        "34-dreadnought-ac",
+        "19-hunter",
+        "15-vindicators",
+        "21-razorback-hb",
+        "22-razorback-las"
+      ],
+      "_unitsText": "6 Tactical units plus Transport"
+    },
+    {
+      "id": "511-terminator",
+      "name": "Terminator",
+      "pts": 350,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "18-dreadnought-cc",
+        "34-dreadnought-ac",
+        "20-land-raider",
+        "15-vindicators"
+      ],
+      "_unitsText": "4 Terminator units"
+    },
+    {
+      "id": "512-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Thunderhawk gunship"
+    },
+    {
+      "id": "513-vindicator",
+      "name": "Vindicator",
+      "pts": 250,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "19-hunter"
+      ],
+      "_unitsText": "4 Vindicators"
+    },
+    {
+      "id": "514-whirlwind",
+      "name": "Whirlwind",
+      "pts": 300,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander",
+        "19-hunter"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "551-thunderbolts",
+      "name": "Thunderbolts",
+      "pts": 150,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    },
+    {
+      "id": "552-marauders",
+      "name": "Marauders",
+      "pts": 250,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "553-warlord-titan",
+      "name": "Warlord Titan",
+      "pts": 850,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warlord Titan"
+    },
+    {
+      "id": "554-reaver-titan",
+      "name": "Reaver Titan",
+      "pts": 650,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Reaver Titan"
+    },
+    {
+      "id": "555-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Titans"
+    },
+    {
+      "id": "556-warhound-titan",
+      "name": "Warhound Titan",
+      "pts": 275,
+      "tags": [
+        "titan-air"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicators",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-attack-bikes",
+      "name": "Attack Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Attack Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-bikes",
+      "name": "Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-dreadnought-cc",
+      "name": "Dreadnought CC",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought CC",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-razorback-hb",
+      "name": "Razorback HB",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback HB",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-razorback-las",
+      "name": "Razorback LAS",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback LAS",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-2-x-predator-destructors",
+      "name": "2 x Predator Destructors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 x Predator Destructors",
+          "pts": 112.5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-2-x-predator-annihilators",
+      "name": "2 x Predator Annihilators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 x Predator Annihilators",
+          "pts": 137.5,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-snipers",
+      "name": "Snipers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snipers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-strike-cruiser",
+      "name": "Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strike Cruiser",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Barge",
+          "pts": 350,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-death-company-dreadnought",
+      "name": "Death Company Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Company Dreadnought",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-jump-packs",
+      "name": "Jump packs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Jump packs",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-plus-transport",
+      "name": "plus Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "plus Transport",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-dreadnought-ac",
+      "name": "Dreadnought AC",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dreadnought AC",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "titan-air",
+      "from": [
+        "512-thunderhawk",
+        "551-thunderbolts",
+        "552-marauders",
+        "553-warlord-titan",
+        "554-reaver-titan",
+        "555-warhound-pack",
+        "556-warhound-titan"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "509-spaceship"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "unknown-516"
+      ],
+      "max": 1,
+      "min": 1,
+      "perArmy": true
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "11-captain",
+        "12-chaplain",
+        "13-librarian",
+        "14-supreme-commander"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-assault",
+        "502-bike",
+        "504-land-raider",
+        "505-land-speeder",
+        "507-predators",
+        "508-scout",
+        "510-tactical",
+        "511-terminator",
+        "513-vindicator",
+        "514-whirlwind",
+        "515-baal-predators"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "12-chaplain"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "unknown-516"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "31-death-company-dreadnought"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "unknown-516"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "32-jump-packs"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "unknown-516"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "14-supreme-commander"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "15-vindicators"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "501-assault",
+        "504-land-raider",
+        "507-predators",
+        "510-tactical",
+        "511-terminator",
+        "515-baal-predators"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "17-bikes",
+        "16-attack-bikes"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "502-bike"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "18-dreadnought-cc",
+        "34-dreadnought-ac"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "510-tactical",
+        "511-terminator"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "19-hunter"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "504-land-raider",
+        "507-predators",
+        "510-tactical",
+        "513-vindicator",
+        "514-whirlwind",
+        "515-baal-predators"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "23-land-speeder",
+        "24-land-speeder-tornado",
+        "25-land-speeder-typhoon"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "505-land-speeder"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "26-2-x-predator-destructors",
+        "27-2-x-predator-annihilators"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "507-predators"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "21-razorback-hb",
+        "22-razorback-las"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "508-scout"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "29-strike-cruiser",
+        "30-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "509-spaceship"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "29-strike-cruiser",
+        "30-battle-barge"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "21-razorback-hb",
+        "22-razorback-las"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "510-tactical"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "20-land-raider"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "511-terminator"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "33-plus-transport",
+        "32-jump-packs"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "unknown-516"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "28-snipers"
+      ],
+      "max": 1
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

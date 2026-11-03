@@ -1,0 +1,613 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/vanaheim-epicuk",
+  "name": "Vanaheim 7th Air Cavalry",
+  "faction": "Astra Militarum",
+  "version": "Epic UK v090625",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\IG_vanaheim_EPICUK.json",
+    "by": "Kyussinchains",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "companies",
+      "name": "COMPANIES",
+      "formations": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "501-vulture-squadron",
+        "502-sentinel-squadron",
+        "503-storm-troopers"
+      ]
+    },
+    {
+      "id": "imperial-navy",
+      "name": "IMPERIAL NAVY",
+      "formations": [
+        "531-thunderbolt-fighters",
+        "532-lightning-flight",
+        "533-marauder-destroyers",
+        "534-marauder-bombers",
+        "504-orbital-support"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "521-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 375,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "26-fire-support-platoon-2-fire-support-1-valkyrie",
+        "27-mortar-platoon-2-mortars-1-valkyrie",
+        "28-infantry-platoon-2-troopers-1-valkyrie",
+        "29-infantry-platoon-4-troopers-2-valkyrie",
+        "33-sniper-platoon-2-snipers-1-valkyrie"
+      ],
+      "_unitsText": "Supreme Commander, 3 Vanaheim Troopers"
+    },
+    {
+      "id": "522-air-cavalry-company",
+      "name": "Air Cavalry Company",
+      "pts": 325,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "26-fire-support-platoon-2-fire-support-1-valkyrie",
+        "27-mortar-platoon-2-mortars-1-valkyrie",
+        "28-infantry-platoon-2-troopers-1-valkyrie",
+        "29-infantry-platoon-4-troopers-2-valkyrie",
+        "33-sniper-platoon-2-snipers-1-valkyrie"
+      ],
+      "_unitsText": "Commander, 3 Vanaheim Troopers"
+    },
+    {
+      "id": "501-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Vultures"
+    },
+    {
+      "id": "502-sentinel-squadron",
+      "name": "Sentinel Squadron",
+      "pts": 100,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "35-2-valkyries"
+      ]
+    },
+    {
+      "id": "503-storm-troopers",
+      "name": "Storm Troopers",
+      "pts": 350,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "8 Storm Troopers, 4 Valkyries"
+    },
+    {
+      "id": "531-thunderbolt-fighters",
+      "name": "Thunderbolt Fighters",
+      "pts": 0,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-thunderbolt"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "532-lightning-flight",
+      "name": "Lightning Flight",
+      "pts": 0,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [
+        "14-lightning-strike-fighter"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "533-marauder-destroyers",
+      "name": "Marauder Destroyers",
+      "pts": 275,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Destroyers"
+    },
+    {
+      "id": "534-marauder-bombers",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "504-orbital-support",
+      "name": "Orbital Support",
+      "pts": 150,
+      "tags": [
+        "imperial-navy"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "26-fire-support-platoon-2-fire-support-1-valkyrie",
+      "name": "Fire Support Platoon (2 Fire Support, 1 Valkyrie)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Support Platoon (2 Fire Support, 1 Valkyrie)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-mortar-platoon-2-mortars-1-valkyrie",
+      "name": "Mortar Platoon (2 Mortars, 1 Valkyrie)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mortar Platoon (2 Mortars, 1 Valkyrie)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-infantry-platoon-2-troopers-1-valkyrie",
+      "name": "Infantry Platoon (2 Troopers, 1 Valkyrie)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Infantry Platoon (2 Troopers, 1 Valkyrie)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-infantry-platoon-4-troopers-2-valkyrie",
+      "name": "Infantry Platoon (4 Troopers, 2 Valkyrie)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Infantry Platoon (4 Troopers, 2 Valkyrie)",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-2-vanaheim-troopers",
+      "name": "2 Vanaheim Troopers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Vanaheim Troopers",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-2-mortar-support",
+      "name": "2 Mortar Support",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Mortar Support",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-2-sniper-support",
+      "name": "2 Sniper Support",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Sniper Support",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-sniper-platoon-2-snipers-1-valkyrie",
+      "name": "Sniper Platoon (2 Snipers, 1 Valkyrie)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper Platoon (2 Snipers, 1 Valkyrie)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-valkyrie",
+      "name": "Valkyrie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Valkyrie",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-vendetta",
+      "name": "Vendetta",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vendetta",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-thunderbolt",
+      "name": "Thunderbolt",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderbolt",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-lightning-strike-fighter",
+      "name": "Lightning Strike Fighter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lightning Strike Fighter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-4-light-sentinels",
+      "name": "4 Light Sentinels",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Light Sentinels",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-2-light-sentinels-2-melta-sentinels",
+      "name": "2 Light Sentinels, 2 Melta Sentinels",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Light Sentinels, 2 Melta Sentinels",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-4-melta-sentinels",
+      "name": "4 Melta Sentinels",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Melta Sentinels",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-2-valkyries",
+      "name": "2 Valkyries",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Valkyries",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-lunar-class-cruiser",
+      "name": "Lunar Class Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lunar Class Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-emperor-class-battleship",
+      "name": "Emperor Class Battleship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Emperor Class Battleship",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "521-regimental-hq"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "504-orbital-support"
+      ],
+      "max": 1
+    },
+    {
+      "id": "war-engines-allies",
+      "from": [
+        "531-thunderbolt-fighters",
+        "532-lightning-flight",
+        "533-marauder-destroyers",
+        "534-marauder-bombers",
+        "504-orbital-support"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "501-vulture-squadron",
+        "502-sentinel-squadron",
+        "503-storm-troopers"
+      ],
+      "max": 2,
+      "forEach": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ],
+      "_name2": "Company"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "26-fire-support-platoon-2-fire-support-1-valkyrie"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "27-mortar-platoon-2-mortars-1-valkyrie"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "28-infantry-platoon-2-troopers-1-valkyrie",
+        "29-infantry-platoon-4-troopers-2-valkyrie"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "upgrades",
+      "from": [
+        "26-fire-support-platoon-2-fire-support-1-valkyrie",
+        "27-mortar-platoon-2-mortars-1-valkyrie",
+        "28-infantry-platoon-2-troopers-1-valkyrie",
+        "29-infantry-platoon-4-troopers-2-valkyrie",
+        "31-2-mortar-support",
+        "32-2-sniper-support",
+        "33-sniper-platoon-2-snipers-1-valkyrie"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "12-vendetta"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "11-valkyrie",
+        "12-vendetta"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "13-thunderbolt"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "531-thunderbolt-fighters"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "14-lightning-strike-fighter"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "532-lightning-flight"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "30-2-vanaheim-troopers",
+        "31-2-mortar-support",
+        "32-2-sniper-support"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "31-2-mortar-support",
+        "27-mortar-platoon-2-mortars-1-valkyrie"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "32-2-sniper-support",
+        "33-sniper-platoon-2-snipers-1-valkyrie"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "521-regimental-hq",
+        "522-air-cavalry-company"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "17-4-light-sentinels",
+        "18-2-light-sentinels-2-melta-sentinels",
+        "19-4-melta-sentinels"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-sentinel-squadron"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "35-2-valkyries"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "502-sentinel-squadron"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "34-lunar-class-cruiser",
+        "15-emperor-class-battleship"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "504-orbital-support"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

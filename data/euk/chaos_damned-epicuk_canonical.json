@@ -1,0 +1,965 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/damned-epicuk",
+  "name": "EpicUK Lost And The Damned",
+  "faction": "Chaos",
+  "version": "120623",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_damned_EPICUK.json",
+    "by": "Ian Wood, updated 2024_01_16",
+    "notes": [
+      "If a Coven is given Land Transporters or Daemon Assault Transports, then you must take exactly enough transports to transport all Infantry with Move 15 cm or less in the formation."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "cultist-covens",
+      "name": "CULTIST COVENS",
+      "formations": [
+        "501-coven-undivided",
+        "502-coven-khorne",
+        "503-coven-nurgle",
+        "504-coven-slaanesh",
+        "505-coven-tzeentch"
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Daemon Pool",
+      "formations": [
+        "537-daemon-pool"
+      ]
+    },
+    {
+      "id": "plague-zombies",
+      "name": "Plague Zombies",
+      "formations": [
+        "536-plague-zombie-infestation"
+      ]
+    },
+    {
+      "id": "undivided-support-covens",
+      "name": "Undivided Support Covens",
+      "formations": [
+        "560-hellfire-cannons",
+        "561-defilers",
+        "562-heldrake-flight",
+        "563-mutant-cavalry"
+      ]
+    },
+    {
+      "id": "khorne-support-covens",
+      "name": "Khorne Support Covens",
+      "formations": [
+        "551-lord-of-battles",
+        "552-daemon-assault-engines"
+      ]
+    },
+    {
+      "id": "nurgle-support-covens",
+      "name": "Nurgle Support Covens",
+      "formations": [
+        "553-plague-tower",
+        "554-contagion-towers"
+      ]
+    },
+    {
+      "id": "slaanesh-support-covens",
+      "name": "Slaanesh Support Covens",
+      "formations": [
+        "556-daemon-knights",
+        "555-daemon-scout-titans"
+      ]
+    },
+    {
+      "id": "tzeentch-support-covens",
+      "name": "Tzeentch Support Covens",
+      "formations": [
+        "559-silver-towers",
+        "557-firelords",
+        "558-doomwings"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-coven-undivided",
+      "name": "Coven (Undivided)",
+      "pts": 60,
+      "tags": [
+        "cultist-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants",
+        "31-icon-bearer",
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+        "33-chaos-spawn",
+        "34-chaos-hounds",
+        "35-chaos-altar",
+        "42-technical",
+        "32-land-transporter"
+      ]
+    },
+    {
+      "id": "502-coven-khorne",
+      "name": "Coven (Khorne)",
+      "pts": 60,
+      "tags": [
+        "cultist-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants",
+        "31-icon-bearer",
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+        "33-chaos-spawn",
+        "34-chaos-hounds",
+        "35-chaos-altar",
+        "42-technical",
+        "32-land-transporter",
+        "37-daemon-assault-transport"
+      ]
+    },
+    {
+      "id": "503-coven-nurgle",
+      "name": "Coven (Nurgle)",
+      "pts": 60,
+      "tags": [
+        "cultist-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants",
+        "31-icon-bearer",
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+        "33-chaos-spawn",
+        "34-chaos-hounds",
+        "35-chaos-altar",
+        "42-technical",
+        "32-land-transporter",
+        "57-plague-tower-uses-up-a-support-coven-slot"
+      ]
+    },
+    {
+      "id": "504-coven-slaanesh",
+      "name": "Coven (Slaanesh)",
+      "pts": 60,
+      "tags": [
+        "cultist-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants",
+        "31-icon-bearer",
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+        "33-chaos-spawn",
+        "34-chaos-hounds",
+        "35-chaos-altar",
+        "42-technical",
+        "32-land-transporter"
+      ]
+    },
+    {
+      "id": "505-coven-tzeentch",
+      "name": "Coven (Tzeentch)",
+      "pts": 60,
+      "tags": [
+        "cultist-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants",
+        "31-icon-bearer",
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+        "33-chaos-spawn",
+        "34-chaos-hounds",
+        "35-chaos-altar",
+        "42-technical",
+        "32-land-transporter"
+      ]
+    },
+    {
+      "id": "537-daemon-pool",
+      "name": "Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [],
+      "upgrades": [
+        "51-greater-daemon",
+        "52-lesser-daemon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "536-plague-zombie-infestation",
+      "name": "Plague Zombie Infestation",
+      "pts": 175,
+      "tags": [
+        "plague-zombies"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3+2D6 Plague Zombie Units"
+    },
+    {
+      "id": "560-hellfire-cannons",
+      "name": "Hellfire Cannons",
+      "pts": 200,
+      "tags": [
+        "undivided-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Hellfire Cannons"
+    },
+    {
+      "id": "561-defilers",
+      "name": "Defilers",
+      "pts": 250,
+      "tags": [
+        "undivided-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Defilers"
+    },
+    {
+      "id": "562-heldrake-flight",
+      "name": "Heldrake Flight",
+      "pts": 200,
+      "tags": [
+        "undivided-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Heldrakes"
+    },
+    {
+      "id": "563-mutant-cavalry",
+      "name": "Mutant Cavalry",
+      "pts": 175,
+      "tags": [
+        "undivided-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Mutant Cavalry"
+    },
+    {
+      "id": "551-lord-of-battles",
+      "name": "Lord of Battles",
+      "pts": 0,
+      "tags": [
+        "khorne-support-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "54-lord-of-battles"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "552-daemon-assault-engines",
+      "name": "Daemon Assault Engines",
+      "pts": 15,
+      "tags": [
+        "khorne-support-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "36-daemon-assault-engine"
+      ]
+    },
+    {
+      "id": "553-plague-tower",
+      "name": "Plague Tower",
+      "pts": 0,
+      "tags": [
+        "nurgle-support-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "56-plague-tower"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "554-contagion-towers",
+      "name": "Contagion Towers",
+      "pts": 325,
+      "tags": [
+        "nurgle-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Contagion Towers"
+    },
+    {
+      "id": "556-daemon-knights",
+      "name": "Daemon Knights",
+      "pts": 275,
+      "tags": [
+        "slaanesh-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Daemon Knights"
+    },
+    {
+      "id": "555-daemon-scout-titans",
+      "name": "Daemon Scout Titans",
+      "pts": 0,
+      "tags": [
+        "slaanesh-support-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "58-questor",
+        "59-subjugator"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "559-silver-towers",
+      "name": "Silver Towers",
+      "pts": 325,
+      "tags": [
+        "tzeentch-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Silver Towers"
+    },
+    {
+      "id": "557-firelords",
+      "name": "Firelords",
+      "pts": 50,
+      "tags": [
+        "tzeentch-support-covens"
+      ],
+      "units": [],
+      "upgrades": [
+        "61-firelord"
+      ]
+    },
+    {
+      "id": "558-doomwings",
+      "name": "Doomwings",
+      "pts": 150,
+      "tags": [
+        "tzeentch-support-covens"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Doomwings"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "54-lord-of-battles",
+      "name": "Lord of Battles",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lord of Battles",
+          "pts": 400,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-plague-tower",
+      "name": "Plague Tower",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plague Tower",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-plague-tower-uses-up-a-support-coven-slot",
+      "name": "Plague Tower (uses up a Support Coven slot)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Plague Tower (uses up a Support Coven slot)",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-firelord",
+      "name": "Firelord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Firelord",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "58-questor",
+      "name": "Questor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Questor",
+          "pts": 275,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "59-subjugator",
+      "name": "Subjugator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Subjugator",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-cultists",
+      "name": "Cultists",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cultists",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-mutants",
+      "name": "Mutants",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Mutants",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-big-mutants",
+      "name": "Big Mutants",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Big Mutants",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-demagogue",
+      "name": "Demagogue",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Demagogue",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-chaos-marine-aspiring-champion",
+      "name": "Chaos Marine Aspiring Champion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Marine Aspiring Champion",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-daemon-prince",
+      "name": "Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-demagogue-arch-heretic",
+      "name": "Demagogue (Arch Heretic)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Demagogue (Arch Heretic)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-aspiring-champion-arch-heretic",
+      "name": "Aspiring Champion (Arch Heretic)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aspiring Champion (Arch Heretic)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-daemon-prince-arch-heretic",
+      "name": "Daemon Prince (Arch Heretic)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Prince (Arch Heretic)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-icon-bearer",
+      "name": "Icon Bearer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Icon Bearer",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-land-transporter",
+      "name": "Land Transporter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Transporter",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-chaos-spawn",
+      "name": "Chaos Spawn",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Spawn",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-chaos-hounds",
+      "name": "Chaos Hounds",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Hounds",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-chaos-altar",
+      "name": "Chaos Altar",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaos Altar",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-daemon-assault-engine",
+      "name": "Daemon Assault Engine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Assault Engine",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-daemon-assault-transport",
+      "name": "Daemon Assault Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemon Assault Transport",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-technical",
+      "name": "Technical",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Technical",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool",
+      "name": "Daemonic Pact (add 1 Lesser Daemon to the Daemon Pool)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Daemonic Pact (add 1 Lesser Daemon to the Daemon Pool)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-greater-daemon",
+      "name": "Greater Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Greater Daemon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-lesser-daemon",
+      "name": "Lesser Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-covens",
+      "from": [
+        "551-lord-of-battles",
+        "552-daemon-assault-engines",
+        "553-plague-tower",
+        "554-contagion-towers",
+        "555-daemon-scout-titans",
+        "556-daemon-knights",
+        "557-firelords",
+        "558-doomwings",
+        "559-silver-towers",
+        "560-hellfire-cannons",
+        "561-defilers",
+        "562-heldrake-flight",
+        "563-mutant-cavalry"
+      ],
+      "max": 2,
+      "forEach": [
+        "501-coven-undivided",
+        "502-coven-khorne",
+        "503-coven-nurgle",
+        "504-coven-slaanesh",
+        "505-coven-tzeentch"
+      ],
+      "_name2": "Cultist Coven"
+    },
+    {
+      "id": "khorne-support",
+      "from": [
+        "551-lord-of-battles",
+        "552-daemon-assault-engines"
+      ],
+      "max": 2,
+      "forEach": [
+        "502-coven-khorne"
+      ],
+      "_name2": "Khorne Coven"
+    },
+    {
+      "id": "nurgle-support",
+      "from": [
+        "553-plague-tower",
+        "554-contagion-towers"
+      ],
+      "max": 2,
+      "forEach": [
+        "503-coven-nurgle"
+      ],
+      "_name2": "Nurgle Coven"
+    },
+    {
+      "id": "slaanesh-support",
+      "from": [
+        "555-daemon-scout-titans",
+        "556-daemon-knights"
+      ],
+      "max": 2,
+      "forEach": [
+        "504-coven-slaanesh"
+      ],
+      "_name2": "Slaanesh Coven"
+    },
+    {
+      "id": "tzeentch-support",
+      "from": [
+        "557-firelords",
+        "558-doomwings",
+        "559-silver-towers"
+      ],
+      "max": 2,
+      "forEach": [
+        "505-coven-tzeentch"
+      ],
+      "_name2": "Tzeentch Coven"
+    },
+    {
+      "id": "fc-5",
+      "from": [
+        "536-plague-zombie-infestation"
+      ],
+      "max": 2
+    },
+    {
+      "id": "fc-6",
+      "from": [
+        "537-daemon-pool"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "43-daemonic-pact-add-1-lesser-daemon-to-the-daemon-pool"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-coven-undivided",
+        "502-coven-khorne",
+        "503-coven-nurgle",
+        "504-coven-slaanesh",
+        "505-coven-tzeentch",
+        "563-mutant-cavalry"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "42-technical"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "41-41"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "13-big-mutants"
+      ],
+      "max": 6
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "35-chaos-altar"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "34-chaos-hounds"
+      ],
+      "max": 3
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "33-chaos-spawn"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "31-icon-bearer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "arch-heretic",
+      "from": [
+        "18-demagogue-arch-heretic",
+        "19-aspiring-champion-arch-heretic",
+        "20-daemon-prince-arch-heretic"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "15-demagogue",
+        "16-chaos-marine-aspiring-champion",
+        "17-daemon-prince",
+        "18-demagogue-arch-heretic",
+        "19-aspiring-champion-arch-heretic",
+        "20-daemon-prince-arch-heretic"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-coven-undivided",
+        "502-coven-khorne",
+        "503-coven-nurgle",
+        "504-coven-slaanesh",
+        "505-coven-tzeentch"
+      ]
+    },
+    {
+      "id": "cultists",
+      "from": [
+        "11-cultists",
+        "12-mutants",
+        "13-big-mutants"
+      ],
+      "max": 19,
+      "min": 11,
+      "appliesTo": [
+        "501-coven-undivided",
+        "502-coven-khorne",
+        "503-coven-nurgle",
+        "504-coven-slaanesh",
+        "505-coven-tzeentch"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "58-questor",
+        "59-subjugator"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "555-daemon-scout-titans"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "61-firelord"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "557-firelords"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "56-plague-tower"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "553-plague-tower"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "57-plague-tower-uses-up-a-support-coven-slot"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "503-coven-nurgle"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "36-daemon-assault-engine"
+      ],
+      "max": 6,
+      "min": 4,
+      "appliesTo": [
+        "552-daemon-assault-engines"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "54-lord-of-battles"
+      ],
+      "max": 2,
+      "min": 1,
+      "appliesTo": [
+        "551-lord-of-battles"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

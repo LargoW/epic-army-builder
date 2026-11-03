@@ -1,0 +1,908 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/alpha-legion",
+  "name": "Alpha XX Legion",
+  "faction": "Chaos",
+  "version": "v1.73 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\CHAOS_Alpha_Legion_NETEA.json",
+    "by": "MrDieAlot",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "alpha-legion-core-formations-one-alpha-legion-marines-formation-may-be-taken-per-cultist-coven-formation",
+      "name": "Alpha Legion Core formations / / One Alpha Legion Marines formation may be taken per Cultist Coven formation",
+      "formations": [
+        "511-cultist-coven",
+        "512-alpha-legion-marines"
+      ]
+    },
+    {
+      "id": "alpha-legion-elite-formatons-one-alpha-legion-elite-formation-may-be-taken-per-alpha-legion-core-formation",
+      "name": "Alpha Legion Elite Formatons / / One Alpha Legion Elite formation may be taken per Alpha Legion Core formation",
+      "formations": [
+        "521-alpha-legion-headhunter-kill-team",
+        "522-alpha-legion-destroyers",
+        "523-lernaean-terminators",
+        "524-alpha-legion-predators"
+      ]
+    },
+    {
+      "id": "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation",
+      "name": "Alpha Legion Cultist Formatons / / One Alpha Legion Cultist formation may be taken per Alpha Legion Core formation",
+      "formations": [
+        "531-cult-riders",
+        "532-cult-mutants",
+        "533-cult-macharius",
+        "534-cult-artillery",
+        "535-cult-hydras"
+      ]
+    },
+    {
+      "id": "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33",
+      "name": "Alpha Legion Support Formations / / One Alpha Legion Support formation may be taken per Alpha Legion Core formation / / Max 33%",
+      "formations": [
+        "541-strike-cruiser",
+        "543-thunderhawk",
+        "544-fire-raptors",
+        "545-lightning-interceptors",
+        "546-super-heavy-tank-company-glaive",
+        "547-super-heavy-tank-company-fellblade",
+        "548-super-heavy-tank-company-falchion"
+      ]
+    },
+    {
+      "id": "many-heads-of-the-hydra",
+      "name": "Many Heads of the Hydra",
+      "formations": [
+        "500-im-alpharius",
+        "501-lesser-daemon-pool"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "511-cultist-coven",
+      "name": "Cultist Coven",
+      "pts": 200,
+      "tags": [
+        "alpha-legion-core-formations-one-alpha-legion-marines-formation-may-be-taken-per-cultist-coven-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "39-3-rapiers",
+        "40-6-light-transports",
+        "44-9-light-transports",
+        "41-3-chaos-hounds",
+        "37-1-hydra"
+      ],
+      "_unitsText": "11 Alpha Legion Cultists"
+    },
+    {
+      "id": "512-alpha-legion-marines",
+      "name": "Alpha Legion Marines",
+      "pts": 0,
+      "tags": [
+        "alpha-legion-core-formations-one-alpha-legion-marines-formation-may-be-taken-per-cultist-coven-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-2-vindicators",
+        "34-4-land-raiders",
+        "35-3-land-raiders-and-1-land-raider-proteus",
+        "31-2-alpha-legion-dreadnoughts"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "521-alpha-legion-headhunter-kill-team",
+      "name": "Alpha Legion Headhunter Kill Team",
+      "pts": 225,
+      "tags": [
+        "alpha-legion-elite-formatons-one-alpha-legion-elite-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "31-2-alpha-legion-dreadnoughts"
+      ],
+      "_unitsText": "4 Headhunter units w. Transport"
+    },
+    {
+      "id": "522-alpha-legion-destroyers",
+      "name": "Alpha Legion Destroyers",
+      "pts": 225,
+      "tags": [
+        "alpha-legion-elite-formatons-one-alpha-legion-elite-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Alpha Legion Destroyers"
+    },
+    {
+      "id": "523-lernaean-terminators",
+      "name": "Lernaean Terminators",
+      "pts": 300,
+      "tags": [
+        "alpha-legion-elite-formatons-one-alpha-legion-elite-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "38-2-spartan-assault-tanks"
+      ],
+      "_unitsText": "4 Lernaean Terminators"
+    },
+    {
+      "id": "524-alpha-legion-predators",
+      "name": "Alpha Legion Predators",
+      "pts": 225,
+      "tags": [
+        "alpha-legion-elite-formatons-one-alpha-legion-elite-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-2-vindicators"
+      ],
+      "_unitsText": "4 Alpha Legion Predators"
+    },
+    {
+      "id": "531-cult-riders",
+      "name": "Cult Riders",
+      "pts": 175,
+      "tags": [
+        "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-3-chaos-hounds"
+      ],
+      "_unitsText": "6 Rough Riders, 1 Daemonic Icon"
+    },
+    {
+      "id": "532-cult-mutants",
+      "name": "Cult Mutants",
+      "pts": 150,
+      "tags": [
+        "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-3-chaos-hounds"
+      ],
+      "_unitsText": "6 Mutants, 2 Chaos Spawn, 1 Daemonic Icon"
+    },
+    {
+      "id": "533-cult-macharius",
+      "name": "Cult Macharius",
+      "pts": 300,
+      "tags": [
+        "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-3-chaos-hounds"
+      ],
+      "_unitsText": "3 Macharius"
+    },
+    {
+      "id": "534-cult-artillery",
+      "name": "Cult Artillery",
+      "pts": 150,
+      "tags": [
+        "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-3-chaos-hounds",
+        "37-1-hydra"
+      ],
+      "_unitsText": "4 Thudd Guns, 4 Light Transporters"
+    },
+    {
+      "id": "535-cult-hydras",
+      "name": "Cult Hydras",
+      "pts": 150,
+      "tags": [
+        "alpha-legion-cultist-formatons-one-alpha-legion-cultist-formation-may-be-taken-per-alpha-legion-core-formation"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-3-chaos-hounds"
+      ],
+      "_unitsText": "3 Hydras"
+    },
+    {
+      "id": "541-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 150,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Strike Cruiser"
+    },
+    {
+      "id": "543-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 250,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Thunderhawk"
+    },
+    {
+      "id": "544-fire-raptors",
+      "name": "Fire Raptors",
+      "pts": 250,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Fire Raptors"
+    },
+    {
+      "id": "545-lightning-interceptors",
+      "name": "Lightning Interceptors",
+      "pts": 150,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Lightning Interceptors"
+    },
+    {
+      "id": "546-super-heavy-tank-company-glaive",
+      "name": "Super Heavy Tank Company (Glaive)",
+      "pts": 50,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [
+        "50-glaive"
+      ]
+    },
+    {
+      "id": "547-super-heavy-tank-company-fellblade",
+      "name": "Super Heavy Tank Company (Fellblade)",
+      "pts": 50,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [
+        "51-fellblade"
+      ]
+    },
+    {
+      "id": "548-super-heavy-tank-company-falchion",
+      "name": "Super Heavy Tank Company (Falchion)",
+      "pts": 50,
+      "tags": [
+        "alpha-legion-support-formations-one-alpha-legion-support-formation-may-be-taken-per-alpha-legion-core-formation-max-33"
+      ],
+      "units": [],
+      "upgrades": [
+        "52-falchion"
+      ]
+    },
+    {
+      "id": "500-im-alpharius",
+      "name": "''I'm Alpharius!''",
+      "pts": 0,
+      "tags": [
+        "many-heads-of-the-hydra"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-army-benefits-from-the-im-alpharius-special-rule"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-lesser-daemon-pool",
+      "name": "Lesser Daemon Pool",
+      "pts": 0,
+      "tags": [
+        "many-heads-of-the-hydra"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-lesser-daemon"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-army-benefits-from-the-im-alpharius-special-rule",
+      "name": "Army benefits from the ''I'm Alpharius!'' special rule",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Army benefits from the ''I'm Alpharius!'' special rule",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-lesser-daemon",
+      "name": "Lesser Daemon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-alpha-legion-sorcerer",
+      "name": "Alpha Legion Sorcerer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Alpha Legion Sorcerer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-alpha-legion-lord",
+      "name": "Alpha Legion Lord",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Alpha Legion Lord",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-1-alpha-legion-cultist-w-daemonic-icon",
+      "name": "1 Alpha Legion Cultist w. Daemonic Icon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Alpha Legion Cultist w. Daemonic Icon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-1-alpha-legion-aspiring-champion-w-daemonic-icon",
+      "name": "1 Alpha Legion Aspiring Champion w. Daemonic Icon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Alpha Legion Aspiring Champion w. Daemonic Icon",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-1-alpha-legion-daemon-prince-w-daemonic-icon",
+      "name": "1 Alpha Legion Daemon Prince w. Daemonic Icon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Alpha Legion Daemon Prince w. Daemonic Icon",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-1-alpha-legion-daemon-prince-w-wings-daemonic-icon",
+      "name": "1 Alpha Legion Daemon Prince w. Wings, Daemonic Icon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Alpha Legion Daemon Prince w. Wings, Daemonic Icon",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-2-vindicators",
+      "name": "2 Vindicators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Vindicators",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-2-alpha-legion-dreadnoughts",
+      "name": "2 Alpha Legion Dreadnoughts",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Alpha Legion Dreadnoughts",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-8-alpha-legion-marines-w-transport",
+      "name": "8 Alpha Legion Marines w. Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Alpha Legion Marines w. Transport",
+          "pts": 325,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-4-alpha-legion-marines-4-alpha-legion-havocs-w-transport",
+      "name": "4 Alpha Legion Marines, 4 Alpha Legion Havocs w. Transport",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Alpha Legion Marines, 4 Alpha Legion Havocs w. Transport",
+          "pts": 375,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-4-land-raiders",
+      "name": "4 Land Raiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Land Raiders",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-3-land-raiders-and-1-land-raider-proteus",
+      "name": "3 Land Raiders and 1 Land Raider Proteus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Land Raiders and 1 Land Raider Proteus",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-1-hydra",
+      "name": "1 Hydra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Hydra",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-2-spartan-assault-tanks",
+      "name": "2 Spartan Assault Tanks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Spartan Assault Tanks",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-3-rapiers",
+      "name": "3 Rapiers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Rapiers",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-6-light-transports",
+      "name": "6 Light Transports",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Light Transports",
+          "pts": 30,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-3-chaos-hounds",
+      "name": "3 Chaos Hounds",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Chaos Hounds",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-9-light-transports",
+      "name": "9 Light Transports",
+      "variants": [
+        {
+          "id": "1",
+          "label": "9 Light Transports",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-glaive",
+      "name": "Glaive",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Glaive",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-fellblade",
+      "name": "Fellblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fellblade",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-falchion",
+      "name": "Falchion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Falchion",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "alpha-legion-marines-formation",
+      "from": [
+        "512-alpha-legion-marines"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-cultist-coven"
+      ],
+      "_name2": "Cultist Coven Formation"
+    },
+    {
+      "id": "alpha-legion-elite-formation",
+      "from": [
+        "521-alpha-legion-headhunter-kill-team",
+        "522-alpha-legion-destroyers",
+        "523-lernaean-terminators",
+        "524-alpha-legion-predators"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-cultist-coven",
+        "512-alpha-legion-marines"
+      ],
+      "_name2": "Alpha Legion Core Formation"
+    },
+    {
+      "id": "alpha-legion-cultist-formation",
+      "from": [
+        "531-cult-riders",
+        "532-cult-mutants",
+        "533-cult-macharius",
+        "534-cult-artillery",
+        "535-cult-hydras"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-cultist-coven",
+        "512-alpha-legion-marines"
+      ],
+      "_name2": "Alpha Legion Core Formation"
+    },
+    {
+      "id": "alpha-legion-support-formation",
+      "from": [
+        "541-strike-cruiser",
+        "543-thunderhawk",
+        "544-fire-raptors",
+        "545-lightning-interceptors",
+        "546-super-heavy-tank-company-glaive",
+        "547-super-heavy-tank-company-fellblade",
+        "548-super-heavy-tank-company-falchion"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-cultist-coven",
+        "512-alpha-legion-marines"
+      ],
+      "_name2": "Alpha Legion Core Formation"
+    },
+    {
+      "id": "alpha-legion-support-formations",
+      "from": [
+        "541-strike-cruiser",
+        "543-thunderhawk",
+        "544-fire-raptors",
+        "545-lightning-interceptors",
+        "546-super-heavy-tank-company-glaive",
+        "547-super-heavy-tank-company-fellblade",
+        "548-super-heavy-tank-company-falchion"
+      ],
+      "maxShare": [
+        34,
+        100
+      ],
+      "_note": "original maxPercent was 34"
+    },
+    {
+      "id": "fc-5",
+      "from": [
+        "500-im-alpharius"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-6",
+      "from": [
+        "501-lesser-daemon-pool"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-7",
+      "from": [
+        "541-strike-cruiser"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "23-1-alpha-legion-cultist-w-daemonic-icon",
+        "26-1-alpha-legion-aspiring-champion-w-daemonic-icon",
+        "27-1-alpha-legion-daemon-prince-w-daemonic-icon",
+        "28-1-alpha-legion-daemon-prince-w-wings-daemonic-icon"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "511-cultist-coven"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "32-8-alpha-legion-marines-w-transport",
+        "33-4-alpha-legion-marines-4-alpha-legion-havocs-w-transport"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "512-alpha-legion-marines"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "21-alpha-legion-lord",
+        "20-alpha-legion-sorcerer"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "512-alpha-legion-marines",
+        "521-alpha-legion-headhunter-kill-team",
+        "522-alpha-legion-destroyers",
+        "523-lernaean-terminators"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "30-2-vindicators"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "512-alpha-legion-marines",
+        "523-lernaean-terminators",
+        "524-alpha-legion-predators"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "34-4-land-raiders",
+        "35-3-land-raiders-and-1-land-raider-proteus"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "512-alpha-legion-marines"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "31-2-alpha-legion-dreadnoughts"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "512-alpha-legion-marines",
+        "521-alpha-legion-headhunter-kill-team"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "37-1-hydra"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "511-cultist-coven",
+        "534-cult-artillery"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "38-2-spartan-assault-tanks"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "523-lernaean-terminators"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "39-3-rapiers"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "511-cultist-coven"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "41-3-chaos-hounds"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "511-cultist-coven",
+        "531-cult-riders",
+        "532-cult-mutants",
+        "533-cult-macharius",
+        "534-cult-artillery",
+        "535-cult-hydras"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "40-6-light-transports",
+        "44-9-light-transports"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "511-cultist-coven"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "40-6-light-transports"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "532-cult-mutants",
+        "534-cult-artillery"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "50-glaive"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "546-super-heavy-tank-company-glaive"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "51-fellblade"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "547-super-heavy-tank-company-fellblade"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "52-falchion"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "548-super-heavy-tank-company-falchion"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "11-army-benefits-from-the-im-alpharius-special-rule",
+        "27-1-alpha-legion-daemon-prince-w-daemonic-icon",
+        "28-1-alpha-legion-daemon-prince-w-wings-daemonic-icon"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

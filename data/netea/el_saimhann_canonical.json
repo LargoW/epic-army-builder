@@ -1,0 +1,1022 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/el/saimhann",
+  "name": "Saim-Hann Craftworld",
+  "faction": "Eldar",
+  "version": "NetEA Tournament Pack (2023-01-03)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\EL_saimhann_NETEA.json",
+    "by": "Parintachin, last edit 2023-01-13 Abetillo",
+    "notes": [
+      "All infantry units in Aspect Warrior formations (apart from Swooping Hawks and Warp Spiders) must be transported in Wave Serpents and/or Falcons, or be entering play via a Webway Portal."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "individuals",
+      "name": "Individuals",
+      "formations": [
+        "100-wraithgate",
+        "110-avatar"
+      ]
+    },
+    {
+      "id": "warhosts",
+      "name": "Warhosts",
+      "formations": [
+        "120-shining-spears",
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ]
+    },
+    {
+      "id": "troupes",
+      "name": "Troupes",
+      "formations": [
+        "140-aspect-warrior",
+        "150-engine-of-vaul",
+        "160-guardian",
+        "161-guardian-wraithguard",
+        "170-hornet",
+        "180-night-spinner",
+        "190-scout-rider",
+        "200-swords-of-vaul"
+      ]
+    },
+    {
+      "id": "spacecraft-aircraft-titans",
+      "name": "Spacecraft, Aircraft & Titans",
+      "formations": [
+        "210-nightwings",
+        "220-phoenix-bombers",
+        "230-revenant-titans",
+        "240-spacecraft",
+        "250-vampire"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "100-wraithgate",
+      "name": "Wraithgate",
+      "pts": 50,
+      "tags": [
+        "individuals"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "110-avatar",
+      "name": "Avatar",
+      "pts": 0,
+      "tags": [
+        "individuals"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Avatar",
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "120-shining-spears",
+      "name": "Shining Spears",
+      "pts": 20,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [
+        "1-exarch"
+      ]
+    },
+    {
+      "id": "130-wild-rider-clan-6",
+      "name": "Wild Rider Clan (6)",
+      "pts": 20,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-farseer",
+        "3-wild-rider-chieftain"
+      ]
+    },
+    {
+      "id": "131-wild-rider-clan-9",
+      "name": "Wild Rider Clan (9)",
+      "pts": 5,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-farseer",
+        "3-wild-rider-chieftain"
+      ]
+    },
+    {
+      "id": "132-wild-rider-clan-12",
+      "name": "Wild Rider Clan (12)",
+      "pts": -10,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-farseer",
+        "3-wild-rider-chieftain"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "140-aspect-warrior",
+      "name": "Aspect Warrior",
+      "pts": 15,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "19-falcon",
+        "23-wave-serpent",
+        "1-exarch"
+      ]
+    },
+    {
+      "id": "150-engine-of-vaul",
+      "name": "Engine of Vaul",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "24-cobra",
+        "25-scorpion",
+        "26-storm-serpent"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "160-guardian",
+      "name": "Guardian",
+      "pts": 10,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-farseer"
+      ]
+    },
+    {
+      "id": "161-guardian-wraithguard",
+      "name": "Guardian (Wraithguard)",
+      "pts": 15,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "2-farseer"
+      ]
+    },
+    {
+      "id": "170-hornet",
+      "name": "Hornet",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-hornet"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "180-night-spinner",
+      "name": "Night Spinner",
+      "pts": 175,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Night Spinners"
+    },
+    {
+      "id": "190-scout-rider",
+      "name": "Scout Rider",
+      "pts": 20,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "200-swords-of-vaul",
+      "name": "Swords of Vaul",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "19-falcon",
+        "20-fire-prism",
+        "21-firestorm"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "210-nightwings",
+      "name": "Nightwings",
+      "pts": 300,
+      "tags": [
+        "spacecraft-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Nightwing Interceptors"
+    },
+    {
+      "id": "220-phoenix-bombers",
+      "name": "Phoenix Bombers",
+      "pts": 325,
+      "tags": [
+        "spacecraft-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Phoenix Bombers"
+    },
+    {
+      "id": "230-revenant-titans",
+      "name": "Revenant Titans",
+      "pts": 650,
+      "tags": [
+        "spacecraft-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Revenant Titans"
+    },
+    {
+      "id": "240-spacecraft",
+      "name": "Spacecraft",
+      "pts": 0,
+      "tags": [
+        "spacecraft-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "250-vampire",
+      "name": "Vampire",
+      "pts": 275,
+      "tags": [
+        "spacecraft-aircraft-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Vampire Hunter"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "1-exarch",
+      "name": "Exarch",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exarch",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "2-farseer",
+      "name": "Farseer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Farseer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "3-wild-rider-chieftain",
+      "name": "Wild Rider Chieftain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wild Rider Chieftain",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "4-dark-reapers",
+      "name": "Dark Reapers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Reapers",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "5-dire-avengers",
+      "name": "Dire Avengers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dire Avengers",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-fire-dragons",
+      "name": "Fire Dragons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Dragons",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-guardians",
+      "name": "Guardians",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guardians",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-heavy-weapon-platform",
+      "name": "Heavy Weapon Platform",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Heavy Weapon Platform",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "9-howling-banshees",
+      "name": "Howling Banshees",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Howling Banshees",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "10-saim-hann-jetbikes",
+      "name": "Saim-Hann Jetbikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Saim-Hann Jetbikes",
+          "pts": 30,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-shining-spears",
+      "name": "Shining Spears",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shining Spears",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-striking-scorpions",
+      "name": "Striking Scorpions",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Striking Scorpions",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-swooping-hawks",
+      "name": "Swooping Hawks",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swooping Hawks",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-warp-spiders",
+      "name": "Warp Spiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warp Spiders",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-wild-riders",
+      "name": "Wild Riders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wild Riders",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-wraithguard",
+      "name": "Wraithguard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wraithguard",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-hornet",
+      "name": "Hornet",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hornet",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-saim-hann-vyper",
+      "name": "Saim-Hann Vyper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Saim-Hann Vyper",
+          "pts": 30,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-falcon",
+      "name": "Falcon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Falcon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-fire-prism",
+      "name": "Fire Prism",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Prism",
+          "pts": 65,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-firestorm",
+      "name": "Firestorm",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Firestorm",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-night-spinner",
+      "name": "Night Spinner",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Night Spinner",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-wave-serpent",
+      "name": "Wave Serpent",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wave Serpent",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-cobra",
+      "name": "Cobra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cobra",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-scorpion",
+      "name": "Scorpion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scorpion",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-storm-serpent",
+      "name": "Storm Serpent",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Storm Serpent",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-dragonship",
+      "name": "Dragonship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dragonship",
+          "pts": 300,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-wraithship",
+      "name": "Wraithship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wraithship",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "100-wraithgate"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "110-avatar"
+      ],
+      "max": 1
+    },
+    {
+      "id": "troupes",
+      "from": [
+        "140-aspect-warrior",
+        "150-engine-of-vaul",
+        "160-guardian",
+        "170-hornet",
+        "180-night-spinner",
+        "190-scout-rider",
+        "200-swords-of-vaul"
+      ],
+      "max": 2,
+      "forEach": [
+        "120-shining-spears",
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ],
+      "_name2": "Warhost"
+    },
+    {
+      "id": "scout-rider",
+      "from": [
+        "190-scout-rider"
+      ],
+      "max": 1,
+      "forEach": [
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ],
+      "_name2": "Wild Rider Clan"
+    },
+    {
+      "id": "shining-spears",
+      "from": [
+        "120-shining-spears"
+      ],
+      "max": 1,
+      "forEach": [
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ],
+      "_name2": "Wild Rider Clan"
+    },
+    {
+      "id": "spacecraft-aircraft-titans",
+      "from": [
+        "210-nightwings",
+        "220-phoenix-bombers",
+        "230-revenant-titans",
+        "240-spacecraft",
+        "250-vampire"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "fc-6",
+      "from": [
+        "240-spacecraft"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "3-wild-rider-chieftain"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "1-exarch"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "120-shining-spears"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "11-shining-spears"
+      ],
+      "max": 8,
+      "min": 8,
+      "appliesTo": [
+        "120-shining-spears"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "2-farseer"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "3-wild-rider-chieftain"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "15-wild-riders"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "130-wild-rider-clan-6",
+        "131-wild-rider-clan-9",
+        "132-wild-rider-clan-12"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "10-saim-hann-jetbikes",
+        "18-saim-hann-vyper"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "130-wild-rider-clan-6"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "10-saim-hann-jetbikes",
+        "18-saim-hann-vyper"
+      ],
+      "max": 9,
+      "min": 9,
+      "appliesTo": [
+        "131-wild-rider-clan-9"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "10-saim-hann-jetbikes",
+        "18-saim-hann-vyper"
+      ],
+      "max": 12,
+      "min": 12,
+      "appliesTo": [
+        "132-wild-rider-clan-12"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "1-exarch"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "140-aspect-warrior"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "4-dark-reapers",
+        "5-dire-avengers",
+        "6-fire-dragons",
+        "9-howling-banshees",
+        "12-striking-scorpions",
+        "13-swooping-hawks",
+        "14-warp-spiders"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "140-aspect-warrior"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "24-cobra",
+        "25-scorpion",
+        "26-storm-serpent"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "150-engine-of-vaul"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "7-guardians",
+        "8-heavy-weapon-platform"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "160-guardian"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "8-heavy-weapon-platform"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "160-guardian"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "23-wave-serpent"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "160-guardian"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "2-farseer"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "160-guardian",
+        "161-guardian-wraithguard"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "7-guardians",
+        "8-heavy-weapon-platform"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "161-guardian-wraithguard"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "8-heavy-weapon-platform"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "161-guardian-wraithguard"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "16-wraithguard"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "161-guardian-wraithguard"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "23-wave-serpent"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "161-guardian-wraithguard"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "17-hornet"
+      ],
+      "max": 5,
+      "min": 4,
+      "appliesTo": [
+        "170-hornet"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "10-saim-hann-jetbikes",
+        "18-saim-hann-vyper"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "190-scout-rider"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "18-saim-hann-vyper"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "190-scout-rider"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "19-falcon",
+        "20-fire-prism",
+        "21-firestorm"
+      ],
+      "max": 6,
+      "min": 5,
+      "appliesTo": [
+        "200-swords-of-vaul"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "21-firestorm"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "200-swords-of-vaul"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "28-wraithship",
+        "27-dragonship"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "240-spacecraft"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

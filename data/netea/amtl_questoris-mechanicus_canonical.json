@@ -1,0 +1,977 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/amtl/questoris-mechanicus",
+  "name": "Questoris Mechanicus",
+  "faction": "Adeptus Mechanicus",
+  "version": "v1.53 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\AMTL_Questoris_Mechanicus_NETEA.json",
+    "by": "MrDieAlot",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "questoris-lances",
+      "name": "Questoris Lances",
+      "formations": [
+        "500-questoris"
+      ]
+    },
+    {
+      "id": "cerastus-lances-max-1-cerastus-lance-per-questoris-lance",
+      "name": "Cerastus Lances / / Max 1 Cerastus Lance per Questoris Lance",
+      "formations": [
+        "501-cerastus"
+      ]
+    },
+    {
+      "id": "arminger-lances-max-1-arminger-lance-per-questoris-or-cerastus-lance",
+      "name": "Arminger Lances / / Max 1 Arminger Lance per Questoris or Cerastus Lance",
+      "formations": [
+        "502-arminger"
+      ]
+    },
+    {
+      "id": "relic-lances-max-1-of-each-relic-lance-per-army",
+      "name": "Relic Lances / / Max 1 of each Relic Lance per Army",
+      "formations": [
+        "503-questoris-reliquae",
+        "504-acastus-reliquae"
+      ]
+    },
+    {
+      "id": "allies-max-1-per-questoris-lance-max-33",
+      "name": "Allies / / Max 1 per Questoris Lance / / Max 33%",
+      "formations": [
+        "510-skitarii",
+        "512-dune-crawlers",
+        "514-thunderbolt-squadron",
+        "515-maruder-squadron",
+        "520-warhound-scout-titan-pack",
+        "521-legio-metalica-reaver-titan",
+        "522-legio-metalica-warlord-titan"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-questoris",
+      "name": "Questoris",
+      "pts": 75,
+      "tags": [
+        "questoris-lances"
+      ],
+      "units": [],
+      "upgrades": [
+        "100-knight-paladin-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "101-knight-errant-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "102-knight-crusader-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "103-knight-gallant-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "104-knight-warden-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "105-knight-preceptor-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "140-knight-paladin-w-seneschal-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "141-knight-errant-w-seneschal-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "142-knight-crusader-w-seneschal-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "143-knight-gallant-w-seneschal-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "144-knight-warden-w-seneschal-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "149-knight-preceptor-w-seneschal-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "145-knight-valiant-w-seneschal-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "146-knight-castellan-w-seneschal-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+        "150-knight-paladin-w-baron-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "151-knight-errant-w-baron-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "152-knight-crusader-w-baron-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "153-knight-gallant-w-baron-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "154-knight-warden-w-baron-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "159-knight-preceptor-w-baron-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "155-knight-valiant-w-baron-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "156-knight-castellan-w-baron-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns"
+      ]
+    },
+    {
+      "id": "501-cerastus",
+      "name": "Cerastus",
+      "pts": 300,
+      "tags": [
+        "cerastus-lances-max-1-cerastus-lance-per-questoris-lance"
+      ],
+      "units": [],
+      "upgrades": [
+        "113-cerastus-knight-lancer-w-seneschal-cerastrus-shock-lance-ion-gauntlet-shield",
+        "114-cerastus-knight-castigator-w-seneschal-castigator-cannon-tempest-warblade",
+        "115-cerastus-knight-acheron-w-seneschal-flame-cannon-reaper-chainfist",
+        "116-cerastus-knight-atrapos-w-seneschal-atrapos-lascutter-graviton-singularity-cannon-ionic-shield"
+      ]
+    },
+    {
+      "id": "502-arminger",
+      "name": "Arminger",
+      "pts": 150,
+      "tags": [
+        "arminger-lances-max-1-arminger-lance-per-questoris-or-cerastus-lance"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "503-questoris-reliquae",
+      "name": "Questoris Reliquae",
+      "pts": 100,
+      "tags": [
+        "relic-lances-max-1-of-each-relic-lance-per-army"
+      ],
+      "units": [],
+      "upgrades": [
+        "160-questoris-relic-knight-styrix-volkite-chieroville-rad-cleanser-siege-claw",
+        "161-questoris-relic-knight-magaera-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+        "165-questoris-relic-knight-styrix-w-seneschal-volkite-chieroville-rad-cleanser-siege-claw",
+        "166-questoris-relic-knight-magaera-w-seneschal-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+        "163-acastus-knight-mechanicum-w-seneschal-2-acastus-conversion-beamers-rad-cleanser-ionic-shield",
+        "164-acastus-knight-porphyrion-w-seneschal-2-magna-lascannons-2-autocannons-helios-defense-missiles"
+      ]
+    },
+    {
+      "id": "504-acastus-reliquae",
+      "name": "Acastus Reliquae",
+      "pts": 75,
+      "tags": [
+        "relic-lances-max-1-of-each-relic-lance-per-army"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "510-skitarii",
+      "name": "Skitarii",
+      "pts": 325,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Secutors, 8 Hypaspists, 1 Ordinatus Minorus-Corvus"
+    },
+    {
+      "id": "512-dune-crawlers",
+      "name": "Dune Crawlers",
+      "pts": 200,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "514-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 175,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolts"
+    },
+    {
+      "id": "515-maruder-squadron",
+      "name": "Maruder Squadron",
+      "pts": 225,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Maruder Bombers"
+    },
+    {
+      "id": "520-warhound-scout-titan-pack",
+      "name": "Warhound Scout Titan Pack",
+      "pts": 500,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Titans"
+    },
+    {
+      "id": "521-legio-metalica-reaver-titan",
+      "name": "Legio Metalica Reaver Titan",
+      "pts": 600,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Legio Metalica Reaver Titan"
+    },
+    {
+      "id": "522-legio-metalica-warlord-titan",
+      "name": "Legio Metalica Warlord Titan",
+      "pts": 775,
+      "tags": [
+        "allies-max-1-per-questoris-lance-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Legio Metalica Warlord"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "100-knight-paladin-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+      "name": "Knight-Paladin (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Paladin (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "101-knight-errant-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Errant (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Errant (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "102-knight-crusader-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+      "name": "Knight-Crusader (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Crusader (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-knight-gallant-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+      "name": "Knight-Gallant (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Gallant (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "104-knight-warden-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+      "name": "Knight-Warden (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Warden (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "105-knight-preceptor-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Preceptor (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Preceptor (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "110-cerastus-knight-lancer-cerastus-shock-lance-ion-gauntlet-shield",
+      "name": "Cerastus Knight-Lancer (Cerastus Shock Lance, Ion Gauntlet Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Lancer (Cerastus Shock Lance, Ion Gauntlet Shield)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "111-cerastus-knight-castigator-castigator-cannon-tempest-warblade",
+      "name": "Cerastus Knight-Castigator (Castigator Cannon, Tempest Warblade)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Castigator (Castigator Cannon, Tempest Warblade)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "112-cerastus-knight-acheron-flame-cannon-reaper-chainfist",
+      "name": "Cerastus Knight-Acheron (Flame Cannon, Reaper Chainfist)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Acheron (Flame Cannon, Reaper Chainfist)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "113-cerastus-knight-lancer-w-seneschal-cerastrus-shock-lance-ion-gauntlet-shield",
+      "name": "Cerastus Knight-Lancer w. Seneschal (Cerastrus Shock Lance, Ion Gauntlet Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Lancer w. Seneschal (Cerastrus Shock Lance, Ion Gauntlet Shield)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "114-cerastus-knight-castigator-w-seneschal-castigator-cannon-tempest-warblade",
+      "name": "Cerastus Knight-Castigator w. Seneschal (Castigator Cannon, Tempest Warblade)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Castigator w. Seneschal (Castigator Cannon, Tempest Warblade)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "115-cerastus-knight-acheron-w-seneschal-flame-cannon-reaper-chainfist",
+      "name": "Cerastus Knight-Acheron w. Seneschal (Flame Cannon, Reaper Chainfist)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Acheron w. Seneschal (Flame Cannon, Reaper Chainfist)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "116-cerastus-knight-atrapos-w-seneschal-atrapos-lascutter-graviton-singularity-cannon-ionic-shield",
+      "name": "Cerastus Knight-Atrapos w. Seneschal (Atrapos Lascutter, Graviton Singularity Cannon, Ionic Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cerastus Knight-Atrapos w. Seneschal (Atrapos Lascutter, Graviton Singularity Cannon, Ionic Shield)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "120-4-knight-warglaive-thermal-spear-reaper-chain-cleaver",
+      "name": "4 Knight-Warglaive (Thermal Spear, Reaper Chain-Cleaver)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Knight-Warglaive (Thermal Spear, Reaper Chain-Cleaver)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "121-4-knight-helverin-2-autocannons",
+      "name": "4 Knight-Helverin (2 Autocannons)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Knight-Helverin (2 Autocannons)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "140-knight-paladin-w-seneschal-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+      "name": "Knight-Paladin w. Seneschal (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Paladin w. Seneschal (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "141-knight-errant-w-seneschal-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Errant w. Seneschal (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Errant w. Seneschal (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "142-knight-crusader-w-seneschal-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+      "name": "Knight-Crusader w. Seneschal (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Crusader w. Seneschal (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "143-knight-gallant-w-seneschal-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+      "name": "Knight-Gallant w. Seneschal (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Gallant w. Seneschal (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "144-knight-warden-w-seneschal-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+      "name": "Knight-Warden w. Seneschal (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Warden w. Seneschal (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "145-knight-valiant-w-seneschal-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+      "name": "Knight-Valiant w. Seneschal (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Valiant w. Seneschal (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "146-knight-castellan-w-seneschal-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+      "name": "Knight-Castellan w. Seneschal (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Castellan w. Seneschal (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "149-knight-preceptor-w-seneschal-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Preceptor w Seneschal (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Preceptor w Seneschal (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "150-knight-paladin-w-baron-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+      "name": "Knight-Paladin w. Baron (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Paladin w. Baron (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "151-knight-errant-w-baron-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Errant w. Baron (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Errant w. Baron (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "152-knight-crusader-w-baron-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+      "name": "Knight-Crusader w. Baron (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Crusader w. Baron (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "153-knight-gallant-w-baron-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+      "name": "Knight-Gallant w. Baron (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Gallant w. Baron (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "154-knight-warden-w-baron-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+      "name": "Knight-Warden w. Baron (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Warden w. Baron (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "155-knight-valiant-w-baron-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+      "name": "Knight-Valiant w. Baron (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Valiant w. Baron (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "156-knight-castellan-w-baron-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+      "name": "Knight-Castellan w. Baron  (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Castellan w. Baron  (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "159-knight-preceptor-w-baron-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+      "name": "Knight-Preceptor w Baron (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight-Preceptor w Baron (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "160-questoris-relic-knight-styrix-volkite-chieroville-rad-cleanser-siege-claw",
+      "name": "Questoris Relic Knight-Styrix (Volkite Chieroville, Rad Cleanser, Siege Claw)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Questoris Relic Knight-Styrix (Volkite Chieroville, Rad Cleanser, Siege Claw)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "161-questoris-relic-knight-magaera-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+      "name": "Questoris Relic Knight-Magaera (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Questoris Relic Knight-Magaera (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "163-acastus-knight-mechanicum-w-seneschal-2-acastus-conversion-beamers-rad-cleanser-ionic-shield",
+      "name": "Acastus Knight-Mechanicum w. Seneschal (2 Acastus Conversion Beamers, Rad Cleanser, Ionic Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Acastus Knight-Mechanicum w. Seneschal (2 Acastus Conversion Beamers, Rad Cleanser, Ionic Shield)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "164-acastus-knight-porphyrion-w-seneschal-2-magna-lascannons-2-autocannons-helios-defense-missiles",
+      "name": "Acastus Knight-Porphyrion w. Seneschal (2 Magna Lascannons, 2 Autocannons, Helios Defense Missiles)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Acastus Knight-Porphyrion w. Seneschal (2 Magna Lascannons, 2 Autocannons, Helios Defense Missiles)",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "165-questoris-relic-knight-styrix-w-seneschal-volkite-chieroville-rad-cleanser-siege-claw",
+      "name": "Questoris Relic Knight-Styrix w. Seneschal (Volkite Chieroville, Rad Cleanser, Siege Claw)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Questoris Relic Knight-Styrix w. Seneschal (Volkite Chieroville, Rad Cleanser, Siege Claw)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "166-questoris-relic-knight-magaera-w-seneschal-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+      "name": "Questoris Relic Knight-Magaera w. Seneschal (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Questoris Relic Knight-Magaera w. Seneschal (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "170-onager-dune-crawler-with-eradication-beamer",
+      "name": "Onager Dune Crawler with Eradication Beamer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Onager Dune Crawler with Eradication Beamer",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "171-onager-dune-crawler-with-icarus-array",
+      "name": "Onager Dune Crawler with Icarus Array",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Onager Dune Crawler with Icarus Array",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "501-cerastus"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-questoris"
+      ],
+      "_name2": "Questoris Lance"
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "502-arminger"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-questoris",
+        "501-cerastus"
+      ],
+      "_name2": "Questoris or Cerastus Lance"
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "510-skitarii",
+        "512-dune-crawlers",
+        "unknown-513",
+        "514-thunderbolt-squadron",
+        "515-maruder-squadron",
+        "520-warhound-scout-titan-pack",
+        "521-legio-metalica-reaver-titan",
+        "522-legio-metalica-warlord-titan",
+        "unknown-530"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-questoris"
+      ],
+      "_name2": "Questoris Lance"
+    },
+    {
+      "id": "mechanicus-allies",
+      "from": [
+        "510-skitarii",
+        "512-dune-crawlers",
+        "unknown-513",
+        "514-thunderbolt-squadron",
+        "515-maruder-squadron",
+        "520-warhound-scout-titan-pack",
+        "521-legio-metalica-reaver-titan",
+        "522-legio-metalica-warlord-titan",
+        "unknown-530"
+      ],
+      "maxShare": [
+        34,
+        100
+      ],
+      "_note": "original maxPercent was 34"
+    },
+    {
+      "id": "fc-4",
+      "from": [
+        "503-questoris-reliquae"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-5",
+      "from": [
+        "504-acastus-reliquae"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-6",
+      "from": [
+        "unknown-530"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "140-knight-paladin-w-seneschal-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "141-knight-errant-w-seneschal-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "142-knight-crusader-w-seneschal-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "143-knight-gallant-w-seneschal-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "144-knight-warden-w-seneschal-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "149-knight-preceptor-w-seneschal-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "145-knight-valiant-w-seneschal-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "146-knight-castellan-w-seneschal-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+        "150-knight-paladin-w-baron-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "151-knight-errant-w-baron-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "152-knight-crusader-w-baron-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "153-knight-gallant-w-baron-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "154-knight-warden-w-baron-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "159-knight-preceptor-w-baron-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "155-knight-valiant-w-baron-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "156-knight-castellan-w-baron-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "500-questoris"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "100-knight-paladin-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "101-knight-errant-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "102-knight-crusader-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "103-knight-gallant-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "104-knight-warden-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "105-knight-preceptor-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "140-knight-paladin-w-seneschal-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "141-knight-errant-w-seneschal-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "142-knight-crusader-w-seneschal-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "143-knight-gallant-w-seneschal-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "144-knight-warden-w-seneschal-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "149-knight-preceptor-w-seneschal-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "145-knight-valiant-w-seneschal-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "146-knight-castellan-w-seneschal-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+        "150-knight-paladin-w-baron-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "151-knight-errant-w-baron-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "152-knight-crusader-w-baron-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "153-knight-gallant-w-baron-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "154-knight-warden-w-baron-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "159-knight-preceptor-w-baron-las-impulsor-hvy-stubber-thunderstrike-gauntlet",
+        "155-knight-valiant-w-baron-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "156-knight-castellan-w-baron-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns"
+      ],
+      "max": 5,
+      "min": 3,
+      "appliesTo": [
+        "500-questoris"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "150-knight-paladin-w-baron-questoris-battle-cannon-2-hvy-stubbers-questoris-shock-lance-reaper-chainsword",
+        "151-knight-errant-w-baron-thermal-cannon-hvy-stubber-thunderstrike-gauntlet",
+        "152-knight-crusader-w-baron-questoris-battle-cannon-gatling-cannon-2-hvy-stubbers-icarus-autocannon",
+        "153-knight-gallant-w-baron-icarus-autocannon-hvy-stubber-questoris-shock-lance-thunderstrike-gauntlet-reaper-chainsword",
+        "154-knight-warden-w-baron-gatling-cannon-ironstorm-missiles-hvy-stubber-reaper-chainsword",
+        "155-knight-valiant-w-baron-conflagration-c-thundercoil-h-siegebreaker-c-4-shieldbreaker-m-melta-guns-ion-a",
+        "156-knight-castellan-w-baron-vulcano-lance-plasma-decimator-2-siegebreaker-c-2-shieldbreaker-m-melta-guns",
+        "157-157",
+        "158-158",
+        "159-knight-preceptor-w-baron-las-impulsor-hvy-stubber-thunderstrike-gauntlet"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "110-cerastus-knight-lancer-cerastus-shock-lance-ion-gauntlet-shield",
+        "111-cerastus-knight-castigator-castigator-cannon-tempest-warblade",
+        "112-cerastus-knight-acheron-flame-cannon-reaper-chainfist"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "501-cerastus"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "113-cerastus-knight-lancer-w-seneschal-cerastrus-shock-lance-ion-gauntlet-shield",
+        "114-cerastus-knight-castigator-w-seneschal-castigator-cannon-tempest-warblade",
+        "115-cerastus-knight-acheron-w-seneschal-flame-cannon-reaper-chainfist",
+        "116-cerastus-knight-atrapos-w-seneschal-atrapos-lascutter-graviton-singularity-cannon-ionic-shield"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "501-cerastus"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "113-cerastus-knight-lancer-w-seneschal-cerastrus-shock-lance-ion-gauntlet-shield",
+        "114-cerastus-knight-castigator-w-seneschal-castigator-cannon-tempest-warblade",
+        "115-cerastus-knight-acheron-w-seneschal-flame-cannon-reaper-chainfist",
+        "116-cerastus-knight-atrapos-w-seneschal-atrapos-lascutter-graviton-singularity-cannon-ionic-shield"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-cerastus"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "116-cerastus-knight-atrapos-w-seneschal-atrapos-lascutter-graviton-singularity-cannon-ionic-shield"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "120-4-knight-warglaive-thermal-spear-reaper-chain-cleaver",
+        "121-4-knight-helverin-2-autocannons"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "502-arminger"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "160-questoris-relic-knight-styrix-volkite-chieroville-rad-cleanser-siege-claw",
+        "161-questoris-relic-knight-magaera-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+        "165-questoris-relic-knight-styrix-w-seneschal-volkite-chieroville-rad-cleanser-siege-claw",
+        "166-questoris-relic-knight-magaera-w-seneschal-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+        "163-acastus-knight-mechanicum-w-seneschal-2-acastus-conversion-beamers-rad-cleanser-ionic-shield",
+        "164-acastus-knight-porphyrion-w-seneschal-2-magna-lascannons-2-autocannons-helios-defense-missiles"
+      ],
+      "max": 3,
+      "min": 3,
+      "appliesTo": [
+        "503-questoris-reliquae"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "165-questoris-relic-knight-styrix-w-seneschal-volkite-chieroville-rad-cleanser-siege-claw",
+        "166-questoris-relic-knight-magaera-w-seneschal-lightning-c-rad-cleanser-siege-claw-ionic-shield",
+        "163-acastus-knight-mechanicum-w-seneschal-2-acastus-conversion-beamers-rad-cleanser-ionic-shield",
+        "164-acastus-knight-porphyrion-w-seneschal-2-magna-lascannons-2-autocannons-helios-defense-missiles"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "503-questoris-reliquae"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "170-onager-dune-crawler-with-eradication-beamer",
+        "171-onager-dune-crawler-with-icarus-array"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "512-dune-crawlers"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "164-acastus-knight-porphyrion-w-seneschal-2-magna-lascannons-2-autocannons-helios-defense-missiles",
+        "163-acastus-knight-mechanicum-w-seneschal-2-acastus-conversion-beamers-rad-cleanser-ionic-shield"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "504-acastus-reliquae"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

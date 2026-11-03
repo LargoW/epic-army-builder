@@ -1,0 +1,1127 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/xenos/nids-epicuk",
+  "name": "Tyranids",
+  "faction": "Xenos",
+  "version": "310325",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\XENOS_nids_EPICUK.json",
+    "by": "Xevious Red",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "core",
+      "name": "CORE",
+      "formations": [
+        "511-normal-assault-swarm",
+        "512-big-assault-swarm",
+        "515-hybrid-swarm",
+        "516-big-hybrid-swarm",
+        "521-dominatrix-swarm",
+        "513-brute-swarm",
+        "514-big-brute-swarm"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "522-genestealer-swarm",
+        "535-lictor-swarm",
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "rare-formations",
+      "name": "RARE FORMATIONS",
+      "formations": [
+        "531-spore-mine-swarm",
+        "532-harassment-swarm",
+        "533-heirophant-bio-titan",
+        "534-hydraphant-bio-titan",
+        "536-subterranean-swarm"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "511-normal-assault-swarm",
+      "name": "Normal Assault Swarm",
+      "pts": 105,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-hive-tyrant",
+        "13-termagant",
+        "15-biovore",
+        "16-raveners",
+        "30-gargoyle",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "24-hierodule"
+      ]
+    },
+    {
+      "id": "512-big-assault-swarm",
+      "name": "Big Assault Swarm",
+      "pts": 160,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "12-hive-tyrant",
+        "13-termagant",
+        "30-gargoyle",
+        "15-biovore",
+        "16-raveners",
+        "30-gargoyle",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "24-hierodule"
+      ]
+    },
+    {
+      "id": "515-hybrid-swarm",
+      "name": "Hybrid Swarm",
+      "pts": 60,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "15-biovore",
+        "16-raveners",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "30-gargoyle"
+      ]
+    },
+    {
+      "id": "516-big-hybrid-swarm",
+      "name": "Big Hybrid Swarm",
+      "pts": 70,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "15-biovore",
+        "16-raveners",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "30-gargoyle"
+      ]
+    },
+    {
+      "id": "521-dominatrix-swarm",
+      "name": "Dominatrix Swarm",
+      "pts": 500,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "16-raveners",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "23-dactylis",
+        "24-hierodule"
+      ],
+      "_unitsText": "1 Dominatrix"
+    },
+    {
+      "id": "513-brute-swarm",
+      "name": "Brute Swarm",
+      "pts": 70,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "15-biovore",
+        "16-raveners",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "23-dactylis",
+        "24-hierodule"
+      ],
+      "_unitsText": "1 Hive Tyrant"
+    },
+    {
+      "id": "514-big-brute-swarm",
+      "name": "Big Brute Swarm",
+      "pts": 90,
+      "tags": [
+        "core"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "15-biovore",
+        "16-raveners",
+        "18-carnifex",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines",
+        "23-dactylis",
+        "24-hierodule"
+      ],
+      "_unitsText": "2 Hive Tyrants"
+    },
+    {
+      "id": "522-genestealer-swarm",
+      "name": "Genestealer Swarm",
+      "pts": 0,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "25-genestealer"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "535-lictor-swarm",
+      "name": "Lictor Swarm",
+      "pts": 25,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "27-lictor"
+      ]
+    },
+    {
+      "id": "523-nest-swarm",
+      "name": "Nest Swarm",
+      "pts": 115,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-termagant",
+        "14-hormagaunt",
+        "15-biovore",
+        "19-zoanthrope",
+        "16-raveners",
+        "22-exocrines",
+        "23-dactylis"
+      ],
+      "_unitsText": "1 Hive Nest"
+    },
+    {
+      "id": "531-spore-mine-swarm",
+      "name": "Spore Mine Swarm",
+      "pts": 150,
+      "tags": [
+        "rare-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Spore Mine Clusters"
+    },
+    {
+      "id": "532-harassment-swarm",
+      "name": "Harassment Swarm",
+      "pts": 250,
+      "tags": [
+        "rare-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-4-gargoyles"
+      ],
+      "_unitsText": "1 Harridan and 2 Gargoyles"
+    },
+    {
+      "id": "533-heirophant-bio-titan",
+      "name": "Heirophant Bio-titan",
+      "pts": 250,
+      "tags": [
+        "rare-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Heirophant"
+    },
+    {
+      "id": "534-hydraphant-bio-titan",
+      "name": "Hydraphant Bio-titan",
+      "pts": 450,
+      "tags": [
+        "rare-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Hydraphant"
+    },
+    {
+      "id": "536-subterranean-swarm",
+      "name": "Subterranean Swarm",
+      "pts": 180,
+      "tags": [
+        "rare-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-raveners"
+      ],
+      "_unitsText": "1 Trygon"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-tyranid-warrior",
+      "name": "Tyranid Warrior",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tyranid Warrior",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-hive-tyrant",
+      "name": "Hive Tyrant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hive Tyrant",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-termagant",
+      "name": "Termagant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Termagant",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-gargoyle",
+      "name": "Gargoyle",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gargoyle",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-hormagaunt",
+      "name": "Hormagaunt",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hormagaunt",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-biovore",
+      "name": "Biovore",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Biovore",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-raveners",
+      "name": "Raveners",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Raveners",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-4-gargoyles",
+      "name": "4 Gargoyles",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Gargoyles",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-carnifex",
+      "name": "Carnifex",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Carnifex",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-zoanthrope",
+      "name": "Zoanthrope",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Zoanthrope",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-haruspex",
+      "name": "Haruspex",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Haruspex",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-malefactor",
+      "name": "Malefactor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Malefactor",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-exocrines",
+      "name": "Exocrines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exocrines",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-dactylis",
+      "name": "Dactylis",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dactylis",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-hierodule",
+      "name": "Hierodule",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hierodule",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-genestealer",
+      "name": "Genestealer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Genestealer",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-lictor",
+      "name": "Lictor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lictor",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-ravener",
+      "name": "Ravener",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ravener",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-zoanthrope",
+      "name": "Zoanthrope",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Zoanthrope",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support",
+      "from": [
+        "522-genestealer-swarm",
+        "523-nest-swarm",
+        "535-lictor-swarm"
+      ],
+      "max": 1,
+      "forEach": [
+        "511-normal-assault-swarm",
+        "512-big-assault-swarm",
+        "513-brute-swarm",
+        "514-big-brute-swarm",
+        "515-hybrid-swarm",
+        "516-big-hybrid-swarm",
+        "521-dominatrix-swarm"
+      ],
+      "_name2": "Core"
+    },
+    {
+      "id": "dominatrix-swarm",
+      "from": [
+        "521-dominatrix-swarm"
+      ],
+      "max": 2
+    },
+    {
+      "id": "rare-formations",
+      "from": [
+        "531-spore-mine-swarm",
+        "532-harassment-swarm",
+        "533-heirophant-bio-titan",
+        "534-hydraphant-bio-titan",
+        "536-subterranean-swarm"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "11-tyranid-warrior"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "511-normal-assault-swarm",
+        "516-big-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "11-tyranid-warrior"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "12-hive-tyrant"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "12-hive-tyrant"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "13-termagant",
+        "14-hormagaunt"
+      ],
+      "min": 8,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "13-termagant",
+        "14-hormagaunt"
+      ],
+      "min": 16,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "14-hormagaunt"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "14-hormagaunt"
+      ],
+      "max": 12,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "15-biovore"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "511-normal-assault-swarm",
+        "515-hybrid-swarm",
+        "513-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "15-biovore"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "512-big-assault-swarm",
+        "516-big-hybrid-swarm",
+        "514-big-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "16-raveners",
+        "19-zoanthrope"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "16-raveners",
+        "19-zoanthrope"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "30-gargoyle"
+      ],
+      "max": 5,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "30-gargoyle"
+      ],
+      "max": 10,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "22-exocrines",
+        "20-haruspex",
+        "21-malefactor",
+        "18-carnifex"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "513-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "22-exocrines",
+        "20-haruspex",
+        "21-malefactor",
+        "18-carnifex"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "514-big-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "513-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 12,
+      "appliesTo": [
+        "514-big-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "512-big-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-24",
+      "from": [
+        "24-hierodule"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "511-normal-assault-swarm"
+      ]
+    },
+    {
+      "id": "uc-25",
+      "from": [
+        "24-hierodule"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-big-assault-swarm",
+        "513-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-26",
+      "from": [
+        "24-hierodule"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "514-big-brute-swarm",
+        "521-dominatrix-swarm"
+      ]
+    },
+    {
+      "id": "uc-27",
+      "from": [
+        "23-dactylis"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "513-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-28",
+      "from": [
+        "23-dactylis"
+      ],
+      "max": 8,
+      "appliesTo": [
+        "514-big-brute-swarm"
+      ]
+    },
+    {
+      "id": "uc-29",
+      "from": [
+        "16-raveners",
+        "19-zoanthrope",
+        "20-haruspex",
+        "21-malefactor",
+        "22-exocrines"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "521-dominatrix-swarm"
+      ]
+    },
+    {
+      "id": "uc-30",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "521-dominatrix-swarm"
+      ]
+    },
+    {
+      "id": "uc-31",
+      "from": [
+        "23-dactylis"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "521-dominatrix-swarm"
+      ]
+    },
+    {
+      "id": "uc-32",
+      "from": [
+        "25-genestealer"
+      ],
+      "max": 9,
+      "min": 6,
+      "appliesTo": [
+        "522-genestealer-swarm"
+      ]
+    },
+    {
+      "id": "uc-33",
+      "from": [
+        "13-termagant",
+        "14-hormagaunt"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "uc-34",
+      "from": [
+        "14-hormagaunt"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "uc-35",
+      "from": [
+        "15-biovore"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "uc-36",
+      "from": [
+        "22-exocrines"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "uc-37",
+      "from": [
+        "23-dactylis"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "523-nest-swarm"
+      ]
+    },
+    {
+      "id": "uc-38",
+      "from": [
+        "17-4-gargoyles"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "532-harassment-swarm"
+      ]
+    },
+    {
+      "id": "uc-39",
+      "from": [
+        "27-lictor"
+      ],
+      "max": 8,
+      "min": 5,
+      "appliesTo": [
+        "535-lictor-swarm"
+      ]
+    },
+    {
+      "id": "uc-40",
+      "from": [
+        "16-raveners"
+      ],
+      "max": 6,
+      "min": 2,
+      "appliesTo": [
+        "536-subterranean-swarm"
+      ]
+    },
+    {
+      "id": "uc-41",
+      "from": [
+        "11-tyranid-warrior"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "515-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-42",
+      "from": [
+        "13-termagant"
+      ],
+      "min": 3,
+      "appliesTo": [
+        "515-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-43",
+      "from": [
+        "22-exocrines",
+        "20-haruspex",
+        "21-malefactor",
+        "18-carnifex"
+      ],
+      "min": 2,
+      "appliesTo": [
+        "515-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-44",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "515-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-45",
+      "from": [
+        "30-gargoyle"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "515-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-46",
+      "from": [
+        "13-termagant"
+      ],
+      "min": 6,
+      "appliesTo": [
+        "516-big-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-47",
+      "from": [
+        "22-exocrines",
+        "20-haruspex",
+        "21-malefactor",
+        "18-carnifex"
+      ],
+      "min": 4,
+      "appliesTo": [
+        "516-big-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-48",
+      "from": [
+        "18-carnifex"
+      ],
+      "max": 12,
+      "appliesTo": [
+        "516-big-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "uc-49",
+      "from": [
+        "30-gargoyle"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "516-big-hybrid-swarm"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

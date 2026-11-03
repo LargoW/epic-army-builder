@@ -1,0 +1,966 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/el/ulthwe-epicuk",
+  "name": "Ulthw&eacute; Craftworld",
+  "faction": "Eldar",
+  "version": "Epic-UK v121013",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\EL_ulthwe_EPICUK.json",
+    "by": "Kyussinchains",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "individuals",
+      "name": "INDIVIDUALS",
+      "formations": [
+        "507-wraithgate",
+        "508-avatar"
+      ]
+    },
+    {
+      "id": "warhosts",
+      "name": "WARHOSTS",
+      "formations": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ]
+    },
+    {
+      "id": "troupes",
+      "name": "TROUPES",
+      "formations": [
+        "500-ranger-troupe",
+        "501-war-walker-troupe",
+        "502-windrider-troupe",
+        "503-falcon-troupe",
+        "504-night-spinner-troupe",
+        "505-engines-of-vaul-troupe",
+        "530-fire-prism-troupe",
+        "531-aspect-troupe"
+      ]
+    },
+    {
+      "id": "spaceships-aircraft-amp-titans",
+      "name": "SPACESHIPS, AIRCRAFT &amp; TITANS",
+      "formations": [
+        "515-wraithship",
+        "516-dragonship",
+        "517-warlock-titan",
+        "518-phantom-titan",
+        "519-revenant-titans",
+        "520-nightwings",
+        "521-phoenix-bombers",
+        "522-vampire-raider"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "507-wraithgate",
+      "name": "Wraithgate",
+      "pts": 50,
+      "tags": [
+        "individuals"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "508-avatar",
+      "name": "Avatar",
+      "pts": 0,
+      "tags": [
+        "individuals"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "510-black-guardian-warhost",
+      "name": "Black Guardian Warhost",
+      "pts": 175,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [
+        "43-3-support-weapon-platforms",
+        "45-wraithlords",
+        "44-3-wraithguard"
+      ]
+    },
+    {
+      "id": "511-black-guardian-warhost-mounted",
+      "name": "Black Guardian Warhost (Mounted)",
+      "pts": 375,
+      "tags": [
+        "warhosts"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Waveserpents"
+    },
+    {
+      "id": "500-ranger-troupe",
+      "name": "Ranger Troupe",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-ranger"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "501-war-walker-troupe",
+      "name": "War Walker Troupe",
+      "pts": 200,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones"
+      ],
+      "_unitsText": "6 Warwalkers"
+    },
+    {
+      "id": "502-windrider-troupe",
+      "name": "Windrider Troupe",
+      "pts": 200,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones"
+      ]
+    },
+    {
+      "id": "503-falcon-troupe",
+      "name": "Falcon Troupe",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "504-night-spinner-troupe",
+      "name": "Night Spinner Troupe",
+      "pts": 175,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones"
+      ],
+      "_unitsText": "3 Night Spinners"
+    },
+    {
+      "id": "505-engines-of-vaul-troupe",
+      "name": "Engines of Vaul Troupe",
+      "pts": 0,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones",
+        "47-cobra",
+        "48-scorpion",
+        "49-storm-serpent"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "530-fire-prism-troupe",
+      "name": "Fire Prism Troupe",
+      "pts": 250,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "46-spirit-stones"
+      ],
+      "_unitsText": "3 Fire Prisms"
+    },
+    {
+      "id": "531-aspect-troupe",
+      "name": "Aspect Troupe",
+      "pts": 250,
+      "tags": [
+        "troupes"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-wave-serpent",
+        "42-2-falcons",
+        "39-exarch"
+      ]
+    },
+    {
+      "id": "515-wraithship",
+      "name": "Wraithship",
+      "pts": 150,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "516-dragonship",
+      "name": "Dragonship",
+      "pts": 300,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "517-warlock-titan",
+      "name": "Warlock Titan",
+      "pts": 850,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "518-phantom-titan",
+      "name": "Phantom Titan",
+      "pts": 750,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "519-revenant-titans",
+      "name": "Revenant Titans",
+      "pts": 650,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Revenant Titans"
+    },
+    {
+      "id": "520-nightwings",
+      "name": "Nightwings",
+      "pts": 300,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Nightwing Interceptors"
+    },
+    {
+      "id": "521-phoenix-bombers",
+      "name": "Phoenix Bombers",
+      "pts": 300,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Phoenix Bombers"
+    },
+    {
+      "id": "522-vampire-raider",
+      "name": "Vampire Raider",
+      "pts": 200,
+      "tags": [
+        "spaceships-aircraft-amp-titans"
+      ],
+      "units": [],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "102-farseers",
+      "name": "Farseers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Farseers",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-seer-council",
+      "name": "Seer Council",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seer Council",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-guardians",
+      "name": "Guardians",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Guardians",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-heavy-weapon-platform",
+      "name": "Heavy Weapon Platform",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Heavy Weapon Platform",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-3-support-weapon-platforms",
+      "name": "3 Support Weapon Platforms",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Support Weapon Platforms",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "45-wraithlords",
+      "name": "Wraithlords",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wraithlords",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-3-wraithguard",
+      "name": "3 Wraithguard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Wraithguard",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-ranger",
+      "name": "Ranger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ranger",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "46-spirit-stones",
+      "name": "Spirit Stones",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Spirit Stones",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-jetbike",
+      "name": "Jetbike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Jetbike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-vyper",
+      "name": "Vyper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vyper",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-falcon",
+      "name": "Falcon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Falcon",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-fire-storm",
+      "name": "Fire Storm",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Storm",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-cobra",
+      "name": "Cobra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cobra",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-scorpion",
+      "name": "Scorpion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scorpion",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-storm-serpent",
+      "name": "Storm Serpent",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Storm Serpent",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "47-cobra",
+      "name": "Cobra",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Cobra",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "48-scorpion",
+      "name": "Scorpion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Scorpion",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "49-storm-serpent",
+      "name": "Storm Serpent",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Storm Serpent",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-dire-avenger",
+      "name": "Dire Avenger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dire Avenger",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-striking-scorpion",
+      "name": "Striking Scorpion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Striking Scorpion",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-howling-banshee",
+      "name": "Howling Banshee",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Howling Banshee",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-fire-dragon",
+      "name": "Fire Dragon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Fire Dragon",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-warp-spider",
+      "name": "Warp Spider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Warp Spider",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-dark-reaper",
+      "name": "Dark Reaper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Reaper",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-swooping-hawk",
+      "name": "Swooping Hawk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Swooping Hawk",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-shining-spear",
+      "name": "Shining Spear",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Shining Spear",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-wave-serpent",
+      "name": "Wave Serpent",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Wave Serpent",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-2-falcons",
+      "name": "2 Falcons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Falcons",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-exarch",
+      "name": "Exarch",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exarch",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "507-wraithgate"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "508-avatar"
+      ],
+      "max": 1
+    },
+    {
+      "id": "spacecraft",
+      "from": [
+        "515-wraithship",
+        "516-dragonship"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "517-warlock-titan"
+      ],
+      "max": 1
+    },
+    {
+      "id": "war-engines-allies",
+      "from": [
+        "515-wraithship",
+        "516-dragonship",
+        "517-warlock-titan",
+        "518-phantom-titan",
+        "519-revenant-titans",
+        "520-nightwings",
+        "521-phoenix-bombers",
+        "522-vampire-raider"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "troupes",
+      "from": [
+        "500-ranger-troupe",
+        "501-war-walker-troupe",
+        "502-windrider-troupe",
+        "503-falcon-troupe",
+        "504-night-spinner-troupe",
+        "505-engines-of-vaul-troupe",
+        "530-fire-prism-troupe",
+        "531-aspect-troupe"
+      ],
+      "max": 2,
+      "forEach": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ],
+      "_name2": "Warhost"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "103-seer-council"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "103-seer-council"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "102-farseers",
+        "103-seer-council"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "25-heavy-weapon-platform"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "24-guardians",
+        "25-heavy-weapon-platform"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "510-black-guardian-warhost",
+        "511-black-guardian-warhost-mounted"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "43-3-support-weapon-platforms"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-black-guardian-warhost"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "45-wraithlords"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-black-guardian-warhost"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "44-3-wraithguard"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "510-black-guardian-warhost"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "11-ranger"
+      ],
+      "max": 8,
+      "min": 4,
+      "appliesTo": [
+        "500-ranger-troupe"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "46-spirit-stones"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "501-war-walker-troupe",
+        "502-windrider-troupe",
+        "503-falcon-troupe",
+        "504-night-spinner-troupe",
+        "505-engines-of-vaul-troupe",
+        "530-fire-prism-troupe"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "27-jetbike",
+        "28-vyper"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "502-windrider-troupe"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "31-fire-storm"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "503-falcon-troupe"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "30-falcon",
+        "31-fire-storm"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "503-falcon-troupe"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "34-cobra",
+        "35-scorpion",
+        "36-storm-serpent"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "505-engines-of-vaul-troupe"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "47-cobra",
+        "48-scorpion",
+        "49-storm-serpent"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "505-engines-of-vaul-troupe"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "15-dire-avenger",
+        "16-striking-scorpion",
+        "17-howling-banshee",
+        "18-fire-dragon",
+        "19-warp-spider",
+        "20-dark-reaper",
+        "21-swooping-hawk",
+        "22-shining-spear"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "531-aspect-troupe"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "41-wave-serpent"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "531-aspect-troupe"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "42-2-falcons"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "531-aspect-troupe"
+      ]
+    },
+    {
+      "id": "aspect-transport",
+      "from": [
+        "41-wave-serpent",
+        "42-2-falcons"
+      ],
+      "max": 3,
+      "appliesTo": [
+        "531-aspect-troupe"
+      ]
+    },
+    {
+      "id": "exarch",
+      "from": [
+        "39-exarch"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "531-aspect-troupe"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

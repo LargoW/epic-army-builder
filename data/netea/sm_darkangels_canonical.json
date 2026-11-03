@@ -1,0 +1,841 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/darkangels",
+  "name": "Dark Angels",
+  "faction": "Space Marines",
+  "version": "NetEA Dark Angels v1.9 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_DarkAngels_NETEA.json",
+    "by": "Mrdiealot",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "dark-angles-core-detachments",
+      "name": "Dark Angles Core Detachments",
+      "formations": [
+        "501-tacticals",
+        "532-land-raiders"
+      ]
+    },
+    {
+      "id": "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment",
+      "name": "Dark Angles Support Detachments (Three Support Detachments may be taken for each Core Detachment)",
+      "formations": [
+        "502-scout-infiltrators",
+        "503-assaults",
+        "504-devastators",
+        "531-predators",
+        "533-siege-breachers",
+        "534-whirlwinds"
+      ]
+    },
+    {
+      "id": "deathwing-ravenwing-strike-detachments",
+      "name": "Deathwing & Ravenwing Strike Detachments",
+      "formations": [
+        "511-deathwing-terminators",
+        "521-ravenwing-attack"
+      ]
+    },
+    {
+      "id": "deathwing-ravenwing-specialist-detachments-three-specialist-detachments-may-be-taken-for-each-strike-detachment",
+      "name": "Deathwing & Ravenwing Specialist Detachments (Three Specialist Detachments may be taken for each Strike Detachment)",
+      "formations": [
+        "513-deathwing-overwatch",
+        "514-deathwing-knights",
+        "515-deathwing-dreadnoughts",
+        "522-ravenwing-support"
+      ]
+    },
+    {
+      "id": "dreadwing-relic-detachments-the-army-may-contain-a-maximum-of-one-dreadwing-relic-detachment",
+      "name": "Dreadwing Relic Detachments (The army may contain a maximum of one Dreadwing Relic Detachment)",
+      "formations": [
+        "535-relic-deimos",
+        "536-relic-glaive"
+      ]
+    },
+    {
+      "id": "dark-angels-navy-max-33",
+      "name": "Dark Angels Navy (Max 33%)",
+      "formations": [
+        "523-ravenwing-nephilim",
+        "524-ravenwing-dark-talon",
+        "542-thunderhawk-transporter",
+        "543-strike-cruiser"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "501-tacticals",
+      "name": "Tacticals",
+      "pts": 275,
+      "tags": [
+        "dark-angles-core-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "16-grand-master",
+        "17-dark-angels-razorback",
+        "19-2-mortis-dreadnoughts",
+        "31-2-dark-angels-stalkers"
+      ],
+      "_unitsText": "6 Tacticals plus Transport"
+    },
+    {
+      "id": "532-land-raiders",
+      "name": "Land Raiders",
+      "pts": 250,
+      "tags": [
+        "dark-angles-core-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "16-grand-master",
+        "30-6-tacticals"
+      ],
+      "_unitsText": "3 Land Raiders"
+    },
+    {
+      "id": "502-scout-infiltrators",
+      "name": "Scout Infiltrators",
+      "pts": 200,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "17-dark-angels-razorback"
+      ],
+      "_unitsText": "4 Space Marine Sniper Scouts, 2 Rhinos"
+    },
+    {
+      "id": "503-assaults",
+      "name": "Assaults",
+      "pts": 275,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Dark Angels Assault Marines, 1 Dark Angels Captain"
+    },
+    {
+      "id": "504-devastators",
+      "name": "Devastators",
+      "pts": 250,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "17-dark-angels-razorback",
+        "19-2-mortis-dreadnoughts",
+        "31-2-dark-angels-stalkers"
+      ],
+      "_unitsText": "4 Dark Angels Devastators plus Transport"
+    },
+    {
+      "id": "531-predators",
+      "name": "Predators",
+      "pts": 200,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "31-2-dark-angels-stalkers"
+      ],
+      "_unitsText": "4 Predator Destructors"
+    },
+    {
+      "id": "533-siege-breachers",
+      "name": "Siege Breachers",
+      "pts": 275,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "20-3-vindicators"
+      ],
+      "_unitsText": "3 Land Raider Ares"
+    },
+    {
+      "id": "534-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 275,
+      "tags": [
+        "dark-angles-support-detachments-three-support-detachments-may-be-taken-for-each-core-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "29-2-hunters"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "511-deathwing-terminators",
+      "name": "Deathwing Terminators",
+      "pts": 350,
+      "tags": [
+        "deathwing-ravenwing-strike-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "15-interrogator-chaplain",
+        "16-grand-master",
+        "22-4-deathwing-land-raiders"
+      ],
+      "_unitsText": "4 Deathwing Terminators"
+    },
+    {
+      "id": "521-ravenwing-attack",
+      "name": "Ravenwing Attack",
+      "pts": 350,
+      "tags": [
+        "deathwing-ravenwing-strike-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "15-interrogator-chaplain",
+        "16-grand-master"
+      ],
+      "_unitsText": "1x Ravenwing Black Knights, 3x Ravenwing Land Speeder"
+    },
+    {
+      "id": "513-deathwing-overwatch",
+      "name": "Deathwing Overwatch",
+      "pts": 350,
+      "tags": [
+        "deathwing-ravenwing-specialist-detachments-three-specialist-detachments-may-be-taken-for-each-strike-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-dark-angels-captain",
+        "14-librarian"
+      ],
+      "_unitsText": "4 Deathwing Cyclone Terminators"
+    },
+    {
+      "id": "514-deathwing-knights",
+      "name": "Deathwing Knights",
+      "pts": 400,
+      "tags": [
+        "deathwing-ravenwing-specialist-detachments-three-specialist-detachments-may-be-taken-for-each-strike-detachment"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Deathwing Knights, 2 Interrogator Chaplains"
+    },
+    {
+      "id": "515-deathwing-dreadnoughts",
+      "name": "Deathwing Dreadnoughts",
+      "pts": 300,
+      "tags": [
+        "deathwing-ravenwing-specialist-detachments-three-specialist-detachments-may-be-taken-for-each-strike-detachment"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "5 Deathwing Dreadnoughts plus Transport"
+    },
+    {
+      "id": "522-ravenwing-support",
+      "name": "Ravenwing Support",
+      "pts": 200,
+      "tags": [
+        "deathwing-ravenwing-specialist-detachments-three-specialist-detachments-may-be-taken-for-each-strike-detachment"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "535-relic-deimos",
+      "name": "Relic Deimos",
+      "pts": 400,
+      "tags": [
+        "dreadwing-relic-detachments-the-army-may-contain-a-maximum-of-one-dreadwing-relic-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "29-2-hunters"
+      ],
+      "_unitsText": "4 Predator Executioners, 3 Deimos Vindicator Laser Destroyers"
+    },
+    {
+      "id": "536-relic-glaive",
+      "name": "Relic Glaive",
+      "pts": 50,
+      "tags": [
+        "dreadwing-relic-detachments-the-army-may-contain-a-maximum-of-one-dreadwing-relic-detachment"
+      ],
+      "units": [],
+      "upgrades": [
+        "34-glaive"
+      ]
+    },
+    {
+      "id": "523-ravenwing-nephilim",
+      "name": "Ravenwing Nephilim",
+      "pts": 225,
+      "tags": [
+        "dark-angels-navy-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Ravenwing Nephilim Interceptors"
+    },
+    {
+      "id": "524-ravenwing-dark-talon",
+      "name": "Ravenwing Dark Talon",
+      "pts": 225,
+      "tags": [
+        "dark-angels-navy-max-33"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Ravenwing Dark Talons"
+    },
+    {
+      "id": "542-thunderhawk-transporter",
+      "name": "Thunderhawk Transporter",
+      "pts": 50,
+      "tags": [
+        "dark-angels-navy-max-33"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-dark-angels-thunderhawk-transporter"
+      ]
+    },
+    {
+      "id": "543-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 0,
+      "tags": [
+        "dark-angels-navy-max-33"
+      ],
+      "units": [],
+      "upgrades": [
+        "35-strike-cruiser",
+        "36-battle-barge"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "13-dark-angels-captain",
+      "name": "Dark Angels Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Angels Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-interrogator-chaplain",
+      "name": "Interrogator Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Interrogator Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-grand-master",
+      "name": "Grand Master",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Grand Master",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-dark-angels-razorback",
+      "name": "Dark Angels Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Angels Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-2-mortis-dreadnoughts",
+      "name": "2 Mortis Dreadnoughts",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Mortis Dreadnoughts",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-3-vindicators",
+      "name": "3 Vindicators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Vindicators",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-dark-angels-thunderhawk-transporter",
+      "name": "Dark Angels Thunderhawk Transporter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dark Angels Thunderhawk Transporter",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-4-deathwing-land-raiders",
+      "name": "4 Deathwing Land Raiders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Deathwing Land Raiders",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-ravenwing-bikes",
+      "name": "Ravenwing Bikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ravenwing Bikes",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-ravenwing-attack-bike",
+      "name": "Ravenwing Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ravenwing Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-5-ravenwing-tornado",
+      "name": "5 Ravenwing Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Ravenwing Tornado",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-5-ravenwing-venegance",
+      "name": "5 Ravenwing Venegance",
+      "variants": [
+        {
+          "id": "1",
+          "label": "5 Ravenwing Venegance",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-2-hunters",
+      "name": "2 Hunters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Hunters",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-6-tacticals",
+      "name": "6 Tacticals",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Tacticals",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-2-dark-angels-stalkers",
+      "name": "2 Dark Angels Stalkers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Dark Angels Stalkers",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-glaive",
+      "name": "Glaive",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Glaive",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-strike-cruiser",
+      "name": "Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strike Cruiser",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Barge",
+          "pts": 350,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "dark-angels-support-detachments",
+      "from": [
+        "502-scout-infiltrators",
+        "503-assaults",
+        "504-devastators",
+        "531-predators",
+        "533-siege-breachers",
+        "534-whirlwinds"
+      ],
+      "max": 3,
+      "forEach": [
+        "501-tacticals",
+        "532-land-raiders"
+      ],
+      "_name2": "Dark Angels Core Detachments"
+    },
+    {
+      "id": "deathwing-ravenwing-specialist-detachments",
+      "from": [
+        "513-deathwing-overwatch",
+        "514-deathwing-knights",
+        "515-deathwing-dreadnoughts",
+        "522-ravenwing-support"
+      ],
+      "max": 3,
+      "forEach": [
+        "511-deathwing-terminators",
+        "521-ravenwing-attack"
+      ],
+      "_name2": "Deathwing & Ravenwing Strike Detachments"
+    },
+    {
+      "id": "dark-angels-navy",
+      "from": [
+        "523-ravenwing-nephilim",
+        "524-ravenwing-dark-talon",
+        "542-thunderhawk-transporter",
+        "543-strike-cruiser"
+      ],
+      "maxShare": [
+        34,
+        100
+      ],
+      "_note": "original maxPercent was 34"
+    },
+    {
+      "id": "fc-3",
+      "from": [
+        "535-relic-deimos",
+        "536-relic-glaive"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "fc-4",
+      "from": [
+        "543-strike-cruiser"
+      ],
+      "max": 1,
+      "perArmy": true
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "16-grand-master"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "25-ravenwing-bikes",
+        "26-ravenwing-attack-bike"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "521-ravenwing-attack"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "27-5-ravenwing-tornado",
+        "28-5-ravenwing-venegance"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "522-ravenwing-support"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "24-24"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "521-ravenwing-attack"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "13-dark-angels-captain",
+        "14-librarian",
+        "15-interrogator-chaplain",
+        "16-grand-master"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-tacticals",
+        "502-scout-infiltrators",
+        "503-assaults",
+        "504-devastators",
+        "511-deathwing-terminators",
+        "unknown-512",
+        "513-deathwing-overwatch",
+        "521-ravenwing-attack",
+        "532-land-raiders",
+        "533-siege-breachers"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "17-dark-angels-razorback"
+      ],
+      "max": 6,
+      "min": 0,
+      "appliesTo": [
+        "501-tacticals"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "17-dark-angels-razorback"
+      ],
+      "max": 4,
+      "min": 0,
+      "appliesTo": [
+        "502-scout-infiltrators",
+        "504-devastators"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "19-2-mortis-dreadnoughts"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-tacticals",
+        "504-devastators"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "20-3-vindicators"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "533-siege-breachers"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "22-4-deathwing-land-raiders"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "511-deathwing-terminators"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "29-2-hunters"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "534-whirlwinds",
+        "535-relic-deimos"
+      ]
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "31-2-dark-angels-stalkers"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "501-tacticals",
+        "504-devastators",
+        "531-predators"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "30-6-tacticals"
+      ],
+      "max": 1,
+      "min": 0,
+      "appliesTo": [
+        "532-land-raiders"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "34-glaive"
+      ],
+      "max": 3,
+      "min": 2,
+      "appliesTo": [
+        "536-relic-glaive"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "21-dark-angels-thunderhawk-transporter"
+      ],
+      "max": 3,
+      "min": 1,
+      "appliesTo": [
+        "542-thunderhawk-transporter"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "35-strike-cruiser",
+        "36-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "543-strike-cruiser"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

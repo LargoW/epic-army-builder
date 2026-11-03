@@ -1,0 +1,409 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/amtl/knights-epicuk",
+  "name": "Knight World",
+  "faction": "Adeptus Mechanicus",
+  "version": "EpicUK 290515",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\AMTL_Knights_EPICUK.json",
+    "by": "Kyussinchains",
+    "notes": [
+      "Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "knight-households",
+      "name": "Knight Households",
+      "formations": [
+        "500-baron-retinue",
+        "501-knight-household"
+      ]
+    },
+    {
+      "id": "support-households",
+      "name": "Support Households",
+      "formations": [
+        "510-support-household",
+        "511-lancer-household",
+        "512-errant-household"
+      ]
+    },
+    {
+      "id": "retainers",
+      "name": "Retainers",
+      "formations": [
+        "520-aa-gun-battery",
+        "521-artillery-battery",
+        "522-militia",
+        "523-field-guns",
+        "524-rapiers",
+        "525-light-tank-platoon"
+      ]
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "name": "Imperial Navy Aircraft",
+      "formations": [
+        "530-marauder-squadron",
+        "531-thunderbolt-squadron"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "500-baron-retinue",
+      "name": "Baron Retinue",
+      "pts": 600,
+      "tags": [
+        "knight-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "8-knight-errant"
+      ],
+      "_unitsText": "1 Baron, 5 Paladins"
+    },
+    {
+      "id": "501-knight-household",
+      "name": "Knight Household",
+      "pts": 500,
+      "tags": [
+        "knight-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "8-knight-errant",
+        "13-seneschal"
+      ],
+      "_unitsText": "6 Paladins"
+    },
+    {
+      "id": "510-support-household",
+      "name": "Support Household",
+      "pts": 50,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "6-knight-castellan",
+        "7-knight-crusader",
+        "13-seneschal"
+      ]
+    },
+    {
+      "id": "511-lancer-household",
+      "name": "Lancer Household",
+      "pts": 300,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-seneschal"
+      ],
+      "_unitsText": "3 Lancers"
+    },
+    {
+      "id": "512-errant-household",
+      "name": "Errant Household",
+      "pts": 50,
+      "tags": [
+        "support-households"
+      ],
+      "units": [],
+      "upgrades": [
+        "8-knight-errant",
+        "13-seneschal"
+      ]
+    },
+    {
+      "id": "520-aa-gun-battery",
+      "name": "AA Gun Battery",
+      "pts": 150,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Heavy AA Guns, 3 tractors"
+    },
+    {
+      "id": "521-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 200,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "3 Earthshaker platforms, 3 tractors"
+    },
+    {
+      "id": "522-militia",
+      "name": "Militia",
+      "pts": 125,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [
+        "5-6-tractors"
+      ],
+      "_unitsText": "6 Militia units"
+    },
+    {
+      "id": "523-field-guns",
+      "name": "Field Guns",
+      "pts": 150,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 light artillery units, 4 tractors"
+    },
+    {
+      "id": "524-rapiers",
+      "name": "Rapiers",
+      "pts": 150,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Rapier units, 4 tractors"
+    },
+    {
+      "id": "525-light-tank-platoon",
+      "name": "Light Tank Platoon",
+      "pts": 175,
+      "tags": [
+        "retainers"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "6 Siegfried light tanks"
+    },
+    {
+      "id": "530-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "531-thunderbolt-squadron",
+      "name": "Thunderbolt Squadron",
+      "pts": 150,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "5-6-tractors",
+      "name": "6 Tractors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Tractors",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "6-knight-castellan",
+      "name": "Knight Castellan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Castellan",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "7-knight-crusader",
+      "name": "Knight Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Crusader",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "8-knight-errant",
+      "name": "Knight Errant",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Knight Errant",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-seneschal",
+      "name": "Seneschal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Seneschal",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-household",
+      "from": [
+        "510-support-household",
+        "511-lancer-household",
+        "512-errant-household"
+      ],
+      "max": 2,
+      "forEach": [
+        "500-baron-retinue",
+        "501-knight-household"
+      ],
+      "_name2": "Knight Household"
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "500-baron-retinue"
+      ],
+      "max": 1
+    },
+    {
+      "id": "retainers",
+      "from": [
+        "520-aa-gun-battery",
+        "521-artillery-battery",
+        "522-militia",
+        "523-field-guns",
+        "524-rapiers",
+        "525-light-tank-platoon"
+      ],
+      "max": 1,
+      "forEach": [
+        "500-baron-retinue",
+        "501-knight-household",
+        "510-support-household",
+        "511-lancer-household",
+        "512-errant-household"
+      ],
+      "_name2": "Knight Household or Support Household"
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "from": [
+        "530-marauder-squadron",
+        "531-thunderbolt-squadron"
+      ],
+      "maxShare": [
+        1,
+        4
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "6-knight-castellan",
+        "7-knight-crusader"
+      ],
+      "max": 4,
+      "min": 3,
+      "appliesTo": [
+        "510-support-household"
+      ]
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "8-knight-errant"
+      ],
+      "max": 4,
+      "min": 3,
+      "appliesTo": [
+        "512-errant-household"
+      ]
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "5-6-tractors"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "522-militia"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "6-knight-castellan",
+        "7-knight-crusader"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-baron-retinue",
+        "501-knight-household"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "8-knight-errant"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-baron-retinue",
+        "501-knight-household"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "13-seneschal"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "500-baron-retinue",
+        "501-knight-household",
+        "510-support-household",
+        "511-lancer-household",
+        "512-errant-household"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

@@ -1,0 +1,1010 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/inq/sisters-epicuk",
+  "name": "Adepta Sororitas",
+  "faction": "Inquisition",
+  "version": "161117",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\INQ_sisters_EPICUK.json",
+    "by": "Kyussinchains, last update 2023-05-22 by Abetillo",
+    "notes": [
+      "If Using transports (Immolator, Repressor, Rhinos, Chimeras, Valkyries) you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."
+    ]
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "companies",
+      "name": "COMPANIES",
+      "formations": [
+        "512-mission",
+        "513-exorcism",
+        "514-choir",
+        "515-retribution",
+        "516-coven",
+        "517-repentance",
+        "519-purge"
+      ]
+    },
+    {
+      "id": "support-formations",
+      "name": "SUPPORT FORMATIONS",
+      "formations": [
+        "518-inquisitor-hereticus-retinue",
+        "600-crusaders",
+        "602-conclave",
+        "605-pentinence"
+      ]
+    },
+    {
+      "id": "war-engines-and-imperial-navy",
+      "name": "WAR ENGINES AND IMPERIAL NAVY",
+      "formations": [
+        "719-lightning-squadron",
+        "720-marauder-squadron",
+        "708-orbital-support"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "512-mission",
+      "name": "Mission",
+      "pts": 275,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-canoness-character",
+        "18-palatine-character",
+        "19-priest-character",
+        "16-exorcist",
+        "22-immolator",
+        "23-repressor",
+        "24-rhino"
+      ]
+    },
+    {
+      "id": "513-exorcism",
+      "name": "Exorcism",
+      "pts": 75,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-exorcist",
+        "17-hunter"
+      ]
+    },
+    {
+      "id": "514-choir",
+      "name": "Choir",
+      "pts": 250,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-canoness-character",
+        "18-palatine-character"
+      ],
+      "_unitsText": "6 Seraphim Sister Units"
+    },
+    {
+      "id": "515-retribution",
+      "name": "Retribution",
+      "pts": 250,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-canoness-character",
+        "18-palatine-character",
+        "19-priest-character",
+        "22-immolator",
+        "23-repressor",
+        "24-rhino"
+      ]
+    },
+    {
+      "id": "516-coven",
+      "name": "Coven",
+      "pts": 200,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-canoness-character",
+        "18-palatine-character",
+        "19-priest-character"
+      ]
+    },
+    {
+      "id": "517-repentance",
+      "name": "Repentance",
+      "pts": 225,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "19-priest-character",
+        "15-1-pentinent-engine",
+        "30-2-pentinent-engines",
+        "31-3-pentinent-engines",
+        "22-immolator",
+        "23-repressor",
+        "24-rhino"
+      ],
+      "_unitsText": "One Mistress Character and 6 Repentia Sister Units"
+    },
+    {
+      "id": "519-purge",
+      "name": "Purge",
+      "pts": 100,
+      "tags": [
+        "companies"
+      ],
+      "units": [],
+      "upgrades": [
+        "16-exorcist",
+        "17-hunter"
+      ]
+    },
+    {
+      "id": "518-inquisitor-hereticus-retinue",
+      "name": "Inquisitor Hereticus Retinue",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "21-4-inquisitorial-valyries",
+        "13-chimera"
+      ],
+      "_unitsText": "One Inquisitor Hereticus unit"
+    },
+    {
+      "id": "600-crusaders",
+      "name": "Crusaders",
+      "pts": 200,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "13-chimera",
+        "15-1-pentinent-engine",
+        "30-2-pentinent-engines",
+        "31-3-pentinent-engines"
+      ],
+      "_unitsText": "1 Priest Character and 10 Redemptionist Units"
+    },
+    {
+      "id": "602-conclave",
+      "name": "Conclave",
+      "pts": 250,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "15-1-pentinent-engine",
+        "30-2-pentinent-engines",
+        "31-3-pentinent-engines",
+        "22-immolator",
+        "23-repressor",
+        "24-rhino"
+      ],
+      "_unitsText": "6 Arco-Flagellant Units"
+    },
+    {
+      "id": "605-pentinence",
+      "name": "Pentinence",
+      "pts": 35,
+      "tags": [
+        "support-formations"
+      ],
+      "units": [],
+      "upgrades": [
+        "32-pentinent-engine"
+      ]
+    },
+    {
+      "id": "719-lightning-squadron",
+      "name": "Lightning Squadron",
+      "pts": 150,
+      "tags": [
+        "war-engines-and-imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Lightning Strike Fighters"
+    },
+    {
+      "id": "720-marauder-squadron",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": [
+        "war-engines-and-imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "708-orbital-support",
+      "name": "Orbital Support",
+      "pts": 150,
+      "tags": [
+        "war-engines-and-imperial-navy"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Lunar Class Cruiser"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "10-aquila-lander-and-3-arvus-lighters",
+      "name": "Aquila lander and 3 Arvus Lighters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Aquila lander and 3 Arvus Lighters",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-canoness-character",
+      "name": "Canoness character",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Canoness character",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-2-celestian-sister-units",
+      "name": "2 Celestian Sister Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Celestian Sister Units",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-chimera",
+      "name": "Chimera",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chimera",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-2-dominion-sister-units",
+      "name": "2 Dominion Sister Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Dominion Sister Units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-1-pentinent-engine",
+      "name": "1 Pentinent Engine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Pentinent Engine",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-2-pentinent-engines",
+      "name": "2 Pentinent Engines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Pentinent Engines",
+          "pts": 70,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-3-pentinent-engines",
+      "name": "3 Pentinent Engines",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Pentinent Engines",
+          "pts": 105,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-exorcist",
+      "name": "Exorcist",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Exorcist",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-palatine-character",
+      "name": "Palatine character",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Palatine character",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-priest-character",
+      "name": "Priest character",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Priest character",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-2-repentia-sister-units",
+      "name": "2 Repentia Sister Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Repentia Sister Units",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-4-inquisitorial-valyries",
+      "name": "4 Inquisitorial Valyries",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Inquisitorial Valyries",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-immolator",
+      "name": "Immolator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Immolator",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-repressor",
+      "name": "Repressor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Repressor",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-rhino",
+      "name": "Rhino",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhino",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-civilian-light-vehicles",
+      "name": "Civilian Light Vehicles",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Civilian Light Vehicles",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-pentinent-engine",
+      "name": "Pentinent Engine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Pentinent Engine",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-6-inquisitorial-storm-troopers",
+      "name": "6 Inquisitorial Storm Troopers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Inquisitorial Storm Troopers",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-4-inquisitorial-storm-troopers-and-2-death-cult-assassins",
+      "name": "4 Inquisitorial Storm Troopers and 2 Death Cult Assassins",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Inquisitorial Storm Troopers and 2 Death Cult Assassins",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-inquisitorial-support-staff",
+      "name": "Inquisitorial Support Staff",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Inquisitorial Support Staff",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-death-cult-assassins-unit",
+      "name": "Death Cult Assassins unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Cult Assassins unit",
+          "pts": 20,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-battle-sister",
+      "name": "Battle Sister",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Sister",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-celestian-sister",
+      "name": "Celestian Sister",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Celestian Sister",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-dominion-sister",
+      "name": "Dominion Sister",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Dominion Sister",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-retribution-sister",
+      "name": "Retribution Sister",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Retribution Sister",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-8-battle-sisters",
+      "name": "8 Battle Sisters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "8 Battle Sisters",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "51-6-battle-sisters-and-two-celestian-sisters-units",
+      "name": "6 Battle Sisters and Two Celestian Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Battle Sisters and Two Celestian Sisters units",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "52-6-battle-sisters-and-two-dominion-sisters-units",
+      "name": "6 Battle Sisters and Two Dominion Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Battle Sisters and Two Dominion Sisters units",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-6-battle-sisters-and-two-retributor-sisters-units",
+      "name": "6 Battle Sisters and Two Retributor Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Battle Sisters and Two Retributor Sisters units",
+          "pts": 15,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "54-4-battle-sisters-two-celestian-sisters-units-and-two-dominion-sisters-units",
+      "name": "4 Battle Sisters, Two Celestian Sisters units and Two Dominion Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Battle Sisters, Two Celestian Sisters units and Two Dominion Sisters units",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-4-battle-sisters-two-celestian-sisters-units-and-two-retributor-sisters-units",
+      "name": "4 Battle Sisters, Two Celestian Sisters units and Two Retributor Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Battle Sisters, Two Celestian Sisters units and Two Retributor Sisters units",
+          "pts": 40,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-6-retributor-sisters",
+      "name": "6 Retributor Sisters",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Retributor Sisters",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-4-retributor-sisters-and-two-celestian-sisters-units",
+      "name": "4 Retributor Sisters and Two Celestian Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Retributor Sisters and Two Celestian Sisters units",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-4-retributor-sisters-and-two-dominion-sisters-units",
+      "name": "4 Retributor Sisters and Two Dominion Sisters units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Retributor Sisters and Two Dominion Sisters units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "70-4-dominion-sister-units-and-2-rhinos",
+      "name": "4 Dominion Sister units and 2 Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Dominion Sister units and 2 Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-4-dominion-sister-units-and-2-repressors",
+      "name": "4 Dominion Sister units and 2 Repressors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Dominion Sister units and 2 Repressors",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-4-dominion-sister-units-and-4-immolators",
+      "name": "4 Dominion Sister units and 4 Immolators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Dominion Sister units and 4 Immolators",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "518-inquisitor-hereticus-retinue"
+      ],
+      "max": 1
+    },
+    {
+      "id": "aircraft-and-spacecraft",
+      "from": [
+        "719-lightning-squadron",
+        "720-marauder-squadron",
+        "708-orbital-support"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "support-formations",
+      "from": [
+        "518-inquisitor-hereticus-retinue",
+        "600-crusaders",
+        "602-conclave",
+        "605-pentinence"
+      ],
+      "max": 1,
+      "forEach": [
+        "512-mission",
+        "513-exorcism",
+        "514-choir",
+        "515-retribution",
+        "516-coven",
+        "517-repentance",
+        "519-purge"
+      ],
+      "_name2": "Company"
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "11-canoness-character",
+        "18-palatine-character"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "19-priest-character"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "11-canoness-character"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "12-2-celestian-sister-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "14-2-dominion-sister-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "15-1-pentinent-engine"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "17-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "20-2-repentia-sister-units"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "21-4-inquisitorial-valyries"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "518-inquisitor-hereticus-retinue"
+      ]
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "16-exorcist"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-mission",
+        "515-retribution",
+        "519-purge"
+      ]
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "21-4-inquisitorial-valyries"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "32-pentinent-engine"
+      ],
+      "max": 7,
+      "min": 4,
+      "appliesTo": [
+        "605-pentinence"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "16-exorcist"
+      ],
+      "max": 7,
+      "min": 5,
+      "appliesTo": [
+        "513-exorcism"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "22-immolator",
+        "23-repressor"
+      ],
+      "max": 6,
+      "min": 6,
+      "appliesTo": [
+        "519-purge"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "26-6-inquisitorial-storm-troopers",
+        "27-4-inquisitorial-storm-troopers-and-2-death-cult-assassins"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "518-inquisitor-hereticus-retinue"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "50-8-battle-sisters",
+        "51-6-battle-sisters-and-two-celestian-sisters-units",
+        "52-6-battle-sisters-and-two-dominion-sisters-units",
+        "53-6-battle-sisters-and-two-retributor-sisters-units",
+        "54-4-battle-sisters-two-celestian-sisters-units-and-two-dominion-sisters-units",
+        "55-4-battle-sisters-two-celestian-sisters-units-and-two-retributor-sisters-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "512-mission"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "60-6-retributor-sisters",
+        "61-4-retributor-sisters-and-two-celestian-sisters-units",
+        "62-4-retributor-sisters-and-two-dominion-sisters-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "515-retribution"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "70-4-dominion-sister-units-and-2-rhinos",
+        "71-4-dominion-sister-units-and-2-repressors",
+        "72-4-dominion-sister-units-and-4-immolators"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "516-coven"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "33-celestian-sister"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-mission",
+        "515-retribution"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "34-dominion-sister"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-mission",
+        "515-retribution"
+      ]
+    },
+    {
+      "id": "uc-20",
+      "from": [
+        "35-retribution-sister"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-mission"
+      ]
+    },
+    {
+      "id": "uc-21",
+      "from": [
+        "27-4-inquisitorial-storm-troopers-and-2-death-cult-assassins"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "518-inquisitor-hereticus-retinue"
+      ]
+    },
+    {
+      "id": "uc-22",
+      "from": [
+        "28-inquisitorial-support-staff"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "518-inquisitor-hereticus-retinue"
+      ]
+    },
+    {
+      "id": "uc-23",
+      "from": [
+        "29-death-cult-assassins-unit"
+      ],
+      "max": 1,
+      "appliesTo": [
+        "518-inquisitor-hereticus-retinue"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

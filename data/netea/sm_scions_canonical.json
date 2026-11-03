@@ -1,0 +1,1218 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/scions",
+  "name": "Scions of Iron",
+  "faction": "Space Marines",
+  "version": "NetEA Tournament Pack (2026-02-04)",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_scions_NETEA.json",
+    "by": "Iron Bloke, last update 2026-02-07 by antitimm",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "scions-of-iron-detachments",
+      "name": "SCIONS OF IRON DETACHMENTS",
+      "formations": [
+        "502-bike",
+        "503-heavy-tactical",
+        "504-helios",
+        "505-land-raider",
+        "506-landing-craft",
+        "507-predator",
+        "508-scout",
+        "509-spacecraft",
+        "511-tactical",
+        "512-terminator",
+        "513-thunderhawk-transporters",
+        "514-vindicator",
+        "515-whirlwind"
+      ]
+    },
+    {
+      "id": "scions-of-iron-aircraft-formations",
+      "name": "SCIONS OF IRON AIRCRAFT FORMATIONS",
+      "formations": [
+        "523-thunderhawk-sb",
+        "524-thunderhawk-cas"
+      ]
+    },
+    {
+      "id": "imperial-navy-aircraft",
+      "name": "IMPERIAL NAVY AIRCRAFT",
+      "formations": [
+        "521-fighter-squadron",
+        "522-bomber-squadron"
+      ]
+    },
+    {
+      "id": "titan-legion-battlegroups",
+      "name": "TITAN LEGION BATTLEGROUPS",
+      "formations": [
+        "542-reaver",
+        "543-warhound",
+        "544-warhound-pack",
+        "541-warlord"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "502-bike",
+      "name": "Bike",
+      "pts": 125,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "61-land-speeder",
+        "62-land-speeder-tornado",
+        "63-land-speeder-typhoon"
+      ]
+    },
+    {
+      "id": "503-heavy-tactical",
+      "name": "Heavy Tactical",
+      "pts": 175,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "73-land-raider-helios",
+        "74-land-raider",
+        "75-land-raider-crusader",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "100-hunter"
+      ],
+      "_unitsText": "4 Tactical units"
+    },
+    {
+      "id": "504-helios",
+      "name": "Helios",
+      "pts": 425,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "100-hunter"
+      ],
+      "_unitsText": "4 Land Raider Helios"
+    },
+    {
+      "id": "505-land-raider",
+      "name": "Land Raider",
+      "pts": 25,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "73-land-raider-helios",
+        "74-land-raider",
+        "75-land-raider-crusader",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "100-hunter"
+      ]
+    },
+    {
+      "id": "506-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "507-predator",
+      "name": "Predator",
+      "pts": 50,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "96-vindicator",
+        "97-predator-annihilator",
+        "98-predator-destructor",
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "100-hunter"
+      ]
+    },
+    {
+      "id": "508-scout",
+      "name": "Scout",
+      "pts": 150,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "61-land-speeder",
+        "62-land-speeder-tornado",
+        "63-land-speeder-typhoon",
+        "81-razorback-twin-lascannon",
+        "82-razorback-twin-heavy-bolter",
+        "103-snipers"
+      ],
+      "_unitsText": "4 Scout units plus transport"
+    },
+    {
+      "id": "509-spacecraft",
+      "name": "Spacecraft",
+      "pts": 150,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "511-tactical",
+      "name": "Tactical",
+      "pts": 200,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "97-predator-annihilator",
+        "98-predator-destructor",
+        "96-vindicator",
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "100-hunter",
+        "81-razorback-twin-lascannon",
+        "82-razorback-twin-heavy-bolter"
+      ],
+      "_unitsText": "4 Tactical units plus transport"
+    },
+    {
+      "id": "512-terminator",
+      "name": "Terminator",
+      "pts": 350,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "71-land-raider",
+        "72-land-raider-crusader",
+        "73-land-raider-helios",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "_unitsText": "4 Terminator units"
+    },
+    {
+      "id": "513-thunderhawk-transporters",
+      "name": "Thunderhawk Transporters",
+      "pts": 50,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "111-thunderhawk-transporter"
+      ]
+    },
+    {
+      "id": "514-vindicator",
+      "name": "Vindicator",
+      "pts": 0,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "96-vindicator",
+        "97-predator-annihilator",
+        "98-predator-destructor",
+        "100-hunter"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "515-whirlwind",
+      "name": "Whirlwind",
+      "pts": 275,
+      "tags": [
+        "scions-of-iron-detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "100-hunter"
+      ],
+      "_unitsText": "4 Whirlwinds"
+    },
+    {
+      "id": "523-thunderhawk-sb",
+      "name": "Thunderhawk SB",
+      "pts": 250,
+      "tags": [
+        "scions-of-iron-aircraft-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Thunderhawk (Saturation Bombing configuration)"
+    },
+    {
+      "id": "524-thunderhawk-cas",
+      "name": "Thunderhawk CAS",
+      "pts": 250,
+      "tags": [
+        "scions-of-iron-aircraft-formations"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "Thunderhawk (Close Air Support configuration)"
+    },
+    {
+      "id": "521-fighter-squadron",
+      "name": "Fighter Squadron",
+      "pts": 175,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Thunderbolt Fighters"
+    },
+    {
+      "id": "522-bomber-squadron",
+      "name": "Bomber Squadron",
+      "pts": 250,
+      "tags": [
+        "imperial-navy-aircraft"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Marauder Bombers"
+    },
+    {
+      "id": "542-reaver",
+      "name": "Reaver",
+      "pts": 650,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Reaver Class Titan"
+    },
+    {
+      "id": "543-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warhound Class Titan"
+    },
+    {
+      "id": "544-warhound-pack",
+      "name": "Warhound Pack",
+      "pts": 500,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Warhound Class Titans"
+    },
+    {
+      "id": "541-warlord",
+      "name": "Warlord",
+      "pts": 825,
+      "tags": [
+        "titan-legion-battlegroups"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Warlord Class Titan"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "111-thunderhawk-transporter",
+      "name": "Thunderhawk Transporter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Thunderhawk Transporter",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "11-bike-unit",
+      "name": "Bike Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Bike Unit",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-attack-bike",
+      "name": "Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-multi-melta-attack-bike",
+      "name": "Multi-melta Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Multi-melta Attack Bike",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-predator-annihilator",
+      "name": "Predator Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Annihilator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "35-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-strike-cruiser",
+      "name": "Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strike Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battle Barge",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "55-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "56-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "57-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "96-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "97-predator-annihilator",
+      "name": "Predator Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Annihilator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "98-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "99-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-predator-anhinilator",
+      "name": "Predator Anhinilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Anhinilator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-predator-destructor",
+      "name": "Predator Destructor",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Destructor",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-4-whirlwinds",
+      "name": "4 Whirlwinds",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Whirlwinds",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "200-supreme-commander-in-prometheus",
+      "name": "Supreme Commander in Prometheus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander in Prometheus",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "204-supreme-commander-in-land-raider",
+      "name": "Supreme Commander in Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander in Land Raider",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "205-supreme-commander-in-prometheus",
+      "name": "Supreme Commander in Prometheus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander in Prometheus",
+          "pts": 175,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "206-land-raider-and-supreme-commander-in-land-raider",
+      "name": "Land Raider and Supreme Commander in Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider and Supreme Commander in Land Raider",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+      "name": "Land Raider Crusader and Supreme Commander in Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader and Supreme Commander in Land Raider",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "208-land-raider-and-supreme-commander-in-prometheus",
+      "name": "Land Raider and Supreme Commander in Prometheus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider and Supreme Commander in Prometheus",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "209-land-raider-crusader-and-supreme-commander-in-prometheus",
+      "name": "Land Raider Crusader and Supreme Commander in Prometheus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader and Supreme Commander in Prometheus",
+          "pts": 225,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "61-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "62-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 35,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "63-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 45,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "72-land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "73-land-raider-helios",
+      "name": "Land Raider Helios",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Helios",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "74-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "75-land-raider-crusader",
+      "name": "Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Crusader",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "76-land-raider-and-land-raider-crusader",
+      "name": "Land Raider and Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider and Land Raider Crusader",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "77-2x-land-raider",
+      "name": "2x Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "78-2x-land-raider-crusader",
+      "name": "2x Land Raider Crusader",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider Crusader",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "79-2x-land-raider-helios",
+      "name": "2x Land Raider Helios",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2x Land Raider Helios",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "81-razorback-twin-lascannon",
+      "name": "Razorback (twin lascannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (twin lascannon)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "82-razorback-twin-heavy-bolter",
+      "name": "Razorback (twin heavy bolter)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (twin heavy bolter)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "100-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "103-snipers",
+      "name": "Snipers",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Snipers",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "fc-0",
+      "from": [
+        "509-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "fc-1",
+      "from": [
+        "521-fighter-squadron",
+        "522-bomber-squadron"
+      ],
+      "max": 2
+    },
+    {
+      "id": "fc-2",
+      "from": [
+        "541-warlord",
+        "542-reaver",
+        "543-warhound",
+        "544-warhound-pack"
+      ],
+      "max": 2
+    },
+    {
+      "id": "navy-titans",
+      "from": [
+        "521-fighter-squadron",
+        "522-bomber-squadron",
+        "523-thunderhawk-sb",
+        "524-thunderhawk-cas",
+        "541-warlord",
+        "542-reaver",
+        "543-warhound",
+        "544-warhound-pack"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "cmdr",
+      "from": [
+        "55-captain",
+        "56-librarian",
+        "57-chaplain",
+        "58-58",
+        "59-59",
+        "95-95",
+        "200-supreme-commander-in-prometheus",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "58-58",
+        "59-59",
+        "95-95",
+        "200-supreme-commander-in-prometheus",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "96-vindicator",
+        "97-predator-annihilator",
+        "98-predator-destructor"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "507-predator",
+        "514-vindicator"
+      ]
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "61-land-speeder",
+        "62-land-speeder-tornado",
+        "63-land-speeder-typhoon"
+      ],
+      "max": 3
+    },
+    {
+      "id": "land-raider",
+      "from": [
+        "71-land-raider",
+        "72-land-raider-crusader",
+        "73-land-raider-helios",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "512-terminator"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "71-land-raider",
+        "72-land-raider-crusader",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus"
+      ],
+      "max": 2,
+      "min": 2,
+      "appliesTo": [
+        "503-heavy-tactical"
+      ]
+    },
+    {
+      "id": "uc-6",
+      "from": [
+        "73-land-raider-helios",
+        "74-land-raider",
+        "75-land-raider-crusader",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "503-heavy-tactical"
+      ]
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "81-razorback-twin-lascannon",
+        "82-razorback-twin-heavy-bolter"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "100-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-9",
+      "from": [
+        "103-snipers"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "508-508"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-11",
+      "from": [
+        "111-thunderhawk-transporter"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "513-thunderhawk-transporters"
+      ]
+    },
+    {
+      "id": "uc-12",
+      "from": [
+        "12-attack-bike",
+        "11-bike-unit",
+        "13-multi-melta-attack-bike"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "502-bike"
+      ]
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "71-land-raider",
+        "204-supreme-commander-in-land-raider",
+        "205-supreme-commander-in-prometheus"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "505-land-raider"
+      ]
+    },
+    {
+      "id": "uc-14",
+      "from": [
+        "73-land-raider-helios",
+        "74-land-raider",
+        "75-land-raider-crusader",
+        "76-land-raider-and-land-raider-crusader",
+        "77-2x-land-raider",
+        "78-2x-land-raider-crusader",
+        "79-2x-land-raider-helios",
+        "206-land-raider-and-supreme-commander-in-land-raider",
+        "207-land-raider-crusader-and-supreme-commander-in-land-raider",
+        "208-land-raider-and-supreme-commander-in-prometheus",
+        "209-land-raider-crusader-and-supreme-commander-in-prometheus"
+      ],
+      "max": 2,
+      "appliesTo": [
+        "505-land-raider"
+      ]
+    },
+    {
+      "id": "uc-15",
+      "from": [
+        "97-predator-annihilator",
+        "98-predator-destructor",
+        "96-vindicator",
+        "200-supreme-commander-in-prometheus"
+      ],
+      "max": 4,
+      "min": 2,
+      "appliesTo": [
+        "511-tactical"
+      ]
+    },
+    {
+      "id": "uc-16",
+      "from": [
+        "41-strike-cruiser",
+        "42-battle-barge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "509-spacecraft"
+      ]
+    },
+    {
+      "id": "uc-17",
+      "from": [
+        "30-predator-destructor",
+        "32-predator-anhinilator",
+        "200-supreme-commander-in-prometheus"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "507-predator"
+      ]
+    },
+    {
+      "id": "uc-18",
+      "from": [
+        "99-vindicator",
+        "200-supreme-commander-in-prometheus"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "514-vindicator"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}

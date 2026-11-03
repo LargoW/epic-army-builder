@@ -1,0 +1,1079 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/sm/bloodangels",
+  "name": "Blood Angels",
+  "faction": "Space Marines",
+  "version": "V3.1 TCMD forum",
+  "source": {
+    "file": "D:\\HostedGitRepo\\adam77\\snapfire\\war\\lists\\SM_bloodAngels_NETEA.json",
+    "by": "Kyussinchains && freefall",
+    "notes": []
+  },
+  "units": {},
+  "sections": [
+    {
+      "id": "detachments",
+      "name": "DETACHMENTS",
+      "formations": [
+        "534-death-company",
+        "532-assault-detachment",
+        "533-bike-detachment",
+        "535-devastator-detachment",
+        "536-land-speeders",
+        "537-landing-craft",
+        "538-predators",
+        "539-scout-detachment",
+        "540-spacecraft",
+        "541-stormraven",
+        "542-tactical-detachment",
+        "543-terminator-detachment"
+      ]
+    },
+    {
+      "id": "air-support",
+      "name": "AIR SUPPORT",
+      "formations": [
+        "549-storm-talons",
+        "544-thunderhawk"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "534-death-company",
+      "name": "Death Company",
+      "pts": 250,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "41-jump-packs",
+        "13-death-company-dreadnought"
+      ],
+      "_unitsText": "4 Death Company Units plus Transport"
+    },
+    {
+      "id": "532-assault-detachment",
+      "name": "Assault Detachment",
+      "pts": 0,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "11-4-blood-angels-assault-marine-units",
+        "30-supreme-commander",
+        "60-supreme-commander-honour-guard",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "14-furioso-dreadnought-2x-power-fist",
+        "71-furioso-dreadnought-frag-cannon",
+        "18-vindicator",
+        "53-2-vindicators",
+        "26-stormraven-gunship"
+      ],
+      "_note": "pts value is 0 or relative – verify base cost"
+    },
+    {
+      "id": "533-bike-detachment",
+      "name": "Bike Detachment",
+      "pts": 200,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian"
+      ]
+    },
+    {
+      "id": "535-devastator-detachment",
+      "name": "Devastator Detachment",
+      "pts": 250,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "14-furioso-dreadnought-2x-power-fist",
+        "71-furioso-dreadnought-frag-cannon",
+        "18-vindicator",
+        "53-2-vindicators",
+        "21-land-raider",
+        "80-2-land-raider",
+        "81-3-land-raider",
+        "82-4-land-raider",
+        "22-land-raider-redeemer",
+        "83-2-land-raider-redeemer",
+        "84-3-land-raider-redeemer",
+        "85-4-land-raider-redeemer",
+        "23-hunter",
+        "26-stormraven-gunship",
+        "42-razorback-lascannon",
+        "43-razorback-heavy-bolter"
+      ],
+      "_unitsText": "4 Blood Angels Devastator Units plus Transport"
+    },
+    {
+      "id": "536-land-speeders",
+      "name": "Land Speeders",
+      "pts": 200,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian"
+      ]
+    },
+    {
+      "id": "537-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "538-predators",
+      "name": "Predators",
+      "pts": 275,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "23-hunter"
+      ]
+    },
+    {
+      "id": "539-scout-detachment",
+      "name": "Scout Detachment",
+      "pts": 150,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "70-sniper",
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "42-razorback-lascannon",
+        "43-razorback-heavy-bolter"
+      ],
+      "_unitsText": "4 Scouts plus Transport"
+    },
+    {
+      "id": "540-spacecraft",
+      "name": "Spacecraft",
+      "pts": 200,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "541-stormraven",
+      "name": "Stormraven",
+      "pts": 300,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "4 Stormraven Gunships"
+    },
+    {
+      "id": "542-tactical-detachment",
+      "name": "Tactical Detachment",
+      "pts": 275,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "14-furioso-dreadnought-2x-power-fist",
+        "71-furioso-dreadnought-frag-cannon",
+        "18-vindicator",
+        "53-2-vindicators",
+        "21-land-raider",
+        "80-2-land-raider",
+        "81-3-land-raider",
+        "82-4-land-raider",
+        "22-land-raider-redeemer",
+        "83-2-land-raider-redeemer",
+        "84-3-land-raider-redeemer",
+        "85-4-land-raider-redeemer",
+        "23-hunter",
+        "26-stormraven-gunship",
+        "42-razorback-lascannon",
+        "43-razorback-heavy-bolter"
+      ],
+      "_unitsText": "6 Blood Angels Tacticals plus Transport"
+    },
+    {
+      "id": "543-terminator-detachment",
+      "name": "Terminator Detachment",
+      "pts": 350,
+      "tags": [
+        "detachments"
+      ],
+      "units": [],
+      "upgrades": [
+        "30-supreme-commander",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian",
+        "14-furioso-dreadnought-2x-power-fist",
+        "71-furioso-dreadnought-frag-cannon",
+        "18-vindicator",
+        "53-2-vindicators",
+        "21-land-raider",
+        "80-2-land-raider",
+        "81-3-land-raider",
+        "82-4-land-raider",
+        "22-land-raider-redeemer",
+        "83-2-land-raider-redeemer",
+        "84-3-land-raider-redeemer",
+        "85-4-land-raider-redeemer",
+        "26-stormraven-gunship"
+      ],
+      "_unitsText": "4 Blood Angels Terminators"
+    },
+    {
+      "id": "549-storm-talons",
+      "name": "Storm Talons",
+      "pts": 200,
+      "tags": [
+        "air-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "2 Storm Talons"
+    },
+    {
+      "id": "544-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 200,
+      "tags": [
+        "air-support"
+      ],
+      "units": [],
+      "upgrades": [],
+      "_unitsText": "1 Thunderhawk Gunship"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "11-4-blood-angels-assault-marine-units",
+      "name": "4 Blood Angels Assault Marine Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Blood Angels Assault Marine Units",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "50-6-blood-angels-assault-marine-units",
+      "name": "6 Blood Angels Assault Marine Units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "6 Blood Angels Assault Marine Units",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "12-battlebarge",
+      "name": "Battlebarge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Battlebarge",
+          "pts": 150,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "13-death-company-dreadnought",
+      "name": "Death Company Dreadnought",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Death Company Dreadnought",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "14-furioso-dreadnought-2x-power-fist",
+      "name": "Furioso Dreadnought (2x Power Fist)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Furioso Dreadnought (2x Power Fist)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "71-furioso-dreadnought-frag-cannon",
+      "name": "Furioso Dreadnought (Frag Cannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Furioso Dreadnought (Frag Cannon)",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "15-2-land-speeders",
+      "name": "2 Land Speeders",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Land Speeders",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "16-blood-angels-bike-unit",
+      "name": "Blood Angels Bike Unit",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Angels Bike Unit",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "17-blood-angels-attack-bike",
+      "name": "Blood Angels Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Angels Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "18-vindicator",
+      "name": "Vindicator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Vindicator",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "53-2-vindicators",
+      "name": "2 Vindicators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Vindicators",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "70-sniper",
+      "name": "Sniper",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Sniper",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "19-baal-predator",
+      "name": "Baal Predator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baal Predator",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "44-baal-predator-infernus",
+      "name": "Baal Predator Infernus",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baal Predator Infernus",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "74-baal-predator-infernus-magna-melta",
+      "name": "Baal Predator Infernus (Magna Melta)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Baal Predator Infernus (Magna Melta)",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "20-predator-annihilator",
+      "name": "Predator Annihilator",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Predator Annihilator",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "21-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "80-2-land-raider",
+      "name": "2 Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Land Raider",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "81-3-land-raider",
+      "name": "3 Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Land Raider",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "82-4-land-raider",
+      "name": "4 Land Raider",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Land Raider",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "22-land-raider-redeemer",
+      "name": "Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Raider Redeemer",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "83-2-land-raider-redeemer",
+      "name": "2 Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Land Raider Redeemer",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "84-3-land-raider-redeemer",
+      "name": "3 Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "3 Land Raider Redeemer",
+          "pts": 200,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "85-4-land-raider-redeemer",
+      "name": "4 Land Raider Redeemer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Land Raider Redeemer",
+          "pts": 250,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "23-hunter",
+      "name": "Hunter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Hunter",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "24-blood-angels-tl-lascannon-razorback",
+      "name": "Blood Angels TL Lascannon Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Angels TL Lascannon Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "25-blood-angels-tl-heavy-bolter-razorback",
+      "name": "Blood Angels TL Heavy Bolter Razorback",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Angels TL Heavy Bolter Razorback",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "26-stormraven-gunship",
+      "name": "Stormraven Gunship",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Stormraven Gunship",
+          "pts": 75,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "27-land-speeder",
+      "name": "Land Speeder",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "28-land-speeder-tornado",
+      "name": "Land Speeder Tornado",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Tornado",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "29-land-speeder-typhoon",
+      "name": "Land Speeder Typhoon",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Land Speeder Typhoon",
+          "pts": 10,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "30-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander",
+          "pts": 100,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "60-supreme-commander-honour-guard",
+      "name": "Supreme Commander Honour Guard",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Supreme Commander Honour Guard",
+          "pts": 125,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "31-captain",
+      "name": "Captain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Captain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "32-chaplain",
+      "name": "Chaplain",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Chaplain",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "33-librarian",
+      "name": "Librarian",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Librarian",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "34-4-death-company-units",
+      "name": "4 Death Company units",
+      "variants": [
+        {
+          "id": "1",
+          "label": "4 Death Company units",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "36-strike-cruiser",
+      "name": "Strike Cruiser",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Strike Cruiser",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "37-blood-angels-bike",
+      "name": "Blood Angels Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Blood Angels Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "38-attack-bike",
+      "name": "Attack Bike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Attack Bike",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "39-rhinos",
+      "name": "Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Rhinos",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "40-drop-pods",
+      "name": "Drop Pods",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Drop Pods",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "42-razorback-lascannon",
+      "name": "Razorback (Lascannon)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (Lascannon)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "43-razorback-heavy-bolter",
+      "name": "Razorback (Heavy Bolter)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Razorback (Heavy Bolter)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "41-jump-packs",
+      "name": "Jump Packs",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Jump Packs",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "spacecraft",
+      "from": [
+        "540-spacecraft"
+      ],
+      "max": 1
+    },
+    {
+      "id": "death-company",
+      "from": [
+        "534-death-company"
+      ],
+      "max": 1
+    },
+    {
+      "id": "death-company",
+      "from": [
+        "534-death-company"
+      ],
+      "min": 1
+    },
+    {
+      "id": "air-support",
+      "from": [
+        "549-storm-talons",
+        "544-thunderhawk"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "uc-0",
+      "from": [
+        "41-jump-packs"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-1",
+      "from": [
+        "23-hunter"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-2",
+      "from": [
+        "70-sniper"
+      ],
+      "max": 4
+    },
+    {
+      "id": "uc-3",
+      "from": [
+        "27-land-speeder",
+        "28-land-speeder-tornado",
+        "29-land-speeder-typhoon"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "536-land-speeders"
+      ]
+    },
+    {
+      "id": "uc-4",
+      "from": [
+        "16-blood-angels-bike-unit",
+        "17-blood-angels-attack-bike"
+      ],
+      "max": 5,
+      "min": 5,
+      "appliesTo": [
+        "533-bike-detachment"
+      ]
+    },
+    {
+      "id": "uc-5",
+      "from": [
+        "19-baal-predator",
+        "44-baal-predator-infernus",
+        "74-baal-predator-infernus-magna-melta"
+      ],
+      "max": 4,
+      "min": 4,
+      "appliesTo": [
+        "538-predators"
+      ]
+    },
+    {
+      "id": "razorbacks",
+      "from": [
+        "24-blood-angels-tl-lascannon-razorback",
+        "25-blood-angels-tl-heavy-bolter-razorback"
+      ],
+      "max": 6
+    },
+    {
+      "id": "uc-7",
+      "from": [
+        "32-chaplain"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "534-death-company"
+      ]
+    },
+    {
+      "id": "uc-8",
+      "from": [
+        "11-4-blood-angels-assault-marine-units",
+        "50-6-blood-angels-assault-marine-units"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "532-assault-detachment"
+      ]
+    },
+    {
+      "id": "cmdr",
+      "from": [
+        "30-supreme-commander",
+        "60-supreme-commander-honour-guard",
+        "31-captain",
+        "32-chaplain",
+        "33-librarian"
+      ],
+      "max": 1
+    },
+    {
+      "id": "uc-10",
+      "from": [
+        "30-supreme-commander",
+        "60-supreme-commander-honour-guard"
+      ],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "id": "dreadnoughts",
+      "from": [
+        "13-death-company-dreadnought"
+      ],
+      "max": 2
+    },
+    {
+      "id": "dreadnoughts",
+      "from": [
+        "14-furioso-dreadnought-2x-power-fist",
+        "71-furioso-dreadnought-frag-cannon"
+      ],
+      "max": 2
+    },
+    {
+      "id": "uc-13",
+      "from": [
+        "18-vindicator",
+        "53-2-vindicators"
+      ],
+      "max": 1
+    },
+    {
+      "id": "land-raiders",
+      "from": [
+        "21-land-raider",
+        "80-2-land-raider",
+        "81-3-land-raider",
+        "82-4-land-raider",
+        "22-land-raider-redeemer",
+        "83-2-land-raider-redeemer",
+        "84-3-land-raider-redeemer",
+        "85-4-land-raider-redeemer"
+      ],
+      "max": 1
+    },
+    {
+      "id": "storm-ravens",
+      "from": [
+        "26-stormraven-gunship"
+      ],
+      "max": 4
+    },
+    {
+      "id": "razorbacks",
+      "from": [
+        "42-razorback-lascannon",
+        "43-razorback-heavy-bolter"
+      ],
+      "max": 4,
+      "appliesTo": [
+        "535-devastator-detachment",
+        "539-scout-detachment"
+      ]
+    },
+    {
+      "id": "razorbacks",
+      "from": [
+        "42-razorback-lascannon",
+        "43-razorback-heavy-bolter"
+      ],
+      "max": 6,
+      "appliesTo": [
+        "542-tactical-detachment"
+      ]
+    },
+    {
+      "id": "vindicator",
+      "from": [
+        "50-6-blood-angels-assault-marine-units",
+        "51-51",
+        "52-52"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "unknown-550"
+      ]
+    },
+    {
+      "id": "uc-19",
+      "from": [
+        "36-strike-cruiser",
+        "12-battlebarge"
+      ],
+      "max": 1,
+      "min": 1,
+      "appliesTo": [
+        "540-spacecraft"
+      ]
+    }
+  ],
+  "_conversionNotes": [
+    "Converted from adam77/snapfire NetEA format by convert-netea.js.",
+    "formations[].units is empty – populate unit slots by hand or from an external unit table.",
+    "upgrades[].variants[].effects is empty – add effects by hand.",
+    "Verify all pts values; formations with pts ≤ 0 are marked with _note."
+  ]
+}
