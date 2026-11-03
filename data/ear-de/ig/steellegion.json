@@ -195,7 +195,7 @@
   ],
   "upgrades": [
     {
-      "id": "fire-support", "name": "Feuerunterstützung",
+      "id": "fire-support", "transportable": true, "name": "Feuerunterstützung",
       "variants": [
         { "id": "2", "label": "2 Feuerunterstützungstrupps", "pts": 50, "effects": [{ "op": "add", "unit": "fire-support", "count": 2 }] },
         { "id": "4", "label": "4 Feuerunterstützungstrupps", "pts": 100, "effects": [{ "op": "add", "unit": "fire-support", "count": 4 }] }
@@ -214,18 +214,18 @@
       ]
     },
     {
-      "id": "infantry", "name": "Infanterie",
+      "id": "infantry", "transportable": true, "name": "Infanterie",
       "variants": [ { "id": "6", "label": "6 Infanterie (INF)", "pts": 75, "effects": [{ "op": "add", "unit": "infantry", "count": 6 }] } ]
     },
     {
-      "id": "ogryns", "name": "Ogryns",
+      "id": "ogryns", "transportable": true, "name": "Ogryns",
       "variants": [
         { "id": "1", "label": "1 Ogryn", "pts": 25, "effects": [{ "op": "add", "unit": "ogryn", "count": 1 }] },
         { "id": "2", "label": "2 Ogryns", "pts": 50, "effects": [{ "op": "add", "unit": "ogryn", "count": 2 }] }
       ]
     },
     {
-      "id": "snipers", "name": "Scharfschützen",
+      "id": "snipers", "transportable": true, "name": "Scharfschützen",
       "variants": [
         { "id": "1", "label": "1 Scharfschütze", "pts": 25, "effects": [{ "op": "add", "unit": "sniper", "count": 1 }] },
         { "id": "2", "label": "2 Scharfschützen", "pts": 50, "effects": [{ "op": "add", "unit": "sniper", "count": 2 }] }
