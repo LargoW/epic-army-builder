@@ -31,3 +31,8 @@ sources/ (pinned, read-only)      convert/ (Node)        data/ (canonical)      
 8. Release and lifecycle
 
 See [docs/schema.md](docs/schema.md) for the canonical data format (draft).
+
+## Run locally
+
+The app uses ES modules and fetch, so serve the folder over HTTP (not file://), e.g. `python -m http.server 8123` or any static server, then open http://localhost:8123/. Tests: `node --test test/`.
+
