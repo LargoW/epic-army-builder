@@ -36,6 +36,14 @@ body {
 .logo { width: 36px; height: 36px; flex: none; border-radius: 10px; display: grid; place-items: center; font-size: 20px; color: var(--on-gold); background: linear-gradient(135deg, var(--gold), var(--gold2)); }
 .bar h1 { flex: 1; min-width: 0; margin: 0; font-size: 17px; line-height: 1.15; }
 .bar h1 small { display: block; font-size: 11px; font-weight: 500; color: var(--mut); letter-spacing: 1.2px; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar .title { flex: 1; min-width: 0; display: flex; align-items: center; gap: 6px; text-align: left; background: none; border: 0; padding: 2px; min-height: 0; color: inherit; }
+.bar .title h1 { flex: 1; }
+.bar .title .caret { color: var(--gold); }
+.list-row { display: flex; gap: 6px; align-items: stretch; margin-bottom: 8px; }
+.list-row .pick { flex: 1; margin-bottom: 0; }
+.list-row.cur .pick { border-color: var(--gold); }
+.list-row .sub { display: block; font-size: .8rem; color: var(--mut); font-weight: 400; }
+.sheet-search { width: calc(100% - 28px); margin: 10px 14px 0; padding: 10px 12px; font: inherit; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: inherit; }
 .bar-total { white-space: nowrap; color: var(--mut); }
 .bar-total strong { font-size: 1.5rem; color: var(--gold); }
 

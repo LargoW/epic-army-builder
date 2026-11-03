@@ -4,16 +4,21 @@ import {
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
 
-const ARMY = "ear-de/ig/steellegion";
-const STORE = `eab:${ARMY}`;
+const LEGACY = "eab:ear-de/ig/steellegion";
+const index = await fetch("data/index.json").then((r) => r.json());
+const armyInfo = (id) => index.armies.find((a) => a.id === id);
 
-const [base, profiles] = await Promise.all([
-  fetch(`data/${ARMY}.json`).then((r) => r.json()),
-  fetch(`data/${ARMY}.profiles.json`).then((r) => r.json()),
-]);
-const data = withProfiles(base, profiles);
-const formationById = Object.fromEntries(data.formations.map((f) => [f.id, f]));
-const upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
+let base, data, formationById, upgradeById;
+async function useArmy(id) {
+  const [b, p] = await Promise.all([
+    fetch(`data/${id}.json`).then((r) => r.json()),
+    fetch(`data/${id}.profiles.json`).then((r) => r.json()),
+  ]);
+  base = b;
+  data = withProfiles(b, p);
+  formationById = Object.fromEntries(data.formations.map((f) => [f.id, f]));
+  upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
+}
 
 const $ = (s) => document.querySelector(s);
 const app = $("#app");
@@ -36,16 +41,61 @@ function applyTheme(t) {
 }
 applyTheme(currentTheme());
 
-// Persistence: drop entries that no longer exist in the data.
-function load() {
-  try {
-    const s = JSON.parse(localStorage.getItem(STORE));
-    if (s && Array.isArray(s.formations)) return { ...s, formations: s.formations.filter((e) => formationById[e.formation]) };
-  } catch { /* fall through */ }
-  return createState();
+// Lists: any number per army, each with its own name. Stored as one array.
+let lists = [];
+try { lists = JSON.parse(localStorage.getItem("eab:lists")) || []; } catch { lists = []; }
+if (!lists.length) {
+  let migrated = null;
+  try { migrated = JSON.parse(localStorage.getItem(LEGACY)); } catch { /* ignore */ }
+  if (migrated && Array.isArray(migrated.formations)) lists.push({ id: "l1", army: "ear-de/ig/steellegion", name: "Stahllegion 1", state: migrated });
 }
-let state = load();
-const save = () => localStorage.setItem(STORE, JSON.stringify(state));
+lists = lists.filter((l) => armyInfo(l.army));
+let currentId = localStorage.getItem("eab:current");
+let state;
+const cur = () => lists.find((l) => l.id === currentId);
+
+const persist = () => {
+  localStorage.setItem("eab:lists", JSON.stringify(lists));
+  localStorage.setItem("eab:current", currentId);
+};
+const save = () => {
+  const l = cur();
+  l.state = state;
+  l.total = summarize(data, state).total;
+  persist();
+};
+
+function newName(armyId) {
+  const a = armyInfo(armyId);
+  let n = 1;
+  while (lists.some((l) => l.army === armyId && l.name === `${a.name} ${n}`)) n++;
+  return `${a.name} ${n}`;
+}
+
+async function openList(id) {
+  const l = lists.find((x) => x.id === id);
+  currentId = id;
+  await useArmy(l.army);
+  state = l.state && Array.isArray(l.state.formations)
+    ? { ...l.state, formations: l.state.formations.filter((e) => formationById[e.formation]) }
+    : createState();
+  open.clear();
+  persist();
+}
+
+async function createList(armyId, name, from) {
+  let n = 1;
+  while (lists.some((l) => l.id === `l${n}`)) n++;
+  lists.push({ id: `l${n}`, army: armyId, name: name || newName(armyId), state: from || createState() });
+  await openList(`l${n}`);
+  save();
+}
+
+if (!cur()) {
+  if (lists.length) currentId = lists[0].id;
+  else { await useArmy(index.armies[0].id); await createList(index.armies[0].id); }
+}
+if (!state) await openList(currentId);
 
 function update(next) {
   state = next;
@@ -181,8 +231,9 @@ function render() {
   const { total, entries } = summarize(data, state);
   const violations = validate(data, state);
   $("#total").textContent = total;
-  $("#army-name").textContent = base.name;
-  $("#army-sub").textContent = `${base.faction} · v${base.version}`;
+  if (cur().total !== total) { cur().total = total; persist(); }
+  $("#army-name").textContent = cur().name;
+  $("#army-sub").textContent = `${base.name} · ${base.faction} · v${base.version}`;
   document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.view === view));
   $("#sort").disabled = state.formations.length < 2;
 
@@ -234,6 +285,26 @@ function openSort() {
     </div>`).join("")}</div></div>`);
 }
 
+function openLists() {
+  const rows = lists.map((l) => {
+    const a = armyInfo(l.army);
+    return `<div class="list-row${l.id === currentId ? " cur" : ""}">
+      <button class="pick" type="button" data-act="open-list" data-id="${l.id}"><span class="name">${esc(l.name)}<span class="sub">${esc(a.name)} · v${esc(a.version)}</span></span><span>${l.total || 0} Pkt.</span></button>
+      <button class="icon" type="button" data-act="rename-list" data-id="${l.id}" aria-label="Umbenennen">✎</button>
+      <button class="icon" type="button" data-act="copy-list" data-id="${l.id}" aria-label="Duplizieren">⧉</button>
+      <button class="icon" type="button" data-act="delete-list" data-id="${l.id}" aria-label="Löschen">🗑</button>
+    </div>`;
+  }).join("");
+  const rs = index.rulesets.map((r) => {
+    const byFaction = {};
+    index.armies.filter((a) => a.ruleset === r.id).forEach((a) => (byFaction[a.faction] ||= []).push(a));
+    return `<section class="picker-section" data-search><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
+      `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">+ ${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
+  }).join("");
+  sheet("Meine Listen", `<section class="picker-section">${rows}</section>
+    <input class="sheet-search" type="search" data-act="search" placeholder="Neue Liste: Armee suchen …" aria-label="Armee suchen">${rs}`);
+}
+
 function openMore() {
   sheet("Menü", `<div class="sheet-pad">
     <button type="button" data-act="copy">Liste als Text kopieren</button>
@@ -242,8 +313,8 @@ function openMore() {
   </div>`);
 }
 
-document.addEventListener("click", (e) => {
-  const el = e.target.closest("[data-act], [data-view], #add, #sort, #more, #theme");
+document.addEventListener("click", async (e) => {
+  const el = e.target.closest("[data-act], [data-view], #lists, #add, #sort, #more, #theme");
   if (!el) return;
   if (el.dataset.view) {
     view = el.dataset.view;
@@ -251,7 +322,39 @@ document.addEventListener("click", (e) => {
     return render();
   }
   const act = el.dataset.act || el.id;
+  const target = lists.find((l) => l.id === el.dataset.id);
   switch (act) {
+    case "lists":
+      return openLists();
+    case "open-list":
+      await openList(el.dataset.id);
+      dlg.close();
+      return render();
+    case "new-list":
+      await createList(el.dataset.army);
+      dlg.close();
+      return render();
+    case "copy-list":
+      await createList(target.army, `${target.name} (Kopie)`, structuredClone(target.state));
+      return openLists(), render();
+    case "rename-list":
+      sheet("Liste umbenennen", `<div class="sheet-pad"><input id="rename" class="sheet-search" style="margin:0;width:100%" maxlength="40" value="${esc(target.name)}" aria-label="Name der Liste">
+        <button class="primary" type="button" data-act="save-name" data-id="${target.id}">Speichern</button></div>`);
+      return $("#rename").select();
+    case "save-name": {
+      const n = $("#rename").value.trim();
+      if (n) { target.name = n.slice(0, 40); persist(); render(); }
+      return openLists();
+    }
+    case "delete-list":
+      if (!confirm(`„${target.name}“ löschen?`)) return;
+      lists = lists.filter((l) => l !== target);
+      if (target.id === currentId) {
+        if (lists.length) await openList(lists[0].id);
+        else await createList(index.armies[0].id);
+      } else persist();
+      render();
+      return openLists();
     case "remove":
       e.preventDefault();
       return update(removeFormation(state, Number(el.dataset.uid)));
@@ -286,6 +389,12 @@ document.addEventListener("click", (e) => {
       dlg.close();
       if (state.formations.length && confirm("Alle Verbände entfernen?")) update(createState());
   }
+});
+
+document.addEventListener("input", (e) => {
+  if (e.target.dataset.act !== "search") return;
+  const q = e.target.value.trim().toLowerCase();
+  dlg.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { b.hidden = q && !b.textContent.toLowerCase().includes(q); });
 });
 
 document.addEventListener("change", (e) => {
