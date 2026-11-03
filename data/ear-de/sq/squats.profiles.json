@@ -1,0 +1,1408 @@
+{
+  "army": "ear-de/sq/squats",
+  "source": {
+    "file": "lists_de/SQ/squats.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Tunnelgräber",
+      "description": [
+        "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+        "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+        "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+        "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+      ]
+    },
+    {
+      "name": "Tunneltransporte",
+      "description": [
+        "Verbände mit Einheiten, die sowohl die Sonderregel Transport als auch Tunnelgräber besitzen, müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch Tunnelbewegung betreten. Kriegsmaschinen mit diesen Sonderregeln dürfen das Spiel nicht leer beginnen, sondern müssen einen anderen Verband transportieren."
+      ]
+    }
+  ],
+  "units": {
+    "ancestor": {
+      "name": "Lebender Ahne",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geisterlords",
+          "description": [
+            "Ein Verband mit einem lebenden Ahnen erleidet keinen Modifikator von -1 auf seinen Aktionstest, wenn er versucht, die Initiative zu behalten."
+          ]
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "grand-lord": {
+      "name": "Klan-Großlord",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "lord": {
+      "name": "Klanlord",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "techpriest": {
+      "name": "Squat-Techpriester",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Axt des Omnissiah",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "warrior": {
+      "name": "Squat-Krieger",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Jede zweite Einheit (aufgerundet) ist mit einem Missile Launcher bewaffnet.",
+      "weapons": [
+        {
+          "name": "Lasergewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "berserker": {
+      "name": "Squat-Berserker",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Laserpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "biker": {
+      "name": "Squat-Biker",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "hearthguard": {
+      "name": "Squat-Hearthguards",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Heirloom Geschütze",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "thunderer": {
+      "name": "Squat-Donnerer",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Mehrere Laserkanonen",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Mehrere schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mole": {
+      "name": "Maulwurf-Mörser",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Mole Mörser",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rapier": {
+      "name": "Rapier",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Rapier Laserzerstörer",
+          "modes": [
+            {
+              "firepower": "AP6+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "thudd": {
+      "name": "Thudd-Geschütz",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Thudd Geschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "guild-trike": {
+      "name": "Gildenmeister-Trike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 3,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Trike Energielanze",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "trike": {
+      "name": "Squat-Trike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rhino": {
+      "name": "Squat-Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Squat-Klanlord, Großklanlord und Squat-Salvenkanone-Einheiten belegen jeweils 2 Plätze. Beim Transport von Squat-Salvenkanonen wird die Geschwindigkeit der Squat-Rhinos auf 20 cm reduziert.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "land-raider": {
+      "name": "Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Squat-Klanlord- und Grand-Klanlord-Einheiten belegen jeweils 2 Plätze.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "thunderfire": {
+      "name": "Squat-Thunderfire",
+      "type": "AV",
+      "speed": 5,
+      "armour": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Squat-Donnerfeuerkanonen",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+/AA4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "gyro": {
+      "name": "Eisenadler-Gyrokopter",
+      "type": "AV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Scout, Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "goliath": {
+      "name": "Goliath",
+      "type": "WE",
+      "speed": "5cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Squat-Megakanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "overlord": {
+      "name": "Overlord-Luftschiff",
+      "type": "WE",
+      "speed": 25,
+      "armour": 3,
+      "ff": 4,
+      "crit": "Overlord wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "count": 6,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Overlord-Sperrfeuer",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flakkanonen",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Hilfstransportschiff",
+          "description": [
+            "Hilfstransportschiff sind Antigravfahrzeuge und gelten für Sichtlinien und Gelände stets als aufgetaucht. Verfügt das Hilfstransportschiff über eine Transportoption, darf es Einheiten wie üblich ein- und ausschiffen. Eingeschiffte Einheiten dürfen einen Schutzwurf ablegen (siehe 1.7.5), wenn das Hilfstransportschiff zerstört wird.",
+            "Hilfstransportschiff blockieren keine Sichtlinie und müssen bei Offensiven stets ihre Antigravfähigkeit einsetzen, um ein Feuergefecht zu erzwingen. Infanterie in Basekontakt mit einem Hilfstransportschiff kann dieses nicht als Deckung nutzen."
+          ]
+        }
+      ]
+    },
+    "termite": {
+      "name": "Termite",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Squat-Klanlord-Einheiten belegen jeweils 2 Plätze.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "hellbore": {
+      "name": "Höllenbohrer",
+      "type": "WE",
+      "speed": "Immobile",
+      "armour": 3,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann 12 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Squat-Klanlord-Einheiten belegen jeweils 2 Plätze.",
+      "crit": "Hellbore wird zerstört.",
+      "weapons": [
+        {
+          "name": "Sturmbolter Batterie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "leviathan": {
+      "name": "Leviathan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann 12 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Bis zu 2 Einheiten dürfen von der Kampfplattform des Leviathan aus schießen und sich mit ihrem FF an Feuergefechten beteiligen.",
+      "crit": "Leviathan ist bewegungsunfähig und darf sich für den Rest des Spiels nicht mehr bewegen. 1W3 zufällige transportierte Einheiten erleiden einen Treffer. Weitere kritische Treffer zerstören Leviathan.",
+      "weapons": [
+        {
+          "name": "Squat-Weltuntergangskanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 6,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sturmbolter Batterie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde: 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "colossus": {
+      "name": "Koloss",
+      "type": "WE",
+      "speed": "15",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "crit": "Koloss ist bewegungsunfähig und darf sich für den Rest des Spiels nicht mehr bewegen. Weitere kritische Treffer zerstören Koloss.",
+      "weapons": [
+        {
+          "name": "Squat-Weltuntergangskanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Rakete",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sturmbolter Batterie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 5",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde: 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "cyclops": {
+      "name": "Zyklop",
+      "type": "WE",
+      "speed": "15",
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Zyklop darf seine Hellfury Cannon nicht mehr abfeuern. Weitere kritische Treffer zerstören Zyklop, und alle Einheiten innerhalb von 5cm erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Salvenkanone und Drohnen",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Shurikenkanone",
+          "count": 6,
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 5",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde: 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "landtrain": {
+      "name": "Squat-Landzug",
+      "type": "WE",
+      "speed": "20",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "notes": "[*] Jeder Berserker-Kampf-Car darf 1 Einheit Squat-Berserker transportieren. Diese darf während des Transports im Landzug an Feuergefechten teilnehmen.",
+      "crit": "Der letzte Kampf-Car im Zug wird zerstört. Bleibt kein Kampf-Car übrig, wird die Land-Train-Lokomotive zerstört.",
+      "weapons": [
+        {
+          "name": "Squat-Mjolnir-Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ragnarok Kampfgeschütz",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sturmbolter Batterie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SCHLACHTWAGEN-WAFFEN",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Berserker Kampf-Car",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dragon Kampf-Car",
+          "modes": [
+            {
+              "firepower": "3x AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Belagerungsmörser Kampf-Car",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0–1 Bombe Kampf-Car",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2 + aktuelle Anzahl Kampf-Cars",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde: aktuelle Anzahl Kampf-Cars",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "kastellan": {
+      "name": "Kastelan-Roboter",
+      "type": "LV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Phosphorblaster",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Maschinengeist",
+          "description": [
+            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Schwerfällig",
+          "description": [
+            "Einheiten mit der Sonderregel Schwerfällig dürfen beim Aufgeriebenwerden oder bei einem misslungenen Sammelversuch nur einen einzelnen Rückzugsschritt statt zwei durchführen."
+          ]
+        }
+      ]
+    },
+    "tarantula": {
+      "name": "Tarantula",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 5,
+      "ff": "5+/4",
+      "notes": "Entweder mit Zwillings-Laserkanone oder Zwillings-Schwerem Bolter bewaffnet. Tarantulas mit Zwillings-Schwerem Bolter erhalten einen Feuergefechtswert von 4+.",
+      "weapons": [
+        {
+          "name": "0–1x Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45
+            }
+          ]
+        },
+        {
+          "name": "0–1x Zwillings-Schwerbolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Maschinengeist",
+          "description": [
+            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,936 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sq/squats",
+  "name": "Wodanaz-Feste",
+  "faction": "Squats",
+  "version": "1.0",
+  "source": {
+    "file": "lists_de/SQ/squats.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "strategy": 2,
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "ancestor": {
+      "name": "Lebender Ahne",
+      "from": "SQ.json",
+      "type": "CH"
+    },
+    "grand-lord": {
+      "name": "Klan-Großlord",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "lord": {
+      "name": "Klanlord",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "techpriest": {
+      "name": "Squat-Techpriester",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "warrior": {
+      "name": "Squat-Krieger",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "berserker": {
+      "name": "Squat-Berserker",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "biker": {
+      "name": "Squat-Biker",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "hearthguard": {
+      "name": "Squat-Hearthguards",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "thunderer": {
+      "name": "Squat-Donnerer",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "mole": {
+      "name": "Maulwurf-Mörser",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "rapier": {
+      "name": "Rapier",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "thudd": {
+      "name": "Thudd-Geschütz",
+      "from": "SQ.json",
+      "type": "INF"
+    },
+    "guild-trike": {
+      "name": "Gildenmeister-Trike",
+      "from": "SQ.json"
+    },
+    "trike": {
+      "name": "Squat-Trike",
+      "from": "SQ.json"
+    },
+    "rhino": {
+      "name": "Squat-Rhino",
+      "from": "SQ.json"
+    },
+    "land-raider": {
+      "name": "Land Raider",
+      "from": "SQ.json"
+    },
+    "thunderfire": {
+      "name": "Squat-Thunderfire",
+      "from": "SQ.json"
+    },
+    "gyro": {
+      "name": "Eisenadler-Gyrokopter",
+      "from": "SQ.json"
+    },
+    "goliath": {
+      "name": "Goliath",
+      "from": "SQ.json"
+    },
+    "overlord": {
+      "name": "Overlord-Luftschiff",
+      "from": "SQ.json"
+    },
+    "termite": {
+      "name": "Termite",
+      "from": "SQ.json"
+    },
+    "hellbore": {
+      "name": "Höllenbohrer",
+      "from": "SQ.json"
+    },
+    "leviathan": {
+      "name": "Leviathan",
+      "from": "SQ.json"
+    },
+    "colossus": {
+      "name": "Koloss",
+      "from": "SQ.json"
+    },
+    "cyclops": {
+      "name": "Zyklop",
+      "from": "SQ.json"
+    },
+    "landtrain": {
+      "name": "Squat-Landzug",
+      "from": "SQ.json"
+    },
+    "kastellan": {
+      "name": "Kastelan-Roboter",
+      "from": "AM.json"
+    },
+    "tarantula": {
+      "name": "Tarantula",
+      "from": "AM.json"
+    }
+  },
+  "sections": [
+    {
+      "id": "brotherhood",
+      "name": "Bruderschaftsformationen der Wodanaz-Feste",
+      "formations": [
+        "warriors",
+        "berserkers"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Unterstützungsformationen der Wodanaz-Feste",
+      "description": "Für jede Krieger-Bruderschaftsformation dürfen bis zu zwei Unterstützungsformationen der Feste gewählt werden.",
+      "formations": [
+        "bikers",
+        "thunderers",
+        "guard-battery",
+        "light-artillery",
+        "thunderfire",
+        "gyros",
+        "kastellans"
+      ]
+    },
+    {
+      "id": "wm",
+      "name": "Kriegsmaschinen der Wodanaz-Feste",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für Kriegsmaschinen ausgegeben werden. Pro Krieger-Bruderschaft mit Höllenbohrer-Transport ist höchstens ein Höllenbohrer erlaubt.",
+      "formations": [
+        "hellbore",
+        "overlord",
+        "goliath",
+        "cyclops",
+        "colossus",
+        "landtrain"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "warriors",
+      "name": "Krieger-Bruderschaft",
+      "pts": 200,
+      "tags": [
+        "brotherhood",
+        "warrior-bro"
+      ],
+      "units": [
+        {
+          "unit": "hearthguard",
+          "count": 1
+        },
+        {
+          "unit": "warrior",
+          "count": 9
+        }
+      ],
+      "upgrades": [
+        "swap-rapier",
+        "more-warriors",
+        "lord",
+        "t-rhino",
+        "t-raider",
+        "t-termite",
+        "t-hellbore",
+        "t-leviathan",
+        "ancestor-lev"
+      ]
+    },
+    {
+      "id": "berserkers",
+      "name": "Berserker-Bruderschaft",
+      "pts": 200,
+      "tags": [
+        "brotherhood"
+      ],
+      "units": [
+        {
+          "unit": "hearthguard",
+          "count": 1
+        },
+        {
+          "unit": "berserker",
+          "count": 7
+        },
+        {
+          "unit": "rhino",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "termites"
+      ]
+    },
+    {
+      "id": "bikers",
+      "name": "Biker",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "biker",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "guild-trike",
+        "trikes"
+      ]
+    },
+    {
+      "id": "thunderers",
+      "name": "Donnerer",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "thunderer",
+          "count": 4
+        },
+        {
+          "unit": "rhino",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "thunderer-transport"
+      ]
+    },
+    {
+      "id": "guard-battery",
+      "name": "Wachbatterie",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "rapier",
+            "tarantula"
+          ],
+          "count": 6,
+          "mixed": true
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "light-artillery",
+      "name": "Leichte Artilleriebatterie",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "thudd",
+            "mole"
+          ],
+          "count": 6,
+          "mixed": true
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "thunderfire",
+      "name": "Thunderfire-Batterie",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "thunderfire",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "thunderfire-rhinos"
+      ]
+    },
+    {
+      "id": "gyros",
+      "name": "Gyrokopter-Staffel",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "gyro",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "kastellans",
+      "name": "Kastelan-Manipel",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "techpriest",
+          "count": 1
+        },
+        {
+          "unit": "kastellan",
+          "count": 5
+        }
+      ],
+      "upgrades": [
+        "more-kastellans"
+      ]
+    },
+    {
+      "id": "hellbore",
+      "name": "Höllenbohrer",
+      "pts": 150,
+      "tags": [
+        "wm",
+        "hellbore"
+      ],
+      "units": [
+        {
+          "unit": "hellbore",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "ancestor"
+      ]
+    },
+    {
+      "id": "overlord",
+      "name": "Overlord",
+      "pts": 250,
+      "tags": [
+        "wm"
+      ],
+      "units": [
+        {
+          "unit": "overlord",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "ancestor"
+      ]
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath-Batterie",
+      "pts": 350,
+      "tags": [
+        "wm"
+      ],
+      "units": [
+        {
+          "unit": "goliath",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "cyclops",
+      "name": "Zyklop",
+      "pts": 425,
+      "tags": [
+        "wm"
+      ],
+      "units": [
+        {
+          "unit": "cyclops",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "ancestor"
+      ]
+    },
+    {
+      "id": "colossus",
+      "name": "Koloss",
+      "pts": 450,
+      "tags": [
+        "wm"
+      ],
+      "units": [
+        {
+          "unit": "colossus",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "ancestor"
+      ]
+    },
+    {
+      "id": "landtrain",
+      "name": "Landzug",
+      "pts": 200,
+      "tags": [
+        "wm"
+      ],
+      "units": [
+        {
+          "unit": "landtrain",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "ancestor",
+        "dragon-car",
+        "mortar-car",
+        "berserker-car",
+        "bomb-car"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "swap-rapier",
+      "name": "Rapiere oder Donnerer",
+      "variants": [
+        {
+          "id": "rapier",
+          "label": "2 Squat-Krieger durch 2 Rapiere ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "warrior",
+              "to": "rapier",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "thunderer",
+          "label": "2 Squat-Krieger durch 2 Donnerer ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "warrior",
+              "to": "thunderer",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "more-warriors",
+      "name": "Squat-Krieger",
+      "variants": [
+        {
+          "id": "4",
+          "label": "4 Squat-Krieger",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "warrior",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lord",
+      "name": "Klanlord",
+      "variants": [
+        {
+          "id": "lord",
+          "label": "Klanlord",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "lord",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "grand",
+          "label": "0–1 Klan-Großlord",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "grand-lord",
+              "count": 1
+            }
+          ],
+          "perArmy": 1
+        }
+      ]
+    },
+    {
+      "id": "t-rhino",
+      "name": "Transporter: Squat-Rhinos",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Transporter: Squat-Rhinos",
+          "pts": 10,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rhino",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 7
+        }
+      ]
+    },
+    {
+      "id": "t-raider",
+      "name": "Transporter: Land Raiders",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Transporter: Land Raiders",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "land-raider",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 7
+        }
+      ]
+    },
+    {
+      "id": "t-termite",
+      "name": "Transporter: Termiten",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Transporter: Termiten",
+          "pts": 15,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "termite",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 7
+        }
+      ]
+    },
+    {
+      "id": "t-hellbore",
+      "name": "Transporter: Höllenbohrer (separat erwerben)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Höllenbohrer-Transport",
+          "pts": 0,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "t-leviathan",
+      "name": "Transporter: Leviathan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Leviathan",
+          "pts": 275,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "leviathan",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestor-lev",
+      "name": "Lebender Ahne",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lebender Ahne (nur Leviathan)",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ancestor",
+              "count": 1
+            }
+          ],
+          "requires": [
+            "leviathan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancestor",
+      "name": "Lebender Ahne",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Lebender Ahne",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ancestor",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "termites",
+      "name": "Termiten",
+      "variants": [
+        {
+          "id": "4",
+          "label": "4 Squat-Rhinos durch 4 Termiten ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "rhino",
+              "to": "termite",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guild-trike",
+      "name": "Gildenmeister-Trike",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Gildenmeister-Trike",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "guild-trike",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trikes",
+      "name": "Squat-Trikes",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Squat-Biker durch Trikes ersetzen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "biker",
+              "to": "trike",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "2 Squat-Biker durch Trikes ersetzen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "biker",
+              "to": "trike",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "3 Squat-Biker durch Trikes ersetzen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "biker",
+              "to": "trike",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunderer-transport",
+      "name": "Donnerer-Transporter",
+      "variants": [
+        {
+          "id": "termite",
+          "label": "2 Squat-Rhinos durch 2 Termiten ersetzen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "rhino",
+              "to": "termite",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "land-raider",
+          "label": "2 Squat-Rhinos durch 2 Land Raiders ersetzen",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "rhino",
+              "to": "land-raider",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thunderfire-rhinos",
+      "name": "Squat-Rhinos",
+      "variants": [
+        {
+          "id": "3",
+          "label": "3 Squat-Rhinos",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rhino",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "more-kastellans",
+      "name": "Kastelan-Roboter (0–2)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kastelan-Roboter (0–2)",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kastellan",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 2
+        }
+      ]
+    },
+    {
+      "id": "dragon-car",
+      "name": "Drachen-Kampf-Car",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Drachen-Kampf-Car",
+          "pts": 75,
+          "effects": [],
+          "perUnit": true,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "id": "mortar-car",
+      "name": "Belagerungsmörser-Kampf-Car",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Belagerungsmörser-Kampf-Car",
+          "pts": 75,
+          "effects": [],
+          "perUnit": true,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "id": "berserker-car",
+      "name": "Berserker-Kampf-Car",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Berserker-Kampf-Car + Squat-Berserker",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "berserker",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "id": "bomb-car",
+      "name": "0–1 Bombe Kampf-Car",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Bombe Kampf-Car",
+          "pts": 125,
+          "effects": [],
+          "perUnit": true,
+          "max": 1
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-per-brotherhood",
+      "from": [
+        "tag:support"
+      ],
+      "forEach": [
+        "warriors"
+      ],
+      "max": 2
+    },
+    {
+      "id": "wm-share",
+      "from": [
+        "tag:wm"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 ﻿// Network-first with a short timeout, falling back to the cache: fresh when online, usable offline.
-const CACHE = "eab-v3";
+const CACHE = "eab-v4";
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "ui/app.js", "ui/style.css", "ui/messages.de.js",
   "engine/engine.js", "engine/exchange.js", "vendor/qrcode.js", "data/index.json", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",

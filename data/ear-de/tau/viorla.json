@@ -1,0 +1,838 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/tau/viorla",
+  "name": "Vior'la",
+  "faction": "T'au",
+  "version": "1.0",
+  "source": {
+    "file": "lists_de/TAU/viorla.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
+  "strategy": 3,
+  "initiative": [
+    {
+      "formations": [
+        "crisis",
+        "heavy-cadre",
+        "kv128",
+        "kx139"
+      ],
+      "value": "1+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "shasel": {
+      "name": "Shas'el",
+      "from": "TAU.json"
+    },
+    "shaso": {
+      "name": "Shas'o",
+      "from": "TAU.json"
+    },
+    "celestial": {
+      "name": "Himmlischer",
+      "from": "TAU.json"
+    },
+    "xv8": {
+      "name": "XV8 Krisis-Kampfanzüge",
+      "from": "TAU.json"
+    },
+    "fw": {
+      "name": "Feuerkrieger",
+      "from": "TAU.json"
+    },
+    "attack-drone": {
+      "name": "Angriffsdrohnen",
+      "from": "TAU.json"
+    },
+    "rocket-drone": {
+      "name": "Raketen-Drohnen",
+      "from": "TAU.json"
+    },
+    "shield-drone": {
+      "name": "Schilddrohnen",
+      "from": "TAU.json"
+    },
+    "marker-drone": {
+      "name": "Markiererdrohnen",
+      "from": "TAU.json"
+    },
+    "pathfinder": {
+      "name": "Späher",
+      "from": "TAU.json"
+    },
+    "xv15": {
+      "name": "XV15 Geist-Kampfanzüge",
+      "from": "TAU.json"
+    },
+    "xv95": {
+      "name": "XV95 Schattengeist-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv88": {
+      "name": "XV88 Koloss-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv104": {
+      "name": "XV104 Sturmflut-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv107": {
+      "name": "XV107 R'varna-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv109": {
+      "name": "XV109 Y'vahra-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "kv128": {
+      "name": "KV128 Sturmwoge-Ballistikanzug",
+      "from": "TAU.json"
+    },
+    "kx139": {
+      "name": "KX139 Ta'unar-Vorherrschaftsrüstung",
+      "from": "TAU.json"
+    },
+    "piranha": {
+      "name": "Piranha",
+      "from": "TAU.json"
+    },
+    "tetra": {
+      "name": "Tetra",
+      "from": "TAU.json"
+    },
+    "devilfish": {
+      "name": "Teufelsrochen",
+      "from": "TAU.json"
+    },
+    "ion-hh": {
+      "name": "Ionen-Hammerhai",
+      "from": "TAU.json"
+    },
+    "rail-hh": {
+      "name": "Massebeschleuniger-Hammerhai",
+      "from": "TAU.json"
+    },
+    "fusion-hh": {
+      "name": "Fusions-Hammerhai",
+      "from": "TAU.json"
+    },
+    "razorshark": {
+      "name": "Dornenhai",
+      "from": "TAU.json"
+    },
+    "kroot-shaper": {
+      "name": "Kroot-Söldner-Meisterweiser",
+      "from": "TAU.json"
+    },
+    "kroot": {
+      "name": "Kroot-Söldner-Krieger",
+      "from": "TAU.json"
+    },
+    "hound": {
+      "name": "Kroot-Hunde",
+      "from": "TAU.json"
+    },
+    "krootox": {
+      "name": "Krootox",
+      "from": "TAU.json"
+    },
+    "manta": {
+      "name": "Manta",
+      "from": "TAU.json"
+    },
+    "barracuda": {
+      "name": "Barracuda",
+      "from": "tauNavy.json"
+    },
+    "tigershark": {
+      "name": "Schwertfisch-Jagdbomber",
+      "from": "tauNavy.json"
+    },
+    "tigershark-ax": {
+      "name": "Schwertfisch AX-1-0",
+      "from": "tauNavy.json"
+    },
+    "orca": {
+      "name": "Orca",
+      "from": "tauNavy.json"
+    },
+    "custodian": {
+      "name": "Schlachtschiff der Custodian-Klasse",
+      "from": "tauNavy.json"
+    },
+    "protector": {
+      "name": "Kreuzer der Protector-Klasse",
+      "from": "tauNavy.json"
+    }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Vior'la-Kernformationen",
+      "formations": [
+        "crisis",
+        "heavy-cadre",
+        "xv88-group"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Vior'la-Unterstützungsformationen",
+      "description": "Für jede gewählte Vior'la-Kernformation dürfen bis zu zwei Unterstützungsformationen gewählt werden.",
+      "formations": [
+        "fw-8",
+        "fw-devilfish",
+        "drones",
+        "ghosts",
+        "flak"
+      ]
+    },
+    {
+      "id": "air",
+      "name": "Vior'la-Kriegsmaschinen und Verbände der Luftkaste",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+      "formations": [
+        "barracuda",
+        "kv128",
+        "kx139",
+        "tigershark",
+        "ship"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "crisis",
+      "name": "XV8-Krisis-Kampfanzug-Kader",
+      "pts": 325,
+      "tags": [
+        "core"
+      ],
+      "units": [
+        {
+          "unit": "shasel",
+          "count": 1
+        },
+        {
+          "unit": "xv8",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "shaso",
+        "crisis",
+        "drones"
+      ]
+    },
+    {
+      "id": "heavy-cadre",
+      "name": "Schweres Kampfanzug-Kader",
+      "pts": 325,
+      "tags": [
+        "core"
+      ],
+      "units": [
+        {
+          "unit": "shasel",
+          "count": 1
+        },
+        {
+          "oneOf": [
+            "xv104",
+            "xv107",
+            "xv109"
+          ],
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "shaso",
+        "heavy",
+        "drones"
+      ]
+    },
+    {
+      "id": "xv88-group",
+      "name": "XV88-Koloss-Kampfanzug-Gruppe",
+      "pts": 300,
+      "tags": [
+        "core"
+      ],
+      "units": [
+        {
+          "unit": "xv88",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "fw-8",
+      "name": "Feuerkrieger-Angriffsgruppe (8 Feuerkrieger)",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "fw",
+          "count": 8
+        }
+      ],
+      "upgrades": [
+        "colossus",
+        "drones",
+        "razorshark"
+      ]
+    },
+    {
+      "id": "fw-devilfish",
+      "name": "Feuerkrieger-Angriffsgruppe (6 Feuerkrieger, 3 Teufelsrochen)",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "fw",
+          "count": 6
+        },
+        {
+          "unit": "devilfish",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "colossus",
+        "drones",
+        "razorshark"
+      ]
+    },
+    {
+      "id": "drones",
+      "name": "Drohnengruppe",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "attack-drone",
+          "count": 8
+        }
+      ],
+      "upgrades": [
+        "swap-drones"
+      ]
+    },
+    {
+      "id": "ghosts",
+      "name": "Tarnkampfanzug-Gruppe",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "xv15",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "swap-ghosts",
+        "drones"
+      ]
+    },
+    {
+      "id": "flak",
+      "name": "Luftabwehr-Unterstützungsgruppe",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "razorshark",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "barracuda",
+      "name": "Barracuda-Staffel",
+      "pts": 150,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "barracuda",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "kv128",
+      "name": "KV128-Sturmwoge-Ballistikanzug",
+      "pts": 225,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "kv128",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "kx139",
+      "name": "KX139 Ta'unar-Vorherrschaftsrüstung",
+      "pts": 500,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "shasel",
+          "count": 1
+        },
+        {
+          "unit": "kx139",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "tigershark",
+      "name": "Tigerhai-Staffel",
+      "pts": 175,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "tigershark",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "tiger-drones"
+      ]
+    },
+    {
+      "id": "ship",
+      "name": "0–1 Raumschiff",
+      "pts": 200,
+      "tags": [
+        "air",
+        "ship"
+      ],
+      "units": [
+        {
+          "unit": "protector",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "battleship"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "shaso",
+      "name": "0–1 Shas'o",
+      "variants": [
+        {
+          "id": "1",
+          "label": "0–1 Shas'o (ersetzt Shas'el)",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "shasel",
+              "to": "shaso",
+              "count": 1
+            }
+          ],
+          "perArmy": 1
+        }
+      ]
+    },
+    {
+      "id": "colossus",
+      "name": "Koloss-Kampfanzüge",
+      "variants": [
+        {
+          "id": "3",
+          "label": "3 XV88-Koloss-Kampfanzüge",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv88",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "razorshark",
+      "name": "Dornenhai",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Dornenhai",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "razorshark",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battleship",
+      "name": "Schlachtschiff der Custodian-Klasse",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Protector durch Custodian ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "protector",
+              "to": "custodian",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crisis",
+      "name": "Krisis-Kampfanzüge",
+      "variants": [
+        {
+          "id": "2",
+          "label": "2 XV8-Krisis-Kampfanzüge",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drones",
+      "name": "Drohnen",
+      "variants": [
+        {
+          "id": "attack",
+          "label": "2 Angriffsdrohnen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "attack-drone",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "rocket",
+          "label": "2 Raketen-Drohnen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rocket-drone",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "shield",
+          "label": "2 Schilddrohnen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "shield-drone",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "marker",
+          "label": "2 Markiererdrohnen",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "marker-drone",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heavy",
+      "name": "Schwere Kampfanzüge",
+      "variants": [
+        {
+          "id": "xv1041",
+          "label": "1 XV104-Sturmflut-Kampfanzug",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv104",
+              "count": 1
+            }
+          ],
+          "requires": [
+            "xv104"
+          ]
+        },
+        {
+          "id": "xv1042",
+          "label": "2 XV104-Sturmflut-Kampfanzug",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv104",
+              "count": 2
+            }
+          ],
+          "requires": [
+            "xv104"
+          ]
+        },
+        {
+          "id": "xv1071",
+          "label": "1 XV107-R'varna-Kampfanzug",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv107",
+              "count": 1
+            }
+          ],
+          "requires": [
+            "xv107"
+          ]
+        },
+        {
+          "id": "xv1072",
+          "label": "2 XV107-R'varna-Kampfanzug",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv107",
+              "count": 2
+            }
+          ],
+          "requires": [
+            "xv107"
+          ]
+        },
+        {
+          "id": "xv1091",
+          "label": "1 XV109-Y'vahra-Kampfanzug",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv109",
+              "count": 1
+            }
+          ],
+          "requires": [
+            "xv109"
+          ]
+        },
+        {
+          "id": "xv1092",
+          "label": "2 XV109-Y'vahra-Kampfanzug",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv109",
+              "count": 2
+            }
+          ],
+          "requires": [
+            "xv109"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swap-drones",
+      "name": "Drohnen ersetzen",
+      "variants": [
+        {
+          "id": "rocket",
+          "label": "2 Angriffs- durch 2 Raketen-Drohnen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "attack-drone",
+              "to": "rocket-drone",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "shield",
+          "label": "2 Angriffs- durch 2 Schilddrohnen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "attack-drone",
+              "to": "shield-drone",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "marker",
+          "label": "2 Angriffs- durch 2 Markiererdrohnen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "attack-drone",
+              "to": "marker-drone",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swap-ghosts",
+      "name": "Schattengeist-Kampfanzüge",
+      "variants": [
+        {
+          "id": "3",
+          "label": "3 XV15 durch 3 XV95-Schattengeist ersetzen",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "xv15",
+              "to": "xv95",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tiger-drones",
+      "name": "Drohnen",
+      "variants": [
+        {
+          "id": "attack",
+          "label": "6 Angriffsdrohnen",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "attack-drone",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "id": "rocket",
+          "label": "6 Raketen-Drohnen",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rocket-drone",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-per-core",
+      "from": [
+        "tag:support"
+      ],
+      "forEach": [
+        "tag:core"
+      ],
+      "max": 2
+    },
+    {
+      "id": "air-share",
+      "from": [
+        "tag:air"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "ship-once",
+      "from": [
+        "tag:ship"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true
+    }
+  ]
+}

@@ -3,6 +3,9 @@
   "armies": [
     { "id": "ear-de/ig/steellegion", "ruleset": "ear-de", "faction": "Astra Militarum", "name": "Stahllegion", "version": "1.0.2" },
     { "id": "ear-de/sm/codexastartes", "ruleset": "ear-de", "faction": "Space Marines", "name": "Codex Astartes", "version": "1.0" },
-    { "id": "ear-de/o/goffsclan", "ruleset": "ear-de", "faction": "Orks", "name": "Goffs-Klan – WAAAGH! Ghazghkull", "version": "1.0" }
-  ]
+    { "id": "ear-de/o/goffsclan", "ruleset": "ear-de", "faction": "Orks", "name": "Goffs-Klan – WAAAGH! Ghazghkull",     "version": "1.0" },
+        { "id": "ear-de/tau/sacea", "ruleset": "ear-de", "faction": "T'au", "name": "Sa'cea", "version": "1.0" },
+        { "id": "ear-de/tau/viorla", "ruleset": "ear-de", "faction": "T'au", "name": "Vior'la", "version": "1.0.2" },
+        { "id": "ear-de/sq/squats", "ruleset": "ear-de", "faction": "Squats", "name": "Wodanaz-Feste", "version": "1.0" }
+      ]
 }

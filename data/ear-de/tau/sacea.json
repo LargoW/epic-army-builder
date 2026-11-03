@@ -1,0 +1,1009 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/tau/sacea",
+  "name": "Sa'cea",
+  "faction": "T'au",
+  "version": "1.0",
+  "source": {
+    "file": "lists_de/TAU/sacea.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "strategy": 3,
+  "initiative": [
+    {
+      "formations": [
+        "crisis-cadre",
+        "manta"
+      ],
+      "value": "1+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "shasel": {
+      "name": "Shas'el",
+      "from": "TAU.json"
+    },
+    "shaso": {
+      "name": "Shas'o",
+      "from": "TAU.json"
+    },
+    "celestial": {
+      "name": "Himmlischer",
+      "from": "TAU.json"
+    },
+    "xv8": {
+      "name": "XV8 Krisis-Kampfanzüge",
+      "from": "TAU.json"
+    },
+    "fw": {
+      "name": "Feuerkrieger",
+      "from": "TAU.json"
+    },
+    "attack-drone": {
+      "name": "Angriffsdrohnen",
+      "from": "TAU.json"
+    },
+    "rocket-drone": {
+      "name": "Raketen-Drohnen",
+      "from": "TAU.json"
+    },
+    "shield-drone": {
+      "name": "Schilddrohnen",
+      "from": "TAU.json"
+    },
+    "marker-drone": {
+      "name": "Markiererdrohnen",
+      "from": "TAU.json"
+    },
+    "pathfinder": {
+      "name": "Späher",
+      "from": "TAU.json"
+    },
+    "xv15": {
+      "name": "XV15 Geist-Kampfanzüge",
+      "from": "TAU.json"
+    },
+    "xv95": {
+      "name": "XV95 Schattengeist-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv88": {
+      "name": "XV88 Koloss-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv104": {
+      "name": "XV104 Sturmflut-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv107": {
+      "name": "XV107 R'varna-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "xv109": {
+      "name": "XV109 Y'vahra-Kampfanzug",
+      "from": "TAU.json"
+    },
+    "kv128": {
+      "name": "KV128 Sturmwoge-Ballistikanzug",
+      "from": "TAU.json"
+    },
+    "kx139": {
+      "name": "KX139 Ta'unar-Vorherrschaftsrüstung",
+      "from": "TAU.json"
+    },
+    "piranha": {
+      "name": "Piranha",
+      "from": "TAU.json"
+    },
+    "tetra": {
+      "name": "Tetra",
+      "from": "TAU.json"
+    },
+    "devilfish": {
+      "name": "Teufelsrochen",
+      "from": "TAU.json"
+    },
+    "ion-hh": {
+      "name": "Ionen-Hammerhai",
+      "from": "TAU.json"
+    },
+    "rail-hh": {
+      "name": "Massebeschleuniger-Hammerhai",
+      "from": "TAU.json"
+    },
+    "fusion-hh": {
+      "name": "Fusions-Hammerhai",
+      "from": "TAU.json"
+    },
+    "razorshark": {
+      "name": "Dornenhai",
+      "from": "TAU.json"
+    },
+    "kroot-shaper": {
+      "name": "Kroot-Söldner-Meisterweiser",
+      "from": "TAU.json"
+    },
+    "kroot": {
+      "name": "Kroot-Söldner-Krieger",
+      "from": "TAU.json"
+    },
+    "hound": {
+      "name": "Kroot-Hunde",
+      "from": "TAU.json"
+    },
+    "krootox": {
+      "name": "Krootox",
+      "from": "TAU.json"
+    },
+    "manta": {
+      "name": "Manta",
+      "from": "TAU.json"
+    },
+    "barracuda": {
+      "name": "Barracuda",
+      "from": "tauNavy.json"
+    },
+    "tigershark": {
+      "name": "Schwertfisch-Jagdbomber",
+      "from": "tauNavy.json"
+    },
+    "tigershark-ax": {
+      "name": "Schwertfisch AX-1-0",
+      "from": "tauNavy.json"
+    },
+    "orca": {
+      "name": "Orca",
+      "from": "tauNavy.json"
+    },
+    "custodian": {
+      "name": "Schlachtschiff der Custodian-Klasse",
+      "from": "tauNavy.json"
+    },
+    "protector": {
+      "name": "Kreuzer der Protector-Klasse",
+      "from": "tauNavy.json"
+    }
+  },
+  "sections": [
+    {
+      "id": "cadre",
+      "name": "Sa'cea-Kader",
+      "formations": [
+        "crisis-cadre",
+        "fw-8",
+        "fw-devilfish"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Sa'cea Unterstützungsformationen",
+      "description": "Bis zu drei für jeden gewählten Sa'cea-Kader.",
+      "formations": [
+        "hammerheads",
+        "xv88-group",
+        "kroot",
+        "pathfinders",
+        "antigrav",
+        "flak",
+        "xv15-group"
+      ]
+    },
+    {
+      "id": "air",
+      "name": "Sa'cea-Flugzeuge, Raumschiffe und Titanen",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+      "formations": [
+        "barracuda",
+        "tigershark",
+        "ax10",
+        "orca",
+        "manta",
+        "ship"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "crisis-cadre",
+      "name": "XV8-Krisis-Kampfanzug-Kader",
+      "pts": 250,
+      "tags": [
+        "cadre",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "shasel",
+          "count": 1
+        },
+        {
+          "unit": "xv8",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "drones",
+        "shaso",
+        "crisis"
+      ]
+    },
+    {
+      "id": "fw-8",
+      "name": "Feuerkrieger-Angriffsformation (8 Feuerkrieger)",
+      "pts": 225,
+      "tags": [
+        "cadre",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "fw",
+          "count": 8
+        }
+      ],
+      "upgrades": [
+        "colossus",
+        "celestial",
+        "piranhas",
+        "firewarriors",
+        "pathfinders",
+        "hammerheads",
+        "razorshark",
+        "bound-team",
+        "drones"
+      ]
+    },
+    {
+      "id": "fw-devilfish",
+      "name": "Feuerkrieger-Angriffsformation (6 Feuerkrieger, 3 Teufelsrochen)",
+      "pts": 225,
+      "tags": [
+        "cadre",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "fw",
+          "count": 6
+        },
+        {
+          "unit": "devilfish",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "colossus",
+        "celestial",
+        "piranhas",
+        "firewarriors",
+        "pathfinders",
+        "hammerheads",
+        "razorshark",
+        "bound-team",
+        "drones"
+      ]
+    },
+    {
+      "id": "hammerheads",
+      "name": "Hammerhai-Gruppe",
+      "pts": 200,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "ion-hh",
+            "fusion-hh"
+          ],
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "swap-mass",
+        "drones",
+        "hammerheads",
+        "piranhas",
+        "razorshark"
+      ]
+    },
+    {
+      "id": "xv88-group",
+      "name": "XV88-Koloss-Kampfanzug-Gruppe",
+      "pts": 300,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "xv88",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "kroot",
+      "name": "Kroot-Söldner-Sippe",
+      "pts": 175,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "kroot-shaper",
+          "count": 1
+        },
+        {
+          "unit": "kroot",
+          "count": 9
+        }
+      ],
+      "upgrades": [
+        "kroot-mercs",
+        "kroot-hounds",
+        "krootox"
+      ]
+    },
+    {
+      "id": "pathfinders",
+      "name": "Spähergruppe",
+      "pts": 175,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "pathfinder",
+          "count": 4
+        },
+        {
+          "unit": "devilfish",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "antigrav",
+      "name": "Antigrav-Aufklärungsgruppe",
+      "pts": 175,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "piranha",
+            "tetra"
+          ],
+          "count": 6,
+          "mixed": true
+        }
+      ],
+      "upgrades": [
+        "piranhas-ag"
+      ]
+    },
+    {
+      "id": "flak",
+      "name": "Luftabwehr-Unterstützungsgruppe",
+      "pts": 250,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "razorshark",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "xv15-group",
+      "name": "XV15-Geist-Kampfanzug-Gruppe",
+      "pts": 225,
+      "tags": [
+        "support",
+        "ground"
+      ],
+      "units": [
+        {
+          "unit": "xv15",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "drones"
+      ]
+    },
+    {
+      "id": "barracuda",
+      "name": "Barracuda-Staffel",
+      "pts": 150,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "barracuda",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "tigershark",
+      "name": "Tigerhai-Staffel",
+      "pts": 175,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "tigershark",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "tiger-drones"
+      ]
+    },
+    {
+      "id": "ax10",
+      "name": "AX-1-0-Staffel",
+      "pts": 350,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "tigershark-ax",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "orca",
+      "name": "Orca-Landungsschiff",
+      "pts": 150,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "orca",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "manta",
+      "name": "Manta-Landungsschiff",
+      "pts": 550,
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "manta",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ship",
+      "name": "0–1 Raumschiff",
+      "pts": 200,
+      "tags": [
+        "air",
+        "ship"
+      ],
+      "units": [
+        {
+          "unit": "protector",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "battleship"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "bound-team",
+      "name": "Gebundenes Team",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gebundenes Team (Anführer)",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "shaso",
+      "name": "0–1 Shas'o",
+      "variants": [
+        {
+          "id": "1",
+          "label": "0–1 Shas'o (ersetzt Shas'el)",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "shasel",
+              "to": "shaso",
+              "count": 1
+            }
+          ],
+          "perArmy": 1
+        }
+      ]
+    },
+    {
+      "id": "celestial",
+      "name": "0–1 Himmlischer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "0–1 Himmlischer (einmal pro Armee)",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "celestial",
+              "count": 1
+            }
+          ],
+          "perArmy": 1
+        }
+      ]
+    },
+    {
+      "id": "colossus",
+      "name": "Koloss-Kampfanzüge",
+      "variants": [
+        {
+          "id": "3",
+          "label": "3 XV88-Koloss-Kampfanzüge",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv88",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "razorshark",
+      "name": "Dornenhai",
+      "variants": [
+        {
+          "id": "1",
+          "label": "1 Dornenhai",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "razorshark",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "battleship",
+      "name": "Schlachtschiff der Custodian-Klasse",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Protector durch Custodian ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "protector",
+              "to": "custodian",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crisis",
+      "name": "Krisis-Kampfanzüge",
+      "variants": [
+        {
+          "id": "2",
+          "label": "2 XV8-Krisis-Kampfanzüge",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "4 XV8-Krisis-Kampfanzüge",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "firewarriors",
+      "name": "Feuerkrieger",
+      "variants": [
+        {
+          "id": "4",
+          "label": "4 Feuerkrieger",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fw",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "4d",
+          "label": "4 Feuerkrieger + 2 Teufelsrochen",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fw",
+              "count": 4
+            },
+            {
+              "op": "add",
+              "unit": "devilfish",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pathfinders",
+      "name": "Späher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Späher + 1 Teufelsrochen",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "pathfinder",
+              "count": 2
+            },
+            {
+              "op": "add",
+              "unit": "devilfish",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piranhas",
+      "name": "Piranhas",
+      "variants": [
+        {
+          "id": "2",
+          "label": "2 Piranhas",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "piranha",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piranhas-ag",
+      "name": "Piranha (0–2)",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Piranha (0–2)",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "piranha",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 2
+        }
+      ]
+    },
+    {
+      "id": "drones",
+      "name": "Angriffsdrohnen",
+      "variants": [
+        {
+          "id": "1",
+          "label": "2 Angriffsdrohnen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "attack-drone",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hammerheads",
+      "name": "Hammerhaie",
+      "variants": [
+        {
+          "id": "ion2",
+          "label": "2 Ionen-Hammerhaie",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ion-hh",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "rail1",
+          "label": "1 Massebeschleuniger-Hammerhai",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rail-hh",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "rail2",
+          "label": "2 Massebeschleuniger-Hammerhaie",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "rail-hh",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "fus1",
+          "label": "1 Fusions-Hammerhai",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fusion-hh",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "fus2",
+          "label": "2 Fusions-Hammerhaie",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fusion-hh",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swap-mass",
+      "name": "Massebeschleuniger-Hammerhaie",
+      "variants": [
+        {
+          "id": "ion",
+          "label": "4 Ionen- durch 4 Massebeschleuniger-Hammerhaie ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "ion-hh",
+              "to": "rail-hh",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "fusion",
+          "label": "4 Fusions- durch 4 Massebeschleuniger-Hammerhaie ersetzen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "fusion-hh",
+              "to": "rail-hh",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kroot-mercs",
+      "name": "Kroot-Söldner",
+      "variants": [
+        {
+          "id": "4",
+          "label": "4 Kroot-Söldner-Krieger",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kroot",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kroot-hounds",
+      "name": "Kroot-Hunde",
+      "variants": [
+        {
+          "id": "2",
+          "label": "2 Kroot-Hunde",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hound",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "krootox",
+      "name": "Krootox",
+      "variants": [
+        {
+          "id": "3",
+          "label": "3 Krootox",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "krootox",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tiger-drones",
+      "name": "Angriffsdrohnen",
+      "variants": [
+        {
+          "id": "6",
+          "label": "6 Angriffsdrohnen",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "attack-drone",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-per-cadre",
+      "from": [
+        "tag:support"
+      ],
+      "forEach": [
+        "tag:cadre"
+      ],
+      "max": 3
+    },
+    {
+      "id": "air-share",
+      "from": [
+        "tag:air"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "ship-once",
+      "from": [
+        "tag:ship"
+      ],
+      "max": 1
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true
+    },
+    {
+      "id": "formation-max-three",
+      "from": [
+        "*"
+      ],
+      "appliesTo": [
+        "tag:ground"
+      ],
+      "maxTotal": 3
+    }
+  ]
+}
