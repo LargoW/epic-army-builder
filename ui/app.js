@@ -126,7 +126,7 @@ function unitBlock(entryUid, r) {
   const p = r.profile;
   const key = `u${entryUid}:${r.unit}`;
   const body = p
-    ? `<div class="stats">${stat("Typ", p.type)}${stat("Geschw.", p.speed)}${stat("Rüstung", p.armour)}${stat("NK", p.cc)}${stat("FF", p.ff)}</div>
+    ? `<div class="stats">${stat("Typ", p.type)}${stat("Geschw.", p.speed)}${stat("ARM", p.armour != null ? plus(p.armour) : null)}${stat("CC", p.cc != null ? plus(p.cc) : null)}${stat("FF", p.ff != null ? plus(p.ff) : null)}</div>
        ${p.weapons.length ? `<ul class="weapons">${p.weapons.map(weaponLine).join("")}</ul>` : ""}
        ${p.notes ? `<p class="note">${esc(p.notes)}</p>` : ""}
        ${p.specialRules.length ? `<dl class="rules">${p.specialRules.map((r2) => `<dt>${esc(r2.name)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}`
@@ -175,7 +175,20 @@ const problemsFor = (violations, uid) =>
   violations.filter((v) => v.refs && (v.refs.uid === uid || (v.refs.uids && v.refs.uids.includes(uid))));
 const problemTexts = (probs) => [...new Set(probs.map((v) => messageFor(v, names)))];
 
+// BTS (Break Their Spirit): the most expensive formation(s); ties are all flagged.
+function btsSet(entries) {
+  const max = Math.max(0, ...entries.map((e) => e.pts));
+  return new Set(entries.map((e, i) => (e.pts === max && max > 0 ? i : -1)).filter((i) => i >= 0));
+}
+const isAir = (calc) => {
+  const rp = rosterProfiles(data, calc.roster);
+  return rp.length > 0 && rp.every((r) => r.profile && r.profile.type === "AC");
+};
+const btsBadge = () => `<span class="bts" title="Break Their Spirit">BTS</span>`;
+const btsAirNote = () => `<p class="bts-note">BTS-Verband ist Luftverband: Gilt als vernichtet, wenn er am Spielende nicht auf dem Tisch ist.</p>`;
+
 function renderBuild(entries, violations) {
+  const bts = btsSet(entries);
   return state.formations.map((entry, i) => {
     const def = formationById[entry.formation];
     const calc = entries[i];
@@ -183,9 +196,10 @@ function renderBuild(entries, violations) {
     const key = `f${entry.uid}`;
     return `<details class="entry${probs.length ? " has-problem" : ""}" data-key="${key}"${open.has(key) ? " open" : ""}>
       <summary><div class="entry-head">
-        <span class="name">${esc(def.name)}</span><span class="pts">${calc.pts} Pkt.</span>
+        <span class="name">${esc(def.name)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span>
         <button class="icon" type="button" aria-label="Verband entfernen" data-act="remove" data-uid="${entry.uid}">×</button>
       </div>
+      ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
       ${probs.length ? `<ul class="problems">${problemTexts(probs).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
       </summary>
       <div class="entry-body">
@@ -200,12 +214,13 @@ function renderBuild(entries, violations) {
 const plus = (v) => (typeof v === "number" ? `${v}+` : v);
 function compactStats(p) {
   if (!p) return "";
-  const parts = [p.type, p.speed != null ? `${p.speed} cm` : null, p.armour != null ? `RS ${plus(p.armour)}` : null, p.cc != null ? `NK ${plus(p.cc)}` : null, p.ff != null ? `FF ${plus(p.ff)}` : null];
+  const parts = [p.type, p.speed != null ? (typeof p.speed === "number" ? `${p.speed} cm` : p.speed) : null, p.armour != null ? `ARM ${plus(p.armour)}` : null, p.cc != null ? `CC ${plus(p.cc)}` : null, p.ff != null ? `FF ${plus(p.ff)}` : null];
   return parts.filter(Boolean).join(" · ");
 }
 
 // Game-time view: final units per formation and the chosen upgrades, no controls.
 function renderOverview(entries, violations, total) {
+  const bts = btsSet(entries);
   const cards = state.formations.map((entry, i) => {
     const def = formationById[entry.formation];
     const calc = entries[i];
@@ -218,8 +233,9 @@ function renderOverview(entries, violations, total) {
       })
       .filter(Boolean);
     return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head"><span class="name">${esc(def.name)}</span><span class="pts">${calc.pts} Pkt.</span></div>
-      <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span></li>`).join("")}</ul>
+      <div class="ov-head">      <span class="name">${esc(def.name)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
+            ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
+            <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;

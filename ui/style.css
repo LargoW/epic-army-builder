@@ -39,6 +39,10 @@ body {
 .bar .title { flex: 1; min-width: 0; display: flex; align-items: center; gap: 6px; text-align: left; background: none; border: 0; padding: 2px; min-height: 0; color: inherit; }
 .bar .title h1 { flex: 1; }
 .bar .title .caret { color: var(--gold); }
+.bts { display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 999px; font-size: .7rem; font-weight: 800; letter-spacing: .8px; color: var(--on-gold); background: linear-gradient(135deg, var(--gold), var(--gold2)); vertical-align: middle; }
+.bts-note { margin: 4px 0 6px; padding: 6px 10px; border-radius: 8px; font-size: .85rem; border: 1px solid var(--gold); color: var(--gold); }
+.ov .wp { flex: 1 0 100%; list-style: none; margin: 2px 0 0; padding: 0 0 0 calc(2.2em + 8px); font-size: .82rem; color: var(--mut); }
+.ov .wp li { display: block; border: 0; padding: 1px 0; }
 .list-row { display: flex; gap: 6px; align-items: stretch; margin-bottom: 8px; }
 .list-row .pick { flex: 1; margin-bottom: 0; }
 .list-row.cur .pick { border-color: var(--gold); }
