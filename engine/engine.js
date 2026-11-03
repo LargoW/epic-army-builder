@@ -158,6 +158,23 @@ export function computeEntry(data, entry) {
     }
   });
 
+  // Free automatic transports (Space Marine Rhinos): bought vehicles (Razorbacks, Land Raiders) carry first,
+  // everything left over rides in as few free vehicles as possible.
+  const auto = (data.autoTransport || []).find((t) => matches(t.appliesTo, def));
+  if (auto) {
+    const carriable = Object.entries(roster)
+      .filter(([u]) => isCarriable(data, auto, u))
+      .reduce((a, [, n]) => a + n, 0);
+    let carried = 0;
+    for (const [u, cap] of Object.entries(auto.others || {})) {
+      const n = roster[u] || 0;
+      carried += n * cap;
+      const max = Math.ceil(carriable / cap);
+      if (n > max) problems.push({ code: "vehicle-surplus", params: { unit: u, max }, refs: { uid: entry.uid } });
+    }
+    add(auto.vehicle, Math.max(0, Math.ceil((carriable - carried) / auto.capacity)));
+  }
+
   // All carriable INF must be transported as soon as the formation contains transports.
   if (rule && (roster[rule.vehicle] || 0) > 0) {
     const carriable = Object.entries(roster)
@@ -201,6 +218,18 @@ export function validate(data, state) {
       if (from.length > limit) violations.push({ code: "formation-limit", params: { id: c.id, count: from.length, limit }, refs: { uids: from.map((e) => e.uid) } });
     }
   }
+
+  // Variants limited per army (e.g. 0–1 Oberbefehlshaber)
+  const armyLimited = {};
+  known.forEach((e) =>
+    e.upgrades.forEach((u) => {
+      const v = upgrades[u.upgrade] && upgrades[u.upgrade].variants.find((x) => x.id === u.variant);
+      if (v && v.perArmy != null) (armyLimited[`${u.upgrade}/${v.id}`] ||= { v, uids: [] }).uids.push(e.uid);
+    })
+  );
+  Object.entries(armyLimited).forEach(([key, { v, uids }]) => {
+    if (uids.length > v.perArmy) violations.push({ code: "variant-army-limit", params: { label: v.label, count: uids.length, limit: v.perArmy }, refs: { uids } });
+  });
 
   for (const c of data.upgradeConstraints || []) {
     for (const e of known) {

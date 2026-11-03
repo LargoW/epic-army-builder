@@ -1,6 +1,7 @@
 // German UI texts for engine violations. Only hard rule violations are shown.
 const constraintTexts = {
   "support-per-company": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
+  "scouts-per-detachment": (p) => `Zu viele Aufklärerkontingente: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Nicht-Aufklärungskontingent).`,
   "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
 };
 
@@ -27,6 +28,10 @@ export function messageFor(v, names = {}) {
       return `Die Aufwertung „${up}“ darf keine Chimären hinzufügen.`;
     case "transport-too-many":
       return `„${up}“: Höchstens ${p.max} zusätzliche Chimäre(n) erlaubt.`;
+    case "vehicle-surplus":
+      return `Zu viele ${unit(p.unit)}: höchstens ${p.max} nötig, um den Verband zu transportieren.`;
+    case "variant-army-limit":
+      return `„${p.label}“ darf höchstens ${p.limit}× pro Armee gewählt werden (gewählt: ${p.count}).`;
     case "transport-incomplete":
       return `Enthält der Verband Chimären, müssen alle INF transportiert werden: ${p.inf} INF, aber nur Platz für ${p.vehicles * p.capacity}.`;
     case "unknown-formation":
