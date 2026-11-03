@@ -204,7 +204,7 @@
       ]
     },
     "scout": {
-      "name": "Aufklärer",
+      "name": "Scout",
       "type": "INF",
       "speed": 15,
       "armour": 5,
@@ -1210,6 +1210,14 @@
       "crit": "Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jeder Runde einen W6 für jeden Reaktorbruch der Einheit. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei einem Wurf von 5+ einen Treffer; bei einer 4–6 ist der Bruch repariert. Jeder nicht reparierte Bruch verursacht 1 Schaden.",
       "weapons": [
         {
+          "name": ">Standard-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
           "name": "Turbolaserzerstörer",
           "count": 2,
           "modes": [
@@ -1243,6 +1251,139 @@
               ]
             }
           ]
+        },
+        {
+          "name": ">Nahkampf-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Apocalypse Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Titan-Melterkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Titan-Kettenfaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Unterstützungswaffen-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Apocalypse Raketenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Anvilus-Landeplattform",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
         }
       ],
       "specialRules": [
@@ -1264,6 +1405,10 @@
         },
         {
           "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "[*]Anvilus-Landeplattform: Verleiht allen Sperrfeuerwaffen des Verbands die Sonderregel „Indirektes Feuer (Indirekt)“.",
           "description": null
         }
       ]

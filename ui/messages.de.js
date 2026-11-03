@@ -1,7 +1,7 @@
 // German UI texts for engine violations. Only hard rule violations are shown.
 const constraintTexts = {
   "support-per-company": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
-  "scouts-per-detachment": (p) => `Zu viele Aufklärerkontingente: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Nicht-Aufklärungskontingent).`,
+  "scouts-per-detachment": (p) => `Zu viele Scout-Trupps: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Verband ohne Scouts).`,
   "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
 };
 

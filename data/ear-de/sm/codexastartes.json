@@ -18,7 +18,7 @@
     "librarian": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
     "supreme-commander": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
     "assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
-    "scout": { "name": "Aufklärer", "from": "SM.json", "type": "INF" },
+    "scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
     "tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
     "devastator": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
     "terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
@@ -52,7 +52,7 @@
     {
       "id": "main",
       "name": "Codex Astartes Kontingente",
-      "description": "Pro Nicht-Aufklärungskontingent darf bis zu ein Aufklärungskontingent aufgestellt werden.",
+      "description": "Pro Kontingent ohne Scouts darf bis zu ein Scout Trupp aufgestellt werden.",
       "formations": ["assault", "bikes", "devastators", "land-raiders", "land-speeders", "predators", "scouts", "tacticals", "terminators", "vindicators", "whirlwinds"]
     },
     {
@@ -94,7 +94,7 @@
       "upgrades": ["anti-air"]
     },
     {
-      "id": "scouts", "name": "Aufklärer", "pts": 150, "tags": ["main", "scouts", "transport"],
+      "id": "scouts", "name": "Scout Trupp", "pts": 150, "tags": ["main", "scouts", "transport"],
       "units": [ { "unit": "scout", "count": 4 } ],
       "upgrades": ["razorbacks", "snipers"]
     },
