@@ -12,6 +12,27 @@ export function matches(selectors, def) {
 
 const index = (list) => Object.fromEntries(list.map((x) => [x.id, x]));
 
+// Merges a profile bundle into army data: unit type and special-rule names come from the profiles.
+export function withProfiles(data, profiles) {
+  const units = Object.fromEntries(
+    Object.entries(data.units).map(([id, u]) => {
+      const p = profiles.units[id];
+      return [id, p ? { ...u, type: p.type || u.type, rules: p.specialRules.map((r) => r.name) } : u];
+    })
+  );
+  return { ...data, units, profiles: profiles.units, armyRules: profiles.specialRules };
+}
+
+// Profile + count for each unit of a computed roster, in roster order.
+export function rosterProfiles(data, roster) {
+  return Object.entries(roster).map(([unit, count]) => ({
+    unit,
+    count,
+    name: data.units[unit].name,
+    profile: (data.profiles || {})[unit] || null,
+  }));
+}
+
 export function createState() {
   return { nextUid: 1, formations: [] };
 }

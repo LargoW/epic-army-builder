@@ -1,0 +1,1728 @@
+{
+  "army": "ear-de/ig/steellegion",
+  "source": {
+    "file": "lists_de/IG/steellegion.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Mut, Disziplin und Loyalität",
+      "description": [
+        "Wird die Wiederholung des Oberbefehlshabers für einen Verband mit einem Kommissar oder Ministorum-Priester verwendet, gilt für diesen Verband bei der Wiederholung des Aktionstests ein Initiativwert von 1+."
+      ]
+    }
+  ],
+  "units": {
+    "supreme-commander": {
+      "name": "Oberbefehlshaber der Stahllegion",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "commander": {
+      "name": "Befehlshaber der Stahllegion",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "commissar": {
+      "name": "Kommissar",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "infantry": {
+      "name": "Infanterie",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Jede zweite Einheit (aufgerundet) ist mit einer Maschinenkanone bewaffnet.",
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Lasergewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ogryn": {
+      "name": "Ogryns",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Zählt beim Transport als zwei INF-Einheiten.",
+      "weapons": [
+        {
+          "name": "Ripper-Geschütze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Ogryn-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rough-rider": {
+      "name": "Kavallerie",
+      "type": "INF",
+      "speed": 20,
+      "armour": 6,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Laserpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Jagdlanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "sniper": {
+      "name": "Scharfschützen",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Scharfschützengewehre",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "storm-trooper": {
+      "name": "Stoßtruppen",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmageschütze",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "fire-support": {
+      "name": "Feuerunterstützungstrupp",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sentinel": {
+      "name": "Sentinel",
+      "type": "LV",
+      "speed": 20,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "basilisk": {
+      "name": "Basilisk",
+      "type": "AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Erdbebenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 120,
+              "specialRules": []
+            },
+            {
+              "firepower": "1BP",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "bombard": {
+      "name": "Bombarde",
+      "type": "AV",
+      "speed": 20,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Belagerungsmörser",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chimera": {
+      "name": "Chimäre",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "taurox": {
+      "name": "Taurox",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "deathstrike": {
+      "name": "Todesstoß-Raketensilo",
+      "type": "WE",
+      "speed": "Immobile",
+      "armour": 5,
+      "crit": "Deathstrike Silo wird zerstört. Alle Einheiten innerhalb von 10cm erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Todesstoß-Rakete",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": "Unbegrenzt",
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "griffon": {
+      "name": "Greif",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Mörser",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "hellhound": {
+      "name": "Höllenhund",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Inferno Kanone",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "hydra": {
+      "name": "Hydra",
+      "type": "AV",
+      "speed": 30,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Hydra Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "leman-russ": {
+      "name": "Leman Russ Kampfpanzer",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "leman-russ-demolisher": {
+      "name": "Leman-Russ-Belagerungspanzer",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Plasmakanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "leman-russ-vanquisher": {
+      "name": "Leman Russ Vanquisher",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Vanquisher Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT2+",
+              "range": 90,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "leman-russ-punisher": {
+      "name": "Leman Russ Punisher",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Bestrafungs-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "3x AP6+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "manticore": {
+      "name": "Mantikor",
+      "type": "AV",
+      "speed": 20,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "valkyrie": {
+      "name": "Valkyrie",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwei Infanterieeinheiten oder einen Abwurf-Sentinel transportieren. Ogryns können nicht transportiert werden.",
+      "weapons": [
+        {
+          "name": "Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "vulture": {
+      "name": "Vulture",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Höllenschlagraketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT2+",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "shadowsword": {
+      "name": "Shadowsword",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Volcano Kanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "baneblade": {
+      "name": "Baneblade",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Baneblade Kanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT3+",
+              "range": 90,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "warhound": {
+      "name": "Warhound",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Plasma-Blaster",
+          "modes": [
+            {
+              "firepower": "2x MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vulcan-Megabolter",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "reaver": {
+      "name": "Reaver-Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jeder Runde einen W6 für jeden Reaktorbruch der Einheit. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei einem Wurf von 5+ einen Treffer; bei einer 4–6 ist der Bruch repariert. Jeder nicht reparierte Bruch verursacht 1 Schaden.",
+      "weapons": [
+        {
+          "name": ">Standard-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Turbolaserzerstörer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Apocalypse Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Nahkampf-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Apocalypse Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Titan-Melterkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Titan-Kettenfaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Unterstützungswaffen-Konfiguration<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Apocalypse Raketenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Anvilus-Landeplattform",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 6",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "[*]Anvilus-Landeplattform: Verleiht allen Sperrfeuerwaffen des Verbands die Sonderregel „Indirektes Feuer (Indirekt)“.",
+          "description": null
+        }
+      ]
+    },
+    "warlord": {
+      "name": "Warlord-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Muss entweder mit gekoppelten Turbolaser-Destruktoren oder gekoppelten Apokalypse-Raketenwerfern bewaffnet sein. Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jeder Runde einen W6 für jeden Reaktorbruch der Einheit. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei einem Wurf von 5+ einen Treffer; bei einer 4–6 ist der Bruch repariert. Jeder nicht reparierte Bruch verursacht 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Gatling-Blaster",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Volcano Kanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gekoppelte Turbolaser-Destruktoren",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "8x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gekoppelte Apocalypse-Raketenwerfer",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 8",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 6",
+          "description": null
+        },
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "thunderbolt": {
+      "name": "Donnerkeil-Jäger",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC-Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Underwing Raketen",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Sturmbolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "marauder": {
+      "name": "Marauder-Bomber (B)",
+      "type": "AC",
+      "speed": "Bomber (B) (B)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Bombe Racks",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwerbolterturm",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "lunar-cruiser": {
+      "name": "Kreuzer der Lunar-Klasse",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "emperor-battleship": {
+      "name": "Schlachtschiff der Emperor-Klasse",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "8BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 auf dem Schlachtfeld eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

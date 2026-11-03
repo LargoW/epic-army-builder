@@ -272,7 +272,7 @@
       "id": "chimera",
       "vehicle": "chimera", "capacity": 2, "pts": 25,
       "appliesTo": ["tag:company"],
-      "carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["mounted", "jump-pack"] },
+      "carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["Beritten", "Sprungmodule"] },
       "rule": "Chimären werden nach Bedarf hinzugefügt (INF / 2, aufgerundet). Enthält der Verband Chimären, müssen alle transportierbaren INF transportiert werden."
     }
   ],

@@ -51,6 +51,14 @@ upgrade variants and replacements as found in Ragnarök lists.
 }
 ```
 
+## Profiles
+`convert/build-profiles.js` resolves every unit id against the source lists (`from` + German `name`)
+and writes `<army>.profiles.json`: stats, weapons with modes and rule texts (weapon strings
+`"Name|count|extraRule"` are expanded), special-rule texts and army-level rules. The engine merges it
+with `withProfiles()`; unit type and rule names then come from the profile, so `excludeRules` uses the
+source language rule names (e.g. `Beritten`, `Sprungmodule`). The profiles file is generated, so
+regenerate it after pulling new sources.
+
 ## Notes
 - Points are integers; no strings. Variants cover "50 for two / 100 for four" and "25 each" (`perUnit`).
 - Constraints reference ids or tags; `*` means all. Semantics follow adam77's:
