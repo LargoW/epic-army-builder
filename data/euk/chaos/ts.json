@@ -43,6 +43,8 @@
     "devastation-cruiser": {"name": "Chaos Devastation Class Cruiser","type": "Space"},
     "despoiler-battleship": {"name": "Chaos Despoiler Class Battleship","type": "Space"},
     "lord-of-change": {"name": "Lord of Change - Greater Daemon of Tzeentch","type": "WE"},
+    "lesser-daemon": {"name": "Lesser Daemon"},
+    "daemonic-pact":{"name": "Daemonic Pact"},
     "flamers": {"name": "Flamers - Lesser Daemons of Tzeentch","type": "INF"},
     "screamers": {"name": "Screamers - Lesser Daemons of Tzeentch","type": "INF"}
   },
@@ -217,11 +219,23 @@
       "variants": [ 
         {"id": "1", "label": "Champion", "pts": 50, "effects": [ { "op": "add", "unit": "csm-champion","count": 1}]}
       ]},
-
-      {"id": "u-csmrhinos","name": "Rhinos",  "variants": [ 
-        {"id": "3", "label": "3 Rhino", "pts": 30, "effects": [ { "op": "add", "unit": "csm-rhino", "count": 3}]},
-        {"id": "5", "label": "5 Rhinos", "pts": 50, "effects": [ { "op": "add", "unit": "csm-rhino", "count": 5}]}
-        
+    {
+     "id": "u-csmrhinos",
+      "name": "Chaos Space Marine Rhino",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Chaos Space Marine Rhino",
+          "pts": 10,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "csm-rhino",
+              "count": 1
+            }
+          ]
+        }
       ]
     },
     {
@@ -250,7 +264,8 @@
       ]},
     { 
       "id": "u-daemonic-pact","name": "Daemonic Pact", 
-      "variants": [ {"id": "1", "label": "Daemonic Pact", "pts": 25, "effects": [ { "op": "add", "unit": "ts-daemonic-pact", "count": 1}]
+      "variants": [ {"id": "1", "label": "Daemonic Pact", "pts": 25, "effects": [
+         { "op": "add", "unit": "daemonic-pact", "count": 1},{ "op": "free", "unit": "lesser-daemon", "count": 1}]
         }
       ]},
     {
@@ -272,7 +287,7 @@
       "variants": [ { "id": "1","label": "Icon Bearer", "pts": 25, "effects": [ { "op": "add", "unit": "csm-icon-bearer", "count": 1}]}
       ]},
     {
-      "id": "u-retinue-extra-units","transportable": true,"name": "Add 3 Thousand Sons units",
+      "id": "u-retinue-extra-units","name": "Add 3 Thousand Sons units",
       "variants": [ {  "id": "3","label": "3 Thousand Sons units", "pts": 175, "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3}]}
       ]},
     {
@@ -307,9 +322,25 @@
       "variants": [ { "id": "1","label": "3 Chaos Firelords total", "pts": 100,"effects": [ { "op": "add", "unit": "chaos-firelord", "count": 1}]}
   ]},
     {
-      "id": "u-lesser-daemon","name": "Lesser Daemon",
-            "variants": [ { "id": "1", "label": "1 Lesser Daemon", "pts": 15, "effects": [ { "op": "add", "unit": "flamer", "count": 1}]}
-      ]},
+     "id": "u-lesser-daemon",
+      "name": "1 Lesser Daemon",
+      "show": ["flamers", "screamers"],
+      "variants": [
+        {
+          "id": "n",
+          "label": "Lesser Daemon",
+          "pts": 15,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "Lesser Daemon",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "u-greater-daemon","name": "Greater Daemon",
       "variants": [ { "id": "1", "label": "1 Greater Daemon", "pts": 50, "effects": [ { "op": "add", "unit": "greater-daemon", "count": 1}]}

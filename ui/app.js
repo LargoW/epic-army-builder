@@ -265,7 +265,8 @@ function renderOverview(entries, violations, total) {
     return `<section class="ov${probs.length ? " has-problem" : ""}">
       <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
             ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-            <ul>${rosterProfiles(data, calc.roster).map((r) => `<li><span class="n">${r.count}×</span><span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
+            
+          <ul>${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;

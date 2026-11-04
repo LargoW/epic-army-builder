@@ -121,6 +121,8 @@ export function computeEntry(data, entry) {
   const size = sizeOf(def, entry);
   const mult = size ? size.mult : 1;
   let pts = size ? size.pts : def.pts;
+  //Forced show on overview tab
+  const forceShow = new Set();
 
   def.units.forEach((slot, i) => {
     const slotCount = slot.count * mult;
@@ -137,8 +139,16 @@ export function computeEntry(data, entry) {
 
   const rule = transportRule(data, def);
   let addedCarriable;
+  const upgradeCounts = {};
+  const freeUpgrades = {};
   entry.upgrades.forEach((sel) => {
     const upDef = upgrades[sel.upgrade];
+    if (upDef && upDef.show) {
+      upDef.show.forEach((u) => {
+        forceShow.add(u);
+        add(u, 0); // Force to show in roster if not available yet
+      });
+    }
     const variant = upDef && upDef.variants.find((v) => v.id === sel.variant);
     if (!upDef) return problems.push({ code: "unknown-upgrade", params: { upgrade: sel.upgrade }, refs: { uid: entry.uid } });
     if (!variant) return problems.push({ code: "unknown-variant", params: { upgrade: sel.upgrade, variant: sel.variant }, refs: { uid: entry.uid } });
@@ -147,6 +157,11 @@ export function computeEntry(data, entry) {
 
     // perUnit variants ("add any number") are priced and applied per chosen unit; limits scale with formation size.
     const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+
+    upgradeCounts[sel.upgrade] = (upgradeCounts[sel.upgrade] || 0) + n;
+
+    if (variant.max != null && n > variant.max * mult)
+
     if (variant.max != null && n > variant.max * mult)
       problems.push({ code: "variant-max", params: { label: variant.label, max: variant.max * mult }, refs: { uid: entry.uid } });
     pts += variant.pts * n;
@@ -161,6 +176,8 @@ export function computeEntry(data, entry) {
         const n = Math.min(fx.count, roster[fx.from] || 0);
         roster[fx.from] = (roster[fx.from] || 0) - n;
         add(fx.to, n);
+      } else if (fx.op === "free") {
+        freeUpgrades[fx.upgrade] = (freeUpgrades[fx.upgrade] || 0) + (fx.count * n);
       }
     });
 
@@ -185,6 +202,25 @@ export function computeEntry(data, entry) {
       problems.push({ code: "variant-requires", params: { label: variant.label, units: variant.requires }, refs: { uid: entry.uid } });
   });
 
+  //Calculate Free Upgrades
+  Object.entries(freeUpgrades).forEach(([upgId, freeCount]) => {
+    const taken = upgradeCounts[upgId] || 0;
+    const discounted = Math.min(taken, freeCount); // Man kann max. so viele rabattieren, wie man gekauft hat
+    
+    if (discounted > 0 && upgrades[upgId] && upgrades[upgId].variants.length) {
+      // Discount upgrades (all upgrades cost the same as the first variant)
+      pts -= discounted * upgrades[upgId].variants[0].pts;
+    }
+    
+    // Validation: Did the user select the free upgrades?
+    if (taken < freeCount) {
+      problems.push({ 
+        code: "free-upgrade-missing", 
+        params: { count: freeCount - taken, name: upgrades[upgId] ? upgrades[upgId].name : upgId }, 
+        refs: { uid: entry.uid } 
+      });
+    }
+  });
   // Free automatic transports (Space Marine Rhinos): bought vehicles (Razorbacks, Land Raiders) carry first,
   // everything left over rides in as few free vehicles as possible.
   const auto = (data.autoTransport || []).find((t) => matches(t.appliesTo, def));
@@ -211,7 +247,12 @@ export function computeEntry(data, entry) {
       problems.push({ code: "transport-incomplete", params: { inf: carriable, vehicles: roster[rule.vehicle], capacity: rule.capacity }, refs: { uid: entry.uid } });
   }
 
-  Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
+  //Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
+  Object.keys(roster).forEach((u) => {
+    if (roster[u] < 0 || (roster[u] === 0 && !forceShow.has(u))) {
+      delete roster[u];
+    }
+  });
   return { uid: entry.uid, formation: def.id, name: def.name, pts, roster, problems };
 }
 
