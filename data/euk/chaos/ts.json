@@ -344,7 +344,7 @@
     },
     {
       "id": "u-greater-daemon","name": "Greater Daemon",
-      "variants": [ { "id": "1", "label": "1 Greater Daemon", "pts": 50, "effects": [ { "op": "add", "unit": "greater-daemon", "count": 1}]}
+      "variants": [ { "id": "n", "label": "1 Greater Daemon", "pts": 50, "perUnit": true, "effects": [ { "op": "add", "unit": "lord-of-change", "count": 1}]}
       ]
     }
   ],
