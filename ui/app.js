@@ -137,8 +137,11 @@ function unitBlock(entryUid, r) {
        ${p.notes ? `<p class="note">${esc(p.notes)}</p>` : ""}
        ${sr.length ? `<dl class="rules">${sr.map((r2) => `<dt>${esc(r2.name || r2)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}`
     : `<p class="muted">Kein Profil vorhanden.</p>`;
+    
+  const countPrefix = r.count > 0 ? `${r.count}× ` : `<span style="visibility: hidden">0× </span>`;
+
   return `<details class="unit" data-key="${key}"${open.has(key) ? " open" : ""}>
-    <summary><span>${r.count}× ${esc(r.name)}</span>${p && p.type ? `<span class="type">${esc(p.type)}</span>` : ""}</summary>${body}</details>`;
+    <summary><span>${countPrefix}${esc(r.name)}</span>${p && p.type ? `<span class="type">${esc(p.type)}</span>` : ""}</summary>${body}</details>`;
 }
 
 const sizeSuffix = (def, entry) => {

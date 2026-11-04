@@ -265,7 +265,7 @@
     { 
       "id": "u-daemonic-pact","name": "Daemonic Pact", 
       "variants": [ {"id": "1", "label": "Daemonic Pact", "pts": 25, "effects": [
-         { "op": "add", "unit": "daemonic-pact", "count": 1},{ "op": "free", "unit": "lesser-daemon", "count": 1}]
+         { "op": "add", "unit": "daemonic-pact", "count": 1},{ "op": "free", "upgrade": "u-daemonic-pact", "count": 1}]
         }
       ]},
     {
@@ -334,7 +334,7 @@
           "effects": [
             {
               "op": "add",
-              "unit": "Lesser Daemon",
+              "unit": "lesser-daemon",
               "count": 1
             }
           ]

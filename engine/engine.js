@@ -87,14 +87,17 @@ export const setChoice = (state, uid, slot, distribution) =>
 export const setUpgrade = (state, uid, upgrade, variant, chimeras = 0, count = 1) =>
   mapEntry(state, uid, (e) => ({
     ...e,
-    upgrades: [...e.upgrades.filter((u) => u.upgrade !== upgrade), { upgrade, variant, chimeras, count }],
+    upgrades: [...e.upgrades.filter((u) => !(u.upgrade === upgrade && u.variant === variant)), { upgrade, variant, chimeras, count }],
   }));
 
 // Switching size resets unit choices, because slot totals change with the size.
 export const setSize = (state, uid, size) => mapEntry(state, uid, (e) => ({ ...e, size, choices: {} }));
 
-export const removeUpgrade = (state, uid, upgrade) =>
-  mapEntry(state, uid, (e) => ({ ...e, upgrades: e.upgrades.filter((u) => u.upgrade !== upgrade) }));
+export const removeUpgrade = (state, uid, upgrade, variant) =>
+  mapEntry(state, uid, (e) => ({ 
+    ...e, 
+    upgrades: e.upgrades.filter((u) => !(u.upgrade === upgrade && (!variant || u.variant === variant))) 
+  }));
 
 function transportRule(data, formationDef) {
   return (data.transport || []).find((t) => matches(t.appliesTo, formationDef));
@@ -111,7 +114,7 @@ function isCarriable(data, rule, unitId) {
 export const sizeOf = (def, entry) => (def.sizes ? def.sizes.find((s) => s.id === entry.size) || def.sizes[0] : null);
 
 // Final unit list of one formation entry, plus problems found while building it.
-export function computeEntry(data, entry) {
+export function computeEntry(data, entry, allEntries = []) {
   const formations = index(data.formations);
   const upgrades = index(data.upgrades);
   const def = formations[entry.formation];
@@ -139,8 +142,27 @@ export function computeEntry(data, entry) {
 
   const rule = transportRule(data, def);
   let addedCarriable;
+  
+  // 1. Lokale Variablen für die Upgrade-Zählung (für diesen Verband)
   const upgradeCounts = {};
-  const freeUpgrades = {};
+  
+  // 2. Wir berechnen den globalen Pool an Freiexemplaren DIREKT in computeEntry
+  const globalFree = {};
+  allEntries.forEach(globalEntry => {
+    globalEntry.upgrades.forEach(sel => {
+      const upDef = upgrades[sel.upgrade];
+      const variant = upDef && upDef.variants.find((v) => v.id === sel.variant);
+      if (variant && variant.effects) {
+        const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+        variant.effects.forEach(fx => {
+          if (fx.op === "free") {
+            globalFree[fx.upgrade] = (globalFree[fx.upgrade] || 0) + (fx.count * n);
+          }
+        });
+      }
+    });
+  });
+
   entry.upgrades.forEach((sel) => {
     const upDef = upgrades[sel.upgrade];
     if (upDef && upDef.show) {
@@ -158,14 +180,16 @@ export function computeEntry(data, entry) {
     // perUnit variants ("add any number") are priced and applied per chosen unit; limits scale with formation size.
     const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
 
+    // Erfasse die gekauften Upgrades in diesem Verband
     upgradeCounts[sel.upgrade] = (upgradeCounts[sel.upgrade] || 0) + n;
 
     if (variant.max != null && n > variant.max * mult)
-
-    if (variant.max != null && n > variant.max * mult)
       problems.push({ code: "variant-max", params: { label: variant.label, max: variant.max * mult }, refs: { uid: entry.uid } });
+    
+    // Wir addieren erst einmal die vollen Punkte.
     pts += variant.pts * n;
     addedCarriable = 0;
+    
     variant.effects.forEach((fx) => {
       if (fx.op === "add") {
         add(fx.unit, fx.count * n);
@@ -173,12 +197,12 @@ export function computeEntry(data, entry) {
       } else if (fx.op === "replace") {
         if ((roster[fx.from] || 0) < fx.count)
           problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: fx.count }, refs: { uid: entry.uid } });
-        const n = Math.min(fx.count, roster[fx.from] || 0);
-        roster[fx.from] = (roster[fx.from] || 0) - n;
-        add(fx.to, n);
-      } else if (fx.op === "free") {
-        freeUpgrades[fx.upgrade] = (freeUpgrades[fx.upgrade] || 0) + (fx.count * n);
+        const nReplaced = Math.min(fx.count, roster[fx.from] || 0);
+        roster[fx.from] = (roster[fx.from] || 0) - nReplaced;
+        add(fx.to, nReplaced);
       }
+      // "free" Effekte müssen hier in computeEntry nicht lokal verrechnet werden, 
+      // da wir sie oben schon global aus allEntries gezogen haben.
     });
 
     const chimeras = sel.chimeras || 0;
@@ -195,6 +219,20 @@ export function computeEntry(data, entry) {
     }
   });
 
+  // 3. Rabatt auf diesen Verband anwenden
+  Object.entries(upgradeCounts).forEach(([upgId, taken]) => {
+     if (globalFree[upgId] > 0) {
+        // Wir dürfen höchstens so viele Punkte abziehen, wie wir gekauft haben, ODER wie wir als Gutschein haben.
+        const discountCount = Math.min(taken, globalFree[upgId]);
+        if (discountCount > 0 && upgrades[upgId] && upgrades[upgId].variants.length) {
+            // Wir ziehen die Punkte der Variante ab (wir nehmen der Einfachheit halber an, dass alle Varianten dieses Upgrades dasselbe kosten).
+            pts -= discountCount * upgrades[upgId].variants[0].pts;
+            // Wir reduzieren den globalen Pool NICHT hier in computeEntry, da computeEntry pro Verband isoliert läuft.
+            // Die Logik in summarize/validate kümmert sich um die übergreifende Prüfung.
+        }
+     }
+  });
+
   // Variants that can only be taken together with certain units (e.g. an Oddboy joins a specific vehicle).
   entry.upgrades.forEach((sel) => {
     const variant = upgrades[sel.upgrade] && upgrades[sel.upgrade].variants.find((v) => v.id === sel.variant);
@@ -202,25 +240,6 @@ export function computeEntry(data, entry) {
       problems.push({ code: "variant-requires", params: { label: variant.label, units: variant.requires }, refs: { uid: entry.uid } });
   });
 
-  //Calculate Free Upgrades
-  Object.entries(freeUpgrades).forEach(([upgId, freeCount]) => {
-    const taken = upgradeCounts[upgId] || 0;
-    const discounted = Math.min(taken, freeCount); // Man kann max. so viele rabattieren, wie man gekauft hat
-    
-    if (discounted > 0 && upgrades[upgId] && upgrades[upgId].variants.length) {
-      // Discount upgrades (all upgrades cost the same as the first variant)
-      pts -= discounted * upgrades[upgId].variants[0].pts;
-    }
-    
-    // Validation: Did the user select the free upgrades?
-    if (taken < freeCount) {
-      problems.push({ 
-        code: "free-upgrade-missing", 
-        params: { count: freeCount - taken, name: upgrades[upgId] ? upgrades[upgId].name : upgId }, 
-        refs: { uid: entry.uid } 
-      });
-    }
-  });
   // Free automatic transports (Space Marine Rhinos): bought vehicles (Razorbacks, Land Raiders) carry first,
   // everything left over rides in as few free vehicles as possible.
   const auto = (data.autoTransport || []).find((t) => matches(t.appliesTo, def));
@@ -247,7 +266,6 @@ export function computeEntry(data, entry) {
       problems.push({ code: "transport-incomplete", params: { inf: carriable, vehicles: roster[rule.vehicle], capacity: rule.capacity }, refs: { uid: entry.uid } });
   }
 
-  //Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
   Object.keys(roster).forEach((u) => {
     if (roster[u] < 0 || (roster[u] === 0 && !forceShow.has(u))) {
       delete roster[u];
@@ -257,8 +275,46 @@ export function computeEntry(data, entry) {
 }
 
 export function summarize(data, state) {
-  const entries = state.formations.map((e) => computeEntry(data, e));
-  return { total: entries.reduce((a, e) => a + e.pts, 0), entries };
+  const upgrades = index(data.upgrades || []);
+const entries = state.formations.map((e) => computeEntry(data, e, state.formations));
+  
+  const globalFree = {};
+  
+  // 1. Alle "free" Effekte über die gesamte Armee hinweg sammeln
+  state.formations.forEach(entry => {
+    entry.upgrades.forEach(sel => {
+      const upDef = upgrades[sel.upgrade];
+      const variant = upDef && upDef.variants.find((v) => v.id === sel.variant);
+      if (variant && variant.effects) {
+        const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+        variant.effects.forEach(fx => {
+          if (fx.op === "free") {
+            globalFree[fx.upgrade] = (globalFree[fx.upgrade] || 0) + (fx.count * n);
+          }
+        });
+      }
+    });
+  });
+
+  // 2. Rabatt global auf jene Verbände anwenden, die das kostenlose Upgrade gekauft haben
+  entries.forEach(calcEntry => {
+    const entryState = state.formations.find(f => f.uid === calcEntry.uid);
+    entryState.upgrades.forEach(sel => {
+      if (globalFree[sel.upgrade] > 0) {
+        const upDef = upgrades[sel.upgrade];
+        const variant = upDef && upDef.variants.find((v) => v.id === sel.variant);
+        if (variant) {
+          const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+          const discountCount = Math.min(n, globalFree[sel.upgrade]);
+          
+          calcEntry.pts -= discountCount * variant.pts;
+          globalFree[sel.upgrade] -= discountCount;
+        }
+      }
+    });
+  });
+
+  return { total: entries.reduce((a, e) => a + e.pts, 0), entries, unspentFree: globalFree };
 }
 
 export function validate(data, state) {
@@ -270,8 +326,32 @@ export function validate(data, state) {
     .filter((e) => !formations[e.formation])
     .forEach((e) => violations.push({ code: "unknown-formation", params: { formation: e.formation }, refs: { uid: e.uid } }));
 
-  const { total, entries } = summarize(data, { ...state, formations: known });
+  const { total, entries, unspentFree } = summarize(data, { ...state, formations: known });
   entries.forEach((e) => violations.push(...e.problems));
+  
+  // Ungenutzte Rabatte exakt an den Verband hängen, der den Pakt enthält
+  if (unspentFree) {
+    Object.entries(unspentFree).forEach(([upgId, left]) => {
+      if (left > 0) {
+        const sourceUids = [];
+        known.forEach(e => {
+          e.upgrades.forEach(sel => {
+            const variant = upgrades[sel.upgrade]?.variants.find(v => v.id === sel.variant);
+            if (variant?.effects?.some(fx => fx.op === "free" && fx.upgrade === upgId)) {
+              sourceUids.push(e.uid);
+            }
+          });
+        });
+
+        violations.push({
+          code: "free-upgrade-missing",
+          params: { count: left, upgrade: upgId },
+          refs: { uids: sourceUids }
+        });
+      }
+    });
+  }
+
   const byUid = Object.fromEntries(entries.map((e) => [e.uid, e]));
 
   for (const c of data.formationConstraints || []) {
