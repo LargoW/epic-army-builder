@@ -37,8 +37,7 @@ export function messageFor(v, names = {}) {
       return `Zu viele ${unit(p.unit)}: höchstens ${p.max} nötig, um den Verband zu transportieren.`;
     case "variant-army-limit":
       return `„${p.label}“ darf höchstens ${p.limit}× pro Armee gewählt werden (gewählt: ${p.count}).`;
-    case "free-upgrade-missing":
-      return `Du hast noch ${p.count}× kostenlose ${names.upgrade(p.upgrade)} zur Verfügung.`;
+    
     case "transport-incomplete":
       return `Enthält der Verband Transportfahrzeuge, müssen alle INF transportiert werden: ${p.inf} INF, aber nur Platz für ${p.vehicles * p.capacity}.`;
     case "unknown-formation":

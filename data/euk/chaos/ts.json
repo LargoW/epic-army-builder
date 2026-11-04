@@ -45,6 +45,7 @@
     "lord-of-change": {"name": "Lord of Change - Greater Daemon of Tzeentch","type": "WE"},
     "lesser-daemon": {"name": "Lesser Daemon"},
     "daemonic-pact":{"name": "Daemonic Pact"},
+    "ts-teleport":{"name": "Teleport"},
     "flamers": {"name": "Flamers - Lesser Daemons of Tzeentch","type": "INF"},
     "screamers": {"name": "Screamers - Lesser Daemons of Tzeentch","type": "INF"}
   },
@@ -265,7 +266,7 @@
     { 
       "id": "u-daemonic-pact","name": "Daemonic Pact", 
       "variants": [ {"id": "1", "label": "Daemonic Pact", "pts": 25, "effects": [
-         { "op": "add", "unit": "daemonic-pact", "count": 1},{ "op": "free", "upgrade": "u-daemonic-pact", "count": 1}]
+         { "op": "add", "unit": "daemonic-pact", "count": 1}]
         }
       ]},
     {
