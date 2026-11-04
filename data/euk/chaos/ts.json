@@ -71,11 +71,11 @@
   ],
   "formations": [
     {
-      "id": "f-ts-retinue","name": "Thousand Sons Retinue", "pts": 275, "tags": ["core"],
+      "id": "f-ts-retinue", "transportable": true, "name": "Thousand Sons Retinue", "pts": 275, "tags": ["core"],
        "units": [
         { "unit": "cabal-of-sorcerers", "count": 1},{"unit": "thousand-sons","count": 5}
       ],
-      "upgrades": ["u-warlord", "u-champion","u-daemon-prince","u-land-raiders","u-rhinos","u-icon-bearer","u-defilers","u-retinue-extra-units"]
+      "upgrades": ["u-warlord", "u-champion","u-daemon-prince","u-land-raiders","u-icon-bearer","u-defilers","u-retinue-extra-units", "u-csmrhinos"]
     },
     {
       "id": "f-ts-terminators","name": "Thousand Sons Terminators", "pts": 350, "tags": ["core"],
@@ -217,6 +217,13 @@
       "variants": [ 
         {"id": "1", "label": "Champion", "pts": 50, "effects": [ { "op": "add", "unit": "csm-champion","count": 1}]}
       ]},
+
+      {"id": "u-csmrhinos","name": "Rhinos",  "variants": [ 
+        {"id": "3", "label": "3 Rhino", "pts": 30, "effects": [ { "op": "add", "unit": "csm-rhino", "count": 3}]},
+        {"id": "5", "label": "5 Rhinos", "pts": 50, "effects": [ { "op": "add", "unit": "csm-rhino", "count": 5}]}
+        
+      ]
+    },
     {
 
       "id": "u-land-raiders","name": "Land Raiders",
@@ -265,8 +272,8 @@
       "variants": [ { "id": "1","label": "Icon Bearer", "pts": 25, "effects": [ { "op": "add", "unit": "csm-icon-bearer", "count": 1}]}
       ]},
     {
-      "id": "u-retinue-extra-units","name": "Add 3 Thousand Sons units",
-      "variants": [ {  "id": "1","label": "+3 Thousand Sons units", "pts": 175, "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3}]}
+      "id": "u-retinue-extra-units","transportable": true,"name": "Add 3 Thousand Sons units",
+      "variants": [ {  "id": "3","label": "3 Thousand Sons units", "pts": 175, "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3}]}
       ]},
     {
       "id": "u-teleport","name": "Teleport",
@@ -285,15 +292,15 @@
     {
       "id": "u-replace-predators-land-raiders","name": "Replace Predators with Land Raiders",
       "variants": [ 
-        {"id": "1", "label": "Replace 1 Predator", "pts": 25,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 1}]},
-        {"id": "2", "label": "Replace 2 Predators", "pts": 50,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 2}]}, 
-        {"id": "3", "label": "Replace 3 Predators", "pts": 75,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 3}]}, 
-        {"id": "4", "label": "Replace 4 Predators", "pts": 100,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 4}]},
-        {"id": "5", "label": "Replace 5 Predators", "pts": 125,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 5}]},
-        {"id": "6", "label": "Replace 6 Predators", "pts": 150,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 6}]},
-        {"id": "7", "label": "Replace 7 Predators", "pts": 175,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 7}]},
-        {"id": "8", "label": "Replace 8 Predators", "pts": 200,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 8}]},
-        {"id": "9", "label": "Replace 9 Predators", "pts": 225,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 9}]} 
+        {"id": "1", "label": "Replace 1 Predator with a Land Raider", "pts": 25,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 1}]},
+        {"id": "2", "label": "Replace 2 Predators with 2 Land Raiders", "pts": 50,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 2}]}, 
+        {"id": "3", "label": "Replace 3 Predators with 3 Land Raiders", "pts": 75,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 3}]}, 
+        {"id": "4", "label": "Replace 4 Predators with 4 Land Raiders", "pts": 100,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 4}]},
+        {"id": "5", "label": "Replace 5 Predators with 5 Land Raiders", "pts": 125,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 5}]},
+        {"id": "6", "label": "Replace 6 Predators with 6 Land Raiders", "pts": 150,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 6}]},
+        {"id": "7", "label": "Replace 7 Predators with 7 Land Raiders", "pts": 175,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 7}]},
+        {"id": "8", "label": "Replace 8 Predators with 8 Land Raiders", "pts": 200,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 8}]},
+        {"id": "9", "label": "Replace 9 Predators with 9 Land Raiders", "pts": 225,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 9}]} 
       ]},
     {
       "id": "u-extra-firelord","name": "Third Chaos Firelord",
