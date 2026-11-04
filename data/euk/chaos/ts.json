@@ -75,7 +75,7 @@
        "units": [
         { "unit": "cabal-of-sorcerers", "count": 1},{"unit": "thousand-sons","count": 5}
       ],
-      "upgrades": ["u-warlordCabal", "u-champion","u-daemon-prince","u-land-raiders","u-rhinos","u-icon-bearer","u-defilers","u-retinue-extra-units"]
+      "upgrades": ["u-warlord", "u-champion","u-daemon-prince","u-land-raiders","u-rhinos","u-icon-bearer","u-defilers","u-retinue-extra-units"]
     },
     {
       "id": "f-ts-terminators","name": "Thousand Sons Terminators", "pts": 350, "tags": ["core"],
@@ -208,18 +208,10 @@
   "upgrades": [
     {
       "id": "u-warlord","name": "Warlord",
-      "variants": [ { "label": "0-1 Warlord", "pts": 50
-        }
-      ],
-      "kind": "replace",
-      "effects": [ { "op": "replace", "from": "csm-lord", "to": "ts-warlord", "count": 1}, { "op": "add", "unit": "ts-warlord", "count": 1}
+      "variants": [
+        {"id": "1", "label": "0-1 Warlord", "pts": 50, "effects": [{ "op": "replace", "from": "csm-lord", "to": "ts-warlord", "count": 1}]},
+        {"id": "2", "label": "0-1 Warlord (Cabal)", "pts": 50, "effects": [{ "op": "replace", "from": "cabal-of-sorcerers", "to": "ts-warlord", "count": 1}]}
       ]},
-       {
-      "id": "u-warlordCabal","name": "Warlord",
-      "variants": [ 
-        {"id": "1", "label": "0-1 Warlord", "pts": 50, "effects": [ { "op": "add","unit": "ts-warlord", "count": 1}]}
-      ]
-    },
     {
       "id": "u-champion","name": "Champion",
       "variants": [ 
@@ -273,70 +265,47 @@
       "variants": [ { "id": "1","label": "Icon Bearer", "pts": 25, "effects": [ { "op": "add", "unit": "csm-icon-bearer", "count": 1}]}
       ]},
     {
-      "id": "u-rhinos","name": "Rhinos",
-      "kind": "transport",
-      "effects": [ { "op": "transport", "vehicle": "csm-rhino", "capacity": 2, "carries": {   "type": "INF",   "includeUnits": [     "cabal-of-sorcerers",     "thousand-sons"   ] }, "pts": 10
-        }
-      ]},
-    {
       "id": "u-retinue-extra-units","name": "Add 3 Thousand Sons units",
-      "variants": [ { "label": "+3 Thousand Sons units", "pts": 175
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3
-        }
+      "variants": [ {  "id": "1","label": "+3 Thousand Sons units", "pts": 175, "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3}]}
       ]},
     {
       "id": "u-teleport","name": "Teleport",
-      "variants": [ { "label": "Teleport", "pts": 50
-        }
-      ],
-      "kind": "add"},
-    {
-      "id": "u-extra-predators","name": "Additional Chaos Predators",
-      "variants": [ { "label": "1 Predator", "pts": 50}, { "label": "2 Predators", "pts": 100}, { "label": "3 Predators", "pts": 150}, { "label": "4 Predators", "pts": 200}, { "label": "5 Predators", "pts": 250
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add", "unit": "chaos-predator", "count": 1
-        }
+      "variants": [ { "id": "1", "label": "Teleport", "pts": 50, "effects": [ { "op": "add", "unit": "ts-teleport", "count": 1}]}
       ]},
     {
+      "id": "u-extra-predators","name": "Additional Chaos Predators",
+      "variants": [ 
+        { "id": "1","label": "1 Predator", "pts": 50, "effects": [ { "op": "add", "unit": "chaos-predator", "count": 1}]}, 
+        { "id": "2","label": "2 Predators", "pts": 100, "effects": [ { "op": "add", "unit": "chaos-predator", "count": 2}]},
+        { "id": "3", "label": "3 Predators", "pts": 150, "effects": [ { "op": "add", "unit": "chaos-predator", "count": 3}]},
+        { "id": "4", "label": "4 Predators", "pts": 200, "effects": [ { "op": "add", "unit": "chaos-predator", "count": 4}]},
+        { "id": "5", "label": "5 Predators", "pts": 250, "effects": [ { "op": "add", "unit": "chaos-predator", "count": 5}]} 
+      ]
+      },
+    {
       "id": "u-replace-predators-land-raiders","name": "Replace Predators with Land Raiders",
-      "variants": [ { "label": "Replace 1 Predator", "pts": 25}, { "label": "Replace 2 Predators", "pts": 50}, { "label": "Replace 3 Predators", "pts": 75}, { "label": "Replace 4 Predators", "pts": 100}, { "label": "Replace 5 Predators", "pts": 125}, { "label": "Replace 6 Predators", "pts": 150}, { "label": "Replace 7 Predators", "pts": 175}, { "label": "Replace 8 Predators", "pts": 200}, { "label": "Replace 9 Predators", "pts": 225
-        }
-      ],
-      "kind": "replace",
-      "effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 1
-        }
+      "variants": [ 
+        {"id": "1", "label": "Replace 1 Predator", "pts": 25,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 1}]},
+        {"id": "2", "label": "Replace 2 Predators", "pts": 50,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 2}]}, 
+        {"id": "3", "label": "Replace 3 Predators", "pts": 75,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 3}]}, 
+        {"id": "4", "label": "Replace 4 Predators", "pts": 100,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 4}]},
+        {"id": "5", "label": "Replace 5 Predators", "pts": 125,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 5}]},
+        {"id": "6", "label": "Replace 6 Predators", "pts": 150,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 6}]},
+        {"id": "7", "label": "Replace 7 Predators", "pts": 175,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 7}]},
+        {"id": "8", "label": "Replace 8 Predators", "pts": 200,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 8}]},
+        {"id": "9", "label": "Replace 9 Predators", "pts": 225,"effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 9}]} 
       ]},
     {
       "id": "u-extra-firelord","name": "Third Chaos Firelord",
-      "variants": [ { "label": "3 Chaos Firelords total", "pts": 100
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add", "unit": "chaos-firelord", "count": 1
-        }
-      ]},
+      "variants": [ { "id": "1","label": "3 Chaos Firelords total", "pts": 100,"effects": [ { "op": "add", "unit": "chaos-firelord", "count": 1}]}
+  ]},
     {
       "id": "u-lesser-daemon","name": "Lesser Daemon",
-      "variants": [ { "label": "1 Lesser Daemon", "pts": 15
-        }
-      ],
-      "kind": "perUnit",
-      "effects": [ { "op": "add", "unit": "flamers", "count": 1}, { "op": "add", "unit": "screamers", "count": 1
-        }
+            "variants": [ { "id": "1", "label": "1 Lesser Daemon", "pts": 15, "effects": [ { "op": "add", "unit": "flamer", "count": 1}]}
       ]},
     {
       "id": "u-greater-daemon","name": "Greater Daemon",
-      "variants": [ { "label": "1 Greater Daemon", "pts": 50
-        }
-      ],
-      "kind": "perUnit",
-      "effects": [ { "op": "add", "unit": "lord-of-change", "count": 1
-        }
+      "variants": [ { "id": "1", "label": "1 Greater Daemon", "pts": 50, "effects": [ { "op": "add", "unit": "greater-daemon", "count": 1}]}
       ]
     }
   ],
