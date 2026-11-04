@@ -12,7 +12,7 @@
   },
   "strategy": 4,
   "initiative": [
-    {"formations": ["f-silver-towers","f-tzaangor-herd","f-spawn-horde","f-doomwings","f-firelords","f-navy-cruiser","f-navy-battleship"], "value": "2+" },
+    {"formations": ["daemonFormation","navy-titan"], "value": "2+" },
     {"formations": ["*"], "value": "1+" }
   ],
   "units": {
@@ -75,7 +75,7 @@
        "units": [
         { "unit": "cabal-of-sorcerers", "count": 1},{"unit": "thousand-sons","count": 5}
       ],
-      "upgrades": ["u-warlord", "u-champion","u-daemon-prince","u-land-raiders","u-rhinos","u-icon-bearer","u-defilers","u-retinue-extra-units"]
+      "upgrades": ["u-warlordCabal", "u-champion","u-daemon-prince","u-land-raiders","u-rhinos","u-icon-bearer","u-defilers","u-retinue-extra-units"]
     },
     {
       "id": "f-ts-terminators","name": "Thousand Sons Terminators", "pts": 350, "tags": ["core"],
@@ -86,15 +86,14 @@
       ]
       },
     {
-      "id": "f-spawn-horde","name": "Spawn Horde", "pts": 225,"tags": ["elite"],
+      "id": "f-spawn-horde","name": "Spawn Horde", "pts": 225,"tags": ["elite","daemonFormation"],
       "units": [ { "unit": "chaos-spawn","count": 5}
       ],
       "upgrades": []
       },
     {
       "id": "f-armoured-company","name": "Armoured Company","pts": 175, "tags": ["support"],
-      "units": [ { "unit": "chaos-predator",
-          "count": 4
+      "units": [ { "unit": "chaos-predator", "count": 4
         }
       ],
       "unitsText": "Four Chaos Predators",
@@ -104,8 +103,7 @@
      },
     {
       "id": "f-defiler-pack","name": "Thousand Sons Defiler Pack", "pts": 275, "tags": ["support"],
-      "units": [ { "unit": "ts-defiler",
-          "count": 4
+      "units": [ { "unit": "ts-defiler", "count": 4
         }
       ],
       "unitsText": "Four Thousand Sons Defilers",
@@ -116,21 +114,19 @@
     {
       "id": "f-disc-riders","name": "Disc Riders", "pts": 275, "tags": ["support"],
       "units": [ { "unit": "csm-lord","count": 1}, {"unit": "ts-disc-riders","count": 8}],
-      "upgrades": ["u-warlord","u-daemonic-pact","u-icon-bearer"],
+      "upgrades": ["u-warlord","u-daemonic-pact","u-icon-bearer"]
     },
     {
-      "id": "f-silver-towers","name": "Silver Towers",   "pts": 300, "tags": ["support"],
-      "units": [ { "unit": "chaos-silver-tower",
-          "count": 4
+      "id": "f-silver-towers","name": "Silver Towers",   "pts": 300, "tags": ["support","daemonFormation"],
+      "units": [ { "unit": "chaos-silver-tower", "count": 4
         }
       ],
       "unitsText": "4 Chaos Silver Towers",
       "upgrades": []
     },
     {
-      "id": "f-tzaangor-herd","name": "Tzaangor Herd",      "pts": 200, "tags": ["support"],
-      "units": [ { "unit": "tzaangor",
-          "count": 10
+      "id": "f-tzaangor-herd","name": "Tzaangor Herd",      "pts": 200, "tags": ["support","daemonFormation"],
+      "units": [ { "unit": "tzaangor", "count": 10
         }
       ],
       "unitsText": "Ten Tzaangor units",
@@ -140,8 +136,7 @@
     },
     {
       "id": "f-doomwings","name": "Doomwings",      "pts": 150, "tags": ["navy-titan"],
-      "units": [ { "unit": "chaos-doomwing",
-          "count": 3
+      "units": [ { "unit": "chaos-doomwing", "count": 3
         }
       ],
       "unitsText": "Three Chaos Doomwings",
@@ -149,8 +144,7 @@
       },
     {
       "id": "f-firelords","name": "Firelords",     "pts": 250, "tags": ["navy-titan"],
-      "units": [ { "unit": "chaos-firelord",
-          "count": 2
+      "units": [ { "unit": "chaos-firelord", "count": 2
         }
       ],
       "unitsText": "Two Chaos Firelords or Three Chaos Firelords",
@@ -160,8 +154,7 @@
     },
     {
       "id": "f-navy-cruiser","name": "Devastation Class Cruiser", "pts": 150,"tags": ["navy-titan","spacecraft"],
-      "units": [ { "unit": "devastation-cruiser",
-          "count": 1
+      "units": [ { "unit": "devastation-cruiser", "count": 1
         }
       ],
       "unitsText": "One Chaos Devastation Class Cruiser",
@@ -169,8 +162,7 @@
       },
     {
       "id": "f-navy-battleship","name": "Despoiler Class Battleship", "pts": 250, "tags": ["navy-titan","spacecraft"],
-      "units": [ { "unit": "despoiler-battleship",
-          "count": 1
+      "units": [ { "unit": "despoiler-battleship", "count": 1
         }
       ],
       "unitsText": "One Despoiler Class Battleship",
@@ -178,8 +170,7 @@
       },
     {
       "id": "f-warphound","name": "Warphound Titan",     "pts": 300, "tags": ["navy-titan"],
-      "units": [ { "unit": "warphound-titan",
-          "count": 1
+      "units": [ { "unit": "warphound-titan", "count": 1
         }
       ],
       "unitsText": "One Chaos Warphound Titan",
@@ -187,8 +178,7 @@
     },
     {
       "id": "f-mutator","name": "Mutator Titan",      "pts": 650, "tags": ["navy-titan"],
-      "units": [ { "unit": "mutator-titan",
-          "count": 1
+      "units": [ { "unit": "mutator-titan", "count": 1
         }
       ],
       "unitsText": "One Chaos Mutator Titan",
@@ -196,8 +186,7 @@
     },
     {
       "id": "f-warplord","name": "Warplord Titan",      "pts": 800, "tags": ["navy-titan"],
-      "units": [ { "unit": "warplord-titan",
-          "count": 1
+      "units": [ { "unit": "warplord-titan", "count": 1
         }
       ],
       "unitsText": "One Chaos Warplord Titan",
@@ -219,324 +208,158 @@
   "upgrades": [
     {
       "id": "u-warlord","name": "Warlord",
-      "variants": [ { "label": "0-1 Warlord",
-          "pts": 50
+      "variants": [ { "label": "0-1 Warlord", "pts": 50
         }
       ],
       "kind": "replace",
-      "effects": [ { "op": "replace",
-          "from": "csm-lord",
-          "to": "ts-warlord",
-          "count": 1}, {
-          "op": "add",
-          "unit": "ts-warlord",
-          "count": 1
-        }
+      "effects": [ { "op": "replace", "from": "csm-lord", "to": "ts-warlord", "count": 1}, { "op": "add", "unit": "ts-warlord", "count": 1}
       ]},
+       {
+      "id": "u-warlordCabal","name": "Warlord",
+      "variants": [ 
+        {"id": "1", "label": "0-1 Warlord", "pts": 50, "effects": [ { "op": "add","unit": "ts-warlord", "count": 1}]}
+      ]
+    },
     {
       "id": "u-champion","name": "Champion",
-      "variants": [ { "label": "Champion",
-          "pts": 50
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "csm-champion",
-          "count": 1
-        }
+      "variants": [ 
+        {"id": "1", "label": "Champion", "pts": 50, "effects": [ { "op": "add", "unit": "csm-champion","count": 1}]}
       ]},
     {
+
       "id": "u-land-raiders","name": "Land Raiders",
-      "variants": [ { "label": "1 Land Raider",
-          "pts": 75}, {
-          "label": "2 Land Raiders",
-          "pts": 125}, {
-          "label": "3 Land Raiders",
-          "pts": 200}, {
-          "label": "4 Land Raiders",
-          "pts": 275
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "csm-land-raider",
-          "count": 1
-        }
-      ]},
+      "variants": [ 
+        {"id": "1","label": "1 Land Raider", "pts": 75,"effects": [ { "op": "add", "unit": "csm-land-raider", "count": 1}]},
+        {"id": "2","label": "2 Land Raiders","pts": 125,"effects": [ { "op": "add", "unit": "csm-land-raider", "count": 2}]},
+        {"id": "3","label": "3 Land Raiders","pts": 200,"effects": [ { "op": "add", "unit": "csm-land-raider", "count": 3}]},
+        {"id": "4","label": "4 Land Raiders", "pts": 275,"effects": [ { "op": "add", "unit": "csm-land-raider", "count": 4}]}
+      ]
+    },
     {
       "id": "u-vindicators","name": "Vindicators",
-      "variants": [ { "label": "1 Vindicator",
-          "pts": 35}, {
-          "label": "2 Vindicators",
-          "pts": 70}, {
-          "label": "3 Vindicators",
-          "pts": 105
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "csm-vindicator",
-          "count": 1
-        }
-      ]},
-    {
+      "variants": [ 
+      {"id": "1","label": "1 Vindicator", "pts": 35,"effects": [ { "op": "add", "unit": "csm-vindicator", "count": 1}]}, 
+      {"id": "2","label": "2 Vindicators","pts": 70,"effects": [ { "op": "add", "unit": "csm-vindicator", "count": 2}]},
+      {"id": "3","label": "3 Vindicators","pts": 105,"effects": [ { "op": "add", "unit": "csm-vindicator", "count": 3}]}
+      ]
+     },
+    {  
       "id": "u-daemon-prince","name": "Daemon Prince",
-      "variants": [ { "label": "0-1 Daemon Prince",
-          "pts": 50
-        }
-      ],
-      "kind": "replace",
-      "effects": [ { "op": "replace",
-          "from": "csm-lord",
-          "to": "ts-daemon-prince",
-          "count": 1}, {
-          "op": "replace",
-          "from": "ts-warlord",
-          "to": "ts-daemon-prince-supreme",
-          "count": 1
-        }
+      "variants": [ 
+        {"id": "1", "label": "0-1 Thousand Sons Daemon Prince", "pts": 50, "effects": [{ "op": "replace", "from": "csm-lord", "to": "ts-daemon-prince", "count": 1}]},
+        {"id": "2", "label": "0-1 Thousand Sons Daemon Prince (Supreme Commander)", "pts": 50, "effects": [{ "op": "replace", "from": "ts-warlord", "to": "ts-daemon-prince-supreme", "count": 1}]}
       ]},
-    {
-      "id": "u-daemonic-pact","name": "Daemonic Pact",
-      "variants": [ { "label": "Daemonic Pact",
-          "pts": 25
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "daemon-pool",
-          "pool": "lesser",
-          "count": 1
+    { 
+      "id": "u-daemonic-pact","name": "Daemonic Pact", 
+      "variants": [ {"id": "1", "label": "Daemonic Pact", "pts": 25, "effects": [ { "op": "add", "unit": "ts-daemonic-pact", "count": 1}]
         }
       ]},
     {
       "id": "u-defilers","name": "Defilers",
-      "variants": [ { "label": "1 Defiler",
-          "pts": 75}, {
-          "label": "2 Defilers",
-          "pts": 150}, {
-          "label": "3 Defilers",
-          "pts": 225
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "ts-defiler",
-          "count": 1
-        }
+      "variants": [
+         { "id": "1", "label": "1 Defiler", "pts": 75, "effects": [ { "op": "add","unit": "ts-defiler","count": 1}]}, 
+         {"id": "2", "label": "2 Defilers", "pts": 150, "effects": [ { "op": "add","unit": "ts-defiler","count": 2}]},
+          {"id": "3", "label": "3 Defilers", "pts": 225, "effects": [ { "op": "add","unit": "ts-defiler","count": 3}]}
       ]},
     {
       "id": "u-dreadnoughts","name": "Dreadnoughts",
-      "variants": [ { "label": "1 Dreadnought",
-          "pts": 50}, {
-          "label": "2 Dreadnoughts",
-          "pts": 100}, {
-          "label": "3 Dreadnoughts",
-          "pts": 150
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "chaos-dreadnought",
-          "count": 1
-        }
+      "variants": [ 
+        { "id": "1","label": "1 Dreadnought", "pts": 50, "effects": [ { "op": "add","unit": "chaos-dreadnought","count": 1}]}, 
+        { "id": "2","label": "2 Dreadnoughts", "pts": 100, "effects": [ { "op": "add","unit": "chaos-dreadnought","count": 2}]}, 
+        { "id": "3", "label": "3 Dreadnoughts", "pts": 150, "effects": [ { "op": "add","unit": "chaos-dreadnought","count": 3}]}
       ]},
     {
       "id": "u-icon-bearer","name": "Icon Bearer",
-      "variants": [ { "label": "Icon Bearer",
-          "pts": 25
-        }
-      ],
-      "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "csm-icon-bearer",
-          "count": 1
-        }
+      "variants": [ { "id": "1","label": "Icon Bearer", "pts": 25, "effects": [ { "op": "add", "unit": "csm-icon-bearer", "count": 1}]}
       ]},
     {
       "id": "u-rhinos","name": "Rhinos",
       "kind": "transport",
-      "effects": [ { "op": "transport",
-          "vehicle": "csm-rhino",
-          "capacity": 2,
-          "carries": {
-            "type": "INF",
-            "includeUnits": [
-              "cabal-of-sorcerers",
-              "thousand-sons"
-            ]
-          },
-          "pts": 10
+      "effects": [ { "op": "transport", "vehicle": "csm-rhino", "capacity": 2, "carries": {   "type": "INF",   "includeUnits": [     "cabal-of-sorcerers",     "thousand-sons"   ] }, "pts": 10
         }
       ]},
     {
       "id": "u-retinue-extra-units","name": "Add 3 Thousand Sons units",
-      "variants": [ { "label": "+3 Thousand Sons units",
-          "pts": 175
+      "variants": [ { "label": "+3 Thousand Sons units", "pts": 175
         }
       ],
       "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "thousand-sons",
-          "count": 3
+      "effects": [ { "op": "add", "unit": "thousand-sons", "count": 3
         }
       ]},
     {
       "id": "u-teleport","name": "Teleport",
-      "variants": [ { "label": "Teleport",
-          "pts": 50
+      "variants": [ { "label": "Teleport", "pts": 50
         }
       ],
       "kind": "add"},
     {
       "id": "u-extra-predators","name": "Additional Chaos Predators",
-      "variants": [ { "label": "1 Predator",
-          "pts": 50}, {
-          "label": "2 Predators",
-          "pts": 100}, {
-          "label": "3 Predators",
-          "pts": 150}, {
-          "label": "4 Predators",
-          "pts": 200}, {
-          "label": "5 Predators",
-          "pts": 250
+      "variants": [ { "label": "1 Predator", "pts": 50}, { "label": "2 Predators", "pts": 100}, { "label": "3 Predators", "pts": 150}, { "label": "4 Predators", "pts": 200}, { "label": "5 Predators", "pts": 250
         }
       ],
       "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "chaos-predator",
-          "count": 1
+      "effects": [ { "op": "add", "unit": "chaos-predator", "count": 1
         }
       ]},
     {
       "id": "u-replace-predators-land-raiders","name": "Replace Predators with Land Raiders",
-      "variants": [ { "label": "Replace 1 Predator",
-          "pts": 25}, {
-          "label": "Replace 2 Predators",
-          "pts": 50}, {
-          "label": "Replace 3 Predators",
-          "pts": 75}, {
-          "label": "Replace 4 Predators",
-          "pts": 100}, {
-          "label": "Replace 5 Predators",
-          "pts": 125}, {
-          "label": "Replace 6 Predators",
-          "pts": 150}, {
-          "label": "Replace 7 Predators",
-          "pts": 175}, {
-          "label": "Replace 8 Predators",
-          "pts": 200}, {
-          "label": "Replace 9 Predators",
-          "pts": 225
+      "variants": [ { "label": "Replace 1 Predator", "pts": 25}, { "label": "Replace 2 Predators", "pts": 50}, { "label": "Replace 3 Predators", "pts": 75}, { "label": "Replace 4 Predators", "pts": 100}, { "label": "Replace 5 Predators", "pts": 125}, { "label": "Replace 6 Predators", "pts": 150}, { "label": "Replace 7 Predators", "pts": 175}, { "label": "Replace 8 Predators", "pts": 200}, { "label": "Replace 9 Predators", "pts": 225
         }
       ],
       "kind": "replace",
-      "effects": [ { "op": "replace",
-          "from": "chaos-predator",
-          "to": "csm-land-raider",
-          "count": 1
+      "effects": [ { "op": "replace", "from": "chaos-predator", "to": "csm-land-raider", "count": 1
         }
       ]},
     {
       "id": "u-extra-firelord","name": "Third Chaos Firelord",
-      "variants": [ { "label": "3 Chaos Firelords total",
-          "pts": 100
+      "variants": [ { "label": "3 Chaos Firelords total", "pts": 100
         }
       ],
       "kind": "add",
-      "effects": [ { "op": "add",
-          "unit": "chaos-firelord",
-          "count": 1
+      "effects": [ { "op": "add", "unit": "chaos-firelord", "count": 1
         }
       ]},
     {
       "id": "u-lesser-daemon","name": "Lesser Daemon",
-      "variants": [ { "label": "1 Lesser Daemon",
-          "pts": 15
+      "variants": [ { "label": "1 Lesser Daemon", "pts": 15
         }
       ],
       "kind": "perUnit",
-      "effects": [ { "op": "add",
-          "unit": "flamers",
-          "count": 1}, {
-          "op": "add",
-          "unit": "screamers",
-          "count": 1
+      "effects": [ { "op": "add", "unit": "flamers", "count": 1}, { "op": "add", "unit": "screamers", "count": 1
         }
       ]},
     {
       "id": "u-greater-daemon","name": "Greater Daemon",
-      "variants": [ { "label": "1 Greater Daemon",
-          "pts": 50
+      "variants": [ { "label": "1 Greater Daemon", "pts": 50
         }
       ],
       "kind": "perUnit",
-      "effects": [ { "op": "add",
-          "unit": "lord-of-change",
-          "count": 1
+      "effects": [ { "op": "add", "unit": "lord-of-change", "count": 1
         }
       ]
     }
   ],
-  "formationConstraints": [
+  "transport": [
     {
-      "id": "c-elite-per-core",
-      "from": [
-        "f-spawn-horde"
-      ],
-      "forEach": [
-        "core"
-      ],
-      "max": 1},
-    {
-      "id": "c-support-per-core",
-      "from": [
-        "support"
-      ],
-      "forEach": [
-        "core"
-      ],
-      "max": 2},
-    {
-      "id": "c-navy-titan-percent",
-      "from": [
-        "navy-titan"
-      ],
-      "maxPercent": 33},
-    {
-      "id": "c-spacecraft-limit",
-      "from": [
-        "spacecraft"
-      ],
-      "max": 1,
-      "perArmy": true
+      "id": "csm-rhino",
+      "vehicle": "csm-rhino", "capacity": 2, "pts": 10,
+      "appliesTo": ["f-ts-retinue"],
+      "carries": { "type": "INF", "excludeUnits": ["ts-terminators"], "excludeRules": ["Beritten", "Sprungmodule"] },
+      "rule": "Add up to 5 Chaos Space Marine Rhinos. You must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."
     }
   ],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 },
+    { "id": "elite-per-core", "from": ["tag:elite"], "forEach": ["tag:core"], "max": 1 },
+    { "id": "titans-navy-share", "from": ["tag:titans-navy"], "maxShare": [1, 3] },
+    { "id": "orbital-once", "from": ["orbital"], "max": 1, "perArmy": true }
+  ],
   "upgradeConstraints": [
-    {
-      "id": "c-up-max-four-per-formation",
-      "from": "*",
-      "maxTotal": 4,
-      "perFormation": true},
-    {
-      "id": "c-up-max-once-per-type",
-      "from": "*",
-      "max": 1,
-      "perFormation": true},
-    {
-      "id": "c-warlord-per-army",
-      "from": [
-        "u-warlord"
-      ],
-      "max": 1,
-      "perArmy": true},
-    {
-      "id": "c-daemon-prince-per-army",
-      "from": [
-        "u-daemon-prince"
-      ],
-      "max": 1,
-      "perArmy": true
-    }
-  ]
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true },
+    { "id": "formation-max-four", "from": ["*"], "maxTotal": 4,"perFormation": true },
+    {"id": "c-warlord-per-army",  "from": ["u-warlord", "u-warlordCabal"], "max": 1, "perArmy": true},
+    {"id": "c-daemon-prince-per-army", "from": ["u-daemon-prince"],"max": 1,"perArmy": true}
+    ]
   
 }

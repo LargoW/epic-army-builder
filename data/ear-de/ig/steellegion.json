@@ -240,12 +240,12 @@
       ]
     },
     {
-      "id": "manticores-6", "name": "Mantikors",
-      "variants": [ { "id": "6", "label": "6 Basilisken durch 6 Mantikors ersetzen", "pts": 50, "effects": [{ "op": "replace", "from": "basilisk", "to": "manticore", "count": 6 }] } ]
+      "id": "manticores-6", "name": "Mantikore",
+      "variants": [ { "id": "6", "label": "6 Basilisken durch 6 Mantikore ersetzen", "pts": 50, "effects": [{ "op": "replace", "from": "basilisk", "to": "manticore", "count": 6 }] } ]
     },
     {
-      "id": "manticores-3", "name": "Mantikors",
-      "variants": [ { "id": "3", "label": "3 Basilisken durch 3 Mantikors ersetzen", "pts": 25, "effects": [{ "op": "replace", "from": "basilisk", "to": "manticore", "count": 3 }] } ]
+      "id": "manticores-3", "name": "Mantikore",
+      "variants": [ { "id": "3", "label": "3 Basilisken durch 3 Mantikore ersetzen", "pts": 25, "effects": [{ "op": "replace", "from": "basilisk", "to": "manticore", "count": 3 }] } ]
     },
     {
       "id": "shadowsword", "name": "Shadowsword",
