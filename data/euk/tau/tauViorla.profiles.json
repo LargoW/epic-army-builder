@@ -1,0 +1,289 @@
+{
+  "units": {
+    "shas-o": {
+      "name": "Shas'O",
+      "type": "CH",
+      "speed": null,
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Leader", "Coordinated Fire", "May re-roll one failed initiative test (of any type) per turn"]
+    },
+    "shas-el": {
+      "name": "Shas'El",
+      "type": "CH",
+      "speed": null,
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Leader", "Coordinated Fire"]
+    },
+    "fireblade": {
+      "name": "Fireblade",
+      "type": "CH",
+      "speed": null,
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Inspiring", "Leader", "Coordinated Fire"]
+    },
+    "ethereal": {
+      "name": "Ethereal",
+      "type": "CH",
+      "speed": null,
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Invulnerable Save", "Leader", "Formation Ethereal joins becomes fearless. If killed formation loses fearless and gains D3 blast markers"]
+    },
+    "viorla-fire-warriors": {
+      "name": "Vior'la Fire Warriors",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {"name": "2 x Pulse Blasters", "range": "15cm", "firepower": "AP4+"}
+      ]
+    },
+    "gun-drone": {
+      "name": "Gun Drones",
+      "type": "INF",
+      "speed": "20cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {"name": "Twin Pulse Carbines", "range": "15cm", "firepower": "AP4+ Disrupt"}
+      ],
+      "specialRules": ["Tau Jet Packs"]
+    },
+    "pathfinder-team": {
+      "name": "Pathfinder Team",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {"name": "Pulse Carbines", "range": "15cm", "firepower": "AP5+ Disrupt"},
+        {"name": "Rail Rifles", "range": "30cm", "firepower": "AP5+ Sniper"}
+      ],
+      "specialRules": ["Scouts", "Coordinated Fire", "Markerlights"]
+    },
+    "devilfish": {
+      "name": "Devilfish Troop Carrier",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {"name": "Burst Cannons", "range": "15cm", "firepower": "AP5+"},
+        {"name": "Seeker Missiles", "range": "90cm", "firepower": "AT6+ Guided Missiles"}
+      ],
+      "specialRules": ["Skimmer", "Transport"]
+    },
+    "skyray": {
+      "name": "Skyray Air Defence Gunship",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {"name": "Smart Missile System", "range": "30cm", "firepower": "AP5+ Ignore Cover"},
+        {"name": "2 x Hunter Missiles", "range": "60cm", "firepower": "AA5+"},
+        {"name": "2 x Seeker Missiles", "range": "90cm", "firepower": "AT6+ Guided Missiles"}
+      ],
+      "specialRules": ["Skimmer", "Markerlights"]
+    },
+    "xv8-crisis": {
+      "name": "Vior'la XV8 Crisis Battlesuit",
+      "type": "INF",
+      "speed": "20cm",
+      "armour": 3,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "Twin Linked Flamer", "range": "15cm", "firepower": "AP4+, Ignore Cover"},
+        {"name": "Twin Plasma Rifles", "range": "30cm", "firepower": "AP4+/AT6+"},
+        {"name": "Twin Fusion Blasters", "range": "15cm", "firepower": "MW4+"}
+      ],
+      "specialRules": ["Invulnerable Save", "Tau Jet Packs"]
+    },
+    "xv15-stealth": {
+      "name": "XV15 Stealth Battle suit Team",
+      "type": "INF",
+      "speed": "20cm",
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {"name": "Silenced Burst Cannons", "range": "15cm", "firepower": "AP4+ Disrupt"}
+      ],
+      "specialRules": ["Tau Jet Packs", "Scouts", "Reinforced Armour", "Markerlights", "Teleport", "First Strike"]
+    },
+    "xv95-ghostkeel": {
+      "name": "XV95 Ghostkeel Battlesuit",
+      "type": "AV",
+      "speed": "15cm",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {"name": "Twin Fusion Blasters", "range": "15cm", "firepower": "MW4+"},
+        {"name": "Cyclic Ion Raker", "range": "15cm", "firepower": "AP5+/AT5+"}
+      ],
+      "specialRules": ["Walker", "First Strike", "Teleport", "Reinforced Armour", "Tau Jet Packs"]
+    },
+    "xv88-broadside": {
+      "name": "XV88 Broadside Team",
+      "type": "LV",
+      "speed": "15cm",
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {"name": "Twin-linked Broadside Rail guns", "range": "60cm", "firepower": "AT3+"},
+        {"name": "Smart Missile System", "range": "30cm", "firepower": "AP5+ Ignore Cover"}
+      ],
+      "specialRules": ["Reinforced Armour", "Walker"]
+    },
+    "riptide": {
+      "name": "XV104 Riptide Battlesuit",
+      "type": "WE",
+      "speed": "25cm",
+      "armour": 3,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "Ion Accelerator", "range": "45cm", "firepower": "MW3+"},
+        {"name": "2 x Twin Missile Pods", "range": "45cm", "firepower": "AP5+/AT6+ / AA6+"}
+      ],
+      "specialRules": ["Tau Deflector Shield", "Walker", "Thick rear armour", "Tau Jet Packs", "DC 2", "Critical Effect: Destroyed, any units within 5cm take a hit on a 6+"]
+    },
+    "rvarna": {
+      "name": "XV107 R'Varna Battlesuit",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "2 x Pulse Submunition Cannon", "range": "45cm", "firepower": "2 x AP3+/AT5+"}
+      ],
+      "specialRules": ["Invulnerable save", "Walker", "Reinforced Armour", "DC 2", "Critical Effect: Destroyed, any units within 5cm take a hit on a 6+"]
+    },
+    "yvahra": {
+      "name": "XV109 Y'Vahra Battlesuit",
+      "type": "WE",
+      "speed": "25cm",
+      "armour": 3,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "Plasma Flamer", "range": "15cm", "firepower": "Small Arms, MW EA+1"},
+        {"name": "EMP Discharge Cannon", "range": "15cm", "firepower": "MW4+ TK(1), Ignore cover"},
+        {"name": "Pulse Driver Cannon", "range": "75cm", "firepower": "AT4+, Disrupt"},
+        {"name": "2 x Destroyer Missiles", "range": "90cm", "firepower": "MW3+"}
+      ],
+      "specialRules": ["Tau Deflector Shield", "Walker", "Thick rear armour", "Tau Jet Packs", "DC 2", "Critical Effect: Destroyed, any units within 5cm take a hit on a 6+"]
+    },
+    "stormsurge": {
+      "name": "KV128 Stormsurge Battlesuit",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": 3,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {"name": "Burst Cannons", "range": "15cm", "firepower": "AP5+"}
+      ],
+      "specialRules": ["Tau Deflector Shield", "Walker", "DC 2", "Critical Effect: Destroyed, any units within 5cm take a hit on a 6+"]
+    },
+    "supremacy": {
+      "name": "KX139 Supremacy Battlesuit",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": 3,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {"name": "2 x Seeker Missiles", "range": "90cm", "firepower": "AT6+, Guided Missiles"}
+      ],
+      "specialRules": ["Tau Deflector Shield", "Walker", "DC 3", "Critical Effect: Destroyed, any units within 5cm take a hit on a 6+"]
+    },
+    "manta": {
+      "name": "Manta Missile Destroyer",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": 5,
+      "cc": null,
+      "ff": 4,
+      "weapons": [
+        {"name": "Heavy Railcannon", "range": "90cm", "firepower": "MW2+ TK (D3) FxF"},
+        {"name": "3 x Heavy Ion Phalanx", "range": "75cm", "firepower": "AP3+/AT4+ FxF"},
+        {"name": "4 x Twin-Manta Burst Cannons", "range": "30cm", "firepower": "AP5+/AA6+"},
+        {"name": "Twin Missile Pods", "range": "45cm", "firepower": "AP5+/AT6+ FxF"},
+        {"name": "2 x Seeker Missiles", "range": "90cm", "firepower": "AT6+, Guided Missiles"}
+      ],
+      "specialRules": ["Tau Deflector Shield", "Fearless", "Markerlights", "Planetfall", "Reinforced Armour", "Support Craft", "Transport", "DC 8"]
+    },
+    "razorshark": {
+      "name": "Razorshark Fighter",
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": 6,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Quad Ion Turret", "range": "30cm", "firepower": "AP4+/ATS+/AA5+ FxF"},
+        {"name": "Burst Cannon", "range": "15cm", "firepower": "AA6+"}
+      ],
+      "specialRules": []
+    },
+    "orca": {
+      "name": "Orca Dropship",
+      "type": "WE",
+      "speed": "Bomber",
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {"name": "Twin-linked Burst Cannons", "range": "15cm", "firepower": "AA6+"},
+        {"name": "Twin-linked Missile Pods", "range": "45cm", "firepower": "AP5+/AT6+"},
+        {"name": "Aircraft Seeker Missiles", "range": "45cm", "firepower": "AT6+ Guided Missiles"}
+      ],
+      "specialRules": ["Planetfall", "Transport", "DC 2"]
+    },
+    "sunshark": {
+      "name": "Sunshark Bomber",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": 4,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Pulse Bomb Generator", "range": "15cm", "firepower": "2BP, FxF"},
+        {"name": "Twin Missile Pods", "range": "45cm", "firepower": "AP5+/AT6+, FxF"},
+        {"name": "Interceptor Drones", "range": "15cm", "firepower": "AA6+"}
+      ],
+      "specialRules": []
+    },
+    "protector-cruiser": {
+      "name": "Protector Class Cruiser",
+      "type": "Spaceship",
+      "speed": null,
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "2 x Pin Point Attack", "range": null, "firepower": "MW2+ TK D(3)"}
+      ],
+      "specialRules": ["Transport"]
+    }
+  ],
+  "specialRules": []
+}

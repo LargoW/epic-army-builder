@@ -1,0 +1,92 @@
+{
+  "units": {
+    "grand-warlord": {
+      "name": "Grand Warlord",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Supreme Commander"]
+    },
+    "living-ancestor": {
+      "name": "Living Ancestor",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "specialRules": ["Inspiring"]
+    },
+    "berserkers": {
+      "name": "Berserkers",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": 6,
+      "cc": 4,
+      "ff": 5,
+      "specialRules": ["Infiltrator"]
+    },
+    "guild-bikers": {
+      "name": "Guild Bikers",
+      "type": "INF",
+      "speed": "35cm",
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"}
+      ],
+      "specialRules": ["Mounted"]
+    },
+    "hearthguard": {
+      "name": "Hearthguard",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {"name": "Heirloom Weapons", "range": "30cm", "firepower": "Small Arms"}
+      ],
+      "specialRules": ["Inspiring", "Leader"]
+    },
+    "warriors": {
+      "name": "Warriors",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {"name": "Missile Launcher", "range": "45cm", "firepower": "AP6+/AT5+"},
+        {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"}
+      ]
+    },
+    "colossus-we": {
+      "name": "Colossus",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "Doomsday Cannon", "range": "90cm", "firepower": "TK"}
+      ],
+      "specialRules": ["Damage Capacity 5", "Fearless", "Reinforced Armour", "Thick Rear Armour"]
+    },
+    "cyclops": {
+      "name": "Cyclops",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {"name": "Hellfury Cannon", "range": "90cm", "firepower": "TK(D6+1)"}
+      ],
+      "specialRules": ["Damage Capacity 5", "Fearless", "Reinforced Armour", "Thick Rear Armour", "5 Void Shields"]
+    }
+  },
+  "specialRules": []
+}

@@ -1,0 +1,216 @@
+{
+  "schema": 0,
+  "ruleset": "epic-uk",
+  "lang": "en",
+  "id": "netea/squats/grindel",
+  "name": "Squats (Grindel Stronghold)",
+  "faction": "Squats",
+  "version": "1.7.2",
+  "source": {
+    "file": "Grindel Stronghold Squat List",
+    "version": "2022-12-16"
+  },
+  "strategy": 2,
+  "initiative": [
+    {"formations": ["*"], "value": "2+"}
+  ],
+  "units": {
+    "grand-warlord": {"name": "Grand Warlord", "type": "CH"},
+    "living-ancestor": {"name": "Living Ancestor", "type": "CH"},
+    "berserkers": {"name": "Berserkers", "type": "INF"},
+    "guild-bikers": {"name": "Guild Bikers", "type": "INF"},
+    "hearthguard": {"name": "Hearthguard", "type": "INF"},
+    "mole-mortar": {"name": "Mole Mortar", "type": "INF"},
+    "rapier": {"name": "Rapier", "type": "INF"},
+    "tarantula": {"name": "Tarantula", "type": "INF"},
+    "thudd-gun": {"name": "Thudd Gun", "type": "INF"},
+    "thunderers": {"name": "Thunderers", "type": "INF"},
+    "warlord": {"name": "Warlord", "type": "INF"},
+    "warriors": {"name": "Warriors", "type": "INF"},
+    "guild-trike": {"name": "Guild Trike", "type": "LV"},
+    "guildmaster": {"name": "Guildmaster", "type": "LV"},
+    "colossus-robot": {"name": "Colossus Class Robot", "type": "AV"},
+    "conqueror-robot": {"name": "Conqueror Class Robot", "type": "AV"},
+    "iron-eagle": {"name": "Iron Eagle", "type": "AV"},
+    "recon-iron-eagle": {"name": "Recon Iron Eagle", "type": "AV"},
+    "rhino": {"name": "Rhino", "type": "AV"},
+    "steel-hawk": {"name": "Steel Hawk", "type": "AV"},
+    "termite": {"name": "Termite", "type": "AV"},
+    "thunderfire": {"name": "Thunderfire", "type": "AV"},
+    "war-hawk": {"name": "War Hawk", "type": "AV"},
+    "colossus-we": {"name": "Colossus", "type": "WE"},
+    "cyclops": {"name": "Cyclops", "type": "WE"},
+    "goliath": {"name": "Goliath", "type": "WE"},
+    "land-train": {"name": "Land Train", "type": "WE"},
+    "mole-we": {"name": "Mole", "type": "WE"}
+  },
+  "sections": [
+    {
+      "id": "brotherhoods",
+      "name": "Squat Brotherhoods",
+      "formations": ["f-stronghold-brotherhood", "f-motorised-brotherhood"]
+    },
+    {
+      "id": "support",
+      "name": "Support Formations",
+      "formations": ["f-guild-bikers", "f-guild-robot-squadron", "f-artillery-battery"]
+    },
+    {
+      "id": "warengines",
+      "name": "War Engines",
+      "formations": ["f-colossus", "f-cyclops", "f-land-train"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-stronghold-brotherhood",
+      "name": "Stronghold Brotherhood",
+      "pts": 350,
+      "tags": ["brotherhood", "core"],
+      "units": [
+        {"unit": "warriors", "count": 8}
+      ],
+      "upgrades": ["u-warlord", "u-living-ancestor", "u-berserkers", "u-thunderers", "u-rhino", "u-termite", "u-mole"]
+    },
+    {
+      "id": "f-motorised-brotherhood",
+      "name": "Motorised Brotherhood",
+      "pts": 275,
+      "tags": ["brotherhood", "core"],
+      "units": [
+        {"unit": "warriors", "count": 6}
+      ],
+      "upgrades": ["u-warlord", "u-living-ancestor", "u-guild-bikers", "u-rhino"]
+    },
+    {
+      "id": "f-guild-bikers",
+      "name": "Guild Bikers",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [
+        {"unit": "guildmaster", "count": 1},
+        {"unit": "guild-bikers", "count": 5}
+      ],
+      "upgrades": ["u-guild-trikes"]
+    },
+    {
+      "id": "f-guild-robot-squadron",
+      "name": "Guild Robot Squadron",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        {"unit": "colossus-robot", "count": 2},
+        {"unit": "conqueror-robot", "count": 2}
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "f-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        {"unit": "thudd-gun", "count": 3}
+      ],
+      "upgrades": ["u-mole-mortars", "u-rapier", "u-tarantula"]
+    },
+    {
+      "id": "f-colossus",
+      "name": "Colossus War Engine",
+      "pts": 325,
+      "tags": ["warengine"],
+      "units": [
+        {"unit": "colossus-we", "count": 1}
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "f-cyclops",
+      "name": "Cyclops War Engine",
+      "pts": 400,
+      "tags": ["warengine"],
+      "units": [
+        {"unit": "cyclops", "count": 1}
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "f-land-train",
+      "name": "Land Train",
+      "pts": 450,
+      "tags": ["warengine"],
+      "units": [
+        {"unit": "land-train", "count": 1}
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-warlord",
+      "name": "Grand Warlord",
+      "variants": [
+        {"id": "1", "label": "Grand Warlord", "pts": 50, "effects": [{"op": "add", "unit": "grand-warlord", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-living-ancestor",
+      "name": "Living Ancestor",
+      "variants": [
+        {"id": "1", "label": "Living Ancestor", "pts": 50, "effects": [{"op": "add", "unit": "living-ancestor", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-berserkers",
+      "name": "Berserkers",
+      "variants": [
+        {"id": "n", "label": "Berserker", "pts": 20, "perUnit": true, "effects": [{"op": "add", "unit": "berserkers", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-thunderers",
+      "name": "Thunderers",
+      "variants": [
+        {"id": "n", "label": "Thunderer", "pts": 40, "perUnit": true, "effects": [{"op": "add", "unit": "thunderers", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-guild-bikers",
+      "name": "Guild Bikers",
+      "variants": [
+        {"id": "n", "label": "Guild Biker", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "guild-bikers", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-rhino",
+      "name": "Rhino Transport",
+      "variants": [
+        {"id": "n", "label": "Rhino", "pts": 10, "perUnit": true, "effects": [{"op": "add", "unit": "rhino", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-termite",
+      "name": "Termite Transport",
+      "variants": [
+        {"id": "n", "label": "Termite", "pts": 10, "perUnit": true, "effects": [{"op": "add", "unit": "termite", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-mole",
+      "name": "Mole Transport",
+      "variants": [
+        {"id": "n", "label": "Mole", "pts": 25, "perUnit": true, "effects": [{"op": "add", "unit": "mole-we", "count": 1}]}
+      ]
+    }
+  ],
+  "transport": [
+    {
+      "id": "rhino-transport",
+      "vehicle": "rhino",
+      "capacity": 2,
+      "pts": 10,
+      "appliesTo": ["f-stronghold-brotherhood", "f-motorised-brotherhood"],
+      "carries": {"type": "INF", "excludeRules": ["Mounted"]}
+    }
+  ]
+}
