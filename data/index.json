@@ -57,7 +57,7 @@
       "version": "1.0"
     },
     {
-      "id": "euk/imperial-guard/vanaheim-air-cavalry",
+      "id": "euk/ig/vanaheim",
       "ruleset": "euk",
       "faction": "Imperial Guard",
       "name": "Vanaheim Air Cavalry",
@@ -71,16 +71,16 @@
       "version": "280726"
     },
     {
-      "id": "euk/tau/third-phase",
+      "id": "euk/tau/tau",
       "ruleset": "euk",
-      "faction": "Xenos",
+      "faction": "T'au",
       "name": "T'au - Third Phase",
       "version": "200824"
     },
     {
       "id": "euk/tau/tauViorla",
       "ruleset": "euk",
-      "faction": "Xenos",
+      "faction": "T'au",
       "name": "T'au - Vior'la",
       "version": "1.46"
     },
@@ -92,9 +92,9 @@
       "version": "1.7.2"
     },
     {
-      "id": "euk/tyranids",
+      "id": "euk/nid/tyranid",
       "ruleset": "euk",
-      "faction": "Xenos",
+      "faction": "Tyranids",
       "name": "Tyranids",
       "version": "1.0"
     }
