@@ -16,24 +16,28 @@
       "armour": null,
       "cc": null,
       "ff": null,
-      "specialRules": ["Inspiring"]
+      "specialRules": [
+        "Inspiring",
+        "The formation that includes the Living Ancestor may ignore the -1 Action test penalty when it tries to retain the initiative",
+        "If added to an infantry unit the Living Ancestor will also have the invulnerable save ability"
+      ]
     },
     "berserkers": {
       "name": "Berserkers",
       "type": "INF",
       "speed": "15cm",
-      "armour": 6,
-      "cc": 4,
-      "ff": 5,
+      "armour": "6+",
+      "cc": "4+",
+      "ff": "5+",
       "specialRules": ["Infiltrator"]
     },
     "guild-bikers": {
       "name": "Guild Bikers",
       "type": "INF",
       "speed": "35cm",
-      "armour": 5,
-      "cc": 4,
-      "ff": 5,
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "5+",
       "weapons": [
         {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"}
       ],
@@ -43,49 +47,419 @@
       "name": "Hearthguard",
       "type": "INF",
       "speed": "15cm",
-      "armour": 5,
-      "cc": 4,
-      "ff": 5,
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "5+",
       "weapons": [
         {"name": "Heirloom Weapons", "range": "30cm", "firepower": "Small Arms"}
       ],
       "specialRules": ["Inspiring", "Leader"]
     },
+    "mole-mortar": {
+      "name": "Mole Mortar",
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "-",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Mole Mortar", "range": "30cm", "firepower": "IC, Ind"}
+      ],
+      "specialRules": ["Counts as two units for the purposes of being transported"]
+    },
+    "rapier": {
+      "name": "Rapier",
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "-",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Laser Destroyer", "range": "45cm", "firepower": "AP6+/AT4+"}
+      ],
+      "specialRules": ["Counts as two units for the purposes of being transported"]
+    },
+    "tarantula": {
+      "name": "Tarantula",
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "-",
+      "cc": "6+",
+      "ff": "6+",
+      "specialRules": ["Counts as two units for the purposes of being transported"]
+    },
+    "thudd-gun": {
+      "name": "Thudd Gun",
+      "type": "INF",
+      "speed": "10cm",
+      "armour": "-",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Thudd Gun", "range": "45cm", "firepower": "Ind"}
+      ],
+      "specialRules": ["Counts as two units for the purposes of being transported"]
+    },
+    "thunderers": {
+      "name": "Thunderers",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Missile Launcher", "range": "45cm", "firepower": "AP6+/AT5+"},
+        {"name": "2× Twin Heavy Bolter", "range": "30cm", "firepower": "AP5+/AT6+"}
+      ]
+    },
+    "warlord": {
+      "name": "Warlord",
+      "type": "INF",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "5+",
+      "specialRules": ["Commander", "Inspiring", "Leader", "Reinforced Armour", "Thick Rear Armour"]
+    },
     "warriors": {
       "name": "Warriors",
       "type": "INF",
       "speed": "15cm",
-      "armour": 6,
-      "cc": 5,
-      "ff": 5,
+      "armour": "6+",
+      "cc": "5+",
+      "ff": "5+",
       "weapons": [
         {"name": "Missile Launcher", "range": "45cm", "firepower": "AP6+/AT5+"},
         {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"}
+      ],
+      "specialRules": ["One unit in every two has a Missile Launcher"]
+    },
+    "guild-trike": {
+      "name": "Guild Trike",
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+"
+    },
+    "guildmaster": {
+      "name": "Guildmaster",
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Power Lance (bc)", "range": "Close Combat", "firepower": "FS, MW"}
+      ],
+      "specialRules": ["Commander", "Leader"]
+    },
+    "colossus-robot": {
+      "name": "Colossus Class Robot",
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "5+",
+      "specialRules": ["Fearless", "Walker"]
+    },
+    "conqueror-robot": {
+      "name": "Conqueror Class Robot",
+      "type": "AV",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "5+",
+      "specialRules": ["Fearless", "Walker"]
+    },
+    "iron-eagle": {
+      "name": "Iron Eagle",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Stub Battle Cannon", "range": "45cm", "firepower": "AP4+/AT4+"},
+        {"name": "Rapid Fire Autocannon", "range": "45cm", "firepower": "2× AP5+/AT6+"}
+      ],
+      "specialRules": ["Scout", "Skimmer"]
+    },
+    "recon-iron-eagle": {
+      "name": "Recon Iron Eagle",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Stub Battle Cannon", "range": "45cm", "firepower": "AP4+/AT4+"},
+        {"name": "Rapid Fire Autocannon", "range": "45cm", "firepower": "2× AP5+/AT6+"}
+      ],
+      "specialRules": ["Scout", "Spotter", "Support Craft"]
+    },
+    "rhino": {
+      "name": "Rhino",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Storm Bolter", "range": "15cm", "firepower": "Small Arms"}
+      ],
+      "specialRules": ["Transport", "May transport two infantry units (except Terminator units) without Jump Packs or Mounted"]
+    },
+    "steel-hawk": {
+      "name": "Steel Hawk",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Battlehammer Rockets", "range": "15cm", "firepower": "AP4+/AT5+"},
+        {"name": "Twin Multi-melta", "range": "15cm", "firepower": "MW4+ and (15cm) MW"}
+      ],
+      "specialRules": ["Scout", "Skimmer"]
+    },
+    "termite": {
+      "name": "Termite",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "-",
+      "specialRules": ["Transport", "Tunneler", "May transport two infantry units without Jump Packs or Mounted"]
+    },
+    "thunderfire": {
+      "name": "Thunderfire",
+      "type": "AV",
+      "speed": "Immobile",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "3+",
+      "weapons": [
+        {"name": "Twin Battle Cannon", "range": "75cm", "firepower": "AP3+/AT3+"},
+        {"name": "Thunderfire", "range": "60cm", "firepower": "AA4+"}
       ]
+    },
+    "war-hawk": {
+      "name": "War Hawk",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Doom Anvil Missiles", "range": "45cm", "firepower": "AT3+ MW"}
+      ],
+      "specialRules": ["Scout", "Skimmer"]
+    },
+    "overlord": {
+      "name": "Overlord",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Overlord Heavy Cannons", "range": "45cm", "firepower": "AP3+/AT4+"}
+      ],
+      "specialRules": ["Skimmer", "Support Craft"]
     },
     "colossus-we": {
       "name": "Colossus",
       "type": "WE",
       "speed": "15cm",
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
       "weapons": [
-        {"name": "Doomsday Cannon", "range": "90cm", "firepower": "TK"}
+        {"name": "Doomsday Cannon", "range": "90cm", "firepower": "FxF, Dir, MW"},
+        {"name": "4× Rapid Fire Battle Cannon", "range": "75cm", "firepower": "2× AP4+/AT4+ FwA"},
+        {"name": "Thunderer", "range": "30cm", "firepower": "FxF, IC"},
+        {"name": "4× Plasma Missile", "range": "45cm", "firepower": "FwA, Ind, SS"}
       ],
-      "specialRules": ["Damage Capacity 5", "Fearless", "Reinforced Armour", "Thick Rear Armour"]
+      "specialRules": [
+        "Damage Capacity 5",
+        "Fearless",
+        "Reinforced Armour",
+        "Thick Rear Armour",
+        "Critical Hit Effect: The unit takes an extra point of damage and is immobilized. Subsequent critical hits destroy the unit and all units within 5cm of the model suffer a hit on a roll of 4+"
+      ]
     },
     "cyclops": {
       "name": "Cyclops",
       "type": "WE",
       "speed": "15cm",
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
       "weapons": [
-        {"name": "Hellfury Cannon", "range": "90cm", "firepower": "TK(D6+1)"}
+        {"name": "Hellfury Cannon", "range": "90cm", "firepower": "FxF, TK(D6+1)"},
+        {"name": "Rapid Fire Battle Cannon", "range": "75cm", "firepower": "2× AP4+/AT4+"},
+        {"name": "Melta Cannon", "range": "30cm", "firepower": "FxF, TK(D3) and (15cm) TK(D6)"},
+        {"name": "6× Doomstorm Missile", "range": "45cm", "firepower": "FwA, Ind, SS"}
       ],
-      "specialRules": ["Damage Capacity 5", "Fearless", "Reinforced Armour", "Thick Rear Armour", "5 Void Shields"]
+      "specialRules": [
+        "Damage Capacity 5",
+        "Fearless",
+        "Reinforced Armour",
+        "Thick Rear Armour",
+        "5 Void Shields",
+        "Critical Hit Effect: The unit takes an extra point of damage and will take an extra point of damage whenever the Hellfury Cannon misses. Subsequent critical hits destroy the unit and all units within 5cm of the model suffer a hit on a roll of 4+"
+      ]
+    },
+    "goliath": {
+      "name": "Goliath",
+      "type": "WE",
+      "speed": "5cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Mega Cannon", "range": "150cm", "firepower": "IC, Ind"}
+      ],
+      "specialRules": [
+        "Damage Capacity 2",
+        "This unit must fire indirectly or not fire at all",
+        "Critical Hit Effect: Destroyed. All units within 5cm of the model suffer a hit on a roll of 4+"
+      ]
+    },
+    "leviathan": {
+      "name": "Leviathan",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Leviathan Mega Cannon", "range": "90cm", "firepower": "AP3+/AT3+, IC, Ind"},
+        {"name": "2× Heavy Bolters", "range": "30cm", "firepower": "AP5+/AT6+"},
+        {"name": "2× Twin Lascannons", "range": "45cm", "firepower": "AT4+"}
+      ],
+      "specialRules": [
+        "Damage Capacity 6",
+        "Fearless",
+        "Reinforced Armour",
+        "Thick Rear Armour",
+        "3 Void Shields",
+        "Transport (kann eine vollständige Brotherhood transportieren)",
+        "Critical Hit Effect: The Leviathan's tracks are destroyed and it may no longer move"
+      ]
+    },
+    "land-train-engine": {
+      "name": "Land Train Engine",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Heavy Boiler Guns", "range": "30cm", "firepower": "AP5+/AT6+"}
+      ],
+      "specialRules": [
+        "Damage Capacity 2",
+        "Fearless",
+        "Reinforced Armour",
+        "Thick Rear Armour",
+        "Critical Hit Effect: Destroyed. All units within 5cm of the model suffer a hit on a roll of 4+"
+      ]
+    },
+    "berserker-battlecar": {
+      "name": "Berserker Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Twin Battle Cannon", "range": "75cm", "firepower": "AP3+/AT3+"},
+        {"name": "Heavy Bolters", "range": "30cm", "firepower": "AP5+/AT6+"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "dragon-battlecar": {
+      "name": "Dragon Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Flame Cannon", "range": "15cm", "firepower": "MW4+, Ignore Cover"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "skyhammer-battlecar": {
+      "name": "Skyhammer Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Skyhammer Missiles", "range": "45cm", "firepower": "AA4+"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "mortar-battlecar": {
+      "name": "Mortar Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Heavy Mortar", "range": "60cm", "firepower": "IC, Ind, AP5+/AT5+"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "iron-eagle-battlecar": {
+      "name": "Iron Eagle Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Iron Eagle Turret", "range": "45cm", "firepower": "AP4+/AT4+"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "fire-shield-battlecar": {
+      "name": "Fire Shield Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Fire Shield Projectors", "range": "30cm", "firepower": "AP4+, Ignore Cover"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour", "Generates a Holo Field"]
+    },
+    "bomb-battlecar": {
+      "name": "Bomb Battlecar",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Seismic Bomb", "range": "30cm", "firepower": "MW1+, TK(1)"}
+      ],
+      "specialRules": ["Reinforced Armour", "Thick Rear Armour"]
+    },
+    "mole-we": {
+      "name": "Mole",
+      "type": "WE",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "6+",
+      "specialRules": ["Tunneler", "Transport", "Damage Capacity 2"]
     }
   },
   "specialRules": []

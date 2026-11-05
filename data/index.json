@@ -7,6 +7,10 @@
     {
       "id": "euk",
       "name": "Epic: Armageddon – EpicUK"
+    },
+    {
+      "id": "netea",
+      "name": "Epic: Armageddon – NetEA"
     }
   ],
   "armies": [
@@ -64,7 +68,7 @@
       "ruleset": "euk",
       "faction": "Xenos",
       "name": "T'au - Vior'la",
-      "version": "1.46",
+      "version": "1.46"
     },
 	{
       "id": "netea/squats/squats",
@@ -72,6 +76,6 @@
       "faction": "Squats",
       "name": "Grindel Stronghold",
       "version": "1.7.2"
-    },
+    }
   ]
 }

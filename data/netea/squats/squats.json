@@ -1,216 +1,1202 @@
 {
-  "schema": 0,
-  "ruleset": "epic-uk",
-  "lang": "en",
-  "id": "netea/squats/grindel",
-  "name": "Squats (Grindel Stronghold)",
-  "faction": "Squats",
-  "version": "1.7.2",
-  "source": {
-    "file": "Grindel Stronghold Squat List",
-    "version": "2022-12-16"
-  },
-  "strategy": 2,
-  "initiative": [
-    {"formations": ["*"], "value": "2+"}
-  ],
-  "units": {
-    "grand-warlord": {"name": "Grand Warlord", "type": "CH"},
-    "living-ancestor": {"name": "Living Ancestor", "type": "CH"},
-    "berserkers": {"name": "Berserkers", "type": "INF"},
-    "guild-bikers": {"name": "Guild Bikers", "type": "INF"},
-    "hearthguard": {"name": "Hearthguard", "type": "INF"},
-    "mole-mortar": {"name": "Mole Mortar", "type": "INF"},
-    "rapier": {"name": "Rapier", "type": "INF"},
-    "tarantula": {"name": "Tarantula", "type": "INF"},
-    "thudd-gun": {"name": "Thudd Gun", "type": "INF"},
-    "thunderers": {"name": "Thunderers", "type": "INF"},
-    "warlord": {"name": "Warlord", "type": "INF"},
-    "warriors": {"name": "Warriors", "type": "INF"},
-    "guild-trike": {"name": "Guild Trike", "type": "LV"},
-    "guildmaster": {"name": "Guildmaster", "type": "LV"},
-    "colossus-robot": {"name": "Colossus Class Robot", "type": "AV"},
-    "conqueror-robot": {"name": "Conqueror Class Robot", "type": "AV"},
-    "iron-eagle": {"name": "Iron Eagle", "type": "AV"},
-    "recon-iron-eagle": {"name": "Recon Iron Eagle", "type": "AV"},
-    "rhino": {"name": "Rhino", "type": "AV"},
-    "steel-hawk": {"name": "Steel Hawk", "type": "AV"},
-    "termite": {"name": "Termite", "type": "AV"},
-    "thunderfire": {"name": "Thunderfire", "type": "AV"},
-    "war-hawk": {"name": "War Hawk", "type": "AV"},
-    "colossus-we": {"name": "Colossus", "type": "WE"},
-    "cyclops": {"name": "Cyclops", "type": "WE"},
-    "goliath": {"name": "Goliath", "type": "WE"},
-    "land-train": {"name": "Land Train", "type": "WE"},
-    "mole-we": {"name": "Mole", "type": "WE"}
-  },
-  "sections": [
-    {
-      "id": "brotherhoods",
-      "name": "Squat Brotherhoods",
-      "formations": ["f-stronghold-brotherhood", "f-motorised-brotherhood"]
+    "schema": 0,
+    "ruleset": "epic-uk",
+    "lang": "en",
+    "id": "netea/squats/grindel",
+    "name": "Squats (Grindel Stronghold)",
+    "faction": "Squats",
+    "version": "1.7.2",
+    "source": {
+        "file": "Grindel Stronghold Squat List",
+        "version": "2022-12-16"
     },
-    {
-      "id": "support",
-      "name": "Support Formations",
-      "formations": ["f-guild-bikers", "f-guild-robot-squadron", "f-artillery-battery"]
+    "strategy": 2,
+    "initiative": [
+        {
+            "formations": [
+                "*"
+            ],
+            "value": "2+"
+        }
+    ],
+    "units": {
+        "warlord": {
+            "name": "Warlord",
+            "type": "CH"
+        },
+        "grandwarlord": {
+            "name": "Grand Warlord",
+            "type": "CH"
+        },
+        "livingAncestor": {
+            "name": "Living Ancestor",
+            "type": "CH"
+        },
+        "guildmaster": {
+            "name": "Guildmaster",
+            "type": "LV"
+        },
+        "berserkers": {
+            "name": "Berserkers",
+            "type": "INF"
+        },
+        "hearthguard": {
+            "name": "Hearthguard",
+            "type": "INF"
+        },
+        "mole-mortar": {
+            "name": "Mole Mortar",
+            "type": "INF"
+        },
+        "rapier": {
+            "name": "Rapier",
+            "type": "INF"
+        },
+        "tarantula": {
+            "name": "Tarantula",
+            "type": "INF"
+        },
+        "thudd-gun": {
+            "name": "Thudd Gun",
+            "type": "INF"
+        },
+        "thunderers": {
+            "name": "Thunderers",
+            "type": "INF"
+        },
+        "warriors": {
+            "name": "Warriors",
+            "type": "INF"
+        },
+        "guild-bikers": {
+            "name": "Guild Bikers",
+            "type": "INF"
+        },
+        "guild-trikes": {
+            "name": "Guild Trikes",
+            "type": "LV"
+        },
+        "colossus-robot": {
+            "name": "Colossus Class Robot",
+            "type": "AV"
+        },
+        "conqueror-robot": {
+            "name": "Conqueror Class Robot",
+            "type": "AV"
+        },
+        "rhino": {
+            "name": "Rhino",
+            "type": "AV"
+        },
+        "termite": {
+            "name": "Termite",
+            "type": "AV"
+        },
+        "mole-we": {
+            "name": "Mole",
+            "type": "WE"
+        },
+        "overlord": {
+            "name": "Overlord",
+            "type": "AV"
+        },
+        "gyrocopter": {
+            "name": "Gyrocopter",
+            "type": "LV"
+        },
+        "iron-eagle": {
+            "name": "Iron Eagle",
+            "type": "AV"
+        },
+        "steel-hawk": {
+            "name": "Steel Hawk",
+            "type": "AV"
+        },
+        "war-hawk": {
+            "name": "War Hawk",
+            "type": "AV"
+        },
+        "recon-iron-eagle": {
+            "name": "Recon Iron Eagle",
+            "type": "AV"
+        },
+        "goliath": {
+            "name": "Goliath",
+            "type": "WE"
+        },
+        "thunderfire": {
+            "name": "Thunderfire",
+            "type": "AV"
+        },
+        "colossus-we": {
+            "name": "Colossus",
+            "type": "WE"
+        },
+        "cyclops": {
+            "name": "Cyclops",
+            "type": "WE"
+        },
+        "land-train-engine": {
+            "name": "Land Train Engine",
+            "type": "WE"
+        },
+        "berserker-battlecar": {
+            "name": "Berserker Battlecar",
+            "type": "WE"
+        },
+        "dragon-battlecar": {
+            "name": "Dragon Battlecar",
+            "type": "WE"
+        },
+        "skyhammer-battlecar": {
+            "name": "Skyhammer Battlecar",
+            "type": "WE"
+        },
+        "mortar-battlecar": {
+            "name": "Mortar Battlecar",
+            "type": "WE"
+        },
+        "iron-eagle-battlecar": {
+            "name": "Iron Eagle Battlecar",
+            "type": "WE"
+        },
+        "fire-shield-battlecar": {
+            "name": "Fire Shield Battlecar",
+            "type": "WE"
+        },
+        "bomb-battlecar": {
+            "name": "Bomb Battlecar",
+            "type": "WE"
+        }
     },
-    {
-      "id": "warengines",
-      "name": "War Engines",
-      "formations": ["f-colossus", "f-cyclops", "f-land-train"]
-    }
-  ],
-  "formations": [
-    {
-      "id": "f-stronghold-brotherhood",
-      "name": "Stronghold Brotherhood",
-      "pts": 350,
-      "tags": ["brotherhood", "core"],
-      "units": [
-        {"unit": "warriors", "count": 8}
-      ],
-      "upgrades": ["u-warlord", "u-living-ancestor", "u-berserkers", "u-thunderers", "u-rhino", "u-termite", "u-mole"]
-    },
-    {
-      "id": "f-motorised-brotherhood",
-      "name": "Motorised Brotherhood",
-      "pts": 275,
-      "tags": ["brotherhood", "core"],
-      "units": [
-        {"unit": "warriors", "count": 6}
-      ],
-      "upgrades": ["u-warlord", "u-living-ancestor", "u-guild-bikers", "u-rhino"]
-    },
-    {
-      "id": "f-guild-bikers",
-      "name": "Guild Bikers",
-      "pts": 200,
-      "tags": ["support"],
-      "units": [
-        {"unit": "guildmaster", "count": 1},
-        {"unit": "guild-bikers", "count": 5}
-      ],
-      "upgrades": ["u-guild-trikes"]
-    },
-    {
-      "id": "f-guild-robot-squadron",
-      "name": "Guild Robot Squadron",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [
-        {"unit": "colossus-robot", "count": 2},
-        {"unit": "conqueror-robot", "count": 2}
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "f-artillery-battery",
-      "name": "Artillery Battery",
-      "pts": 150,
-      "tags": ["support"],
-      "units": [
-        {"unit": "thudd-gun", "count": 3}
-      ],
-      "upgrades": ["u-mole-mortars", "u-rapier", "u-tarantula"]
-    },
-    {
-      "id": "f-colossus",
-      "name": "Colossus War Engine",
-      "pts": 325,
-      "tags": ["warengine"],
-      "units": [
-        {"unit": "colossus-we", "count": 1}
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "f-cyclops",
-      "name": "Cyclops War Engine",
-      "pts": 400,
-      "tags": ["warengine"],
-      "units": [
-        {"unit": "cyclops", "count": 1}
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "f-land-train",
-      "name": "Land Train",
-      "pts": 450,
-      "tags": ["warengine"],
-      "units": [
-        {"unit": "land-train", "count": 1}
-      ],
-      "upgrades": []
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "u-warlord",
-      "name": "Grand Warlord",
-      "variants": [
-        {"id": "1", "label": "Grand Warlord", "pts": 50, "effects": [{"op": "add", "unit": "grand-warlord", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-living-ancestor",
-      "name": "Living Ancestor",
-      "variants": [
-        {"id": "1", "label": "Living Ancestor", "pts": 50, "effects": [{"op": "add", "unit": "living-ancestor", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-berserkers",
-      "name": "Berserkers",
-      "variants": [
-        {"id": "n", "label": "Berserker", "pts": 20, "perUnit": true, "effects": [{"op": "add", "unit": "berserkers", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-thunderers",
-      "name": "Thunderers",
-      "variants": [
-        {"id": "n", "label": "Thunderer", "pts": 40, "perUnit": true, "effects": [{"op": "add", "unit": "thunderers", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-guild-bikers",
-      "name": "Guild Bikers",
-      "variants": [
-        {"id": "n", "label": "Guild Biker", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "guild-bikers", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-rhino",
-      "name": "Rhino Transport",
-      "variants": [
-        {"id": "n", "label": "Rhino", "pts": 10, "perUnit": true, "effects": [{"op": "add", "unit": "rhino", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-termite",
-      "name": "Termite Transport",
-      "variants": [
-        {"id": "n", "label": "Termite", "pts": 10, "perUnit": true, "effects": [{"op": "add", "unit": "termite", "count": 1}]}
-      ]
-    },
-    {
-      "id": "u-mole",
-      "name": "Mole Transport",
-      "variants": [
-        {"id": "n", "label": "Mole", "pts": 25, "perUnit": true, "effects": [{"op": "add", "unit": "mole-we", "count": 1}]}
-      ]
-    }
-  ],
-  "transport": [
-    {
-      "id": "rhino-transport",
-      "vehicle": "rhino",
-      "capacity": 2,
-      "pts": 10,
-      "appliesTo": ["f-stronghold-brotherhood", "f-motorised-brotherhood"],
-      "carries": {"type": "INF", "excludeRules": ["Mounted"]}
-    }
-  ]
+    "sections": [
+        {
+            "id": "core",
+            "name": "Core Formations",
+            "formations": [
+                "f-berserker",
+                "f-thunderer",
+                "f-warrior"
+            ]
+        },
+        {
+            "id": "support",
+            "name": "Support Formations",
+            "formations": [
+                "f-air-attack-corps",
+                "f-artillery-battery",
+                "f-guild-robot-squadron",
+                "f-guild-squadron",
+                "f-gyrocopter-wing",
+                "f-super-heavy-artillery",
+                "f-thunderfire-battery"
+            ]
+        },
+        {
+            "id": "warengines",
+            "name": "War Engines",
+            "formations": [
+                "f-colossus",
+                "f-cyclops",
+                "f-landtrain",
+                "f-leviathan"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "id": "f-berserker",
+            "name": "Berserker",
+            "pts": 175,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 175
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 300
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 425
+                }
+            ],
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "hearthguard",
+                    "count": 1
+                },
+                {
+                    "unit": "berserkers",
+                    "count": 5
+                }
+            ],
+            "upgrades": [
+                "u-rhino",
+                "u-termite",
+                "u-mole",
+                "u-berserkers",
+                "u-warlord-replace"
+            ]
+        },
+        {
+            "id": "f-thunderer",
+            "name": "Thunderer",
+            "pts": 225,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 225
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 400
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 575
+                }
+            ],
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "thunderers",
+                    "count": 5
+                }
+            ],
+            "upgrades": [
+                "u-rhino",
+                "u-termite",
+                "u-mole",
+                "u-rapiers",
+                "u-thunderers",
+                "u-hearthguard"
+            ]
+        },
+        {
+            "id": "f-warrior",
+            "name": "Warrior",
+            "pts": 250,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 250
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 450
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 650
+                }
+            ],
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "hearthguard",
+                    "count": 1
+                },
+                {
+                    "unit": "warriors",
+                    "count": 9
+                }
+            ],
+            "upgrades": [
+                "u-rhino",
+                "u-termite",
+                "u-mole",
+                "u-warriors",
+                "u-rapiers",
+                "u-warlord-replace"
+            ]
+        },
+        {
+            "id": "f-air-attack-corps",
+            "name": "Air Attack Corps",
+            "pts": 250,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 250
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 450
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 650
+                }
+            ],
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "overlord",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "f-artillery-battery",
+            "name": "Artillery Battery",
+            "pts": 150,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 150
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 275
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 375
+                }
+            ],
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "oneOf": [
+                        "mole-mortar",
+                        "tarantula",
+                        "thudd-gun"
+                    ],
+                    "count": 5,
+                    "mixed": true
+                }
+            ],
+            "upgrades": [
+                "u-artillery-units"
+            ]
+        },
+        {
+            "id": "f-guild-robot-squadron",
+            "name": "Guild Robot Squadron",
+            "pts": 200,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "oneOf": [
+                        "colossus-robot",
+                        "conqueror-robot"
+                    ],
+                    "count": 5,
+                    "mixed": true
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "f-guild-squadron",
+            "name": "Guild Squadron",
+            "pts": 150,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 150
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 250
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 350
+                }
+            ],
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "guildmaster",
+                    "count": 1
+                },
+                {
+                    "unit": "guild-bikers",
+                    "count": 5
+                }
+            ],
+            "upgrades": [
+                "u-guild-bikers-add",
+                "u-guild-trikes-replace",
+                "u-grandwarlord",
+                "u-living-ancestor"
+            ]
+        },
+        {
+            "id": "f-gyrocopter-wing",
+            "name": "Gyrocopter Wing",
+            "pts": 225,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 225
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 375
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 525
+                }
+            ],
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "oneOf": [
+                        "iron-eagle",
+                        "steel-hawk",
+                        "war-hawk"
+                    ],
+                    "count": 3,
+                    "mixed": true
+                }
+            ],
+            "upgrades": [
+                "u-gyrocopter-units"
+            ]
+        },
+        {
+            "id": "f-super-heavy-artillery",
+            "name": "Super-Heavy Artillery Battery",
+            "pts": 200,
+            "sizes": [
+                {
+                    "id": "n",
+                    "label": "Small (S)",
+                    "mult": 1,
+                    "pts": 200
+                },
+                {
+                    "id": "g",
+                    "label": "Medium (M)",
+                    "mult": 2,
+                    "pts": 300
+                },
+                {
+                    "id": "r",
+                    "label": "Large (L)",
+                    "mult": 3,
+                    "pts": 400
+                }
+            ],
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "goliath",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "f-thunderfire-battery",
+            "name": "Thunderfire Battery",
+            "pts": 150,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "thunderfire",
+                    "count": 2
+                }
+            ],
+            "upgrades": [
+                "u-thunderfire-add"
+            ]
+        },
+        {
+            "id": "f-colossus",
+            "name": "Colossus War Engine",
+            "pts": 600,
+            "tags": [
+                "warengine"
+            ],
+            "units": [
+                {
+                    "unit": "colossus-we",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "f-cyclops",
+            "name": "Cyclops War Engine",
+            "pts": 600,
+            "tags": [
+                "warengine"
+            ],
+            "units": [
+                {
+                    "unit": "cyclops",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "f-landtrain",
+            "name": "Land Train Engine",
+            "pts": 275,
+            "tags": [
+                "warengine"
+            ],
+            "units": [
+                {
+                    "unit": "land-train-engine",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "u-berserkerbattlecar",
+                "u-replaceBerserkerCarForBomb",
+                "u-replaceBerserkerCarForDragon",
+                "u-replaceBerserkerCarForSkyhammer",
+                "u-replaceBerserkerCarForMortar",
+                "u-replaceBerserkerCarForIronEagle",
+                "u-replaceBerserkerCarForFireShield"
+            ]
+        },
+        {
+            "id": "f-leviathan",
+            "name": "Leviathan War Engine",
+            "pts": 400,
+            "tags": [
+                "warengine"
+            ],
+            "units": [
+                {
+                    "unit": "leviathan",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "u-grandwarlord",
+            "name": "Grand Warlord",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Grand Warlord",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "grandwarlord",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-living-ancestor",
+            "name": "Living Ancestor",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Living Ancestor",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "livingAncestor",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-rhino",
+            "name": "Rhino",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Rhino",
+                    "pts": 10,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "rhino",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-termite",
+            "name": "Termite",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Termite",
+                    "pts": 10,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "termite",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-mole",
+            "name": "Mole",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Mole",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "mole-we",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-berserkers",
+            "name": "Berserker",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Berserker",
+                    "pts": 20,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "berserkers",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-thunderers",
+            "name": "Thunderer",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Thunderer",
+                    "pts": 40,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "thunderers",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-rapiers",
+            "name": "Rapier",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Rapier",
+                    "pts": 25,
+                    "perUnit": true,
+                    "max": 3,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "rapier",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-hearthguard",
+            "name": "Hearthguard",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Hearthguard",
+                    "pts": 50,
+                    "max": 1,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "hearthguard",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-warriors",
+            "name": "Warrior",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Warrior",
+                    "pts": 20,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "warriors",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-warlord-replace",
+            "name": "Warlord",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Replace one Hearthguard with a Warlord",
+                    "pts": 25,
+                    "max": 1,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "hearthguard",
+                            "to": "warlord",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-artillery-units",
+            "name": "Artillery Units",
+            "variants": [
+                {
+                    "id": "mole-mortar",
+                    "label": "Mole Mortar",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "mole-mortar",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "tarantula",
+                    "label": "Tarantula",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "tarantula",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "thudd-gun",
+                    "label": "Thudd Gun",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "thudd-gun",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-guild-bikers-add",
+            "name": "Guild Bikers",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Guild Biker",
+                    "pts": 20,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "guild-bikers",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-guild-trikes-replace",
+            "name": "Guild Trikes",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Guild Trike",
+                    "pts": 5,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "guild-bikers",
+                            "to": "guild-trikes",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-gyrocopter-units",
+            "name": "Gyrocopter Units",
+            "variants": [
+                {
+                    "id": "iron-eagle",
+                    "label": "Iron Eagle",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "iron-eagle",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "steel-hawk",
+                    "label": "Steel Hawk",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "steel-hawk",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "war-hawk",
+                    "label": "War Hawk",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "war-hawk",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-thunderfire-add",
+            "name": "Thunderfire",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Thunderfire",
+                    "pts": 25,
+                    "max": 1,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "thunderfire",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-berserkerbattlecar",
+            "name": "Berserker Battlecar",
+            "variants": [
+                {
+                    "id": "n",
+                    "label": "Berserker Battlecar",
+                    "pts": 50,
+                    "max": 3,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "berserker-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForDragon",
+            "name": "Replace Berserker Battlecar for Dragon",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Dragon",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "dragon-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForSkyhammer",
+            "name": "Replace Berserker Battlecar for Skyhammer",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Skyhammer",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "skyhammer-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForMortar",
+            "name": "Replace Berserker Battlecar for Mortar",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Mortar",
+                    "pts": 25,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "mortar-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForIronEagle",
+            "name": "Replace Berserker Battlecar for Iron Eagle",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Iron Eagle Car and Recon Iron Eagle",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "iron-eagle-battlecar",
+                            "count": 1
+                        },
+                        {
+                            "op": "add",
+                            "unit": "recon-iron-eagle",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForFireShield",
+            "name": "Replace Berserker Battlecar for Fire Shield",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Fire Shield",
+                    "pts": 50,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "fire-shield-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-replaceBerserkerCarForBomb",
+            "name": "Replace Berserker Battlecar for Bomb",
+            "variants": [
+                {
+                    "id": "replace",
+                    "label": "Replace Berserker Battlecar for Bomb",
+                    "pts": 75,
+                    "perUnit": true,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "berserker-battlecar",
+                            "to": "bomb-battlecar",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [
+        {
+            "id": "rhino-transport",
+            "vehicle": "rhino",
+            "capacity": 2,
+            "pts": 10,
+            "appliesTo": [
+                "f-warriors",
+                "f-berserkers",
+                "f-thunderer"
+            ],
+            "carries": {
+                "type": "INF",
+                "excludeRules": [
+                    "Mounted"
+                ]
+            }
+        },
+        {
+            "id": "termites-transport",
+            "vehicle": "termites",
+            "capacity": 2,
+            "pts": 10,
+            "appliesTo": [
+                "f-warriors",
+                "f-berserkers",
+                "f-thunderer"
+            ],
+            "carries": {
+                "type": "INF",
+                "excludeRules": [
+                    "Mounted"
+                ]
+            }
+        },
+        {
+            "id": "mole-transport",
+            "vehicle": "mole-we",
+            "capacity": 10,
+            "pts": 25,
+            "appliesTo": [
+                "f-warriors",
+                "f-berserkers",
+                "f-thunderer"
+            ],
+            "carries": {
+                "type": "INF",
+                "excludeRules": [
+                    "Mounted"
+                ]
+            }
+        }
+    ]
 }
