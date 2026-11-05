@@ -165,12 +165,15 @@ export function computeEntry(data, entry) {
         add(fx.unit, fx.count * n);
         if (rule && isCarriable(data, rule, fx.unit)) addedCarriable += fx.count * n;
       } else if (fx.op === "replace") {
-        if ((roster[fx.from] || 0) < fx.count)
-          problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: fx.count }, refs: { uid: entry.uid } });
-        const n = Math.min(fx.count, roster[fx.from] || 0);
-        roster[fx.from] = (roster[fx.from] || 0) - n;
-        add(fx.to, n);
-      } 
+  // perUnit: each replaced unit replaces fx.count units
+  const want = fx.count * n;
+  const have = roster[fx.from] || 0;
+  if (have < want)
+    problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: want }, refs: { uid: entry.uid } });
+  const swapped = Math.min(want, have);
+  roster[fx.from] = have - swapped;
+  add(fx.to, swapped);
+}
     });
 
     const chimeras = sel.chimeras || 0;
