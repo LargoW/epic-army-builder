@@ -138,35 +138,35 @@
         },
         "land-train-engine": {
             "name": "Land Train Engine",
-            "type": "WE"
+            "type": "CH"
         },
         "berserker-battlecar": {
             "name": "Berserker Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "dragon-battlecar": {
             "name": "Dragon Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "skyhammer-battlecar": {
             "name": "Skyhammer Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "mortar-battlecar": {
             "name": "Mortar Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "iron-eagle-battlecar": {
             "name": "Iron Eagle Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "fire-shield-battlecar": {
             "name": "Fire Shield Battlecar",
-            "type": "WE"
+            "type": "CH"
         },
         "bomb-battlecar": {
             "name": "Bomb Battlecar",
-            "type": "WE"
+            "type": "CH"
         }
     },
     "sections": [

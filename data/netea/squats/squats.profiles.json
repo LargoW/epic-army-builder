@@ -334,7 +334,7 @@
         {"name": "Hellfury Cannon", "range": "90cm", "firepower": "MW2+, FxF, TK(D6+1)"},
         {"name": "Rapid Fire Battle Cannon", "range": "75cm", "firepower": "2× AP4+/AT4+"},
         {"name": "Melta Cannon", "range": "30cm", "firepower": "MW2+, FxF, TK(D3)" },
-        {"name": "and", "range": "15cm", "firepower": "Small Arms, EA (+1), TK(D6)"}
+        {"name": "and", "range": "15cm", "firepower": "Small Arms, EA (+1), TK(D6)"},
         {"name": "6× Doomstorm Missile", "range": "45cm", "firepower": "1BP, FwA, Ind, SS"}
       ],
       "specialRules": [
