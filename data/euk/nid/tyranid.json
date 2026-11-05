@@ -1,0 +1,522 @@
+{
+  "schema": 0,
+  "ruleset": "epic-uk",
+  "lang": "en",
+  "id": "euk/tyranids",
+  "name": "Tyranids",
+  "faction": "Tyranids",
+  "version": "1.0",
+  "source": {
+    "file": "Tyranid QRF.pdf"
+  },
+  "strategy": 1,
+  "initiative": [
+    {
+      "formations": [""],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "hive-tyrant": {"name": "Hive Tyrant", "type": "AV"},
+    "tyranid-warriors": {"name": "Tyranid Warriors", "type": "INF"},
+    "termagants": {"name": "Termagants", "type": "INF"},
+    "hormagaunts": {"name": "Hormagaunts", "type": "INF"},
+    "gargoyles": {"name": "Gargoyles", "type": "INF"},
+    "genestealers": {"name": "Genestealers", "type": "INF"},
+    "lictors": {"name": "Lictors", "type": "INF"},
+    "raveners": {"name": "Raveners", "type": "INF"},
+    "biovore": {"name": "Biovore", "type": "LV"},
+    "spore-mine-cluster": {"name": "Spore Mine Cluster", "type": "LV"},
+    "carnifex": {"name": "Carnifex", "type": "AV"},
+    "zoanthrope": {"name": "Zoanthrope", "type": "AV"},
+    "dactylis": {"name": "Dactylis", "type": "AV"},
+    "exocrine": {"name": "Exocrine", "type": "AV"},
+    "haruspex": {"name": "Haruspex", "type": "AV"},
+    "malefactor": {"name": "Malefactor", "type": "AV"},
+    "trygon": {"name": "Trygon", "type": "WE"},
+    "hierodule": {"name": "Hierodule", "type": "WE"},
+    "harridan": {"name": "Harridan", "type": "WE"},
+    "hive-nest": {"name": "Hive Nest", "type": "WE"},
+    "hierophant": {"name": "Hierophant Bio-Titan", "type": "WE"},
+    "hydraphant": {"name": "Hydraphant Bio-Titan", "type": "WE"},
+    "dominatrix": {"name": "Dominatrix", "type": "WE"}
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Core Formations",
+      "formations": [
+        "f-assault-swarm",
+        "f-brute-swarm",
+        "f-dominatrix",
+        "f-hybrid-swarm"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Support Formations",
+      "formations": [
+        "f-lictor-swarm",
+        "f-genestealers",
+        "f-nest-swarm"
+      ]
+    },
+    {
+      "id": "rare",
+      "name": "Rare Formations",
+      "formations": [
+        "f-spore-mine-swarm",
+        "f-harassment-swarm",
+        "f-hierophant",
+        "f-hydraphant",
+        "f-subterranean-swarm"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-assault-swarm",
+      "name": "Assault Swarm",
+      "pts": 225,
+      "tags": ["core"],
+      "sizes": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "pts": 225,
+          "mult": 1,
+          "units": [
+            {"unit": "tyranid-warriors", "count": 2},
+            {"unit": "termagants", "count": 8}
+          ]
+        },
+        {
+          "id": "big",
+          "label": "Big",
+          "pts": 400,
+          "mult": 2,
+          "units": [
+            {"unit": "tyranid-warriors", "count": 4},
+            {"unit": "termagants", "count": 16}
+          ]
+        }
+      ],
+      "units": [
+        {"unit": "tyranid-warriors", "count": 2},
+        {"unit": "termagants", "count": 8}
+      ],
+      "upgrades": [
+        "u-assault-hormagaunts",
+        "u-termagants",
+        "u-gargoyles",
+        "u-biovores",
+        "u-hive-tyrant",
+        "u-carnifex",
+        "u-hierodule",
+        "u-raveners-zoanthropes",
+        "u-large-creatures"
+      ]
+    },
+    {
+      "id": "f-brute-swarm",
+      "name": "Brute Swarm",
+      "pts": 175,
+      "tags": ["core"],
+      "sizes": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "pts": 175,
+          "mult": 1,
+          "units": [
+            {"unit": "hive-tyrant", "count": 1},
+            {"unit": "exocrine", "count": 3}
+          ]
+        },
+        {
+          "id": "big",
+          "label": "Big",
+          "pts": 300,
+          "mult": 2,
+          "units": [
+            {"unit": "hive-tyrant", "count": 2},
+            {"unit": "exocrine", "count": 6}
+          ]
+        }
+      ],
+      "units": [
+        {"unit": "hive-tyrant", "count": 1},
+        {"unit": "exocrine", "count": 3}
+      ],
+      "upgrades": [
+        "u-termagants",
+        "u-biovores",
+        "u-dactylis",
+        "u-hierodules",
+        "u-brute-monsters",
+        "u-brute-carnifex-replace"
+      ]
+    },
+    {
+      "id": "f-dominatrix",
+      "name": "Dominatrix",
+      "pts": 500,
+      "tags": ["core"],
+      "units": [{"unit": "dominatrix", "count": 1}],
+      "upgrades": [
+        "u-termagants",
+        "u-hierodules-dominatrix",
+        "u-dactylis-dominatrix",
+        "u-carnifex-dominatrix",
+        "u-dominatrix-creatures"
+      ]
+    },
+    {
+      "id": "f-hybrid-swarm",
+      "name": "Hybrid Swarm",
+      "pts": 175,
+      "tags": ["core"],
+      "sizes": [
+        {
+          "id": "normal",
+          "label": "Normal",
+          "pts": 175,
+          "mult": 1,
+          "units": [
+            {"unit": "tyranid-warriors", "count": 1},
+            {"unit": "termagants", "count": 3},
+            {"unit": "exocrine", "count": 2}
+          ]
+        },
+        {
+          "id": "big",
+          "label": "Big",
+          "pts": 300,
+          "mult": 2,
+          "units": [
+            {"unit": "tyranid-warriors", "count": 2},
+            {"unit": "termagants", "count": 6},
+            {"unit": "exocrine", "count": 4}
+          ]
+        }
+      ],
+      "units": [
+        {"unit": "tyranid-warriors", "count": 1},
+        {"unit": "termagants", "count": 3},
+        {"unit": "exocrine", "count": 2}
+      ],
+      "upgrades": [
+        "u-termagants",
+        "u-biovores",
+        "u-hybrid-creatures",
+        "u-hybrid-carnifex-replace",
+        "u-gargoyles"
+      ]
+    },
+    {
+      "id": "f-lictor-swarm",
+      "name": "Lictor Swarm",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{"unit": "lictors", "count": 5}],
+      "upgrades": ["u-lictors"]
+    },
+    {
+      "id": "f-genestealers",
+      "name": "Genestealers",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{"unit": "genestealers", "count": 6}],
+      "upgrades": ["u-genestealers"]
+    },
+    {
+      "id": "f-nest-swarm",
+      "name": "Nest Swarm",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [
+        {"unit": "hive-nest", "count": 1},
+        {"unit": "termagants", "count": 4}
+      ],
+      "upgrades": [
+        "u-termagants",
+        "u-biovores-nest",
+        "u-exocrines-nest",
+        "u-dactylis-nest",
+        "u-nest-creatures"
+      ]
+    },
+    {
+      "id": "f-spore-mine-swarm",
+      "name": "Spore Mine Swarm",
+      "pts": 150,
+      "tags": ["rare"],
+      "units": [{"unit": "spore-mine-cluster", "count": 6}],
+      "upgrades": []
+    },
+    {
+      "id": "f-harassment-swarm",
+      "name": "Harassment Swarm",
+      "pts": 250,
+      "tags": ["rare"],
+      "units": [
+        {"unit": "harridan", "count": 1},
+        {"unit": "gargoyles", "count": 2}
+      ],
+      "upgrades": ["u-harassment-gargoyles"]
+    },
+    {
+      "id": "f-hierophant",
+      "name": "Hierophant",
+      "pts": 250,
+      "tags": ["rare"],
+      "units": [{"unit": "hierophant", "count": 1}],
+      "upgrades": []
+    },
+    {
+      "id": "f-hydraphant",
+      "name": "Hydraphant",
+      "pts": 450,
+      "tags": ["rare"],
+      "units": [{"unit": "hydraphant", "count": 1}],
+      "upgrades": []
+    },
+    {
+      "id": "f-subterranean-swarm",
+      "name": "Subterranean Swarm",
+      "pts": 250,
+      "tags": ["rare"],
+      "units": [
+        {"unit": "trygon", "count": 1},
+        {"unit": "raveners", "count": 2}
+      ],
+      "upgrades": ["u-subterranean-raveners"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-assault-hormagaunts",
+      "name": "Hormagaunts",
+      "variants": [
+        {"id": "1", "label": "Replace up to six Termagants with Hormagaunts", "pts": 0, "effects": [{"op": "replace", "from": "termagants", "to": "hormagaunts", "count": 6}]}
+      ]
+    },
+    {
+      "id": "u-termagants",
+      "name": "Termagants",
+      "variants": [
+        {"id": "1", "label": "Add Termagants", "pts": 15, "perUnit": true, "effects": [{"op": "add", "unit": "termagants", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-gargoyles",
+      "name": "Gargoyles",
+      "variants": [
+        {"id": "1", "label": "Add Gargoyles", "pts": 20, "perUnit": true, "max": 5, "effects": [{"op": "add", "unit": "gargoyles", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-biovores",
+      "name": "Biovores",
+      "variants": [
+        {"id": "1", "label": "Add Biovore", "pts": 25, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "biovore", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hive-tyrant",
+      "name": "Hive Tyrant",
+      "variants": [
+        {"id": "1", "label": "Add one Hive Tyrant", "pts": 50, "effects": [{"op": "add", "unit": "hive-tyrant", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-carnifex",
+      "name": "Carnifex",
+      "variants": [
+        {"id": "1", "label": "Add Carnifex", "pts": 40, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hierodule",
+      "name": "Hierodule",
+      "variants": [
+        {"id": "1", "label": "Add one Hierodule", "pts": 125, "effects": [{"op": "add", "unit": "hierodule", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-raveners-zoanthropes",
+      "name": "Raveners or Zoanthropes",
+      "variants": [
+        {"id": "1", "label": "Add Raveners or Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
+      ]
+    },
+    {
+      "id": "u-large-creatures",
+      "name": "Exocrines, Malefactors, or Haruspexes",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines, Malefactors, or Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
+      ]
+    },
+    {
+      "id": "u-dactylis",
+      "name": "Dactylis",
+      "variants": [
+        {"id": "1", "label": "Add Dactylis", "pts": 50, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "dactylis", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hierodules",
+      "name": "Hierodules",
+      "variants": [
+        {"id": "1", "label": "Add Hierodule", "pts": 125, "perUnit": true, "max": 2, "effects": [{"op": "add", "unit": "hierodule", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-monsters",
+      "name": "Brute Swarm creatures",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Zoanthropes, or Raveners", "pts": 35, "perUnit": true, "effects": []}
+      ]
+    },
+    {
+      "id": "u-brute-carnifex-replace",
+      "name": "Replace Brute Swarm creatures with Carnifexes",
+      "variants": [
+        {"id": "1", "label": "Replace up to six Exocrines, Haruspexes, or Malefactors with Carnifexes", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine/haruspex/malefactor", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hierodules-dominatrix",
+      "name": "Dominatrix Hierodules",
+      "variants": [
+        {"id": "1", "label": "Add Hierodule", "pts": 125, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "hierodule", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-dactylis-dominatrix",
+      "name": "Dominatrix Dactylis",
+      "variants": [
+        {"id": "1", "label": "Add Dactylis", "pts": 50, "perUnit": true, "max": 6, "effects": [{"op": "add", "unit": "dactylis", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-carnifex-dominatrix",
+      "name": "Dominatrix Carnifexes",
+      "variants": [
+        {"id": "1", "label": "Add Carnifex", "pts": 40, "perUnit": true, "max": 6, "effects": [{"op": "add", "unit": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-dominatrix-creatures",
+      "name": "Dominatrix creatures",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Raveners, or Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
+      ]
+    },
+    {
+      "id": "u-hybrid-creatures",
+      "name": "Hybrid Swarm creatures",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Zoanthropes, or Raveners", "pts": 35, "perUnit": true, "effects": []}
+      ]
+    },
+    {
+      "id": "u-hybrid-carnifex-replace",
+      "name": "Replace Hybrid Swarm creatures with Carnifexes",
+      "variants": [
+        {"id": "1", "label": "Replace up to six Exocrines, Haruspexes, or Malefactors with Carnifexes", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine/haruspex/malefactor", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-lictors",
+      "name": "Lictors",
+      "variants": [
+        {"id": "1", "label": "Add Lictor", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "lictors", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-genestealers",
+      "name": "Genestealers",
+      "variants": [
+        {"id": "1", "label": "Add Genestealer", "pts": 25, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "genestealers", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-biovores-nest",
+      "name": "Nest Swarm Biovores",
+      "variants": [
+        {"id": "1", "label": "Add Biovore", "pts": 25, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "biovore", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-exocrines-nest",
+      "name": "Nest Swarm Exocrines",
+      "variants": [
+        {"id": "1", "label": "Add Exocrine", "pts": 35, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-dactylis-nest",
+      "name": "Nest Swarm Dactylis",
+      "variants": [
+        {"id": "1", "label": "Add Dactylis", "pts": 50, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "dactylis", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-nest-creatures",
+      "name": "Nest Swarm creatures",
+      "variants": [
+        {"id": "1", "label": "Add Zoanthropes or Raveners", "pts": 35, "perUnit": true, "effects": []}
+      ]
+    },
+    {
+      "id": "u-harassment-gargoyles",
+      "name": "Harassment Swarm Gargoyles",
+      "variants": [
+        {"id": "1", "label": "Add four Gargoyles", "pts": 50, "effects": [{"op": "add", "unit": "gargoyles", "count": 4}]}
+      ]
+    },
+    {
+      "id": "u-subterranean-raveners",
+      "name": "Subterranean Swarm Raveners",
+      "variants": [
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "max": 4, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-per-core",
+      "from": ["support"],
+      "forEach": ["core"],
+      "max": 1
+    },
+    {
+      "id": "rare-points-limit",
+      "description": "No more than one third of the army points may be spent on Tyranid Rare Formations."
+    },
+    {
+      "id": "dominatrix-limit",
+      "formation": "f-dominatrix",
+      "max": 2
+    }
+  ],
+  "specialRules": [
+    {
+      "name": "The Hunger",
+      "description": "All Tyranid formations receive +1 to Engage actions and rally rolls."
+    },
+    {
+      "name": "Fast and Slithering",
+      "description": "Tyranid war engines, armoured vehicles, and light vehicles automatically pass difficult-terrain tests; buildings count as difficult terrain for them. Tyranid units are affected by minefields."
+    },
+    {
+      "name": "Synapse",
+      "description": "Synapse formations can capture objectives. Formations without Synapse can only contest objectives. Synapse formations ignore blast markers and assault-loss counting for killed Gargoyles, Hormagaunts, and Termagants."
+    },
+    {
+      "name": "Formation sizes",
+      "description": "Big swarms double the number of core units. Limits on upgrades are doubled for big formations."
+    }
+  ]
+}

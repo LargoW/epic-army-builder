@@ -1,0 +1,699 @@
+{
+  "units": {
+    "etyhereal": {
+      "name": "Ethereal",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Honour Blade",
+          "range": "Base Contact",
+          "firepower": "Assault Weapon, EA +1"
+        }
+      ],
+      "specialRules": [
+        "Invulnerable Save",
+        "Leader",
+        "A formation with an Ethereal becomes Fearless. If the Ethereal is killed, the formation loses Fearless and receives D3 additional blast markers."
+      ]
+    },
+    "shas-o": {
+      "name": "Shas'o Commander",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Experimental Weapons",
+          "range": "30cm",
+          "firepower": "AP4+"
+        }
+      ],
+      "specialRules": [
+        "Coordinated Fire",
+        "Leader",
+        "May re-roll one failed initiative test of any type per turn",
+        "May only be added to an XV8 unit"
+      ]
+    },
+    "shas-el": {
+      "name": "Shas'el Commander",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [],
+      "specialRules": [
+        "Coordinated Fire",
+        "Leader",
+        "May only be added to an XV8 unit"
+      ]
+    },
+    "fire-warrior": {
+      "name": "Fire Warrior unit",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Pulse Rifles",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "name": "Pulse Carbines",
+          "range": "15cm",
+          "firepower": "AP5+, Disrupt"
+        }
+      ],
+      "specialRules": []
+    },
+    "gun-drone": {
+      "name": "Gun Drone unit",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Twin Pulse Carbines",
+          "range": "15cm",
+          "firepower": "AP4+, Disrupt"
+        }
+      ],
+      "specialRules": [
+        "Tau Jet Packs"
+      ]
+    },
+    "pathfinder": {
+      "name": "Pathfinder unit",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Rail Rifles",
+          "range": "30cm",
+          "firepower": "AP5+, Sniper"
+        },
+        {
+          "name": "Pulse Carbines",
+          "range": "15cm",
+          "firepower": "AP5+, Disrupt"
+        }
+      ],
+      "specialRules": [
+        "Coordinated Fire",
+        "Markerlights",
+        "Scouts"
+      ]
+    },
+    "kroot-master-shaper": {
+      "name": "Kroot Master Shaper unit",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "6+",
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Mercenary Weapons",
+          "range": "Base Contact",
+          "firepower": "Assault Weapons, EA +1"
+        },
+        {
+          "name": "Kroot Rifles",
+          "range": "15cm",
+          "firepower": "Small Arms"
+        }
+      ],
+      "specialRules": [
+        "Infiltrators",
+        "Leader",
+        "Scouts"
+      ]
+    },
+    "kroot-warrior": {
+      "name": "Kroot Warrior unit",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": null,
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Kroot Rifles",
+          "range": "15cm",
+          "firepower": "Small Arms"
+        }
+      ],
+      "specialRules": [
+        "Infiltrators",
+        "Scouts"
+      ]
+    },
+    "kroot-hound": {
+      "name": "Kroot Hound unit",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": null,
+      "cc": "3+",
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Fangs",
+          "range": "Base Contact",
+          "firepower": "Assault Weapons"
+        }
+      ],
+      "specialRules": [
+        "Infiltrators",
+        "Scouts"
+      ]
+    },
+    "krootox": {
+      "name": "Krootox Herd unit",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Kroot Guns",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+"
+        },
+        {
+          "name": "Claws",
+          "range": "Base Contact",
+          "firepower": "Assault Weapons, EA +1"
+        }
+      ],
+      "specialRules": []
+    },
+    "xv8-crisis": {
+      "name": "XV8 Crisis Battlesuit unit",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "3+",
+      "cc": "5+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+"
+        },
+        {
+          "name": "Twin Plasma Rifles",
+          "range": "30cm",
+          "firepower": "AP4+"
+        },
+        {
+          "name": "Twin Fusion Blasters",
+          "range": "15cm",
+          "firepower": "MW4+"
+        }
+      ],
+      "specialRules": [
+        "Invulnerable Save",
+        "Tau Jet Packs"
+      ]
+    },
+    "xv15-stealth": {
+      "name": "XV15 Stealth Battlesuit unit",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Silenced Burst Cannons",
+          "range": "15cm",
+          "firepower": "AP4+, Disrupt"
+        }
+      ],
+      "specialRules": [
+        "First Strike",
+        "Markerlights",
+        "Reinforced Armour",
+        "Scouts",
+        "Tau Jet Packs",
+        "Teleport"
+      ]
+    },
+    "xv88-broadside": {
+      "name": "XV88 Broadside Battlesuit",
+      "type": "LV",
+      "speed": "15cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Twin Railguns",
+          "range": "60cm",
+          "firepower": "AT3+"
+        },
+        {
+          "name": "Smart Missile System",
+          "range": "30cm",
+          "firepower": "AP5+, Ignore Cover"
+        }
+      ],
+      "specialRules": [
+        "Reinforced Armour",
+        "Walker"
+      ]
+    },
+    "tetra": {
+      "name": "Tetra Light Skimmer",
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Tetra Pulse Rifles",
+          "range": "30cm",
+          "firepower": "AP6+"
+        }
+      ],
+      "specialRules": [
+        "Coordinated Fire",
+        "Markerlights",
+        "Scouts",
+        "Skimmer"
+      ]
+    },
+    "piranha": {
+      "name": "Piranha",
+      "type": "LV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Burst Cannon and Gun Drones",
+          "range": "15cm",
+          "firepower": "AP5+"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Skimmer"
+      ]
+    },
+    "devilfish": {
+      "name": "Devilfish Troop Carrier",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Burst Cannon and Gun Drones",
+          "range": "15cm",
+          "firepower": "AP5+"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Skimmer",
+        "Transport (two Fire Warrior or Pathfinder units)"
+      ]
+    },
+    "hammerhead-ionhead": {
+      "name": "Hammerhead Gunship (Ionhead)",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Smart Missile System",
+          "range": "30cm",
+          "firepower": "AP5+, Ignore Cover"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "AT6+, Guided Missiles"
+        },
+        {
+          "name": "Ion Cannon",
+          "range": "60cm",
+          "firepower": "AP4+/AT5+"
+        }
+      ],
+      "specialRules": [
+        "Skimmer"
+      ]
+    },
+    "hammerhead-fusionhead": {
+      "name": "Hammerhead Gunship (Fusionhead)",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Smart Missile System",
+          "range": "30cm",
+          "firepower": "AP5+, Ignore Cover"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "AT6+, Guided Missiles"
+        },
+        {
+          "name": "Twin Fusion Cannon",
+          "range": "30cm",
+          "firepower": "MW4+"
+        }
+      ],
+      "specialRules": [
+        "Skimmer"
+      ]
+    },
+    "hammerhead-railhead": {
+      "name": "Hammerhead Gunship (Railhead)",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {
+          "name": "Burst Cannons",
+          "range": "15cm",
+          "firepower": "AP5+"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "AT6+, Guided Missiles"
+        },
+        {
+          "name": "Hammerhead Railgun (AP)",
+          "range": "75cm",
+          "firepower": "AP5+"
+        },
+        {
+          "name": "Hammerhead Railgun (AT)",
+          "range": "75cm",
+          "firepower": "AT4+, Lance"
+        }
+      ],
+      "specialRules": [
+        "Skimmer"
+      ]
+    },
+    "skyray": {
+      "name": "Skyray Air Defence Gunship",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Smart Missile System",
+          "range": "30cm",
+          "firepower": "AP5+, Ignore Cover"
+        },
+        {
+          "name": "Hunter Missiles",
+          "range": "60cm",
+          "firepower": "2 x AA5+"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "2 x AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Markerlights",
+        "Skimmer"
+      ]
+    },
+    "orca": {
+      "name": "Orca Dropship",
+      "type": "WE",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {
+          "name": "Twin Burst Cannons",
+          "range": "15cm",
+          "firepower": "AA6+"
+        },
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+"
+        },
+        {
+          "name": "Aircraft Seeker Missiles",
+          "range": "45cm",
+          "firepower": "AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Planetfall",
+        "Damage Capacity 2",
+        "Critical: Orca and all units aboard are destroyed",
+        "Transport (up to twelve eligible units; Crisis units use two slots)"
+      ]
+    },
+    "manta": {
+      "name": "Manta Dropship",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": null,
+      "ff": "4+",
+      "weapons": [
+        {
+          "name": "Twin Heavy Railcannons",
+          "range": "90cm",
+          "firepower": "MW2+, TK(D3), Fixed Forward Arc"
+        },
+        {
+          "name": "Heavy Ion Phalanx",
+          "range": "75cm",
+          "firepower": "3 x AP3+/AT4+, Fixed Forward Arc"
+        },
+        {
+          "name": "Twin Manta Burst Cannons",
+          "range": "30cm",
+          "firepower": "4 x AP5+/AA6+"
+        },
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+, Fixed Forward Arc"
+        },
+        {
+          "name": "Seeker Missiles",
+          "range": "90cm",
+          "firepower": "2 x AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Fearless",
+        "Markerlights",
+        "Planetfall",
+        "Reinforced Armour",
+        "Support Craft",
+        "Tau Deflector Shield",
+        "Damage Capacity 8",
+        "Critical: Tau Deflector Shield is destroyed; further critical hits cause one point of damage",
+        "Transport (up to twenty eligible units; Crisis units use two slots; may carry up to four eligible vehicles)"
+      ]
+    },
+    "barracuda": {
+      "name": "Barracuda Fighter",
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "6+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Ion Cannon",
+          "range": "30cm",
+          "firepower": "AP4+/AT5+/AA5+, Fixed Forward Arc"
+        },
+        {
+          "name": "Twin Burst Cannons",
+          "range": "15cm",
+          "firepower": "AA6+"
+        },
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+, Fixed Forward Arc"
+        }
+      ],
+      "specialRules": []
+    },
+    "tiger-shark": {
+      "name": "Tiger Shark",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Twin Ion Cannons",
+          "range": "30cm",
+          "firepower": "AP3+/AT4+/AA4+, Fixed Forward Arc"
+        },
+        {
+          "name": "Twin Burst Cannons",
+          "range": "15cm",
+          "firepower": "AA6+"
+        },
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+, Fixed Forward Arc"
+        }
+      ],
+      "specialRules": [
+        "Transport (three Gun Drone units; see army list rules for deployment)"
+      ]
+    },
+    "tiger-shark-ax-1-0": {
+      "name": "Tiger Shark AX-1-0",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": "4+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {
+          "name": "Twin Railcannons",
+          "range": "45cm",
+          "firepower": "MW3+, Titan Killer (D3), Fixed Forward Arc"
+        },
+        {
+          "name": "Twin Burst Cannons",
+          "range": "15cm",
+          "firepower": "AA6+"
+        },
+        {
+          "name": "Twin Missile Pods",
+          "range": "45cm",
+          "firepower": "AP5+/AT6+, Fixed Forward Arc"
+        },
+        {
+          "name": "Aircraft Seeker Missiles",
+          "range": "45cm",
+          "firepower": "AT6+, Guided Missiles"
+        }
+      ],
+      "specialRules": []
+    },
+    "protector-cruiser": {
+      "name": "Protector Class Cruiser",
+      "type": "Spaceship",
+      "speed": "n/a",
+      "armour": "n/a",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [
+        {
+          "name": "Pin-Point Attack",
+          "range": "n/a",
+          "firepower": "2 x MW2+, Titan Killer (D3)"
+        }
+      ],
+      "specialRules": [
+        "Transport (up to three Orcas; Mantas count as three Orcas)"
+      ]
+    },
+    "custodian-battleship": {
+      "name": "Custodian Class Battleship",
+      "type": "Spaceship",
+      "speed": "n/a",
+      "armour": "n/a",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [
+        {
+          "name": "Pin-Point Attack",
+          "range": "n/a",
+          "firepower": "MW2+, Titan Killer (D3)"
+        },
+        {
+          "name": "Gravitic Tracer Salvo",
+          "range": "n/a",
+          "firepower": "3 x MW4+, Ignore Cover, Guided Missiles"
+        }
+      ],
+      "specialRules": [
+        "Transport (up to eighteen Orcas; Mantas count as three Orcas)",
+        "Gravitic Tracer Salvo may target a marked formation of any type"
+      ]
+    }
+  },
+  "specialRules": [
+    {
+      "name": "Coordinated Fire",
+      "description": "A unit with this ability can order up to two eligible formations within 15cm to follow its formation on an Advance, Double, or Sustained Fire action. Make one initiative roll, applying a single -1 modifier if any participating formation has blast markers. If failed, only the initiating formation receives a blast marker and takes Hold; other formations are unaffected. If passed, formations may choose different eligible actions, but must all fire at the same target. The ability is conferred to a formation joined by a unit with Coordinated Fire."
+    },
+    {
+      "name": "Markerlights",
+      "description": "Enemy formations within 30cm and line of fire of a Tau unit with Markerlights are marked. Tau ranged fire against marked formations receives +1 to hit, except anti-aircraft attacks. Guided Missiles may target a marked formation without line of fire. Broken formations and formations that marched cannot mark enemies."
+    },
+    {
+      "name": "Tau Jet Packs",
+      "description": "Follow Jump Pack rules. After an Advance, Double, or March action, units with Tau Jet Packs may make an additional 10cm move after firing. This move follows normal movement rules. Units without Tau Jet Packs do not receive this extra move."
+    },
+    {
+      "name": "Tau Deflector Shields",
+      "description": "Works like an Invulnerable Save, except the save is always 5+."
+    },
+    {
+      "name": "Support Craft",
+      "description": "Skimmers that count as popped up for line-of-sight and terrain purposes, do not block line of sight, and must use their Skimmer ability to force a firefight in engagements. Infantry in base contact cannot count as being in cover from a Support Craft. Transported units may take saves if the Support Craft is destroyed."
+    },
+    {
+      "name": "Lance",
+      "description": "Units with Reinforced Armour cannot re-roll failed armour saves against weapons with Lance."
+    }
+  ]
+}

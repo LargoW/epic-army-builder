@@ -1,0 +1,384 @@
+{
+  "schema": 0,
+  "ruleset": "epic-uk",
+  "lang": "en",
+  "id": "euk/imperial-guard/vanaheim-air-cavalry",
+  "name": "Imperial Guard - Vanaheim Air Cavalry",
+  "faction": "Imperial Guard",
+  "version": "090625",
+  "source": {
+    "file": "Vanaheim Air Cav Quick Ref 100625.pdf",
+    "version": "090625"
+  },
+  "strategy": 2,
+  "initiative": [
+    {
+      "formations": [""],
+      "value": "2+"
+    },
+    {
+      "formations": ["f-imperial-navy"],
+      "value": "Navy 2+"
+    }
+  ],
+  "units": {
+    "vanaheim-supreme-commander": {"name": "Imperial Guard Vanaheim Supreme Commander", "type": "INF"},
+    "vanaheim-commander": {"name": "Imperial Guard Vanaheim Commander", "type": "INF"},
+    "commissar": {"name": "Imperial Guard Commissar", "type": "CH"},
+    "vanaheim-infantry": {"name": "Imperial Guard Vanaheim Infantry", "type": "INF"},
+    "fire-support": {"name": "Imperial Guard Vanaheim Fire Support", "type": "INF"},
+    "mortar-support": {"name": "Imperial Guard Mortar Support", "type": "INF"},
+    "sniper": {"name": "Imperial Guard Sniper", "type": "INF"},
+    "storm-troopers": {"name": "Imperial Guard Storm Troopers", "type": "INF"},
+    "light-sentinel": {"name": "Imperial Guard Light Sentinel", "type": "LV"},
+    "support-sentinel": {"name": "Imperial Guard Support Sentinel", "type": "LV"},
+    "valkyrie": {"name": "Imperial Guard Valkyrie", "type": "AV"},
+    "vendetta": {"name": "Imperial Guard Vendetta", "type": "AV"},
+    "vulture": {"name": "Imperial Guard Vulture", "type": "AV"},
+    "marauder-bomber": {"name": "Marauder Bomber", "type": "AC"},
+    "marauder-destroyer": {"name": "Marauder Destroyer", "type": "AC"},
+    "thunderbolt": {"name": "Thunderbolt", "type": "AC"},
+    "lightning-strike": {"name": "Lightning Strike", "type": "AC"},
+    "lunar-class-cruiser": {"name": "Lunar Class Cruiser", "type": "SC"},
+    "emperor-class-battleship": {"name": "Emperor Class Battleship", "type": "SC"}
+  },
+  "sections": [
+    {
+      "id": "companies",
+      "name": "Vanaheim Air Cavalry Imperial Guard Companies",
+      "formations": ["f-regimental-hq", "f-air-cavalry-company"]
+    },
+    {
+      "id": "support",
+      "name": "Vanaheim Air Cavalry Imperial Guard Support Formations",
+      "formations": ["f-vulture-squadron", "f-sentinel-squadron", "f-storm-trooper-platoon"]
+    },
+    {
+      "id": "navy",
+      "name": "Imperial Navy",
+      "formations": [
+        "f-thunderbolt",
+        "f-lightning-strike",
+        "f-marauder-bomber",
+        "f-marauder-destroyer",
+        "f-orbital-support"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 375,
+      "tags": ["company", "core"],
+      "units": [
+        {"unit": "vanaheim-supreme-commander", "count": 1},
+        {"unit": "vanaheim-infantry", "count": 7},
+        {"unit": "valkyrie", "count": 4}
+      ],
+      "upgrades": ["u-hq-vendettas", "u-company-upgrades"]
+    },
+    {
+      "id": "f-air-cavalry-company",
+      "name": "Air Cavalry Company",
+      "pts": 325,
+      "tags": ["company", "core"],
+      "units": [
+        {"unit": "vanaheim-commander", "count": 1},
+        {"unit": "vanaheim-infantry", "count": 7},
+        {"unit": "valkyrie", "count": 4}
+      ],
+      "upgrades": ["u-company-vendettas", "u-company-upgrades"]
+    },
+    {
+      "id": "f-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [{"unit": "vulture", "count": 4}],
+      "upgrades": []
+    },
+    {
+      "id": "f-sentinel-squadron",
+      "name": "Sentinel Squadron",
+      "pts": 100,
+      "tags": ["support"],
+      "units": [{"unit": "light-sentinel", "count": 4}],
+      "upgrades": [
+        "u-support-sentinels",
+        "u-sentinel-valkyries"
+      ]
+    },
+    {
+      "id": "f-storm-trooper-platoon",
+      "name": "Storm Trooper Platoon",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [
+        {"unit": "storm-troopers", "count": 8},
+        {"unit": "valkyrie", "count": 4}
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "f-thunderbolt",
+      "name": "Thunderbolt Fighters",
+      "pts": 150,
+      "tags": ["imperial-navy"],
+      "sizes": [
+        {
+          "id": "two",
+          "label": "Two Thunderbolt Fighters",
+          "pts": 150,
+          "mult": 1,
+          "units": [{"unit": "thunderbolt", "count": 2}]
+        },
+        {
+          "id": "three",
+          "label": "Three Thunderbolt Fighters",
+          "pts": 225,
+          "mult": 1,
+          "units": [{"unit": "thunderbolt", "count": 3}]
+        }
+      ],
+      "units": [{"unit": "thunderbolt", "count": 2}],
+      "upgrades": []
+    },
+    {
+      "id": "f-lightning-strike",
+      "name": "Lightning Strike Fighters",
+      "pts": 150,
+      "tags": ["imperial-navy"],
+      "sizes": [
+        {
+          "id": "two",
+          "label": "Two Lightning Strike Fighters",
+          "pts": 150,
+          "mult": 1,
+          "units": [{"unit": "lightning-strike", "count": 2}]
+        },
+        {
+          "id": "three",
+          "label": "Three Lightning Strike Fighters",
+          "pts": 225,
+          "mult": 1,
+          "units": [{"unit": "lightning-strike", "count": 3}]
+        }
+      ],
+      "units": [{"unit": "lightning-strike", "count": 2}],
+      "upgrades": []
+    },
+    {
+      "id": "f-marauder-bomber",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": ["imperial-navy"],
+      "units": [{"unit": "marauder-bomber", "count": 2}],
+      "upgrades": []
+    },
+    {
+      "id": "f-marauder-destroyer",
+      "name": "Marauder Destroyers",
+      "pts": 275,
+      "tags": ["imperial-navy"],
+      "units": [{"unit": "marauder-destroyer", "count": 2}],
+      "upgrades": []
+    },
+    {
+      "id": "f-orbital-support",
+      "name": "Orbital Support",
+      "pts": 150,
+      "tags": ["imperial-navy"],
+      "sizes": [
+        {
+          "id": "lunar",
+          "label": "One Lunar Class Cruiser",
+          "pts": 150,
+          "mult": 1,
+          "units": [{"unit": "lunar-class-cruiser", "count": 1}]
+        },
+        {
+          "id": "emperor",
+          "label": "One Emperor Class Battleship",
+          "pts": 200,
+          "mult": 1,
+          "units": [{"unit": "emperor-class-battleship", "count": 1}]
+        }
+      ],
+      "units": [{"unit": "lunar-class-cruiser", "count": 1}],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-hq-vendettas",
+      "name": "Vendettas",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace up to two Valkyries with Vendettas",
+          "pts": 0,
+          "effects": [
+            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-company-vendettas",
+      "name": "Vendettas",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace up to two Valkyries with Vendettas",
+          "pts": 0,
+          "effects": [
+            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-company-upgrades",
+      "name": "Company Upgrades",
+      "variants": [
+        {
+          "id": "fire-support",
+          "label": "Fire Support Platoon: add two Fire Support units and one Valkyrie",
+          "pts": 100,
+          "effects": [
+            {"op": "add", "unit": "fire-support", "count": 2},
+            {"op": "add", "unit": "valkyrie", "count": 1}
+          ]
+        },
+        {
+          "id": "mortar-swap",
+          "label": "Mortar Platoon: replace two Infantry with two Mortar Support units",
+          "pts": 0,
+          "effects": [
+            {"op": "replace", "from": "vanaheim-infantry", "to": "mortar-support", "count": 2}
+          ]
+        },
+        {
+          "id": "mortar-add",
+          "label": "Mortar Platoon: add two Mortar Support units and one Valkyrie",
+          "pts": 75,
+          "effects": [
+            {"op": "add", "unit": "mortar-support", "count": 2},
+            {"op": "add", "unit": "valkyrie", "count": 1}
+          ]
+        },
+        {
+          "id": "infantry-two",
+          "label": "Infantry Platoon: add two Infantry and one Valkyrie",
+          "pts": 75,
+          "effects": [
+            {"op": "add", "unit": "vanaheim-infantry", "count": 2},
+            {"op": "add", "unit": "valkyrie", "count": 1}
+          ]
+        },
+        {
+          "id": "infantry-four",
+          "label": "Infantry Platoon: add four Infantry and two Valkyries",
+          "pts": 125,
+          "effects": [
+            {"op": "add", "unit": "vanaheim-infantry", "count": 4},
+            {"op": "add", "unit": "valkyrie", "count": 2}
+          ]
+        },
+        {
+          "id": "sniper-swap",
+          "label": "Sniper Platoon: replace two Infantry with two Snipers",
+          "pts": 25,
+          "effects": [
+            {"op": "replace", "from": "vanaheim-infantry", "to": "sniper", "count": 2}
+          ]
+        },
+        {
+          "id": "sniper-add",
+          "label": "Sniper Platoon: add two Snipers and one Valkyrie",
+          "pts": 100,
+          "effects": [
+            {"op": "add", "unit": "sniper", "count": 2},
+            {"op": "add", "unit": "valkyrie", "count": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-support-sentinels",
+      "name": "Support Sentinels",
+      "variants": [
+        {
+          "id": "two",
+          "label": "Upgrade two Light Sentinels to Support Sentinels",
+          "pts": 25,
+          "effects": [
+            {"op": "replace", "from": "light-sentinel", "to": "support-sentinel", "count": 2}
+          ]
+        },
+        {
+          "id": "four",
+          "label": "Upgrade four Light Sentinels to Support Sentinels",
+          "pts": 50,
+          "effects": [
+            {"op": "replace", "from": "light-sentinel", "to": "support-sentinel", "count": 4}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-sentinel-valkyries",
+      "name": "Valkyries",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Add two Valkyries",
+          "pts": 100,
+          "effects": [{"op": "add", "unit": "valkyrie", "count": 2}]
+        }
+      ]
+    }
+  ],
+  "formationConstraints": [
+    {
+      "id": "support-per-company",
+      "from": ["support"],
+      "forEach": ["company"],
+      "max": 2
+    },
+    {
+      "id": "regimental-hq-limit",
+      "formation": "f-regimental-hq",
+      "max": 1
+    },
+    {
+      "id": "orbital-support-limit",
+      "formation": "f-orbital-support",
+      "max": 1
+    },
+    {
+      "id": "imperial-navy-points-limit",
+      "description": "No more than one third of the army points may be spent on Imperial Navy formations."
+    }
+  ],
+  "upgradeConstraints": [
+    {
+      "id": "company-upgrade-limit",
+      "appliesTo": ["company"],
+      "from": ["u-company-upgrades"],
+      "maxTotal": 2,
+      "description": "Each company upgrade may be taken once per company."
+    }
+  ],
+  "specialRules": [
+    {
+      "name": "Commissars",
+      "description": "One free Commissar may be included for each full 500 points. If the army has a Supreme Commander, the first Commissar must join that formation. No more than one Commissar per formation; none may join Titan or Imperial Navy units."
+    },
+    {
+      "name": "CAP Garrison",
+      "description": "The army may place one fighter formation on CAP instead of placing one garrison on overwatch. Other permitted garrisons may still be set up, but only one may start on overwatch."
+    }
+  ]
+}

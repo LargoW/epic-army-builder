@@ -56,12 +56,26 @@
       "name": "Wodanaz-Feste",
       "version": "1.0"
     },
+    {
+      "id": "euk/imperial-guard/vanaheim-air-cavalry",
+      "ruleset": "euk",
+      "faction": "Imperial Guard",
+      "name": "Vanaheim Air Cavalry",
+      "version": "090625"
+    },
 	{
       "id": "euk/chaos/ts",
       "ruleset": "euk",
       "faction": "Chaos",
       "name": "Thousand Sons",
       "version": "280726"
+    },
+    {
+      "id": "euk/tau/third-phase",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "T'au - Third Phase",
+      "version": "200824"
     },
     {
       "id": "euk/tau/tauViorla",
@@ -76,6 +90,13 @@
       "faction": "Squats",
       "name": "Grindel Stronghold",
       "version": "1.7.2"
+    },
+    {
+      "id": "euk/tyranids",
+      "ruleset": "euk",
+      "faction": "Xenos",
+      "name": "Tyranids",
+      "version": "1.0"
     }
   ]
 }

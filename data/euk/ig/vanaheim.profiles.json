@@ -1,0 +1,261 @@
+{
+  "units": {
+    "vanaheim-supreme-commander": {
+      "name": "Imperial Guard Vanaheim Supreme Commander",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Heavy Bolter", "range": "30cm", "firepower": "AP5+"},
+        {"name": "Power Weapon", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Supreme Commander"]
+    },
+    "vanaheim-commander": {
+      "name": "Imperial Guard Vanaheim Commander",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "6+",
+      "cc": "5+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Heavy Bolter", "range": "30cm", "firepower": "AP5+"},
+        {"name": "Chainswords", "range": "Base Contact", "firepower": "Assault Wpn"}
+      ],
+      "specialRules": ["Commander"]
+    },
+    "commissar": {
+      "name": "Imperial Guard Commissar",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Power Weapon", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Fearless", "Inspiring", "Leader"]
+    },
+    "vanaheim-infantry": {
+      "name": "Imperial Guard Vanaheim Infantry",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Lasguns", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Heavy Bolter", "range": "30cm", "firepower": "AP5+"}
+      ],
+      "specialRules": []
+    },
+    "fire-support": {
+      "name": "Imperial Guard Vanaheim Fire Support",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "4+",
+      "weapons": [{"name": "2 × Missile Launchers", "range": "45cm", "firepower": "AP5+/AT6+"}],
+      "specialRules": []
+    },
+    "mortar-support": {
+      "name": "Imperial Guard Mortar Support",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [{"name": "Mortars", "range": "30cm", "firepower": "1BP, Indirect Fire"}],
+      "specialRules": []
+    },
+    "sniper": {
+      "name": "Imperial Guard Sniper",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [{"name": "Sniper Rifles", "range": "30cm", "firepower": "AP5+, Sniper"}],
+      "specialRules": []
+    },
+    "storm-troopers": {
+      "name": "Imperial Guard Storm Troopers",
+      "type": "Inf",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Hellguns", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Plasma guns", "range": "15cm", "firepower": "AP5+/AT5+"}
+      ],
+      "specialRules": ["Scout"]
+    },
+    "light-sentinel": {
+      "name": "Imperial Guard Light Sentinel",
+      "type": "LV",
+      "speed": "20cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [{"name": "Heavy Bolter", "range": "30cm", "firepower": "AP5+"}],
+      "specialRules": ["Scout", "Walker"]
+    },
+    "support-sentinel": {
+      "name": "Imperial Guard Support Sentinel",
+      "type": "LV",
+      "speed": "20cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Multi Melta", "range": "15cm", "firepower": "MW5+"},
+        {"name": "Multi Melta", "range": "15cm", "firepower": "Small Arms, MW"}
+      ],
+      "specialRules": ["Scout", "Walker"]
+    },
+    "valkyrie": {
+      "name": "Imperial Guard Valkyrie",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Multi Laser", "range": "30cm", "firepower": "AP5+/AT6+"},
+        {"name": "2 × Heavy Bolter", "range": "30cm", "firepower": "AP5+"},
+        {"name": "2 × Rocket Pods", "range": "30cm", "firepower": "1BP, Disrupt, One Shot"}
+      ],
+      "specialRules": [
+        "Scout",
+        "Skimmer",
+        "Transport: up to two Storm Troopers, Vanaheim Supreme Commander, Vanaheim Commander, Vanaheim Infantry, Vanaheim Fire Support, Sniper, Mortar Support, Light Sentinel or Support Sentinel"
+      ]
+    },
+    "vendetta": {
+      "name": "Imperial Guard Vendetta",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "3 × Twin Lascannons", "range": "45cm", "firepower": "AT4+"},
+        {"name": "2 × Heavy Bolter", "range": "30cm", "firepower": "AP5+"}
+      ],
+      "specialRules": [
+        "Scout",
+        "Skimmer",
+        "Transport: up to two Storm Troopers, Vanaheim Supreme Commander, Vanaheim Commander, Vanaheim Infantry, Vanaheim Fire Support or Mortar Support"
+      ]
+    },
+    "vulture": {
+      "name": "Imperial Guard Vulture",
+      "type": "AV",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Heavy Bolter", "range": "30cm", "firepower": "AP5+"},
+        {"name": "Twin Autocannon", "range": "45cm", "firepower": "AP4+/AT5+"},
+        {"name": "2 × Hellstrike Missiles", "range": "120cm", "firepower": "AT2+, One Shot"}
+      ],
+      "specialRules": ["Scout", "Skimmer"]
+    },
+    "marauder-bomber": {
+      "name": "Marauder Bomber",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": "3+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "2 × Twin Heavy Bolters", "range": "15cm", "firepower": "AA5+"},
+        {"name": "Twin Lascannons", "range": "45cm", "firepower": "AT4+/AA4+, FF Arc"},
+        {"name": "Bomb Racks", "range": "15cm", "firepower": "3BP, FF Arc"}
+      ],
+      "specialRules": []
+    },
+    "marauder-destroyer": {
+      "name": "Marauder Destroyer",
+      "type": "AC",
+      "speed": "Bomber",
+      "armour": "3+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Twin Heavy Bolters", "range": "15cm", "firepower": "AA5+"},
+        {"name": "Twin Assault Cannon", "range": "15cm", "firepower": "AA4+, R Arc"},
+        {"name": "3 × Twin Autocannons", "range": "45cm", "firepower": "AP4+/AT5+, FF Arc"},
+        {"name": "2 × Underwing Rockets", "range": "30cm", "firepower": "AT4+, FF Arc"}
+      ],
+      "specialRules": []
+    },
+    "thunderbolt": {
+      "name": "Thunderbolt",
+      "type": "AC",
+      "speed": "Fighter Bomber",
+      "armour": "6+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Storm Bolters", "range": "15cm", "firepower": "AP4+/AA5+, FF Arc"},
+        {"name": "Multi Laser", "range": "30cm", "firepower": "AP5+/AT6+/AA5+, FF Arc"},
+        {"name": "Underwing Rockets", "range": "30cm", "firepower": "AT4+, FF Arc"}
+      ],
+      "specialRules": []
+    },
+    "lightning-strike": {
+      "name": "Lightning Strike",
+      "type": "AC",
+      "speed": "Fighter",
+      "armour": "6+",
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Lascannon", "range": "45cm", "firepower": "AT5+/AA5+, FF Arc"},
+        {"name": "2 × Underwing Rockets", "range": "30cm", "firepower": "AT4+, FF Arc"}
+      ],
+      "specialRules": []
+    },
+    "lunar-class-cruiser": {
+      "name": "Lunar Class Cruiser",
+      "type": "SC",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [
+        {"name": "Orbital Bombardment", "range": "n/a", "firepower": "3BP, MW"},
+        {"name": "Pin-point attack", "range": "n/a", "firepower": "MW2+, TK (D3)"}
+      ],
+      "specialRules": []
+    },
+    "emperor-class-battleship": {
+      "name": "Emperor Class Battleship",
+      "type": "SC",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [{"name": "Orbital Bombardment", "range": "n/a", "firepower": "8BP, MW"}],
+      "specialRules": ["Slow and Steady: may not be used on turns one and two"]
+    }
+  },
+  "specialRules": [
+    {
+      "name": "Commissars",
+      "description": "An Imperial Guard army may include one free Commissar for each full 500 points. If the army includes a Supreme Commander, the first Commissar must join that formation. No more than one Commissar per formation; Commissars cannot join Titan or Imperial Navy units."
+    },
+    {
+      "name": "CAP Garrison",
+      "description": "Instead of placing one garrison on overwatch, the army may place one fighter formation on CAP during the pre-game garrisoning phase. Other permitted garrisons may still be set up, but only one may start on overwatch."
+    }
+  ]
+}

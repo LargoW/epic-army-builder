@@ -1,0 +1,287 @@
+{
+  "units": {
+    "hive-tyrant": {
+      "name": "Hive Tyrant",
+      "type": "AV",
+      "speed": "20cm (30cm)",
+      "armour": "4+ (5+)",
+      "cc": "3+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Venom Cannon", "range": "30cm", "firepower": "AP5+/AT6+"},
+        {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Commander", "Fearless", "Synapse", "Reinforced Armour", "Leader", "May have wings"]
+    },
+    "tyranid-warriors": {
+      "name": "Tyranid Warriors",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "3+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Death Spitters", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Rending Claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}
+      ],
+      "specialRules": ["Fearless", "Synapse", "Leader"]
+    },
+    "termagants": {
+      "name": "Termagants",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [{"name": "Fleshborers", "range": "15cm", "firepower": "Small Arms"}],
+      "specialRules": []
+    },
+    "hormagaunts": {
+      "name": "Hormagaunts",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": null,
+      "cc": "5+",
+      "ff": null,
+      "weapons": [{"name": "Talons", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}],
+      "specialRules": ["Infiltrators"]
+    },
+    "gargoyles": {
+      "name": "Gargoyles",
+      "type": "Inf",
+      "speed": "30cm",
+      "armour": null,
+      "cc": "6+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Fleshborers", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Swarm strike", "range": "15cm", "firepower": "AA6+"}
+      ],
+      "specialRules": ["Jump Packs"]
+    },
+    "genestealers": {
+      "name": "Genestealers",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": null,
+      "cc": "4+",
+      "ff": null,
+      "weapons": [{"name": "Rending Claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}],
+      "specialRules": ["Infiltrators", "First Strike", "Scout", "Synapse"]
+    },
+    "lictors": {
+      "name": "Lictors",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "4+",
+      "ff": null,
+      "weapons": [{"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}],
+      "specialRules": ["Infiltrators", "First Strike", "Scout", "Teleport", "Commander"]
+    },
+    "raveners": {
+      "name": "Raveners",
+      "type": "Inf",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "3+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Death Spitters", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Infiltrators", "Teleport"]
+    },
+    "biovore": {
+      "name": "Biovore",
+      "type": "LV",
+      "speed": "20cm",
+      "armour": "6+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [{"name": "Spore Mines", "range": "30cm", "firepower": "1BP, Disrupt, Indirect"}],
+      "specialRules": []
+    },
+    "spore-mine-cluster": {
+      "name": "Spore Mine Cluster",
+      "type": "LV",
+      "speed": "15cm",
+      "armour": "5+",
+      "cc": null,
+      "ff": "5+",
+      "weapons": [{"name": "Explosive Spores", "range": "15cm", "firepower": "AP5+/AT5+/AA5+"}],
+      "specialRules": ["Skimmer", "Scout"]
+    },
+    "carnifex": {
+      "name": "Carnifex",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Spore Cysts", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour"]
+    },
+    "zoanthrope": {
+      "name": "Zoanthrope",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Warp Blast", "range": "30cm", "firepower": "MW5+/AA6+, MW"},
+        {"name": "Warp Blast", "range": "15cm", "firepower": "Small Arms, MW"}
+      ],
+      "specialRules": ["Skimmer", "Leader", "Reinforced Armour"]
+    },
+    "dactylis": {
+      "name": "Dactylis",
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "5+",
+      "cc": "6+",
+      "ff": "5+",
+      "weapons": [{"name": "Heavy Spore Mines", "range": "45cm", "firepower": "1BP, Disrupt, Indirect"}],
+      "specialRules": ["Reinforced Armour"]
+    },
+    "exocrine": {
+      "name": "Exocrine",
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "5+",
+      "weapons": [{"name": "Heavy Venom Cannon", "range": "30cm", "firepower": "4 × AP5+/AT5+"}],
+      "specialRules": ["Reinforced Armour"]
+    },
+    "haruspex": {
+      "name": "Haruspex",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": null,
+      "weapons": [{"name": "2 × Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}],
+      "specialRules": ["Reinforced Armour"]
+    },
+    "malefactor": {
+      "name": "Malefactor",
+      "type": "AV",
+      "speed": "25cm",
+      "armour": "5+",
+      "cc": "5+",
+      "ff": "5+",
+      "weapons": [{"name": "Spine Arms", "range": "15cm", "firepower": "Small Arms, +2A"}],
+      "specialRules": ["Reinforced Armour", "Transport (2) Warriors, Termagaunt, Hormagaunt"]
+    },
+    "trygon": {
+      "name": "Trygon",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Bio-electric field", "range": "15cm", "firepower": "2 × AP3+/AT6+, Forward"},
+        {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Fearless", "Infiltrator", "Reinforced Armour", "Teleport", "Synapse", "Damage Capacity 2", "Critical: Killed"]
+    },
+    "hierodule": {
+      "name": "Hierodule",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [{"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"}],
+      "specialRules": ["Fearless", "Reinforced Armour"]
+    },
+    "harridan": {
+      "name": "Harridan",
+      "type": "WE",
+      "speed": "35cm",
+      "armour": "5+",
+      "cc": "4+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, FF"},
+        {"name": "Crushing Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour", "Leader", "Synapse", "Skimmer", "Transport (up to six Gargoyles)", "Damage Capacity 3", "Critical: Killed"]
+    },
+    "hive-nest": {
+      "name": "Hive Nest",
+      "type": "WE",
+      "speed": "0cm",
+      "armour": "4+",
+      "cc": "5+",
+      "ff": "6+",
+      "weapons": [
+        {"name": "Ripper Swarms", "range": "15cm", "firepower": "Small Arms"},
+        {"name": "Massive claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour", "Leader", "Synapse", "Thick Rear Armour", "Damage Capacity 3", "Critical: Killed"]
+    },
+    "hierophant": {
+      "name": "Hierophant Bio-Titan",
+      "type": "WE",
+      "speed": "25cm",
+      "armour": "5+",
+      "cc": "3+",
+      "ff": "5+",
+      "weapons": [
+        {"name": "2 × Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"},
+        {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 4", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
+    },
+    "hydraphant": {
+      "name": "Hydraphant Bio-Titan",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "2 × Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"},
+        {"name": "Bio-Acid", "range": "15cm", "firepower": "3BP, IC, Forward"},
+        {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"},
+        {"name": "Ripper Tentacles", "range": "Base Contact", "firepower": "Assault Wpn, +2A, TK (D3)"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 6", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
+    },
+    "dominatrix": {
+      "name": "Dominatrix",
+      "type": "WE",
+      "speed": "20cm",
+      "armour": "4+",
+      "cc": "3+",
+      "ff": "4+",
+      "weapons": [
+        {"name": "Energy Pulse", "range": "30cm", "firepower": "AP4+/AT4+/AA5+"},
+        {"name": "Energy Pulse", "range": "15cm", "firepower": "Small Arms, MW, +1A"},
+        {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"}
+      ],
+      "specialRules": ["Commander", "Fearless", "Leader", "Reinforced Armour", "Invulnerable Save", "Synapse", "May re-roll one failed Initiative test per turn", "May step over qualifying terrain"]
+    }
+  },
+  "specialRules": [
+    {
+      "name": "Synapse",
+      "description": "Formations with Synapse units can capture objectives; formations without them can only contest. Synapse formations do not receive blast markers for killed Gargoyles, Hormagaunts, or Termagants, and do not count those units lost in an assault when determining the winner."
+    },
+    {
+      "name": "The Hunger",
+      "description": "Tyranid formations receive +1 when attempting an Engage action or rolling to rally in the end phase."
+    },
+    {
+      "name": "Fast and Slithering",
+      "description": "Tyranid war engines, armoured vehicles, and light vehicles automatically pass difficult-terrain tests. Buildings are difficult terrain for these units rather than impassable; terrain tests still apply. Tyranid units are affected by minefields."
+    }
+  ]
+}
