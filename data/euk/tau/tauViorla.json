@@ -69,7 +69,7 @@
             "type": "INF"
         },
         "xv15-stealth": {
-            "name": "XV15 Stealth Battle suit Team",
+            "name": "XV15 Stealth Battlesuit Team",
             "type": "INF"
         },
         "xv95-ghostkeel": {
@@ -171,10 +171,6 @@
                 {
                     "unit": "xv8-crisis",
                     "count": 6
-                },
-                {
-                    "unit": "gun-drone",
-                    "count": 2
                 }
             ],
             "upgrades": [
@@ -459,9 +455,8 @@
                     "pts": 50,
                     "effects": [
                         {
-                            "op": "replace",
-                            "from": "shas-el",
-                            "to": "shas-o",
+                            "op": "add",
+                            "unit": "shas-o",
                             "count": 1
                         }
                     ]
