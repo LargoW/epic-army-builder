@@ -621,6 +621,10 @@
                 {
                     "unit": "land-train-engine",
                     "count": 1
+                },
+                {
+                    "unit": "berserker-battlecar",
+                    "count": 1
                 }
             ],
             "upgrades": [
