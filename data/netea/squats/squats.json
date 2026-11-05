@@ -98,7 +98,7 @@
         },
         "overlord": {
             "name": "Overlord",
-            "type": "AV"
+            "type": "WE"
         },
         "gyrocopter": {
             "name": "Gyrocopter",
@@ -245,9 +245,8 @@
                 "u-rhino",
                 "u-termite",
                 "u-mole",
-                "u-berserkers",
-                "u-warlord-replace"
-            ]
+                "u-berserkers"
+                ]
         },
         {
             "id": "f-thunderer",
@@ -334,7 +333,9 @@
                 "u-mole",
                 "u-warriors",
                 "u-rapiers",
-                "u-warlord-replace"
+                "u-warlord-replace",
+                "u-grandwarlord",
+                "u-living-ancestor"
             ]
         },
         {
@@ -370,7 +371,9 @@
                     "count": 1
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "u-grandwarlord",
+                "u-living-ancestor"]
         },
         {
             "id": "f-artillery-battery",
@@ -584,7 +587,10 @@
                     "count": 1
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "u-grandwarlord",
+                "u-living-ancestor"
+            ]
         },
         {
             "id": "f-cyclops",
@@ -599,7 +605,10 @@
                     "count": 1
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "u-grandwarlord",
+                "u-living-ancestor"
+            ]
         },
         {
             "id": "f-landtrain",
@@ -621,7 +630,9 @@
                 "u-replaceBerserkerCarForSkyhammer",
                 "u-replaceBerserkerCarForMortar",
                 "u-replaceBerserkerCarForIronEagle",
-                "u-replaceBerserkerCarForFireShield"
+                "u-replaceBerserkerCarForFireShield",
+                "u-grandwarlord",
+                "u-living-ancestor"
             ]
         },
         {
@@ -637,7 +648,9 @@
                     "count": 1
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "u-grandwarlord",
+                "u-living-ancestor"]
         }
     ],
     "upgrades": [
