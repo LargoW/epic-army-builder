@@ -59,7 +59,8 @@
     {
       "id": "core",
       "name": "Tau Core Formations",
-      "formations": ["f-crisis-cadre", "f-fire-warrior-cadre"]
+      "formations": ["f-crisis-cadre", "f-fire-warrior-cadre"],
+      "tags": ["core"]
     },
     {
       "id": "support",
@@ -72,7 +73,8 @@
         "f-recon-group",
         "f-skysweep-group",
         "f-stealth-group"
-      ]
+      ],
+      "tags": ["support"]
     },
     {
       "id": "air",
@@ -527,13 +529,13 @@
   "formationConstraints": [
     {
       "id": "support-per-core",
-      "from": ["support"],
-      "forEach": ["core"],
+      "from": ["tag:support"],
+      "forEach": ["tag:core"],
       "max": 3
     },
     {
       "id": "air-caste-third",
-      "from": ["air"],
+      "from": ["tag:air"],
       "maxShare": [1, 3]
     },
     {

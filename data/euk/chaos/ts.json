@@ -238,7 +238,7 @@
             "name": "Thousand Sons Terminators",
             "pts": 350,
             "tags": [
-                "core"
+                "elite"
             ],
             "units": [
                 {
@@ -362,7 +362,7 @@
             "name": "Tzaangor Herd",
             "pts": 200,
             "tags": [
-                "support",
+                "core",
                 "daemonFormation"
             ],
             "units": [
