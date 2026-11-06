@@ -124,7 +124,8 @@ export function computeEntry(data, entry) {
   //Forced show on overview tab
   const forceShow = new Set();
 
-  def.units.forEach((slot, i) => {
+  const slots = size && size.units ? size.units : def.units; // a size may list its own units
+  slots.forEach((slot, i) => {
     const slotCount = slot.count * mult;
     if (!slot.oneOf) return add(slot.unit, slotCount);
     const dist = entry.choices[i] || { [slot.oneOf[0]]: slotCount };
@@ -140,7 +141,9 @@ export function computeEntry(data, entry) {
   const rule = transportRule(data, def);
   let addedCarriable;
   const upgradeCounts = {};
-  entry.upgrades.forEach((sel) => {
+  // Apply upgrades in the order the formation lists them, so replace effects do not depend on the order of selection.
+  const rank = (sel) => { const i = def.upgrades.indexOf(sel.upgrade); return i < 0 ? 9999 : i; };
+  [...entry.upgrades].sort((x, y) => rank(x) - rank(y)).forEach((sel) => {
     const upDef = upgrades[sel.upgrade];
     if (upDef && upDef.show) {
       upDef.show.forEach((u) => {
@@ -276,6 +279,11 @@ export function validate(data, state) {
   });
 
   for (const c of data.upgradeConstraints || []) {
+    if (c.perArmy) {
+      const uids = known.flatMap((e) => e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade])).map(() => e.uid));
+      if (c.max != null && uids.length > c.max) violations.push({ code: "upgrade-limit", params: { id: c.id, count: uids.length }, refs: { uids } });
+      continue;
+    }
     for (const e of known) {
       if (c.appliesTo && !matches(c.appliesTo, formations[e.formation])) continue;
       const ups = e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade]));

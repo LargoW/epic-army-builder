@@ -22,7 +22,7 @@
         },
         {
             "formations": [
-                ""
+                "*"
             ],
             "value": "2+"
         }
@@ -680,10 +680,10 @@
         {
             "id": "support-per-core",
             "from": [
-                "support"
+                "tag:support"
             ],
             "forEach": [
-                "core"
+                "tag:core"
             ],
             "max": 2
         },
@@ -702,10 +702,10 @@
         {
             "id": "core-max-four-upgrades",
             "appliesTo": [
-                "core"
+                "tag:core"
             ],
             "from": [
-                ""
+                "*"
             ],
             "maxTotal": 4
         }

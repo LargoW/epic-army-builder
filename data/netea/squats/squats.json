@@ -1170,8 +1170,8 @@
             "capacity": 2,
             "pts": 10,
             "appliesTo": [
-                "f-warriors",
-                "f-berserkers",
+                "f-warrior",
+                "f-berserker",
                 "f-thunderer"
             ],
             "carries": {
@@ -1183,12 +1183,12 @@
         },
         {
             "id": "termites-transport",
-            "vehicle": "termites",
+            "vehicle": "termite",
             "capacity": 2,
             "pts": 10,
             "appliesTo": [
-                "f-warriors",
-                "f-berserkers",
+                "f-warrior",
+                "f-berserker",
                 "f-thunderer"
             ],
             "carries": {
@@ -1204,8 +1204,8 @@
             "capacity": 10,
             "pts": 25,
             "appliesTo": [
-                "f-warriors",
-                "f-berserkers",
+                "f-warrior",
+                "f-berserker",
                 "f-thunderer"
             ],
             "carries": {

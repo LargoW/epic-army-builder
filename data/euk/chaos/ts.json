@@ -12,7 +12,7 @@
   },
   "strategy": 4,
   "initiative": [
-    {"formations": ["daemonFormation","navy-titan"], "value": "2+" },
+    {"formations": ["tag:daemonFormation","tag:navy-titan"], "value": "2+" },
     {"formations": ["*"], "value": "1+" }
   ],
   "units": {
@@ -229,6 +229,7 @@
           "label": "Chaos Space Marine Rhino",
           "pts": 10,
           "perUnit": true,
+          "max": 5,
           "effects": [
             {
               "op": "add",
@@ -360,13 +361,12 @@
   "formationConstraints": [
     { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 },
     { "id": "elite-per-core", "from": ["tag:elite"], "forEach": ["tag:core"], "max": 1 },
-    { "id": "titans-navy-share", "from": ["tag:titans-navy"], "maxShare": [1, 3] },
-    { "id": "orbital-once", "from": ["orbital"], "max": 1, "perArmy": true }
+    { "id": "titans-navy-share", "from": ["tag:navy-titan"], "maxShare": [1, 3] }
   ],
   "upgradeConstraints": [
     { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true },
     { "id": "formation-max-four", "from": ["*"], "maxTotal": 4,"perFormation": true },
-    {"id": "c-warlord-per-army",  "from": ["u-warlord", "u-warlordCabal"], "max": 1, "perArmy": true},
+    {"id": "c-warlord-per-army",  "from": ["u-warlord"], "max": 1, "perArmy": true},
     {"id": "c-daemon-prince-per-army", "from": ["u-daemon-prince"],"max": 1,"perArmy": true}
     ]
   
