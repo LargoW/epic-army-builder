@@ -80,8 +80,8 @@
       "armour": null,
       "cc": "6+",
       "ff": "5+",
-      "weapons": [{"name": "Sniper Rifles", "range": "30cm", "firepower": "AP5+, Sniper"}],
-      "specialRules": []
+      "weapons": [{"name": "Sniper Rifles", "range": "30cm", "firepower": "AP5+"}],
+      "specialRules": ["Sniper"]
     },
     "storm-troopers": {
       "name": "Imperial Guard Storm Troopers",

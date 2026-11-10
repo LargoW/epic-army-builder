@@ -13,12 +13,12 @@
   "strategy": 2,
   "initiative": [
     {
-      "formations": [""],
-      "value": "2+"
+      "formations": ["tag:imperial-navy"],
+      "value": "Navy 2+"
     },
     {
-      "formations": ["f-imperial-navy"],
-      "value": "Navy 2+"
+      "formations": ["*"],
+      "value": "2+"
     }
   ],
   "units": {
@@ -68,7 +68,7 @@
   "formations": [
     {
       "id": "f-regimental-hq",
-      "name": "Regimental HQ",
+      "name": "0-1 Regimental HQ",
       "pts": 375,
       "tags": ["company", "core"],
       "units": [
@@ -76,7 +76,7 @@
         {"unit": "vanaheim-infantry", "count": 7},
         {"unit": "valkyrie", "count": 4}
       ],
-      "upgrades": ["u-hq-vendettas", "u-company-upgrades"]
+      "upgrades": ["u-hq-vendettas", "u-fire-support-platoon", "u-mortar-platoon", "u-infantry-platoon", "u-sniper-platoon"]
     },
     {
       "id": "f-air-cavalry-company",
@@ -88,7 +88,7 @@
         {"unit": "vanaheim-infantry", "count": 7},
         {"unit": "valkyrie", "count": 4}
       ],
-      "upgrades": ["u-company-vendettas", "u-company-upgrades"]
+      "upgrades": ["u-company-vendettas", "u-fire-support-platoon", "u-mortar-platoon", "u-infantry-platoon", "u-sniper-platoon"]
     },
     {
       "id": "f-vulture-squadron",
@@ -186,7 +186,7 @@
     },
     {
       "id": "f-orbital-support",
-      "name": "Orbital Support",
+      "name": "0-1 Orbital Support",
       "pts": 150,
       "tags": ["imperial-navy"],
       "sizes": [
@@ -216,10 +216,12 @@
       "variants": [
         {
           "id": "1",
-          "label": "Replace up to two Valkyries with Vendettas",
+          "label": "Vendetta (replaces a Valkyrie, up to two)",
           "pts": 0,
+          "perUnit": true,
+          "max": 2,
           "effects": [
-            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 2}
+            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 1}
           ]
         }
       ]
@@ -230,47 +232,61 @@
       "variants": [
         {
           "id": "1",
-          "label": "Replace up to two Valkyries with Vendettas",
+          "label": "Vendetta (replaces a Valkyrie, up to two)",
           "pts": 0,
+          "perUnit": true,
+          "max": 2,
           "effects": [
-            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 2}
+            {"op": "replace", "from": "valkyrie", "to": "vendetta", "count": 1}
           ]
         }
       ]
     },
     {
-      "id": "u-company-upgrades",
-      "name": "Company Upgrades",
+      "id": "u-fire-support-platoon",
+      "name": "Fire Support Platoon",
       "variants": [
         {
-          "id": "fire-support",
-          "label": "Fire Support Platoon: add two Fire Support units and one Valkyrie",
+          "id": "1",
+          "label": "Two Fire Support units and one Valkyrie",
           "pts": 100,
           "effects": [
             {"op": "add", "unit": "fire-support", "count": 2},
             {"op": "add", "unit": "valkyrie", "count": 1}
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "u-mortar-platoon",
+      "name": "Mortar Platoon",
+      "variants": [
         {
-          "id": "mortar-swap",
-          "label": "Mortar Platoon: replace two Infantry with two Mortar Support units",
+          "id": "swap",
+          "label": "Swap two Infantry for two Mortar Support units",
           "pts": 0,
           "effects": [
             {"op": "replace", "from": "vanaheim-infantry", "to": "mortar-support", "count": 2}
           ]
         },
         {
-          "id": "mortar-add",
-          "label": "Mortar Platoon: add two Mortar Support units and one Valkyrie",
+          "id": "add",
+          "label": "Add two Mortar Support units and one Valkyrie",
           "pts": 75,
           "effects": [
             {"op": "add", "unit": "mortar-support", "count": 2},
             {"op": "add", "unit": "valkyrie", "count": 1}
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "u-infantry-platoon",
+      "name": "Infantry Platoon",
+      "variants": [
         {
-          "id": "infantry-two",
-          "label": "Infantry Platoon: add two Infantry and one Valkyrie",
+          "id": "two",
+          "label": "Two Infantry units and one Valkyrie",
           "pts": 75,
           "effects": [
             {"op": "add", "unit": "vanaheim-infantry", "count": 2},
@@ -278,25 +294,31 @@
           ]
         },
         {
-          "id": "infantry-four",
-          "label": "Infantry Platoon: add four Infantry and two Valkyries",
+          "id": "four",
+          "label": "Four Infantry units and two Valkyries",
           "pts": 125,
           "effects": [
             {"op": "add", "unit": "vanaheim-infantry", "count": 4},
             {"op": "add", "unit": "valkyrie", "count": 2}
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "u-sniper-platoon",
+      "name": "Sniper Platoon",
+      "variants": [
         {
-          "id": "sniper-swap",
-          "label": "Sniper Platoon: replace two Infantry with two Snipers",
+          "id": "swap",
+          "label": "Swap two Infantry for two Sniper units",
           "pts": 25,
           "effects": [
             {"op": "replace", "from": "vanaheim-infantry", "to": "sniper", "count": 2}
           ]
         },
         {
-          "id": "sniper-add",
-          "label": "Sniper Platoon: add two Snipers and one Valkyrie",
+          "id": "add",
+          "label": "Add two Sniper units and one Valkyrie",
           "pts": 100,
           "effects": [
             {"op": "add", "unit": "sniper", "count": 2},
@@ -343,32 +365,34 @@
   "formationConstraints": [
     {
       "id": "support-per-company",
-      "from": ["support"],
-      "forEach": ["company"],
+      "from": ["tag:support"],
+      "forEach": ["tag:company"],
       "max": 2
     },
     {
       "id": "regimental-hq-limit",
-      "formation": "f-regimental-hq",
+      "from": ["f-regimental-hq"],
       "max": 1
     },
     {
       "id": "orbital-support-limit",
-      "formation": "f-orbital-support",
+      "from": ["f-orbital-support"],
       "max": 1
     },
     {
       "id": "imperial-navy-points-limit",
+      "from": ["tag:imperial-navy"],
+      "maxShare": [1, 3],
       "description": "No more than one third of the army points may be spent on Imperial Navy formations."
     }
   ],
   "upgradeConstraints": [
     {
       "id": "company-upgrade-limit",
-      "appliesTo": ["company"],
-      "from": ["u-company-upgrades"],
+      "appliesTo": ["tag:company"],
+      "from": ["u-fire-support-platoon", "u-mortar-platoon", "u-infantry-platoon", "u-sniper-platoon"],
       "maxTotal": 2,
-      "description": "Each company upgrade may be taken once per company."
+      "description": "Up to two company upgrades per company; each upgrade may be taken once per company."
     }
   ],
   "specialRules": [

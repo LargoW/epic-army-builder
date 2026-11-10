@@ -3,11 +3,14 @@ const constraintTexts = {
   "support-per-core": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kernverband).`,
   "support-per-company": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
   "scouts-per-detachment": (p) => `Zu viele Scout-Trupps: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Verband ohne Scouts).`,
+  "regimental-hq-limit": (p) => `Das Regimental HQ darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+  "orbital-support-limit": (p) => `Orbital Support darf nur einmal gewählt werden (gewählt: ${p.count}).`,
   "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
   "kroozer-once": (p) => `Ein Kroozer darf nur einmal gewählt werden (gewählt: ${p.count}).`,
 };
 
 const shareTexts = {
+  "imperial-navy-points-limit": (p) => `Imperiale Flotte: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
   "warengines-share": (p) => `Kriegsmaschinen: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
 };
 
@@ -23,7 +26,9 @@ export function messageFor(v, names = {}) {
     case "upgrade-limit":
       return p.id === "company-max-three"
         ? `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Kompanie).`
-        : `Aufwertungen dürfen pro Verband nur einmal gewählt werden.`;
+        : p.id === "company-upgrade-limit"
+          ? `Zu viele Kompanie-Aufwertungen: ${p.count} (höchstens 2 pro Kompanie).`
+          : `Aufwertungen dürfen pro Verband nur einmal gewählt werden.`;
     case "upgrade-not-allowed":
       return `Aufwertung „${up}“ ist für diesen Verband nicht erlaubt.`;
     case "replace-insufficient":
