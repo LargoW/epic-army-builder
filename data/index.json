@@ -120,7 +120,8 @@
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Night Lords",
-      "version": "Alpha 0.6.0"
+      "version": "Alpha 0.6.0",
+      "hidden": true
     },
     {
       "id": "ear-de/sm/codexastartes",
