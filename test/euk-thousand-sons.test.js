@@ -182,7 +182,7 @@ test("Daemonic Pact and Teleport add their rule markers", () => {
 });
 
 test("Warlord and Daemon Prince replace the commander, Supreme Daemon Prince replaces the Warlord", () => {
-  let [s, [u]] = army("f-ts-terminators");
+  let [s, [u]] = army("f-ts-terminators", "f-ts-retinue"); // Terminators are elite and need a core formation
   s = setUpgrade(s, u, "u-warlord", "1");
   assert.equal(entry(s).pts, 400);
   assert.deepEqual(entry(s).roster, { "ts-warlord": 1, "ts-terminators": 4 });

@@ -585,6 +585,10 @@
                 {
                     "unit": "colossus-we",
                     "count": 1
+                },
+                {
+                    "unit": "recon-iron-eagle",
+                    "count": 1
                 }
             ],
             "upgrades": [

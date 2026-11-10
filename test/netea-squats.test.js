@@ -96,7 +96,7 @@ test("base points and units of every formation (smallest size)", () => {
     "f-gyrocopter-wing": [225, { "iron-eagle": 3 }],
     "f-super-heavy-artillery": [200, { goliath: 1 }],
     "f-thunderfire-battery": [150, { thunderfire: 2 }],
-    "f-colossus": [600, { "colossus-we": 1 }],
+    "f-colossus": [600, { "colossus-we": 1, "recon-iron-eagle": 1 }], // official list: one Colossus and one Recon Iron Eagle
     "f-cyclops": [600, { cyclops: 1 }],
     "f-landtrain": [275, { "land-train-engine": 1, "berserker-battlecar": 1 }],
     "f-leviathan": [400, { leviathan: 1 }],
