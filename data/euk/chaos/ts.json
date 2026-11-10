@@ -1133,6 +1133,7 @@
             "id": "csm-rhino",
             "vehicle": "csm-rhino",
             "capacity": 2,
+            "minimum": true,
             "pts": 10,
             "appliesTo": [
                 "f-ts-retinue"

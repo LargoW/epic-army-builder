@@ -670,7 +670,16 @@
                     "id": "n",
                     "label": "Grand Warlord",
                     "pts": 50,
-                    "perUnit": true,
+                    "perArmy": 1,
+                    "requires": [
+                        "warlord",
+                        "guildmaster",
+                        "overlord",
+                        "colossus-we",
+                        "cyclops",
+                        "land-train-engine",
+                        "leviathan"
+                    ],
                     "effects": [
                         {
                             "op": "add",
@@ -689,7 +698,16 @@
                     "id": "n",
                     "label": "Living Ancestor",
                     "pts": 50,
-                    "perUnit": true,
+                    "perArmy": 1,
+                    "requires": [
+                        "warlord",
+                        "guildmaster",
+                        "overlord",
+                        "colossus-we",
+                        "cyclops",
+                        "land-train-engine",
+                        "leviathan"
+                    ],
                     "effects": [
                         {
                             "op": "add",
@@ -1172,7 +1190,12 @@
             "id": "rhino-transport",
             "vehicle": "rhino",
             "capacity": 2,
+            "minimum": true,
             "pts": 10,
+            "exclusiveWith": [
+                "termites-transport",
+                "mole-transport"
+            ],
             "appliesTo": [
                 "f-warrior",
                 "f-berserker",
@@ -1182,13 +1205,21 @@
                 "type": "INF",
                 "excludeRules": [
                     "Mounted"
-                ]
+                ],
+                "weights": {
+                    "mole-mortar": 2,
+                    "rapier": 2,
+                    "tarantula": 2,
+                    "thudd-gun": 2,
+                    "warlord": 2
+                }
             }
         },
         {
             "id": "termites-transport",
             "vehicle": "termite",
             "capacity": 2,
+            "minimum": true,
             "pts": 10,
             "appliesTo": [
                 "f-warrior",
@@ -1199,13 +1230,21 @@
                 "type": "INF",
                 "excludeRules": [
                     "Mounted"
-                ]
+                ],
+                "weights": {
+                    "mole-mortar": 2,
+                    "rapier": 2,
+                    "tarantula": 2,
+                    "thudd-gun": 2,
+                    "warlord": 2
+                }
             }
         },
         {
             "id": "mole-transport",
             "vehicle": "mole-we",
             "capacity": 10,
+            "minimum": true,
             "pts": 25,
             "appliesTo": [
                 "f-warrior",
@@ -1216,8 +1255,37 @@
                 "type": "INF",
                 "excludeRules": [
                     "Mounted"
-                ]
+                ],
+                "weights": {
+                    "mole-mortar": 2,
+                    "rapier": 2,
+                    "tarantula": 2,
+                    "thudd-gun": 2,
+                    "warlord": 2
+                }
             }
+        }
+    ],
+    "formationConstraints": [
+        {
+            "id": "support-per-core",
+            "from": [
+                "tag:support"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 2
+        },
+        {
+            "id": "warengines-share",
+            "from": [
+                "tag:warengine"
+            ],
+            "maxShare": [
+                1,
+                3
+            ]
         }
     ]
 }

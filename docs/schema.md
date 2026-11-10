@@ -84,11 +84,13 @@ where Rough Riders and units with Mounted / Jump Pack are not carriable. Each ch
 25 pts. Declared as data: `{ "op": "transport", "vehicle": "chimera", "capacity": 2,
 "carries": { "type": "INF", "excludeUnits": ["rough-rider"], "excludeRules": ["mounted", "jump-pack"] },
 "pts": 25 }`.
+## Erweiterungen (Space Marines, Orks, Tau, Squats)
 
-## Erweiterungen (Space Marines, Orks)
-
-- utoTransport: kostenlose automatische Transporter (Rhinos); gekaufte Fahrzeuge (others: Einheit -> Kapazität) transportieren zuerst.
-- Formation sizes: [{id,label,mult,pts}]: Normal/Groß/Riesig. Einheitenzahlen und Variant-max werden mit mult multipliziert; Preis = pts der Größe. Zustand: entry.size.
-- Variante perUnit: true: beliebig viele (count im Zustand), Preis je Stück, optional max (skaliert mit der Größe) und equires (mindestens eine dieser Einheiten muss im Verband sein).
-- Variante perArmy: n: höchstens n-mal pro Armee.
+- `autoTransport`: kostenlose automatische Transporter (Rhinos); gekaufte Fahrzeuge (`others`: Einheit -> Kapazität) transportieren zuerst.
+- Formation `sizes`: [{id,label,mult,pts}]: Normal/Groß/Riesig. Einheitenzahlen und Variant-`max` werden mit `mult` multipliziert; Preis = `pts` der Größe. Zustand: `entry.size`. Optional `units` je Größe: ersetzt die Einheitenliste der Formation für diese Größe (z. B. Tau-Breacher-Kader mit Devilfish).
+- Variante `perUnit: true`: beliebig viele (`count` im Zustand), Preis je Stück, optional `max` (skaliert mit der Größe) und `requires` (mindestens eine dieser Einheiten muss im Verband sein; Einheiten, die die Variante selbst hinzufügt, zählen nicht mit). `add`- und `replace`-Effekte werden mit `count` multipliziert.
+- Variante `perArmy: n`: höchstens n-mal pro Armee (gezählt wird je Verband).
+- `upgradeConstraints` mit `perArmy: true`: das Limit gilt über alle Verbände der Armee.
+- Aufwertungen werden in der Reihenfolge der Liste `formation.upgrades` angewendet, nicht in der Reihenfolge der Auswahl.
+- Mehrere `transport`-Regeln pro Formation (Squats: Rhino, Termite, Mole): Die Plätze addieren sich, alle tragbaren INF müssen befördert werden. `exclusiveWith: [Regel-IDs]` verbietet die Kombination mit anderen Transportarten. `minimum: true`: kein Fahrzeug dieser Art darf überflüssig sein (Meldung `vehicle-surplus`, wenn es auch ohne dieses Fahrzeug reichen würde). `carries.weights: {Einheit: Plätze}`: Einheiten, die beim Transport mehrfach zählen (Squats: Rapier, Warlord).
 

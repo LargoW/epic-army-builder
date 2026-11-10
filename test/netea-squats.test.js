@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
-  createState, addFormation, setUpgrade, setSize, setChoice, summarize, validate, withProfiles, rosterProfiles,
+  createState, addFormation, setUpgrade, removeUpgrade, setSize, setChoice, summarize, validate, withProfiles, rosterProfiles,
 } from "../engine/engine.js";
 import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
 
@@ -24,7 +24,10 @@ function army(...ids) {
   });
   return [s, uids];
 }
-const codes = (s) => validate(data, s).map((v) => v.code);
+// Limits that depend on the rest of the army (support per brotherhood, war-engine share) are tested in the
+// "limits" section with allCodes; every other test looks at one formation and ignores them.
+const allCodes = (s) => validate(data, s).map((v) => v.code);
+const codes = (s) => allCodes(s).filter((c) => c !== "formation-limit" && c !== "share-limit");
 const entry = (s, i = 0) => summarize(data, s).entries[i];
 
 // ---------------------------------------------------------------- data integrity
@@ -66,14 +69,14 @@ test("section and tag agree: core, support, warengines", () => {
     for (const id of s.formations) assert.ok(data.formations.find((f) => f.id === id).tags.includes(tagOf[s.id]), `${id} in ${s.id}`);
 });
 
-test("every formation is valid in its base configuration", () => {
+test("every formation is valid in its base configuration (support and war engines need the rest of the army)", () => {
   for (const f of data.formations) {
     const [s] = army(f.id);
     assert.deepEqual(codes(s), [], f.id);
   }
 });
 
-test("transport rules apply to existing formations and use existing vehicles", { todo: "appliesTo lists f-warriors and f-berserkers (the ids are f-warrior and f-berserker) and the Termite vehicle is called termites (the unit is termite)" }, () => {
+test("transport rules apply to existing formations and use existing vehicles", () => {
   const formations = new Set(data.formations.map((f) => f.id));
   const bad = [];
   for (const t of raw.transport)
@@ -198,18 +201,19 @@ test("Warlord replaces a Hearthguard (each size step still has Hearthguard left 
   assert.ok(codes(s).includes("upgrade-not-allowed"));
 });
 
-test("Hearthguard can be added to Thunderers; Grand Warlord and Living Ancestor are bought per character", () => {
+test("Hearthguard can be added to Thunderers; Grand Warlord and Living Ancestor add one character each", () => {
   let [s, [u]] = army("f-thunderer");
   s = setUpgrade(s, u, "u-hearthguard", "1");
   assert.equal(entry(s).pts, 275);
   assert.deepEqual(entry(s).roster, { thunderers: 5, hearthguard: 1 });
   [s, [u]] = army("f-warrior");
-  s = setUpgrade(s, u, "u-grandwarlord", "n", 0, 1);
-  s = setUpgrade(s, u, "u-living-ancestor", "n", 0, 2);
-  assert.equal(entry(s).pts, 250 + 50 + 100);
-  assert.deepEqual(entry(s).roster, { hearthguard: 1, warriors: 9, "grand-warlord": 1, "living-ancestor": 2 });
+  s = setUpgrade(s, u, "u-warlord-replace", "1");
+  s = setUpgrade(s, u, "u-grandwarlord", "n");
+  s = setUpgrade(s, u, "u-living-ancestor", "n");
+  assert.equal(entry(s).pts, 250 + 25 + 50 + 50);
+  assert.deepEqual(entry(s).roster, { warlord: 1, warriors: 9, "grand-warlord": 1, "living-ancestor": 1 });
   [s, [u]] = army("f-colossus");
-  s = setUpgrade(s, u, "u-grandwarlord", "n", 0, 1);
+  s = setUpgrade(s, u, "u-grandwarlord", "n");
   assert.equal(entry(s).pts, 650);
   assert.deepEqual(codes(s), []);
 });
@@ -348,7 +352,7 @@ test("Thunderers with Rhinos: 10 points each, all five Thunderers must be carrie
   assert.deepEqual(codes(s), []);
 });
 
-test("Warriors and Berserkers with Rhinos must carry all their infantry too", { todo: "rhino-transport.appliesTo lists f-warriors/f-berserkers (ids are f-warrior/f-berserker), so only the Thunderers are checked" }, () => {
+test("Warriors and Berserkers with Rhinos must carry all their infantry too", () => {
   let [s, [u]] = army("f-warrior");
   s = setUpgrade(s, u, "u-rhino", "n", 0, 1);
   assert.deepEqual(codes(s), ["transport-incomplete"], "10 INF, one Rhino");
@@ -359,16 +363,203 @@ test("Warriors and Berserkers with Rhinos must carry all their infantry too", { 
   assert.deepEqual(codes(s), ["transport-incomplete"], "6 INF, one Rhino");
 });
 
-test("mixed transports: Rhinos, Termites and Moles together carry the formation", { todo: "the engine uses only the first matching transport rule (Rhino); Termite and Mole seats are not counted" }, () => {
-  let [s, [u]] = army("f-thunderer");
-  s = setUpgrade(s, u, "u-rhino", "n", 0, 1);
+test("Rhinos may not be taken together with Termites or Moles (Termites and Moles may be combined)", () => {
+  let [s, [u]] = army("f-warrior");
+  s = setUpgrade(s, u, "u-warriors", "n", 0, 1); // 11 INF: a Mole (10) plus a Termite (2) are both needed
+  s = setUpgrade(s, u, "u-termite", "n", 0, 1);
   s = setUpgrade(s, u, "u-mole", "n", 0, 1);
-  assert.deepEqual(codes(s), [], "1 Rhino (2 seats) + 1 Mole (10 seats) carry 5 INF");
+  assert.deepEqual(codes(s), [], "Termites and Moles together are fine");
+  [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 3);
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  assert.ok(codes(s).includes("transport-mixed"), "Rhinos together with a Mole");
+  [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 3);
+  s = setUpgrade(s, u, "u-termite", "n", 0, 1);
+  assert.ok(codes(s).includes("transport-mixed"), "Rhinos together with a Termite");
+});
+
+test("Termites and Moles carry the formation too: their seats add up", () => {
+  let [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 2);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "2 Termites carry 4 of 5 INF");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 3);
+  assert.equal(entry(s).pts, 225 + 30);
+  assert.deepEqual(codes(s), [], "3 Termites carry 6 INF");
+  [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  assert.equal(entry(s).pts, 250);
+  assert.deepEqual(codes(s), [], "1 Mole carries 10 INF");
+  [s, [u]] = army("f-warrior");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 2);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "4 seats for 10 INF");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 5);
+  assert.deepEqual(codes(s), [], "5 Termites carry 10 INF");
+  s = removeUpgrade(s, u, "u-termite");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  assert.deepEqual(codes(s), [], "1 Mole carries 10 INF");
+});
+
+test("units that count as two when transported (Rapier, Warlord) need extra seats", () => {
+  let [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-rapiers", "n", 0, 1); // 5 Thunderers + 1 Rapier = 7 seats
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 3);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "3 Rhinos: 6 seats for 7");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 4);
+  assert.deepEqual(codes(s), [], "4 Rhinos: 8 seats for 7");
+  s = setUpgrade(s, u, "u-rapiers", "n", 0, 3); // 5 + 3x2 = 11 seats
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 5);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "5 Rhinos: 10 seats for 11");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 6);
+  assert.deepEqual(codes(s), [], "6 Rhinos: 12 seats for 11");
+
+  [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-rapiers", "n", 0, 3);
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "1 Mole: 10 seats for 11");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 2);
+  assert.deepEqual(codes(s), [], "2 Moles");
+
+  [s, [u]] = army("f-warrior");
+  s = setUpgrade(s, u, "u-warlord-replace", "1"); // Warlord (2) + 9 Warriors = 11 seats
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 5);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "5 Rhinos: 10 seats for 11");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 6);
+  assert.deepEqual(codes(s), [], "6 Rhinos carry the Warlord and nine Warriors");
+
+  [s, [u]] = army("f-warrior");
+  s = setSize(s, u, "g");
+  s = setUpgrade(s, u, "u-warlord-replace", "1"); // 2 + 1 Hearthguard + 18 Warriors = 21 seats
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 10);
+  assert.deepEqual(codes(s), ["transport-incomplete"], "Medium: 10 Rhinos = 20 seats");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 11);
+  assert.deepEqual(codes(s), [], "Medium: 11 Rhinos");
+});
+
+test("transports must be the minimum number needed (Rhinos, Termites, Moles)", () => {
+  const surplus = (s) => validate(data, s).filter((v) => v.code === "vehicle-surplus").map((v) => [v.params.unit, v.params.max]);
+  let [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 3);
+  assert.deepEqual(codes(s), [], "3 Rhinos carry 5 INF");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 4);
+  assert.deepEqual(codes(s), ["vehicle-surplus"]);
+  assert.deepEqual(surplus(s), [["rhino", 3]], "one Rhino too many");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 6);
+  assert.deepEqual(surplus(s), [["rhino", 3]], "three Rhinos too many");
+
+  [s, [u]] = army("f-thunderer");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  assert.deepEqual(codes(s), [], "one Mole carries 5 INF");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 2);
+  assert.deepEqual(surplus(s), [["mole-we", 1]], "second Mole is superfluous");
+  s = removeUpgrade(s, u, "u-mole");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 3);
+  assert.deepEqual(codes(s), [], "3 Termites carry 5 INF");
+
+  [s, [u]] = army("f-thunderer");
+  s = setSize(s, u, "g");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 5);
+  assert.deepEqual(codes(s), [], "Medium: 10 INF, 5 Rhinos");
+  s = setUpgrade(s, u, "u-rhino", "n", 0, 6);
+  assert.deepEqual(surplus(s), [["rhino", 5]]);
+
+  [s, [u]] = army("f-warrior");
+  s = setUpgrade(s, u, "u-mole", "n", 0, 1);
+  s = setUpgrade(s, u, "u-termite", "n", 0, 1);
+  assert.deepEqual(surplus(s), [["termite", 0]], "10 INF are already carried by the Mole");
+  s = setUpgrade(s, u, "u-warriors", "n", 0, 1);
+  assert.deepEqual(codes(s), [], "with 11 INF the Termite is needed");
+  s = setUpgrade(s, u, "u-termite", "n", 0, 2);
+  assert.deepEqual(surplus(s), [["termite", 1]], "11 INF: Mole + 1 Termite are enough");
+});
+
+// ---------------------------------------------------------------- limits (issue #3)
+
+test("support formations: two per brotherhood, none without a brotherhood", () => {
+  let [s] = army("f-berserker", "f-artillery-battery", "f-guild-squadron");
+  assert.deepEqual(allCodes(s), [], "two support formations for one brotherhood");
+  [s] = army("f-berserker", "f-artillery-battery", "f-guild-squadron", "f-thunderfire-battery");
+  assert.deepEqual(allCodes(s), ["formation-limit"], "three support formations for one brotherhood");
+  assert.equal(validate(data, s)[0].params.id, "support-per-core");
+  [s] = army("f-berserker", "f-thunderer", "f-artillery-battery", "f-guild-squadron", "f-thunderfire-battery", "f-gyrocopter-wing");
+  assert.deepEqual(allCodes(s), [], "two brotherhoods allow four support formations");
+  [s] = army("f-air-attack-corps");
+  assert.deepEqual(allCodes(s), ["formation-limit"], "support formation without any brotherhood");
+});
+
+test("war engines: any number, but at most one third of the army points", () => {
+  let [s] = army("f-warrior", "f-warrior", "f-warrior", "f-thunderer", "f-thunderer", "f-colossus");
+  assert.equal(summarize(data, s).total, 1800);
+  assert.deepEqual(allCodes(s), [], "600 of 1800 is exactly one third");
+  [s] = army("f-warrior", "f-warrior", "f-warrior", "f-thunderer", "f-thunderer", "f-colossus", "f-cyclops");
+  assert.deepEqual(allCodes(s), ["share-limit"], "1200 of 2400 is half");
+  assert.equal(validate(data, s)[0].params.id, "warengines-share");
+  [s] = army("f-colossus");
+  assert.deepEqual(allCodes(s), ["share-limit"], "a war engine alone is the whole army");
+  [s] = army("f-berserker", "f-air-attack-corps", "f-thunderfire-battery");
+  assert.deepEqual(allCodes(s), [], "support formations do not count as war engines");
+});
+
+test("0-1 Grand Warlord and 0-1 Living Ancestor per army, one character each", () => {
+  for (const id of ["u-grandwarlord", "u-living-ancestor"]) {
+    const v = data.upgrades.find((u) => u.id === id).variants[0];
+    assert.equal(v.perUnit, undefined, `${id}: 'add one' is not a per-unit purchase`);
+    assert.equal(v.perArmy, 1, `${id}: once per army`);
+  }
+  let [s, [w1, w2]] = army("f-warrior", "f-warrior");
+  s = setUpgrade(s, w1, "u-warlord-replace", "1");
+  s = setUpgrade(s, w1, "u-grandwarlord", "n");
+  s = setUpgrade(s, w1, "u-living-ancestor", "n");
+  assert.equal(entry(s).pts, 250 + 25 + 50 + 50);
+  assert.deepEqual(entry(s).roster, { warlord: 1, warriors: 9, "grand-warlord": 1, "living-ancestor": 1 });
+  assert.deepEqual(allCodes(s), [], "one of each, on the same formation");
+  s = setUpgrade(s, w2, "u-warlord-replace", "1");
+  s = setUpgrade(s, w2, "u-grandwarlord", "n");
+  assert.deepEqual(allCodes(s), ["variant-army-limit"], "a second Grand Warlord");
+  s = setUpgrade(s, w2, "u-living-ancestor", "n");
+  assert.deepEqual(allCodes(s), ["variant-army-limit", "variant-army-limit"], "and a second Living Ancestor");
+  s = setUpgrade(s, w2, "u-grandwarlord", "n"); // re-picking does not add a character
+  assert.equal(allCodes(s).length, 2);
+});
+
+test("a chosen count cannot add more than one Grand Warlord or Living Ancestor", () => {
+  let [s, [u]] = army("f-warrior");
+  s = setUpgrade(s, u, "u-warlord-replace", "1");
+  s = setUpgrade(s, u, "u-grandwarlord", "n", 0, 3);
+  s = setUpgrade(s, u, "u-living-ancestor", "n", 0, 2);
+  assert.equal(entry(s).pts, 375);
+  assert.equal(entry(s).roster["grand-warlord"], 1);
+  assert.equal(entry(s).roster["living-ancestor"], 1);
+  assert.deepEqual(allCodes(s), []);
+});
+
+test("Grand Warlord and Living Ancestor need a Warlord, a Guildmaster or a war engine in the formation", () => {
+  for (const up of ["u-grandwarlord", "u-living-ancestor"]) {
+    let [s, [u]] = army("f-warrior");
+    s = setUpgrade(s, u, up, "n");
+    assert.deepEqual(codes(s), ["variant-requires"], `${up}: a Warrior formation has only a Hearthguard`);
+    s = setUpgrade(s, u, "u-warlord-replace", "1");
+    assert.deepEqual(codes(s), [], `${up}: after swapping the Hearthguard for a Warlord (picked after the character)`);
+    s = removeUpgrade(s, u, "u-warlord-replace");
+    assert.deepEqual(codes(s), ["variant-requires"], `${up}: the Warlord is gone again`);
+
+    [s, [u]] = army("f-warrior");
+    s = setSize(s, u, "g");
+    s = setUpgrade(s, u, "u-warlord-replace", "1");
+    s = setUpgrade(s, u, up, "n");
+    assert.deepEqual(codes(s), [], `${up}: Medium Warrior with a Warlord`);
+
+    for (const formation of ["f-guild-squadron", "f-air-attack-corps", "f-colossus", "f-cyclops", "f-landtrain", "f-leviathan"]) {
+      [s, [u]] = army(formation);
+      s = setUpgrade(s, u, up, "n");
+      assert.deepEqual(codes(s), [], `${up} on ${formation}`);
+    }
+  }
 });
 
 // ---------------------------------------------------------------- order of selection
 
-test("the order in which upgrades are picked does not change the result (Land Train)", { todo: "computeEntry applies upgrades in selection order; replacing Battlecars that are only added by a later pick fails" }, () => {
+test("the order in which upgrades are picked does not change the result (Land Train)", () => {
   const pick = (order) => {
     let [s, [u]] = army("f-landtrain");
     for (const [up, v, n] of order) s = setUpgrade(s, u, up, v, 0, n);
@@ -380,7 +571,7 @@ test("the order in which upgrades are picked does not change the result (Land Tr
   assert.deepEqual(b.problems, a.problems);
 });
 
-test("the order in which upgrades are picked does not change the result (Guild Squadron)", { todo: "same cause: Trikes replace Bikers that are only added by a later pick" }, () => {
+test("the order in which upgrades are picked does not change the result (Guild Squadron)", () => {
   const pick = (order) => {
     let [s, [u]] = army("f-guild-squadron");
     for (const [up, n] of order) s = setUpgrade(s, u, up, "n", 0, n);

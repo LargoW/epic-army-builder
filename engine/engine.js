@@ -100,6 +100,9 @@ function transportRule(data, formationDef) {
   return (data.transport || []).find((t) => matches(t.appliesTo, formationDef));
 }
 
+// All transport rules of a formation (Squats: Rhinos, Termites and Moles).
+const transportRules = (data, formationDef) => (data.transport || []).filter((t) => matches(t.appliesTo, formationDef));
+
 function isCarriable(data, rule, unitId) {
   const unit = data.units[unitId];
   if (!unit || unit.type !== rule.carries.type) return false;
@@ -139,6 +142,7 @@ export function computeEntry(data, entry) {
   });
 
   const rule = transportRule(data, def);
+  const rules = transportRules(data, def);
   let addedCarriable;
   const upgradeCounts = {};
   // Apply upgrades in the order the formation lists them, so replace effects do not depend on the order of selection.
@@ -194,9 +198,12 @@ export function computeEntry(data, entry) {
   });
 
   // Variants that can only be taken together with certain units (e.g. an Oddboy joins a specific vehicle).
+  // Units the variant adds itself do not count: "a matching heavy suit must already be in the cadre".
   entry.upgrades.forEach((sel) => {
     const variant = upgrades[sel.upgrade] && upgrades[sel.upgrade].variants.find((v) => v.id === sel.variant);
-    if (variant && variant.requires && !variant.requires.some((u) => (roster[u] || 0) > 0))
+    const n = variant && variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+    const own = (u) => variant.effects.reduce((a, fx) => a + ((fx.op === "add" && fx.unit === u) || (fx.op === "replace" && fx.to === u) ? fx.count * n : 0), 0);
+    if (variant && variant.requires && !variant.requires.some((u) => (roster[u] || 0) - own(u) > 0))
       problems.push({ code: "variant-requires", params: { label: variant.label, units: variant.requires }, refs: { uid: entry.uid } });
   });
 
@@ -218,13 +225,37 @@ export function computeEntry(data, entry) {
   }
 
   // All carriable INF must be transported as soon as the formation contains transports.
-  if (rule && (roster[rule.vehicle] || 0) > 0) {
-    const carriable = Object.entries(roster)
-      .filter(([u]) => isCarriable(data, rule, u))
-      .reduce((a, [, n]) => a + n, 0);
-    if (roster[rule.vehicle] * rule.capacity < carriable)
-      problems.push({ code: "transport-incomplete", params: { inf: carriable, vehicles: roster[rule.vehicle], capacity: rule.capacity }, refs: { uid: entry.uid } });
+  // Several transport types of one formation (Squat Rhinos, Termites, Moles) add up their seats.
+  const present = rules.filter((t) => (roster[t.vehicle] || 0) > 0);
+  if (rule && present.length) {
+    // Units that count as more than one unit when transported (Squat Rapiers, Warlords): carries.weights { unit: seats }.
+    const weights = rule.carries.weights || {};
+    const transported = Object.entries(roster).filter(([u]) => isCarriable(data, rule, u));
+    const carriable = transported.reduce((a, [u, n]) => a + n * (weights[u] || 1), 0);
+    const units = transported.reduce((a, [, n]) => a + n, 0);
+    const seats = present.reduce((a, t) => a + roster[t.vehicle] * t.capacity, 0);
+    if (seats < carriable)
+      problems.push({
+        code: "transport-incomplete",
+        params: { inf: carriable, units, vehicles: present.reduce((a, t) => a + roster[t.vehicle], 0), capacity: rule.capacity, seats },
+        refs: { uid: entry.uid },
+      });
+    // "minimum" transports: no vehicle of that type may be superfluous (dropping one still has to leave enough seats).
+    present
+      .filter((t) => t.minimum)
+      .forEach((t) => {
+        const spare = Math.min(roster[t.vehicle], Math.floor((seats - carriable) / t.capacity));
+        if (spare > 0) problems.push({ code: "vehicle-surplus", params: { unit: t.vehicle, max: roster[t.vehicle] - spare }, refs: { uid: entry.uid } });
+      });
   }
+
+  // Transport types that may not be combined (exclusiveWith lists the ids of the other transport rules).
+  present.forEach((t) =>
+    (t.exclusiveWith || []).forEach((id) => {
+      const other = present.find((o) => o.id === id);
+      if (other) problems.push({ code: "transport-mixed", params: { unit: t.vehicle, other: other.vehicle }, refs: { uid: entry.uid } });
+    })
+  );
 
   //Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
   Object.keys(roster).forEach((u) => {

@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { createState, addFormation, setUpgrade, summarize, validate } from "../engine/engine.js";
+import { createState, addFormation, setUpgrade, setChoice, summarize, validate } from "../engine/engine.js";
 
 const load = (p) => JSON.parse(readFileSync(new URL(`../data/ear-de/${p}.json`, import.meta.url), "utf8"));
 const armies = { sacea: load("tau/sacea"), viorla: load("tau/viorla"), squats: load("sq/squats") };
@@ -20,7 +20,9 @@ test("every formation is valid on its own (except ships needing no parent)", () 
   for (const [name, data] of Object.entries(armies))
     for (const f of data.formations) {
       const [s] = build(data, f.id);
-      const c = codes(data, s).filter((x) => x !== "share-limit");
+      // ships/air are limited by share, support formations need a core formation
+      const allowed = ["share-limit", ...(f.tags.includes("support") ? ["formation-limit"] : [])];
+      const c = codes(data, s).filter((x) => !allowed.includes(x));
       assert.deepEqual(c, [], `${name}/${f.id}`);
     }
 });
@@ -58,6 +60,17 @@ test("Vior'la: heavy suit upgrade needs a matching heavy suit in the cadre", () 
   assert.deepEqual(codes(d, s), []);
   s = setUpgrade(s, u, "heavy", "xv1072");
   assert.ok(codes(d, s).includes("variant-requires"));
+});
+
+test("Vior'la: the cadre's own suit choice decides which heavy suit type may be added", () => {
+  const d = armies.viorla;
+  let [s, [u]] = build(d, "heavy-cadre");
+  s = setChoice(s, u, 1, { xv107: 3 }); // the cadre consists of three suits of one type
+  s = setUpgrade(s, u, "heavy", "xv1072");
+  assert.deepEqual(codes(d, s), [], "XV107 are already in the cadre");
+  assert.equal(summarize(d, s).entries[0].roster.xv107, 5);
+  s = setUpgrade(s, u, "heavy", "xv1091");
+  assert.ok(codes(d, s).includes("variant-requires"), "no XV109 in the cadre");
 });
 
 test("Squats: transport vehicles are priced per vehicle", () => {

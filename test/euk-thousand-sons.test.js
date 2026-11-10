@@ -70,7 +70,7 @@ test("every formation is valid in its base configuration (support/elite need a c
   }
 });
 
-test("constraint selectors point at existing tags, formations or upgrades", { todo: "titans-navy-share uses tag:titans-navy but the formations carry navy-titan; orbital-once and u-warlordCabal match nothing; initiative lacks the tag: prefix" }, () => {
+test("constraint selectors point at existing tags, formations or upgrades", () => {
   const tags = new Set(data.formations.flatMap((f) => f.tags || []));
   const ids = new Set([...data.formations.map((f) => f.id), ...data.upgrades.map((u) => u.id)]);
   const bad = [];
@@ -85,7 +85,7 @@ test("constraint selectors point at existing tags, formations or upgrades", { to
   assert.deepEqual(bad, []);
 });
 
-test("a formation's tag matches the section it is listed in (core, elite, support)", { todo: "RULES QUESTION: Terminators are listed under Elite but tagged core; Tzaangor Herd is listed under Core but tagged support. Which one is right decides how many support/elite formations are allowed." }, () => {
+test("a formation's tag matches the section it is listed in (core, elite, support)", () => {
   for (const s of data.sections.filter((x) => ["core", "elite", "support"].includes(x.id)))
     for (const id of s.formations) assert.ok(data.formations.find((f) => f.id === id).tags.includes(s.id), `${id} is listed under ${s.id}`);
 });
@@ -268,6 +268,17 @@ test("retinue Rhinos with extra units: 9 INF need 5 Rhinos", () => {
   assert.deepEqual(codes(s), []);
 });
 
+test("retinue Rhinos: no more than needed", () => {
+  let [s, [u]] = army("f-ts-retinue");
+  s = setUpgrade(s, u, "u-csmrhinos", "n", 0, 3);
+  assert.deepEqual(codes(s), [], "3 Rhinos carry 6 INF");
+  s = setUpgrade(s, u, "u-csmrhinos", "n", 0, 4);
+  assert.deepEqual(codes(s), ["vehicle-surplus"], "4 Rhinos have two spare seats");
+  s = setUpgrade(s, u, "u-retinue-extra-units", "3");
+  s = setUpgrade(s, u, "u-csmrhinos", "n", 0, 5);
+  assert.deepEqual(codes(s), [], "9 INF need 5 Rhinos");
+});
+
 test("Rhinos: at most five", () => {
   let [s, [u]] = army("f-ts-retinue");
   s = setUpgrade(s, u, "u-csmrhinos", "n", 0, 6);
@@ -315,7 +326,7 @@ test("navy and titans: at most one third of the army (exactly one third is allow
   assert.ok(codes(s).includes("share-limit"));
 });
 
-test("0-1 Warlord per army", { todo: "c-warlord-per-army is an upgradeConstraint with perArmy, but the engine only checks perArmy on variants" }, () => {
+test("0-1 Warlord per army", () => {
   let [s, [r, t]] = army("f-ts-retinue", "f-ts-terminators");
   s = setUpgrade(s, r, "u-warlord", "2");
   assert.deepEqual(codes(s), [], "one Warlord");
@@ -323,7 +334,7 @@ test("0-1 Warlord per army", { todo: "c-warlord-per-army is an upgradeConstraint
   assert.notDeepEqual(codes(s), [], "two Warlords");
 });
 
-test("0-1 Daemon Prince per army", { todo: "c-daemon-prince-per-army is an upgradeConstraint with perArmy, which the engine does not evaluate across formations" }, () => {
+test("0-1 Daemon Prince per army", () => {
   let [s, [r, t]] = army("f-ts-retinue", "f-ts-terminators");
   s = setUpgrade(s, r, "u-warlord", "2");
   s = setUpgrade(s, r, "u-daemon-prince", "2");
@@ -334,7 +345,7 @@ test("0-1 Daemon Prince per army", { todo: "c-daemon-prince-per-army is an upgra
 
 // ---------------------------------------------------------------- order of selection
 
-test("the order in which upgrades are picked does not change the result (Warlord -> Supreme Daemon Prince)", { todo: "computeEntry applies upgrades in selection order; a replace that depends on another upgrade fails when picked first" }, () => {
+test("the order in which upgrades are picked does not change the result (Warlord -> Supreme Daemon Prince)", () => {
   const pick = (order) => {
     let [s, [u]] = army("f-ts-terminators");
     for (const [up, v] of order) s = setUpgrade(s, u, up, v);
@@ -346,7 +357,7 @@ test("the order in which upgrades are picked does not change the result (Warlord
   assert.deepEqual(b.problems, a.problems);
 });
 
-test("the order in which upgrades are picked does not change the result (extra Predators / Land Raiders)", { todo: "same cause: replace is evaluated before the Predators it needs have been added" }, () => {
+test("the order in which upgrades are picked does not change the result (extra Predators / Land Raiders)", () => {
   const pick = (order) => {
     let [s, [u]] = army("f-armoured-company");
     for (const [up, v] of order) s = setUpgrade(s, u, up, v);
