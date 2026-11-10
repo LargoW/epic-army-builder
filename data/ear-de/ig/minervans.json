@@ -1,0 +1,116 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/ig/minervans",
+  "name": "Minervanische Panzerlegion",
+  "faction": "Astra Militarum",
+  "version": "1.0.Beta-2",
+  "source": { "file": "lists_de/IG/minervans.json", "version": "1.0.Beta-2", "commit": null },
+  "strategy": 2,
+  "initiative": [ { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "lord-kommissar": { "name": "Lord-Kommissar", "from": "IG.json", "type": "CH" },
+    "kommissarkapitan": { "name": "Kommissarkapitän", "from": "IG.json", "type": "CH" },
+    "chimera": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
+    "infantry": { "name": "Infanterie", "from": "IG.json", "type": "INF" },
+    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
+    "hellhound": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
+    "salamander": { "name": "Salamander-Spähpanzer", "from": "IG.json", "type": "AV" },
+    "basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
+    "bombard": { "name": "Bombarde", "from": "IG.json", "type": "AV" },
+    "mantikor": { "name": "Mantikor", "from": "IG.json", "type": "AV" },
+    "greiff": { "name": "Greif", "from": "IG.json", "type": "AV" },
+    "medusa": { "name": "Medusa", "from": "IG.json", "type": "AV" },
+    "hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
+    "leman-russ": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },
+    "leman-russ-thunderer": { "name": "Leman Russ Thunderer", "from": "IG.json", "type": "AV" },
+    "leman-russ-vanquisher": { "name": "Leman Russ Vanquisher", "from": "IG.json", "type": "AV" },
+    "leman-russ-conqueror": { "name": "Leman Russ Conqueror", "from": "IG.json", "type": "AV" },
+    "leman-russ-punisher": { "name": "Leman Russ Punisher", "from": "IG.json", "type": "AV" },
+    "leman-russ-zerstörer": { "name": "Leman-Russ-Zerstörer", "from": "IG.json", "type": "AV" },
+    "leman-russ-belagerungspanzer": { "name": "Leman-Russ-Belagerungspanzer", "from": "IG.json", "type": "AV" },
+    "leman-russ-henker": { "name": "Leman-Russ-Henker", "from": "IG.json", "type": "AV" },
+    "leman-russ-exterminator": { "name": "Leman Russ Exterminator", "from": "IG.json", "type": "AV" },
+    "shadowsword": { "name": "Shadowsword", "from": "IG.json", "type": "AV" },
+    "baneblade": { "name": "Baneblade", "from": "IG.json", "type": "AV" },
+    "stormblade": { "name": "Stormblade", "from": "IG.json", "type": "AV" },
+    "stormsword": { "name": "Stormsword", "from": "IG.json", "type": "AV" },
+    "stormhammer": { "name": "Stormhammer", "from": "IG.json", "type": "AV" },
+    "warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" },
+    "thunderbolt": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AV" },
+    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
+    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "company",
+      "name": "Minervan Kompanie Verbände",
+      "formations": ["minovanian-panzerkompanie", "minovanian-superschwere", "minovanian-artillerie"]
+    },
+    {
+      "id": "support",
+      "name": "Minervan Unterstützungsverbände",
+      "formations": ["minovanian-leman-russ-staffel", "minovanian-artillerie"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Minervan Flotte",
+      "formations": ["minovanian-donnerkeil-staffel", "minovanian-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "minovanian-panzerkompanie",
+      "name": "Minervanische Panzerkompanie",
+      "pts": 500,
+      "tags": ["company"],
+      "units": [ { "unit": "leman-russ-vanquisher", "count": 1 }, { "unit": "kommissarkapitan", "count": 1 }, { "unit": "leman-russ", "count": 7 } ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-superschwere",
+      "name": "Minervanische Superschwere Panzerkompanie",
+      "pts": 500,
+      "tags": ["company"],
+      "units": [ { "unit": "baneblade", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-artillerie",
+      "name": "Artilleriekompanie",
+      "pts": 400,
+      "tags": ["company"],
+      "units": [ { "unit": "basilisk", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-leman-russ-staffel",
+      "name": "Leman-Russ-Staffel",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [ { "unit": "leman-russ", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-donnerkeil-staffel",
+      "name": "Donnerkeil-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "thunderbolt", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
+      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

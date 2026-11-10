@@ -22,6 +22,69 @@
       "version": "1.0.2"
     },
     {
+      "id": "ear-de/ig/cadianshocktroops",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Cadianische Stoßtruppen",
+      "version": "0.6.2"
+    },
+    {
+      "id": "ear-de/ig/deathkorps",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Todeskorps von Krieg",
+      "version": "1.0.Beta-4"
+    },
+    {
+      "id": "ear-de/ig/barans",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Belagerungsmeister von Baran",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/ig/catachandeathworld",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Catachanische Dschungelkämpfer",
+      "version": "0.7.2"
+    },
+    {
+      "id": "ear-de/ig/elysiandroptroops",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Elysianische Luftlandetruppen",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/ig/minervans",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Minervanische Panzerlegion",
+      "version": "1.0.Beta-2"
+    },
+    {
+      "id": "ear-de/ig/valhallanicewarriors",
+      "ruleset": "ear-de",
+      "faction": "Astra Militarum",
+      "name": "Valhallanische Eis-Krieger",
+      "version": "0.6.0"
+    },
+    {
+      "id": "ear-de/chaos/thousandsons",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Thousand Sons",
+      "version": "1.0.Beta-3"
+    },
+    {
+      "id": "ear-de/chaos/blacklegion",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Black Legion",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "ear-de/sm/codexastartes",
       "ruleset": "ear-de",
       "faction": "Space Marines",

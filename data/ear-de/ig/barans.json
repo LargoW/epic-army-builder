@@ -1,0 +1,219 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/ig/barans",
+  "name": "Belagerungsmeister von Baran",
+  "faction": "Astra Militarum",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/IG/barans.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 2,
+  "initiative": [ { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "baran-oberbefehlshaber": { "name": "Baran-Belagerungsmeister", "from": "IG.json", "type": "INF" },
+    "baran-befehlshaber": { "name": "Baran-Befehlshaber", "from": "IG.json", "type": "INF" },
+    "commissar": { "name": "Kommissar", "from": "IG.json", "type": "CH" },
+    "belagerungsinfanterie": { "name": "Belagerungsinfanterie", "from": "IG.json", "type": "INF" },
+    "pioniere": { "name": "Pioniere", "from": "IG.json", "type": "INF" },
+    "todesreiter": { "name": "Todesreiter", "from": "IG.json", "type": "INF" },
+    "sniper": { "name": "Scharfschützen", "from": "IG.json", "type": "INF" },
+    "ogryn": { "name": "Ogryns", "from": "IG.json", "type": "INF" },
+    "thudd-gun": { "name": "Thudd-Geschütz", "from": "IG.json", "type": "AV" },
+    "rapier": { "name": "Rapier", "from": "IG.json", "type": "AV" },
+    "maulwurfswerfer": { "name": "Maulwurfswerfer-Trupp", "from": "IG.json", "type": "AV" },
+    "schwere-flugabwehrkanone": { "name": "Schwere Flugabwehrkanone", "from": "IG.json", "type": "AV" },
+    "medusa": { "name": "Medusa-Kanone", "from": "IG.json", "type": "AV" },
+    "bombard": { "name": "Bombarde", "from": "IG.json", "type": "AV" },
+    "griffon": { "name": "Greif", "from": "IG.json", "type": "AV" },
+    "hellhound": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
+    "seuchenwolf": { "name": "Seuchenwolf", "from": "IG.json", "type": "AV" },
+    "teufelshund": { "name": "Teufelshund", "from": "IG.json", "type": "AV" },
+    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
+    "haubitze": { "name": "Haubitze", "from": "IG.json", "type": "AV" },
+    "ragnarok": { "name": "Ragnarok-Schwerer Kampfpanzer", "from": "IG.json", "type": "AV" },
+    "siegfried": { "name": "Siegfried-Leichtpanzer", "from": "IG.json", "type": "AV" },
+    "hades": { "name": "Hades-Aufbrechbohrer", "from": "IG.json", "type": "AV" },
+    "macharius": { "name": "Macharius", "from": "IG.json", "type": "AV" },
+    "macharius-commandopanzer": { "name": "Macharius-Kommandopanzer", "from": "IG.json", "type": "AV" },
+    "malcador": { "name": "Malcador", "from": "IG.json", "type": "AV" },
+    "malcador-defender": { "name": "Malcador Defender", "from": "IG.json", "type": "AV" },
+    "verteidigungslaser": { "name": "Verteidigungslaser", "from": "IG.json", "type": "AV" },
+    "thunderbolt": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AV" },
+    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
+    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Kernkompanie-Verbände",
+      "description": "Ein Regimentshauptquartier der Baran-Belagerungsmeister muss aufgestellt werden. Jeder Kernkompanie-Verband muss mindestens eine und höchstens drei Aufwertungen erhalten. Jede Aufwertung darf nur einmal gewählt werden.",
+      "formations": ["baran-rhq", "baran-belagerungsinfanterie-kompanie"]
+    },
+    {
+      "id": "support",
+      "name": "Baran Unterstützungsverbände",
+      "description": "Pro Kernkompanie dürfen bis zu zwei Unterstützungsverbände aufgestellt werden.",
+      "formations": [
+        "baran-schwere-panzerkompanie",
+        "baran-macharius-kompanie",
+        "baran-pionierkompanie",
+        "baran-belagerungsartilleriestellung",
+        "baran-haubitzenstellung",
+        "baran-flakstellung",
+        "baran-leichte-artilleriestellung",
+        "baran-greif-batterie",
+        "baran-todesreiter",
+        "baran-belagerungsaufklarungsstaffel",
+        "baran-verteidigungslaser"
+      ]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Imperial Flotte",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für Imperiale Flotte Verbände ausgegeben werden",
+      "formations": ["baran-donnerkeil-staffel", "baran-marauder-staffel", "baran-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "baran-rhq",
+      "name": "1 Regimentshauptquartier der Baran-Belagerungsmeister",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "baran-oberbefehlshaber", "count": 1 },
+        { "unit": "commissar", "count": 1 },
+        { "unit": "belagerungsinfanterie", "count": 9 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-belagerungsinfanterie-kompanie",
+      "name": "Belagerungsinfanterie-Kompanie",
+      "pts": 175,
+      "tags": ["core"],
+      "units": [
+        { "unit": "baran-befehlshaber", "count": 1 },
+        { "unit": "commissar", "count": 1 },
+        { "unit": "belagerungsinfanterie", "count": 9 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-schwere-panzerkompanie",
+      "name": "Schwere Panzerkompanie",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [ { "unit": "ragnarok", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-macharius-kompanie",
+      "name": "Macharius-Kompanie",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [ { "unit": "macharius-commandopanzer", "count": 1 }, { "unit": "macharius", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-pionierkompanie",
+      "name": "Pionierkompanie",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [ { "unit": "pioniere", "count": 8 }, { "unit": "hades", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-belagerungsartilleriestellung",
+      "name": "Belagerungsartilleriestellung",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "medusa", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-haubitzenstellung",
+      "name": "Haubitzenstellung",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [ { "unit": "haubitze", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-flakstellung",
+      "name": "Flakstellung",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [ { "unit": "schwere-flugabwehrkanone", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-leichte-artilleriestellung",
+      "name": "Leichte Artilleriestellung",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [ { "unit": "rapier", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-greif-batterie",
+      "name": "Greif-Batterie",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [ { "unit": "griffon", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-todesreiter",
+      "name": "Todesreiter",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [ { "unit": "todesreiter", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-belagerungsaufklarungsstaffel",
+      "name": "Belagerungsaufklärungsstaffel",
+      "pts": 125,
+      "tags": ["support"],
+      "units": [ { "unit": "siegfried", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-verteidigungslaser",
+      "name": "Verteidigungslaser",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "verteidigungslaser", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-donnerkeil-staffel",
+      "name": "Donnerkeil-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "thunderbolt", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-marauder-staffel",
+      "name": "Marauder-Staffel",
+      "pts": 250,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "marauder", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "baran-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
+      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

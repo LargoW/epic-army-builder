@@ -1,0 +1,124 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/chaos/blacklegion",
+  "name": "Black Legion",
+  "faction": "Chaos",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/Chaos/blacklegion.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 4,
+  "initiative": [ { "formations": ["tag:bl-core"], "value": "1+" }, { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "bl-kriegsherr": { "name": "Kriegsherr", "from": "CSM.json", "type": "AV" },
+    "bl-chaosfuerst": { "name": "Chaosfürst", "from": "CSM.json", "type": "AV" },
+    "bl-hexerfuerst": { "name": "Hexerfürst", "from": "CSM.json", "type": "AV" },
+    "chaoschampion": { "name": "Chaoschampion", "from": "CSM.json", "type": "CH" },
+    "ikonentraeger": { "name": "Ikonenträger", "from": "CSM.json", "type": "CH" },
+    "dämonenprinz": { "name": "Dämonenprinz", "from": "CSM.json", "type": "AV" },
+    "chaos-space-marine": { "name": "Chaos Space Marines", "from": "CSM.json", "type": "INF" },
+    "havoc": { "name": "Havocs", "from": "CSM.json", "type": "AV" },
+    "auserkorene": { "name": "Auserkorene", "from": "CSM.json", "type": "AV" },
+    "raptor": { "name": "Raptoren", "from": "CSM.json", "type": "AV" },
+    "chaos-terminator": { "name": "Chaos-Terminatoren", "from": "CSM.json", "type": "AV" },
+    "noise-marines": { "name": "Noise Marines", "from": "CSM.json", "type": "AV" },
+    "seuchenmarines": { "name": "Seuchenmarines", "from": "CSM.json", "type": "AV" },
+    "berserker": { "name": "Khorne Berserker", "from": "CSM.json", "type": "AV" },
+    "rubric-marines": { "name": "Rubrik-Marines", "from": "CSM.json", "type": "INF" },
+    "kyborg": { "name": "Kyborgs", "from": "CSM.json", "type": "AV" },
+    "chaos-sturm-bike": { "name": "Chaos-Sturmbikes", "from": "CSM.json", "type": "AV" },
+    "chaos-rhino": { "name": "Chaos Rhino", "from": "CSM.json", "type": "AV" },
+    "chaos-land-raider": { "name": "Chaos Land Raider", "from": "CSM.json", "type": "AV" },
+    "chaos-predator": { "name": "Chaos Predator", "from": "CSM.json", "type": "AV" },
+    "chaos-vindicator": { "name": "Chaos Vindicator", "from": "CSM.json", "type": "AV" },
+    "chaos-cybot": { "name": "Chaos-Cybot", "from": "CSM.json", "type": "AV" },
+    "chaos-jäger": { "name": "Chaos-Jäger", "from": "CSM.json", "type": "AV" },
+    "geisel": { "name": "Geißel", "from": "darkmechanicus.json", "type": "AV" },
+    "dezimator": { "name": "Dezimator", "from": "darkmechanicus.json", "type": "AV" },
+    "todesrad": { "name": "Todesrad", "from": "darkmechanicus.json", "type": "AV" },
+    "dämonetten": { "name": "Dämonetten des Slaanesh", "from": "daemons.json", "type": "AV" },
+    "seuchenhüter": { "name": "Seuchenhüter des Nurgle", "from": "daemons.json", "type": "AV" },
+    "zerfleischer": { "name": "Zerfleischer des Khorne", "from": "daemons.json", "type": "AV" },
+    "horror": { "name": "Horrors des Tzeentch", "from": "daemons.json", "type": "AV" },
+    "hüter": { "name": "Hüter der Geheimnisse", "from": "daemons.json", "type": "AV" },
+    "großer-verpester": { "name": "Großer Verpester", "from": "daemons.json", "type": "AV" },
+    "blutdämon": { "name": "Blutdämon", "from": "daemons.json", "type": "AV" },
+    "herr-der-wandel": { "name": "Herrscher des Wandels", "from": "daemons.json", "type": "AV" },
+    "dämonische-bestien": { "name": "Dämonische Bestien des ungeteilten Chaos", "from": "daemons.json", "type": "AV" },
+    "chaos-warhound": { "name": "Chaos-Warhound", "from": "traitortitanlegions.json", "type": "AV" },
+    "chaos-reaver": { "name": "Chaos-Reaver", "from": "traitortitanlegions.json", "type": "AV" },
+    "chaos-kriegsherr-titan": { "name": "Chaos-Kriegsherr", "from": "traitortitanlegions.json", "type": "AV" },
+    "höllenklinge": { "name": "Höllenklinge Abfangjäger", "from": "chaosnavy.json", "type": "AV" },
+    "höllenklaue": { "name": "Höllenklaue-Jagdbomber", "from": "chaosnavy.json", "type": "AV" },
+    "kreuzer": { "name": "Kreuzer der Devastation-Klasse", "from": "chaosnavy.json", "type": "AV" },
+    "schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Black Legion Kernverbände",
+      "formations": ["bl-gefolge", "bl-kommandostaffel"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Black Legion Verräter-Titanen",
+      "formations": ["bl-chaos-warhound", "bl-chaos-reaver", "bl-chaos-kriegsherr-titan", "bl-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "bl-gefolge",
+      "name": "Gefolge der Black Legion",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "bl-kriegsherr", "count": 1 },
+        { "unit": "chaos-space-marine", "count": 8 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "bl-kommandostaffel",
+      "name": "Black Legion Kommandostaffel",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [ { "unit": "bl-chaosfuerst", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "bl-chaos-warhound",
+      "name": "Chaos-Warhound",
+      "pts": 150,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "chaos-warhound", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "bl-chaos-reaver",
+      "name": "Chaos-Reaver",
+      "pts": 200,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "chaos-reaver", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "bl-chaos-kriegsherr-titan",
+      "name": "Chaos-Kriegsherr",
+      "pts": 250,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "chaos-kriegsherr-titan", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "bl-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "kreuzer", "count": 1 } ],
+      "upgrades": [ { "upgrade": "schlachtschiff", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

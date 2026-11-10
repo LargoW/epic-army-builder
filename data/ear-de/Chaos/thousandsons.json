@@ -1,0 +1,96 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/chaos/thousandsons",
+  "name": "Thousand Sons",
+  "faction": "Chaos",
+  "version": "1.0.Beta-3",
+  "source": { "file": "lists_de/Chaos/thousandsons.json", "version": "1.0.Beta-3", "commit": null },
+  "strategy": 4,
+  "initiative": [ { "formations": ["tag:ts-core"], "value": "1+" }, { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "ts-hexer": { "name": "Erhabener Hexer", "from": "CSM.json", "type": "AV" },
+    "ts-hexer-ascendant": { "name": "Aufstrebender Hexer", "from": "CSM.json", "type": "AV" },
+    "chaoschampion": { "name": "Chaoschampion", "from": "CSM.json", "type": "CH" },
+    "ikonentraeger": { "name": "Ikonenträger", "from": "CSM.json", "type": "CH" },
+    "dämonenprinz": { "name": "Dämonenprinz des Tzeentch", "from": "CSM.json", "type": "AV" },
+    "ts-marine": { "name": "Marines der Thousand Sons", "from": "CSM.json", "type": "INF" },
+    "ts-havoc": { "name": "Thousand-Sons-Havocs", "from": "CSM.json", "type": "AV" },
+    "ts-terminator": { "name": "Scarab-Occult-Terminatoren", "from": "CSM.json", "type": "AV" },
+    "rubric-marines": { "name": "Rubrik-Marines", "from": "CSM.json", "type": "INF" },
+    "hexer-disk": { "name": "Hexer auf Disks", "from": "CSM.json", "type": "AV" },
+    "ts-rhino": { "name": "Thousand-Sons-Rhino", "from": "CSM.json", "type": "AV" },
+    "ts-land-shadows": { "name": "Thousand-Sons-Land-Schattenbarke", "from": "CSM.json", "type": "AV" },
+    "ts-predator": { "name": "Thousand-Sons-Predator", "from": "CSM.json", "type": "AV" },
+    "ts-cybot": { "name": "Thousand-Sons-Cybot", "from": "CSM.json", "type": "AV" },
+    "tzaangor": { "name": "Tzaangors", "from": "chaoscultists.json", "type": "AV" },
+    "chaosbrut": { "name": "Chaosbrut", "from": "chaoscultists.json", "type": "AV" },
+    "mutalith": { "name": "Mutalith-Vortexbestie", "from": "chaoscultists.json", "type": "AV" },
+    "tauscher": { "name": "Täuscher", "from": "darkmechanicus.json", "type": "AV" },
+    "silberturm": { "name": "Silberturm", "from": "darkmechanicus.json", "type": "AV" },
+    "warppalast": { "name": "Warp-Palast", "from": "darkmechanicus.json", "type": "AV" },
+    "horror": { "name": "Horrors des Tzeentch", "from": "daemons.json", "type": "AV" },
+    "feuerdämon": { "name": "Feuerdämonen des Tzeentch", "from": "daemons.json", "type": "AV" },
+    "kreischer": { "name": "Kreischer des Tzeentch", "from": "daemons.json", "type": "AV" },
+    "herr-der-wandel": { "name": "Herrscher des Wandels", "from": "daemons.json", "type": "AV" },
+    "warphound": { "name": "Warp-Hound", "from": "traitortitanlegions.json", "type": "AV" },
+    "doomwing": { "name": "Doomwing", "from": "chaosnavy.json", "type": "AV" },
+    "firelord": { "name": "Firelord", "from": "chaosnavy.json", "type": "AV" },
+    "warpship": { "name": "Warpship", "from": "chaosnavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Thousand Sons Kernverbände",
+      "formations": ["ts-gefolge", "ts-terminatoren"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Thousand Sons Flotte",
+      "formations": ["ts-donnerkeil-staffel", "ts-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ts-gefolge",
+      "name": "Thousand Sons Gefolge",
+      "pts": 375,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ts-hexer-ascendant", "count": 1 },
+        { "unit": "rubric-marines", "count": 5 },
+        { "unit": "ts-marine", "count": 4 },
+        { "unit": "dämonenprinz", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ts-terminatoren",
+      "name": "Thousand Sons Terminatoren",
+      "pts": 250,
+      "tags": ["core"],
+      "units": [ { "unit": "ts-terminator", "count": 5 } ],
+      "upgrades": []
+    },
+    {
+      "id": "ts-donnerkeil-staffel",
+      "name": "Donnerkeil-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "doomwing", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "ts-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "warpship", "count": 1 } ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

@@ -1,0 +1,204 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/ig/catachandeathworld",
+  "name": "Catachanische Dschungelkämpfer",
+  "faction": "Astra Militarum",
+  "version": "0.7.2",
+  "source": { "file": "lists_de/IG/catachandeathworld.json", "version": "0.7.2", "commit": null },
+  "strategy": 3,
+  "initiative": [ { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "catachan-commander": { "name": "Catachanischer Oberbefehlshaber", "from": "IG.json", "type": "INF" },
+    "catachan-befehlshaber": { "name": "Catachanischer Befehlshaber", "from": "IG.json", "type": "INF" },
+    "catachan-infantry": { "name": "Catachanische Infanterie", "from": "IG.json", "type": "INF" },
+    "flakteam": { "name": "Flakteam", "from": "IG.json", "type": "INF" },
+    "sniper": { "name": "Scharfschützen", "from": "IG.json", "type": "INF" },
+    "ogryn": { "name": "Ogryns", "from": "IG.json", "type": "INF" },
+    "todesweltveteran": { "name": "Todesweltveteranen", "from": "IG.json", "type": "INF" },
+    "catachan-sentinel": { "name": "Catachan-Sentinel", "from": "IG.json", "type": "LV" },
+    "todeswelt-chimera": { "name": "Todeswelt-Chimäre", "from": "IG.json", "type": "AV" },
+    "basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
+    "greiff": { "name": "Greif", "from": "IG.json", "type": "AV" },
+    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
+    "vulture": { "name": "Vulture", "from": "IG.json", "type": "AV" },
+    "valkyrie": { "name": "Valkyrie", "from": "IG.json", "type": "AV" },
+    "vendetta": { "name": "Vendetta", "from": "IG.json", "type": "AV" },
+    "hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
+    "teufelshund": { "name": "Teufelshund", "from": "IG.json", "type": "AV" },
+    "leman-russ": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },
+    "leman-russ-exterminator": { "name": "Leman Russ Exterminator", "from": "IG.json", "type": "AV" },
+    "leman-russ-demolisher": { "name": "Leman-Russ-Belagerungspanzer", "from": "IG.json", "type": "AV" },
+    "hellhammer": { "name": "Hellhammer", "from": "IG.json", "type": "AV" },
+    "stormblade": { "name": "Stormblade", "from": "IG.json", "type": "AV" },
+    "shadowsword": { "name": "Shadowsword", "from": "IG.json", "type": "AV" },
+    "todesstoß-raketensilo": { "name": "Todesstoß-Raketensilo", "from": "IG.json", "type": "AV" },
+    "thunderbolt": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AV" },
+    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
+    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Catachan Kernkompanien",
+      "formations": ["cat-rhq", "cat-kompanie"]
+    },
+    {
+      "id": "support",
+      "name": "Catachan Unterstützungsverbände",
+      "formations": [
+        "cat-leman-russ-zug",
+        "cat-vulture-staffel",
+        "cat-artillerie-battery",
+        "cat-todesstoß-battery",
+        "cat-veteranenkompanie",
+        "cat-superschwerer-panzerzug",
+        "cat-greif-batterie",
+        "cat-teufelshund-staffel",
+        "cat-scharfschützenzug",
+        "cat-sentinel-staffel"
+      ]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Verbände der Imperialen Flotte",
+      "formations": ["cat-donnerkeil-staffel", "cat-marauder-staffel", "cat-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "cat-rhq",
+      "name": "Regimentshauptquartier der Catachaner",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "catachan-commander", "count": 1 },
+        { "unit": "catachan-infantry", "count": 7 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-kompanie",
+      "name": "Catachan-Kompanie",
+      "pts": 150,
+      "tags": ["core"],
+      "units": [
+        { "unit": "catachan-befehlshaber", "count": 1 },
+        { "unit": "catachan-infantry", "count": 7 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-leman-russ-zug",
+      "name": "Leman-Russ-Zug",
+      "pts": 375,
+      "tags": ["support"],
+      "units": [ { "oneOf": ["leman-russ", "leman-russ-demolisher", "leman-russ-exterminator"], "count": 6, "mixed": true } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-vulture-staffel",
+      "name": "Vulture-Staffel",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [ { "unit": "vulture", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-artillerie-battery",
+      "name": "Artilleriebatterie",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [ { "unit": "basilisk", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-todesstoß-battery",
+      "name": "Todesstoß-Batterie",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [ { "unit": "deathstrike", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-veteranenkompanie",
+      "name": "Veteranenkompanie",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "catachan-befehlshaber", "count": 1 }, { "unit": "todesweltveteran", "count": 7 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-superschwerer-panzerzug",
+      "name": "Catachan-Superschwerer Panzerzug",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "oneOf": ["hellhammer", "stormblade"], "count": 1, "mixed": true } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-greif-batterie",
+      "name": "Greif-Batterie",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [ { "unit": "greiff", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-teufelshund-staffel",
+      "name": "Teufelshund-Staffel",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "teufelshund", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-scharfschützenzug",
+      "name": "Scharfschützenzug",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "sniper", "count": 4 },
+        { "unit": "todeswelt-chimera", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-sentinel-staffel",
+      "name": "Catachan-Sentinel-Staffel",
+      "pts": 125,
+      "tags": ["support"],
+      "units": [ { "unit": "catachan-sentinel", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-donnerkeil-staffel",
+      "name": "Donnerkeil-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "thunderbolt", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-marauder-staffel",
+      "name": "Marauder-Staffel",
+      "pts": 250,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "marauder", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "cat-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
+      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

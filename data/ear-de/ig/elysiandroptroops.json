@@ -1,0 +1,172 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/ig/elysiandroptroops",
+  "name": "Elysianische Luftlandetruppen",
+  "faction": "Astra Militarum",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/IG/elysiandroptroops.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 3,
+  "initiative": [ { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "elysian-commander": { "name": "Elysianischer Oberbefehlshaber", "from": "IG.json", "type": "INF" },
+    "elysian-befehlshaber": { "name": "Elysianischer Befehlshaber", "from": "IG.json", "type": "INF" },
+    "commissar": { "name": "Kommissar", "from": "IG.json", "type": "CH" },
+    "elysian-airborne": { "name": "Elysianische Luftlandetruppen", "from": "IG.json", "type": "INF" },
+    "elysian-fire-support": { "name": "Elysianischer Feuerunterstützungstrupp", "from": "IG.json", "type": "INF" },
+    "elysian-mortar": { "name": "Elysianischer Mörsertrupp", "from": "IG.json", "type": "INF" },
+    "rapier": { "name": "Rapier", "from": "IG.json", "type": "AV" },
+    "elysian-stoßtruppen": { "name": "Elysianische Stoßtruppen", "from": "IG.json", "type": "INF" },
+    "sentinel": { "name": "Gepanzerter Sentinel", "from": "IG.json", "type": "LV" },
+    "abwurf-sentinel": { "name": "Abwurf-Sentinel", "from": "IG.json", "type": "LV" },
+    "unterstützungs-sentinel": { "name": "Unterstützungs-Sentinel", "from": "IG.json", "type": "LV" },
+    "tauros": { "name": "Tauros", "from": "IG.json", "type": "AV" },
+    "tauros-venator": { "name": "Tauros Venator", "from": "IG.json", "type": "AV" },
+    "sky-talon": { "name": "Sky Talon", "from": "IG.json", "type": "AV" },
+    "valkyrie": { "name": "Valkyrie", "from": "IG.json", "type": "AV" },
+    "vendetta": { "name": "Vendetta", "from": "IG.json", "type": "AV" },
+    "vulture": { "name": "Vulture", "from": "IG.json", "type": "AV" },
+    "tarantula": { "name": "Tarantula", "from": "AM.json", "type": "AV" },
+    "thunderbolt": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AV" },
+    "blitzschlag": { "name": "Blitzschlag-Abfangjäger", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder-zerstörer": { "name": "Marauder-Zerstörer", "from": "ImperialNavy.json", "type": "AV" },
+    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
+    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Elysian Kernverbände",
+      "formations": ["elysian-rhq", "elysian-stoßtruppen-company"]
+    },
+    {
+      "id": "support",
+      "name": "Elysian Unterstützungsverbände",
+      "formations": [
+        "elysian-landungssentinel-staffel",
+        "elysian-sentinel-staffel",
+        "elysian-stoßtruppen-company",
+        "elysian-unterstützungszug",
+        "elysian-tauros-venator-staffel",
+        "elysian-tauros-aufklärungsstaffel",
+        "elysian-vulture-staffel"
+      ]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Elysian Flotte",
+      "formations": ["elysian-donnerkeil-staffel", "elysian-marauder-staffel", "elysian-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "elysian-rhq",
+      "name": "0–1 Regimentshauptquartier",
+      "pts": 375,
+      "tags": ["core"],
+      "units": [
+        { "unit": "elysian-commander", "count": 1 },
+        { "unit": "commissar", "count": 1 },
+        { "unit": "elysian-airborne", "count": 7 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-stoßtruppen-company",
+      "name": "Luftlandetruppenkompanie",
+      "pts": 325,
+      "tags": ["core"],
+      "units": [
+        { "unit": "elysian-befehlshaber", "count": 1 },
+        { "unit": "commissar", "count": 1 },
+        { "unit": "elysian-airborne", "count": 7 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-landungssentinel-staffel",
+      "name": "Landungssentinel-Staffel",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [ { "unit": "abwurf-sentinel", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-sentinel-staffel",
+      "name": "Sentinel-Staffel",
+      "pts": 100,
+      "tags": ["support"],
+      "units": [ { "unit": "sentinel", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-stoßtruppen-company",
+      "name": "Stoßtruppenkompanie",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [ { "unit": "elysian-stoßtruppen", "count": 8 }, { "unit": "commissar", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-unterstützungszug",
+      "name": "Unterstützungszug",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [ { "unit": "rapier", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-tauros-venator-staffel",
+      "name": "Tauros-Venator-Staffel",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [ { "unit": "tauros-venator", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-tauros-aufklärungsstaffel",
+      "name": "Tauros-Aufklärungsstaffel",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [ { "unit": "tauros", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-vulture-staffel",
+      "name": "Vulture-Staffel",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [ { "unit": "vulture", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-donnerkeil-staffel",
+      "name": "Donnerkeil-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "thunderbolt", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-marauder-staffel",
+      "name": "Marauder-Staffel",
+      "pts": 250,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "marauder", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "elysian-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
+      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

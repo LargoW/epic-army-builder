@@ -1,0 +1,175 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/ig/valhallanicewarriors",
+  "name": "Valhallanische Eis-Krieger",
+  "faction": "Astra Militarum",
+  "version": "0.6.0",
+  "source": { "file": "lists_de/IG/valhallanicewarriors.json", "version": "0.6.0", "commit": null },
+  "strategy": 2,
+  "initiative": [ { "formations": ["tag:ministorum"], "value": "1+" }, { "formations": ["*"], "value": "2+" } ],
+  "units": {
+    "valhallan-commander": { "name": "Valhallanischer Oberbefehlshaber", "from": "IG.json", "type": "INF" },
+    "valhallan-befehlshaber": { "name": "Valhallanischer Befehlshaber", "from": "IG.json", "type": "INF" },
+    "valhallan-infantry": { "name": "Valhallanische Infanterie", "from": "IG.json", "type": "INF" },
+    "fire-support": { "name": "Feuerunterstützungstrupp", "from": "IG.json", "type": "INF" },
+    "sniper": { "name": "Scharfschützen", "from": "IG.json", "type": "INF" },
+    "hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
+    "basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
+    "mantikor": { "name": "Mantikor", "from": "IG.json", "type": "AV" },
+    "hellhound": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
+    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
+    "sentinel": { "name": "Gepanzerter Sentinel", "from": "IG.json", "type": "LV" },
+    "valhallan-greiff": { "name": "Valhallanischer Greif", "from": "IG.json", "type": "AV" },
+    "ragnarok": { "name": "Ragnarok-Schwerer Kampfpanzer", "from": "IG.json", "type": "AV" },
+    "macharius": { "name": "Macharius", "from": "IG.json", "type": "AV" },
+    "macharius-commandopanzer": { "name": "Macharius-Kommandopanzer", "from": "IG.json", "type": "AV" },
+    "baneblade": { "name": "Baneblade", "from": "IG.json", "type": "AV" },
+    "shadowsword": { "name": "Shadowsword", "from": "IG.json", "type": "AV" },
+    "stormlord": { "name": "Stormlord", "from": "IG.json", "type": "AV" },
+    "ogryn": { "name": "Ogryns", "from": "IG.json", "type": "INF" },
+    "todesstoß-raketensilo": { "name": "Todesstoß-Raketensilo", "from": "IG.json", "type": "AV" },
+    "ministorum-priester": { "name": "Ministorumspriester", "from": "IQ.json", "type": "CH" },
+    "sororitas-schwester": { "name": "Sororitas-Schwestern", "from": "IQ.json", "type": "AC" },
+    "sororitas-rhino": { "name": "Sororitas-Rhino", "from": "IQ.json", "type": "AV" },
+    "blitzschlag": { "name": "Blitzschlag-Abfangjäger", "from": "ImperialNavy.json", "type": "AV" },
+    "marauder-zerstörer": { "name": "Marauder-Zerstörer", "from": "ImperialNavy.json", "type": "AV" },
+    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
+    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Valhallan Kernkompanie-Verbände",
+      "formations": ["valhallan-rhq", "valhallan-infanterie-kompanie", "valhallan-artillerie"]
+    },
+    {
+      "id": "support",
+      "name": "Valhallan Unterstützungsverbände",
+      "formations": ["valhallan-schwerer-panzerzug", "valhallan-macharius-kompanie", "valhallan-superschwerer", "valhallan-todesstoß-battery", "valhallan-hellhound-staffel", "valhallan-sentinel-staffel"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Adeptus-Ministorum- und Imperial-Flottenverbündete",
+      "formations": ["valhallan-ministorum-mission", "valhallan-blitzschlag-staffel", "valhallan-marauder-zerstörer", "valhallan-orbital"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "valhallan-rhq",
+      "name": "Valhallanisches Regimentshauptquartier",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "valhallan-commander", "count": 1 },
+        { "unit": "ministorum-priester", "count": 1 },
+        { "unit": "valhallan-infantry", "count": 9 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-infanterie-kompanie",
+      "name": "Valhallanische Infanteriekompanie",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "valhallan-befehlshaber", "count": 1 },
+        { "unit": "ministorum-priester", "count": 1 },
+        { "unit": "valhallan-infantry", "count": 9 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-artillerie",
+      "name": "Artilleriekompanie",
+      "pts": 400,
+      "tags": ["core"],
+      "units": [ { "unit": "basilisk", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-schwerer-panzerzug",
+      "name": "Schwerer Panzerzug",
+      "pts": 375,
+      "tags": ["support"],
+      "units": [ { "unit": "ragnarok", "count": 6 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-macharius-kompanie",
+      "name": "Macharius-Kompanie",
+      "pts": 375,
+      "tags": ["support"],
+      "units": [ { "unit": "macharius-commandopanzer", "count": 1 }, { "unit": "macharius", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-superschwerer",
+      "name": "Superschwerer Panzerzug",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "baneblade", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-todesstoß-battery",
+      "name": "Todesstoß-Batterie",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [ { "unit": "deathstrike", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-hellhound-staffel",
+      "name": "Höllenhund-Staffel",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [ { "unit": "hellhound", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-sentinel-staffel",
+      "name": "Gepanzerte Sentinel-Staffel",
+      "pts": 125,
+      "tags": ["support"],
+      "units": [ { "unit": "sentinel", "count": 4 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-ministorum-mission",
+      "name": "Ministorum-Mission",
+      "pts": 200,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "sororitas-schwester", "count": 6 }, { "unit": "sororitas-rhino", "count": 3 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-blitzschlag-staffel",
+      "name": "Blitzschlag-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "blitzschlag", "count": 2 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-marauder-zerstörer",
+      "name": "Marauder-Zerstörer",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "marauder-zerstörer", "count": 1 } ],
+      "upgrades": []
+    },
+    {
+      "id": "valhallan-orbital",
+      "name": "0–1 Orbitale Unterstützung",
+      "pts": 125,
+      "tags": ["titans-navy"],
+      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
+      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+    }
+  ],
+  "upgrades": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}
