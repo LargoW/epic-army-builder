@@ -21,7 +21,7 @@
     "rubric-marines": { "name": "Rubrik-Marines", "from": "CSM.json", "type": "INF" },
     "hexer-disk": { "name": "Hexer auf Disks", "from": "CSM.json", "type": "AV" },
     "ts-rhino": { "name": "Thousand-Sons-Rhino", "from": "CSM.json", "type": "AV" },
-    "ts-land-shadows": { "name": "Thousand-Sons-Land-Schattenbarke", "from": "CSM.json", "type": "AV" },
+    "ts-land-shadows": { "name": "Thousand-Sons-Land Raider", "from": "CSM.json", "type": "AV" },
     "ts-predator": { "name": "Thousand-Sons-Predator", "from": "CSM.json", "type": "AV" },
     "ts-cybot": { "name": "Thousand-Sons-Cybot", "from": "CSM.json", "type": "AV" },
     "tzaangor": { "name": "Tzaangors", "from": "chaoscultists.json", "type": "AV" },

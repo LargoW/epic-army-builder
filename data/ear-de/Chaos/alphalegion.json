@@ -1,0 +1,279 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/chaos/alphalegion",
+  "name": "Alpha Legion",
+  "faction": "Chaos",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/Chaos/alphalegion.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 4,
+  "initiative": [
+    { "formations": ["tag:al-cultists"], "value": "2+" },
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "al-fuerst": { "name": "Alpha-Legion-Fürst", "from": "CSM.json", "type": "AV" },
+    "al-hexer": { "name": "Alpha-Legion-Hexer", "from": "CSM.json", "type": "AV" },
+    "al-marine": { "name": "Alpha-Legion-Marines", "from": "CSM.json", "type": "INF" },
+    "al-havoc": { "name": "Alpha-Legion-Havocs", "from": "CSM.json", "type": "AV" },
+    "al-kopjager": { "name": "Alpha-Legion-Kopfjäger", "from": "CSM.json", "type": "AV" },
+    "al-zerstoerer": { "name": "Alpha-Legion-Zerstörer", "from": "CSM.json", "type": "AV" },
+    "al-lernaean": { "name": "Lernaean-Terminatoren", "from": "CSM.json", "type": "AV" },
+    "al-cybot": { "name": "Alpha-Legion-Cybot", "from": "CSM.json", "type": "AV" },
+    "al-rhino": { "name": "Alpha-Legion-Rhino", "from": "CSM.json", "type": "AV" },
+    "al-vindicator": { "name": "Alpha-Legion-Vindicator", "from": "CSM.json", "type": "AV" },
+    "al-predator": { "name": "Alpha-Legion-Predator", "from": "CSM.json", "type": "AV" },
+    "al-land-schattenbarke": { "name": "Alpha-Legion-Land Raider", "from": "CSM.json", "type": "AV" },
+    "al-sicarian": { "name": "Alpha-Legion-Sicarian-Kampfpanzer", "from": "CSM.json", "type": "AV" },
+    "al-daemonenprinz": { "name": "Dämonenprinz", "from": "chaoscultists.json", "type": "AV" },
+    "al-aufstrebender-champion": { "name": "Aufstrebender Champion", "from": "chaoscultists.json", "type": "AV" },
+    "al-ikon": { "name": "Dämonische Ikone", "from": "chaoscultists.json", "type": "AV" },
+    "al-kultisten": { "name": "Kultisten", "from": "chaoscultists.json", "type": "INF" },
+    "al-mutanten": { "name": "Mutanten", "from": "chaoscultists.json", "type": "INF" },
+    "al-chaosbrut": { "name": "Chaosbrut", "from": "chaoscultists.json", "type": "AV" },
+    "al-chaoshunde": { "name": "Chaos-Hunde", "from": "chaoscultists.json", "type": "AV" },
+    "al-landtransporter": { "name": "Landtransporter", "from": "chaoscultists.json", "type": "AV" },
+    "chimera": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
+    "salamander": { "name": "Salamander-Spähpanzer", "from": "IG.json", "type": "AV" },
+    "greif": { "name": "Greif", "from": "IG.json", "type": "AV" },
+    "hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
+    "kavallerie": { "name": "Kavallerie", "from": "IG.json", "type": "INF" },
+    "daemonten": { "name": "Dämonetten des Slaanesh", "from": "daemons.json", "type": "AV" },
+    "seuchenhueter": { "name": "Seuchenhüter des Nurgle", "from": "daemons.json", "type": "AV" },
+    "zerfleischer": { "name": "Zerfleischer des Khorne", "from": "daemons.json", "type": "AV" },
+    "horrore": { "name": "Horrors des Tzeentch", "from": "daemons.json", "type": "AV" },
+    "demonische-bestien": { "name": "Dämonische Bestien des ungeteilten Chaos", "from": "daemons.json", "type": "AV" },
+    "chaosxiphon": { "name": "Chaos-Xiphon-Abfangjäger", "from": "chaosnavy.json", "type": "AV" },
+    "sturmadler": { "name": "Sturmadler der Alpha Legion", "from": "chaosnavy.json", "type": "AV" },
+    "chaosfeuerraptor": { "name": "Chaos-Feuerraptor", "from": "chaosnavy.json", "type": "AV" },
+    "chaosangriffskreuzer": { "name": "Chaos-Angriffskreuzer", "from": "chaosnavy.json", "type": "AV" },
+    "landungskapsel": { "name": "Landungskapsel der Alpha Legion", "from": "chaosnavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Alpha-Legion-Kernverbände",
+      "description": "Pro Alpha-Legion-Marines Verband darf bis zu ein Kultistenkonklave Verband aufgestellt werden",
+      "formations": ["al-marines", "al-kultistenkonklave"]
+    },
+    {
+      "id": "elite",
+      "name": "Alpha-Legion-Elitekontingente",
+      "description": "Pro Alpha-Legion-Marines Verband dürfen bis zu ein Alpha-Legion-Elitekontingent aufgestellt werden.",
+      "formations": ["al-destruktoren", "al-kopfjäger", "al-terminatoren", "al-sicarians"]
+    },
+    {
+      "id": "support",
+      "name": "Kultisten-Unterstützungsverbände",
+      "description": "Pro Kultistenkonklave-Verband dürfen bis zu zwei Kultisten-Unterstützungsverbände aufgestellt werden.",
+      "formations": ["al-kavalleriezug", "al-salamander-staffel", "al-flakbatterie", "al-greif-batterie"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Alpha-Legion-Flotte",
+      "description": "Bis zu einem Drittel der verfügbaren Punkte darf für die Alpha-Legion-Flotte ausgegeben werden.",
+      "formations": ["al-sturmadler", "al-feuerraptor", "al-xiphon-staffel", "al-angriffskreuzer"]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Dämonenpool",
+      "formations": ["al-pool-niedere-daemo"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "al-marines",
+      "name": "Alpha-Legion-Marines",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [
+        { "unit": "al-hexer", "count": 1 },
+        { "unit": "al-marine", "count": 4 }
+      ],
+      "upgrades": ["al-upgrade-commander", "al-upgrade-vindicators", "al-upgrade-predators", "al-upgrade-cybot"]
+    },
+    {
+      "id": "al-kultistenkonklave",
+      "name": "Kultistenkonklave",
+      "pts": 225,
+      "tags": ["core", "tag:al-cultists"],
+      "units": [
+        { "unit": "al-aufstrebender-champion", "count": 1 },
+        { "unit": "al-kultisten", "count": 9 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-destruktoren",
+      "name": "Destruktoren",
+      "pts": 200,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "al-hexer", "count": 1 },
+        { "unit": "al-zerstoerer", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-kopfjäger",
+      "name": "Kopfjäger",
+      "pts": 250,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "al-hexer", "count": 1 },
+        { "unit": "al-kopjager", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-terminatoren",
+      "name": "Terminatoren",
+      "pts": 275,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "al-hexer", "count": 1 },
+        { "unit": "al-lernaean", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-sicarians",
+      "name": "Sicarians",
+      "pts": 275,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "al-sicarian", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-kavalleriezug",
+      "name": "Kavalleriezug",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "kavallerie", "count": 6 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-salamander-staffel",
+      "name": "Salamander-Staffel",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "salamander", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-flakbatterie",
+      "name": "Flakbatterie",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "hydra", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-greif-batterie",
+      "name": "Greif-Batterie",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [
+        { "unit": "greif", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-sturmadler",
+      "name": "Sturmadler",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "sturmadler", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-feuerraptor",
+      "name": "Feuerraptor",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "chaosfeuerraptor", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-xiphon-staffel",
+      "name": "Xiphon-Staffel",
+      "pts": 225,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "chaosxiphon", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-angriffskreuzer",
+      "name": "Angriffskreuzer",
+      "pts": 200,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "chaosangriffskreuzer", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "al-pool-niedere-daemo",
+      "name": "Pool niedere Dämonen",
+      "pts": 20,
+      "tags": ["daemon-pool"],
+      "units": [
+        { "unit": "daemonten", "count": 1 }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "al-upgrade-commander",
+      "name": "0–1 Oberbefehlshaber",
+      "variants": [
+        { "id": "1", "label": "Werte den Aspirantenchampion zu einem Dämonenprinz", "pts": 100, "effects": [{ "op": "add", "unit": "al-daemonenprinz", "count": 1 }] },
+        { "id": "2", "label": "Ich bin Alpharius!", "pts": 75, "effects": [{ "op": "add", "unit": "al-hexer", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "al-upgrade-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Alpha Legion Vindicators hinzu", "pts": 35, "effects": [{ "op": "add", "unit": "al-vindicator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "al-upgrade-predators",
+      "name": "Predators",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Alpha Legion Predators hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "al-predator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "al-upgrade-cybot",
+      "name": "Cybots",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Alpha Legion Cybots hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "al-cybot", "count": 2 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "elite-per-core", "from": ["tag:elite"], "forEach": ["tag:core"], "max": 1 }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

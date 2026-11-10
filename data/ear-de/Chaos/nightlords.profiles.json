@@ -1,0 +1,910 @@
+{
+  "army": "ear-de/chaos/nightlords",
+  "source": {
+    "file": "lists_de/Chaos/nightlords.json",
+    "version": "Alpha 0.6.0",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Im Mitternachtsschwarz",
+      "description": [
+        "Furien des ungeteilten Chaos, die in einem Nahkampf getötet werden, zählen nicht für das Nahkampfergebnis, solange der Spieler der Night Lords den Angriff eingeleitet hat."
+      ]
+    },
+    {
+      "name": "Beschwörung",
+      "description": [
+        "Jeder Verband mit einer Einheit mit Dämonenpakt oder der Verbandsaufwertung Dämonenpakt darf Dämonen beschwören. Jeder Dämonenpakt der Armee stellt zu Beginn der Schlacht automatisch einen Punkt für den Pool der niederen Dämonen bereit (der Spieler darf zusätzliche Punkte für niedere und/oder Große Dämonenpools kaufen).",
+        "Dämonenpools sind nicht fraktionsgebunden. Die Grösse der Dämonenpools muss jederzeit für alle Spieler sichtbar sein; es wird empfohlen, ihre Grösse mit Markern oder Würfeln anzuzeigen. Beim Beschwören von Dämonen muss der Pool angepasst werden.",
+        "Um Dämonen zu beschwören, kündigt der Verband dies an, bevor ein Aktionswurf abgelegt wird (aber nachdem die Aktion ausgewählt wurde). Wird der beschwörende Verband in einem anderen Verband transportiert (z. B. in einem Chaos-Thunderhawk), kann er nicht beschwören, wenn das Chaos-Thunderhawk aktiviert wird.",
+        "Der Spieler würfelt anschliessend 2D3, um die Anzahl der Beschwörungspunkte dieses Verbands zu ermitteln. Der Verband darf dann Dämonen bis zur Höhe der erzielten Beschwörungspunkte beschwören; nicht verwendete Punkte verfallen. Die Anzahl ist ausserdem durch die noch verfügbaren Punkte im Pool der niederen oder grossen Dämonen begrenzt.",
+        "Beschworene Einheiten müssen vollständig innerhalb von 5cm zu einer nicht beschworenen Einheit des beschwörenden Verbands aufgestellt werden (eine Kette beschworener Einheiten ist also nicht erlaubt). Hat der Verband die Fähigkeit Transport, dürfen neu beschworene Einheiten bei ausreichendem Platz darin aufgestellt werden. Sie dürfen nicht in gegnerischen Kontrollzonen oder auf unpassierbarem Gelände platziert werden. Beschworene Einheiten gehören regeltechnisch zum beschwörenden Verband, solange sie sich auf dem Schlachtfeld befinden.",
+        "Beschworene niedere Dämonen sind Verbrauchbar, gelten ansonsten jedoch als normale Einheiten und werden berücksichtigt, wenn ermittelt wird, ob ein Verband einen Gegner im Nahkampf zahlenmässig übertrifft oder durch Beschussmarken aufgerieben wird usw. Im Nahkampf getötete Dämonen zählen auch zur Anzahl der vom Gegner ausgeschalteten Einheiten, wenn Modifikatoren für das Nahkampfergebnis ermittelt werden.",
+        "Beschworene Einheiten bleiben bis zur Endphase der Runde im Spiel, in der sie beschworen wurden. Nachdem alle Verbände versucht haben, sich zu sammeln, werden alle beschworenen Einheiten vom Spielfeld entfernt und ihre Poolkosten dem jeweiligen Dämonenpool zurückerstattet. Dadurch kann der Verband aufgerieben werden, wenn seine Beschussmarken nun der Anzahl seiner Einheiten entsprechen oder sie übersteigen.",
+        "Wird ein Verband aufgerieben, werden alle von ihm beschworenen Einheiten zerstört.",
+        "Bei der Berechnung der Siegespunkte gibt der Pool der niederen Dämonen halbe Punkte ab, wenn höchstens die Hälfte (aufgerundet) seiner ursprünglichen Dämonen verbleibt. Er gibt volle Punkte ab, wenn höchstens ein Viertel (aufgerundet) seiner Dämonen verbleibt. Große Dämonen gelten bei der Berechnung von Siegespunkten als Kriegsmaschinen."
+      ]
+    },
+    {
+      "name": "Beschwörungsregeln der Night Lords",
+      "description": [
+        "Alle Verbände der Night Lords sind dem Ungeteilten Chaos zugewandt. Verbände mit einer Einheit mit Dämonenpakt dürfen die folgenden Dämonen beschwören (die Beschwörungspunktekosten stehen in Klammern):",
+        "Niedere Dämonen: Furien des ungeteilten Chaos (2).",
+        "Beachte, dass die Beschwörungspunktekosten für die verschiedenen Dämonentypen variieren, die Kosten im Dämonenpool jedoch immer eins betragen."
+      ]
+    },
+    {
+      "name": "Launische Meister",
+      "description": [
+        "Würfelt der Chaos-Spieler in der Strategiephase einer Runde eine 6, erhält er einen Beschwörungspunkt für den Pool der niederen Dämonen. Bei einer 1 verliert er hingegen einen Punkt aus diesem Pool. Wurde kein Pool der niederen Dämonen gekauft oder ist er leer, hat dies im letzteren Fall keine Auswirkung."
+      ]
+    },
+    {
+      "name": "Dreadclaw-Landungskapseln der Night Lords",
+      "description": [
+        "Dreadclaws ermöglichen einem Chaos-Verband, gemäss den Regeln für Planetare Landung ins Spiel zu kommen, wenn ein Raumschiff gekauft wurde, um sie zu transportieren. Einheiten eines Verbands mit Dreadclaws werden nach den Regeln für Planetare Landung aufgestellt, würfeln aber nicht auf Abweichung. Stelle die erste Einheit innerhalb von 15 cm zu den vorab festgelegten Koordinaten der Landezone auf und alle übrigen Einheiten des Verbands innerhalb von 15 cm zu dieser Einheit und in Verband. Einheiten dürfen nicht auf unpassierbarem Gelände oder in gegnerischen Kontrollzonen aufgestellt werden.",
+        "Folgende Einheiten dürfen mit Dreadclaws aufgestellt werden: Sturmtrupps der Night Lords, Atramentar Terminatoren und Night-Lords-Cybots."
+      ]
+    },
+    {
+      "name": "Charaktere der Night Lords",
+      "description": [
+        "Night-Lords-Charaktere dürfen nur Night-Raptoren, Chaos Space Marines, Chaos-Trikes, Sturmtrupps der Night Lords oder Chaos Terminatoren hinzugefügt werden."
+      ]
+    }
+  ],
+  "units": {
+    "nl-erster-hauptmann": {
+      "name": "Night-Lords-Erster Hauptmann",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Dämonenpakt",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "nl-hauptmann": {
+      "name": "Night-Lords-Hauptmann",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Dämonenpakt",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ikonentraeger": {
+      "name": "Ikonenträger",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "chaos-sturmmarine": {
+      "name": "Chaos-Sturmmarines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Plasmageschütze",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Ketten-Glaives",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-space-marine": {
+      "name": "Chaos Space Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "raptor": {
+      "name": "Raptoren",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmapistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "warp-klauen": {
+      "name": "Warp-Klauen",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 6,
+      "notes": "Muss das Spiel in Reserve beginnen und darf das Spielfeld nur durch Teleportieren betreten. Kann nicht transportiert werden.",
+      "weapons": [
+        {
+          "name": "Warpschrei",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Warp-Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "nl-auserkorene": {
+      "name": "Night-Lords-Auserkorene",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Scharfschützengewehre",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "chaos-zerstoerer": {
+      "name": "Chaos-Zerstörer",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Radium-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "atramentar-terminator": {
+      "name": "Atramentar-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Blitzklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "chaos-rhino": {
+      "name": "Chaos Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren und Kyborgs) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-land-raider": {
+      "name": "Chaos Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Chaos Terminatoren und Kyborgs zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-spartan": {
+      "name": "Chaos-Spartan-Sturmpanzer",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Terminatoren zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Zwillings-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-jaeger": {
+      "name": "Chaos-Jäger",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-angriffs-bike": {
+      "name": "Chaos-Angriffs-Bike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "nl-cybot": {
+      "name": "Night-Lords-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaos-tarantel": {
+      "name": "Chaos-Tarantel",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Maschinengeist",
+          "description": [
+            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "furien": {
+      "name": "Furien des ungeteilten Chaos",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Im Mitternachtsschwarz",
+          "description": [
+            "Furien des ungeteilten Chaos, die in einem Nahkampf getötet werden, zählen nicht für das Nahkampfergebnis, solange der Spieler der Night Lords den Angriff eingeleitet hat."
+          ]
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaos-xiphon": {
+      "name": "Chaos-Xiphon-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Xiphon Rotary Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-feuerraptor": {
+      "name": "Chaos-Feuerraptor",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "crit": "Fire Raptor wird zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Avenger-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Raketenbatterie",
+          "modes": [
+            {
+              "firepower": "2x AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Vierlings-Schwere Bolter-Türme",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "chaos-thunderhawk": {
+      "name": "Chaos-Thunderhawk",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann acht Infanterieeinheiten transportieren; Terminatoren, Dämonenprinzen, Chaosbruten, große Mutanten und Cybots zählen jeweils als zwei Einheiten.",
+      "crit": "Thunderhawk und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Left",
+                  "description": "Left Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Right",
+                  "description": "Right Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

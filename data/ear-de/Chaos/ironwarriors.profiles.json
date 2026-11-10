@@ -1,0 +1,1531 @@
+{
+  "army": "ear-de/chaos/ironwarriors",
+  "source": {
+    "file": "lists_de/Chaos/ironwarriors.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Dreadclaw-Landungskapseln der Iron Krieger",
+      "description": [
+        "Dreadclaws ermöglichen einem Chaos-Verband, gemäss den Regeln für Planetare Landung ins Spiel zu kommen, wenn ein Raumschiff gekauft wurde, um sie zu transportieren. Einheiten eines Verbands mit Dreadclaws werden nach den Regeln für Planetare Landung aufgestellt, würfeln aber nicht auf Abweichung. Stelle die erste Einheit innerhalb von 15 cm zu den vorab festgelegten Koordinaten der Landezone auf und alle übrigen Einheiten des Verbands innerhalb von 15 cm zu dieser Einheit und in Verband. Einheiten dürfen nicht auf unpassierbarem Gelände oder in gegnerischen Kontrollzonen aufgestellt werden.",
+        "Folgende Einheiten dürfen mit Dreadclaws aufgestellt werden: Chaos Space Marines, Havocs, Kyborgs, Tyrant Terminatoren, Chaos Cybots und Chaos Siege Cybots."
+      ]
+    },
+    {
+      "name": "Charaktere der Iron Krieger",
+      "description": [
+        "Iron-Krieger-Charaktere dürfen nur Chaos Space Marines, Iron-Krieger-Sturmmarines, Iron-Krieger-Havocs, Tyrant Terminatoren oder Chaos Cybots hinzugefügt werden."
+      ]
+    }
+  ],
+  "units": {
+    "iw-kriegsschmied": {
+      "name": "Iron-Krieger-Kriegsschmied",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Servoarm",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Reparaturen auf dem Schlachtfeld",
+          "description": [
+            "Solange ein Verband eine Einheit mit der Sonderfähigkeit <i>Reparaturen auf dem Schlachtfeld</i> enthält, erhalten alle gepanzerten Fahrzeugeinheiten des Verbands Unverwundbar."
+          ]
+        },
+        {
+          "name": "Bionik",
+          "description": [
+            "Die umfangreichen bionischen Modifikationen der Iron Hands und Iron Krieger erhöhen ihre Widerstandsfähigkeit gegen körperliche Verletzungen. Charaktere mit der Sonderregel Bionik erhöhen den Rüstungswert ihrer Einheit auf 3+, wenn sie einer INF-Einheit hinzugefügt werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "iw-warpschmied": {
+      "name": "Iron-Krieger-Warpenschmied",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Servoarm",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Reparaturen auf dem Schlachtfeld",
+          "description": [
+            "Solange ein Verband eine Einheit mit der Sonderfähigkeit <i>Reparaturen auf dem Schlachtfeld</i> enthält, erhalten alle gepanzerten Fahrzeugeinheiten des Verbands Unverwundbar."
+          ]
+        },
+        {
+          "name": "Bionik",
+          "description": [
+            "Die umfangreichen bionischen Modifikationen der Iron Hands und Iron Krieger erhöhen ihre Widerstandsfähigkeit gegen körperliche Verletzungen. Charaktere mit der Sonderregel Bionik erhöhen den Rüstungswert ihrer Einheit auf 3+, wenn sie einer INF-Einheit hinzugefügt werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "demon-prinz": {
+      "name": "Dämonenprinz",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Warp-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Æther Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaos-space-marine": {
+      "name": "Chaos Space Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "havoc": {
+      "name": "Havocs",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "auserkorene": {
+      "name": "Auserkorene",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "bezashk-zerstoerer": {
+      "name": "Bezashk-Zerstörer",
+      "type": "INF",
+      "speed": 25,
+      "armour": 3,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Radium-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "tyrant-terminator": {
+      "name": "Tyrant-Belagerungsterminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Cyclone-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "kyborg": {
+      "name": "Kyborgs",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 2,
+      "weapons": [
+        {
+          "name": "Waffen des manifestierten Körpers",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "basilisk": {
+      "name": "Basilisk der Iron Krieger",
+      "type": "AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Erdbebenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 120,
+              "specialRules": []
+            },
+            {
+              "firepower": "1BP",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "bezashk-medusa": {
+      "name": "Bezashk-Medusa",
+      "type": "AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Medusa-Phospex-Geschütz",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-spartan": {
+      "name": "Chaos-Spartan-Sturmpanzer",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Terminatoren zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Zwillings-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "typhon": {
+      "name": "Schwerer Chaos-Typhon-Belagerungspanzer",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Dreadhammer Belagerungs-Kanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaos-rhino": {
+      "name": "Chaos Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren und Kyborgs) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-belagerungs-rhino": {
+      "name": "Chaos-Belagerungsrhino",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren und Kyborgs) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-predator": {
+      "name": "Chaos Predator",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-land-raider": {
+      "name": "Chaos Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Chaos Terminatoren und Kyborgs zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaos-vindicator": {
+      "name": "Chaos Vindicator",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaos-cybot": {
+      "name": "Chaos-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaos-belagerungscybot": {
+      "name": "Chaos-Belagerungscybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Belagerungsbohrer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "iw-stormsword": {
+      "name": "Iron-Krieger-Stormsword",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Belagerungs-Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "geisel": {
+      "name": "Geißel",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "schlachterbestie": {
+      "name": "Schlächterbestie",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Lasher Ranken",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Melterschneider",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "dezimator": {
+      "name": "Dezimator",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Decimator wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Decimator Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Reaper-Maschinenkanone",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "ordinatus-hereticus": {
+      "name": "Ordinatus Hereticus",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Mit einem Turboblaster, Verdammnisbrenner, Plasma-Kremator oder einer Zwillings-Hades-Maschinenkanone bewaffnet.",
+      "crit": "Ordinatus wird zerstört, und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisbrenner",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Hades Maschinenkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "ordinatus-cyclothrathe": {
+      "name": "Ordinatus Cyclothrathe",
+      "type": "WE",
+      "speed": 10,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Ordinatus wird zerstört, und alle Einheiten innerhalb von 5cm erleiden bei 4+ einen Treffer",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Terrebrax-Phospex-Batterie",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "hoellenklinge": {
+      "name": "Höllendrache",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Piston-Driven Klauen",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "harbringer": {
+      "name": "Harbringer-Bomber (B)",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "crit": "Harbringer-Bomber (B) wird zerstört.",
+      "weapons": [
+        {
+          "name": "AC Schwerer Incendiary Bomben",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Kombibolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "kreuzer": {
+      "name": "Kreuzer der Devastation-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 20 Infanterieeinheiten oder Cybots sowie drei Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "schlachtschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

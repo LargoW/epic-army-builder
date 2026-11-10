@@ -26,7 +26,8 @@
       "ruleset": "ear-de",
       "faction": "Astra Militarum",
       "name": "Cadianische Stoßtruppen",
-      "version": "0.6.2"
+      "version": "0.6.2",
+      "hidden": true
     },
     {
       "id": "ear-de/ig/deathkorps",
@@ -47,7 +48,8 @@
       "ruleset": "ear-de",
       "faction": "Astra Militarum",
       "name": "Catachanische Dschungelkämpfer",
-      "version": "0.7.2"
+      "version": "0.7.2",
+      "hidden": true
     },
     {
       "id": "ear-de/ig/elysiandroptroops",
@@ -68,7 +70,8 @@
       "ruleset": "ear-de",
       "faction": "Astra Militarum",
       "name": "Valhallanische Eis-Krieger",
-      "version": "0.6.0"
+      "version": "0.6.0",
+      "hidden": true
     },
     {
       "id": "ear-de/chaos/thousandsons",
@@ -83,6 +86,41 @@
       "faction": "Chaos",
       "name": "Black Legion",
       "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/chaos/deathguard",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Death Guard",
+      "version": "1.0.Beta-4"
+    },
+    {
+      "id": "ear-de/chaos/alphalegion",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Alpha Legion",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/chaos/emperorschildren",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Emperor's Children",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/chaos/ironwarriors",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Iron Krieger",
+      "version": "1.0.Beta-2"
+    },
+    {
+      "id": "ear-de/chaos/nightlords",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Night Lords",
+      "version": "Alpha 0.6.0"
     },
     {
       "id": "ear-de/sm/codexastartes",
@@ -147,19 +185,19 @@
       "name": "T'au - Vior'la",
       "version": "1.46"
     },
-	{
-      "id": "netea/squats/squats",
-      "ruleset": "netea",
-      "faction": "Squats",
-      "name": "Grindel Stronghold",
-      "version": "1.7.2"
-    },
     {
       "id": "euk/nid/tyranids",
       "ruleset": "euk",
       "faction": "Tyranids",
       "name": "Tyranids",
       "version": "1.0"
+    },
+	{
+      "id": "netea/squats/squats",
+      "ruleset": "netea",
+      "faction": "Squats",
+      "name": "Grindel Stronghold",
+      "version": "1.7.2"
     }
   ]
 }

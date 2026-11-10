@@ -1,0 +1,1499 @@
+{
+  "army": "ear-de/chaos/emperorschildren",
+  "source": {
+    "file": "lists_de/Chaos/emperorschildren.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Beschwörung",
+      "description": [
+        "Jeder Verband mit einer Einheit mit Dämonenpakt oder der Verbandsaufwertung Dämonenpakt darf Dämonen beschwören. Jeder Dämonenpakt der Armee stellt zu Beginn der Schlacht automatisch einen Punkt für den Pool der niederen Dämonen bereit (der Spieler darf zusätzliche Punkte für niedere und/oder Große Dämonenpools kaufen).",
+        "Dämonenpools sind nicht fraktionsgebunden. Die Grösse der Dämonenpools muss jederzeit für alle Spieler sichtbar sein; es wird empfohlen, ihre Grösse mit Markern oder Würfeln anzuzeigen. Beim Beschwören von Dämonen muss der Pool angepasst werden.",
+        "Um Dämonen zu beschwören, kündigt der Verband dies an, bevor ein Aktionswurf abgelegt wird (aber nachdem die Aktion ausgewählt wurde). Wird der beschwörende Verband in einem anderen Verband transportiert (z. B. in einem Chaos-Thunderhawk), kann er nicht beschwören, wenn das Chaos-Thunderhawk aktiviert wird.",
+        "Der Spieler würfelt anschliessend 2D3, um die Anzahl der Beschwörungspunkte dieses Verbands zu ermitteln. Der Verband darf dann Dämonen bis zur Höhe der erzielten Beschwörungspunkte beschwören; nicht verwendete Punkte verfallen. Die Anzahl ist ausserdem durch die noch verfügbaren Punkte im Pool der niederen oder grossen Dämonen begrenzt.",
+        "Beschworene Einheiten müssen vollständig innerhalb von 5cm zu einer nicht beschworenen Einheit des beschwörenden Verbands aufgestellt werden (eine Kette beschworener Einheiten ist also nicht erlaubt). Hat der Verband die Fähigkeit Transport, dürfen neu beschworene Einheiten bei ausreichendem Platz darin aufgestellt werden. Sie dürfen nicht in gegnerischen Kontrollzonen oder auf unpassierbarem Gelände platziert werden. Beschworene Einheiten gehören regeltechnisch zum beschwörenden Verband, solange sie sich auf dem Schlachtfeld befinden.",
+        "Beschworene niedere Dämonen sind Verbrauchbar, gelten ansonsten jedoch als normale Einheiten und werden berücksichtigt, wenn ermittelt wird, ob ein Verband einen Gegner im Nahkampf zahlenmässig übertrifft oder durch Beschussmarken aufgerieben wird usw. Im Nahkampf getötete Dämonen zählen auch zur Anzahl der vom Gegner ausgeschalteten Einheiten, wenn Modifikatoren für das Nahkampfergebnis ermittelt werden.",
+        "Beschworene Einheiten bleiben bis zur Endphase der Runde im Spiel, in der sie beschworen wurden. Nachdem alle Verbände versucht haben, sich zu sammeln, werden alle beschworenen Einheiten vom Spielfeld entfernt und ihre Poolkosten dem jeweiligen Dämonenpool zurückerstattet. Dadurch kann der Verband aufgerieben werden, wenn seine Beschussmarken nun der Anzahl seiner Einheiten entsprechen oder sie übersteigen.",
+        "Wird ein Verband aufgerieben, werden alle von ihm beschworenen Einheiten zerstört.",
+        "Bei der Berechnung der Siegespunkte gibt der Pool der niederen Dämonen halbe Punkte ab, wenn höchstens die Hälfte (aufgerundet) seiner ursprünglichen Dämonen verbleibt. Er gibt volle Punkte ab, wenn höchstens ein Viertel (aufgerundet) seiner Dämonen verbleibt. Große Dämonen gelten bei der Berechnung von Siegespunkten als Kriegsmaschinen."
+      ]
+    },
+    {
+      "name": "Beschwörungsregeln der Emperor's Children",
+      "description": [
+        "Alle Verbände der Emperor's Children verehren den Prinzen der Freuden, Slaanesh. Verbände mit Dämonenpakt dürfen die folgenden Dämonen beschwören (die Beschwörungspunktekosten stehen in Klammern):",
+        "Niedere Dämonen: Dämonetten des Slaanesh (1), Slaaneshbestien (1), Slaanesh-Reiterinnen (2).",
+        "Große Dämonen: Hüter der Geheimnisse (8).",
+        "Von jedem Typ grosser Dämon darf sich höchstens einer gleichzeitig auf dem Schlachtfeld befinden. Kein Verband darf mehr als einen grossen Dämon enthalten.",
+        "Beachte, dass die Beschwörungspunktekosten für die verschiedenen Dämonentypen variieren, die Kosten im Dämonenpool jedoch immer eins betragen."
+      ]
+    },
+    {
+      "name": "Launische Meister",
+      "description": [
+        "Würfelt der Chaos-Spieler in der Strategiephase einer Runde eine 6, erhält er einen Beschwörungspunkt für den Pool der niederen Dämonen. Bei einer 1 verliert er hingegen einen Punkt aus diesem Pool. Wurde kein Pool der niederen Dämonen gekauft oder ist er leer, hat dies im letzteren Fall keine Auswirkung."
+      ]
+    },
+    {
+      "name": "Dreadclaw-Landungskapseln der Emperor's Children",
+      "description": [
+        "Dreadclaws ermöglichen einem Chaos-Verband, gemäss den Regeln für Planetare Landung ins Spiel zu kommen, wenn ein Raumschiff gekauft wurde, um sie zu transportieren. Einheiten eines Verbands mit Dreadclaws werden nach den Regeln für Planetare Landung aufgestellt, würfeln aber nicht auf Abweichung. Stelle die erste Einheit innerhalb von 15 cm zu den vorab festgelegten Koordinaten der Landezone auf und alle übrigen Einheiten des Verbands innerhalb von 15 cm zu dieser Einheit und in Verband. Einheiten dürfen nicht auf unpassierbarem Gelände oder in gegnerischen Kontrollzonen aufgestellt werden.",
+        "Folgende Einheiten dürfen mit Dreadclaws aufgestellt werden: Noise Marines, Chaos Space Marines, Havocs, Sirenshriek Terminatoren und Chaos Cybots."
+      ]
+    },
+    {
+      "name": "Charaktere der Emperor's Children",
+      "description": [
+        "Charaktere der Emperor's Children dürfen nur Chaos Space Marines, Chaos-Angriffsbikes, Noise Marines, Noise Marine Havocs, Raptoren oder Sirenshriek Terminatoren hinzugefügt werden."
+      ]
+    }
+  ],
+  "units": {
+    "ec-noise-kriegsherr": {
+      "name": "Noise-Kriegsherr",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Verdammnissirene",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ec-noise-fuerst": {
+      "name": "Noise-Fürst",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Verdammnissirene",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaoschampion": {
+      "name": "Chaoschampion",
+      "type": "CH",
+      "notes": "Darf geopfert werden. Vor dem Wurf für die Beschwörungspunkte des Verbands wird die Fähigkeit Verstärkte Beschwörung (+2D3) dieser Einheit durch Verstärkte Beschwörung (+6) ersetzt. Nach diesem Wurf wird die Einheit mit dem Champion zerstört; Schutzwürfe sind nicht zulässig. Eine auf diese Weise geopferte Einheit verursacht keinen Beschussmarker.",
+      "weapons": [
+        {
+          "name": "Dämonisch Possession",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Beschwörung (+2D3)",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ec-daemonenprinz": {
+      "name": "Dämonenprinz des Slaanesh",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Dämonischer Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Rapturous Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaos-space-marine": {
+      "name": "Chaos Space Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-noise-havoc": {
+      "name": "Noise-Marine-Havocs",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Blastmaster",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "ec-auserkorene": {
+      "name": "Auserkorene",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "ec-raptor": {
+      "name": "Raptoren",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmapistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "ec-sirenenschrei-terminator": {
+      "name": "Sirenenschrei-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Verdammnissirene",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "ec-noise-marine": {
+      "name": "Noise Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Blastmaster",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "ec-chaos-sturm-bike": {
+      "name": "Chaos-Sturmbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "ec-rhino": {
+      "name": "Emperor's-Children-Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Warp-Verstärker",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ec-land-schattenbarke": {
+      "name": "Emperor's-Children-Land-Schattenbarke",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Sirenshriek-Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Blastmaster",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ec-predator": {
+      "name": "Emperor's-Children-Predator",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Blastmaster",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-cybot": {
+      "name": "Emperor's-Children-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Verdammnissirene",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "ec-chaos-jaeger": {
+      "name": "Chaos-Jäger",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-entwuerdiger": {
+      "name": "Entwürdiger",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Blastmaster",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Todesheuler",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Warp-Verstärker",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-hoellenstreiter": {
+      "name": "Höllenstreiter",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-hoellenritter": {
+      "name": "Höllenritter",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Thermallanze",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-hoellengeissel": {
+      "name": "Höllengeißel",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Castigator Kanone",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-questor": {
+      "name": "Questor",
+      "type": "WE",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Questor erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Castigator Kanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-unterwerfer": {
+      "name": "Unterwerfer",
+      "type": "WE",
+      "speed": 30,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Subjugator erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Tormentor Kanonen",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnissirene",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ionengewehre",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ec-daemonten": {
+      "name": "Dämonetten des Slaanesh",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Durchbohrend Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ec-slaaneshbestien": {
+      "name": "Slaaneshbestien",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ec-slaanesh-reiterinnen": {
+      "name": "Slaanesh-Reiterinnen",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Stachelklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "ec-hueter": {
+      "name": "Hüter der Geheimnisse",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Große Dämon wird zerstört. Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört",
+      "weapons": [
+        {
+          "name": "Schneidende Splitter",
+          "modes": [
+            {
+              "firepower": "3x MW4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peitsche der Qual",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "ec-hoellenklinge": {
+      "name": "Höllenklinge Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-hoellenklaue": {
+      "name": "Höllenklaue-Jagdbomber",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Havoc-Werfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Incendiary Bomben",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-kreuzer": {
+      "name": "Kreuzer der Devastation-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 20 Infanterieeinheiten oder Cybots sowie drei Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ec-schlossschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1618 @@
+{
+  "army": "ear-de/chaos/deathguard",
+  "source": {
+    "file": "lists_de/Chaos/deathguard.json",
+    "version": "1.0.Beta-4",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Beschwörung",
+      "description": [
+        "Jeder Verband mit einer Einheit mit Dämonenpakt oder der Verbandsaufwertung Dämonenpakt darf Dämonen beschwören. Jeder Dämonenpakt der Armee stellt zu Beginn der Schlacht automatisch einen Punkt für den Pool der niederen Dämonen bereit (der Spieler darf zusätzliche Punkte für niedere und/oder Große Dämonenpools kaufen).",
+        "Dämonenpools sind nicht fraktionsgebunden. Die Grösse der Dämonenpools muss jederzeit für alle Spieler sichtbar sein; es wird empfohlen, ihre Grösse mit Markern oder Würfeln anzuzeigen. Beim Beschwören von Dämonen muss der Pool angepasst werden.",
+        "Um Dämonen zu beschwören, kündigt der Verband dies an, bevor ein Aktionswurf abgelegt wird (aber nachdem die Aktion ausgewählt wurde). Wird der beschwörende Verband in einem anderen Verband transportiert (z. B. in einem Chaos-Thunderhawk), kann er nicht beschwören, wenn das Chaos-Thunderhawk aktiviert wird.",
+        "Der Spieler würfelt anschliessend 2D3, um die Anzahl der Beschwörungspunkte dieses Verbands zu ermitteln. Der Verband darf dann Dämonen bis zur Höhe der erzielten Beschwörungspunkte beschwören; nicht verwendete Punkte verfallen. Die Anzahl ist ausserdem durch die noch verfügbaren Punkte im Pool der niederen oder grossen Dämonen begrenzt.",
+        "Beschworene Einheiten müssen vollständig innerhalb von 5cm zu einer nicht beschworenen Einheit des beschwörenden Verbands aufgestellt werden (eine Kette beschworener Einheiten ist also nicht erlaubt). Hat der Verband die Fähigkeit Transport, dürfen neu beschworene Einheiten bei ausreichendem Platz darin aufgestellt werden. Sie dürfen nicht in gegnerischen Kontrollzonen oder auf unpassierbarem Gelände platziert werden. Beschworene Einheiten gehören regeltechnisch zum beschwörenden Verband, solange sie sich auf dem Schlachtfeld befinden.",
+        "Beschworene niedere Dämonen sind Verbrauchbar, gelten ansonsten jedoch als normale Einheiten und werden berücksichtigt, wenn ermittelt wird, ob ein Verband einen Gegner im Nahkampf zahlenmässig übertrifft oder durch Beschussmarken aufgerieben wird usw. Im Nahkampf getötete Dämonen zählen auch zur Anzahl der vom Gegner ausgeschalteten Einheiten, wenn Modifikatoren für das Nahkampfergebnis ermittelt werden.",
+        "Beschworene Einheiten bleiben bis zur Endphase der Runde im Spiel, in der sie beschworen wurden. Nachdem alle Verbände versucht haben, sich zu sammeln, werden alle beschworenen Einheiten vom Spielfeld entfernt und ihre Poolkosten dem jeweiligen Dämonenpool zurückerstattet. Dadurch kann der Verband aufgerieben werden, wenn seine Beschussmarken nun der Anzahl seiner Einheiten entsprechen oder sie übersteigen.",
+        "Wird ein Verband aufgerieben, werden alle von ihm beschworenen Einheiten zerstört.",
+        "Bei der Berechnung der Siegespunkte gibt der Pool der niederen Dämonen halbe Punkte ab, wenn höchstens die Hälfte (aufgerundet) seiner ursprünglichen Dämonen verbleibt. Er gibt volle Punkte ab, wenn höchstens ein Viertel (aufgerundet) seiner Dämonen verbleibt. Große Dämonen gelten bei der Berechnung von Siegespunkten als Kriegsmaschinen."
+      ]
+    },
+    {
+      "name": "Beschwörungsregeln der Death Guard",
+      "description": [
+        "Alle Verbände der Death Guard verehren den Seuchenherrscher Nurgle. Verbände mit Dämonenpakt dürfen die folgenden Dämonen beschwören (die Beschwörungspunktekosten stehen in Klammern):",
+        "Niedere Dämonen: Seuchenhüter des Nurgle (1), Seuchenbestien des Nurgle (1), Seuchendrohnen des Nurgle (2).",
+        "Große Dämonen: Großer Verpester (8).",
+        "Von jedem Typ grosser Dämon darf sich höchstens einer gleichzeitig auf dem Schlachtfeld befinden. Kein Verband darf mehr als einen grossen Dämon enthalten.",
+        "Beachte, dass die Beschwörungspunktekosten für die verschiedenen Dämonentypen variieren, die Kosten im Dämonenpool jedoch immer eins betragen."
+      ]
+    },
+    {
+      "name": "Launische Meister",
+      "description": [
+        "Würfelt der Chaos-Spieler in der Strategiephase einer Runde eine 6, erhält er einen Beschwörungspunkt für den Pool der niederen Dämonen. Bei einer 1 verliert er hingegen einen Punkt aus diesem Pool. Wurde kein Pool der niederen Dämonen gekauft oder ist er leer, hat dies im letzteren Fall keine Auswirkung."
+      ]
+    },
+    {
+      "name": "Charaktere der Death Guard",
+      "description": [
+        "Death Guard Charaktere dürfen nur Chaos Space Marines, Havocs, Seuchenmarines oder Blightlord Terminatoren hinzugefügt werden."
+      ]
+    }
+  ],
+  "units": {
+    "dg-kriegsherr": {
+      "name": "Kriegsherr",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-chaosfuerst": {
+      "name": "Chaosfürst",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-hexerfuerst": {
+      "name": "Hexerfürst",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Warp-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-chaoschampion": {
+      "name": "Chaoschampion",
+      "type": "CH",
+      "notes": "Darf geopfert werden. Vor dem Wurf für die Beschwörungspunkte des Verbands wird die Fähigkeit Verstärkte Beschwörung (+2D3) dieser Einheit durch Verstärkte Beschwörung (+6) ersetzt. Nach diesem Wurf wird die Einheit mit dem Champion zerstört; Schutzwürfe sind nicht zulässig. Eine auf diese Weise geopferte Einheit verursacht keinen Beschussmarker.",
+      "weapons": [
+        {
+          "name": "Dämonisch Possession",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Beschwörung (+2D3)",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-ikonentraeger": {
+      "name": "Ikonenträger",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "dg-daemonenprinz": {
+      "name": "Dämonenprinz des Nurgle",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Seuchenböe",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klinge der Fäulnis",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-space-marine": {
+      "name": "Chaos Space Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dg-havoc": {
+      "name": "Havocs",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dg-seuchenterminator": {
+      "name": "Seuchenfürsten-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenmarine": {
+      "name": "Seuchenmarines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Seuchenmesser",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dg-rhino": {
+      "name": "Death Guard Rhino",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dg-land-schattenbarke": {
+      "name": "Death Guard Land Raider",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Blightlord-Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dg-vindicator": {
+      "name": "Death Guard Vindicator",
+      "type": "AV",
+      "speed": 20,
+      "armour": 3,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "dg-cybot": {
+      "name": "Chaos-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "dg-jaeger": {
+      "name": "Death Guard Jäger",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dg-seuchenwandler": {
+      "name": "Seuchenwandler des Nurgle",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "weapons": [
+        {
+          "name": "Wandelnde Pest",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Befall",
+          "description": [
+            "Verbände, die ausschließlich aus Einheiten mit der Sonderregel <i>Befall</i> bestehen, müssen in Reserve gehalten und nach den Regeln für Teleportation aufgestellt werden. außerdem dürfen Einheiten mit der Sonderregel <i>Befall</i> nur um Szenario-Missionsziele konkurrieren."
+          ]
+        }
+      ]
+    },
+    "dg-defiler": {
+      "name": "Nurgle Geißel",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Seuchenkanone",
+          "modes": [
+            {
+              "firepower": "2 × AP3+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchedrohne": {
+      "name": "Seuchendrohne",
+      "type": "LV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Maw Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenmaschine": {
+      "name": "Seuchenmaschine",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Seuchenkatapult",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vomit Kanone",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        }
+      ]
+    },
+    "dg-seucheturm": {
+      "name": "Seuchenturm",
+      "type": "WE",
+      "speed": 20,
+      "armour": 3,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann 14 Infanterieeinheiten transportieren. Große Mutanten, Chaosbruten, Terminatoren, Dämonenprinzen, Blight Drones und Chaos-Cybots zählen jeweils als zwei Einheiten.",
+      "crit": "Seuchenturm erleidet 1 zusätzlichen Schaden. 1W3 zufällige transportierte Einheiten erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Seuchenmörser",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Belagerungskanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bile Kanone",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nurglinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenschnitter": {
+      "name": "Seuchenschnitter",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "crit": "Plague Reaper wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Pus Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bile Kanone",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nurglinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenhueter": {
+      "name": "Seuchenhüter des Nurgle",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Seuchenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenbestien": {
+      "name": "Seuchenbestien des Nurgle",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Schleimende Zuneigung",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchendrohnen": {
+      "name": "Seuchendrohnen des Nurgle",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Todesköpfe",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenfliege",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-groesser-verpester": {
+      "name": "Großer Verpester",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Große Dämon wird zerstört. Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört",
+      "weapons": [
+        {
+          "name": "Strom der Verderbnis",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Filth Streitkolben",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "dg-seuchenhund": {
+      "name": "Seuchenhund",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Pus Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boil Kanone",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 1",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "dg-abscheulicher-titan": {
+      "name": "Abscheulicher Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Fäulniskanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT5+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenmörser",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenflegel",
+          "modes": [
+            {
+              "firepower": "2x AP2+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(D2)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 7",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Fäulniskanone, Turboblaster oder Plasma-Kremator bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "dg-hoellenklinge": {
+      "name": "Höllendrache",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Piston-Driven Klauen",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-harbringer": {
+      "name": "Harbringer-Bomber (B)",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "crit": "Harbringer-Bomber (B) wird zerstört.",
+      "weapons": [
+        {
+          "name": "AC Schwerer Incendiary Bomben",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Kombibolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dg-plagueship": {
+      "name": "Plagueship",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1436 @@
+{
+  "army": "ear-de/chaos/alphalegion",
+  "source": {
+    "file": "lists_de/Chaos/alphalegion.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Die Heimsuchung",
+      "description": [
+        "Armeen der Alpha Legion gelten in jeder Hinsicht als hätten sie einen Strategiewert von 5, ausser beim Strategiewurf zu Beginn einer Runde."
+      ]
+    },
+    {
+      "name": "Alpha-Legion-Transporter",
+      "description": [
+        "Die Alpha Legion ist eine sehr bewegliche Armee. Daher sind in den Punktkosten eines Kontingents normalerweise genügend Rhino-Transportfahrzeuge enthalten, um es und alle gekauften Aufwertungen zu transportieren. Bestimme die benötigte Anzahl Rhinos, nachdem alle Aufwertungen gekauft wurden. Es werden immer nur so viele Rhinos mitgeführt, wie zum Transport des Verbands mindestens erforderlich sind; zusätzliche Fahrzeuge als Ersatz für Verluste sind nicht erlaubt.",
+        "Beachte, dass viele Verbände keine Rhinos erhalten, meist weil sie nicht hineinpassen. Kontingente mit Rhinos sind im Einheitenabschnitt des Armeeorganisationsplan mit „plus Transport“ gekennzeichnet.",
+        "Du musst keine Rhinos mitnehmen, wenn du das nicht möchtest. Du kannst den Verband stattdessen zu Fuß einsetzen, zum Beispiel als Garnison, oder ihn in einem Sturmadler transportieren.",
+        "außerdem kannst du die Rhinos eines Kontingents durch Landungskapseln ersetzen. In diesem Fall kommt das Kontingent gemäß den Regeln für Planetare Landung in Landungskapseln ins Spiel (siehe Planetare Landung). Beachte, dass du dafür auch einen Chaos-Schlachtkreuzer benötigst, von dem aus die Landungskapseln eingesetzt werden.",
+        "Vor jedem Spiel kann der Spieler der Alpha Legion, nachdem die gegnerische Armee bekannt ist, aber bevor Missionsziele platziert werden, auswählen, welche Verbände mit „plus Transport“ in Rhinos, Landungskapseln oder zu Fuß aufgestellt werden. Enthält ein Verband Einheiten, die nicht in Landungskapseln aufgestellt werden können, darf diese Option nicht ausgewählt werden."
+      ]
+    },
+    {
+      "name": "Beschwörung",
+      "description": [
+        "Jeder Verband mit einer Einheit mit Dämonenpakt oder der Verbandsaufwertung Dämonenpakt darf Dämonen beschwören. Jeder Dämonenpakt der Armee stellt zu Beginn der Schlacht automatisch einen Punkt für den Pool der niederen Dämonen bereit (der Spieler darf zusätzliche Punkte für niedere und/oder Große Dämonenpools kaufen).",
+        "Dämonenpools sind nicht fraktionsgebunden. Die Grösse der Dämonenpools muss jederzeit für alle Spieler sichtbar sein; es wird empfohlen, ihre Grösse mit Markern oder Würfeln anzuzeigen. Beim Beschwören von Dämonen muss der Pool angepasst werden.",
+        "Um Dämonen zu beschwören, kündigt der Verband dies an, bevor ein Aktionswurf abgelegt wird (aber nachdem die Aktion ausgewählt wurde). Wird der beschwörende Verband in einem anderen Verband transportiert (z. B. in einem Chaos-Thunderhawk), kann er nicht beschwören, wenn das Chaos-Thunderhawk aktiviert wird.",
+        "Der Spieler würfelt anschliessend 2D3, um die Anzahl der Beschwörungspunkte dieses Verbands zu ermitteln. Der Verband darf dann Dämonen bis zur Höhe der erzielten Beschwörungspunkte beschwören; nicht verwendete Punkte verfallen. Die Anzahl ist ausserdem durch die noch verfügbaren Punkte im Pool der niederen oder grossen Dämonen begrenzt.",
+        "Beschworene Einheiten müssen vollständig innerhalb von 5cm zu einer nicht beschworenen Einheit des beschwörenden Verbands aufgestellt werden (eine Kette beschworener Einheiten ist also nicht erlaubt). Hat der Verband die Fähigkeit Transport, dürfen neu beschworene Einheiten bei ausreichendem Platz darin aufgestellt werden. Sie dürfen nicht in gegnerischen Kontrollzonen oder auf unpassierbarem Gelände platziert werden. Beschworene Einheiten gehören regeltechnisch zum beschwörenden Verband, solange sie sich auf dem Schlachtfeld befinden.",
+        "Beschworene niedere Dämonen sind Verbrauchbar, gelten ansonsten jedoch als normale Einheiten und werden berücksichtigt, wenn ermittelt wird, ob ein Verband einen Gegner im Nahkampf zahlenmässig übertrifft oder durch Beschussmarken aufgerieben wird usw. Im Nahkampf getötete Dämonen zählen auch zur Anzahl der vom Gegner ausgeschalteten Einheiten, wenn Modifikatoren für das Nahkampfergebnis ermittelt werden.",
+        "Beschworene Einheiten bleiben bis zur Endphase der Runde im Spiel, in der sie beschworen wurden. Nachdem alle Verbände versucht haben, sich zu sammeln, werden alle beschworenen Einheiten vom Spielfeld entfernt und ihre Poolkosten dem jeweiligen Dämonenpool zurückerstattet. Dadurch kann der Verband aufgerieben werden, wenn seine Beschussmarken nun der Anzahl seiner Einheiten entsprechen oder sie übersteigen.",
+        "Wird ein Verband aufgerieben, werden alle von ihm beschworenen Einheiten zerstört.",
+        "Bei der Berechnung der Siegespunkte gibt der Pool der niederen Dämonen halbe Punkte ab, wenn höchstens die Hälfte (aufgerundet) seiner ursprünglichen Dämonen verbleibt. Er gibt volle Punkte ab, wenn höchstens ein Viertel (aufgerundet) seiner Dämonen verbleibt. Große Dämonen gelten bei der Berechnung von Siegespunkten als Kriegsmaschinen."
+      ]
+    },
+    {
+      "name": "Beschwörungsregeln der Alpha Legion",
+      "description": [
+        "Alle Kultistenverbände der Alpha Legion verehren das Ungeteilte Chaos. Verbände mit Dämonische Ikone dürfen die folgenden Dämonen beschwören (die Beschwörungspunktekosten stehen in Klammern):",
+        "Niedere Dämonen: Dämonetten des Slaanesh (1), Seuchenhüter des Nurgle (1), Zerfleischer des Khorne (1), Horrors des Tzeentch (1), Dämonische Bestien des ungeteilten Chaos (1).",
+        "Beachte, dass die Beschwörungspunktekosten für die verschiedenen Dämonentypen variieren, die Kosten im Dämonenpool jedoch immer eins betragen."
+      ]
+    },
+    {
+      "name": "Launische Meister",
+      "description": [
+        "Würfelt der Chaos-Spieler in der Strategiephase einer Runde eine 6, erhält er einen Beschwörungspunkt für den Pool der niederen Dämonen. Bei einer 1 verliert er hingegen einen Punkt aus diesem Pool. Wurde kein Pool der niederen Dämonen gekauft oder ist er leer, hat dies im letzteren Fall keine Auswirkung."
+      ]
+    }
+  ],
+  "units": {
+    "al-fuerst": {
+      "name": "Alpha-Legion-Fürst",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "al-hexer": {
+      "name": "Alpha-Legion-Hexer",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Warp-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "al-marine": {
+      "name": "Alpha-Legion-Marines",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        }
+      ]
+    },
+    "al-havoc": {
+      "name": "Alpha-Legion-Havocs",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        }
+      ]
+    },
+    "al-kopjager": {
+      "name": "Alpha-Legion-Kopfjäger",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Banestrike-Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Sabotage",
+          "description": [
+            "Vor dem Wurf für die erste Runde und vor Teleportationen darf der Spieler für jeden Verband mit mindestens einer Einheit mit der Sonderregel Sabotage einen gegnerischen Verband auswählen (beide Verbände müssen auf dem Schlachtfeld aufgestellt sein) und einen W6 würfeln.",
+            "Bei einem Wurf von 2-5 beginnt der gegnerische Verband mit einer Beschussmarke. Bei einer 6 beginnt er mit d3 Beschussmarken. Bei einer 1 erhält der Verband mit Sabotage eine Beschussmarke. Kein Verband darf mehr als einmal Ziel von Sabotage sein, auch wenn der erste Wurf eine 1 ergibt."
+          ]
+        }
+      ]
+    },
+    "al-zerstoerer": {
+      "name": "Alpha-Legion-Zerstörer",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Radium-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "al-lernaean": {
+      "name": "Lernaean-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 2,
+      "weapons": [
+        {
+          "name": "Volkite-Ladungen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "al-cybot": {
+      "name": "Alpha-Legion-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmakanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "al-rhino": {
+      "name": "Alpha-Legion-Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Kombibolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "al-vindicator": {
+      "name": "Alpha-Legion-Vindicator",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "al-predator": {
+      "name": "Alpha-Legion-Predator",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Predator Kanone",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        }
+      ]
+    },
+    "al-land-schattenbarke": {
+      "name": "Alpha-Legion-Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "al-sicarian": {
+      "name": "Alpha-Legion-Sicarian-Kampfpanzer",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Beschleuniger Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "al-daemonenprinz": {
+      "name": "Dämonenprinz",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Warp-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Æther Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "al-aufstrebender-champion": {
+      "name": "Aufstrebender Champion",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Dämon Waffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "al-ikon": {
+      "name": "Dämonische Ikone",
+      "type": "CH",
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Dämonenpakt",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "al-kultisten": {
+      "name": "Kultisten",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Granate Werfer",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "al-mutanten": {
+      "name": "Mutanten",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Automatikpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "al-chaosbrut": {
+      "name": "Chaosbrut",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "notes": "Zählt beim Transport als 2 INF-Einheiten.",
+      "weapons": [
+        {
+          "name": "Schreckliche Mutationen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "al-chaoshunde": {
+      "name": "Chaos-Hunde",
+      "type": "INF",
+      "speed": 30,
+      "armour": 6,
+      "cc": 4,
+      "notes": "Kann nicht transportiert werden.",
+      "weapons": [
+        {
+          "name": "Klauen und Fangzähne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "al-landtransporter": {
+      "name": "Landtransporter",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren.",
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chimera": {
+      "name": "Chimäre",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "salamander": {
+      "name": "Salamander-Spähpanzer",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "greif": {
+      "name": "Greif",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Mörser",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "hydra": {
+      "name": "Hydra",
+      "type": "AV",
+      "speed": 30,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Hydra Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "kavallerie": {
+      "name": "Kavallerie",
+      "type": "INF",
+      "speed": 20,
+      "armour": 6,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Laserpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Jagdlanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "daemonten": {
+      "name": "Dämonetten des Slaanesh",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Durchbohrend Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "seuchenhueter": {
+      "name": "Seuchenhüter des Nurgle",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Seuchenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "zerfleischer": {
+      "name": "Zerfleischer des Khorne",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Höllenklingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "horrore": {
+      "name": "Horrors des Tzeentch",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zauberbolzen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "demonische-bestien": {
+      "name": "Dämonische Bestien des ungeteilten Chaos",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaosxiphon": {
+      "name": "Chaos-Xiphon-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Xiphon Rotary Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sturmadler": {
+      "name": "Sturmadler der Alpha Legion",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann vier Infanterieeinheiten ohne Beritten transportieren; Terminatoren, Dämonenprinzen, Chaosbruten, große Mutanten und Cybots zählen jeweils als zwei Einheiten. Gilt beim Transport als Chaos-Thunderhawk.",
+      "crit": "Der Sturmadler und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vengeance Werfer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen, EA(+1)",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "chaosfeuerraptor": {
+      "name": "Chaos-Feuerraptor",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "crit": "Fire Raptor wird zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Avenger-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Raketenbatterie",
+          "modes": [
+            {
+              "firepower": "2x AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Vierlings-Schwere Bolter-Türme",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "chaosangriffskreuzer": {
+      "name": "Chaos-Angriffskreuzer",
+      "type": "SC",
+      "notes": "Kann 20 Infanterieeinheiten oder Cybots sowie 20 leichte oder gepanzerte Fahrzeugeinheiten (außer Cybots), sechs Thunderhawks und genügend Landungskapseln und Thunderhawk-Transporter für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "landungskapsel": {
+      "name": "Landungskapsel der Alpha Legion",
+      "notes": "Kann einen Verband transportieren, der ausschließlich aus folgenden Einheiten besteht: Alpha-Legion-Marines, Alpha-Legion-Havocs, Alpha-Legion-Kopfjäger, Lernaean-Terminatoren oder Alpha Legion Cybots. Nach der Landung der Landungskapsel greift ihr Todeswind alle gegnerischen Einheiten innerhalb von 15 cm an. Jeder angegriffene gegnerische Verband erhält eine Beschussmarke, weil er unter Beschuss gerät, sowie eine zusätzliche Beschussmarke pro Verlust. Anschließend müssen alle transportierten Truppen innerhalb von 5cm zur Landungskapsel oder zu einer bereits gelandeten Einheit desselben Verbands aussteigen, sofern alle Einheiten innerhalb von 15 cm zur Landungskapsel aufgestellt werden. Die Modelle der Landungskapsel sollten vom Spielfeld entfernt werden, sobald der transportierte Verband ausgestiegen ist.",
+      "weapons": [
+        {
+          "name": "Todeswind",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 15
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

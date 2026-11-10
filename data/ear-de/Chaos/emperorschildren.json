@@ -1,0 +1,343 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/chaos/emperorschildren",
+  "name": "Emperor's Children",
+  "faction": "Chaos",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/Chaos/emperorschildren.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 4,
+  "initiative": [
+    { "formations": ["tag:ec-core"], "value": "1+" },
+    { "formations": ["*"], "value": "2+" }
+  ],
+  "units": {
+    "ec-noise-kriegsherr": { "name": "Noise-Kriegsherr", "from": "CSM.json", "type": "AV" },
+    "ec-noise-fuerst": { "name": "Noise-Fürst", "from": "CSM.json", "type": "AV" },
+    "chaoschampion": { "name": "Chaoschampion", "from": "CSM.json", "type": "CH" },
+    "ec-daemonenprinz": { "name": "Dämonenprinz des Slaanesh", "from": "CSM.json", "type": "AV" },
+    "chaos-space-marine": { "name": "Chaos Space Marines", "from": "CSM.json", "type": "INF" },
+    "ec-noise-havoc": { "name": "Noise-Marine-Havocs", "from": "CSM.json", "type": "AV" },
+    "ec-auserkorene": { "name": "Auserkorene", "from": "CSM.json", "type": "AV" },
+    "ec-raptor": { "name": "Raptoren", "from": "CSM.json", "type": "AV" },
+    "ec-sirenenschrei-terminator": { "name": "Sirenenschrei-Terminatoren", "from": "CSM.json", "type": "AV" },
+    "ec-noise-marine": { "name": "Noise Marines", "from": "CSM.json", "type": "INF" },
+    "ec-chaos-sturm-bike": { "name": "Chaos-Sturmbikes", "from": "CSM.json", "type": "AV" },
+    "ec-rhino": { "name": "Emperor's-Children-Rhino", "from": "CSM.json", "type": "AV" },
+    "ec-land-schattenbarke": { "name": "Emperor's-Children-Land-Schattenbarke", "from": "CSM.json", "type": "AV" },
+    "ec-predator": { "name": "Emperor's-Children-Predator", "from": "CSM.json", "type": "AV" },
+    "ec-cybot": { "name": "Emperor's-Children-Cybot", "from": "CSM.json", "type": "AV" },
+    "ec-chaos-jaeger": { "name": "Chaos-Jäger", "from": "CSM.json", "type": "AV" },
+    "ec-entwuerdiger": { "name": "Entwürdiger", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-hoellenstreiter": { "name": "Höllenstreiter", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-hoellenritter": { "name": "Höllenritter", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-hoellengeissel": { "name": "Höllengeißel", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-questor": { "name": "Questor", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-unterwerfer": { "name": "Unterwerfer", "from": "darkmechanicus.json", "type": "AV" },
+    "ec-daemonten": { "name": "Dämonetten des Slaanesh", "from": "daemons.json", "type": "AV" },
+    "ec-slaaneshbestien": { "name": "Slaaneshbestien", "from": "daemons.json", "type": "AV" },
+    "ec-slaanesh-reiterinnen": { "name": "Slaanesh-Reiterinnen", "from": "daemons.json", "type": "AV" },
+    "ec-hueter": { "name": "Hüter der Geheimnisse", "from": "daemons.json", "type": "AV" },
+    "ec-hoellenklinge": { "name": "Höllenklinge Abfangjäger", "from": "chaosnavy.json", "type": "AV" },
+    "ec-hoellenklaue": { "name": "Höllenklaue-Jagdbomber", "from": "chaosnavy.json", "type": "AV" },
+    "ec-kreuzer": { "name": "Kreuzer der Devastation-Klasse", "from": "chaosnavy.json", "type": "AV" },
+    "ec-schlossschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Emperor's Children Kernverbände",
+      "formations": ["ec-gefolge", "ec-terminatoren"]
+    },
+    {
+      "id": "elite",
+      "name": "Emperor's Children Eliteverbände",
+      "description": "Pro Kernverband darf ein Eliteverband aufgestellt werden",
+      "formations": ["ec-auserkorene", "ec-slaanesh-geiselmachte"]
+    },
+    {
+      "id": "support",
+      "name": "Emperor's Children Unterstützungsverbände",
+      "description": "Pro Kernverband dürfen zwei Unterstützungsverbände aufgestellt werden",
+      "formations": ["ec-bike-kompanie", "ec-raptorenkult", "ec-panzerkompanie"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Dark-Mechanicus-Dämonenmaschinen und Chaos-Flotte",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden",
+      "formations": [
+        "ec-hoellenstreiter-des-slaanesh",
+        "ec-hoellenritter",
+        "ec-hoellenharpyien",
+        "ec-questor",
+        "ec-unterwerfer",
+        "ec-hoellenklinge-staffel",
+        "ec-hoellenklaue-staffel",
+        "ec-kreuer"
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Dämonenpool",
+      "description": "Es dürfen beliebig viele Punkte für den Dämonenpool ausgegeben werden.",
+      "formations": ["ec-pool-niedere-daemo", "ec-pool-groesse-daemo"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ec-gefolge",
+      "name": "Emperor's Children Gefolge",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ec-noise-kriegsherr", "count": 1 },
+        { "unit": "ec-noise-marine", "count": 3 },
+        { "unit": "chaos-space-marine", "count": 3 }
+      ],
+      "upgrades": ["ec-upgrade-commander", "ec-upgrade-gefolgestransporter", "ec-upgrade-cybot", "ec-upgrade-champion", "ec-upgrade-stalker", "ec-upgrade-dreadclaws", "ec-upgrade-noisehavoc", "ec-upgrade-predators"]
+    },
+    {
+      "id": "ec-terminatoren",
+      "name": "Emperor's Children Terminatoren",
+      "pts": 400,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ec-noise-kriegsherr", "count": 1 },
+        { "unit": "ec-sirenenschrei-terminator", "count": 4 }
+      ],
+      "upgrades": ["ec-upgrade-commander", "ec-upgrade-cybot", "ec-upgrade-champion", "ec-upgrade-stalker", "ec-upgrade-dreadclaws", "ec-upgrade-terminatortransporter"]
+    },
+    {
+      "id": "ec-auserkorene",
+      "name": "Auserkorene",
+      "pts": 175,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "ec-auserkorene", "count": 4 },
+        { "unit": "ec-rhino", "count": 2 }
+      ],
+      "upgrades": ["ec-upgrade-cybot", "ec-upgrade-predators", "ec-upgrade-dreadclaws"]
+    },
+    {
+      "id": "ec-slaanesh-geiselmachte",
+      "name": "Slaanesh-Geißel-Meute",
+      "pts": 250,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "ec-hoellengeissel", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-bike-kompanie",
+      "name": "Bike-Kompanie",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ec-noise-kriegsherr", "count": 1 },
+        { "unit": "ec-chaos-sturm-bike", "count": 6 }
+      ],
+      "upgrades": ["ec-upgrade-predators"]
+    },
+    {
+      "id": "ec-raptorenkult",
+      "name": "Raptorenkult",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ec-raptor", "count": 4 }
+      ],
+      "upgrades": ["ec-upgrade-predators"]
+    },
+    {
+      "id": "ec-panzerkompanie",
+      "name": "Panzerkompanie",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ec-predator", "count": 4 }
+      ],
+      "upgrades": ["ec-upgrade-stalker", "ec-upgrade-predators"]
+    },
+    {
+      "id": "ec-hoellenstreiter-des-slaanesh",
+      "name": "Höllenstreiter des Slaanesh",
+      "pts": 225,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-hoellenstreiter", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-hoellenritter",
+      "name": "Höllenritter",
+      "pts": 325,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-hoellenritter", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-hoellenharpyien",
+      "name": "Höllenharpyien",
+      "pts": 325,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-daemonenprinz", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-questor",
+      "name": "Questor",
+      "pts": 275,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-questor", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-unterwerfer",
+      "name": "Unterwerfer",
+      "pts": 275,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-unterwerfer", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-hoellenklinge-staffel",
+      "name": "Höllenklinge-Staffel",
+      "pts": 175,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-hoellenklinge", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-hoellenklaue-staffel",
+      "name": "Höllenklaue-Staffel",
+      "pts": 225,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-hoellenklaue", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-kreuer",
+      "name": "0–1 Chaos Kreuzer",
+      "pts": 150,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ec-kreuzer", "count": 1 }
+      ],
+      "upgrades": ["ec-upgrade-schlossschiff"]
+    },
+    {
+      "id": "ec-pool-niedere-daemo",
+      "name": "Pool niedere Dämonen",
+      "pts": 20,
+      "tags": ["daemon-pool"],
+      "units": [
+        { "unit": "ec-daemonten", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ec-pool-groesse-daemo",
+      "name": "Pool großer Dämonen",
+      "pts": 50,
+      "tags": ["daemon-pool"],
+      "units": [
+        { "unit": "ec-daemonenprinz", "count": 1 }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ec-upgrade-commander",
+      "name": "0–1 Oberbefehlshaber",
+      "variants": [
+        { "id": "1", "label": "Ersetze den Noise-Lord durch einen Noise-Kriegsherr", "pts": 50, "effects": [{ "op": "add", "unit": "ec-noise-kriegsherr", "count": 1 }] },
+        { "id": "2", "label": "Ersetze den Noise-Lord und seine Einheit durch einen Dämonenprinz des Slaanesh", "pts": 100, "effects": [{ "op": "add", "unit": "ec-daemonenprinz", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-gefolgestransporter",
+      "name": "Gefolge-Transporter",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 3 Emperor's Children Rhinos hinzu", "pts": 10, "effects": [{ "op": "add", "unit": "ec-rhino", "count": 3 }] },
+        { "id": "2", "label": "Füge bis zu 3 Emperor's Children Land Raiders hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-land-schattenbarke", "count": 3 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-terminatortransporter",
+      "name": "Terminator-Transporter",
+      "variants": [
+        { "id": "1", "label": "Ersetze 1 Sirenshriek Terminator durch 3 Emperor's Children Land Raiders", "pts": 100, "effects": [{ "op": "replace", "from": "ec-sirenenschrei-terminator", "to": "ec-land-schattenbarke", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-cybot",
+      "name": "Cybots",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Emperor's Children Cybots zum Verband hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-cybot", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-champion",
+      "name": "Champion",
+      "variants": [
+        { "id": "1", "label": "Füge einen Chaoschampion-Charakter zum Verband hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "chaoschampion", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-stalker",
+      "name": "Stalker",
+      "variants": [
+        { "id": "1", "label": "Füge 1 Chaos Stalker zum Verband hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-chaos-jaeger", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-dreadclaws",
+      "name": "Dreadclaws",
+      "variants": [
+        { "id": "1", "label": "Transportiere einen Verband in Dreadclaws", "pts": 5, "effects": [{ "op": "add", "unit": "ec-rhino", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-noisehavoc",
+      "name": "Noise-Marine-Havocs",
+      "variants": [
+        { "id": "1", "label": "Ersetze 3 Noise Marines durch 3 Noise Marine Havocs", "pts": 25, "effects": [{ "op": "replace", "from": "ec-noise-marine", "to": "ec-noise-havoc", "count": 3 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-predators",
+      "name": "Predators",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Emperor's Children Predators hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-predator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "ec-upgrade-schlossschiff",
+      "name": "Schlachtschiff",
+      "variants": [
+        { "id": "1", "label": "Ersetze den Kreuzer der Devastation-Klasse durch ein Schlachtschiff der Despoiler-Klasse", "pts": 50, "effects": [{ "op": "replace", "from": "ec-kreuzer", "to": "ec-schlossschiff", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}
