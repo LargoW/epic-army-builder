@@ -1,0 +1,1450 @@
+{
+  "army": "ear-de/sm/bloodravens",
+  "source": {
+    "file": "lists_de/SM/greyknights.json",
+    "version": "0.5.0",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Space-Marine-Transporter",
+      "description": [
+        "Space Marines sind eine sehr bewegliche Armee. Daher sind in den Punktkosten eines Kontingents normalerweise genügend Rhino-Transportfahrzeuge enthalten, um es und alle gekauften Aufwertungen zu transportieren. Bestimme die benötigte Anzahl Rhinos, nachdem alle Aufwertungen gekauft wurden. Es werden immer nur so viele Rhinos mitgeführt, wie zum Transport des Verbands mindestens erforderlich sind; zusätzliche Fahrzeuge als Ersatz für Verluste sind nicht erlaubt.",
+        "Beachte, dass viele Verbände keine Rhinos erhalten, meist weil sie nicht hineinpassen. Kontingente mit Rhinos sind im Einheitenabschnitt des Armeeorganisationsplan mit „plus Transport“ gekennzeichnet.",
+        "Du musst keine Rhinos mitnehmen, wenn du das nicht möchtest. Du kannst den Verband stattdessen zu Fuß einsetzen, zum Beispiel als Garnison, oder ihn in einem Thunderhawk transportieren.",
+        "außerdem kannst du die Rhinos eines Kontingents durch Landungskapseln ersetzen. In diesem Fall kommt das Kontingent gemäß den Regeln für Planetare Landung (siehe Planetare Landung) in einer Landungskapsel ins Spiel. Beachte, dass du dafür auch einen Space-Marine-Schlachtkreuzer oder eine Kampfbarge benötigst, von dem aus die Landungskapseln eingesetzt werden.",
+        "Vor jedem Spiel kann der Space-Marine-Spieler, nachdem die gegnerische Armee bekannt ist, aber bevor Missionsziele platziert werden, auswählen, welche Verbände mit der Aufwertung „plus Transport“ in Rhinos, Landungskapseln oder zu Fuß aufgestellt werden. Enthält ein Verband Einheiten, die nicht in Landungskapseln aufgestellt werden können, darf diese Option nicht ausgewählt werden."
+      ]
+    },
+    {
+      "name": "Grey-Knights-Transporter",
+      "description": [
+        "Grey-Knights-Verbände mit dem Vermerk „plus Transport“ dürfen statt normaler Rhinos Grey-Knights-Rhinos erhalten."
+      ]
+    },
+    {
+      "name": "Sie kennen keine Furcht",
+      "description": [
+        "Space Marines sind für ihre Zähigkeit und Tapferkeit bekannt. Dies wird durch folgende Regeln dargestellt:",
+        "<ul><li>Es sind 2 Beschussmarken erforderlich, um eine Space-Marine-Einheit zu unterdrücken oder eine Einheit in einem aufgeriebenen Verband auszuschalten (überschüssige Beschussmarken werden ignoriert).</li><li>Space-Marine-Verbände werden erst aufgerieben, wenn sie 2 Beschussmarken pro Einheit im Verband haben.</li><li>Space-Marine-Verbände zählen bei der Ermittlung des Nahkampfergebnisses nur die Hälfte ihrer Beschussmarken (abgerundet, mindestens jedoch eine). Die zusätzlichen Treffer, die ein Space-Marine-Verband durch einen verlorenen Nahkampf erleidet, werden halbiert und zugunsten der Space Marines abgerundet.</li><li>Wenn sich ein aufgeriebener Space-Marine-Verband sammelt, erhält er Beschussmarken in Höhe seiner Einheitenzahl statt der halben Anzahl.</li></ul>"
+      ]
+    }
+  ],
+  "units": {
+    "br-oberbefehlshaber": {
+      "name": "Blood-Ravens-Oberbefehlshaber",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schmetterschlag",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "br-scriptor": {
+      "name": "Blood-Ravens-Scriptor",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schmetterschlag",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "justicar": {
+      "name": "Justicar der Grey Knights",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Erweiterte Befehlsreichweite",
+          "description": [
+            "Verbände mit mindestens einer Einheit mit der Fähigkeit <i>Extended Command</i> vergrössern die Reichweite, innerhalb derer Kommandeure in ihrem Verband andere Verbände bei einem gemeinsamen Angriff zum Folgen auffordern können, von 5cm auf 15 cm (siehe 2.1.2)."
+          ]
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "großmeister": {
+      "name": "Großmeister der Grey Knights",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schwerer Dämonenhammer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Erweiterte Befehlsreichweite",
+          "description": [
+            "Verbände mit mindestens einer Einheit mit der Fähigkeit <i>Extended Command</i> vergrössern die Reichweite, innerhalb derer Kommandeure in ihrem Verband andere Verbände bei einem gemeinsamen Angriff zum Folgen auffordern können, von 5cm auf 15 cm (siehe 2.1.2)."
+          ]
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "tactical": {
+      "name": "Taktische Trupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "devastator": {
+      "name": "Devastor-Trupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "assault": {
+      "name": "Sturmtrupps",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmapistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "grey-assault": {
+      "name": "Grey-Knights-Angriffstrupp",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 2,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Psikanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Holocaust",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemesis-Psionikwaffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "grey-terminator": {
+      "name": "Grey-Knights-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 2,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Psi-Silencer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Holocaust",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemesis Dämon Hämmer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "grey-abfangkamp": {
+      "name": "Grey-Knights-Abfangtrupp",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 2,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Holocaust",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemesis-Psionikwaffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "grey-purgator": {
+      "name": "Grey-Knights-Purgatortrupp",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Verbrenner",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Holocaust",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "bike": {
+      "name": "Sturm-Bikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "trike": {
+      "name": "Trike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rhino": {
+      "name": "Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "grey-rhino": {
+      "name": "Grey-Knights-Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "vortimer-razorback": {
+      "name": "Vortimer-Razorback",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 1 Infanterieeinheit (außer einer Terminator-Einheit) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Psikanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "doomglaive-cybot": {
+      "name": "Doomglaive-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Psikanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemesis-Verdammnisklinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "cybot": {
+      "name": "Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "hellfire-cybot": {
+      "name": "Hellfire-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Zählt beim Transport als Cybot.",
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "land-raider": {
+      "name": "Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "land-raider-helios": {
+      "name": "Land Raider Helios",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Bewaffnet entweder mit einem Hyperios- oder einem Whirlwind Launcher. Kann 1 Infanterieeinheit (außer einer Terminator-Einheit) ohne Sprungmodule oder Beritten transportieren. Zählt beim Transport selbst als Land Raider.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Hyperios Werfer",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AT6+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Whirlwind Werfer",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "vindicator": {
+      "name": "Vindicator",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "vortimer-land-schattenbarke": {
+      "name": "Vortimer-Land-Schattenbarke",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Psikanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "vortimer-land-schattenbarke-redeemer": {
+      "name": "Vortimer-Land-Schattenbarke-Redeemer",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "notes": "Kann 3 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren; Terminatoren zählen jeweils als 1,5 Einheiten (aufgerundet). Zählt beim Transport selbst als Land Raider.",
+      "weapons": [
+        {
+          "name": "Zwillings-Psikanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verbrenner",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "nemesis": {
+      "name": "Nemesis-Ritter",
+      "type": "LV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Gatling-Psilencer",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Psibolzen",
+                  "description": "Psibolzen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nemesis-Dämonenhammer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "sturmtalon": {
+      "name": "Sturmtalon",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sturmadler": {
+      "name": "Sturmadler",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten transportieren; Terminatoren und Cybots zählen jeweils als 2 Einheiten. Zählt beim Transport selbst als Thunderhawk.",
+      "crit": "Der Sturmadler und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vengeance Werfer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen, EA(+1)",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "vanguard-cruiser": {
+      "name": "Vanguard-Klasse-Leichter-Kreuzer",
+      "type": "SC",
+      "notes": "Kann 12 Infanterieeinheiten, Trikes oder Cybots sowie 5 leichte oder gepanzerte Fahrzeugeinheiten (außer Trikes und Cybots), 2 Thunderhawks und genügend Landungskapseln für alle übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "landungskapsel": {
+      "name": "Landungskapsel",
+      "notes": "Kann nur eine Verband aus folgenden Einheiten transportieren: Taktische Trupps, Devastor-Trupps, Cybot, Sternguard-Veteranen, Wolfsgarde-Terminatoren, Grey-Knights-Angriffstrupp oder Grey-Knights-Purgatortrupp. Nach der Landung der Landungskapsel greift ihr Todeswind alle gegnerischen Einheiten innerhalb von 15 cm an. Jede angegriffene gegnerische Verband erhält einen Beschussmarker dafür, dass sie unter Beschuss gerät, sowie einen zusätzlichen Beschussmarker pro Verlust. Anschließend müssen alle in der Landungskapsel transportierten Truppen innerhalb von 5cm zur Landungskapsel oder innerhalb von 5cm zu einer bereits gelandeten Einheit derselben Verband aussteigen, sofern alle Einheiten innerhalb von 15 cm zur Landungskapsel aufgestellt werden. Entferne die Landungskapselmodelle vom Spielfeld, sobald die transportierte Verband ausgestiegen ist.",
+      "weapons": [
+        {
+          "name": "Todeswind",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 15
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -192,7 +192,7 @@
       "pts": 225,
       "tags": ["titans-navy"],
       "units": [
-        { "unit": "dämonenprinz", "count": 4 }
+        { "unit": "demon-prinz", "count": 4 }
       ],
       "upgrades": []
     },
@@ -326,6 +326,13 @@
       "name": "Predators",
       "variants": [
         { "id": "1", "label": "Füge bis zu 2 Chaos Predators hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "chaos-predator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "schlachtschiff",
+      "name": "Schlachtschiff",
+      "variants": [
+        { "id": "1", "label": "Ersetze den Kreuzer der Devastation-Klasse durch ein Schlachtschiff der Despoiler-Klasse", "pts": 50, "effects": [{ "op": "replace", "from": "kreuzer", "to": "schlachtschiff", "count": 1 }] }
       ]
     }
   ],

@@ -1,0 +1,198 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/whitescars",
+  "name": "White Scars",
+  "faction": "Space Marines",
+  "version": "1.0.beta",
+  "source": { "file": "lists_de/SM/whitescars.json", "version": "1.0.beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "ws-chaplain": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "ws-librarian": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
+    "ws-supreme": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "ws-assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "ws-tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "ws-terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
+    "ws-sturmbike": { "name": "White Scars Sturmbikes", "from": "SM.json", "type": "INF" },
+    "ws-scoutbike": { "name": "White Scars Scoutbikes", "from": "SM.json", "type": "INF" },
+    "ws-land-speeder": { "name": "White Scars Land Speeder", "from": "SM.json", "type": "AV" },
+    "ws-land-speeder-tornado": { "name": "White Scars Land Speeder-Tornado", "from": "SM.json", "type": "AV" },
+    "ws-land-speeder-typhoon": { "name": "White Scars Land Speeder-Typhoon", "from": "SM.json", "type": "AV" },
+    "ws-land-speeder-tempest": { "name": "White Scars Land Speeder-Tempest", "from": "SM.json", "type": "AV" },
+    "ws-trike": { "name": "White Scars Trike", "from": "SM.json", "type": "INF" },
+    "ws-melta-bike": { "name": "White Scars Melta-Bike", "from": "SM.json", "type": "INF" },
+    "ws-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "ws-land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "ws-land-raider-crusader": { "name": "Land Raider Crusader", "from": "SM.json", "type": "AV" },
+    "ws-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "ws-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "ws-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "ws-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "ws-vindicator": { "name": "White Scars Vindicator", "from": "SM.json", "type": "AV" },
+    "ws-landungsschiff": { "name": "Landungsschiff", "from": "SM.json", "type": "AV" },
+    "ws-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
+    "ws-thunderhawk": { "name": "Thunderhawk", "from": "SM.json", "type": "AV" },
+    "ws-schlachtbarke": { "name": "Schlachtbarke", "from": "SM.json", "type": "AV" },
+    "ws-angriffskreuzer": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "ws-landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" },
+    "warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "White Scars Kernkontingente",
+      "formations": ["ws-bike-verband", "ws-tactical", "ws-terminatoren"]
+    },
+    {
+      "id": "support",
+      "name": "White Scars Unterstützungskontingente",
+      "formations": ["ws-sturmtrupps", "ws-bike-support"]
+    },
+    {
+      "id": "fleet",
+      "name": "White Scars Flotten- und Titanenverbünde",
+      "formations": ["ws-sturmtalon", "ws-thunderhawk", "ws-warhounds"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ws-bike-verband",
+      "name": "Bike-Verband",
+      "pts": 325,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ws-sturmbike", "count": 8 }
+      ],
+      "upgrades": ["ws-upgrade-commander"]
+    },
+    {
+      "id": "ws-tactical",
+      "name": "Taktische Trupps",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ws-tactical", "count": 6 }
+      ],
+      "upgrades": ["ws-upgrade-commander", "ws-upgrade-razorbacks", "ws-upgrade-vindicators"]
+    },
+    {
+      "id": "ws-terminatoren",
+      "name": "Terminatoren",
+      "pts": 425,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ws-terminator", "count": 4 },
+        { "unit": "ws-land-raider-crusader", "count": 2 }
+      ],
+      "upgrades": ["ws-upgrade-commander", "ws-upgrade-land-raider-transport"]
+    },
+    {
+      "id": "ws-sturmtrupps",
+      "name": "Sturmtrupps",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ws-assault", "count": 4 }
+      ],
+      "upgrades": ["ws-upgrade-commander", "ws-upgrade-vindicators"]
+    },
+    {
+      "id": "ws-bike-support",
+      "name": "Bike-Unterstützung",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ws-sturmbike", "count": 4 }
+      ],
+      "upgrades": ["ws-upgrade-trike"]
+    },
+    {
+      "id": "ws-sturmtalon",
+      "name": "Sturmtalon",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "ws-sturmtalon", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ws-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 325,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "ws-thunderhawk", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ws-warhounds",
+      "name": "Warhounds",
+      "pts": 275,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "warhound", "count": 1 }
+      ],
+      "upgrades": ["ws-upgrade-extra-warhound"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ws-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Captain", "pts": 25, "effects": [{ "op": "add", "unit": "ws-chaplain", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "ws-chaplain", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "ws-chaplain", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "ws-supreme", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ws-upgrade-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "1 Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "ws-razorback", "count": 1 }] },
+        { "id": "2", "label": "2 Razorbacks", "pts": 50, "effects": [{ "op": "add", "unit": "ws-razorback", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "ws-upgrade-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "1 White Scars Vindicator", "pts": 50, "effects": [{ "op": "add", "unit": "ws-vindicator", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ws-upgrade-land-raider-transport",
+      "name": "Land Raider-Transporter",
+      "variants": [
+        { "id": "1", "label": "1 Land Raider", "pts": 50, "effects": [{ "op": "add", "unit": "ws-land-raider", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ws-upgrade-trike",
+      "name": "Trikes",
+      "variants": [
+        { "id": "1", "label": "1 White Scars Sturmbike durch Trike ersetzen", "pts": 0, "effects": [{ "op": "replace", "from": "ws-sturmbike", "to": "ws-trike", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ws-upgrade-extra-warhound",
+      "name": "Zusatz Warhound-Titan",
+      "variants": [
+        { "id": "1", "label": "1 Zusatz Warhound-Titan", "pts": 200, "effects": [{ "op": "add", "unit": "warhound", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

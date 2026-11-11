@@ -1,0 +1,1010 @@
+{
+  "army": "ear-de/sm/primaris",
+  "source": {
+    "file": "lists_de/SM/primaris.json",
+    "version": "1.0.beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Sie kennen keine Furcht",
+      "description": [
+        "Space Marines sind für ihre Zähigkeit und Tapferkeit bekannt. Dies wird durch folgende Regeln dargestellt:",
+        "<ul><li>Es sind 2 Beschussmarken erforderlich, um eine Space-Marine-Einheit zu unterdrücken oder eine Einheit in einem aufgeriebenen Verband auszuschalten (überschüssige Beschussmarken werden ignoriert).</li><li>Space-Marine-Verbände werden erst aufgerieben, wenn sie 2 Beschussmarken pro Einheit im Verband haben.</li><li>Space-Marine-Verbände zählen bei der Ermittlung des Nahkampfergebnisses nur die Hälfte ihrer Beschussmarken (abgerundet, mindestens jedoch eine). Die zusätzlichen Treffer, die ein Space-Marine-Verband durch einen verlorenen Nahkampf erleidet, werden halbiert und zugunsten der Space Marines abgerundet.</li><li>Wenn sich ein aufgeriebener Space-Marine-Verband sammelt, erhält er Beschussmarken in Höhe seiner Einheitenzahl statt der halben Anzahl.</li></ul>"
+      ]
+    }
+  ],
+  "units": {
+    "pri-captain": {
+      "name": "Captain",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "pri-chaplain": {
+      "name": "Ordenspriester",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "pri-librarian": {
+      "name": "Scriptor",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schmetterschlag",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "pri-supreme": {
+      "name": "Oberbefehlshaber",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "pri-sturm-intercessor": {
+      "name": "Sturm-Intercessor",
+      "type": "INF",
+      "speed": "15",
+      "armour": 3,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwere Boltpistole & Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "pri-intercessor": {
+      "name": "Intercessor",
+      "type": "INF",
+      "speed": "15",
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Boltergewehr",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-inceptor": {
+      "name": "Inceptor",
+      "type": "INF",
+      "speed": "30",
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        },
+        {
+          "name": "Einsatz des Overlords",
+          "description": [
+            "Einige Primaris Space Marines sind mit schweren Sprungmodulen oder Gravfallschirme ausgerüstet, die dafür vorgesehen sind, sie aus niedriger Umlaufbahn von den Landebuchten tief fliegender Angriffsschiffe auf das Schlachtfeld abzusetzen. Dies wird dadurch dargestellt, dass der Verband die Sonderregel <i>Selbststaendige Planetare Landung</i> erhält, mit einer Ausnahme: Würfle nur für die erste Einheit des Verbands auf Abweichung. Stelle anschliessend alle übrigen Einheiten innerhalb von 5cm zur ersten Einheit auf."
+          ]
+        }
+      ]
+    },
+    "pri-hellblaster": {
+      "name": "Hellblaster",
+      "type": "INF",
+      "speed": "15",
+      "armour": 3,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Plasma-Verbrenner",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-outrider": {
+      "name": "Outrider",
+      "type": "INF",
+      "speed": "35",
+      "armour": 3,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Schwere Boltpistole & Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "pri-aggressor": {
+      "name": "Aggressor",
+      "type": "INF",
+      "speed": "15",
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Flammenstulpe",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        }
+      ]
+    },
+    "pri-suppressor": {
+      "name": "Suppressor",
+      "type": "INF",
+      "speed": "30",
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Beschleuniger-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Einsatz des Overlords",
+          "description": [
+            "Einige Primaris Space Marines sind mit schweren Sprungmodulen oder Gravfallschirme ausgerüstet, die dafür vorgesehen sind, sie aus niedriger Umlaufbahn von den Landebuchten tief fliegender Angriffsschiffe auf das Schlachtfeld abzusetzen. Dies wird dadurch dargestellt, dass der Verband die Sonderregel <i>Selbststaendige Planetare Landung</i> erhält, mit einer Ausnahme: Würfle nur für die erste Einheit des Verbands auf Abweichung. Stelle anschliessend alle übrigen Einheiten innerhalb von 5cm zur ersten Einheit auf."
+          ]
+        },
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        }
+      ]
+    },
+    "pri-reiver": {
+      "name": "Reiver",
+      "type": "INF",
+      "speed": "15",
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Einsatz des Overlords",
+          "description": [
+            "Einige Primaris Space Marines sind mit schweren Sprungmodulen oder Gravfallschirme ausgerüstet, die dafür vorgesehen sind, sie aus niedriger Umlaufbahn von den Landebuchten tief fliegender Angriffsschiffe auf das Schlachtfeld abzusetzen. Dies wird dadurch dargestellt, dass der Verband die Sonderregel <i>Selbststaendige Planetare Landung</i> erhält, mit einer Ausnahme: Würfle nur für die erste Einheit des Verbands auf Abweichung. Stelle anschliessend alle übrigen Einheiten innerhalb von 5cm zur ersten Einheit auf."
+          ]
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "pri-eliminator": {
+      "name": "Eliminator",
+      "type": "INF",
+      "speed": "15",
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Bolter-Scharfschützengewehr",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "pri-infiltrator": {
+      "name": "Infiltratoren",
+      "type": "INF",
+      "speed": "15",
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "pri-eradicator": {
+      "name": "Eradicator",
+      "type": "INF",
+      "speed": "15",
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Schweres Meltagewehr",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        }
+      ]
+    },
+    "pri-invader": {
+      "name": "Invader",
+      "type": "LV",
+      "speed": "35",
+      "armour": 3,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Ansturm-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "3x AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-invictor": {
+      "name": "Invictor-Kampfanzug",
+      "type": "LV",
+      "speed": "15",
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Servoarm",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "pri-redemptor-cybot": {
+      "name": "Redemptor-Cybot",
+      "type": "AV",
+      "speed": "15",
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwere Ansturm-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Icarus-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energiefaust",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "pri-impulsor": {
+      "name": "Impulsor",
+      "type": "AV",
+      "speed": "35",
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Aggressors und Eradicators zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "pri-repulsor": {
+      "name": "Repulsor",
+      "type": "AV",
+      "speed": "30",
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Aggressors und Eradicators zählen jeweils als 2 Einheiten.",
+      "weapons": [
+        {
+          "name": "Ansturm-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "3x AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkralle",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "pri-gladiator-lancer": {
+      "name": "Gladiator-Lancer",
+      "type": "AV",
+      "speed": "30",
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Laserzerstörer",
+          "modes": [
+            {
+              "firepower": "AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-gladiator-reaper": {
+      "name": "Gladiator-Reaper",
+      "type": "AV",
+      "speed": "30",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwere Ansturm-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-gladiator-valiant": {
+      "name": "Gladiator-Valiant",
+      "type": "AV",
+      "speed": "30",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkralle",
+          "modes": [
+            {
+              "firepower": "AT3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Multimelter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-storm-speeder-thunderstrike": {
+      "name": "Storm-Speeder Thunderstrike",
+      "type": "AV",
+      "speed": "35",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "AC-Vierlings-Ionenturm",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Icarus-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkralle",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "pri-storm-speeder-hammerstrike": {
+      "name": "Storm-Speeder Hammerstrike",
+      "type": "AV",
+      "speed": "35",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Meltazerstörer",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Salvenkanone",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "pri-sturmtalon": {
+      "name": "Sturmtalon",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "pri-astraeus": {
+      "name": "Astraeus",
+      "type": "WE",
+      "speed": "20",
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "crit": "Astraeus wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Makro-Beschleunigerkanone",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Auslöscher",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    }
+  }
+}

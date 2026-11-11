@@ -1,0 +1,154 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/ravenguard",
+  "name": "Ravenguard",
+  "faction": "Space Marines",
+  "version": "1.0.beta",
+  "source": { "file": "lists_de/SM/ravenguard.json", "version": "1.0.beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "rg-captain": { "name": "Captain", "from": "SM.json", "type": "CH" },
+    "rg-chaplain": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "rg-librarian": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
+    "rg-supreme": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "rg-assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "rg-bike": { "name": "Sturm-Bikes", "from": "SM.json", "type": "INF" },
+    "rg-scout": { "name": "Raven Guard Scouts", "from": "SM.json", "type": "INF" },
+    "rg-protektor": { "name": "Protektorgarde-Veteranen", "from": "SM.json", "type": "INF" },
+    "rg-tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "rg-devastor": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
+    "rg-cyclone": { "name": "Cyclone-Terminatoren", "from": "SM.json", "type": "INF" },
+    "rg-terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
+    "rg-expugnator": { "name": "Expugnatorgarde-Veteranen", "from": "SM.json", "type": "INF" },
+    "rg-trike": { "name": "Trike", "from": "SM.json", "type": "INF" },
+    "rg-land-speeder": { "name": "Land Speeder", "from": "SM.json", "type": "AV" },
+    "rg-land-speeder-storm": { "name": "Land Speeder Storm", "from": "SM.json", "type": "AV" },
+    "rg-land-speeder-tempest": { "name": "Land Speeder Tempest", "from": "SM.json", "type": "AV" },
+    "rg-land-speeder-tornado": { "name": "Land Speeder Tornado", "from": "SM.json", "type": "AV" },
+    "rg-land-speeder-typhoon": { "name": "Land Speeder Typhoon", "from": "SM.json", "type": "AV" },
+    "rg-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "rg-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "rg-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "rg-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "rg-sturmadler": { "name": "Sturmadler", "from": "SM.json", "type": "AV" },
+    "rg-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
+    "rg-angriffskreuzer": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "rg-vanguard-cruiser": { "name": "Vanguard-Klasse-Leichter-Kreuzer", "from": "SM.json", "type": "AV" },
+    "rg-landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" },
+    "rg-warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Ravenguard Kernkontingente",
+      "formations": ["rg-sturmaufklaerer", "rg-tactical"]
+    },
+    {
+      "id": "elite",
+      "name": "Ravenguard Elitekontingente",
+      "formations": ["rg-sterguard", "rg-expugnatorgarde"]
+    },
+    {
+      "id": "fleet",
+      "name": "Ravenguard Flotten- und Titanenverbünde",
+      "formations": ["rg-warhounds"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "rg-sturmaufklaerer",
+      "name": "Sturmaufklärer",
+      "pts": 175,
+      "tags": ["core"],
+      "units": [
+        { "unit": "rg-scout", "count": 3 },
+        { "unit": "rg-land-speeder-storm", "count": 3 }
+      ],
+      "upgrades": ["rg-upgrade-commander"]
+    },
+    {
+      "id": "rg-tactical",
+      "name": "Taktische Trupps",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [
+        { "unit": "rg-tactical", "count": 4 }
+      ],
+      "upgrades": ["rg-upgrade-commander", "rg-upgrade-razorbacks"]
+    },
+    {
+      "id": "rg-sterguard",
+      "name": "Sternguard Veteran",
+      "pts": 275,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "rg-protektor", "count": 4 }
+      ],
+      "upgrades": ["rg-upgrade-commander", "rg-upgrade-land-raider-transport"]
+    },
+    {
+      "id": "rg-expugnatorgarde",
+      "name": "Expugnatorgarde-Veteranen",
+      "pts": 300,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "rg-expugnator", "count": 4 }
+      ],
+      "upgrades": ["rg-upgrade-commander"]
+    },
+    {
+      "id": "rg-warhounds",
+      "name": "Warhounds",
+      "pts": 275,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "rg-warhound", "count": 1 }
+      ],
+      "upgrades": ["rg-upgrade-extra-warhound"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "rg-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Captain", "pts": 25, "effects": [{ "op": "add", "unit": "rg-captain", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "rg-librarian", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "rg-chaplain", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "rg-supreme", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "rg-upgrade-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "1 Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "rg-razorback", "count": 1 }] },
+        { "id": "2", "label": "2 Razorbacks", "pts": 50, "effects": [{ "op": "add", "unit": "rg-razorback", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "rg-upgrade-land-raider-transport",
+      "name": "Land Raider-Transporter",
+      "variants": [
+        { "id": "1", "label": "1 Land Raider", "pts": 50, "effects": [{ "op": "add", "unit": "rg-rhino", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "rg-upgrade-extra-warhound",
+      "name": "Zusatz Warhound-Titan",
+      "variants": [
+        { "id": "1", "label": "1 Zusatz Warhound-Titan", "pts": 200, "effects": [{ "op": "add", "unit": "rg-warhound", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

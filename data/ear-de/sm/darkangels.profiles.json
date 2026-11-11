@@ -1,0 +1,1393 @@
+{
+  "army": "ear-de/sm/darkangels",
+  "source": {
+    "file": "lists_de/SM/darkangels.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Teleportieren-Peilsender",
+      "description": [
+        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+        "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+        "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+      ]
+    },
+    {
+      "name": "Space-Marine-Transporter",
+      "description": [
+        "Space Marines sind eine sehr bewegliche Armee. Daher sind in den Punktkosten eines Kontingents normalerweise genügend Rhino-Transportfahrzeuge enthalten, um es und alle gekauften Aufwertungen zu transportieren. Bestimme die benötigte Anzahl Rhinos, nachdem alle Aufwertungen gekauft wurden. Es werden immer nur so viele Rhinos mitgeführt, wie zum Transport des Verbands mindestens erforderlich sind; zusätzliche Fahrzeuge als Ersatz für Verluste sind nicht erlaubt.",
+        "Beachte, dass viele Verbände keine Rhinos erhalten, meist weil sie nicht hineinpassen. Kontingente mit Rhinos sind im Einheitenabschnitt des Armeeorganisationsplan mit „plus Transport“ gekennzeichnet.",
+        "Du musst keine Rhinos mitnehmen, wenn du das nicht möchtest. Du kannst den Verband stattdessen zu Fuß einsetzen, zum Beispiel als Garnison, oder ihn in einem Thunderhawk transportieren.",
+        "außerdem kannst du die Rhinos eines Kontingents durch Landungskapseln ersetzen. In diesem Fall kommt das Kontingent gemäß den Regeln für Planetare Landung (siehe Planetare Landung) in einer Landungskapsel ins Spiel. Beachte, dass du dafür auch einen Space-Marine-Schlachtkreuzer oder eine Kampfbarge benötigst, von dem aus die Landungskapseln eingesetzt werden.",
+        "Vor jedem Spiel kann der Space-Marine-Spieler, nachdem die gegnerische Armee bekannt ist, aber bevor Missionsziele platziert werden, auswählen, welche Verbände mit der Aufwertung „plus Transport“ in Rhinos, Landungskapseln oder zu Fuß aufgestellt werden. Enthält ein Verband Einheiten, die nicht in Landungskapseln aufgestellt werden können, darf diese Option nicht ausgewählt werden."
+      ]
+    },
+    {
+      "name": "Sie kennen keine Furcht",
+      "description": [
+        "Space Marines sind für ihre Zähigkeit und Tapferkeit bekannt. Dies wird durch folgende Regeln dargestellt:",
+        "<ul><li>Es sind 2 Beschussmarken erforderlich, um eine Space-Marine-Einheit zu unterdrücken oder eine Einheit in einem aufgeriebenen Verband auszuschalten (überschüssige Beschussmarken werden ignoriert).</li><li>Space-Marine-Verbände werden erst aufgerieben, wenn sie 2 Beschussmarken pro Einheit im Verband haben.</li><li>Space-Marine-Verbände zählen bei der Ermittlung des Nahkampfergebnisses nur die Hälfte ihrer Beschussmarken (abgerundet, mindestens jedoch eine). Die zusätzlichen Treffer, die ein Space-Marine-Verband durch einen verlorenen Nahkampf erleidet, werden halbiert und zugunsten der Space Marines abgerundet.</li><li>Wenn sich ein aufgeriebener Space-Marine-Verband sammelt, erhält er Beschussmarken in Höhe seiner Einheitenzahl statt der halben Anzahl.</li></ul>"
+      ]
+    }
+  ],
+  "units": {
+    "da-captain": {
+      "name": "Captain der Dark Angels",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "da-chaplain": {
+      "name": "Ordenspriester",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "da-librarian": {
+      "name": "Scriptor",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schmetterschlag",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "da-supreme": {
+      "name": "Oberbefehlshaber",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-assault": {
+      "name": "Sturmtrupps",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmapistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "da-scout": {
+      "name": "Scout",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "da-tactical": {
+      "name": "Taktische Trupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-devastor": {
+      "name": "Dark-Angels-Devastortrupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Plasmakanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-terminator": {
+      "name": "Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Sturmkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "da-deathwing": {
+      "name": "Deathwing-Ritter",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Streitkolben der Absolution und Sturmschilde",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flegel der Unversöhnlichen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-cyclone-terminator": {
+      "name": "Cyclone-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Cyclone-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "da-ravenwing": {
+      "name": "Ravenwing-Schwarze-Ritter",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmaklauen",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Corvus Hämmer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-ravenwing-bike": {
+      "name": "Ravenwing-Sturmbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-ravenwing-trike": {
+      "name": "Ravenwing-Trike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "da-ravenwing-land-speeder": {
+      "name": "Ravenwing-Land Speeder",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "da-ravenwing-land-speeder-tornado": {
+      "name": "Ravenwing-Land Speeder-Tornado",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "da-ravenwing-land-speeder-vengeance": {
+      "name": "Ravenwing-Land Speeder-Vengeance",
+      "type": "LV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasma-Sturmbatterie",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren-Peilsender",
+          "description": [
+            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+          ]
+        }
+      ]
+    },
+    "da-mortis-cybot": {
+      "name": "Mortis-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Zählt beim Transport als Cybot.",
+      "weapons": [
+        {
+          "name": "Zwillings-Mortis Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "da-hunter": {
+      "name": "Hunter",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Jagd-Killer",
+          "modes": [
+            {
+              "firepower": "AT4+/AA4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-stalker": {
+      "name": "Stalker",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Icarus-Sturmkanonen",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-land-raider": {
+      "name": "Land Raider",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "da-land-raider-ares": {
+      "name": "Land Raider Ares",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "da-predator-destructor": {
+      "name": "Predator Destructor",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Predator Kanone",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-predator-annihilator": {
+      "name": "Predator Annihilator",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-rhino": {
+      "name": "Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "da-razorback": {
+      "name": "Razorback",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": "5+/4",
+      "notes": "Kann 1 Infanterieeinheit (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren. Bewaffnet entweder mit einer Zwillings-Laserkanone oder einem Zwillings-Schwerbolter. Razorbacks mit Zwillings-Schwerbolter erhalten einen Feuergefechtswert von 4+.",
+      "weapons": [
+        {
+          "name": "0–1x Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45
+            }
+          ]
+        },
+        {
+          "name": "0–1x Zwillings-Schwerbolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "da-whirlwind": {
+      "name": "Whirlwind",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Whirlwind Werfer",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "da-vindicator": {
+      "name": "Vindicator",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "da-glaive": {
+      "name": "Glaive",
+      "type": "WE",
+      "speed": "15",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Glaive wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Volkite-Karronade",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vierlings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "da-ravenwing-nephilim": {
+      "name": "Ravenwing-Nephilim",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-ravenwing-dark-talon": {
+      "name": "Ravenwing-Dark-Talon",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Rift Kanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Ionenkanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+/AA4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Stasis Bombe",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "da-hunter-klasse-zerstoerer": {
+      "name": "Hunter-Klasse-Zerstörer",
+      "type": "SC",
+      "notes": "Kann 4 Infanterieeinheiten transportieren. Diese dürfen das Spielfeld nur durch Teleportieren betreten.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "1BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "da-strike-cruiser": {
+      "name": "Angriffskreuzer",
+      "type": "SC",
+      "notes": "Kann 20 Infanterieeinheiten, Trikes oder Cybots sowie 10 leichte oder gepanzerte Fahrzeugeinheiten (außer Trikes und Cybots), 6 Thunderhawks und genügend Landungskapseln oder Landungsschiff für alle übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "da-landungskapsel": {
+      "name": "Landungskapsel",
+      "notes": "Kann nur eine Verband aus folgenden Einheiten transportieren: Taktische Trupps, Devastor-Trupps, Cybot, Sternguard-Veteranen, Wolfsgarde-Terminatoren, Grey-Knights-Angriffstrupp oder Grey-Knights-Purgatortrupp. Nach der Landung der Landungskapsel greift ihr Todeswind alle gegnerischen Einheiten innerhalb von 15 cm an. Jede angegriffene gegnerische Verband erhält einen Beschussmarker dafür, dass sie unter Beschuss gerät, sowie einen zusätzlichen Beschussmarker pro Verlust. Anschließend müssen alle in der Landungskapsel transportierten Truppen innerhalb von 5cm zur Landungskapsel oder innerhalb von 5cm zu einer bereits gelandeten Einheit derselben Verband aussteigen, sofern alle Einheiten innerhalb von 15 cm zur Landungskapsel aufgestellt werden. Entferne die Landungskapselmodelle vom Spielfeld, sobald die transportierte Verband ausgestiegen ist.",
+      "weapons": [
+        {
+          "name": "Todeswind",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 15
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -905,6 +905,27 @@
           "description": null
         }
       ]
+    },
+    "chaos-angriffskreuzer": {
+      "name": "Chaos-Angriffskreuzer",
+      "type": "SC",
+      "notes": "Kann 20 Infanterieeinheiten oder Cybots sowie 20 leichte oder gepanzerte Fahrzeugeinheiten (außer Cybots), sechs Thunderhawks und genügend Landungskapseln und Thunderhawk-Transporter für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
     }
   }
 }

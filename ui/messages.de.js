@@ -1,8 +1,9 @@
 // German UI texts for engine violations. Only hard rule violations are shown.
 const constraintTexts = {
-  "support-per-core": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kernverband).`,
+  "support-per-core": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}.`,
   "support-per-company": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
   "scouts-per-detachment": (p) => `Zu viele Scout-Trupps: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Verband ohne Scouts).`,
+  "dominatrix-limit": (p) => `Die Dominatrix darf höchstens ${p.limit}× gewählt werden (gewählt: ${p.count}).`,
   "regimental-hq-limit": (p) => `Das Regimental HQ darf nur einmal gewählt werden (gewählt: ${p.count}).`,
   "orbital-support-limit": (p) => `Orbital Support darf nur einmal gewählt werden (gewählt: ${p.count}).`,
   "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
@@ -11,6 +12,7 @@ const constraintTexts = {
 
 const shareTexts = {
   "imperial-navy-points-limit": (p) => `Imperiale Flotte: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+  "rare-points-limit": (p) => `Seltene Verbände: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
   "warengines-share": (p) => `Kriegsmaschinen: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
 };
 

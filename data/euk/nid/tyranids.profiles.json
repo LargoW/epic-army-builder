@@ -11,7 +11,7 @@
         {"name": "Venom Cannon", "range": "30cm", "firepower": "AP5+/AT6+"},
         {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
       ],
-      "specialRules": ["Commander", "Fearless", "Synapse", "ReINForced Armour", "Leader", "May have wings"]
+      "specialRules": ["Commander", "Fearless", "Synapse", "Reinforced Armour", "Leader", "May have wings"]
     },
     "tyranid-warriors": {
       "name": "Tyranid Warriors",
@@ -21,6 +21,8 @@
       "cc": "3+",
       "ff": "5+",
       "weapons": [
+        {"name": "Venom Cannon", "range": "30cm", "firepower": "AP5+/AT6+"},
+
         {"name": "Death Spitters", "range": "15cm", "firepower": "Small Arms"},
         {"name": "Rending Claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}
       ],
@@ -44,13 +46,13 @@
       "cc": "5+",
       "ff": null,
       "weapons": [{"name": "Talons", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}],
-      "specialRules": ["INFiltrators"]
+      "specialRules": ["Infiltrators"]
     },
     "gargoyles": {
       "name": "Gargoyles",
       "type": "INF",
       "speed": "30cm",
-      "armour": null,
+      "armour": "6+",
       "cc": "6+",
       "ff": "6+",
       "weapons": [
@@ -67,7 +69,7 @@
       "cc": "4+",
       "ff": null,
       "weapons": [{"name": "Rending Claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}],
-      "specialRules": ["INFiltrators", "First Strike", "Scout", "Synapse"]
+      "specialRules": ["Infiltrators", "First Strike", "Scout", "Synapse"]
     },
     "lictors": {
       "name": "Lictors",
@@ -77,7 +79,7 @@
       "cc": "4+",
       "ff": null,
       "weapons": [{"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}],
-      "specialRules": ["INFiltrators", "First Strike", "Scout", "Teleport", "Commander"]
+      "specialRules": ["Infiltrators", "First Strike", "Scout", "Teleport", "Commander"]
     },
     "raveners": {
       "name": "Raveners",
@@ -90,7 +92,7 @@
         {"name": "Death Spitters", "range": "15cm", "firepower": "Small Arms"},
         {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
       ],
-      "specialRules": ["INFiltrators", "Teleport"]
+      "specialRules": ["Infiltrators", "Teleport"]
     },
     "biovore": {
       "name": "Biovore",
@@ -123,7 +125,7 @@
         {"name": "Spore Cysts", "range": "15cm", "firepower": "Small Arms"},
         {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
       ],
-      "specialRules": ["Fearless", "ReINForced Armour"]
+      "specialRules": ["Fearless", "Reinforced Armour"]
     },
     "zoanthrope": {
       "name": "Zoanthrope",
@@ -136,7 +138,7 @@
         {"name": "Warp Blast", "range": "30cm", "firepower": "MW5+/AA6+, MW"},
         {"name": "Warp Blast", "range": "15cm", "firepower": "Small Arms, MW"}
       ],
-      "specialRules": ["Skimmer", "Leader", "ReINForced Armour"]
+      "specialRules": ["Skimmer", "Leader", "Reinforced Armour"]
     },
     "dactylis": {
       "name": "Dactylis",
@@ -146,7 +148,7 @@
       "cc": "6+",
       "ff": "5+",
       "weapons": [{"name": "Heavy Spore Mines", "range": "45cm", "firepower": "1BP, Disrupt, Indirect"}],
-      "specialRules": ["ReINForced Armour"]
+      "specialRules": ["Reinforced Armour"]
     },
     "exocrine": {
       "name": "Exocrine",
@@ -156,7 +158,7 @@
       "cc": "5+",
       "ff": "5+",
       "weapons": [{"name": "Heavy Venom Cannon", "range": "30cm", "firepower": "4 × AP5+/AT5+"}],
-      "specialRules": ["ReINForced Armour"]
+      "specialRules": ["Reinforced Armour"]
     },
     "haruspex": {
       "name": "Haruspex",
@@ -166,7 +168,7 @@
       "cc": "5+",
       "ff": null,
       "weapons": [{"name": "2 × Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}],
-      "specialRules": ["ReINForced Armour"]
+      "specialRules": ["Reinforced Armour"]
     },
     "malefactor": {
       "name": "Malefactor",
@@ -176,7 +178,7 @@
       "cc": "5+",
       "ff": "5+",
       "weapons": [{"name": "Spine Arms", "range": "15cm", "firepower": "Small Arms, +2A"}],
-      "specialRules": ["ReINForced Armour", "Transport (2) Warriors, Termagaunt, Hormagaunt"]
+      "specialRules": ["Reinforced Armour", "Transport (2) Warriors, Termagaunt, Hormagaunt"]
     },
     "trygon": {
       "name": "Trygon",
@@ -189,7 +191,7 @@
         {"name": "Bio-electric field", "range": "15cm", "firepower": "2 × AP3+/AT6+, Forward"},
         {"name": "Scything Talons", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
       ],
-      "specialRules": ["Fearless", "INFiltrator", "ReINForced Armour", "Teleport", "Synapse", "Damage Capacity 2", "Critical: Killed"]
+      "specialRules": ["Fearless", "Infiltrator", "Reinforced Armour", "Teleport", "Synapse", "Damage Capacity 2", "Critical: Killed"]
     },
     "hierodule": {
       "name": "Hierodule",
@@ -198,8 +200,11 @@
       "armour": "5+",
       "cc": "4+",
       "ff": "5+",
-      "weapons": [{"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"}],
-      "specialRules": ["Fearless", "ReINForced Armour"]
+      "weapons": [
+        {"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"},
+        {"name": "Crushing Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
+      ],
+      "specialRules": ["Fearless", "Reinforced Armour", "Damage Capacity 3", "Critical: Killed"]
     },
     "harridan": {
       "name": "Harridan",
@@ -212,7 +217,7 @@
         {"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, FF"},
         {"name": "Crushing Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +1A"}
       ],
-      "specialRules": ["Fearless", "ReINForced Armour", "Leader", "Synapse", "Skimmer", "Transport (up to six Gargoyles)", "Damage Capacity 3", "Critical: Killed"]
+      "specialRules": ["Fearless", "Reinforced Armour", "Leader", "Synapse", "Skimmer", "Transport (up to six Gargoyles)", "Damage Capacity 3", "Critical: Killed"]
     },
     "hive-nest": {
       "name": "Hive Nest",
@@ -223,9 +228,10 @@
       "ff": "6+",
       "weapons": [
         {"name": "Ripper Swarms", "range": "15cm", "firepower": "Small Arms"},
-        {"name": "Massive claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}
+        {"name": "Ripper Swarms", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}
+
       ],
-      "specialRules": ["Fearless", "ReINForced Armour", "Leader", "Synapse", "Thick Rear Armour", "Damage Capacity 3", "Critical: Killed"]
+      "specialRules": ["Fearless", "Reinforced Armour", "Leader", "Synapse", "Thick Rear Armour", "Damage Capacity 3", "Critical: Killed"]
     },
     "hierophant": {
       "name": "Hierophant Bio-Titan",
@@ -238,7 +244,7 @@
         {"name": "2 × Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, Forward"},
         {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"}
       ],
-      "specialRules": ["Fearless", "ReINForced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 4", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
+      "specialRules": ["Fearless", "Reinforced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 4", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
     },
     "hydraphant": {
       "name": "Hydraphant Bio-Titan",
@@ -253,7 +259,7 @@
         {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"},
         {"name": "Ripper Tentacles", "range": "Base Contact", "firepower": "Assault Wpn, +2A, TK (D3)"}
       ],
-      "specialRules": ["Fearless", "ReINForced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 6", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
+      "specialRules": ["Fearless", "Reinforced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 6", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May step over qualifying terrain"]
     },
     "dominatrix": {
       "name": "Dominatrix",
@@ -263,11 +269,13 @@
       "cc": "3+",
       "ff": "4+",
       "weapons": [
+        {"name": "Bio-cannon", "range": "45cm", "firepower": "2 × AP3+/AT4+, FF"},
+        {"name": "Bio-Acid", "range": "15cm", "firepower": "3BP, IC, Forward"},
         {"name": "Energy Pulse", "range": "30cm", "firepower": "AP4+/AT4+/AA5+"},
         {"name": "Energy Pulse", "range": "15cm", "firepower": "Small Arms, MW, +1A"},
         {"name": "Massive Claws", "range": "Base Contact", "firepower": "Assault Wpn, MW, +3A"}
       ],
-      "specialRules": ["Commander", "Fearless", "Leader", "ReINForced Armour", "Invulnerable Save", "Synapse", "May re-roll one failed Initiative test per turn", "May step over qualifying terrain"]
+      "specialRules": ["Commander", "Fearless", "Leader", "Reinforced Armour", "Invulnerable Save", "Synapse", "Damage Capacity 6", "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage", "May re-roll one failed Initiative test per turn", "May step over qualifying terrain"]
     }
   },
   "specialRules": [

@@ -141,7 +141,7 @@
       "pts": 125,
       "tags": ["support"],
       "units": [
-        { "unit": "dg-seuchenwandler", "count": 7 }
+        { "unit": "dg-seuchenwaender", "count": 7 }
       ],
       "upgrades": []
     },
@@ -151,7 +151,7 @@
       "pts": 200,
       "tags": ["support"],
       "units": [
-        { "unit": "dg-seuchenschniter", "count": 1 }
+        { "unit": "dg-seuchenschnitter", "count": 1 }
       ],
       "upgrades": []
     },

@@ -1,0 +1,2223 @@
+{
+  "army": "ear-de/am/questorismechanicus",
+  "source": {
+    "file": "lists_de/AM/questorismechanicus.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Ritterlichkeit",
+      "description": [
+        "Alle Ritterverbände erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive oder einen Eilschritt durchführen, sowie +1 auf ihre Sammeltests."
+      ]
+    }
+  ],
+  "units": {
+    "qm-seneschall": {
+      "name": "Seneschall",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "qm-seneschallord": {
+      "name": "Seneschallord",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "qm-baron": {
+      "name": "Ritter-Baron",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schocklanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Energiehandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-paladin": {
+      "name": "Questoris-Ritter-Paladin",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-crusader": {
+      "name": "Questoris-Ritter-Crusader",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Rächer-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "6x AP6+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-errant": {
+      "name": "Questoris-Ritter-Errant",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Thermalkanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-warden": {
+      "name": "Questoris-Ritter-Warden",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Rächer-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "6x AP6+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sturmfurie-Raketen",
+          "modes": [
+            {
+              "firepower": "2x AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-gallant": {
+      "name": "Questoris-Ritter-Gallant",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Icarus Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Donnerschlaghandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-zwillings-icarus": {
+      "name": "Zwillings-Icarus-Autokanone",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Zwillings-Icarus Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "qm-armiger-warglaive": {
+      "name": "Armiger-Ritter-Warglaive",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Thermalspeer",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schnitter-Kettenspalter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-armiger-helverin": {
+      "name": "Armiger-Ritter-Helverin",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-armiger-reliquemoirax": {
+      "name": "Armiger-Reliktritter-Moirax",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Muss entweder mit Lightning Locks oder mit Volkite Veuglaire und Gyges Siege Claw bewaffnet sein.",
+      "weapons": [
+        {
+          "name": "Blitzschlösser",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Volkite Veuglaire",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gyges Belagerungsklaue",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        },
+        {
+          "name": "Ionen-Flammenschild",
+          "description": [
+            "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+          ]
+        }
+      ]
+    },
+    "qm-cerastus-lancer": {
+      "name": "Cerastus-Ritter-Lancer",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Cerastus-Schocklanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        },
+        {
+          "name": "Ionen-Flammenschild",
+          "description": [
+            "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+          ]
+        }
+      ]
+    },
+    "qm-cerastus-acheron": {
+      "name": "Cerastus-Ritter-Acheron",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Cerastus Flammen Kanone",
+          "modes": [
+            {
+              "firepower": "AP2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenfaust",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-cerastus-castigator": {
+      "name": "Cerastus-Ritter-Castigator",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Castigator Kanone",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sturmkriegsklinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-cerastus-reliquatrapos": {
+      "name": "Cerastus-Reliktritter-Atrapos",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Graviton-Singularitätskanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Atrapos-Laserschneider",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        },
+        {
+          "name": "Ionen-Flammenschild",
+          "description": [
+            "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+          ]
+        }
+      ]
+    },
+    "qm-acastus-porphyrion": {
+      "name": "Acastus-Reliktritter-Porphyrion",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Acastus-Ritter erleidet 1 zusätzlichen Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Vierlings-Magna Laserkanone",
+          "modes": [
+            {
+              "firepower": "3x AT2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Helios Verteidigungs Raketen",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-acastus-asterius": {
+      "name": "Acastus-Reliktritter-Asterius",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Acastus-Ritter erleidet 1 zusätzlichen Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Konversions Strahl Kanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Volkite-Kulverine",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Karacnos-Mörserbatterie",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-questoris-preceptor": {
+      "name": "Questoris-Ritter-Preceptor",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Laserimpulsor",
+          "modes": [
+            {
+              "firepower": "AT2+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Donnerschlaghandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-questoris-freeblade": {
+      "name": "Questoris-Ritter-Freeblade",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Donnerschlaghandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Chrimson Glaive<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Feuersturmkanone",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Iron Wolf<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Helfrost Zerstörer",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": ">Justice<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Castigator Kanone",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": ">Canis Rex<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserimpulsor",
+          "modes": [
+            {
+              "firepower": "AT2+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-questoris-reliquestyrix": {
+      "name": "Questoris-Reliktritter-Styrix",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Volkite Chierovile",
+          "modes": [
+            {
+              "firepower": "2x AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Rad Cleanser",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Graviton-Zermalmer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hekaton Belagerungsklaue",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        },
+        {
+          "name": "Ionen-Flammenschild",
+          "description": [
+            "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+          ]
+        }
+      ]
+    },
+    "qm-questoris-reliquemagaera": {
+      "name": "Questoris-Reliktritter-Magaera",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Blitzkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Phasen-Plasmafusil",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        },
+        {
+          "name": "Ionen-Flammenschild",
+          "description": [
+            "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+          ]
+        }
+      ]
+    },
+    "qm-dominus-castellan": {
+      "name": "Dominus-Ritter-Castellan",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Ironstorm-Raketenbehälter",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Vulkanlanze",
+          "modes": [
+            {
+              "firepower": "AT2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisschlag-Rakete",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": "Unbegrenzt",
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Dezimator",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-dominus-valiant": {
+      "name": "Dominus-Ritter-Valiant",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Ironstorm-Raketenbehälter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisschlag-Rakete",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": "Unbegrenzt",
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Feuersturmkanone",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Donnerwendel-Harpune",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Starrköpfig",
+          "description": [
+            "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (3+)",
+          "description": null
+        }
+      ]
+    },
+    "qm-magos": {
+      "name": "Magos",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Solar-Atomisierer",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Axt des Omnissiah",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "qm-hypaspisten": {
+      "name": "Hypaspisten",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "qm-onager": {
+      "name": "Onager-Dünenkrabbler",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": "5+/4",
+      "notes": "Muss zwischen Auslöschungsstrahler, schwerem Zwillings-Phosphorblaster, Icarus-Array und Neutronenlaser wählen. Onager-Dünenkrabbler mit Auslöschungsstrahler erhalten einen Feuergefechtswert von 4+.",
+      "weapons": [
+        {
+          "name": "Auslöschungsstrahler",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Zwillings-Phosphorblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neutronenlaser",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP6+/AT5+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Icarus-Array",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "qm-skorpius": {
+      "name": "Skorpius-Desintegrator",
+      "type": "LV",
+      "speed": 30,
+      "armour": 3,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Ferrumite Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "qm-gorgon": {
+      "name": "Gorgon",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 10 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Jeder Praetorian Combat Servitor zählt als zwei Einheiten.",
+      "crit": "Gorgon ist bewegungsunfähig und darf sich für den Rest des Spiels nicht mehr bewegen. 1W3 zufällige transportierte Einheiten erleiden einen Treffer. Weitere kritische Treffer zerstören Gorgon.",
+      "weapons": [
+        {
+          "name": "Zwillings-Schwerer Maschinengewehr",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "qm-avenger": {
+      "name": "Avenger-Sturzkampfflugzeug",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Avenger-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "3x AP6+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Schwerer-Maschinengewehr-Turm",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "qm-arkmech": {
+      "name": "Ark-Mechanicus-Schlachtschiff",
+      "type": "SC",
+      "notes": "Ist entweder mit Orbitalbombardement oder zwei Präzisionsschüssen ausgerüstet (die Auswahl erfolgt zu Beginn der Schlacht).",
+      "weapons": [
+        {
+          "name": "0–1x Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "6BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": "0-1 2",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 auf dem Schlachtfeld eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

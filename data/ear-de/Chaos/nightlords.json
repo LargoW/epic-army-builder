@@ -32,7 +32,8 @@
     "furien": { "name": "Furien des ungeteilten Chaos", "from": "daemons.json", "type": "AV" },
     "chaos-xiphon": { "name": "Chaos-Xiphon-Abfangjäger", "from": "chaosnavy.json", "type": "AV" },
     "chaos-feuerraptor": { "name": "Chaos-Feuerraptor", "from": "chaosnavy.json", "type": "AV" },
-    "chaos-thunderhawk": { "name": "Chaos-Thunderhawk", "from": "chaosnavy.json", "type": "AV" }
+    "chaos-thunderhawk": { "name": "Chaos-Thunderhawk", "from": "chaosnavy.json", "type": "AV" },
+    "chaos-angriffskreuzer": { "name": "Chaos-Angriffskreuzer", "from": "chaosnavy.json", "type": "AV" }
   },
   "sections": [
     {
@@ -200,7 +201,7 @@
       "pts": 200,
       "tags": ["titans-navy"],
       "units": [
-        { "unit": "chaosangriffskreuzer", "count": 1 }
+        { "unit": "chaos-angriffskreuzer", "count": 1 }
       ],
       "upgrades": []
     },

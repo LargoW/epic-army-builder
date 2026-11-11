@@ -12,7 +12,7 @@
   "strategy": 1,
   "initiative": [
     {
-      "formations": [""],
+      "formations": ["*"],
       "value": "2+"
     }
   ],
@@ -84,21 +84,13 @@
           "id": "normal",
           "label": "Normal",
           "pts": 225,
-          "mult": 1,
-          "units": [
-            {"unit": "tyranid-warriors", "count": 2},
-            {"unit": "termagants", "count": 8}
-          ]
-        },
+          "mult": 1
+          },
         {
           "id": "big",
           "label": "Big",
           "pts": 400,
-          "mult": 2,
-          "units": [
-            {"unit": "tyranid-warriors", "count": 4},
-            {"unit": "termagants", "count": 16}
-          ]
+          "mult": 2
         }
       ],
       "units": [
@@ -127,26 +119,18 @@
           "id": "normal",
           "label": "Normal",
           "pts": 175,
-          "mult": 1,
-          "units": [
-            {"unit": "hive-tyrant", "count": 1},
-            {"unit": "exocrine", "count": 3}
-          ]
+          "mult": 1
         },
         {
           "id": "big",
           "label": "Big",
           "pts": 300,
-          "mult": 2,
-          "units": [
-            {"unit": "hive-tyrant", "count": 2},
-            {"unit": "exocrine", "count": 6}
-          ]
+          "mult": 2
         }
       ],
       "units": [
         {"unit": "hive-tyrant", "count": 1},
-        {"unit": "exocrine", "count": 3}
+        {"oneOf": ["exocrine", "haruspex", "malefactor"], "count": 3, "mixed": true}
       ],
       "upgrades": [
         "u-termagants",
@@ -159,7 +143,7 @@
     },
     {
       "id": "f-dominatrix",
-      "name": "Dominatrix",
+      "name": "0-2 Dominatrix",
       "pts": 500,
       "tags": ["core"],
       "units": [{"unit": "dominatrix", "count": 1}],
@@ -181,36 +165,26 @@
           "id": "normal",
           "label": "Normal",
           "pts": 175,
-          "mult": 1,
-          "units": [
-            {"unit": "tyranid-warriors", "count": 1},
-            {"unit": "termagants", "count": 3},
-            {"unit": "exocrine", "count": 2}
-          ]
+          "mult": 1
         },
         {
           "id": "big",
           "label": "Big",
           "pts": 300,
-          "mult": 2,
-          "units": [
-            {"unit": "tyranid-warriors", "count": 2},
-            {"unit": "termagants", "count": 6},
-            {"unit": "exocrine", "count": 4}
-          ]
+          "mult": 2
         }
       ],
       "units": [
         {"unit": "tyranid-warriors", "count": 1},
         {"unit": "termagants", "count": 3},
-        {"unit": "exocrine", "count": 2}
+        {"oneOf": ["exocrine", "haruspex", "malefactor"], "count": 2, "mixed": true}
       ],
       "upgrades": [
         "u-termagants",
         "u-biovores",
         "u-hybrid-creatures",
         "u-hybrid-carnifex-replace",
-        "u-gargoyles"
+        "u-hybrid-gargoyles"
       ]
     },
     {
@@ -236,7 +210,7 @@
       "tags": ["support"],
       "units": [
         {"unit": "hive-nest", "count": 1},
-        {"unit": "termagants", "count": 4}
+        {"oneOf": ["termagants", "hormagaunts"], "count": 4, "mixed": true}
       ],
       "upgrades": [
         "u-termagants",
@@ -298,7 +272,7 @@
       "id": "u-assault-hormagaunts",
       "name": "Hormagaunts",
       "variants": [
-        {"id": "1", "label": "Replace up to six Termagants with Hormagaunts", "pts": 0, "effects": [{"op": "replace", "from": "termagants", "to": "hormagaunts", "count": 6}]}
+        {"id": "1", "label": "Replace Termagants with Hormagaunts (up to six)", "pts": 0, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "termagants", "to": "hormagaunts", "count": 1}]}
       ]
     },
     {
@@ -316,6 +290,13 @@
       ]
     },
     {
+      "id": "u-hybrid-gargoyles",
+      "name": "Hybrid Swarm Gargoyles",
+      "variants": [
+        {"id": "1", "label": "Add Gargoyles", "pts": 20, "perUnit": true, "max": 2, "effects": [{"op": "add", "unit": "gargoyles", "count": 1}]}
+      ]
+    },
+    {
       "id": "u-biovores",
       "name": "Biovores",
       "variants": [
@@ -326,7 +307,7 @@
       "id": "u-hive-tyrant",
       "name": "Hive Tyrant",
       "variants": [
-        {"id": "1", "label": "Add one Hive Tyrant", "pts": 50, "effects": [{"op": "add", "unit": "hive-tyrant", "count": 1}]}
+        {"id": "1", "label": "Add one Hive Tyrant", "pts": 50, "perUnit": true, "max": 1, "effects": [{"op": "add", "unit": "hive-tyrant", "count": 1}]}
       ]
     },
     {
@@ -340,22 +321,25 @@
       "id": "u-hierodule",
       "name": "Hierodule",
       "variants": [
-        {"id": "1", "label": "Add one Hierodule", "pts": 125, "effects": [{"op": "add", "unit": "hierodule", "count": 1}]}
+        {"id": "1", "label": "Add one Hierodule", "pts": 125, "perUnit": true, "max": 1, "effects": [{"op": "add", "unit": "hierodule", "count": 1}]}
       ]
     },
     {
       "id": "u-raveners-zoanthropes",
       "name": "Raveners or Zoanthropes",
       "variants": [
-        {"id": "1", "label": "Add Raveners or Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
+        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "raveners", "count": 1}]},
+        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+        
       ]
     },
     {
       "id": "u-large-creatures",
       "name": "Exocrines, Malefactors, or Haruspexes",
       "variants": [
-        {"id": "1", "label": "Add Exocrines, Malefactors, or Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
-      ]
+        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
+        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
+        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}      ]
     },
     {
       "id": "u-dactylis",
@@ -375,14 +359,20 @@
       "id": "u-brute-monsters",
       "name": "Brute Swarm creatures",
       "variants": [
-        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Zoanthropes, or Raveners", "pts": 35, "perUnit": true, "effects": []}
+        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
+        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
+        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
+        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
+        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
       ]
     },
     {
       "id": "u-brute-carnifex-replace",
       "name": "Replace Brute Swarm creatures with Carnifexes",
       "variants": [
-        {"id": "1", "label": "Replace up to six Exocrines, Haruspexes, or Malefactors with Carnifexes", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine/haruspex/malefactor", "to": "carnifex", "count": 1}]}
+       {"id": "exocrine", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]},
+        {"id": "haruspex", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]},
+        {"id": "malefactor", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
       ]
     },
     {
@@ -410,21 +400,31 @@
       "id": "u-dominatrix-creatures",
       "name": "Dominatrix creatures",
       "variants": [
-        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Raveners, or Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": []}
+        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
+        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
+        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
+        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "raveners", "count": 1}]},
+        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
       ]
     },
     {
       "id": "u-hybrid-creatures",
       "name": "Hybrid Swarm creatures",
       "variants": [
-        {"id": "1", "label": "Add Exocrines, Haruspexes, Malefactors, Zoanthropes, or Raveners", "pts": 35, "perUnit": true, "effects": []}
+        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
+        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
+        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
+        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
+        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
       ]
     },
     {
       "id": "u-hybrid-carnifex-replace",
       "name": "Replace Hybrid Swarm creatures with Carnifexes",
       "variants": [
-        {"id": "1", "label": "Replace up to six Exocrines, Haruspexes, or Malefactors with Carnifexes", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine/haruspex/malefactor", "to": "carnifex", "count": 1}]}
+        {"id": "exocrine", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]},
+        {"id": "haruspex", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]},
+        {"id": "malefactor", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
       ]
     },
     {
@@ -466,8 +466,9 @@
       "id": "u-nest-creatures",
       "name": "Nest Swarm creatures",
       "variants": [
-        {"id": "1", "label": "Add Zoanthropes or Raveners", "pts": 35, "perUnit": true, "effects": []}
-      ]
+        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
+        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+       ]
     },
     {
       "id": "u-harassment-gargoyles",
@@ -487,17 +488,19 @@
   "formationConstraints": [
     {
       "id": "support-per-core",
-      "from": ["support"],
-      "forEach": ["core"],
+      "from": ["tag:support"],
+      "forEach": ["tag:core"],
       "max": 1
     },
     {
       "id": "rare-points-limit",
+      "from": ["tag:rare"],
+      "maxShare": [1, 3],
       "description": "No more than one third of the army points may be spent on Tyranid Rare Formations."
     },
     {
       "id": "dominatrix-limit",
-      "formation": "f-dominatrix",
+      "from": ["f-dominatrix"],
       "max": 2
     }
   ],

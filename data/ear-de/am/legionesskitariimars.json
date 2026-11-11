@@ -1,0 +1,121 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/am/legionesskitariimars",
+  "name": "Legiones Skitarii: Mars",
+  "faction": "Adeptus Mechanicus",
+  "version": "0.7.0",
+  "source": { "file": "lists_de/AM/legionesskitariimars.json", "version": "0.7.0", "commit": null },
+  "strategy": 3,
+  "initiative": [
+    { "formations": ["tag:amtl-titan"], "value": "1+" },
+    { "formations": ["*"], "value": "2+" }
+  ],
+  "units": {
+    "ls-magos-dominus": { "name": "Magos Dominus", "from": "AM.json", "type": "CH" },
+    "ls-magos": { "name": "Magos", "from": "AM.json", "type": "CH" },
+    "ls-tech-priester": { "name": "Tech-Priesterer", "from": "AM.json", "type": "CH" },
+    "ls-vorhut": { "name": "Skitarii-Vorhut", "from": "AM.json", "type": "INF" },
+    "ls-rostpirscher": { "name": "Sicarianische Rostpirscher", "from": "AM.json", "type": "INF" },
+    "ls-infiltratoren": { "name": "Sicarian-Infiltratoren", "from": "AM.json", "type": "INF" },
+    "ls-ranger": { "name": "Skitarii-Ranger", "from": "AM.json", "type": "INF" },
+    "ls-rapier": { "name": "Rapier", "from": "AM.json", "type": "AV" },
+    "ls-kastelan": { "name": "Kastelan-Roboter", "from": "AM.json", "type": "AV" },
+    "ls-kataphron-brecher": { "name": "Kataphron-Brecher-Kampfservitoren", "from": "AM.json", "type": "AV" },
+    "ls-kataphron-zerstoerer": { "name": "Kataphron-Zerstörer-Kampfservitoren", "from": "AM.json", "type": "AV" },
+    "ls-skorpius-dunentreiter": { "name": "Skorpius-Dünenreiter", "from": "AM.json", "type": "AV" },
+    "ls-skorpius-desintegrator": { "name": "Skorpius-Desintegrator", "from": "AM.json", "type": "AV" },
+    "ls-gorgon": { "name": "Gorgon", "from": "AM.json", "type": "AV" },
+    "ls-onager-dunenkrabbler": { "name": "Onager-Dünenkrabbler", "from": "AM.json", "type": "AV" },
+    "ls-ordinatus-minoris": { "name": "Ordinatus Minoris", "from": "AM.json", "type": "AV" },
+    "ls-ordinatus-majoris": { "name": "Ordinatus Majoris", "from": "AM.json", "type": "AV" },
+    "ls-termite": { "name": "Termite", "from": "AM.json", "type": "AV" },
+    "ls-avenger": { "name": "Avenger-Sturzkampfflugzeug", "from": "AM.json", "type": "AV" },
+    "ls-ark-mech": { "name": "Ark-Mechanicus-Schlachtschiff", "from": "AM.json", "type": "AV" },
+    "ls-warbringer": { "name": "Warbringer-Titan", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Legiones Mars Kernverbände",
+      "formations": ["ls-vorhut-manipel", "ls-onager-kataphrakten-manipel"]
+    },
+    {
+      "id": "lines",
+      "name": "Legiones Mars Linienverbände",
+      "description": "Pro Kernverband dürfen bis zu drei Mars Line Verbände aufgestellt werden.",
+      "formations": ["ls-sicarian-killclade"]
+    },
+    {
+      "id": "fleet",
+      "name": "Legiones Mars Flotten- und Titanenverbünde",
+      "formations": ["ls-warbringer"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ls-vorhut-manipel",
+      "name": "Vorhut-Manipel",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ls-magos", "count": 1 },
+        { "unit": "ls-vorhut", "count": 9 }
+      ],
+      "upgrades": ["ls-upgrade-rapier", "ls-upgrade-onager"]
+    },
+    {
+      "id": "ls-onager-kataphrakten-manipel",
+      "name": "Onager-Kataphrakten-Manipel",
+      "pts": 450,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ls-onager-dunenkrabbler", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ls-sicarian-killclade",
+      "name": "Sicarian Killclade",
+      "pts": 300,
+      "tags": ["lines"],
+      "units": [
+        { "unit": "ls-rostpirscher", "count": 4 },
+        { "unit": "ls-ranger", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ls-warbringer",
+      "name": "Warbringer-Titan",
+      "pts": 400,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "ls-warbringer", "count": 1 }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ls-upgrade-rapier",
+      "name": "Rapier",
+      "variants": [
+        { "id": "1", "label": "Füge 4 Rapiers hinzu", "pts": 0, "effects": [{ "op": "add", "unit": "ls-rapier", "count": 4 }] }
+      ]
+    },
+    {
+      "id": "ls-upgrade-onager",
+      "name": "Onager-Dünenkrabbler",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu zwei Onager-Dünenkrabbler hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ls-onager-dunenkrabbler", "count": 2 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

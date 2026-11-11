@@ -39,7 +39,7 @@
     {
       "name": "Charaktere der Death Guard",
       "description": [
-        "Death Guard Charaktere dürfen nur Chaos Space Marines, Havocs, Seuchenmarines oder Blightlord Terminatoren hinzugefügt werden."
+        "Death-Guard-Charaktere dürfen nur Chaos Space Marines, Havocs, Seuchenmarines oder Blightlord Terminatoren hinzugefügt werden."
       ]
     }
   ],
@@ -446,113 +446,6 @@
         }
       ]
     },
-    "dg-rhino": {
-      "name": "Death Guard Rhino",
-      "type": "AV",
-      "speed": 25,
-      "armour": 4,
-      "cc": 6,
-      "ff": 6,
-      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
-      "weapons": [
-        {
-          "name": "Kombibolter",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dg-land-schattenbarke": {
-      "name": "Death Guard Land Raider",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 6,
-      "ff": 4,
-      "notes": "Kann 1 Blightlord-Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
-      "weapons": [
-        {
-          "name": "Zwillings-Laserkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT4+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Heckpanzerung",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dg-vindicator": {
-      "name": "Death Guard Vindicator",
-      "type": "AV",
-      "speed": 20,
-      "armour": 3,
-      "cc": 6,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Belagerungskanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
     "dg-cybot": {
       "name": "Chaos-Cybot",
       "type": "AV",
@@ -601,28 +494,7 @@
         }
       ]
     },
-    "dg-jaeger": {
-      "name": "Death Guard Jäger",
-      "type": "AV",
-      "speed": 25,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Hades Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "3x AP5+/AT6+/AA6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dg-seuchenwandler": {
+    "dg-seuchenwaender": {
       "name": "Seuchenwandler des Nurgle",
       "type": "INF",
       "speed": 10,
@@ -659,78 +531,6 @@
           "description": [
             "Verbände, die ausschließlich aus Einheiten mit der Sonderregel <i>Befall</i> bestehen, müssen in Reserve gehalten und nach den Regeln für Teleportation aufgestellt werden. außerdem dürfen Einheiten mit der Sonderregel <i>Befall</i> nur um Szenario-Missionsziele konkurrieren."
           ]
-        }
-      ]
-    },
-    "dg-defiler": {
-      "name": "Nurgle Geißel",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Zwillings-Reaper-Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Seuchenkanone",
-          "modes": [
-            {
-              "firepower": "2 × AP3+/AT5+/AA5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Kampfklauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffe",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Dämonenmaschine (Nurgle)",
-          "description": null
         }
       ]
     },
@@ -1486,45 +1286,6 @@
         },
         {
           "name": "Muss entweder mit Fäulniskanone, Turboblaster oder Plasma-Kremator bewaffnet sein.",
-          "description": null
-        }
-      ]
-    },
-    "dg-hoellenklinge": {
-      "name": "Höllendrache",
-      "type": "AC",
-      "speed": "Jäger",
-      "armour": 6,
-      "weapons": [
-        {
-          "name": "AC Hades Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "3x AP5+/AT6+/AA6+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Piston-Driven Klauen",
-          "modes": [
-            {
-              "firepower": "AA6+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Unmodifizierter Rettungswurf",
           "description": null
         }
       ]

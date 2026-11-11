@@ -1,0 +1,1111 @@
+{
+  "army": "ear-de/sm/ravenguard",
+  "source": {
+    "file": "lists_de/SM/ravenguard.json",
+    "version": "1.0.beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Land Speeder-Eskorte",
+      "description": [
+        "Alle Arten von Land Speeders, die als Teil der Aufwertung „Land Speeder der Raven Guard“ gekauft werden, erhalten die Sonderregel <i>Planetare Landung</i> (würfle für den gesamten Verband nur einmal auf Abweichung). außerdem dürfen solche Land Speeders das Spiel in einem Lufttransporter eingeschifft beginnen, ohne Transportkapazität zu belegen, und gelten beim Aussteigen als hätten sie die Sonderregel <i>Sprungmodule</i>. Sobald sie auf dem Schlachtfeld sind, können sie nicht erneut aufgenommen werden."
+      ]
+    },
+    {
+      "name": "Space-Marine-Transporter",
+      "description": [
+        "Space Marines sind eine sehr bewegliche Armee. Daher sind in den Punktkosten eines Kontingents normalerweise genügend Rhino-Transportfahrzeuge enthalten, um es und alle gekauften Aufwertungen zu transportieren. Bestimme die benötigte Anzahl Rhinos, nachdem alle Aufwertungen gekauft wurden. Es werden immer nur so viele Rhinos mitgeführt, wie zum Transport des Verbands mindestens erforderlich sind; zusätzliche Fahrzeuge als Ersatz für Verluste sind nicht erlaubt.",
+        "Beachte, dass viele Verbände keine Rhinos erhalten, meist weil sie nicht hineinpassen. Kontingente mit Rhinos sind im Einheitenabschnitt des Armeeorganisationsplan mit „plus Transport“ gekennzeichnet.",
+        "Du musst keine Rhinos mitnehmen, wenn du das nicht möchtest. Du kannst den Verband stattdessen zu Fuß einsetzen, zum Beispiel als Garnison, oder ihn in einem Thunderhawk transportieren.",
+        "außerdem kannst du die Rhinos eines Kontingents durch Landungskapseln ersetzen. In diesem Fall kommt das Kontingent gemäß den Regeln für Planetare Landung (siehe Planetare Landung) in einer Landungskapsel ins Spiel. Beachte, dass du dafür auch einen Space-Marine-Schlachtkreuzer oder eine Kampfbarge benötigst, von dem aus die Landungskapseln eingesetzt werden.",
+        "Vor jedem Spiel kann der Space-Marine-Spieler, nachdem die gegnerische Armee bekannt ist, aber bevor Missionsziele platziert werden, auswählen, welche Verbände mit der Aufwertung „plus Transport“ in Rhinos, Landungskapseln oder zu Fuß aufgestellt werden. Enthält ein Verband Einheiten, die nicht in Landungskapseln aufgestellt werden können, darf diese Option nicht ausgewählt werden."
+      ]
+    },
+    {
+      "name": "Sie kennen keine Furcht",
+      "description": [
+        "Space Marines sind für ihre Zähigkeit und Tapferkeit bekannt. Dies wird durch folgende Regeln dargestellt:",
+        "<ul><li>Es sind 2 Beschussmarken erforderlich, um eine Space-Marine-Einheit zu unterdrücken oder eine Einheit in einem aufgeriebenen Verband auszuschalten (überschüssige Beschussmarken werden ignoriert).</li><li>Space-Marine-Verbände werden erst aufgerieben, wenn sie 2 Beschussmarken pro Einheit im Verband haben.</li><li>Space-Marine-Verbände zählen bei der Ermittlung des Nahkampfergebnisses nur die Hälfte ihrer Beschussmarken (abgerundet, mindestens jedoch eine). Die zusätzlichen Treffer, die ein Space-Marine-Verband durch einen verlorenen Nahkampf erleidet, werden halbiert und zugunsten der Space Marines abgerundet.</li><li>Wenn sich ein aufgeriebener Space-Marine-Verband sammelt, erhält er Beschussmarken in Höhe seiner Einheitenzahl statt der halben Anzahl.</li></ul>"
+      ]
+    }
+  ],
+  "units": {
+    "rg-captain": {
+      "name": "Captain",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "rg-chaplain": {
+      "name": "Ordenspriester",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "rg-librarian": {
+      "name": "Scriptor",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Schmetterschlag",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "rg-supreme": {
+      "name": "Oberbefehlshaber",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "rg-assault": {
+      "name": "Sturmtrupps",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmapistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "rg-bike": {
+      "name": "Sturm-Bikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "rg-scout": {
+      "name": "Raven Guard Scouts",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Expertenaufklärung",
+          "description": [
+            "Befreundete Raven-Guard-Verbände, die durch <i>Planetare Landung</i> das Schlachtfeld betreten und innerhalb von 30 cm zu einer Einheit mit der Sonderregel <i>Expertenaufklärung</i> aufgestellt werden, müssen nicht auf Abweichung würfeln. Befreundete Raven-Guard-Verbände, die durch <i>Teleportieren</i> das Schlachtfeld betreten und innerhalb von 15 cm zu einer Einheit mit der Sonderregel <i>Expertenaufklärung</i> aufgestellt werden, dürfen ausserdem beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "rg-protektor": {
+      "name": "Protektorgarde-Veteranen",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Veteranengarde-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Sturmangriff",
+          "description": [
+            "Die Waffe oder Einheit erhält <i>Erstschlag</i> bei Offensiven, die von ihrem Verband eingeleitet werden."
+          ]
+        }
+      ]
+    },
+    "rg-tactical": {
+      "name": "Taktische Trupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-devastor": {
+      "name": "Devastor-Trupps",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Raketenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-cyclone": {
+      "name": "Cyclone-Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Cyclone-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "rg-terminator": {
+      "name": "Terminatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Sturmkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        }
+      ]
+    },
+    "rg-expugnator": {
+      "name": "Expugnatorgarde-Veteranen",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Boltpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Hawk's Krallen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Sturmangriff",
+          "description": [
+            "Die Waffe oder Einheit erhält <i>Erstschlag</i> bei Offensiven, die von ihrem Verband eingeleitet werden."
+          ]
+        }
+      ]
+    },
+    "rg-trike": {
+      "name": "Trike",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-land-speeder": {
+      "name": "Land Speeder",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "rg-land-speeder-storm": {
+      "name": "Land Speeder Storm",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann 1 Einheit Aufklärer transportieren.",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-land-speeder-tempest": {
+      "name": "Land Speeder Tempest",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "rg-land-speeder-tornado": {
+      "name": "Land Speeder Tornado",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "rg-land-speeder-typhoon": {
+      "name": "Land Speeder Typhoon",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Typhoon-Rakete",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "rg-hunter": {
+      "name": "Hunter",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Jagd-Killer",
+          "modes": [
+            {
+              "firepower": "AT4+/AA4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-razorback": {
+      "name": "Razorback",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": "5+/4",
+      "notes": "Kann 1 Infanterieeinheit (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren. Bewaffnet entweder mit einer Zwillings-Laserkanone oder einem Zwillings-Schwerbolter. Razorbacks mit Zwillings-Schwerbolter erhalten einen Feuergefechtswert von 4+.",
+      "weapons": [
+        {
+          "name": "0–1x Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45
+            }
+          ]
+        },
+        {
+          "name": "0–1x Zwillings-Schwerbolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-rhino": {
+      "name": "Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann 2 Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-stalker": {
+      "name": "Stalker",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Icarus-Sturmkanonen",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-sturmadler": {
+      "name": "Sturmadler",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten transportieren; Terminatoren und Cybots zählen jeweils als 2 Einheiten. Zählt beim Transport selbst als Thunderhawk.",
+      "crit": "Der Sturmadler und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vengeance Werfer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen, EA(+1)",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-sturmtalon": {
+      "name": "Sturmtalon",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rg-angriffskreuzer": {
+      "name": "Angriffskreuzer",
+      "type": "SC",
+      "notes": "Kann 20 Infanterieeinheiten, Trikes oder Cybots sowie 10 leichte oder gepanzerte Fahrzeugeinheiten (außer Trikes und Cybots), 6 Thunderhawks und genügend Landungskapseln oder Landungsschiff für alle übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-vanguard-cruiser": {
+      "name": "Vanguard-Klasse-Leichter-Kreuzer",
+      "type": "SC",
+      "notes": "Kann 12 Infanterieeinheiten, Trikes oder Cybots sowie 5 leichte oder gepanzerte Fahrzeugeinheiten (außer Trikes und Cybots), 2 Thunderhawks und genügend Landungskapseln für alle übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-landungskapsel": {
+      "name": "Landungskapsel",
+      "notes": "Kann nur eine Verband aus folgenden Einheiten transportieren: Taktische Trupps, Devastor-Trupps, Cybot, Sternguard-Veteranen, Wolfsgarde-Terminatoren, Grey-Knights-Angriffstrupp oder Grey-Knights-Purgatortrupp. Nach der Landung der Landungskapsel greift ihr Todeswind alle gegnerischen Einheiten innerhalb von 15 cm an. Jede angegriffene gegnerische Verband erhält einen Beschussmarker dafür, dass sie unter Beschuss gerät, sowie einen zusätzlichen Beschussmarker pro Verlust. Anschließend müssen alle in der Landungskapsel transportierten Truppen innerhalb von 5cm zur Landungskapsel oder innerhalb von 5cm zu einer bereits gelandeten Einheit derselben Verband aussteigen, sofern alle Einheiten innerhalb von 15 cm zur Landungskapsel aufgestellt werden. Entferne die Landungskapselmodelle vom Spielfeld, sobald die transportierte Verband ausgestiegen ist.",
+      "weapons": [
+        {
+          "name": "Todeswind",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 15
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rg-warhound": {
+      "name": "Warhound",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Plasma-Blaster",
+          "modes": [
+            {
+              "firepower": "2x MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vulcan-Megabolter",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    }
+  }
+}

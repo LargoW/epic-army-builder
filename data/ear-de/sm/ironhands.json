@@ -1,0 +1,161 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/ironhands",
+  "name": "Iron Hands",
+  "faction": "Space Marines",
+  "version": "1.0.beta",
+  "source": { "file": "lists_de/SM/ironhands.json", "version": "1.0.beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "ih-captain": { "name": "Captain der Iron Hands", "from": "SM.json", "type": "CH" },
+    "ih-techmarine": { "name": "Techmarine", "from": "SM.json", "type": "CH" },
+    "ih-devastor": { "name": "Iron-Hands-Devastortrupps", "from": "SM.json", "type": "INF" },
+    "ih-tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "ih-scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "ih-cybot": { "name": "Cybot", "from": "SM.json", "type": "AV" },
+    "ih-hellfire-cybot": { "name": "Hellfire-Cybot", "from": "SM.json", "type": "AV" },
+    "ih-ironclad-cybot": { "name": "Ironclad-Cybot", "from": "SM.json", "type": "AV" },
+    "ih-belagerung-cybot": { "name": "Belagerungs-Cybot", "from": "SM.json", "type": "AV" },
+    "ih-ehrwuerdiger-cybot": { "name": "Ehrwürdiger Cybot", "from": "SM.json", "type": "AV" },
+    "ih-land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "ih-land-raider-anvilarum": { "name": "Land Raider Anvilarum", "from": "SM.json", "type": "AV" },
+    "ih-land-raider-helios": { "name": "Land Raider Helios", "from": "SM.json", "type": "AV" },
+    "ih-land-raider-prometheus": { "name": "Land Raider Prometheus", "from": "SM.json", "type": "AV" },
+    "ih-predator-annihilator": { "name": "Predator Annihilator", "from": "SM.json", "type": "AV" },
+    "ih-predator-destructor": { "name": "Predator Destructor", "from": "SM.json", "type": "AV" },
+    "ih-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "ih-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "ih-belagerung-rhino": { "name": "Belagerungs-Rhino", "from": "SM.json", "type": "AV" },
+    "ih-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "ih-vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
+    "ih-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "ih-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
+    "ih-thunderhawk-transporter": { "name": "Thunderhawk-Transporter", "from": "SM.json", "type": "AV" },
+    "ih-schlachtbarke": { "name": "Schlachtbarke", "from": "SM.json", "type": "AV" },
+    "ih-angriffskreuzer": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "ih-landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" },
+    "ih-captain2": { "name": "Captain", "from": "SM.json", "type": "CH" },
+    "ih-supreme": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "ih-devastor-trupps": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
+    "ih-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "ih-reaver-titan": { "name": "Reaver-Titan, Hun-Klasse", "from": "ImperialAllies.json", "type": "AV" },
+    "ih-warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Iron Hands Kernkontingente",
+      "formations": ["ih-cybot-clan", "ih-mechanized-clan"]
+    },
+    {
+      "id": "support",
+      "name": "Iron Hands Unterstützungsverbünde",
+      "formations": ["ih-land-raiders", "ih-devastor-trupps", "ih-whirlwinds"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Iron Hands Flotten- und Titanenverbünde",
+      "formations": ["ih-reaver-titan"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ih-cybot-clan",
+      "name": "Cybot Clan",
+      "pts": 325,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ih-captain", "count": 1 },
+        { "unit": "ih-tactical", "count": 4 }
+      ],
+      "upgrades": ["ih-upgrade-commander", "ih-upgrade-cybots"]
+    },
+    {
+      "id": "ih-mechanized-clan",
+      "name": "Mechanized Clan",
+      "pts": 300,
+      "tags": ["core"],
+      "units": [
+        { "unit": "ih-captain", "count": 1 },
+        { "unit": "ih-tactical", "count": 4 }
+      ],
+      "upgrades": ["ih-upgrade-commander", "ih-upgrade-vindicators"]
+    },
+    {
+      "id": "ih-land-raiders",
+      "name": "Land Raiders",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ih-land-raider", "count": 3 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ih-devastor-trupps",
+      "name": "Devastor-Trupps",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ih-devastor-trupps", "count": 4 }
+      ],
+      "upgrades": ["ih-upgrade-commander", "ih-upgrade-cybots"]
+    },
+    {
+      "id": "ih-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "ih-whirlwind", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ih-reaver-titan",
+      "name": "Reaver-Titan, Hun-Klasse",
+      "pts": 275,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "ih-reaver-titan", "count": 1 }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ih-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Captain", "pts": 25, "effects": [{ "op": "add", "unit": "ih-captain", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "ih-techmarine", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "ih-captain2", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "ih-supreme", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ih-upgrade-cybots",
+      "name": "Cybots",
+      "variants": [
+        { "id": "1", "label": "2 Cybots", "pts": 100, "effects": [{ "op": "add", "unit": "ih-cybot", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "ih-upgrade-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "1 Vindicator", "pts": 50, "effects": [{ "op": "add", "unit": "ih-vindicator", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/darkangels",
+  "name": "Dark Angels",
+  "faction": "Space Marines",
+  "version": "1.0.Beta",
+  "source": { "file": "lists_de/SM/darkangels.json", "version": "1.0.Beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "da-captain": { "name": "Captain der Dark Angels", "from": "SM.json", "type": "CH" },
+    "da-chaplain": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "da-librarian": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
+    "da-supreme": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "da-assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "da-scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "da-tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "da-devastor": { "name": "Dark-Angels-Devastortrupps", "from": "SM.json", "type": "INF" },
+    "da-terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
+    "da-deathwing": { "name": "Deathwing-Ritter", "from": "SM.json", "type": "AV" },
+    "da-cyclone-terminator": { "name": "Cyclone-Terminatoren", "from": "SM.json", "type": "INF" },
+    "da-ravenwing": { "name": "Ravenwing-Schwarze-Ritter", "from": "SM.json", "type": "AV" },
+    "da-ravenwing-bike": { "name": "Ravenwing-Sturmbikes", "from": "SM.json", "type": "INF" },
+    "da-ravenwing-trike": { "name": "Ravenwing-Trike", "from": "SM.json", "type": "INF" },
+    "da-ravenwing-land-speeder": { "name": "Ravenwing-Land Speeder", "from": "SM.json", "type": "AV" },
+    "da-ravenwing-land-speeder-tornado": { "name": "Ravenwing-Land Speeder-Tornado", "from": "SM.json", "type": "AV" },
+    "da-ravenwing-land-speeder-vengeance": { "name": "Ravenwing-Land Speeder-Vengeance", "from": "SM.json", "type": "AV" },
+    "da-mortis-cybot": { "name": "Mortis-Cybot", "from": "SM.json", "type": "AV" },
+    "da-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "da-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "da-land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "da-land-raider-ares": { "name": "Land Raider Ares", "from": "SM.json", "type": "AV" },
+    "da-predator-destructor": { "name": "Predator Destructor", "from": "SM.json", "type": "AV" },
+    "da-predator-annihilator": { "name": "Predator Annihilator", "from": "SM.json", "type": "AV" },
+    "da-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "da-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "da-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "da-vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
+    "da-glaive": { "name": "Glaive", "from": "SM.json", "type": "AV" },
+    "da-ravenwing-nephilim": { "name": "Ravenwing-Nephilim", "from": "SM.json", "type": "AV" },
+    "da-ravenwing-dark-talon": { "name": "Ravenwing-Dark-Talon", "from": "SM.json", "type": "AV" },
+    "da-hunter-klasse-zerstoerer": { "name": "Hunter-Klasse-Zerstörer", "from": "SM.json", "type": "AV" },
+    "da-strike-cruiser": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "da-landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Dark Angels Kernkontingente",
+      "formations": ["da-ravenwing", "da-tactical", "da-deathwing"]
+    },
+    {
+      "id": "support",
+      "name": "Dark Angels Unterstützungskontingente",
+      "description": "Pro Kernkontingent dürfen drei Unterstützungskontingente aufgestellt werden",
+      "formations": ["da-land-raiders", "da-ares-belayung", "da-devastor", "da-deathwing-rustung", "da-predators", "da-sturmtrupps", "da-ravenwing-unterstuetzung", "da-aufklaerer", "da-whirlwinds", "da-dreadwing-relikte"]
+    },
+    {
+      "id": "fleet",
+      "name": "Ravenwing Flugzeuge & Dark Angels Swordwing",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden. ein Swordwing Unterstützungsverbände muss aufgestellt werden",
+      "formations": ["da-nephilims", "da-dark-talons", "da-schwertschwung"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "da-ravenwing",
+      "name": "Angriff der Ravenwing",
+      "pts": 350,
+      "tags": ["core"],
+      "units": [
+        { "unit": "da-ravenwing", "count": 1 },
+        { "unit": "da-ravenwing-bike", "count": 4 },
+        { "unit": "da-ravenwing-land-speeder-tornado", "count": 3 }
+      ],
+      "upgrades": ["da-upgrade-commander"]
+    },
+    {
+      "id": "da-tactical",
+      "name": "Taktische Trupps",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "da-tactical", "count": 6 }
+      ],
+      "upgrades": ["da-upgrade-commander", "da-upgrade-razorbacks"]
+    },
+    {
+      "id": "da-deathwing",
+      "name": "Deathwing-Angriff",
+      "pts": 350,
+      "tags": ["core"],
+      "units": [
+        { "unit": "da-terminator", "count": 4 }
+      ],
+      "upgrades": ["da-upgrade-commander", "da-upgrade-deathwing"]
+    },
+    {
+      "id": "da-land-raiders",
+      "name": "Land Raiders",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-land-raider", "count": 3 }
+      ],
+      "upgrades": ["da-upgrade-commander", "da-upgrade-flugabwehr"]
+    },
+    {
+      "id": "da-ares-belayung",
+      "name": "Ares-Belagerung",
+      "pts": 375,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-land-raider-ares", "count": 3 },
+        { "unit": "da-vindicator", "count": 2 }
+      ],
+      "upgrades": ["da-upgrade-vindicators"]
+    },
+    {
+      "id": "da-devastor",
+      "name": "Devastor-Trupps",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-devastor", "count": 4 }
+      ],
+      "upgrades": ["da-upgrade-razorbacks", "da-upgrade-commander", "da-upgrade-land-raider-transport"]
+    },
+    {
+      "id": "da-deathwing-rustung",
+      "name": "Deathwing Rüstungswert (ARM)",
+      "pts": 450,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-land-raider", "count": 3 },
+        { "unit": "da-terminator", "count": 3 }
+      ],
+      "upgrades": ["da-upgrade-commander"]
+    },
+    {
+      "id": "da-predators",
+      "name": "Predators",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-predator-destructor", "count": 4 }
+      ],
+      "upgrades": ["da-upgrade-flugabwehr"]
+    },
+    {
+      "id": "da-sturmtrupps",
+      "name": "Sturmtrupps",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-assault", "count": 4 }
+      ],
+      "upgrades": ["da-upgrade-commander", "da-upgrade-vindicators"]
+    },
+    {
+      "id": "da-ravenwing-unterstuetzung",
+      "name": "Ravenwing-Unterstützung",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-ravenwing-land-speeder-tornado", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "da-aufklaerer",
+      "name": "Aufklärer",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-scout", "count": 4 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "da-whirlwinds",
+      "name": "Whirlwinds",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-whirlwind", "count": 4 }
+      ],
+      "upgrades": ["da-upgrade-flugabwehr"]
+    },
+    {
+      "id": "da-dreadwing-relikte",
+      "name": "0–1 Dreadwing Relics",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [
+        { "unit": "da-glaive", "count": 1 }
+      ],
+      "upgrades": ["da-upgrade-glaive"]
+    },
+    {
+      "id": "da-nephilims",
+      "name": "Nephilims",
+      "pts": 225,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "da-ravenwing-nephilim", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "da-dark-talons",
+      "name": "Dark Talons",
+      "pts": 250,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "da-ravenwing-dark-talon", "count": 2 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "da-schwartschwingen",
+      "name": "1 Schwertschwingen-Unterstützung",
+      "pts": 100,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "da-hunter-klasse-zerstoerer", "count": 1 }
+      ],
+      "upgrades": ["da-upgrade-strike-cruiser"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "da-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Captain der Dark Angels, Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "da-captain", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "da-librarian", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "da-chaplain", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "da-supreme", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-flugabwehr",
+      "name": "Flugabwehr",
+      "variants": [
+        { "id": "hunter", "label": "1 Hunter", "pts": 75, "effects": [{ "op": "add", "unit": "da-hunter", "count": 1 }] },
+        { "id": "stalker", "label": "1 Stalker", "pts": 50, "effects": [{ "op": "add", "unit": "da-stalker", "count": 1 }] },
+        { "id": "mortis", "label": "2 Mortis Cybots", "pts": 100, "effects": [{ "op": "add", "unit": "da-mortis-cybot", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "1 Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "da-razorback", "count": 1 }] },
+        { "id": "2", "label": "2 Razorbacks", "pts": 50, "effects": [{ "op": "add", "unit": "da-razorback", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-land-raider-transport",
+      "name": "Land Raider-Transporter",
+      "variants": [
+        { "id": "1", "label": "1 Land Raider", "pts": 50, "effects": [{ "op": "add", "unit": "da-land-raider", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-deathwing",
+      "name": "Deathwing-Ritter",
+      "variants": [
+        { "id": "1", "label": "Ersetze 1 Terminator durch Deathwing Knight", "pts": 25, "effects": [{ "op": "replace", "from": "da-terminator", "to": "da-deathwing", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "1 Vindicator", "pts": 50, "effects": [{ "op": "add", "unit": "da-vindicator", "count": 1 }] },
+        { "id": "2", "label": "2 Vindicators", "pts": 75, "effects": [{ "op": "add", "unit": "da-vindicator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-glaive",
+      "name": "Glaive",
+      "variants": [
+        { "id": "1", "label": "1 Glaive", "pts": 300, "effects": [{ "op": "add", "unit": "da-glaive", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "da-upgrade-strike-cruiser",
+      "name": "Angriffskreuzer",
+      "variants": [
+        { "id": "1", "label": "Ersetze Hunter-Klasse-Zerstörer durch Angriffskreuzer", "pts": 125, "effects": [{ "op": "replace", "from": "da-hunter-klasse-zerstoerer", "to": "da-strike-cruiser", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

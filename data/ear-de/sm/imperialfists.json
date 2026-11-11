@@ -1,0 +1,188 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/imperialfists",
+  "name": "Imperial Fists",
+  "faction": "Space Marines",
+  "version": "1.0.beta",
+  "source": { "file": "lists_de/SM/imperialfists.json", "version": "1.0.beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["tag:if-flak"], "value": "2+" },
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "if-captain": { "name": "Captain", "from": "SM.json", "type": "CH" },
+    "if-chaplain": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "if-librarian": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
+    "if-supreme": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "if-assault": { "name": "Sturm-Centurions", "from": "SM.json", "type": "INF" },
+    "if-devastor": { "name": "Devastor-Centurions", "from": "SM.json", "type": "INF" },
+    "if-devastor-trupps": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
+    "if-scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "if-rapier": { "name": "Space-Marine-Rapier", "from": "SM.json", "type": "AV" },
+    "if-thunderfire": { "name": "Space-Marine-Thunderfire", "from": "SM.json", "type": "AV" },
+    "if-tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "if-terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
+    "if-land-speeder": { "name": "Land Speeder", "from": "SM.json", "type": "AV" },
+    "if-land-speeder-tornado": { "name": "Land Speeder Tornado", "from": "SM.json", "type": "AV" },
+    "if-land-speeder-typhoon": { "name": "Land Speeder Typhoon", "from": "SM.json", "type": "AV" },
+    "if-cybot": { "name": "Cybot", "from": "SM.json", "type": "AV" },
+    "if-hellfire-cybot": { "name": "Hellfire-Cybot", "from": "SM.json", "type": "AV" },
+    "if-belagerung-cybot": { "name": "Belagerungs-Cybot", "from": "SM.json", "type": "AV" },
+    "if-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "if-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "if-land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "if-land-raider-achilles": { "name": "Land Raider Achilles", "from": "SM.json", "type": "AV" },
+    "if-land-raider-crusader": { "name": "Land Raider Crusader", "from": "SM.json", "type": "AV" },
+    "if-predator-annihilator": { "name": "Predator Annihilator", "from": "SM.json", "type": "AV" },
+    "if-predator-destructor": { "name": "Predator Destructor", "from": "SM.json", "type": "AV" },
+    "if-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "if-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "if-belagerung-rhino": { "name": "Belagerungs-Rhino", "from": "SM.json", "type": "AV" },
+    "if-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "if-vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
+    "if-bastion": { "name": "Bastion", "from": "SM.json", "type": "AV" },
+    "if-fellblade": { "name": "Fellblade", "from": "SM.json", "type": "AV" },
+    "if-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
+    "if-hyperios": { "name": "Hyperios-Wachgeschütz", "from": "AM.json", "type": "AV" },
+    "if-tarantula": { "name": "Tarantula", "from": "AM.json", "type": "AV" },
+    "if-reaver-titan": { "name": "Reaver-Titan, Goth-Klasse", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Imperial Fists Kernkontingente",
+      "formations": ["if-devastor-trupps", "if-vindicators", "if-tactical"]
+    },
+    {
+      "id": "support",
+      "name": "Imperial Fists Unterstützungskontingente",
+      "formations": ["if-land-speeders", "if-rhinos"]
+    },
+    {
+      "id": "titans-navy",
+      "name": "Imperial Fists Flotten- und Titanenverbünde",
+      "formations": ["if-reaver-titan"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "if-devastor-trupps",
+      "name": "Devastor-Trupps",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "if-devastor-trupps", "count": 4 }
+      ],
+      "upgrades": ["if-upgrade-commander", "if-upgrade-flugabwehr", "if-upgrade-land-raider-transport"]
+    },
+    {
+      "id": "if-vindicators",
+      "name": "Vindicators",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "if-vindicator", "count": 4 }
+      ],
+      "upgrades": ["if-upgrade-flugabwehr"]
+    },
+    {
+      "id": "if-tactical",
+      "name": "Taktische Trupps",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "if-tactical", "count": 6 }
+      ],
+      "upgrades": ["if-upgrade-commander", "if-upgrade-land-raider-transport", "if-upgrade-razorbacks", "if-upgrade-vindicators"]
+    },
+    {
+      "id": "if-land-speeders",
+      "name": "Land Speeders",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [
+        { "unit": "if-land-speeder", "count": 5 }
+      ],
+      "upgrades": ["if-upgrade-typhoons"]
+    },
+    {
+      "id": "if-rhinos",
+      "name": "Belagerungs-Rhino",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "if-rhino", "count": 3 }
+      ],
+      "upgrades": ["if-upgrade-razorbacks"]
+    },
+    {
+      "id": "if-reaver-titan",
+      "name": "Reaver-Titan, Goth-Klasse",
+      "pts": 275,
+      "tags": ["titans-navy"],
+      "units": [
+        { "unit": "if-reaver-titan", "count": 1 }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "if-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Captain", "pts": 25, "effects": [{ "op": "add", "unit": "if-captain", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "if-librarian", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "if-chaplain", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "if-supreme", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "if-upgrade-flugabwehr",
+      "name": "Flugabwehr",
+      "variants": [
+        { "id": "hunter", "label": "1 Hunter", "pts": 75, "effects": [{ "op": "add", "unit": "if-hunter", "count": 1 }] },
+        { "id": "stalker", "label": "1 Stalker", "pts": 50, "effects": [{ "op": "add", "unit": "if-stalker", "count": 1 }] },
+        { "id": "mortis", "label": "2 Mortis Cybots", "pts": 100, "effects": [{ "op": "add", "unit": "if-belagerung-cybot", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "if-upgrade-land-raider-transport",
+      "name": "Land Raider-Transporter",
+      "variants": [
+        { "id": "1", "label": "1 Land Raider", "pts": 50, "effects": [{ "op": "add", "unit": "if-land-raider", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "if-upgrade-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "1 Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "if-razorback", "count": 1 }] },
+        { "id": "2", "label": "2 Razorbacks", "pts": 50, "effects": [{ "op": "add", "unit": "if-razorback", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "if-upgrade-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "1 Vindicator", "pts": 50, "effects": [{ "op": "add", "unit": "if-vindicator", "count": 1 }] },
+        { "id": "2", "label": "2 Vindicators", "pts": 75, "effects": [{ "op": "add", "unit": "if-vindicator", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "if-upgrade-typhoons",
+      "name": "Typhoons",
+      "variants": [
+        { "id": "1", "label": "1 Land Speeder durch Typhoon ersetzen", "pts": 10, "effects": [{ "op": "replace", "from": "if-land-speeder", "to": "if-land-speeder-typhoon", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/sm/spacewolves",
+  "name": "Space Wolves",
+  "faction": "Space Marines",
+  "version": "1.0.beta",
+  "source": { "file": "lists_de/SM/spacewolves.json", "version": "1.0.beta", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "sw-großwolf": { "name": "Großwolf-Oberbefehlshaber", "from": "SM.json", "type": "CH" },
+    "sw-wolfslord": { "name": "Wolfslord-Kapitän", "from": "SM.json", "type": "CH" },
+    "sw-standartenträger": { "name": "Wolfsstandartenträger", "from": "SM.json", "type": "INF" },
+    "sw-blutklauen": { "name": "Blutklauen-Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "sw-himmelsklauen": { "name": "Himmelsklauen-Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "sw-graumaehnen": { "name": "Graumähnen-Taktische-Trupps", "from": "SM.json", "type": "INF" },
+    "sw-wolfsgarde": { "name": "Wolfsgarde-Terminatoren", "from": "SM.json", "type": "INF" },
+    "sw-langfang": { "name": "Langfang-Devastortrupps", "from": "SM.json", "type": "INF" },
+    "sw-schnellklauen": { "name": "Schnellklauen-Sturmbikes", "from": "SM.json", "type": "INF" },
+    "sw-fenriswolfe": { "name": "Fenriswölfe", "from": "SM.json", "type": "INF" },
+    "sw-donnerwolf": { "name": "Donnerwolfkavallerie", "from": "SM.json", "type": "INF" },
+    "sw-wolf-aufklarer": { "name": "Wolf-Aufklärer", "from": "SM.json", "type": "INF" },
+    "sw-land-speeder": { "name": "Land Speeder", "from": "SM.json", "type": "AV" },
+    "sw-land-speeder-tornado": { "name": "Land Speeder Tornado", "from": "SM.json", "type": "AV" },
+    "sw-land-speeder-typhoon": { "name": "Land Speeder Typhoon", "from": "SM.json", "type": "AV" },
+    "sw-cybot": { "name": "Cybot", "from": "SM.json", "type": "AV" },
+    "sw-wulfen-cybot": { "name": "Wulfen-Cybot", "from": "SM.json", "type": "AV" },
+    "sw-hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "sw-land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "sw-leman-russ-exterminator": { "name": "Leman Russ Exterminator", "from": "SM.json", "type": "AV" },
+    "sw-predator-annihilator": { "name": "Predator Annihilator", "from": "SM.json", "type": "AV" },
+    "sw-predator-destructor": { "name": "Predator Destructor", "from": "SM.json", "type": "AV" },
+    "sw-razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "sw-rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "sw-stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "sw-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "sw-vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
+    "sw-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
+    "sw-stormwolf-sturmboot": { "name": "Stormwolf-Sturmsboot", "from": "SM.json", "type": "AV" },
+    "sw-stormfang-landungsschiff": { "name": "Stormfang-Landungsschiff", "from": "SM.json", "type": "AV" },
+    "sw-schlachtbarke": { "name": "Schlachtbarke", "from": "SM.json", "type": "AV" },
+    "sw-angriffskreuzer": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "sw-landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" },
+    "sw-warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Kernrudel der Space Wolves",
+      "formations": ["sw-jagd-rudel", "sw-blutklauen-sturmrudel", "sw-himmelsklauen-sturmrudel", "sw-schnellklauen-sturmbike-rudel"]
+    },
+    {
+      "id": "elite",
+      "name": "Space Wolves Eliterudel",
+      "formations": ["sw-wolfsgarde", "sw-langfang-devastor"]
+    },
+    {
+      "id": "fleet",
+      "name": "Space Wolves Flotten- und Titanenverbünde",
+      "formations": ["sw-stormfang", "sw-warhounds"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "sw-jagd-rudel",
+      "name": "Jagd-Rudel",
+      "pts": 275,
+      "tags": ["core"],
+      "units": [
+        { "unit": "sw-wolfslord", "count": 1 },
+        { "unit": "sw-standartenträger", "count": 1 },
+        { "unit": "sw-graumaehnen", "count": 6 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-blutklauen-sturmrudel",
+      "name": "Blutklauen-Sturmrudel",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "sw-blutklauen", "count": 6 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-himmelsklauen-sturmrudel",
+      "name": "Himmelsklauen-Sturmrudel",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "sw-himmelsklauen", "count": 6 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-schnellklauen-sturmbike-rudel",
+      "name": "Schnellklauen-Sturmbike-Rudel",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [
+        { "unit": "sw-schnellklauen", "count": 6 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-wolfsgarde",
+      "name": "Wolfsgarde-Terminatoren",
+      "pts": 325,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "sw-wolfsgarde", "count": 4 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-langfang-devastor",
+      "name": "Langfang-Devastortrupps",
+      "pts": 300,
+      "tags": ["elite"],
+      "units": [
+        { "unit": "sw-langfang", "count": 4 }
+      ],
+      "upgrades": ["sw-upgrade-commander"]
+    },
+    {
+      "id": "sw-stormfang",
+      "name": "Stormfang-Landungsschiff",
+      "pts": 400,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "sw-stormfang-landungsschiff", "count": 1 }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sw-warhounds",
+      "name": "Warhounds",
+      "pts": 275,
+      "tags": ["fleet"],
+      "units": [
+        { "unit": "sw-warhound", "count": 1 }
+      ],
+      "upgrades": ["sw-upgrade-extra-warhound"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "sw-upgrade-commander",
+      "name": "Befehlshaber",
+      "variants": [
+        { "id": "captain", "label": "Wolfslord-Kapitän", "pts": 25, "effects": [{ "op": "add", "unit": "sw-wolfslord", "count": 1 }] },
+        { "id": "librarian", "label": "Scriptor", "pts": 25, "effects": [{ "op": "add", "unit": "sw-großwolf", "count": 1 }] },
+        { "id": "chaplain", "label": "Ordenspriester", "pts": 50, "effects": [{ "op": "add", "unit": "sw-wolfslord", "count": 1 }] },
+        { "id": "supreme", "label": "0–1 Oberbefehlshaber", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "sw-großwolf", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "sw-upgrade-extra-warhound",
+      "name": "Zusatz Warhound-Titan",
+      "variants": [
+        { "id": "1", "label": "1 Zusatz Warhound-Titan", "pts": 200, "effects": [{ "op": "add", "unit": "sw-warhound", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

@@ -1,0 +1,930 @@
+{
+  "army": "ear-de/am/questorisimperialis",
+  "source": {
+    "file": "lists_de/AM/questorisimperialis.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Tapferkeit",
+      "description": [
+        "Alle Ritterverbände erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive durchführen, sowie +1 auf ihre Sammeltests."
+      ]
+    },
+    {
+      "name": "Befestigte Stellungen",
+      "description": [
+        "Befestigte Stellungen werden gleichzeitig mit dem Verband aufgestellt, für den sie gekauft wurden. Einheiten dieser Verbände müssen so in den befestigten Stellungen aufgestellt werden, dass kein Platz frei bleibt. Alle Teile einer befestigten Stellung müssen sich innerhalb von 5cm zu einem anderen Teil befinden. Nach dem Aufstellen gelten befestigte Stellungen als Gelände, das die Sichtlinie nicht blockiert, und sie können von beiden Seiten genutzt werden. INF-Einheiten, die innerhalb einer befestigten Stellung Deckung erhalten, dürfen nur durch eine WE so beiseitegeschoben werden, dass sie nicht aus ihrer Stellung bewegt werden.",
+        "<b>Geschützstellung</b>: Gewährt einer INF-Einheit einen Deckungswurf von 4+ oder einer AV- oder LV-Einheit (aber nicht H-AV) einen Deckungswurf von 5+.",
+        "<b>Bunker</b>: Gewährt bis zu drei INF-Einheiten einen Deckungswurf von 3+ und Verstärkte Heckpanzerung. Gilt für AV und WE als gefährliches Gelände. Bunker dürfen maximal 8 cm x 8 cm gross sein.",
+        "<b>Schützengraben</b>: Gewährt INF einen Deckungswurf von 4+. Kann eine INF-Einheit pro 4 cm Länge aufnehmen. Gilt für AV als gefährliches Gelände.",
+        "<b>Stacheldraht</b>: Gilt für alle INF als gefährliches Gelände, einschliesslich Einheiten mit der Sonderregel Beritten. Gefährliches Gelände durch Stacheldraht darf nicht mit der Geländegängig-Fähigkeit erneut gewürfelt werden (Einheiten dürfen sich weiterhin vorsichtig durch solches Gelände bewegen). Der Stacheldraht muss so aufgestellt werden, dass jedes Teil ohne Zwischenraum ein anderes Teil derselben Gruppe berührt.",
+        "<b>Minenfelder</b>: Gelten für alle Einheitentypen als gefährliches Gelände. Tests für gefährliches Gelände durch Minenfelder dürfen nicht mit der Geländegängig-Fähigkeit wiederholt werden (Einheiten dürfen sich weiterhin vorsichtig durch solches Gelände bewegen). Antigravfahrzeuge und Einheiten mit Sprungmodulen, die Minenfelder überqüren, müssen ebenfalls Tests für gefährliches Gelände ablegen. Minenfelder müssen so aufgestellt werden, dass jedes Teil ohne Zwischenraum ein anderes Teil derselben Gruppe berührt."
+      ]
+    }
+  ],
+  "units": {
+    "rk-seneschall": {
+      "name": "Seneschall",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "rk-seneschallord": {
+      "name": "Seneschallord",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "rk-baron": {
+      "name": "Ritter-Baron",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schocklanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Energiehandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-paladin": {
+      "name": "Ritter-Paladin",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schocklanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-castellan": {
+      "name": "Ritter-Castellan",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Langkanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 90,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Mehrläufige Maschinenkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-lancer": {
+      "name": "Ritter-Lancer",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Energielanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-errant": {
+      "name": "Ritter-Errant",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Thermalkanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schocklanze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Energiehandschuh",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-warden-demolisher": {
+      "name": "Ritter-Warden-Demolisher",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Belagerungskanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-warden-vanquisher": {
+      "name": "Ritter-Warden-Vanquisher",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Vanquisher Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT2+",
+              "range": 90,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-warden-skyjager": {
+      "name": "Ritter-Warden-Skyjäger",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Skysweeper Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multilaser",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Ionenschild (4+)",
+          "description": null
+        }
+      ]
+    },
+    "rk-zwillings-icarus": {
+      "name": "Zwillings-Icarus-Autokanone",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Zwillings-Icarus Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-infanterie": {
+      "name": "Infanterie der Planetaren Verteidigungsstreitkräfte",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Jede zweite Einheit (aufgerundet) ist mit einem Schweren Maschinengewehr bewaffnet.",
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Automatikgewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-rapier": {
+      "name": "Rapier",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Rapier Laserzerstörer",
+          "modes": [
+            {
+              "firepower": "AP6+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-thudd": {
+      "name": "Thudd-Geschütz",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Thudd Geschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-flugabwehr": {
+      "name": "Schwere Flugabwehrkanone",
+      "type": "LV",
+      "speed": 5,
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Schweres Flakgeschütz",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+/AA5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-haubitze": {
+      "name": "Haubitze",
+      "type": "LV",
+      "speed": 5,
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Haubitze",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-kavallerie": {
+      "name": "Kavallerie",
+      "type": "INF",
+      "speed": 20,
+      "armour": 6,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Laserpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Jagdlanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "rk-landtransporter": {
+      "name": "Landtransporter",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "rk-donnerkeil": {
+      "name": "Donnerkeil-Jäger",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC-Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Unterflügelraketen",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Sturmbolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "rk-marauder": {
+      "name": "Marauder-Bomber (B)",
+      "type": "AC",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Bombenträger",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-schwerer Bolter-Turm",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    }
+  }
+}
