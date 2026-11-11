@@ -2,3 +2,6 @@ sources/*
 !sources/.gitkeep
 node_modules/
 patches/
+.check-refs.cjs
+.inspect.cjs
+.inspect2.cjs
