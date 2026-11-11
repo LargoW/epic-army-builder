@@ -8,25 +8,24 @@ Mobile-first, offline-capable army list builder for Epic: Armageddon variants
 ```
 sources/ (pinned, read-only)      convert/ (Node)        data/ (canonical)      engine/ -> ui/
   ragnarok-de  (lists_de)    -->  convert-ear.js   --+
-  adam77/snapfire (NetEA)    -->  convert-adam.js  --+-> data/<ruleset>/<army>.json
-  epic-uk (later)            -->  convert-uk.js    --+
+  tp.net-armageddon.org      -->  convert-eanet.js --+
+  epic-uk                    -->  convert-uk.js    --+
 ```
 
+- `data/` contains canonical data fetched and converted from above sources
 - `sources/` is never edited by hand. Contents are fetched by a sync script (not yet written) and
   pinned in `sources.lock.json`. The folder itself is git-ignored.
-- Ragnarök lists are prose-only, so the EA-R converter takes a hand-maintained overlay per army
-  (`convert/overlays/`) for limits and structured upgrades. Overlays survive re-conversion.
 - `engine/` is DOM-free (state, points, validation), tested with Node.
 - `ui/` is plain HTML/CSS/JS, mobile-first, PWA/offline, no build step.
 
 ## Phases
 
-1. Conception and architecture  <- current
+1. Conception and architecture  
 2. Prototype: one army (Steel Legion, `lists_de/IG/steellegion.json`, released v1.0.2)
-3. UI refinement -> **Alpha**
-4. Intensive testing
-5. Port more armies
-6. Testing -> **Beta**
+3. Intensive testing
+4. Port more armies <- current
+5. Testing -> **Beta**, currently 169 tests in place
+6. UI refinement -> **Alpha**
 7. Hypercare
 8. Release and lifecycle
 
