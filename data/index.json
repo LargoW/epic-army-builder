@@ -152,6 +152,13 @@
       "version": "1.0.Beta-2"
     },
     {
+      "id": "ear-de/cultists/std",
+      "ruleset": "ear-de",
+      "faction": "Chaos-Kultisten",
+      "name": "Sklaven der Dunkelheit",
+      "version": "1.0.Beta-3"
+    },
+    {
       "id": "ear-de/sm/bloodangels",
       "ruleset": "ear-de",
       "faction": "Space Marines",
@@ -315,6 +322,13 @@
       "faction": "Dark Eldar",
       "name": "Kabal des Schwarzen Herzen",
       "version": "1.0.Beta-2"
+    },
+    {
+      "id": "ear-de/de/masqueofthemidnightsorrow",
+      "ruleset": "ear-de",
+      "faction": "Drukhari / Harlekine",
+      "name": "Kabal der Wraithkind",
+      "version": "1.0.Beta"
     },
     {
       "id": "euk/ig/vanaheim",

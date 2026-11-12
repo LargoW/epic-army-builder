@@ -1,0 +1,1382 @@
+{
+  "army": "ear-de/de/masqueofthemidnightsorrow",
+  "source": {
+    "file": "lists_de/DE/masqueofthemidnightsorrow.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Flink zu Fuß",
+      "description": [
+        "Drukhari- und Harlekin-Verbände erhalten einen Bonus von +1, wenn sie versuchen, einen Marsch durchzuführen. Außerdem dürfen sie nach einem Marsch weiterhin Unterstützungsfeuer in Nahkämpfen leisten, einen Kreuzfeuerbonus beanspruchen und Flugabwehrfeuer abgeben."
+      ]
+    },
+    {
+      "name": "Schlag und Flucht",
+      "description": [
+        "Eldar-, Drukhari- und Harlekin-Verbände, die Vorrücken oder einen Eilschritt durchführen, dürfen vor oder nach jeder Bewegung Schießen, aber insgesamt weiterhin nur einmal. Entscheidet sich der Verband für einen Eilschritt, gilt der Trefferwurfmodifikator von -1 auch dann, wenn vor der Bewegung geschossen wird. außerdem dürfen Verbände, die einen Nahkampf gewinnen, sich bis zu ihrem Geschwindigkeitswert statt der üblichen 5cm neu formieren."
+      ]
+    },
+    {
+      "name": "Wraithkind-Gefolge",
+      "description": [
+        "Die Armee muss einen Wraithkind-Verband enthalten. Der Gegner gilt als hätte er das Siegesziel „Brecht Ihren Willen“ (BTS) erreicht, wenn er diesen Verband und/oder den teuersten Verband der Armee zerstört."
+      ]
+    },
+    {
+      "name": "Darf keine Garnison bilden (Wraithkind)",
+      "description": [
+        "Im Epic-Turnierszenario dürfen nur Mandraks Missionsziele als Garnison besetzen."
+      ]
+    },
+    {
+      "name": "Netzportal",
+      "description": [
+        "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+        "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+        "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+        "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+      ]
+    },
+    {
+      "name": "Meister des Netzportals",
+      "description": [
+        "Harlekine sind die unvergleichlichen Meister des Webway. Sie müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch Teleportation oder ein Wraithgate betreten. Harlekine dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen."
+      ]
+    },
+    {
+      "name": "Cegorach, der Lachende Gott",
+      "description": [
+        "Solange sich mindestens ein Solitär auf dem Schlachtfeld befindet, gelten alle gegnerischen Verbände ohne Harlekine bei Sammeltests in der Endphase als innerhalb von 30 cm zu einer gegnerischen Einheit."
+      ]
+    }
+  ],
+  "units": {
+    "de-archon": {
+      "name": "Archon",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Agonisator",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "de-dracon": {
+      "name": "Dracon",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Agonisator",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "de-althaemo": {
+      "name": "Ältester Haemonculus",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Arkane Schrecken",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scherenhände",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "de-inkubi": {
+      "name": "Inkubi",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Peiniger",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Klaives",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "de-kabalenkrieger": {
+      "name": "Kabalenkrieger",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Splinter Gewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-schnitter": {
+      "name": "Schnitter",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Sturm-Vortex Projektor",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-talos": {
+      "name": "Talos",
+      "type": "AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Talos Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lähmer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "de-schattenjaeger": {
+      "name": "Schattenjäger",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schattenlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splitterstoß",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-mandrak": {
+      "name": "Mandraks",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Unheilfeuer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Mandrake Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "de-harpyie": {
+      "name": "Harpyien",
+      "type": "INF",
+      "speed": 30,
+      "armour": 6,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Schattenlanze",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-groteske": {
+      "name": "Grotesquen",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Grotesquen Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "de-folterer": {
+      "name": "Folterer",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Gift Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "de-haemonculus": {
+      "name": "Haemonculi",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Verflüssiger",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gift Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "de-reaver": {
+      "name": "Reaver-Jetbikes",
+      "type": "INF",
+      "speed": 40,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Splinter Gewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "de-schattenbarke": {
+      "name": "Schattenbarke",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Einheiten Krieger, Inkubi, Haemonculi, Folterer oder Hagashîn transportieren.",
+      "weapons": [
+        {
+          "name": "Schattenlanze",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-tantalus": {
+      "name": "Tantalus",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann zwei Einheiten Krieger, Inkubi, Haemonculi, Folterer oder Hagashîn transportieren. Grotesken zählen jeweils als zwei Einheiten.",
+      "weapons": [
+        {
+          "name": "Impuls-Desintegrator",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "de-schmerzensschiff": {
+      "name": "Schmerzensschiff",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Schmerzschiff wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Phantomlanze",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verwüster",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splitterkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Schattenfelder2",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-vernuegbarke": {
+      "name": "Vergnügungsbarke",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann sechs Einheiten Krieger, Inkubi, Haemonculi, Folterer oder Hagashîn transportieren. Grotesken zählen jeweils als zwei Einheiten. Darf nur Einheiten aus dem eigenen Verband transportieren.",
+      "crit": "Barge erleidet 1 zusätzlichen Schaden. 1W3 zufällige transportierte Einheiten erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Schattenlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splitterstoß",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Splitterkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Schattenfelder2",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-peiniger-titan": {
+      "name": "Peiniger-Titan",
+      "type": "WE",
+      "speed": 35,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "crit": "Peiniger-Titan erleidet 1 zusätzlichen Schaden und verliert alle verbleibenden Schattenfelder.",
+      "weapons": [
+        {
+          "name": "Zwillings-Schattenlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Tormentor Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Schattenfelder3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "de-razorwing": {
+      "name": "Razorwing-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC Schattenlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Monoscythe Raketen",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "de-voidraven": {
+      "name": "Voidraven-Abfangjäger",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Leerenlanze",
+          "modes": [
+            {
+              "firepower": "AT3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Leerenminen",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "de-kreuzer": {
+      "name": "Kreuzer der Torture-Klasse",
+      "type": "SC",
+      "notes": "Kann bis zu zwei Executioner-Landemodule und zwei Slavebringer-Sturmboote oder bis zu sechs Slavebringer-Sturmboote sowie die darin transportierten Truppen mitführen.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "6BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "de-schattenseher": {
+      "name": "Schattenseher",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Lichtsplitter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "de-harlekin-trupp": {
+      "name": "Harlekin-Trupp",
+      "type": "INF",
+      "speed": 15,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Harlekins Umarmung",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "de-todesnarren": {
+      "name": "Todesnarren",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shrieker Kanonen",
+          "modes": [
+            {
+              "firepower": "2x AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-starweaver": {
+      "name": "Starweaver",
+      "type": "LV",
+      "speed": 40,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        },
+        {
+          "name": "Transport 1 (kann eine Harlekin-Trupp oder eine Einheit Todesnarren transportieren)",
+          "description": null
+        }
+      ]
+    },
+    "de-skyweaver-jetbikes": {
+      "name": "Skyweaver-Jetbikes",
+      "type": "INF",
+      "speed": 40,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zephyrgleve",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "de-voidweaver": {
+      "name": "Voidweaver",
+      "type": "LV",
+      "speed": 40,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Prismatic Kanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    }
+  }
+}
