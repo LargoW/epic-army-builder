@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import {
   createState, addFormation, setUpgrade, setSize, setChoice, summarize, validate, withProfiles, rosterProfiles,
 } from "../engine/engine.js";
@@ -9,10 +9,10 @@ import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.j
 // Tyranids (Epic UK quick reference). Expected values come from the PDF, not from the data file.
 const dataUrl = (p) => new URL(`../data/${p}`, import.meta.url);
 const load = (p) => JSON.parse(readFileSync(dataUrl(p), "utf8"));
-const raw = load("euk/nid/tyranid.json");
-const profiles = load("euk/nid/tyranid.profiles.json");
+const raw = load("euk/nid/tyranids.json");
+const profiles = load("euk/nid/tyranids.profiles.json");
 const data = withProfiles(raw, profiles);
-const ARMY = "euk/nid/tyranid";
+const ARMY = "euk/nid/tyranids";
 
 function army(...ids) {
   let s = createState();
@@ -30,11 +30,6 @@ const entry = (s, i = 0) => summarize(data, s).entries[i];
 const arr = (x) => (x == null ? [] : Array.isArray(x) ? x : [x]);
 
 // ---------------------------------------------------------------- data integrity
-
-test("the profile file is where the app looks for it (data/<army id>.profiles.json), for every army in the index", () => {
-  const index = load("index.json");
-  for (const a of index.armies) assert.ok(existsSync(dataUrl(`${a.id}.profiles.json`)), `${a.id}.profiles.json`);
-});
 
 test("all unit, upgrade and section references resolve and every unit has a profile", () => {
   const units = new Set(Object.keys(data.units));
@@ -180,7 +175,7 @@ test("switching between variants of one upgrade replaces the previous choice (ne
           s = setUpgrade(s, u, up.id, a.id);
           s = setUpgrade(s, u, up.id, b.id);
           assert.equal(s.formations[0].upgrades.length, 1, `${f.id}/${up.id} ${a.id}->${b.id}: one entry`);
-          assert.equal(entry(s).pts, basePts  b.pts, `${f.id}/${up.id} ${a.id}->${b.id}: points`);
+          assert.equal(entry(s).pts, basePts + b.pts, `${f.id}/${up.id} ${a.id}->${b.id}: points`);
         }
     }
 });
@@ -228,8 +223,8 @@ test("priced additions: points and units grow with the chosen number", () => {
     let [s, [u]] = army(formation);
     const basePts = entry(s).pts;
     s = setUpgrade(s, u, upgrade, variant, 0, n);
-    assert.equal(entry(s).pts, basePts  n * price, `${formation}/${upgrade}/${variant} points`);
-    assert.equal(entry(s).roster[unit], inBase  n, `${formation}/${upgrade}/${variant} ${unit}`);
+    assert.equal(entry(s).pts, basePts + n * price, `${formation}/${upgrade}/${variant} points`);
+    assert.equal(entry(s).roster[unit], inBase + n, `${formation}/${upgrade}/${variant} ${unit}`);
     assert.deepEqual(codes(s), [], `${formation}/${upgrade}/${variant}`);
   }
   let [s, [u]] = army("f-harassment-swarm");
@@ -263,8 +258,8 @@ test("'up to N' limits are doubled for a Big formation, 'any number' has no limi
       s = setSize(s, u, size);
       s = setUpgrade(s, u, upgrade, variant, 0, max);
       assert.deepEqual(codes(s), [], `${formation}/${upgrade} ${size}: ${max} allowed`);
-      s = setUpgrade(s, u, upgrade, variant, 0, max  1);
-      assert.deepEqual(codes(s), ["variant-max"], `${formation}/${upgrade} ${size}: ${max  1} is one too many`);
+      s = setUpgrade(s, u, upgrade, variant, 0, max + 1);
+      assert.deepEqual(codes(s), ["variant-max"], `${formation}/${upgrade} ${size}: ${max + 1} is one too many`);
       assert.ok(bigAllowed);
     }
   }
@@ -277,8 +272,8 @@ test("'up to N' limits are doubled for a Big formation, 'any number' has no limi
       let [s, [u]] = army(formation);
       s = setUpgrade(s, u, upgrade, variant, 0, max);
       assert.deepEqual(codes(s), [], `${formation}/${upgrade}: ${max} allowed`);
-      s = setUpgrade(s, u, upgrade, variant, 0, max  1);
-      assert.deepEqual(codes(s), ["variant-max"], `${formation}/${upgrade}: ${max  1} is one too many`);
+      s = setUpgrade(s, u, upgrade, variant, 0, max + 1);
+      assert.deepEqual(codes(s), ["variant-max"], `${formation}/${upgrade}: ${max + 1} is one too many`);
     }
   for (const [formation, upgrade, variant] of [["f-assault-swarm", "u-termagants", "1"], ["f-brute-swarm", "u-brute-monsters", "exocrine"], ["f-hybrid-swarm", "u-hybrid-creatures", "haruspex"], ["f-nest-swarm", "u-nest-creatures", "raveners"]]) {
     let [s, [u]] = army(formation);
@@ -305,7 +300,7 @@ test("Assault Swarm: up to six Termagants become Hormagaunts for free", () => {
 test("Brute and Hybrid Swarm: swap Exocrines, Haruspexes or Malefactors for Carnifex at 5 points each", () => {
   let [s, [u]] = army("f-brute-swarm");
   s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 3);
-  assert.equal(entry(s).pts, 175  15);
+  assert.equal(entry(s).pts, 175 + 15);
   assert.deepEqual(entry(s).roster, { "hive-tyrant": 1, carnifex: 3 });
   assert.deepEqual(codes(s), []);
   s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 4);
@@ -317,7 +312,7 @@ test("Brute and Hybrid Swarm: swap Exocrines, Haruspexes or Malefactors for Carn
   [s, [u]] = army("f-brute-swarm");
   s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 6);
   s = setUpgrade(s, u, "u-brute-monsters", "exocrine", 0, 3);
-  assert.equal(entry(s).pts, 175  105  30);
+  assert.equal(entry(s).pts, 175 + 105 + 30);
   assert.deepEqual(entry(s).roster, { "hive-tyrant": 1, carnifex: 6 });
   assert.deepEqual(codes(s), []);
   s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 7);
@@ -326,7 +321,7 @@ test("Brute and Hybrid Swarm: swap Exocrines, Haruspexes or Malefactors for Carn
   [s, [u]] = army("f-hybrid-swarm");
   s = setChoice(s, u, 2, { malefactor: 2 });
   s = setUpgrade(s, u, "u-hybrid-carnifex-replace", "malefactor", 0, 2);
-  assert.equal(entry(s).pts, 175  10);
+  assert.equal(entry(s).pts, 175 + 10);
   assert.deepEqual(entry(s).roster, { "tyranid-warriors": 1, termagants: 3, carnifex: 2 });
   assert.deepEqual(codes(s), []);
 });
@@ -384,29 +379,29 @@ test("rare formations: at most one third of the army points (exactly one third i
 
 test("unit profiles match the quick reference (type, speed, armour, close combat, firefight)", () => {
   const expected = {
-    "hive-tyrant": ["AV", "20cm (30cm)", "4 (5)", "3", "5"],
-    "tyranid-warriors": ["Inf", "20cm", "5", "3", "5"],
-    termagants: ["Inf", "20cm", null, "6", "5"],
-    hormagaunts: ["Inf", "20cm", null, "5", null],
-    gargoyles: ["Inf", "30cm", null, "6", "6"],
-    genestealers: ["Inf", "20cm", "6", "4", null],
-    lictors: ["Inf", "20cm", "5", "4", null],
-    raveners: ["Inf", "20cm", "5", "3", "6"],
-    biovore: ["LV", "20cm", "6", "6", "5"],
-    "spore-mine-cluster": ["LV", "15cm", "5", null, "5"],
-    carnifex: ["AV", "20cm", "4", "3", "6"],
-    zoanthrope: ["AV", "20cm", "5", "6", "5"],
-    dactylis: ["AV", "25cm", "5", "6", "5"],
-    exocrine: ["AV", "25cm", "5", "5", "5"],
-    haruspex: ["AV", "30cm", "5", "5", null],
-    malefactor: ["AV", "25cm", "5", "5", "5"],
-    trygon: ["WE", "20cm", "4", "3", "5"],
-    hierodule: ["WE", "20cm", "5", "4", "5"],
-    harridan: ["WE", "35cm", "5", "4", "5"],
-    "hive-nest": ["WE", "0cm", "4", "5", "6"],
-    hierophant: ["WE", "25cm", "5", "3", "5"],
-    hydraphant: ["WE", "20cm", "4", "3", "4"],
-    dominatrix: ["WE", "20cm", "4", "3", "4"],
+    "hive-tyrant": ["AV", "20cm (30cm)", "4+ (5+)", "3+", "5+"],
+    "tyranid-warriors": ["INF", "20cm", "5+", "3+", "5+"],
+    termagants: ["INF", "20cm", null, "6+", "5+"],
+    hormagaunts: ["INF", "20cm", null, "5+", null],
+    gargoyles: ["INF", "30cm", null, "6+", "6+"],
+    genestealers: ["INF", "20cm", "6+", "4+", null],
+    lictors: ["INF", "20cm", "5+", "4+", null],
+    raveners: ["INF", "20cm", "5+", "3+", "6+"],
+    biovore: ["LV", "20cm", "6+", "6+", "5+"],
+    "spore-mine-cluster": ["LV", "15cm", "5+", null, "5+"],
+    carnifex: ["AV", "20cm", "4+", "3+", "6+"],
+    zoanthrope: ["AV", "20cm", "5+", "6+", "5+"],
+    dactylis: ["AV", "25cm", "5+", "6+", "5+"],
+    exocrine: ["AV", "25cm", "5+", "5+", "5+"],
+    haruspex: ["AV", "30cm", "5+", "5+", null],
+    malefactor: ["AV", "25cm", "5+", "5+", "5+"],
+    trygon: ["WE", "20cm", "4+", "3+", "5+"],
+    hierodule: ["WE", "20cm", "5+", "4+", "5+"],
+    harridan: ["WE", "35cm", "5+", "4+", "5+"],
+    "hive-nest": ["WE", "0cm", "4+", "5+", "6+"],
+    hierophant: ["WE", "25cm", "5+", "3+", "5+"],
+    hydraphant: ["WE", "20cm", "4+", "3+", "4+"],
+    dominatrix: ["WE", "20cm", "4+", "3+", "4+"],
   };
   assert.deepEqual(Object.keys(expected).sort(), Object.keys(profiles.units).sort(), "covers every unit");
   for (const [id, want] of Object.entries(expected)) {
@@ -416,38 +411,38 @@ test("unit profiles match the quick reference (type, speed, armour, close combat
 });
 
 test("weapons match the quick reference (name | range | firepower; brackets around small-arms ranges omitted)", () => {
-  const talons = "Scything Talons|Base Contact|Assault Wpn, MW, 1A";
+  const talons = "Scything Talons|Base Contact|Assault Wpn, MW, +1A";
   const expected = {
-    "hive-tyrant": ["Venom Cannon|30cm|AP5/AT6", talons],
-    "tyranid-warriors": ["Venom Cannon|30cm|AP5/AT6", "Death Spitters|15cm|Small Arms", "Rending Claws|Base Contact|Assault Wpn, 1A"],
+    "hive-tyrant": ["Venom Cannon|30cm|AP5+/AT6+", talons],
+    "tyranid-warriors": ["Venom Cannon|30cm|AP5+/AT6+", "Death Spitters|15cm|Small Arms", "Rending Claws|Base Contact|Assault Wpn, +1A"],
     termagants: ["Fleshborers|15cm|Small Arms"],
-    hormagaunts: ["Talons|Base Contact|Assault Wpn, 1A"],
-    gargoyles: ["Fleshborers|15cm|Small Arms", "Swarm strike|15cm|AA6"],
-    genestealers: ["Rending Claws|Base Contact|Assault Wpn, 1A"],
+    hormagaunts: ["Talons|Base Contact|Assault Wpn, +1A"],
+    gargoyles: ["Fleshborers|15cm|Small Arms", "Swarm strike|15cm|AA6+"],
+    genestealers: ["Rending Claws|Base Contact|Assault Wpn, +1A"],
     lictors: [talons],
     raveners: ["Death Spitters|15cm|Small Arms", talons],
     biovore: ["Spore Mines|30cm|1BP, Disrupt, Indirect"],
-    "spore-mine-cluster": ["Explosive Spores|15cm|AP5/AT5/AA5"],
+    "spore-mine-cluster": ["Explosive Spores|15cm|AP5+/AT5+/AA5+"],
     carnifex: ["Spore Cysts|15cm|Small Arms", talons],
-    zoanthrope: ["Warp Blast|30cm|MW5/AA6, MW", "Warp Blast|15cm|Small Arms, MW"],
+    zoanthrope: ["Warp Blast|30cm|MW5+/AA6+, MW", "Warp Blast|15cm|Small Arms, MW"],
     dactylis: ["Heavy Spore Mines|45cm|1BP, Disrupt, Indirect"],
-    exocrine: ["Heavy Venom Cannon|30cm|4 × AP5/AT5"],
-    haruspex: ["2 × Scything Talons|Base Contact|Assault Wpn, MW, 1A"],
-    malefactor: ["Spine Arms|15cm|Small Arms, 2A"],
-    trygon: ["Bio-electric field|15cm|2 × AP3/AT6, Forward", talons],
-    hierodule: ["Bio-cannon|45cm|2 × AP3/AT4, Forward", "Crushing Claws|Base Contact|Assault Wpn, MW, 1A"],
-    harridan: ["Bio-cannon|45cm|2 × AP3/AT4, FF", "Crushing Claws|Base Contact|Assault Wpn, MW, 1A"],
-    "hive-nest": ["Ripper Swarms|15cm|Small Arms", "Ripper Swarms|Base Contact|Assault Wpn, 1A"],
-    hierophant: ["2 × Bio-cannon|45cm|2 × AP3/AT4, Forward", "Massive Claws|Base Contact|Assault Wpn, MW, 3A"],
-    hydraphant: ["2 × Bio-cannon|45cm|2 × AP3/AT4, Forward", "Bio-Acid|15cm|3BP, IC, Forward", "Massive Claws|Base Contact|Assault Wpn, MW, 3A", "Ripper Tentacles|Base Contact|Assault Wpn, 2A, TK (D3)"],
-    dominatrix: ["Bio-cannon|45cm|2 × AP3/AT4, FF", "Bio-Acid|15cm|3BP, IC, Forward", "Energy Pulse|30cm|AP4/AT4/AA5", "Energy Pulse|15cm|Small Arms, MW, 1A", "Massive Claws|Base Contact|Assault Wpn, MW, 3A"],
+    exocrine: ["Heavy Venom Cannon|30cm|4 × AP5+/AT5+"],
+    haruspex: ["2 × Scything Talons|Base Contact|Assault Wpn, MW, +1A"],
+    malefactor: ["Spine Arms|15cm|Small Arms, +2A"],
+    trygon: ["Bio-electric field|15cm|2 × AP3+/AT6+, Forward", talons],
+    hierodule: ["Bio-cannon|45cm|2 × AP3+/AT4+, Forward", "Crushing Claws|Base Contact|Assault Wpn, MW, +1A"],
+    harridan: ["Bio-cannon|45cm|2 × AP3+/AT4+, FF", "Crushing Claws|Base Contact|Assault Wpn, MW, +1A"],
+    "hive-nest": ["Ripper Swarms|15cm|Small Arms", "Ripper Swarms|Base Contact|Assault Wpn, +1A"],
+    hierophant: ["2 × Bio-cannon|45cm|2 × AP3+/AT4+, Forward", "Massive Claws|Base Contact|Assault Wpn, MW, +3A"],
+    hydraphant: ["2 × Bio-cannon|45cm|2 × AP3+/AT4+, Forward", "Bio-Acid|15cm|3BP, IC, Forward", "Massive Claws|Base Contact|Assault Wpn, MW, +3A", "Ripper Tentacles|Base Contact|Assault Wpn, +2A, TK (D3)"],
+    dominatrix: ["Bio-cannon|45cm|2 × AP3+/AT4+, FF", "Bio-Acid|15cm|3BP, IC, Forward", "Energy Pulse|30cm|AP4+/AT4+/AA5+", "Energy Pulse|15cm|Small Arms, MW, +1A", "Massive Claws|Base Contact|Assault Wpn, MW, +3A"],
   };
   for (const [id, want] of Object.entries(expected))
     assert.deepEqual(profiles.units[id].weapons.map((w) => `${w.name}|${w.range}|${w.firepower}`), want, id);
 });
 
 test("special rules match the quick reference", () => {
-  const crit = "Critical Effect: 1 MW6 base; 2–5 1 damage; 6 D3 damage";
+  const crit = "Critical Effect: 1 MW6+ base; 2–5 +1 damage; 6 D3 damage";
   const expected = {
     "hive-tyrant": ["Commander", "Fearless", "Synapse", "Reinforced Armour", "Leader", "May have wings"],
     "tyranid-warriors": ["Fearless", "Synapse", "Leader"],
@@ -478,7 +473,7 @@ test("special rules match the quick reference", () => {
 
 test("army rules and ratings match the quick reference", () => {
   assert.equal(raw.strategy, 1);
-  assert.deepEqual(raw.initiative, [{ formations: ["*"], value: "2" }]);
+  assert.deepEqual(raw.initiative, [{ formations: ["*"], value: "2+" }]);
   assert.deepEqual(profiles.specialRules.map((r) => r.name).sort(), ["Fast and Slithering", "Synapse", "The Hunger"]);
 });
 

@@ -1,0 +1,539 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/cultists/latd",
+  "name": "Die Verlorenen und Verdammten",
+  "faction": "Chaos-Kultisten",
+  "version": "1.0.Beta-2",
+  "source": {
+    "file": "lists_de/Cultists/LatD.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
+  "strategy": 1,
+  "initiative": [
+    {
+      "formations": [
+        "tag:cs-marine"
+      ],
+      "value": "1+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "di-ikonentraeger": {
+      "name": "Ikonenträger",
+      "from": "chaoscultists.json",
+      "type": "CH"
+    },
+    "di-erzharetiker": {
+      "name": "Erzhäretiker",
+      "from": "chaoscultists.json",
+      "type": "CH"
+    },
+    "di-demagoge": {
+      "name": "Demagoge",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-aufstrebender-champion": {
+      "name": "Aufstrebender Champion",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-daeemonenprinz": {
+      "name": "Dämonenprinz",
+      "from": "CSM.json",
+      "type": "INF"
+    },
+    "di-kultisten": {
+      "name": "Kultisten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-mutanten": {
+      "name": "Mutanten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-grosse-mutanten": {
+      "name": "Große Mutanten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-chaosbrut": {
+      "name": "Chaosbrut",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-bewaffneter-geländewagen": {
+      "name": "Bewaffneter Geländewagen",
+      "from": "chaoscultists.json",
+      "type": "LV"
+    },
+    "di-landtransporter": {
+      "name": "Landtransporter",
+      "from": "chaoscultists.json",
+      "type": "LV"
+    },
+    "di-chaosaltar": {
+      "name": "Chaosaltar",
+      "from": "chaoscultists.json",
+      "type": "WE"
+    },
+    "di-seuchenwandler": {
+      "name": "Seuchenwandler des Nurgle",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "di-chaos-space-marine": {
+      "name": "Chaos Space Marines",
+      "from": "CSM.json",
+      "type": "INF"
+    },
+    "di-chaos-rhino": {
+      "name": "Chaos Rhino",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "di-chaoschampion": {
+      "name": "Chaoschampion",
+      "from": "CSM.json",
+      "type": "CH"
+    },
+    "di-hoellen-drachen": {
+      "name": "Höllendrache",
+      "from": "chaosnavy.json",
+      "type": "AC"
+    },
+    "di-firelord": {
+      "name": "Firelord",
+      "from": "chaosnavy.json",
+      "type": "AC"
+    },
+    "di-geisel": {
+      "name": "Geißel",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-cerberit": {
+      "name": "Cerberit",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-hollenstreiter": {
+      "name": "Höllenstreiter",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-questor": {
+      "name": "Questor",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-unterwerfer": {
+      "name": "Unterwerfer",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-seuchenturm": {
+      "name": "Seuchenturm",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-seuchenmaschine": {
+      "name": "Seuchenmaschine",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-khorne-kanone": {
+      "name": "Khorne-Kanone",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-daeemonische-sturmmaschine": {
+      "name": "Dämonische Sturmmaschine",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-herr-der-schlachten": {
+      "name": "Herr der Schlachten",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-silberturm": {
+      "name": "Silberturm",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-warppalast": {
+      "name": "Warp-Palast",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-herold-des-slaanesh": {
+      "name": "Herold des Slaanesh",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "di-herold-des-nurgle-auf-einer-sanfte": {
+      "name": "Herold des Nurgle auf einer Sänfte",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "di-herold-des-khorne-auf-moloch": {
+      "name": "Herold des Khorne auf Moloch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "di-herold-des-tzeentch": {
+      "name": "Herold des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "di-erhabener-hueter-der-geheimnisse": {
+      "name": "Erhabener Hüter der Geheimnisse",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "di-erhabener-groesser-verpester": {
+      "name": "Erhabener Großer Verpester",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "di-erhabener-blutdaemon": {
+      "name": "Erhabener Blutdämon",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "di-erhabener-herrscher-des-wandels": {
+      "name": "Erhabener Herrscher des Wandels",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "di-seelenzermalmer": {
+      "name": "Seelenzermalmer",
+      "from": "daemons.json",
+      "type": "AV"
+    }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Kultistenkonklaven-Verbände",
+      "formations": [
+        "latd-kultistenkonklave"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Chaos-, Dark-Mechanicus- und Befalls-Unterstützungszirkel",
+      "formations": [
+        "latd-chaos-space-marine",
+        "latd-cerberiten-des-ungeteilten-chaos",
+        "latd-verwueter-des-ungeteilten-chaos",
+        "latd-hoellen-drachen-des-ungeteilten-chaos",
+        "latd-hollenstreiter-des-slaanesh",
+        "latd-quaestor-des-slaanesh",
+        "latd-unterwerfer-des-slaanesh",
+        "latd-seuchenturm-des-nurgle",
+        "latd-seuchenmaschinen-des-nurgle",
+        "latd-seuchenwandler-des-nurgle"
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Dämonenpool",
+      "formations": [
+        "di-pool-niedere-daemonen",
+        "di-pool-groesser-damon"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "latd-kultistenkonklave",
+      "name": "Kultistenkonklave",
+      "pts": 200,
+      "tags": [
+        "core"
+      ],
+      "units": [
+        {
+          "unit": "di-aufstrebender-champion",
+          "count": 1
+        },
+        {
+          "unit": "di-kultisten",
+          "count": 9
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-chaos-space-marine",
+      "name": "Chaos Space Marines des Ungeteilten Chaos",
+      "pts": 275,
+      "tags": [
+        "cs-marine"
+      ],
+      "units": [
+        {
+          "unit": "di-chaos-space-marine",
+          "count": 6
+        },
+        {
+          "unit": "di-chaos-rhino",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "di-upgrade-chaoschampion"
+      ]
+    },
+    {
+      "id": "latd-cerberiten-des-ungeteilten-chaos",
+      "name": "Cerberiten des Ungeteilten Chaos",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-cerberit",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-verwueter-des-ungeteilten-chaos",
+      "name": "Verwüster des Ungeteilten Chaos",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-geisel",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-hoellen-drachen-des-ungeteilten-chaos",
+      "name": "Höllendrachen des Ungeteilten Chaos",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-hoellen-drachen",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-hollenstreiter-des-slaanesh",
+      "name": "Höllenstreiter des Slaanesh",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-hollenstreiter",
+          "count":  4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-quaestor-des-slaanesh",
+      "name": "Quästoren des Slaanesh",
+      "pts": 275,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-questor",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-unterwerfer-des-slaanesh",
+      "name": "Unterwerfer des Slaanesh",
+      "pts": 275,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-unterwerfer",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-seuchenturm-des-nurgle",
+      "name": "Seuchenturm des Nurgle",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-seuchenturm",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-seuchenmaschinen-des-nurgle",
+      "name": "Seuchenmaschinen des Nurgle",
+      "pts": 325,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-seuchenmaschine",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-seuchenwandler-des-nurgle",
+      "name": "Seuchenwandler des Nurgle",
+      "pts": 100,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-seuchenwandler",
+          "count": 7
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "di-pool-groesser-damon",
+      "name": "Pool großer Dämonen",
+      "pts": 75,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [
+        {
+          "unit": "di-erhabener-groesser-verpester",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "di-upgrade-chaoschampion",
+      "name": "Chaoschampion",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Chaoschampion hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "di-chaoschampion",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "di-upgrade-daeemonpakt",
+      "name": "Dämonenpakt",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Dämonenprinz zum Verband hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "di-daeemonenprinz",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "di-upgrade-seelenzermalmer",
+      "name": "Seelenzermalmer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Seelenzermalmer hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "di-seelenzermalmer",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "di-upgrade-demagoge",
+      "name": "Demagoge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze den Aspirantenchampion durch einen Demagogue",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "di-aufstrebender-champion",
+              "to": "di-demagoge",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
+  ]
+}

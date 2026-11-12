@@ -187,7 +187,7 @@ test("upgrades add the listed units for the listed price", () => {
     ["f-crisis-cadre", "u-crisis-suits", "3", 150, { "xv8-crisis": 3 }],
     ["f-crisis-cadre", "u-crisis-suits", "4", 200, { "xv8-crisis": 4 }],
     ["f-crisis-cadre", "u-gun-drones", "1", 25, { "gun-drone": 2 }],
-    ["f-fire-warrior-cadre", "u-bonded-teams", "1", 25, {}],
+    ["f-fire-warrior-cadre", "u-bonded-teams", "1", 25, { bondedTeam: 1 }],
     ["f-fire-warrior-cadre", "u-broadsides", "1", 150, { "xv88-broadside": 3 }],
     ["f-fire-warrior-cadre", "u-ethereal", "1", 50, { ethereal: 1 }],
     ["f-fire-warrior-cadre", "u-fire-warriors", "1", 100, { "fire-warrior": 4 }],

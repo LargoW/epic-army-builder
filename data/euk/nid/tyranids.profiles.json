@@ -52,7 +52,7 @@
       "name": "Gargoyles",
       "type": "INF",
       "speed": "30cm",
-      "armour": "6+",
+      "armour": null,
       "cc": "6+",
       "ff": "6+",
       "weapons": [
@@ -65,7 +65,7 @@
       "name": "Genestealers",
       "type": "INF",
       "speed": "20cm",
-      "armour": null,
+      "armour": "6+",
       "cc": "4+",
       "ff": null,
       "weapons": [{"name": "Rending Claws", "range": "Base Contact", "firepower": "Assault Wpn, +1A"}],

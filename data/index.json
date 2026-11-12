@@ -74,49 +74,49 @@
       "hidden": true
     },
     {
-      "id": "ear-de/chaos/thousandsons",
+      "id": "ear-de/Chaos/thousandsons",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Thousand Sons",
       "version": "1.0.Beta-3"
     },
     {
-      "id": "ear-de/chaos/blacklegion",
+      "id": "ear-de/Chaos/blacklegion",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Black Legion",
       "version": "1.0.Beta"
     },
     {
-      "id": "ear-de/chaos/deathguard",
+      "id": "ear-de/Chaos/deathguard",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Death Guard",
       "version": "1.0.Beta-4"
     },
     {
-      "id": "ear-de/chaos/alphalegion",
+      "id": "ear-de/Chaos/alphalegion",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Alpha Legion",
       "version": "1.0.Beta"
     },
     {
-      "id": "ear-de/chaos/emperorschildren",
+      "id": "ear-de/Chaos/emperorschildren",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Emperor's Children",
       "version": "1.0.Beta"
     },
     {
-      "id": "ear-de/chaos/ironwarriors",
+      "id": "ear-de/Chaos/ironwarriors",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Iron Krieger",
       "version": "1.0.Beta-2"
     },
     {
-      "id": "ear-de/chaos/nightlords",
+      "id": "ear-de/Chaos/nightlords",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Night Lords",
@@ -124,18 +124,32 @@
       "hidden": true
     },
     {
-      "id": "ear-de/chaos/wordbearers",
+      "id": "ear-de/Chaos/wordbearers",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "Word Bearers",
       "version": "1.0.Beta"
     },
     {
-      "id": "ear-de/chaos/worldeaters",
+      "id": "ear-de/Chaos/worldeaters",
       "ruleset": "ear-de",
       "faction": "Chaos",
       "name": "World Eaters",
       "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/cultists/di",
+      "ruleset": "ear-de",
+      "faction": "Chaos-Kultisten",
+      "name": "Dämonische Invasion",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/cultists/latd",
+      "ruleset": "ear-de",
+      "faction": "Chaos-Kultisten",
+      "name": "Die Verlorenen und Verdammten",
+      "version": "1.0.Beta-2"
     },
     {
       "id": "ear-de/sm/bloodangels",
