@@ -21,7 +21,7 @@
     },
     {
       "formations": [
-        ""
+        "*"
       ],
       "value": "2+"
     }
@@ -149,7 +149,7 @@
           "label": "Four Ionhead or Fusionhead Gunships",
           "pts": 200,
           "mult": 1,
-          "units": [{"unit": "hammerhead-ionhead", "count": 4}]
+          "units": [{"oneOf": ["hammerhead-ionhead", "hammerhead-fusionhead"], "count": 4, "mixed": true}]
         },
         {
           "id": "railhead",
@@ -159,7 +159,7 @@
           "units": [{"unit": "hammerhead-railhead", "count": 4}]
         }
       ],
-      "units": [{"unit": "hammerhead-ionhead", "count": 4}],
+      "units": [{"oneOf": ["hammerhead-ionhead", "hammerhead-fusionhead"], "count": 4, "mixed": true}],
       "upgrades": ["u-hammerheads", "u-skyray"]
     },
     {
@@ -197,16 +197,7 @@
       "name": "Recon Group",
       "pts": 175,
       "tags": ["support"],
-      "sizes": [
-        {
-          "id": "mixed",
-          "label": "Six Tetra or Piranha, in any combination",
-          "pts": 175,
-          "mult": 1,
-          "units": [{"unit": "tetra", "count": 6}]
-        }
-      ],
-      "units": [{"unit": "tetra", "count": 6}],
+      "units": [{"oneOf": ["tetra", "piranha"], "count": 6, "mixed": true}],
       "upgrades": ["u-gun-drones", "u-piranhas"]
     },
     {
@@ -323,6 +314,7 @@
           "id": "1",
           "label": "Replace Shas'el with Shas'o",
           "pts": 50,
+          "perArmy": 1,
           "effects": [{"op": "replace", "from": "shas-el", "to": "shas-o", "count": 1}]
         }
       ]
@@ -365,6 +357,7 @@
           "id": "1",
           "label": "Add one Ethereal",
           "pts": 50,
+          "perArmy": 1,
           "effects": [{"op": "add", "unit": "ethereal", "count": 1}]
         }
       ]
@@ -548,20 +541,8 @@
     {
       "id": "max-three-upgrades",
       "appliesTo": ["*"],
-      "from": [""],
+      "from": ["*"],
       "maxTotal": 3
-    },
-    {
-      "id": "shas-o-army-limit",
-      "appliesTo": ["*"],
-      "upgrade": "u-shas-o",
-      "maxArmy": 1
-    },
-    {
-      "id": "ethereal-army-limit",
-      "appliesTo": ["*"],
-      "upgrade": "u-ethereal",
-      "maxArmy": 1
     }
   ]
 }

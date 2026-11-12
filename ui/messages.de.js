@@ -13,6 +13,7 @@ const constraintTexts = {
 const shareTexts = {
   "imperial-navy-points-limit": (p) => `Imperiale Flotte: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
   "rare-points-limit": (p) => `Seltene Verbände: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+  "air-caste-third": (p) => `Luftkaste und Raumschiffe: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
   "warengines-share": (p) => `Kriegsmaschinen: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
 };
 
@@ -28,7 +29,9 @@ export function messageFor(v, names = {}) {
     case "upgrade-limit":
       return p.id === "company-max-three"
         ? `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Kompanie).`
-        : p.id === "company-upgrade-limit"
+        : p.id === "max-three-upgrades"
+          ? `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Verband).`
+          : p.id === "company-upgrade-limit"
           ? `Zu viele Kompanie-Aufwertungen: ${p.count} (höchstens 2 pro Kompanie).`
           : `Aufwertungen dürfen pro Verband nur einmal gewählt werden.`;
     case "upgrade-not-allowed":

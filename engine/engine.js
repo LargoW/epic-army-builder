@@ -111,6 +111,12 @@ function isCarriable(data, rule, unitId) {
   return !(unit.rules || []).some((r) => excluded.includes(r));
 }
 
+// Unit slots of a formation entry: a size may list its own units (and unit choices) instead of the formation's.
+export function unitSlots(def, entry) {
+  const size = def.sizes ? def.sizes.find((s) => s.id === entry.size) || def.sizes[0] : null;
+  return size && size.units ? size.units : def.units;
+}
+
 export const sizeOf = (def, entry) => (def.sizes ? def.sizes.find((s) => s.id === entry.size) || def.sizes[0] : null);
 
 // Final unit list of one formation entry, plus problems found while building it.
@@ -127,7 +133,7 @@ export function computeEntry(data, entry) {
   //Forced show on overview tab
   const forceShow = new Set();
 
-  const slots = size && size.units ? size.units : def.units; // a size may list its own units
+  const slots = unitSlots(def, entry);
   slots.forEach((slot, i) => {
     const slotCount = slot.count * mult;
     if (!slot.oneOf) return add(slot.unit, slotCount);

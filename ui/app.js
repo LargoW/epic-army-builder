@@ -1,5 +1,5 @@
 import {
-  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf,
+  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf, unitSlots,
   summarize, validate, withProfiles, rosterProfiles, matches,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
@@ -160,7 +160,7 @@ function sizeControls(entry, def) {
 
 function choiceControls(entry, def) {
   const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
-  const slots = def.units.map((s, i) => ({ s, i })).filter((x) => x.s.oneOf);
+  const slots = unitSlots(def, entry).map((s, i) => ({ s, i })).filter((x) => x.s.oneOf);
   if (!slots.length) return "";
   return `<h3>Einheiten wählen</h3>` + slots.map(({ s, i }) => {
     const count = s.count * mult;
@@ -608,7 +608,7 @@ document.addEventListener("change", (e) => {
       update(setChoice(state, uid, el.dataset.slot, { [el.value]: Number(el.dataset.count) }));
       break;
     case "choice-mixed": {
-      const def = formationById[entry.formation].units[el.dataset.slot];
+      const def = unitSlots(formationById[entry.formation], entry)[el.dataset.slot];
       const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || { mult: 1 }).mult;
       const dist = { ...(entry.choices[el.dataset.slot] || { [def.oneOf[0]]: slotCount }) };
       dist[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
