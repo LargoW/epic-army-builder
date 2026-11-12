@@ -203,7 +203,7 @@ test("upgrades add the listed units for the listed price", () => {
     ["f-kroot-kindred", "u-kroot", "1", 75, { "kroot-warrior": 5 }],
     ["f-kroot-kindred", "u-kroot-hounds", "1", 50, { "kroot-hound": 3 }],
     ["f-kroot-kindred", "u-krootox", "1", 50, { krootox: 3 }],
-    ["f-tiger-shark-squadron", "u-tiger-shark-drones", "1", 100, {}],
+    ["f-tiger-shark-squadron", "u-tiger-shark-drones", "1", 100, { "gun-drone": 6 }],
   ];
   for (const [formation, upgrade, variant, price, added] of rows) {
     let [s, [u]] = army(formation);

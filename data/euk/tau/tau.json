@@ -509,13 +509,13 @@
     },
     {
       "id": "u-tiger-shark-drones",
-      "name": "Tiger Shark Gun Drone Transport",
+      "name": "Gun Drone Formation",
       "variants": [
         {
           "id": "1",
-          "label": "May begin game transporting a formation of six Gun Drone units",
+          "label": "Add a formation of six Gun Drone units to the army",
           "pts": 100,
-          "effects": []
+          "effects": [{"op": "add", "unit": "gun-drone", "count": 6}]
         }
       ]
     }

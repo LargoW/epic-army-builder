@@ -7,3 +7,4 @@ patches/
 .inspect2.cjs
 .scan3.cjs
 .scan-std.cjs
+test/report.txt
