@@ -1,0 +1,860 @@
+{
+  "army": "ear-de/cu/emissariesimperatus",
+  "source": {
+    "file": "lists_de/CU/emissariesimperatus.json",
+    "version": "1.1",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Adeptus-Custodes",
+      "description": [
+        "Adeptus Custodes sind für ihre Zähigkeit und Tapferkeit bekannt. Dies wird durch folgende Regeln dargestellt:",
+        "* Eine Adeptus-Custodes-Einheit wird erst durch 2 Beschussmarken unterdrückt.",
+        "* Adeptus-Custodes-Verbände werden erst aufgerieben, wenn sie 2 Beschussmarken pro Einheit im Verband haben.",
+        "* Adeptus-Custodes-Verbände zählen bei der Ermittlung des Nahkampfergebnisses nur die Hälfte ihrer Beschussmarken (abgerundet; beachte, dass es keinen Bonus von +1 für keine Beschussmarken gibt, wenn der Verband vor dem Abrunden eine Beschussmarke hatte).",
+        "* Wenn sich ein aufgeriebener Adeptus-Custodes-Verband sammelt, erhält er Beschussmarken in Höhe seiner Einheitenzahl statt der halben Anzahl. Adeptus Custodes mit der Sonderfähigkeit Anführer entfernen 2 statt 1 Beschussmarke.",
+        "* Adeptus-Custodes-Einheiten gelten in jeder Hinsicht als Furchtlos, müssen sich aber weiterhin aufgerieben ausserhalb von 15 cm zu einem gegnerischen Verband bewegen. Gelingt ihnen das nicht, gelten die normalen Regeln für das Niedermachen aufgeriebener, nicht furchtloser Einheiten innerhalb von 15 cm zu einem Gegner; dabei sind die obigen Regeln für Adeptus Custodes und Beschussmarken zu berücksichtigen."
+      ]
+    }
+  ],
+  "units": {
+    "cu-tribun": {
+      "name": "Tribun",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "cu-generalkommandant": {
+      "name": "Generalkommandant",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "cu-centura": {
+      "name": "Centura der Oblivion Knights",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "cu-sagittarum": {
+      "name": "Sagittarum",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Verstärkte Panzerung",
+      "weapons": [
+        {
+          "name": "Adrastus-Bolterkaliver",
+          "modes": [
+            {
+              "firepower": "2x AP5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "cu-custodesgardist": {
+      "name": "Custodesgardist",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "notes": "Verstärkte Panzerung",
+      "weapons": [
+        {
+          "name": "Gardistenspeer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "cu-sentinel": {
+      "name": "Sentinel-Wächter",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "notes": "Verstärkte Panzerung",
+      "weapons": [
+        {
+          "name": "Sentinel-Kriegsklinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "cu-custodes": {
+      "name": "Custodeshüter",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Gardistenspeer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "cu-aquilon": {
+      "name": "Aquilon-Terminator",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Lastrum-Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energie-Waffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Terminator Aquilon zählen für den Transport als Terminatoren.",
+          "description": null
+        }
+      ]
+    },
+    "cu-venatari": {
+      "name": "Venatari",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Venatari-Lanze",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Archeotech-Kinetikzerstörer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "cu-schwester": {
+      "name": "Schwester der Stille",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "cu-vertus": {
+      "name": "Vertus Praetors",
+      "type": "LV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Lastrum-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT4+/AA4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "cu-achilles": {
+      "name": "Achilles-Contemptor-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Lastrum-Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Achilles Energielanze",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung (ARM)",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Contemptor Cybot Achilles zählen für den Transport als Cybots.",
+          "description": null
+        }
+      ]
+    },
+    "cu-telemon": {
+      "name": "Schwerer Telemon-Cybot",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Spiculus-Bolterwerfer",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Telemon-Faust",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung (ARM)",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Contemptor Cybot Achilles zählen für den Transport als Cybots.",
+          "description": null
+        }
+      ]
+    },
+    "cu-pallas": {
+      "name": "Antigravschweber Pallas",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "",
+      "weapons": [
+        {
+          "name": "Zwillingsverbunden Arachnus Blaze Kanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "cu-caladius": {
+      "name": "Caladius-Antigravpanzer",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "",
+      "weapons": [
+        {
+          "name": "Zwillingsverbunden Iliastus Accelator Kanone",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillingsverbundene Lastrum-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "cu-corus": {
+      "name": "Coronus",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann eine Terminatoreinheit oder zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillingsverbunden Arachnus Blaze Kanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillingsverbundene Lastrum-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "cu-land-schattenbarke": {
+      "name": "Custodes-Land-Schattenbarke",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann 1 Terminator-Einheit oder 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "cu-orion": {
+      "name": "Orion-Angriffsschiff",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "notes": "Kann acht Infanterieeinheiten oder Cybots transportieren. Terminatoren und Cybots zählen jeweils als zwei Einheiten. Effekt eines Kritischen Treffers: Die Einheit und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-zwillingsverbundene Lastrum-Bolterkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT6+/AA5+",
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Arachnus Schwerer Blaze Kanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Spiculus-Schwerbolterwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sm-stormtalon": {
+      "name": "Sturmtalon",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Sturmkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    }
+  }
+}

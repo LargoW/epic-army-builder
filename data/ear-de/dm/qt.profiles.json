@@ -1,0 +1,825 @@
+{
+  "army": "ear-de/dm/qt",
+  "source": {
+    "file": "lists_de/DM/QT.json",
+    "version": "0.6.0",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Beschwörung",
+      "description": [
+        "Jeder Verband mit einer Einheit mit Dämonenpakt oder der Verbandsaufwertung Dämonenpakt darf Dämonen beschwören. Jeder Dämonenpakt der Armee stellt zu Beginn der Schlacht automatisch einen Punkt für den Pool der niederen Dämonen bereit (der Spieler darf zusätzliche Punkte für niedere und/oder Große Dämonenpools kaufen).",
+        "Dämonenpools sind nicht fraktionsgebunden. Die Grösse der Dämonenpools muss jederzeit für alle Spieler sichtbar sein; es wird empfohlen, ihre Grösse mit Markern oder Würfeln anzuzeigen. Beim Beschwören von Dämonen muss der Pool angepasst werden.",
+        "Um Dämonen zu beschwören, kündigt der Verband dies an, bevor ein Aktionswurf abgelegt wird (aber nachdem die Aktion ausgewählt wurde). Wird der beschwörende Verband in einem anderen Verband transportiert (z. B. in einem Chaos-Thunderhawk), kann er nicht beschwören, wenn das Chaos-Thunderhawk aktiviert wird.",
+        "Der Spieler würfelt anschliessend 2D3, um die Anzahl der Beschwörungspunkte dieses Verbands zu ermitteln. Der Verband darf dann Dämonen bis zur Höhe der erzielten Beschwörungspunkte beschwören; nicht verwendete Punkte verfallen. Die Anzahl ist ausserdem durch die noch verfügbaren Punkte im Pool der niederen oder grossen Dämonen begrenzt.",
+        "Beschworene Einheiten müssen vollständig innerhalb von 5cm zu einer nicht beschworenen Einheit des beschwörenden Verbands aufgestellt werden (eine Kette beschworener Einheiten ist also nicht erlaubt). Hat der Verband die Fähigkeit Transport, dürfen neu beschworene Einheiten bei ausreichendem Platz darin aufgestellt werden. Sie dürfen nicht in gegnerischen Kontrollzonen oder auf unpassierbarem Gelände platziert werden. Beschworene Einheiten gehören regeltechnisch zum beschwörenden Verband, solange sie sich auf dem Schlachtfeld befinden.",
+        "Beschworene niedere Dämonen sind Verbrauchbar, gelten ansonsten jedoch als normale Einheiten und werden berücksichtigt, wenn ermittelt wird, ob ein Verband einen Gegner im Nahkampf zahlenmässig übertrifft oder durch Beschussmarken aufgerieben wird usw. Im Nahkampf getötete Dämonen zählen auch zur Anzahl der vom Gegner ausgeschalteten Einheiten, wenn Modifikatoren für das Nahkampfergebnis ermittelt werden.",
+        "Beschworene Einheiten bleiben bis zur Endphase der Runde im Spiel, in der sie beschworen wurden. Nachdem alle Verbände versucht haben, sich zu sammeln, werden alle beschworenen Einheiten vom Spielfeld entfernt und ihre Poolkosten dem jeweiligen Dämonenpool zurückerstattet. Dadurch kann der Verband aufgerieben werden, wenn seine Beschussmarken nun der Anzahl seiner Einheiten entsprechen oder sie übersteigen.",
+        "Wird ein Verband aufgerieben, werden alle von ihm beschworenen Einheiten zerstört.",
+        "Bei der Berechnung der Siegespunkte gibt der Pool der niederen Dämonen halbe Punkte ab, wenn höchstens die Hälfte (aufgerundet) seiner ursprünglichen Dämonen verbleibt. Er gibt volle Punkte ab, wenn höchstens ein Viertel (aufgerundet) seiner Dämonen verbleibt. Große Dämonen gelten bei der Berechnung von Siegespunkten als Kriegsmaschinen."
+      ]
+    },
+    {
+      "name": "QT-Beschwörungsregeln",
+      "description": [
+        "Verbände mit Dämonenpakt in einer Questor-Traitoris-Armee dürfen niedere Dämonen der Macht beschwören, der sie zugeordnet sind (Beschwörungspunktekosten stehen in Klammern):",
+        "Slaanesh: Dämonetten des Slaanesh (1), Slaaneshbestien (1).",
+        "Nurgle: Seuchenhüter des Nurgle (1), Seuchenbestien des Nurgle (1).",
+        "Khorne: Zerfleischer des Khorne (1), Bluthunde des Khorne (1).",
+        "Tzeentch: Horrors des Tzeentch (1), Feuerdämonen des Tzeentch (1).",
+        "Ungeteiltes Chaos: Dämonetten des Slaanesh (2), Seuchenhüter des Nurgle (2), Zerfleischer des Khorne (2), Horrors des Tzeentch (2), Dämonische Bestien des ungeteilten Chaos (1).",
+        "Beachte, dass die Beschwörungspunktekosten für die verschiedenen Dämonentypen variieren, die Kosten im Dämonenpool jedoch immer eins betragen."
+      ]
+    },
+    {
+      "name": "Launische Meister",
+      "description": [
+        "Würfelt der Chaos-Spieler in der Strategiephase einer Runde eine 6, erhält er einen Beschwörungspunkt für den Pool der niederen Dämonen. Bei einer 1 verliert er hingegen einen Punkt aus diesem Pool. Wurde kein Pool der niederen Dämonen gekauft oder ist er leer, hat dies im letzteren Fall keine Auswirkung."
+      ]
+    },
+    {
+      "name": "QT Ewige Feindschaft",
+      "description": [
+        "Jeder Verband einer Questor-Traitoris-Armee ist entweder einer der Verderbten Mächte oder dem Ungeteilten Chaos treu. Mit Ausnahme des Ungeteilten Chaos hegen die verschiedenen Fraktionen ewige Feindschaft gegeneinander. Dies wird durch folgende Regeln dargestellt:",
+        "Eine Questor-Traitoris-Armee mit Verbänden der Fraktion Khorne darf keine Verbände der Fraktion Slaanesh enthalten und umgekehrt.",
+        "Eine Questor-Traitoris-Armee mit Verbänden der Fraktion Nurgle darf keine Verbände der Fraktion Tzeentch enthalten und umgekehrt."
+      ]
+    }
+  ],
+  "units": {
+    "dm-hollenschmied": {
+      "name": "Höllenschmied",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Verbotene Technologie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dm-chaoszwerge": {
+      "name": "Chaoszwerge",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Phospex-Serpenta",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dm-ikon": {
+      "name": "Chaos-Ikone",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "dm-erz-heretek": {
+      "name": "Erz-Heretek",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Arkane Technologie",
+          "modes": [
+            {
+              "firepower": "D3x AP4+/AT4+/AA4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dm-kaban-maschine": {
+      "name": "Kaban-Maschine",
+      "type": "WE",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "crit": "Kaban-Maschine wird zerstört. Alle Einheiten innerhalb von 5cm erleiden einen Treffer.",
+      "weapons": [
+        {
+          "name": "Kaban-Störsender",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kaban-Konversionsstrahler",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kaban-Schwanzgeschütze",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dm-phospexor": {
+      "name": "Phospexor",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Phospex-Werfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dm-krios-blitzpanzer": {
+      "name": "Krios-Blitzpanzer",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Blitzkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dm-krios-venator": {
+      "name": "Krios Venator",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Pulsar-Füsil",
+          "modes": [
+            {
+              "firepower": "2x AT3+/AT5+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dm-ord-hereticus": {
+      "name": "Ordinatus Hereticus",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Mit einem Turboblaster, Verdammnisbrenner, Plasma-Kremator oder einer Zwillings-Hades-Maschinenkanone bewaffnet.",
+      "crit": "Ordinatus wird zerstört, und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisbrenner",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Hades Maschinenkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dm-ord-hereticus-majoris": {
+      "name": "Ordinatus HereticusMajoris",
+      "type": "WE",
+      "speed": 10,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Ordinatus wird zerstört, und alle Einheiten innerhalb von 5cm erleiden bei 4+ einen Treffer",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": ">Ordinatus Cyclothrathe<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Terrebrax-Phospex-Batterie",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Ordinatus Retlaxi<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Graviton-Singularitätsstrahler",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": ">Ordinatus Temporia<",
+          "modes": [
+            {
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Gyrator Sperrfeuer Kanone",
+          "modes": [
+            {
+              "firepower": "8x AP4+/AT4+",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dm-hollenritter": {
+      "name": "Höllenritter",
+      "type": "H-AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Thermallanze",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "dm-schander-ritter": {
+      "name": "Schänder-Ritter",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Entweiher-Ritter wird zerstört.",
+      "weapons": [
+        {
+          "name": "Laserzerstörer",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pustelwerfer-Kapsel",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Renegade Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Dämonenmaschine (Nurgle)",
+          "description": null
+        }
+      ]
+    },
+    "dm-chaos-schlachtschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    },
+    "dm-chrono-gladiatoren": {
+      "name": "Chrono-Gladiatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "weapons": [
+        {
+          "name": "Energie-Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -55,6 +55,19 @@
         "May only be added to an XV8 unit"
       ]
     },
+
+    "bondedTeam": {
+      "name": "Bonded Team unit",
+      "type": "CH",
+      "speed": "n/a",
+      "armour": null,
+      "cc": null,
+      "ff": null,
+      "weapons": [],
+      "specialRules": [
+        "Leader"
+      ]
+    },
     "fire-warrior": {
       "name": "Fire Warrior unit",
       "type": "Inf",

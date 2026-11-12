@@ -198,7 +198,8 @@
       "ruleset": "ear-de",
       "faction": "Space Marines",
       "name": "Blood Ravens",
-      "version": "0.5.0"
+      "version": "0.5.0",
+      "hidden": true
     },
     {
       "id": "ear-de/am/amtl",
@@ -212,7 +213,8 @@
       "ruleset": "ear-de",
       "faction": "Adeptus Mechanicus",
       "name": "Legiones Skitarii: Mars",
-      "version": "0.7.0"
+      "version": "0.7.0",
+      "hidden": true
     },
     {
       "id": "ear-de/am/legionesskitariimetalica",
@@ -269,6 +271,29 @@
       "faction": "Squats",
       "name": "Wodanaz-Feste",
       "version": "1.0"
+    },
+    {
+      "id": "ear-de/cu/emissariesimperatus",
+      "ruleset": "ear-de",
+      "faction": "Adeptus Custodes",
+      "name": "Emissaries Imperatus",
+      "version": "1.1"
+    },
+    {
+      "id": "ear-de/dm/qt",
+      "ruleset": "ear-de",
+      "faction": "Dunkler Mechanicus",
+      "name": "Questor Traitoris",
+      "version": "0.6.0",
+      "hidden": true
+    },
+    {
+      "id": "ear-de/dm/ttl",
+      "ruleset": "ear-de",
+      "faction": "Dunkler Mechanicus",
+      "name": "Verräter-Titanenlegion",
+      "version": "0.8.0",
+      "hidden": true
     },
     {
       "id": "euk/ig/vanaheim",

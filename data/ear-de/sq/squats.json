@@ -840,11 +840,11 @@
     },
     {
       "id": "dragon-car",
-      "name": "Drachen-Kampf-Car",
+      "name": "Drachen-Kampf-Wagen",
       "variants": [
         {
           "id": "n",
-          "label": "Drachen-Kampf-Car",
+          "label": "Drachen-Kampf-Wagen",
           "pts": 75,
           "effects": [],
           "perUnit": true,
@@ -854,11 +854,11 @@
     },
     {
       "id": "mortar-car",
-      "name": "Belagerungsmörser-Kampf-Car",
+      "name": "Belagerungsmörser-Kampf-Wagen",
       "variants": [
         {
           "id": "n",
-          "label": "Belagerungsmörser-Kampf-Car",
+          "label": "Belagerungsmörser-Kampf-Wagen",
           "pts": 75,
           "effects": [],
           "perUnit": true,
@@ -868,11 +868,11 @@
     },
     {
       "id": "berserker-car",
-      "name": "Berserker-Kampf-Car",
+      "name": "Berserker-Kampf-Wagen",
       "variants": [
         {
           "id": "n",
-          "label": "Berserker-Kampf-Car + Squat-Berserker",
+          "label": "Berserker-Kampf-Wagen + Squat-Berserker",
           "pts": 75,
           "effects": [
             {
@@ -888,11 +888,11 @@
     },
     {
       "id": "bomb-car",
-      "name": "0–1 Bombe Kampf-Car",
+      "name": "0–1 Bomben Kampf-Wagen",
       "variants": [
         {
           "id": "n",
-          "label": "Bombe Kampf-Car",
+          "label": "Bomben Kampf-Wagen",
           "pts": 125,
           "effects": [],
           "perUnit": true,

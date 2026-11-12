@@ -1139,8 +1139,8 @@
       "armour": 4,
       "cc": 5,
       "ff": 4,
-      "notes": "[*] Jeder Berserker-Kampf-Car darf 1 Einheit Squat-Berserker transportieren. Diese darf während des Transports im Landzug an Feuergefechten teilnehmen.",
-      "crit": "Der letzte Kampf-Car im Zug wird zerstört. Bleibt kein Kampf-Car übrig, wird die Land-Train-Lokomotive zerstört.",
+      "notes": "[*] Jeder Berserker-Kampf-Wagen darf 1 Einheit Squat-Berserker transportieren. Diese darf während des Transports im Landzug an Feuergefechten teilnehmen.",
+      "crit": "Der letzte Kampf-Wagen im Zug wird zerstört. Bleibt kein Kampf-Wagen übrig, wird die Land-Train-Lokomotive zerstört.",
       "weapons": [
         {
           "name": "Squat-Mjolnir-Kanone",
@@ -1195,7 +1195,7 @@
           ]
         },
         {
-          "name": "Berserker Kampf-Car",
+          "name": "Berserker Kampf-Wagen",
           "modes": [
             {
               "firepower": "2x AP5+/AT6+",
@@ -1210,7 +1210,7 @@
           ]
         },
         {
-          "name": "Dragon Kampf-Car",
+          "name": "Drachen Kampf-Wagen",
           "modes": [
             {
               "firepower": "3x AP4+",
@@ -1235,7 +1235,7 @@
           ]
         },
         {
-          "name": "Belagerungsmörser Kampf-Car",
+          "name": "Belagerungsmörser Kampf-Wagen",
           "modes": [
             {
               "firepower": "2BP",
@@ -1258,7 +1258,7 @@
           ]
         },
         {
-          "name": "0–1 Bombe Kampf-Car",
+          "name": "0–1 Bomben Kampf-Wagen",
           "modes": [
             {
               "firepower": "3BP",
@@ -1283,11 +1283,11 @@
       ],
       "specialRules": [
         {
-          "name": "Schadenskapazität: 2 + aktuelle Anzahl Kampf-Cars",
+          "name": "Schadenskapazität: 2 + aktuelle Anzahl Kampf-Wagen",
           "description": null
         },
         {
-          "name": "Null-Schilde: aktuelle Anzahl Kampf-Cars",
+          "name": "Null-Schilde: aktuelle Anzahl Kampf-Wagen",
           "description": null
         },
         {

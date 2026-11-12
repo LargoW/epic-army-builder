@@ -28,6 +28,7 @@
   ],
   "units": {
     "ethereal": {"name": "Ethereal", "type": "CH"},
+    "bondedTeam": {"name": "Bonded Team", "type": "CH"},
     "shas-o": {"name": "Shas'o Commander", "type": "CH"},
     "shas-el": {"name": "Shas'el Commander", "type": "CH"},
     "fire-warrior": {"name": "Fire Warrior unit", "type": "INF"},
@@ -290,7 +291,7 @@
           "id": "1",
           "label": "Formation counts as containing an additional Leader and removes an extra blast marker when rallying or regrouping",
           "pts": 25,
-          "effects": []
+          "effects": [{"op": "add", "unit": "bondedTeam", "count": 1}]
         }
       ]
     },

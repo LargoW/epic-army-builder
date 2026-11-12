@@ -1,0 +1,2746 @@
+{
+  "army": "ear-de/dm/ttl",
+  "source": {
+    "file": "lists_de/DM/TTL.json",
+    "version": "0.8.0",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "TTL Ewige Feindschaft",
+      "description": [
+        "Jeder Verband einer Verräter-Titanenlegion-Armee ist entweder einer der Verderbten Mächte oder dem Ungeteilten Chaos treu. Mit Ausnahme des Ungeteilten Chaos hegen die verschiedenen Fraktionen ewige Feindschaft gegeneinander. Dies wird durch folgende Regeln dargestellt:",
+        "Eine Verräter-Titanenlegion-Armee mit Verbänden der Fraktion Khorne darf keine Verbände der Fraktion Slaanesh enthalten und umgekehrt.",
+        "Eine Verräter-Titanenlegion-Armee mit Verbänden der Fraktion Nurgle darf keine Verbände der Fraktion Tzeentch enthalten und umgekehrt."
+      ]
+    }
+  ],
+  "units": {
+    "ttl-lasterbringer-titan": {
+      "name": "Lasterbringer-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren. Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Strahl der Verzückung",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(W6)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Annihilator",
+          "modes": [
+            {
+              "firepower": "6x MW3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schallvernichter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tempel der Versuchung",
+          "modes": [
+            {
+              "firepower": "AP3+/AA5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfgeschütz",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 10",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 8",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ttl-finsternisbringer-titan": {
+      "name": "Finsternisbringer-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren. Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Fäulnissturm",
+          "modes": [
+            {
+              "firepower": "5x AP3+/AT5+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Devourer Kanone",
+          "modes": [
+            {
+              "firepower": "4x MW4+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Seuchenmörser",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tempel der Verwesung",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfgeschütz",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 11",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 7",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ttl-zwistbringer-titan": {
+      "name": "Zwistbringer-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren. Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Höllensturmkanone",
+          "modes": [
+            {
+              "firepower": "10BP",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Annihilator",
+          "modes": [
+            {
+              "firepower": "6x MW3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tempel des Zorns",
+          "modes": [
+            {
+              "firepower": "AT2+/AA4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfgeschütz",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zerfleischer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 10",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 8",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ttl-wandelbringer-titan": {
+      "name": "Wandelbringer-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann 4 Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren. Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Zwillings-Strahl der Veränderung",
+          "modes": [
+            {
+              "firepower": "2x MW2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(D2)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Havoc-Warp-Rakete",
+          "count": 8,
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tempel der Wandlung",
+          "modes": [
+            {
+              "firepower": "3x AP6+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flak-Flammenkanone",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 10",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 8",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "ttl-schmerzensfuerst-titan": {
+      "name": "Schmerzensfürst-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Strahl der Ekstase",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Verbrenner",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cyclone-Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP4+/AT4+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahlblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "5x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gekoppelte Schallverwüster",
+          "modes": [
+            {
+              "firepower": "8x AP3+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Musk Flegel",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lustpeitsche",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 8",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Strahl der Ekstase, Plasma-Verbrenner, Cyclone-Kanone oder Strahlblaster bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-seuchenfuerst-titan": {
+      "name": "Seuchenfürst-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Plasma-Verbrenner",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cyclone-Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP4+/AT4+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahlblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "5x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Seuchenmörser",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corruption Kanone",
+          "modes": [
+            {
+              "firepower": "3x MW4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenflegel",
+          "modes": [
+            {
+              "firepower": "2x AP2+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(D2)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 9",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 5",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Plasma-Verbrenner, Cyclone-Kanone oder Strahlblaster bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-verderbensfuerst-titan": {
+      "name": "Verderbensfürst-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Höllenschlagkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Verbrenner",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cyclone-Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP4+/AT4+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahlblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "5x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Havoc-Sperrfeuer-Rakete",
+          "count": 6,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwanzgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisfaust",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3+3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 8",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Höllenschlagkanone, Plasma-Verbrenner, Cyclone-Kanone oder Strahlblaster bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-warpfuerst-titan": {
+      "name": "Warp-Fürst-Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Tzeentch Kanone",
+          "count": "0-2",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Verbrenner",
+          "count": "0-2",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahlblaster",
+          "count": "0-2",
+          "modes": [
+            {
+              "firepower": "5x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahl der Veränderung",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flak-Flammenkanone",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 8",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit zwei Tzeentch-Kanonen, zwei Plasma-Verbrennern oder zwei Strahlblastern bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-reviler-titan": {
+      "name": "Reviler-Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Hex Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP5+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schallverwüster",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Musk Flegel",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lustpeitsche",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 6",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Hex-Kanone, Turboblaster oder Plasma-Kremator bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-abscheulicher-titan": {
+      "name": "Abscheulicher Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Fäulniskanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT5+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenmörser",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenflegel",
+          "modes": [
+            {
+              "firepower": "2x AP2+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(D2)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 7",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 3",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Fäulniskanone, Turboblaster oder Plasma-Kremator bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-verwueter-titan": {
+      "name": "Verwüster-Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Hex Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP5+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma-Kremator",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3x MW2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisbrenner",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisklaue",
+          "modes": [
+            {
+              "firepower": "3x AP4+/AT4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwanzgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 6",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Hex-Kanone, Turboblaster oder Plasma-Kremator bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-mutator-titan": {
+      "name": "Mutator-Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Hex Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "6x AP5+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Turboblaster",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP5+/AT3+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Coruscant-Hagel",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Strahl der Veränderung",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flak-Flammenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 6",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Hex-Kanone, Turboblaster oder Coruscant-Hagel bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-seuchenhund": {
+      "name": "Seuchenhund",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Pus Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boil Kanone",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 1",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "ttl-bluthund": {
+      "name": "Bluthund",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Todessturm",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasmaofen",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Slow",
+                  "description": "Langsames Feuern"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ursus Klaue",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(D2)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfkopf",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Muss entweder mit Todessturm oder Plasmaofen bewaffnet sein.",
+          "description": null
+        }
+      ]
+    },
+    "ttl-chaos-warhound": {
+      "name": "Chaos-Warhound",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Todessturm",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Höllenschlund",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfkopf",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "ttl-cerberit": {
+      "name": "Cerberit",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Ectoplasma Kanone",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-schlachtbestie": {
+      "name": "Schlachtbestie",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Khorne)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-schmiedebestie": {
+      "name": "Schmiedebestie",
+      "type": "AV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-questor": {
+      "name": "Questor",
+      "type": "WE",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Questor erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Castigator Kanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-unterwerfer": {
+      "name": "Unterwerfer",
+      "type": "WE",
+      "speed": 30,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Subjugator erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Tormentor Kanonen",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnissirene",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ionengewehre",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-entwuerdiger": {
+      "name": "Entwürdiger",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Blastmaster",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Todesheuler",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Warp-Verstärker",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-schaender": {
+      "name": "Täuscher",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwerer Warpflamer",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Auge des Magnus",
+          "modes": [
+            {
+              "firepower": "2x AP6+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Tzeentch)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-geisel": {
+      "name": "Geißel",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "ttl-hollenschmied": {
+      "name": "Höllenschmied",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Verbotene Technologie",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "ttl-chaoszwerge": {
+      "name": "Chaoszwerge",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Phospex-Serpenta",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "ttl-schlachtschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

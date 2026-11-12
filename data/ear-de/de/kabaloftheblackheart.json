@@ -1,0 +1,62 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/de/kabaloftheblackheart",
+  "name": "Kabal des Schwarzen Herzens",
+  "faction": "Dark Eldar",
+  "version": "1.0.Beta-2",
+  "source": {
+    "file": "lists_de/DE/kabaloftheblackheart.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
+  "strategy": 4,
+  "initiative": [
+    {
+      "formations": [
+        "de-kabal-des-schwarzen-herzens",
+        "de-hagashin-kult",
+        "de-henker",
+        "de-netzportal"
+      ],
+      "value": "1+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "de-archon": { "name": "Archon", "from": "DE.json", "type": "CH" },
+    "de-dracon": { "name": "Dracon", "from": "DE.json", "type": "CH" },
+    "de-succubus": { "name": "Succubus", "from": "DE.json", "type": "CH" },
+    "de-haemonculus": { "name": "Ältester Haemonculus", "from": "DE.json", "type": "CH" },
+    "de-inkubi": { "name": "Inkubi", "from": "DE.json", "type": "CH" },
+    "de-kabalenkrieger": { "name": "Kabalenkrieger", "from": "DE.json", "type": "AV" },
+    "de-mandrak": { "name": "Mandraks", "from": "DE.json", "type": "AV" },
+    "de-harpyie": { "name": "Harpyien", "from": "DE.json", "type": "AV" },
+    "de-haemonculus": { "name": "Haemonculi", "from": "DE.json", "type": "AV" },
+    "de-folterer": { "name": "Folterer", "from": "DE.json", "type": "AV" },
+    "de-groteske": { "name": "Grotesquen", "from": "DE.json", "type": "AV" },
+    "de-hagashin": { "name": "Hagashîn", "from": "DE.json", "type": "AV" },
+    "de-warpbestien": { "name": "Warpbestien", "from": "DE.json", "type": "AV" },
+    "de-hellion": { "name": "Hellion-Himmelsbretter", "from": "DE.json", "type": "AV" },
+    "de-reaver": { "name": "Reaver-Jetbikes", "from": "DE.json", "type": "AV" },
+    "de-schattenviper": { "name": "Schattenviper", "from": "DE.json", "type": "AV" },
+    "de-schattenbarke": { "name": "Schattenbarke", "from": "DE.json", "type": "AV" },
+    "de-schattenjaeger": { "name": "Schattenjäger", "from": "DE.json", "type": "AV" },
+    "de-talos": { "name": "Talos", "from": "DE.json", "type": "AV" },
+    "de-vernuegbarke": { "name": "Vergnügungsbarke", "from": "DE.json", "type": "AV" },
+    "de-schmerzensschiff": { "name": "Schmerzensschiff", "from": "DE.json", "type": "AV" },
+    "de-henker": { "name": "Henker-Landungsmodul", from_placeholder: 0 } 
+  },
+  "sections": [],
+  "formations": [],
+  "upgrades": [],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}
