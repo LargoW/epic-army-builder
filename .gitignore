@@ -5,3 +5,4 @@ patches/
 .check-refs.cjs
 .inspect.cjs
 .inspect2.cjs
+.scan3.cjs
