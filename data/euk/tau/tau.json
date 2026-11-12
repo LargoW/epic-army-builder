@@ -513,7 +513,7 @@
       "variants": [
         {
           "id": "1",
-          "label": "Add a formation of six Gun Drone units to the army",
+          "label": "Add a formation of six Gun Drone units to the army. The Tigershark may start the game transporting this formation.",
           "pts": 100,
           "effects": [{"op": "add", "unit": "gun-drone", "count": 6}]
         }
