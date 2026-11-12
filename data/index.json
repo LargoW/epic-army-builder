@@ -296,6 +296,13 @@
       "hidden": true
     },
     {
+      "id": "ear-de/de/kabaloftheblackheart",
+      "ruleset": "ear-de",
+      "faction": "Dark Eldar",
+      "name": "Kabal des Schwarzen Herzen",
+      "version": "1.0.Beta-2"
+    },
+    {
       "id": "euk/ig/vanaheim",
       "ruleset": "euk",
       "faction": "Imperial Guard",
