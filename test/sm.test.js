@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { createState, addFormation, setUpgrade, summarize, validate } from "../engine/engine.js";
+import { createState, addFormation, setUpgrade, summarize, validate, withProfiles, rosterProfiles } from "../engine/engine.js";
 
 const data = JSON.parse(readFileSync(new URL("../data/ear-de/sm/codexastartes.json", import.meta.url), "utf8"));
 
@@ -84,4 +84,37 @@ test("fleet share and orbital limits", () => {
   assert.ok(codes(s).includes("share-limit"));
   const [t] = army("tacticals", "devastators", "orbital", "orbital");
   assert.ok(codes(t).includes("formation-limit"));
+});
+
+test("Scharfschützen: der Scout Trupp tauscht alle Scouts gegen Scout (Scharfschütze)", () => {
+  let [s, [u]] = army("scouts");
+  s = setUpgrade(s, u, "snipers", "1");
+  assert.equal(summarize(data, s).total, 175);
+  assert.deepEqual(roster(s), { "scout-sniper": 4, rhino: 2 }, "no plain Scouts are left, the transport is the same");
+  for (const [razorbacks, rest] of [["1", { razorback: 1, rhino: 2 }], ["2", { razorback: 2, rhino: 1 }], ["4", { razorback: 4 }]]) {
+    s = setUpgrade(s, u, "razorbacks", razorbacks);
+    assert.deepEqual(roster(s), { "scout-sniper": 4, ...rest }, `${razorbacks} Razorback(s)`);
+  }
+  assert.deepEqual(codes(s).filter((c) => c !== "formation-limit"), []);
+  s = setUpgrade(s, u, "razorbacks", "5");
+  assert.ok(codes(s).includes("vehicle-surplus"), "the transport rules still apply to the Scout (Scharfschütze)");
+});
+
+test("Scout (Scharfschütze) has the Scout profile, but the Schwere Bolter carries the Scharfschütze rule", () => {
+  const profiles = JSON.parse(readFileSync(new URL("../data/ear-de/sm/codexastartes.profiles.json", import.meta.url), "utf8"));
+  const withP = withProfiles(data, profiles);
+  const scout = profiles.units.scout;
+  const sniper = profiles.units["scout-sniper"];
+  assert.deepEqual({ ...sniper, name: scout.name, weapons: scout.weapons }, scout, "same type, speed, armour, close combat, firefight and rules");
+  assert.deepEqual(scout.weapons[0].modes[0].specialRules, [], "plain Scouts have no Scharfschütze rule");
+  assert.deepEqual(sniper.weapons.map((w) => [w.name, w.modes[0].firepower, w.modes[0].range]), [["Schwerer Bolter", "AP5+", 30]]);
+  assert.deepEqual(sniper.weapons[0].modes[0].specialRules, [{ name: "S", description: "Scharfschütze" }]);
+  let [s, [u]] = army("scouts");
+  s = setUpgrade(s, u, "snipers", "1");
+  const list = rosterProfiles(withP, summarize(withP, s).entries[0].roster);
+  const row = list.find((r) => r.unit === "scout-sniper");
+  assert.equal(row.count, 4);
+  assert.equal(row.name, "Scout (Scharfschütze)");
+  assert.ok(row.profile, "the profile is shown in the builder and the overview");
+  assert.equal(list.some((r) => r.unit === "scout"), false);
 });

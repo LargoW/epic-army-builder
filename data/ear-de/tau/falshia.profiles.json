@@ -1,0 +1,1327 @@
+{
+  "army": "ear-de/tau/falshia",
+  "source": {
+    "file": "lists_de/TAU/falshia.json",
+    "version": "0.6.0",
+    "commit": null
+  },
+  "specialRules": [],
+  "units": {
+    "fa-shasel": {
+      "name": "Shas'el",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Koordinierter Beschuss",
+          "description": [
+            "Ein Verband mit mindestens einer Einheit mit Koordinierter Beschuss darf bis zu zwei weitere nicht aufgeriebene Verbände innerhalb von 15 cm, die in dieser Runde noch keine Aktion durchgeführt haben, auffordern, ihm bei Vorrücken, einem Eilschritt oder Dauerfeuer zu folgen.",
+            "Lege einen einzelnen Initiativwurf für alle Verbände ab und berücksichtige dabei einen gemeinsamen Modifikator von -1, falls einer der Verbände Beschussmarken hat. Misslingt der Test, erhält der ursprüngliche Verband (mit der Einheit, die Koordinierter Beschuss einsetzt) eine Beschussmarke und muss Halten durchführen. Die anderen Verbände sind nicht betroffen und dürfen später in der Runde eine Aktion durchführen. Gelingt der Test, dürfen alle beteiligten Verbände Vorrücken, einen Eilschritt oder Dauerfeuer durchführen.",
+            "Nicht alle Verbände müssen dieselbe Aktion durchführen; die Aktionen dürfen in beliebiger Reihenfolge abgehandelt werden, müssen sich aber alle gegen denselben Zielverband richten. Kann oder will ein aktivierter Verband nicht auf den ausgewählten Verband feuern, darf er in dieser Runde überhaupt nicht feuern. Die Verbände müssen keinen bestimmten Abstand zueinander einhalten und führen ihre Aktionen nacheinander durch. Die Aktion jedes Verbands wird angesagt und abgehandelt (einschliesslich des Tests, ob der Zielverband aufgerieben wird), bevor der nächste Tau-Verband an die Reihe kommt."
+          ]
+        }
+      ]
+    },
+    "fa-shaso": {
+      "name": "Shas'o",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Experimental Waffen",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Koordinierter Beschuss",
+          "description": [
+            "Ein Verband mit mindestens einer Einheit mit Koordinierter Beschuss darf bis zu zwei weitere nicht aufgeriebene Verbände innerhalb von 15 cm, die in dieser Runde noch keine Aktion durchgeführt haben, auffordern, ihm bei Vorrücken, einem Eilschritt oder Dauerfeuer zu folgen.",
+            "Lege einen einzelnen Initiativwurf für alle Verbände ab und berücksichtige dabei einen gemeinsamen Modifikator von -1, falls einer der Verbände Beschussmarken hat. Misslingt der Test, erhält der ursprüngliche Verband (mit der Einheit, die Koordinierter Beschuss einsetzt) eine Beschussmarke und muss Halten durchführen. Die anderen Verbände sind nicht betroffen und dürfen später in der Runde eine Aktion durchführen. Gelingt der Test, dürfen alle beteiligten Verbände Vorrücken, einen Eilschritt oder Dauerfeuer durchführen.",
+            "Nicht alle Verbände müssen dieselbe Aktion durchführen; die Aktionen dürfen in beliebiger Reihenfolge abgehandelt werden, müssen sich aber alle gegen denselben Zielverband richten. Kann oder will ein aktivierter Verband nicht auf den ausgewählten Verband feuern, darf er in dieser Runde überhaupt nicht feuern. Die Verbände müssen keinen bestimmten Abstand zueinander einhalten und führen ihre Aktionen nacheinander durch. Die Aktion jedes Verbands wird angesagt und abgehandelt (einschliesslich des Tests, ob der Zielverband aufgerieben wird), bevor der nächste Tau-Verband an die Reihe kommt."
+          ]
+        }
+      ]
+    },
+    "fa-celestial": {
+      "name": "Himmlischer",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Honour Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Himmlischer",
+          "description": [
+            "Alle Einheiten eines Verbands, dem sich ein Himmlischer angeschlossen hat, erhalten Furchtlos. Wird die Einheit mit dem Himmlischen ausgeschaltet, verliert der Verband Furchtlos und erhält 1D3 Beschussmarken."
+          ]
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "fa-xv8": {
+      "name": "XV8 Krisis-Kampfanzüge",
+      "type": "INF",
+      "speed": 20,
+      "armour": 3,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Plasmagewehr",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Fusionsblaster",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Tau-Sprungmodule",
+          "description": [
+            "Tau-Sprungmodule folgen allen Regeln für Sprungmodule. Verbände, die ausschliesslich aus Einheiten mit Tau-Sprungmodulen bestehen, dürfen am Ende einer Aktion Vorrücken, Eilschritt oder Marsch zusätzlich bis zu 10cm weit bewegt werden. Diese zusätzliche Bewegung ist unabhängig davon erlaubt, ob die Einheit feuert, und erfolgt nach dem Schiessen. Sie darf in jede Richtung führen und folgt allen normalen Bewegungsregeln; Einheiten müssen also wie üblich den Zusammenhalt und Kontrollzonen beachten."
+          ]
+        }
+      ]
+    },
+    "fa-attack-drone": {
+      "name": "Angriffsdrohnen",
+      "type": "INF",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Zwillings-Impulskarabiner",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Tau-Sprungmodule",
+          "description": [
+            "Tau-Sprungmodule folgen allen Regeln für Sprungmodule. Verbände, die ausschliesslich aus Einheiten mit Tau-Sprungmodulen bestehen, dürfen am Ende einer Aktion Vorrücken, Eilschritt oder Marsch zusätzlich bis zu 10cm weit bewegt werden. Diese zusätzliche Bewegung ist unabhängig davon erlaubt, ob die Einheit feuert, und erfolgt nach dem Schiessen. Sie darf in jede Richtung führen und folgt allen normalen Bewegungsregeln; Einheiten müssen also wie üblich den Zusammenhalt und Kontrollzonen beachten."
+          ]
+        }
+      ]
+    },
+    "fa-fw": {
+      "name": "Strahlende Feuerkrieger",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Skullhamma-Kanone",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Impuls-Karabiner",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-spaeher": {
+      "name": "Späher",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schienengewehre",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Impuls-Karabiner",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Koordinierter Beschuss",
+          "description": [
+            "Ein Verband mit mindestens einer Einheit mit Koordinierter Beschuss darf bis zu zwei weitere nicht aufgeriebene Verbände innerhalb von 15 cm, die in dieser Runde noch keine Aktion durchgeführt haben, auffordern, ihm bei Vorrücken, einem Eilschritt oder Dauerfeuer zu folgen.",
+            "Lege einen einzelnen Initiativwurf für alle Verbände ab und berücksichtige dabei einen gemeinsamen Modifikator von -1, falls einer der Verbände Beschussmarken hat. Misslingt der Test, erhält der ursprüngliche Verband (mit der Einheit, die Koordinierter Beschuss einsetzt) eine Beschussmarke und muss Halten durchführen. Die anderen Verbände sind nicht betroffen und dürfen später in der Runde eine Aktion durchführen. Gelingt der Test, dürfen alle beteiligten Verbände Vorrücken, einen Eilschritt oder Dauerfeuer durchführen.",
+            "Nicht alle Verbände müssen dieselbe Aktion durchführen; die Aktionen dürfen in beliebiger Reihenfolge abgehandelt werden, müssen sich aber alle gegen denselben Zielverband richten. Kann oder will ein aktivierter Verband nicht auf den ausgewählten Verband feuern, darf er in dieser Runde überhaupt nicht feuern. Die Verbände müssen keinen bestimmten Abstand zueinander einhalten und führen ihre Aktionen nacheinander durch. Die Aktion jedes Verbands wird angesagt und abgehandelt (einschliesslich des Tests, ob der Zielverband aufgerieben wird), bevor der nächste Tau-Verband an die Reihe kommt."
+          ]
+        },
+        {
+          "name": "Zielmarker",
+          "description": [
+            "Alle gegnerischen Verbände mit mindestens einer Einheit innerhalb von 30 cm und Sichtlinie zu mindestens einer Tau-Einheit mit der Sonderregel Zielmarker gelten als markiert. Bei Fernkampfangriffen gegen einen markierten Verband erhalten alle Fernkampfwaffen einen zusätzlichen Trefferwurfmodifikator von +1. Dieser Bonus gilt nicht bei Flugabwehrangriffen oder Sperrfeuerangriffen. Ein aufgeriebener Tau-Verband oder ein Verband, der in dieser Runde einen Marsch durchgeführt hat, darf keine gegnerischen Verbände markieren."
+          ]
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "fa-vespid": {
+      "name": "Vespid-Stachelflügel",
+      "type": "INF",
+      "speed": 30,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Neutronenblaster",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "fa-kroot-hunde": {
+      "name": "Kroot-Hunde",
+      "type": "INF",
+      "speed": 20,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Fangzähne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "fa-kroot": {
+      "name": "Kroot-Söldner-Krieger",
+      "type": "INF",
+      "speed": 15,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kroot-Söldner-Gewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "fa-kroot-master": {
+      "name": "Kroot-Söldner-Meisterweiser",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kroot-Söldner-Gewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "fa-krootox": {
+      "name": "Krootox",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kroot-Söldner-Geschütz",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Krootox-Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-knarloc": {
+      "name": "Großer Knarloc",
+      "type": "LV",
+      "speed": 20,
+      "armour": 3,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kroot-Söldner-Bolterwerfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Knarloc Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-xv9": {
+      "name": "XV9-04 Hazard-Kampfanzug",
+      "type": "LV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Phasen-Ionengeschütze",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Tau Jet Pack",
+          "description": null
+        }
+      ]
+    },
+    "fa-xv25": {
+      "name": "XV25 Geist-Kampfanzüge",
+      "type": "INF",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fusionsblaster",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Erstschlag",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Zielmarker",
+          "description": [
+            "Alle gegnerischen Verbände mit mindestens einer Einheit innerhalb von 30 cm und Sichtlinie zu mindestens einer Tau-Einheit mit der Sonderregel Zielmarker gelten als markiert. Bei Fernkampfangriffen gegen einen markierten Verband erhalten alle Fernkampfwaffen einen zusätzlichen Trefferwurfmodifikator von +1. Dieser Bonus gilt nicht bei Flugabwehrangriffen oder Sperrfeuerangriffen. Ein aufgeriebener Tau-Verband oder ein Verband, der in dieser Runde einen Marsch durchgeführt hat, darf keine gegnerischen Verbände markieren."
+          ]
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Tau-Sprungmodule",
+          "description": [
+            "Tau-Sprungmodule folgen allen Regeln für Sprungmodule. Verbände, die ausschliesslich aus Einheiten mit Tau-Sprungmodulen bestehen, dürfen am Ende einer Aktion Vorrücken, Eilschritt oder Marsch zusätzlich bis zu 10cm weit bewegt werden. Diese zusätzliche Bewegung ist unabhängig davon erlaubt, ob die Einheit feuert, und erfolgt nach dem Schiessen. Sie darf in jede Richtung führen und folgt allen normalen Bewegungsregeln; Einheiten müssen also wie üblich den Zusammenhalt und Kontrollzonen beachten."
+          ]
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "fa-teufelsrochen": {
+      "name": "Teufelsrochen",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Einheiten Feuerkrieger oder Späher transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Belagerungsbrecherkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-schwertfisch": {
+      "name": "Schwertfisch",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann eine Einheit Angriffsdrohnen transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Lichtschienenkanone",
+          "modes": [
+            {
+              "firepower": "AT3+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-ion-hh": {
+      "name": "Ionen-Hammerhai",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann 1 Einheit Angriffsdrohnen transportieren.",
+      "weapons": [
+        {
+          "name": "Ionenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Intelligentes Raketensystem",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-rail-hh": {
+      "name": "Massebeschleuniger-Hammerhai",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Schienenkanone",
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            },
+            {
+              "firepower": "AP5+",
+              "range": 75,
+              "join": "oder",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Intelligentes Raketensystem",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "fa-fus-hh": {
+      "name": "Fusions-Hammerhai",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Fusionskanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Intelligentes Raketensystem",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "fa-dornenhai": {
+      "name": "Dornenhai",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Intelligentes Raketensystem",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jägerraketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Zielmarker",
+          "description": [
+            "Alle gegnerischen Verbände mit mindestens einer Einheit innerhalb von 30 cm und Sichtlinie zu mindestens einer Tau-Einheit mit der Sonderregel Zielmarker gelten als markiert. Bei Fernkampfangriffen gegen einen markierten Verband erhalten alle Fernkampfwaffen einen zusätzlichen Trefferwurfmodifikator von +1. Dieser Bonus gilt nicht bei Flugabwehrangriffen oder Sperrfeuerangriffen. Ein aufgeriebener Tau-Verband oder ein Verband, der in dieser Runde einen Marsch durchgeführt hat, darf keine gegnerischen Verbände markieren."
+          ]
+        }
+      ]
+    },
+    "fa-manta": {
+      "name": "Manta",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "ff": 4,
+      "notes": "Kann zwölf Feuerkrieger, Späher, XV15- und XV25-Geist-Kampfanzüge, Angriffsdrohnen, Kroot-Söldner-Krieger, Kroot-Söldner-Meisterweiser und Kroot-Hunde transportieren. Krootox, XV8-Krisis-, XV9-04-Hazard-, XV88-Koloss- und XV95-Schattengeist-Kampfanzüge zählen jeweils als zwei Einheiten. Zusätzlich können acht Piranhas und Tetras mitgeführt werden. Teufelsrochen, Hammerhaie und Dornenhaie zählen jeweils als zwei Einheiten.",
+      "crit": "Der Tau Ablenkschild fällt aus und darf für den Rest des Spiels nicht mehr verwendet werden. Weitere kritische Treffer verursachen 1 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Zwillings-Schwere Schienenkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "TK(W6)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Ionen Phalanx",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zielsuchraketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hellhammer-Kanone",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP2+/AT2+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Zielmarker",
+          "description": [
+            "Alle gegnerischen Verbände mit mindestens einer Einheit innerhalb von 30 cm und Sichtlinie zu mindestens einer Tau-Einheit mit der Sonderregel Zielmarker gelten als markiert. Bei Fernkampfangriffen gegen einen markierten Verband erhalten alle Fernkampfwaffen einen zusätzlichen Trefferwurfmodifikator von +1. Dieser Bonus gilt nicht bei Flugabwehrangriffen oder Sperrfeuerangriffen. Ein aufgeriebener Tau-Verband oder ein Verband, der in dieser Runde einen Marsch durchgeführt hat, darf keine gegnerischen Verbände markieren."
+          ]
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Hilfstransportschiff",
+          "description": [
+            "Hilfstransportschiff sind Antigravfahrzeuge und gelten für Sichtlinien und Gelände stets als aufgetaucht. Verfügt das Hilfstransportschiff über eine Transportoption, darf es Einheiten wie üblich ein- und ausschiffen. Eingeschiffte Einheiten dürfen einen Schutzwurf ablegen (siehe 1.7.5), wenn das Hilfstransportschiff zerstört wird.",
+            "Hilfstransportschiff blockieren keine Sichtlinie und müssen bei Offensiven stets ihre Antigravfähigkeit einsetzen, um ein Feuergefecht zu erzwingen. Infanterie in Basekontakt mit einem Hilfstransportschiff kann dieses nicht als Deckung nutzen."
+          ]
+        },
+        {
+          "name": "Tau Ablenkschild",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-rasierhai": {
+      "name": "Rasierhai-Jäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "Flakk-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Energielanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-sonnenhai": {
+      "name": "Sonnenhai-Bomber (B)",
+      "type": "AC",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC-Impulsbombengenerator",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Energielanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-schwertfisch-ax": {
+      "name": "Schwertfisch AX-1-0",
+      "type": "AC",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Schienenkanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Energielanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "fa-orca": {
+      "name": "Orca",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwölf Feuerkrieger, Späher, XV15- und XV25-Geist-Kampfanzüge, Angriffsdrohnen, XV88-Koloss-Kampfanzüge, Kroot-Söldner-Krieger, Kroot-Söldner-Meisterweiser und Kroot-Hunde transportieren. XV8-Krisis-, XV9-04-Hazard-, XV88-Koloss- und XV95-Schattengeist-Kampfanzüge zählen jeweils als zwei Einheiten. Zusätzlich zur übrigen Fracht können bis zu zwei Angriffsdrohnen mitgeführt werden.",
+      "crit": "Orca und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Zielsuchraketen",
+          "modes": [
+            {
+              "firepower": "AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Energielanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-schlachtschiff": {
+      "name": "Schlachtschiff der Custodian-Klasse",
+      "type": "SC",
+      "notes": "Kann 18 der folgenden Einheiten sowie die darin transportierten Einheiten mitführen: Orca, Manta. Mantas zählen jeweils als drei Einheiten. Sonderregel [*]: Eine Gravitic Tracer Salvo darf auf einen markierten Verband beliebigen Typs abgefeuert werden.",
+      "weapons": [
+        {
+          "name": "Gravitische Leitsalve",
+          "modes": [
+            {
+              "firepower": "3x MW3+",
+              "specialRules": [
+                {
+                  "name": "GM",
+                  "description": "Gelenkte Raketen"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "fa-kreuzer": {
+      "name": "Kreuzer der Protector-Klasse",
+      "type": "SC",
+      "notes": "Kann sechs der folgenden Einheiten sowie die darin transportierten Einheiten mitführen: Orca, Manta. Mantas zählen jeweils als drei Einheiten.",
+      "weapons": [
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

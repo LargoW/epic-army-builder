@@ -57,6 +57,10 @@ export function messageFor(v, names = {}) {
       return p.units != null && p.units !== p.inf
         ? `Enthält der Verband Transportfahrzeuge, müssen alle INF transportiert werden: ${p.units} INF belegen ${p.inf} Plätze (manche zählen doppelt), aber nur Platz für ${p.seats}.`
         : `Enthält der Verband Transportfahrzeuge, müssen alle INF transportiert werden: ${p.inf} INF, aber nur Platz für ${p.seats ?? p.vehicles * p.capacity}.`;
+    case "unit-group-min":
+      return `${p.label}: mindestens ${p.min} nötig (gewählt: ${p.count}).`;
+    case "unit-group-max":
+      return `${p.label}: höchstens ${p.max} erlaubt (gewählt: ${p.count}).`;
     case "transport-mixed":
       return `${unit(p.unit)} und ${unit(p.other)} dürfen in einem Verband nicht kombiniert werden.`;
     case "unknown-formation":

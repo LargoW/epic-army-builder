@@ -91,6 +91,7 @@ where Rough Riders and units with Mounted / Jump Pack are not carriable. Each ch
 - Variante `perUnit: true`: beliebig viele (`count` im Zustand), Preis je Stück, optional `max` (skaliert mit der Größe) und `requires` (mindestens eine dieser Einheiten muss im Verband sein; Einheiten, die die Variante selbst hinzufügt, zählen nicht mit). `add`- und `replace`-Effekte werden mit `count` multipliziert.
 - Variante `perArmy: n`: höchstens n-mal pro Armee (gezählt wird je Verband).
 - `upgradeConstraints` mit `perArmy: true`: das Limit gilt über alle Verbände der Armee.
+- Formation `unitLimits: [{id, label, units, min, max, scale}]`: Grenzen für die Summe mehrerer Einheitentypen im Verband (z. B. 2–4 Kampf-Wagen beim Landzug); `scale: true` multipliziert `min`/`max` mit der Größe. Meldungen `unit-group-min` / `unit-group-max`.
 - Aufwertungen werden in der Reihenfolge der Liste `formation.upgrades` angewendet, nicht in der Reihenfolge der Auswahl.
 - Mehrere `transport`-Regeln pro Formation (Squats: Rhino, Termite, Mole): Die Plätze addieren sich, alle tragbaren INF müssen befördert werden. `exclusiveWith: [Regel-IDs]` verbietet die Kombination mit anderen Transportarten. `minimum: true`: kein Fahrzeug dieser Art darf überflüssig sein (Meldung `vehicle-surplus`, wenn es auch ohne dieses Fahrzeug reichen würde). `carries.weights: {Einheit: Plätze}`: Einheiten, die beim Transport mehrfach zählen (Squats: Rapier, Warlord).
 

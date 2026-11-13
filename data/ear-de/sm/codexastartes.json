@@ -19,6 +19,7 @@
     "supreme-commander": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
     "assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
     "scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "scout-sniper": { "name": "Scout (Scharfschütze)", "from": "SM.json", "type": "INF" },
     "tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
     "devastator": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
     "terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
@@ -214,7 +215,7 @@
     },
     {
       "id": "snipers", "name": "Scharfschützen",
-      "variants": [ { "id": "1", "label": "Alle Aufklärer: Scharfschütze für Heavy Bolters", "pts": 25, "effects": [] } ]
+      "variants": [ { "id": "1", "label": "Alle Scouts: Scharfschützen-Regel für die Schweren Bolter", "pts": 25, "effects": [{ "op": "replace", "from": "scout", "to": "scout-sniper", "count": 4 }] } ]
     },
     {
       "id": "typhoons", "name": "Typhoons",

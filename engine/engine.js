@@ -263,6 +263,16 @@ export function computeEntry(data, entry) {
     })
   );
 
+  // Limits on the total of several unit types in a formation, e.g. "2 to 4 Kampf-Wagen" (formation.unitLimits).
+  // scale: true multiplies min and max by the size factor.
+  (def.unitLimits || []).forEach((l) => {
+    const count = l.units.reduce((a, u) => a + Math.max(0, roster[u] || 0), 0);
+    const k = l.scale ? mult : 1;
+    const params = { id: l.id, label: l.label || l.id, count };
+    if (l.min != null && count < l.min * k) problems.push({ code: "unit-group-min", params: { ...params, min: l.min * k }, refs: { uid: entry.uid } });
+    if (l.max != null && count > l.max * k) problems.push({ code: "unit-group-max", params: { ...params, max: l.max * k }, refs: { uid: entry.uid } });
+  });
+
   //Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
   Object.keys(roster).forEach((u) => {
     if (roster[u] < 0 || (roster[u] === 0 && !forceShow.has(u))) {

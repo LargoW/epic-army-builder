@@ -137,6 +137,22 @@
       "name": "Squat-Landzug",
       "from": "SQ.json"
     },
+    "berserker-car": {
+      "name": "Berserker-Kampf-Wagen",
+      "from": "SQ.json"
+    },
+    "dragon-car": {
+      "name": "Drachen-Kampf-Wagen",
+      "from": "SQ.json"
+    },
+    "mortar-car": {
+      "name": "Belagerungsmörser-Kampf-Wagen",
+      "from": "SQ.json"
+    },
+    "bomb-car": {
+      "name": "Bomben-Kampf-Wagen",
+      "from": "SQ.json"
+    },
     "kastellan": {
       "name": "Kastelan-Roboter",
       "from": "AM.json"
@@ -152,16 +168,16 @@
       "name": "Bruderschaftsformationen der Wodanaz-Feste",
       "formations": [
         "warriors",
-        "berserkers"
+        "berserkers",
+        "thunderers"
       ]
     },
     {
       "id": "support",
       "name": "Unterstützungsformationen der Wodanaz-Feste",
-      "description": "Für jede Krieger-Bruderschaftsformation dürfen bis zu zwei Unterstützungsformationen der Feste gewählt werden.",
+      "description": "Für jede Bruderschaftsformation (Krieger, Berserker, Donnerer) dürfen bis zu zwei Unterstützungsformationen der Feste gewählt werden.",
       "formations": [
         "bikers",
-        "thunderers",
         "guard-battery",
         "light-artillery",
         "thunderfire",
@@ -262,7 +278,7 @@
       "name": "Donnerer",
       "pts": 175,
       "tags": [
-        "support"
+        "brotherhood"
       ],
       "units": [
         {
@@ -464,6 +480,20 @@
         {
           "unit": "landtrain",
           "count": 1
+        }
+      ],
+      "unitLimits": [
+        {
+          "id": "landtrain-cars",
+          "label": "Kampf-Wagen",
+          "units": [
+            "berserker-car",
+            "dragon-car",
+            "mortar-car",
+            "bomb-car"
+          ],
+          "min": 2,
+          "max": 4
         }
       ],
       "upgrades": [
@@ -846,7 +876,13 @@
           "id": "n",
           "label": "Drachen-Kampf-Wagen",
           "pts": 75,
-          "effects": [],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dragon-car",
+              "count": 1
+            }
+          ],
           "perUnit": true,
           "max": 4
         }
@@ -860,7 +896,13 @@
           "id": "n",
           "label": "Belagerungsmörser-Kampf-Wagen",
           "pts": 75,
-          "effects": [],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "mortar-car",
+              "count": 1
+            }
+          ],
           "perUnit": true,
           "max": 4
         }
@@ -875,6 +917,11 @@
           "label": "Berserker-Kampf-Wagen + Squat-Berserker",
           "pts": 75,
           "effects": [
+            {
+              "op": "add",
+              "unit": "berserker-car",
+              "count": 1
+            },
             {
               "op": "add",
               "unit": "berserker",
@@ -894,7 +941,13 @@
           "id": "n",
           "label": "Bomben Kampf-Wagen",
           "pts": 125,
-          "effects": [],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bomb-car",
+              "count": 1
+            }
+          ],
           "perUnit": true,
           "max": 1
         }
@@ -908,7 +961,7 @@
         "tag:support"
       ],
       "forEach": [
-        "warriors"
+        "tag:brotherhood"
       ],
       "max": 2
     },

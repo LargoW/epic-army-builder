@@ -273,6 +273,13 @@
       "version": "1.0"
     },
     {
+      "id": "ear-de/o/gargants",
+      "ruleset": "ear-de",
+      "faction": "Orks",
+      "name": "Klan der Bad Moons, Gargantenmob von Nazdreg Ug Urdgrub",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "ear-de/tau/sacea",
       "ruleset": "ear-de",
       "faction": "T'au",
@@ -285,6 +292,13 @@
       "faction": "T'au",
       "name": "Vior'la",
       "version": "1.0.2"
+    },
+    {
+      "id": "ear-de/tau/falshia",
+      "ruleset": "ear-de",
+      "faction": "T'au",
+      "name": "Fal'shia",
+      "version": "0.6.0"
     },
     {
       "id": "ear-de/sq/squats",
@@ -328,6 +342,13 @@
       "ruleset": "ear-de",
       "faction": "Drukhari / Harlekine",
       "name": "Kabal der Wraithkind",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/eldar/bieltan",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Biel-Tan",
       "version": "1.0.Beta"
     },
     {

@@ -1,0 +1,820 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/o/gargants",
+  "name": "Klan der Bad Moons, Gargantenmob von Nazdreg Ug Urdgrub",
+  "faction": "Orks",
+  "version": "1.0.Beta",
+  "source": {
+    "file": "lists_de/O/gargants.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "strategy": 3,
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "3+"
+    }
+  ],
+  "units": {
+    "bam-bigmek": { "name": "Big Mek", "from": "ORK.json", "type": "CH" },
+    "bam-boss": { "name": "Bosse", "from": "ORK.json", "type": "INF" },
+    "bam-oddboy": { "name": "Oddboy", "from": "ORK.json", "type": "CH" },
+    "bam-boys": { "name": "Boys", "from": "ORK.json", "type": "INF" },
+    "bam-grots": { "name": "Grots", "from": "ORK.json", "type": "INF" },
+    "bam-kanonen": { "name": "Kanonänbatterie", "from": "ORK.json", "type": "INF" },
+    "bam-kommandos": { "name": "Kommandos", "from": "ORK.json", "type": "INF" },
+    "bam-posas": { "name": "Posas", "from": "ORK.json", "type": "INF" },
+    "bam-pulsa": { "name": "Pulsa-Raketen", "from": "ORK.json", "type": "LV" },
+    "bam-deffkopta": { "name": "Deffkopta", "from": "ORK.json", "type": "LV" },
+    "bam-transportpanza": { "name": "Transportpanza", "from": "ORK.json", "type": "AV" },
+    "bam-kampfpanza": { "name": "Kampfpanza", "from": "ORK.json", "type": "AV" },
+    "bam-flakpanza": { "name": "Flakpanza", "from": "ORK.json", "type": "AV" },
+    "bam-killa-bot": { "name": "Killa Bot", "from": "ORK.json", "type": "AV" },
+    "bam-deffdread": { "name": "Deff-Dread", "from": "ORK.json", "type": "AV" },
+    "bam-mekadread": { "name": "Meka-Dread", "from": "ORK.json", "type": "AV" },
+    "bam-stampfa": { "name": "Stampfa", "from": "ORK.json", "type": "H-AV" },
+    "bam-megatransport": { "name": "Mega Transportpanza", "from": "ORK.json", "type": "WE" },
+    "bam-megawummen": { "name": "Mega Wummenpanza", "from": "ORK.json", "type": "WE" },
+    "bam-supap": { "name": "Supa-Stampfa", "from": "ORK.json", "type": "WE" },
+    "bam-gargant": { "name": "Gargant", "from": "ORK.json", "type": "WE" },
+    "bam-greatgargant": { "name": "Großer Gargant", "from": "ORK.json", "type": "WE" },
+    "bam-megagargant": { "name": "Mega-Gargant", "from": "ORK.json", "type": "WE" },
+    "bam-jagdbomma": { "name": "Jagdbomma", "from": "ORK.json", "type": "AC" },
+    "bam-bomma": { "name": "Bomma", "from": "ORK.json", "type": "AC" },
+    "bam-killkreuzer": { "name": "Kill-Kreuzer", "from": "ORK.json", "type": "SC" },
+    "bam-schlachtkreuzer": { "name": "Schlachtkreuzer", "from": "ORK.json", "type": "SC" },
+    "bam-brennabuggy": { "name": "Brennabuggy", "from": "ORK.json", "type": "INF" },
+    "bam-waaghbike": { "name": "Waaghbikes", "from": "ORK.json", "type": "INF" },
+    "bam-buggy": { "name": "Buggy", "from": "ORK.json", "type": "INF" }
+  },
+  "sections": [
+    {
+      "id": "gargant",
+      "name": "Garganten-Mob der Bad Moons",
+      "description": "Die Armee muss mindestens einen Mega Gargant oder Großen Gargant enthalten. Der Big Mek schließt sich, falls verfügbar, einem Mega Gargant an, andernfalls einem Großen Gargant.",
+      "formations": [
+        "bam-mega-gargant",
+        "bam-greatgargant",
+        "bam-gargant"
+      ]
+    },
+    {
+      "id": "mob",
+      "name": "Große Mob der Bad Moons",
+      "description": "Bis zu drei pro Gargant-Verband der Bad Moons",
+      "formations": [
+        "bam-mob",
+        "bam-blitz",
+        "bam-festung",
+        "bam-rokkitz",
+        "bam-mekwummen",
+        "bam-mekdread",
+        "bam-mekstampfa"
+      ]
+    },
+    {
+      "id": "raumschiff",
+      "name": "Raumschiff der Bad Moons",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden",
+      "formations": [
+        "bam-jagdbomma",
+        "bam-bomma",
+        "bam-kroozer"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "bam-mega-gargant",
+      "name": "0–1 Mega Gargant",
+      "pts": 950,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-megagargant",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-banner-gork"
+      ]
+    },
+    {
+      "id": "bam-greatgargant",
+      "name": "Großer Gargant",
+      "pts": 750,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-greatgargant",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-banner-gork",
+        "bam-upgrade-banner-mork"
+      ]
+    },
+    {
+      "id": "bam-gargant",
+      "name": "Gargant",
+      "pts": 550,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-gargant",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-banner-mork"
+      ]
+    },
+    {
+      "id": "bam-mob",
+      "name": "Mob der Bad Moons",
+      "pts": 200,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-posas",
+          "count": 2
+        },
+        {
+          "unit": "bam-boys",
+          "count": 6
+        },
+        {
+          "unit": "bam-grots",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-boys",
+        "bam-upgrade-transportpanza",
+        "bam-upgrade-killa-bot",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-deffdread",
+        "bam-upgrade-boysgrots",
+        "bam-upgrade-stampfa"
+      ]
+    },
+    {
+      "id": "bam-blitz",
+      "name": "Blitz-Brigade der Bad Moons",
+      "pts": 150,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-deffkopta",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-brennabuggy",
+        "bam-upgrade-waaghbike",
+        "bam-upgrade-buggy",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-kampfpanza",
+        "bam-upgrade-deffkopta",
+        "bam-upgrade-mega-wummenpanza",
+        "bam-upgrade-oddboy"
+      ]
+    },
+    {
+      "id": "bam-festung",
+      "name": "Festungsmob der Bad Moons",
+      "pts": 225,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-posas",
+          "count": 1
+        },
+        {
+          "unit": "bam-boys",
+          "count": 3
+        },
+        {
+          "unit": "bam-grots",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-kampfpanza",
+        "bam-upgrade-deffkopta",
+        "bam-upgrade-mega-wummenpanza"
+      ]
+    },
+    {
+      "id": "bam-rokkitz",
+      "name": "Rokkitz-Mob der Bad Moons",
+      "pts": 150,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-pulsa",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-kanonen",
+        "bam-upgrade-pulsa",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-deffdread",
+        "bam-upgrade-oddboy"
+      ]
+    },
+    {
+      "id": "bam-mekwummen",
+      "name": "Mekwummen-Mob",
+      "pts": 125,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-kanonen",
+          "count": 5
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-transportpanza",
+        "bam-upgrade-kanonen",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-boss",
+        "bam-upgrade-oddboy"
+      ]
+    },
+    {
+      "id": "bam-mekdread",
+      "name": "Big Mek-Dread-Mob",
+      "pts": 125,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-deffdread",
+          "count": 1
+        },
+        {
+          "unit": "bam-killa-bot",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-killa-bot",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-deffdread",
+        "bam-upgrade-mekadread"
+      ]
+    },
+    {
+      "id": "bam-mekstampfa",
+      "name": "Big Mek-Stampfa-Mob",
+      "pts": 175,
+      "tags": [
+        "main"
+      ],
+      "units": [
+        {
+          "unit": "bam-stampfa",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-killa-bot",
+        "bam-upgrade-flakpanza",
+        "bam-upgrade-deffdread",
+        "bam-upgrade-stampfa",
+        "bam-upgrade-supap",
+        "bam-upgrade-mekadread"
+      ]
+    },
+    {
+      "id": "bam-jagdbomma",
+      "name": "Jagdbomma-Staffel",
+      "pts": 175,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-jagdbomma",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-jagdbomma"
+      ]
+    },
+    {
+      "id": "bam-bomma",
+      "name": "Bomma",
+      "pts": 175,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-bomma",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "bam-kroozer",
+      "name": "0–1 Kill-Kreuzer",
+      "pts": 100,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "bam-killkreuzer",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "bam-upgrade-schlachtkreuzer"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "bam-upgrade-banner-gork",
+      "name": "Riesenbanner des Gork (Inspirierend)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Riesenbanner des Gork (Inspirierend) hinzu",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-banner-mork",
+      "name": "Großbanner des Mork (Anführer)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Großbanner des Mork (Anführer) hinzu",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-boys",
+      "name": "Boys",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Boys",
+          "pts": 15,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-boys",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-transportpanza",
+      "name": "Transportpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Transportpanza",
+          "pts": 20,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-transportpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-killa-bot",
+      "name": "Killa Bot",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Killa Bot",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-killa-bot",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-flakpanza",
+      "name": "Flakpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Flakpanza",
+          "pts": 30,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-flakpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-deffdread",
+      "name": "Deff-Dread",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Deff-Dread",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-deffdread",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-boysgrots",
+      "name": "Boys + Grots",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Boys + Grots (Paar)",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-boys",
+              "count": 1
+            },
+            {
+              "op": "add",
+              "unit": "bam-grots",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-stampfa",
+      "name": "Stampfa",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Stampfa",
+          "pts": 60,
+          "perUnit": true,
+          "max": 3,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-stampfa",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-jagdbomma",
+      "name": "Jagdbomma",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Jagdbomma",
+          "pts": 50,
+          "perUnit": true,
+          "max": 6,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-jagdbomma",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-brennabuggy",
+      "name": "Brennabuggy",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Brennabuggy",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-brennabuggy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-waaghbike",
+      "name": "Waaghbikes",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Waaghbikes",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-waaghbike",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-buggy",
+      "name": "Buggy",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Buggy",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-buggy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-deffkopta",
+      "name": "Deffkopta",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Deffkopta",
+          "pts": 35,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-deffkopta",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-mega-wummenpanza",
+      "name": "Mega Wummenpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Mega Wummenpanza",
+          "pts": 100,
+          "perUnit": true,
+          "max": 2,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-megawummen",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-oddboy",
+      "name": "Oddboy",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Oddboy",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "requires": [
+            "bam-megatransport",
+            "bam-megawummen",
+            "bam-kampfpanza",
+            "bam-kanonen"
+          ],
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-oddboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-kanonen",
+      "name": "Kanonänbatterie",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kanonänbatterie",
+          "pts": 25,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-kanonen",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-kampfpanza",
+      "name": "Kampfpanza",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Kampfpanza",
+          "pts": 30,
+          "perUnit": true,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-kampfpanza",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-boss",
+      "name": "Bosse",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Bosse",
+          "pts": 35,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-boss",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-schlachtkreuzer",
+      "name": "Schlachtkreuzer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kill-Kreuzer durch Schlachtkreuzer ersetzen",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "bam-killkreuzer",
+              "to": "bam-schlachtkreuzer",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-pulsa",
+      "name": "Pulsa-Raketen",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Pulsa-Raketen",
+          "pts": 60,
+          "perUnit": true,
+          "max": 3,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-pulsa",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-mekadread",
+      "name": "Meka-Dread",
+      "variants": [
+        {
+          "id": "n",
+          "label": "Meka-Dread",
+          "pts": 50,
+          "perUnit": true,
+          "max": 1,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-mekadread",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bam-upgrade-supap",
+      "name": "Supa-Stampfa",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Supa-Stampfa hinzu",
+          "pts": 225,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bam-supap",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
+  ]
+}
