@@ -1,0 +1,290 @@
+{
+ "keys": [
+  "fraction",
+  "army",
+  "version",
+  "release",
+  "strategy",
+  "Initiative",
+  "specialRules",
+  "usage",
+  "units",
+  "sections",
+  "upgrades"
+ ],
+ "army": "Weltenschiff Lugganath",
+ "faction": "Eldar / Harlekine",
+ "version": "0.6.2",
+ "release": "2022-04-01",
+ "strategy": "Eldar-Armeen haben einen Strategiewert von 4.",
+ "initiative": "Aspektkrieger, Harlekine, Purpurjäger, Skathach-Phantomritter und Avatar-Verbände haben einen Initiativewert von 1+. Alle anderen Verbände haben einen Initiativewert von 2+.",
+ "special": [
+  "Avatar (Lugganath)",
+  "Darf keine Garnison bilden (Lugganath)",
+  "Weitsicht",
+  "Schlag und Flucht",
+  "Netzportal",
+  "Flink zu Fuß",
+  "Cegorach, der Lachende Gott",
+  "Schattensicht",
+  "Meister des Netzportals"
+ ],
+ "usage": [
+  "Mit dem folgenden Armeeorganisationsplan kannst du eine Armee des Weltenschiffs Lugganath mit Unterstützung durch Korsaren und Verbündete der Maske des Verhüllten Pfads aufstellen."
+ ],
+ "units": [
+  {
+   "from": "EL.json",
+   "units": [
+    "Eldar-Autarch",
+    "Geisterseher",
+    "Avatar des Khaine",
+    "Eldar-Exarch",
+    "Eldar-Runenprophet",
+    "Eldar-Gardisten",
+    "Viper",
+    "Eldar-Jetbikes",
+    "Asuryans Jäger",
+    "Feuerdrachen",
+    "Schwarze Khaindar",
+    "Banshees",
+    "Skorpionkrieger",
+    "Phantom-Schnitter",
+    "Korsaren-Geisterläufer",
+    "Korsaren-Wespe",
+    "Schattenviper",
+    "Viper",
+    "Wellenschlange",
+    "Illum Zar",
+    "Falcon",
+    "Feuersturm",
+    "Kobra",
+    "Sturmserpent",
+    "Skorpion",
+    "Skathach-Phantomritter"
+   ],
+   "unitRules": [
+    "Holofelder (x)",
+    "Lanze",
+    "Schildbohrer",
+    "Schildbrecher"
+   ]
+  },
+  {
+   "from": "HQ.json",
+   "units": [
+    "Harlekin-Avatar",
+    "Schattenseher",
+    "Meistermime",
+    "Solitär",
+    "Mimen",
+    "Todesnarren",
+    "Harlekin-Trupp",
+    "Skyweaver-Jetbikes",
+    "Starweaver",
+    "Voidweaver"
+   ],
+   "unitRules": []
+  },
+  {
+   "from": "eldarNavy.json",
+   "units": [
+    "Nachtschatten-Abfangjäger",
+    "Hemlock-Phantomjäger",
+    "Korsaren-Vampire-Jäger",
+    "Phantomschiff",
+    "Drachenschiff"
+   ],
+   "unitRules": []
+  }
+ ],
+ "sections": [
+  {
+   "name": "Spezialregeln des Weltenschiffs Lugganath",
+   "formations": [
+    {
+     "name": "0–1 Avatar",
+     "units": "Ein Avatar",
+     "points": 50
+    },
+    {
+     "name": "1 Netzportal",
+     "units": "Ersetze einen Zielmarker in der Spielfeldhälfte des Eldar-Spielers durch ein Netzportal. Dieses zählt als Zielmarker und Netzportal und kann weder angegriffen noch auf irgendeine Weise beschädigt werden.",
+     "extraUnits": [
+      "Füge ein zusätzliches Netzportal hinzu: 75 Punkte"
+     ],
+     "points": 0
+    }
+   ]
+  },
+  {
+   "name": "Lugganath-Kriegsscharn/Phantomkriegsscharn",
+   "description": "Für jede Kriegsschar von Lugganath darf bis zu eine Phantomkriegsschar von Lugganath gewählt werden.",
+   "formations": [
+    {
+     "name": "Kriegsschar von Lugganath",
+     "units": "Ein Eldar-Runenprophet, vier Gardisten, fünf Schattenvipers",
+     "extraUnits": [
+      "Eldar-Autarch",
+      "Eldar-Jetbikes"
+     ],
+     "points": 250
+    },
+    {
+     "name": "Phantomkriegsschar von Lugganath",
+     "units": "Ein Geisterseher, vier Phantom-Schnitter, vier Wellenschlangen",
+     "extraUnits": [],
+     "points": 375
+    }
+   ]
+  },
+  {
+   "name": "Lugganath-Trupps",
+   "description": "Für jede Kriegsschar oder Phantomkriegsschar von Lugganath darf ein Lugganath-Trupp gewählt werden.",
+   "formations": [
+    {
+     "name": "Korsaren-Aufklärer",
+     "units": "Vier Korsaren-Geisterläufer",
+     "extraUnits": [
+      "Ersetze vier Korsaren-Geisterläufer durch vier Korsaren-Wespen: kostenlos"
+     ],
+     "points": 150
+    },
+    {
+     "name": "Berittener Aspektkriegertrupp",
+     "units": "Drei Wellenschlangen und sechs Aspektkrieger-Einheiten aus folgender Auswahl: Schwarze Khaindar, Asuryans Jäger, Feuerdrachen, Banshees, Skorpionkrieger",
+     "extraUnits": [
+      "Eldar-Autarch",
+      "Eldar-Exarch"
+     ],
+     "points": 325
+    },
+    {
+     "name": "Illum-Zar-Trupp",
+     "units": "Drei Illum Zars",
+     "extraUnits": [],
+     "points": 250
+    },
+    {
+     "name": "Schwerter von Vaul",
+     "units": "Fünf Falcons",
+     "extraUnits": [
+      "Ersetze bis zu zwei Falcons durch Feuerstürme: kostenlos",
+      "ODER",
+      "Füge fünf Gardisten zum Verband hinzu: 50 Punkte"
+     ],
+     "points": 250
+    },
+    {
+     "name": "Kriegsmaschinen von Vaul",
+     "units": "Eine beliebige Einheit aus folgender Auswahl: Kobra, Sturmserpent oder Skorpion",
+     "extraUnits": [
+      "Füge bis zu zwei Einheiten aus folgender Auswahl hinzu: Kobra, Sturmserpent oder Skorpion: 200 Punkte pro Stück"
+     ],
+     "points": 250
+    }
+   ]
+  },
+  {
+   "name": "Saedaths der Maske des Verhüllten Pfads",
+   "description": "Für jede Kriegsschar oder Phantomkriegsschar aus Lugganath darf eine Saedath des Verhüllten Pfads gewählt werden.",
+   "formations": [
+    {
+     "name": "Cegorachs Entkommen",
+     "units": "Ein Harlekin-Avatar, zwei Harlekin-Trupps, ein Todesnarr, drei Starweaver",
+     "extraUnits": [],
+     "points": 200
+    },
+    {
+     "name": "Schuppenkleid der Schlange",
+     "units": "Ein Harlekin-Avatar, drei Skyweaver-Jetbikes, zwei Voidweaver",
+     "extraUnits": [],
+     "points": 225
+    },
+    {
+     "name": "Jagd des Verschlingers",
+     "units": "Ein Meistermime, sechs Mimen",
+     "extraUnits": [],
+     "points": 225
+    },
+    {
+     "name": "Cegorachs Rache",
+     "units": "Ein Harlekin-Avatar, zwei Harlekin-Trupps, zwei Todesnarren, vier Starweaver, drei Skyweaver-Jetbikes",
+     "extraUnits": [],
+     "points": 325
+    },
+    {
+     "name": "0–1 Festmahl des Verschlingers",
+     "units": "Ein Meistermime, ein Solitär, acht Mimen",
+     "extraUnits": [],
+     "points": 350
+    },
+    {
+     "name": "0–1 Ynneads Traum",
+     "units": "Ein Harlekin-Avatar, ein Schattenseher, drei Harlekin-Trupps, drei Todesnarren, sechs Starweaver",
+     "extraUnits": [],
+     "points": 450
+    }
+   ]
+  },
+  {
+   "name": "Lugganath-Flugzeuge, Raumschiffe und Titanen",
+   "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+   "formations": [
+    {
+     "name": "Skathach-Phantomritter",
+     "units": "Zwei Skathach-Phantomritter (dürfen nicht mit unterschiedlichen Ausrüstungen gewählt werden)",
+     "extraUnits": [],
+     "points": 350
+    },
+    {
+     "name": "Purpurgeschwader",
+     "units": "Zwei Nachtschatten-Abfangjäger",
+     "extraUnits": [],
+     "points": 250
+    },
+    {
+     "name": "Hemlock-Geschwader",
+     "units": "Zwei Hemlock-Phantomjäger",
+     "extraUnits": [],
+     "points": 225
+    },
+    {
+     "name": "Korsaren-Vampire-Jäger",
+     "units": "Ein Korsaren-Vampire-Jäger",
+     "extraUnits": [],
+     "points": 225
+    },
+    {
+     "name": "0–1 Raumschiff",
+     "units": "Ein Phantomschiff",
+     "extraUnits": [
+      "Ersetze durch ein Drachenschiff: 125 Punkte"
+     ],
+     "points": 175
+    }
+   ]
+  }
+ ],
+ "upgrades": {
+  "title": "Aufwertungen",
+  "description": "Jede Aufwertung darf nur einmal pro Verband gewählt werden",
+  "items": [
+   {
+    "name": "0–1 Eldar-Autarch",
+    "description": "Füge einer Runenpropheten- oder Aspektkrieger-Einheit einen Eldar-Autarchen hinzu.",
+    "points": "75 Punkte"
+   },
+   {
+    "name": "Exarch",
+    "description": "Füge 1 Exarch-Charakter zu einer Aspektkrieger-Einheit hinzu",
+    "points": "25 Punkte"
+   },
+   {
+    "name": "Eldar-Jetbikes",
+    "description": "Füge bis zu drei Viper oder Eldar-Jetbikes hinzu",
+    "points": "25 Punkte pro Stück"
+   }
+  ]
+ }
+}
