@@ -298,7 +298,8 @@
       "ruleset": "ear-de",
       "faction": "T'au",
       "name": "Fal'shia",
-      "version": "0.6.0"
+      "version": "0.6.0",
+      "hidden": true
     },
     {
       "id": "ear-de/sq/squats",
