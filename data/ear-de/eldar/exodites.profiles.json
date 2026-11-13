@@ -1,0 +1,1229 @@
+{
+  "army": "ear-de/eldar/exodites",
+  "source": {
+    "file": "lists_de/EL/exodites.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Weitsicht",
+      "description": [
+        "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+        "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+        "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+      ]
+    },
+    {
+      "name": "Ewiger Drache",
+      "description": [
+        "Der Ewiger Drache muss das Spiel in Reserve beginnen. Stelle ihn in der Strategiephase einer beliebigen Runde vor dem Strategiewurf innerhalb von 15 cm zu einer Weltenliedsänger-Einheit auf.",
+        "Der Ewiger Drache gilt als eigener Verband und darf nur auf diese Weise ins Spiel kommen.",
+        "Solange er sich auf dem Spielfeld befindet, darf der Ewiger Drache nur um Missionsziele konkurrieren. Entferne ihn in der Endphase der Runde, in der er eingetroffen ist, bevor Verbände sich sammeln oder Missionsziele gezählt werden. Nach dem Entfernen kann er nicht zurückkehren."
+      ]
+    },
+    {
+      "name": "Angeborene Beweglichkeit",
+      "description": [
+        "Berittene INF der Exoditen müssen keine Tests für gefährliches oder schwieriges Gelände ablegen, ausser diese werden durch befestigte Stellungen wie Minenfelder, Stacheldraht oder besondere Geländestücke verursacht."
+      ]
+    },
+    {
+      "name": "Schlag und Flucht",
+      "description": [
+        "Eldar-, Drukhari- und Harlekin-Verbände, die Vorrücken oder einen Eilschritt durchführen, dürfen vor oder nach jeder Bewegung Schießen, aber insgesamt weiterhin nur einmal. Entscheidet sich der Verband für einen Eilschritt, gilt der Trefferwurfmodifikator von -1 auch dann, wenn vor der Bewegung geschossen wird. außerdem dürfen Verbände, die einen Nahkampf gewinnen, sich bis zu ihrem Geschwindigkeitswert statt der üblichen 5cm neu formieren."
+      ]
+    },
+    {
+      "name": "Netzportal",
+      "description": [
+        "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+        "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+        "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+        "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+      ]
+    },
+    {
+      "name": "Tapferkeit",
+      "description": [
+        "Alle Ritterverbände erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive durchführen, sowie +1 auf ihre Sammeltests."
+      ]
+    }
+  ],
+  "units": {
+    "exo-drachenfuerst": {
+      "name": "Drachenfürst",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Phantomknochenlanze",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "exo-drachenprinz": {
+      "name": "Drachenprinz",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Phantomknochenlanze",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "exo-weltenliedner": {
+      "name": "Weltenliedsänger",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Singspeer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Weitsicht",
+          "description": [
+            "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+            "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+            "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "exo-drachenvorreiter": {
+      "name": "Drachen-Vorreiter",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Ranger-Jagdgewehr",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-exoditenmiliz": {
+      "name": "Exoditenmiliz",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shuriken-Katapulte",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "exo-exoditenwaffenplattform": {
+      "name": "Exoditen-Waffenplattform",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Mit einer Unterstützungs-D-Kanone oder einem Shadow Weaver bewaffnet.",
+      "weapons": [
+        {
+          "name": "Unterstützungs-D-Kanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schattenweber",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2x AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "exo-exoditenphantomdroiden": {
+      "name": "Exoditen-Phantomdroiden",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Phantomkanonen",
+          "modes": [
+            {
+              "firepower": "2x MW5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "exo-drachentruppe": {
+      "name": "Drachenritter",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Höllenschlund",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-windritter": {
+      "name": "Windritter",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Exoditen-Jagdlanzen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "Sturmangriff",
+                  "description": "Sturmangriff"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "exo-feuersturmritter": {
+      "name": "Feuersturmritter",
+      "type": "H-AV",
+      "speed": 25,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ritter-Psioniklanze",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Impulslaser",
+          "modes": [
+            {
+              "firepower": "2x AT3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-glanzrossritter": {
+      "name": "Glanzross-Ritter",
+      "type": "H-AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ritter-Psioniklanze",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Reinforced Armor",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-zerstoerer-ritter": {
+      "name": "Überragender Zerstörer-Ritter",
+      "type": "H-AV",
+      "speed": 30,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ritter-Psioniklanze",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Ritter-Nahkampfwaffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-groessermegadon": {
+      "name": "Großer Megadon",
+      "type": "WE",
+      "speed": 20,
+      "armour": 3,
+      "cc": 4,
+      "ff": 5,
+      "crit": "Der Große Megadon wird zerstört.",
+      "weapons": [
+        {
+          "name": "Prism Projektor",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "2BP",
+              "range": 30,
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-ewingerdragon": {
+      "name": "Ewiger Drache",
+      "type": "WE",
+      "speed": 25,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "crit": "Ewiger Drache wird zerstört. Alle Exodite-Eldar-Verbände (eigene und gegnerische) mit Sichtlinie zum Ewiger Drache erhalten 1 Beschussmarke.",
+      "weapons": [
+        {
+          "name": "Lodernder Atem",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Klauen, Zähne & Schwanz",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "exo-kolossaler": {
+      "name": "Kolossaler Carnosaurus",
+      "type": "WE",
+      "speed": 25,
+      "armour": 3,
+      "cc": 3,
+      "ff": 5,
+      "crit": "Der Kolossale Carnosaurus erleidet 1 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Sonnenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ferocious Biss",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 5",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-himmelsdrache": {
+      "name": "Himmelsdrache",
+      "type": "LV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Eldar-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-blutrachenmegadon": {
+      "name": "Blutrachen-Megadon",
+      "type": "LV",
+      "speed": 30,
+      "armour": 3,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Klauen, Zähne & Schwanz",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-leerenprismamegadon": {
+      "name": "Leerenprisma-Megadon",
+      "type": "AV",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Prismenlanze",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenfelarch": {
+      "name": "Korsaren-Felarch",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Eldar-Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenkrieger": {
+      "name": "Korsarenkrieger",
+      "type": "INF",
+      "speed": 20,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shuriken-Katapulte",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenveteran": {
+      "name": "Korsarenveteran",
+      "type": "INF",
+      "speed": 20,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shurikenpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenwespe": {
+      "name": "Korsaren-Wespe",
+      "type": "LV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Sternenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenschattenviper": {
+      "name": "Korsaren-Schattenviper",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann eine Einheit Korsarenkrieger, Korsarenveteranen oder Geisterläufer transportieren.",
+      "weapons": [
+        {
+          "name": "Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Splittergewehr",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarenvampire": {
+      "name": "Korsaren-Vampire-Schattenbarke",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann bis zu acht der folgenden Einheiten transportieren: Korsarenkrieger, Korsarenveteranen, Geisterläufer oder Korsaren-Wespen. Korsaren-Wespen belegen jeweils zwei Plätze.",
+      "crit": "Vampire Schattenbarke und alle Einheiten an Bord werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC Impulslaser",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "exo-korsarnachtschwinge": {
+      "name": "Korsaren-Nachtschwinge-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "Höllenfeuerkanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC Laserlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "exo-geisterlauf": {
+      "name": "Geisterläufer",
+      "type": "INF",
+      "speed": 20,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Geisterläufer-Ranger-Jagdgewehr",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            },
+            {
+              "join": "und",
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    }
+  }
+}

@@ -157,55 +157,6 @@
         }
       ]
     },
-    "chaoschampion": {
-      "name": "Chaoschampion",
-      "type": "CH",
-      "notes": "Darf geopfert werden. Vor dem Wurf für die Beschwörungspunkte des Verbands wird die Fähigkeit Verstärkte Beschwörung (+2D3) dieser Einheit durch Verstärkte Beschwörung (+6) ersetzt. Nach diesem Wurf wird die Einheit mit dem Champion zerstört; Schutzwürfe sind nicht zulässig. Eine auf diese Weise geopferte Einheit verursacht keinen Beschussmarker.",
-      "weapons": [
-        {
-          "name": "Dämonisch Possession",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            },
-            {
-              "firepower": "Sturmwaffen",
-              "join": "oder",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Beschwörung (+2D3)",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
     "ikonentraeger": {
       "name": "Ikonenträger",
       "type": "CH",
@@ -241,7 +192,7 @@
         }
       ]
     },
-    "dämonenprinz": {
+    "bl-daemonenprinz": {
       "name": "Dämonenprinz",
       "type": "INF",
       "speed": 30,
@@ -312,6 +263,55 @@
           "description": [
             "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
           ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "chaoschampion": {
+      "name": "Chaoschampion",
+      "type": "CH",
+      "notes": "Darf geopfert werden. Vor dem Wurf für die Beschwörungspunkte des Verbands wird die Fähigkeit Verstärkte Beschwörung (+2D3) dieser Einheit durch Verstärkte Beschwörung (+6) ersetzt. Nach diesem Wurf wird die Einheit mit dem Champion zerstört; Schutzwürfe sind nicht zulässig. Eine auf diese Weise geopferte Einheit verursacht keinen Beschussmarker.",
+      "weapons": [
+        {
+          "name": "Dämonisch Possession",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Beschwörung (+2D3)",
+          "description": null
         },
         {
           "name": "Unmodifizierter Rettungswurf",
@@ -574,7 +574,7 @@
         }
       ]
     },
-    "rubric-marines": {
+    "rubrik-marines": {
       "name": "Rubrik-Marines",
       "type": "INF",
       "speed": 15,
@@ -854,7 +854,7 @@
         }
       ]
     },
-    "chaos-jäger": {
+    "chaos-jaeger": {
       "name": "Chaos-Jäger",
       "type": "AV",
       "speed": 30,
@@ -874,6 +874,511 @@
         }
       ],
       "specialRules": []
+    },
+    "kreuzer": {
+      "name": "Kreuzer der Devastation-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 20 Infanterieeinheiten oder Cybots sowie drei Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "schlachtschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "type": "SC",
+      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        }
+      ]
+    },
+    "hoellenklinge": {
+      "name": "Höllenklinge Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC-Reaper-Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "hoellenklaue": {
+      "name": "Höllenklaue-Jagdbomber",
+      "type": "AC",
+      "speed": "Jagdbomber (FB)",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC-Havoc-Werfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Incendiary Bomben",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaos-warhound": {
+      "name": "Chaos-Warhound",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Die Einheit erleidet 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Todessturm",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Höllenschlund",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfkopf",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaos-reaver": {
+      "name": "Chaos-Reaver",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
+      "crit": "Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jeder Runde einen W6 für jeden Reaktorbruch der Einheit. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei einem Wurf von 5+ einen Treffer; bei einer 4–6 ist der Bruch repariert. Jeder nicht reparierte Bruch verursacht 1 Schaden.",
+      "weapons": [
+        {
+          "name": "Todessturm",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisbrenner",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwanzgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfkopf",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 6",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "chaoskriegsherr": {
+      "name": "Chaos-Kriegsherr",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
+      "weapons": [
+        {
+          "name": "Kanone des Chaos",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 90,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Havoc-Sperrfeuer-Rakete",
+          "count": 6,
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwanzgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisfaust",
+          "modes": [
+            {
+              "firepower": "4x AP4+/AT4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(W3+3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kampfkopf",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Göttermaschine",
+          "description": [
+            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+          ]
+        },
+        {
+          "name": "Geteiltes Feuer",
+          "description": [
+            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+          ]
+        },
+        {
+          "name": "Schadenskapazität 8",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
     },
     "geisel": {
       "name": "Geißel",
@@ -1115,7 +1620,7 @@
         }
       ]
     },
-    "dämonetten": {
+    "daeemonten": {
       "name": "Dämonetten des Slaanesh",
       "type": "INF",
       "speed": 20,
@@ -1148,7 +1653,7 @@
         }
       ]
     },
-    "seuchenhüter": {
+    "seuchenhueter": {
       "name": "Seuchenhüter des Nurgle",
       "type": "INF",
       "speed": 15,
@@ -1238,7 +1743,7 @@
         }
       ]
     },
-    "hüter": {
+    "hueter": {
       "name": "Hüter der Geheimnisse",
       "type": "WE",
       "speed": 20,
@@ -1331,7 +1836,7 @@
         }
       ]
     },
-    "großer-verpester": {
+    "groesserverpester": {
       "name": "Großer Verpester",
       "type": "WE",
       "speed": 15,
@@ -1495,7 +2000,7 @@
         }
       ]
     },
-    "herr-der-wandel": {
+    "herrscherdeswandels": {
       "name": "Herrscher des Wandels",
       "type": "WE",
       "speed": 30,
@@ -1584,7 +2089,7 @@
         }
       ]
     },
-    "dämonische-bestien": {
+    "daeonbestien": {
       "name": "Dämonische Bestien des ungeteilten Chaos",
       "type": "INF",
       "speed": 30,
@@ -1608,511 +2113,6 @@
         },
         {
           "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "chaos-warhound": {
-      "name": "Chaos-Warhound",
-      "type": "WE",
-      "speed": 25,
-      "armour": 5,
-      "cc": 4,
-      "ff": 5,
-      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
-      "crit": "Die Einheit erleidet 1 Schaden.",
-      "weapons": [
-        {
-          "name": "Todessturm",
-          "modes": [
-            {
-              "firepower": "4x AP4+/AT4+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FwA",
-                  "description": "Forward Arc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Höllenschlund",
-          "modes": [
-            {
-              "firepower": "3BP",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FwA",
-                  "description": "Forward Arc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Kampfkopf",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Null-Schilde 2",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "chaos-reaver": {
-      "name": "Chaos-Reaver",
-      "type": "WE",
-      "speed": 20,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind.",
-      "crit": "Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jeder Runde einen W6 für jeden Reaktorbruch der Einheit. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei einem Wurf von 5+ einen Treffer; bei einer 4–6 ist der Bruch repariert. Jeder nicht reparierte Bruch verursacht 1 Schaden.",
-      "weapons": [
-        {
-          "name": "Todessturm",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "4x AP4+/AT4+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FwA",
-                  "description": "Forward Arc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Verdammnisbrenner",
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "TK(W3)",
-                  "description": "Titanen-Killer (TK)"
-                },
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwanzgeschütz",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+",
-              "range": 75,
-              "specialRules": []
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Kampfkopf",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 6",
-          "description": null
-        },
-        {
-          "name": "Null-Schilde 4",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "chaos-kriegsherr-titan": {
-      "name": "Chaos-Kriegsherr",
-      "type": "WE",
-      "speed": 15,
-      "armour": 4,
-      "cc": 3,
-      "ff": 4,
-      "notes": "Kann Einheiten und Geländestücke überschreiten, die niedriger als die Knie der Einheit und weniger als 2 cm breit sind. Effekt eines Kritischen Treffers: Der Plasmareaktor der Einheit wurde beschädigt. Würfle in der Endphase jedes Spielzugs für jeden Schaden an der Einheit mit einem W6. Bei einer 1 wird die Einheit zerstört und alle Einheiten innerhalb von 5cm erleiden bei 5+ einen Treffer; bei 4–6 wurde der Schaden repariert. Jeder nicht reparierte Schaden verursacht 1 Schadenspunkt.",
-      "weapons": [
-        {
-          "name": "Kanone des Chaos",
-          "modes": [
-            {
-              "firepower": "3BP",
-              "range": 90,
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                },
-                {
-                  "name": "FwA",
-                  "description": "Forward Arc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Havoc-Sperrfeuer-Rakete",
-          "count": 6,
-          "modes": [
-            {
-              "firepower": "2BP",
-              "range": 60,
-              "specialRules": [
-                {
-                  "name": "SS",
-                  "description": "Einzelschuss"
-                },
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwanzgeschütz",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+",
-              "range": 75,
-              "specialRules": []
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Verdammnisfaust",
-          "modes": [
-            {
-              "firepower": "4x AP4+/AT4+",
-              "range": 30,
-              "specialRules": []
-            },
-            {
-              "firepower": "Sturmwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "TK(W3+3)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Kampfkopf",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Göttermaschine",
-          "description": [
-            "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
-            "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
-            "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
-            "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
-          ]
-        },
-        {
-          "name": "Geteiltes Feuer",
-          "description": [
-            "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
-          ]
-        },
-        {
-          "name": "Schadenskapazität 8",
-          "description": null
-        },
-        {
-          "name": "Null-Schilde 6",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "höllenklinge": {
-      "name": "Höllenklinge Abfangjäger",
-      "type": "AC",
-      "speed": "Jäger",
-      "armour": 6,
-      "weapons": [
-        {
-          "name": "AC-Reaper-Maschinenkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+/AT6+/AA6+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "höllenklaue": {
-      "name": "Höllenklaue-Jagdbomber",
-      "type": "AC",
-      "speed": "Jagdbomber (FB)",
-      "armour": 5,
-      "weapons": [
-        {
-          "name": "AC-Havoc-Werfer",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Blackstar-Hurrikanbolter",
-          "modes": [
-            {
-              "firepower": "AP5+/AA5+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Incendiary Bomben",
-          "modes": [
-            {
-              "firepower": "2BP",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "kreuzer": {
-      "name": "Kreuzer der Devastation-Klasse",
-      "type": "SC",
-      "notes": "Transporter: Kann 20 Infanterieeinheiten oder Cybots sowie drei Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
-      "weapons": [
-        {
-          "name": "Orbitalbombardement",
-          "modes": [
-            {
-              "firepower": "3BP, MW"
-            }
-          ]
-        },
-        {
-          "name": "Präzisionsschuss",
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "specialRules": [
-                {
-                  "name": "TK(W3)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "schlachtschiff": {
-      "name": "Schlachtschiff der Despoiler-Klasse",
-      "type": "SC",
-      "notes": "Transporter: Kann 30 Infanterieeinheiten oder Cybots sowie sechs Thunderhawks und genügend Dreadclaws für den Transport aller übrigen mitgeführten Einheiten transportieren.",
-      "weapons": [
-        {
-          "name": "Orbitalbombardement",
-          "modes": [
-            {
-              "firepower": "3BP, MW"
-            }
-          ]
-        },
-        {
-          "name": "Präzisionsschuss",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "specialRules": [
-                {
-                  "name": "TK(W3)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
           "description": null
         }
       ]

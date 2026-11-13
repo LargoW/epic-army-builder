@@ -353,6 +353,28 @@
       "version": "1.0.Beta"
     },
     {
+      "id": "ear-de/eldar/exodites",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Exoditen",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/eldar/firlirithion",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Fir Lirithion",
+      "version": "0.6.0",
+      "hidden": true
+    },
+    {
+      "id": "ear-de/eldar/iyanden",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Iyanden",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "euk/ig/vanaheim",
       "ruleset": "euk",
       "faction": "Imperial Guard",

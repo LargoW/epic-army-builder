@@ -1,0 +1,566 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/eldar/exodites",
+  "name": "Exoditen",
+  "faction": "Eldar",
+  "version": "1.0.Beta",
+  "source": {
+    "file": "lists_de/EL/exodites.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "strategy": 4,
+  "initiative": [
+    {
+      "formations": [
+        "exo-drachenritter",
+        "exo-windritter",
+        "exo-ritter"
+      ],
+      "value": "1+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "exo-drachenfuerst": { "name": "Drachenfürst", "from": "eldarExo.json", "type": "CH" },
+    "exo-drachenprinz": { "name": "Drachenprinz", "from": "eldarExo.json", "type": "CH" },
+    "exo-weltenliedner": { "name": "Weltenliedsänger", "from": "eldarExo.json", "type": "CH" },
+    "exo-drachenvorreiter": { "name": "Drachen-Vorreiter", "from": "eldarExo.json", "type": "INF" },
+    "exo-exoditenmiliz": { "name": "Exoditenmiliz", "from": "eldarExo.json", "type": "INF" },
+    "exo-exoditenwaffenplattform": { "name": "Exoditen-Waffenplattform", "from": "eldarExo.json", "type": "INF" },
+    "exo-exoditenphantomdroiden": { "name": "Exoditen-Phantomdroiden", "from": "eldarExo.json", "type": "INF" },
+    "exo-drachentruppe": { "name": "Drachenritter", "from": "eldarExo.json", "type": "INF" },
+    "exo-windritter": { "name": "Windritter", "from": "eldarExo.json", "type": "INF" },
+    "exo-feuersturmritter": { "name": "Feuersturmritter", "from": "eldarExo.json", "type": "H-AV" },
+    "exo-glanzrossritter": { "name": "Glanzross-Ritter", "from": "eldarExo.json", "type": "H-AV" },
+    "exo-zerstoerer-ritter": { "name": "Überragender Zerstörer-Ritter", "from": "eldarExo.json", "type": "H-AV" },
+    "exo-groessermegadon": { "name": "Großer Megadon", "from": "eldarExo.json", "type": "WE" },
+    "exo-ewingerdragon": { "name": "Ewiger Drache", "from": "eldarExo.json", "type": "WE" },
+    "exo-kolossaler": { "name": "Kolossaler Carnosaurus", "from": "eldarExo.json", "type": "WE" },
+    "exo-himmelsdrache": { "name": "Himmelsdrache", "from": "eldarExo.json", "type": "LV" },
+    "exo-blutrachenmegadon": { "name": "Blutrachen-Megadon", "from": "eldarExo.json", "type": "LV" },
+    "exo-leerenprismamegadon": { "name": "Leerenprisma-Megadon", "from": "eldarExo.json", "type": "AV" },
+    "exo-korsarenfelarch": { "name": "Korsaren-Felarch", "from": "eldarCorsairs.json", "type": "CH" },
+    "exo-korsarenkrieger": { "name": "Korsarenkrieger", "from": "eldarCorsairs.json", "type": "INF" },
+    "exo-korsarenveteran": { "name": "Korsarenveteran", "from": "eldarCorsairs.json", "type": "INF" },
+    "exo-korsarenwespe": { "name": "Korsaren-Wespe", "from": "eldarCorsairs.json", "type": "LV" },
+    "exo-korsarenschattenviper": { "name": "Korsaren-Schattenviper", "from": "eldarCorsairs.json", "type": "LV" },
+    "exo-korsarenvampire": { "name": "Korsaren-Vampire-Schattenbarke", "from": "eldarCorsairs.json", "type": "AC" },
+    "exo-korsarnachtschwinge": { "name": "Korsaren-Nachtschwinge-Abfangjäger", "from": "eldarCorsairs.json", "type": "AC" },
+    "exo-geisterlauf": { "name": "Geisterläufer", "from": "eldarCorsairs.json", "type": "INF" }
+  },
+  "sections": [
+    {
+      "id": "special",
+      "name": "Exoditen-Spezialregeln",
+      "formations": [
+        "exo-drachenprinz",
+        "exo-ewingerdragon",
+        "exo-netzportal"
+      ]
+    },
+    {
+      "id": "war",
+      "name": "Exoditen-Kriegsscharn",
+      "description": "Für jede Drachenritter- oder Windritter-Kriegsschar darf bis zu eine Ritter-Kriegsschar gewählt werden.",
+      "formations": [
+        "exo-drachenritter",
+        "exo-windritter",
+        "exo-ritter"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Exoditen-Unterstützungsverbände",
+      "description": "Bis zu drei Unterstützungsformationen pro Kriegsscharn-Verband.",
+      "formations": [
+        "exo-drachenvorreiter",
+        "exo-himmelsdrache",
+        "exo-exoditenmiliz",
+        "exo-leerenprisma",
+        "exo-groessermegadon",
+        "exo-kolossaler",
+        "exo-korsaren"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "exo-drachenprinz",
+      "name": "Drachenprinz (0–1 pro Armee)",
+      "pts": 50,
+      "tags": [
+        "special"
+      ],
+      "units": [
+        {
+          "unit": "exo-drachenprinz",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-ewingerdragon",
+      "name": "Ewiger Drache (0–1 pro Armee)",
+      "pts": 50,
+      "tags": [
+        "special"
+      ],
+      "units": [
+        {
+          "unit": "exo-ewingerdragon",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-netzportal",
+      "name": "Netzportal (0–1 pro Armee)",
+      "pts": 0,
+      "tags": [
+        "special"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "exo-drachenritter",
+      "name": "Drachenritter-Kriegsschar",
+      "pts": 300,
+      "tags": [
+        "elite"
+      ],
+      "units": [
+        {
+          "unit": "exo-drachenfuerst",
+          "count": 1
+        },
+        {
+          "unit": "exo-drachentruppe",
+          "count": 8
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-drachenprinz",
+        "exo-upgrade-weltenliedner",
+        "exo-upgrade-himmelsdrache",
+        "exo-upgrade-blutrachenmegadon"
+      ]
+    },
+    {
+      "id": "exo-windritter",
+      "name": "Windritter-Kriegsschar",
+      "pts": 300,
+      "tags": [
+        "elite"
+      ],
+      "units": [
+        {
+          "unit": "exo-drachenfuerst",
+          "count":  1
+        },
+        {
+          "unit": "exo-windritter",
+          "count": 8
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-drachenprinz",
+        "exo-upgrade-weltenliedner"
+      ]
+    },
+    {
+      "id": "exo-ritter",
+      "name": "Exoditen-RitterKriegsschar",
+      "pts": 275,
+      "tags": [
+        "elite"
+      ],
+      "units": [
+        {
+          "unit": "exo-drachenfuerst",
+          "count": 1
+        },
+        {
+          "unit": "exo-feuersturmritter",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-drachenprinz",
+        "exo-upgrade-weltenliedner"
+      ]
+    },
+    {
+      "id": "exo-drachenvorreiter",
+      "name": "Drachen-Vorreiter",
+      "pts": 125,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-drachenvorreiter",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-himmelsdrache",
+      "name": "Himmelsdrachen-Trupp",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-himmelsdrache",
+          "count": 5
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-blutrachenmegadon"
+      ]
+    },
+    {
+      "id": "exo-exoditenmiliz",
+      "name": "Exoditenmiliz-Trupp",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-exoditenmiliz",
+          "count": 8
+        },
+        {
+          "unit": "exo-weltenliedner",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-exoditenwaffenplattform",
+        "exo-upgrade-exoditenphantomdroiden"
+      ]
+    },
+    {
+      "id": "exo-leerenprisma",
+      "name": "Leerenprisma-Trupp",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-leerenprismamegadon",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-groessermegadon",
+      "name": "Großmegadon-Trupp",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-groessermegadon",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-groessermegadon"
+      ]
+    },
+    {
+      "id": "exo-kolossaler",
+      "name": "Kolossaler Carnosaurus",
+      "pts": 350,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-kolossaler",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-korsaren",
+      "name": "Korsaren-Raubzug",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "exo-korsarenkrieger",
+          "count": 4
+        },
+        {
+          "unit": "exo-korsarenfelarch",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-korsarenwespe",
+        "exo-upgrade-korsarenveteran",
+        "exo-upgrade-geisterlauf",
+        "exo-upgrade-korsarenschattenviper",
+        "exo-upgrade-korsarenvampire"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "exo-upgrade-drachenprinz",
+      "name": "Drachenprinz (0–1 pro Armee)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze einen Drachenfürsten der Armee durch einen Drachenprinzen",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "exo-drachenfuerst",
+              "to": "exo-drachenprinz",
+              "count": 1
+            }
+          ],
+          "perArmy": 1
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-weltenliedner",
+      "name": "Weltenliedsänger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Weltenliedsänger-Charakter hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-weltenliedner",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-himmelsdrache",
+      "name": "Ersetze zwei Drachenritter durch zwei Himmelsdrachen",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze zwei Drachenritter durch zwei Himmelsdrachen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "exo-drachentruppe",
+              "to": "exo-himmelsdrache",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-blutrachenmegadon",
+      "name": "Ersetze zwei Drachenritter durch zwei Blutrachen-Megadons",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze bis zu zwei Drachenritter durch Blutrachen-Megadons",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "exo-drachentruppe",
+              "to": "exo-blutrachenmegadon",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-exoditenwaffenplattform",
+      "name": "Ersetze bis zu drei Exoditenmiliz durch Exoditen-Waffenplattformen",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze bis zu drei Exoditenmiliz durch Exoditen-Waffenplattformen",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "exo-exoditenmiliz",
+              "to": "exo-exoditenwaffenplattform",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-exoditenphantomdroiden",
+      "name": "Füge zwei Exoditen-Phantomdroiden hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge zwei Exoditen-Phantomdroiden hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-exoditenphantomdroiden",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-groessermegadon",
+      "name": "Füge bis zu zwei Große Megadons hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Große Megadons hinzu",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-groessermegadon",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-korsarenwespe",
+      "name": "Füge bis zu zwei Korsaren-Wespen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Korsaren-Wespen hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-korsarenwespe",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-korsarenveteran",
+      "name": "Füge bis zu zwei Korsarenveteranen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Korsarenveteranen hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-korsarenveteran",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-geisterlauf",
+      "name": "Füge bis zu zwei Geisterläufer hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Geisterläufer hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-geisterlauf",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-korsarenschattenviper",
+      "name": "Füge bis zu zwei Korsaren-Schattenviper hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Korsaren-Schattenviper hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-korsarenschattenviper",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-korsarenvampire",
+      "name": "Füge bis zu zwei Korsaren-Vampire-Schattenbarken hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Korsaren-Vampire-Schattenbarken hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-korsarenvampire",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
+  ]
+}
