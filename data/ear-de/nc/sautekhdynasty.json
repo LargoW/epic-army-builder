@@ -1,0 +1,282 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/nc/sautekhdynasty",
+  "name": "Sautekh-Dynastie",
+  "faction": "Necron",
+  "version": "0.5.0",
+  "source": { "file": "lists_de/NC/sautekhdynasty.json", "version": "0.5.0", "commit": null },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "1+" }],
+  "units": {
+    "nst-necron-hochlord": { "name": "Necron-Hochlord", "from": "NC.json", "type": "INF" },
+    "nst-necronlord": { "name": "Necronlord", "from": "NC.json", "type": "INF" },
+    "nst-destruktoren": { "name": "Destruktoren", "from": "NC.json", "type": "INF" },
+    "nst-schwere-destruktoren": { "name": "Schwere Destruktoren", "from": "NC.json", "type": "INF" },
+    "nst-extinktoren": { "name": "Extinktoren", "from": "NC.json", "type": "INF" },
+    "nst-necronkrieger": { "name": "Necronkrieger", "from": "NC.json", "type": "INF" },
+    "nst-canoptek-phantome": { "name": "Canoptek-Phantome", "from": "NC.json", "type": "INF" },
+    "nst-monolith": { "name": "Monolith", "from": "NC.json", "type": "AV" },
+    "nst-obelisk": { "name": "Obelisk", "from": "NC.json", "type": "AV" },
+    "nst-canoptek-gruftspinne": { "name": "Canoptek-Gruftspinne", "from": "NC.json", "type": "INF" },
+    "nst-todesboten": { "name": "Todesboten", "from": "NC.json", "type": "INF" },
+    "nst-gruftklingen": { "name": "Gruftklingen", "from": "NC.json", "type": "INF" },
+    "nst-triarchat-praeotorianer": { "name": "Triarchat-Prätorianer", "from": "NC.json", "type": "INF" },
+    "nst-geisterbarke": { "name": "Geisterbarke", "from": "NC.json", "type": "AV" },
+    "nst-vernichtungsbarke": { "name": "Vernichtungsbarke", "from": "NC.json", "type": "AV" },
+    "nst-katakomben-kommandogleiter": { "name": "Katakomben-Kommandogleiter", "from": "NC.json", "type": "AV" },
+    "nst-dominator-barke": { "name": "Dominator-Barke", "from": "NC.json", "type": "AV" },
+    "nst-triarch-stalker": { "name": "Triarch-Stalker", "from": "NC.json", "type": "AV" },
+    "nst-wachposten-pylone": { "name": "Wachposten-Pylonen", "from": "NC.json", "type": "WE" },
+    "nst-ctan-fragment": { "name": "C'tan-Fragment", "from": "NC.json", "type": "WE" },
+    "nst-seraptek-schweres-konstrukt": { "name": "Seraptek-Schweres Konstrukt", "from": "NC.json", "type": "WE" },
+    "nst-nachtsicheltransporter": { "name": "Nachtsichel-Transporter", "from": "necronNavy.json", "type": "SC" },
+    "nst-todessicheljaeger": { "name": "Todessichel-Jäger", "from": "necronNavy.json", "type": "AC" },
+    "nst-nachtmantelbomber": { "name": "Nachtmantel-Bomber (B)", "from": "necronNavy.json", "type": "AC" },
+    "nst-abattoir": { "name": "Abattoir", "from": "NC.json", "type": "WE" },
+    "nst-cairnkgruftschiff": { "name": "Cairn-Klasse Gruftschiff", "from": "necronNavy.json", "type": "SC" }
+  },
+  "sections": [
+    {
+      "id": "special",
+      "name": "Spezialregel der Sautekh-Dynastie",
+      "formations": ["nst-gruftkomplex", "nst-hochlord"]
+    },
+    {
+      "id": "war-machines",
+      "name": "Phalanxen der Sautekh-Dynastie",
+      "formations": ["nst-geisterbarken-phalanx"]
+    },
+    {
+      "id": "support",
+      "name": "Sautekh-Dynastie Unterstützungsformationen",
+      "description": "Für jede gewählte Phalanx der Sautekh-Dynastie dürfen bis zu drei Unterstützungsformationen gewählt werden.",
+      "formations": [
+        "nst-infanteriephalanx",
+        "nst-klingen-manipel",
+        "nst-iudicium-manipel",
+        "nst-eques-manipel",
+        "nst-monolith-manipel",
+        "nst-stalker-manipel",
+        "nst-wachter-manipel",
+        "nst-triarch-phalanx",
+        "nst-letum-manipel"
+      ]
+    },
+    {
+      "id": "fleet",
+      "name": "Flotte der Sautekh-Dynastie",
+      "formations": ["nst-erntemaschine", "nst-raumschiff", "nst-nachtsicheln", "nst-todessicheln", "nst-nachtmantelbomber"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "nst-gruftkomplex",
+      "name": "0–1 pro Armee – Gruftkomplex",
+      "pts": 25,
+      "tags": ["special"],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "nst-hochlord",
+      "name": "0–1 pro Armee – Necron-Hochlord",
+      "pts": 75,
+      "tags": ["special"],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "nst-geisterbarken-phalanx",
+      "name": "Geisterbarken-Phalanx",
+      "pts": 275,
+      "tags": ["war-machines"],
+      "units": [
+        { "unit": "nst-geisterbarke", "count": 3 },
+        { "unit": "nst-necronkrieger", "count": 6 },
+        { "unit": "nst-necronlord", "count": 1 }
+      ],
+      "upgrades": ["nst-upgrade-geisterbarken"]
+    },
+    {
+      "id": "nst-infanteriephalanx",
+      "name": "Infanteriephalanx",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [
+        { "unit": "nst-necronkrieger", "count": 8 },
+        { "unit": "nst-necronlord", "count": 1 }
+      ],
+      "upgrades": ["nst-upgrade-infanteriephalanx"]
+    },
+    {
+      "id": "nst-klingen-manipel",
+      "name": "Klingen-Manipel",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-gruftklingen", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-iudicium-manipel",
+      "name": "Iudicium-Manipel",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-dominator-barke", "count": 5 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-eques-manipel",
+      "name": "Eques-Manipel",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-destruktoren", "count": 6 }],
+      "upgrades": ["nst-upgrade-eques"]
+    },
+    {
+      "id": "nst-monolith-manipel",
+      "name": "Monolith-Manipel",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        { "unit": "nst-monolith", "count": 2 },
+        { "unit": "nst-obelisk", "count": 2 }
+      ],
+      "upgrades": ["nst-upgrade-monolith"]
+    },
+    {
+      "id": "nst-stalker-manipel",
+      "name": "Stalker-Manipel",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-triarch-stalker", "count": 4 }],
+      "upgrades": ["nst-upgrade-stalker"]
+    },
+    {
+      "id": "nst-wachter-manipel",
+      "name": "Wächter-Manipel",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-wachposten-pylone", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-triarch-phalanx",
+      "name": "Triarch-Phalanx",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-triarchat-praeotorianer", "count": 4 }],
+      "upgrades": ["nst-upgrade-triarch"]
+    },
+    {
+      "id": "nst-letum-manipel",
+      "name": "Letum-Manipel",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "nst-todesboten", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-erntemaschine",
+      "name": "0–1 Erntemaschine",
+      "pts": 600,
+      "tags": ["fleet"],
+      "units": [{ "unit": "nst-abattoir", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-raumschiff",
+      "name": "0–1 Raumschiff",
+      "pts": 300,
+      "tags": ["fleet"],
+      "units": [{ "unit": "nst-cairnkgruftschiff", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-nachtsicheln",
+      "name": "Nachtsicheln",
+      "pts": 175,
+      "tags": ["fleet"],
+      "units": [{ "unit": "nst-nachtsicheltransporter", "count": 2 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-todessicheln",
+      "name": "Todessicheln",
+      "pts": 225,
+      "tags": ["fleet"],
+      "units": [{ "unit": "nst-todessicheljaeger", "count": 2 }],
+      "upgrades": []
+    },
+    {
+      "id": "nst-nachtmantelbomber",
+      "name": "Nachtmantel-Bomber (B)",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "nst-nachtmantelbomber", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "nst-upgrade-geisterbarken",
+      "name": "Geisterbarken-Phalanx",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Geisterbarke hinzu",
+          "pts": 100,
+          "effects": [{ "op": "add", "unit": "nst-geisterbarke", "count": 1 }]
+        }
+      ]
+    },
+    {
+      "id": "nst-upgrade-infanteriephalanx",
+      "name": "Infanteriephalanx",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu drei Phantome hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nst-canoptek-phantome", "count": 3 }] },
+        { "id": "2", "label": "Ersetze bis zu 3 Necronkrieger durch Extinktoren", "pts": 25, "effects": [{ "op": "replace", "from": "nst-necronkrieger", "to": "nst-extinktoren", "count": 3 }] },
+        { "id": "3", "label": "Füge einen C'tan-Splitter hinzu", "pts": 100, "effects": [{ "op": "add", "unit": "nst-ctan-fragment", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "nst-upgrade-eques",
+      "name": "Eques-Manipel",
+      "variants": [
+        { "id": "1", "label": "Füge einen Necron-Lord hinzu", "pts": 25, "effects": [{ "op": "add", "unit": "nst-necronlord", "count": 1 }] },
+        { "id": "2", "label": "Füge bis zu drei Phantome hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nst-canoptek-phantome", "count": 3 }] }
+      ]
+    },
+    {
+      "id": "nst-upgrade-monolith",
+      "name": "Monolith-Manipel",
+      "variants": [
+        { "id": "1", "label": "Füge 1 Obelisk hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nst-obelisk", "count": 1 }] },
+        { "id": "2", "label": "Füge bis zu 1 Monolith hinzu", "pts": 75, "effects": [{ "op": "add", "unit": "nst-monolith", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "nst-upgrade-stalker",
+      "name": "Stalker-Manipel",
+      "variants": [
+        { "id": "1", "label": "Füge 0-2 Seraptek Heavy Construct hinzu", "pts": 125, "effects": [{ "op": "add", "unit": "nst-seraptek-schweres-konstrukt", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "nst-upgrade-triarch",
+      "name": "Triarch-Phalanx",
+      "variants": [
+        { "id": "1", "label": "Füge 1 Necron-Lord-Einheit hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nst-necronlord", "count": 1 }] },
+        { "id": "2", "label": "Füge zwei Triarch Praetorian-Einheiten hinzu", "pts": 125, "effects": [{ "op": "add", "unit": "nst-triarchat-praeotorianer", "count": 2 }] },
+        { "id": "3", "label": "Füge bis zu drei Triarch Stalkers hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nst-triarch-stalker", "count": 3 }] },
+        { "id": "4", "label": "Füge einen C'tan-Splitter hin zu", "pts": 100, "effects": [{ "op": "add", "unit": "nst-ctan-fragment", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

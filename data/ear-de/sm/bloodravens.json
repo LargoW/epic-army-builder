@@ -34,14 +34,14 @@
     "land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
     "land-raider-helios": { "name": "Land Raider Helios", "from": "SM.json", "type": "AV" },
     "vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
-    "vortimer-land-schattenbarke": { "name": "Vortimer-Land-Schattenbarke", "from": "SM.json", "type": "AV" },
-    "vortimer-land-schattenbarke-redeemer": { "name": "Vortimer-Land-Schattenbarke-Redeemer", "from": "SM.json", "type": "AV" },
+    "vortimer-Land Raider": { "name": "Vortimer-Land Raider", "from": "SM.json", "type": "AV" },
+    "vortimer-Land Raider-redeemer": { "name": "Vortimer-Land Raider-Redeemer", "from": "SM.json", "type": "AV" },
     "nemesis": { "name": "Nemesis-Ritter", "from": "SM.json", "type": "AV" },
     "sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
-    "feurerraptor": { "name": "Fire Raptor", "from": "SM.json", "type": "AV" },
+    "feurerraptor": { "name": "Feuerraptor", "from": "SM.json", "type": "AV" },
     "sturmadler": { "name": "Sturmadler", "from": "SM.json", "type": "AV" },
     "vanguard-cruiser": { "name": "Vanguard-Klasse-Leichter-Kreuzer", "from": "SM.json", "type": "AV" },
-    "grey-angriffskreuzer": { "name": "Grey Knights Angriffskreuzer", "from": "SM.json", "type": "AV" },
+    "grey-angriffskreuzer": { "name": "Grey-Knights-Angriffskreuzer", "from": "SM.json", "type": "AV" },
     "landungskapsel": { "name": "Landungskapsel", "from": "SM.json", "type": "AV" }
   },
   "sections": [
@@ -234,8 +234,8 @@
       "name": "Grey-Knights-Unterstützung",
       "variants": [
         { "id": "1", "label": "Bis zu zwei Doomglaive Cybots", "pts": 50, "effects": [{ "op": "add", "unit": "doomglaive-cybot", "count": 2 }] },
-        { "id": "2", "label": "Bis zu zwei Vortimer Land Raiders", "pts": 50, "effects": [{ "op": "add", "unit": "vortimer-land-schattenbarke", "count": 2 }] },
-        { "id": "3", "label": "Ein Vortimer Land Raider Redeemer", "pts": 50, "effects": [{ "op": "add", "unit": "vortimer-land-schattenbarke-redeemer", "count": 1 }] }
+        { "id": "2", "label": "Bis zu zwei Vortimer Land Raiders", "pts": 50, "effects": [{ "op": "add", "unit": "vortimer-Land Raider", "count": 2 }] },
+        { "id": "3", "label": "Ein Vortimer Land Raider Redeemer", "pts": 50, "effects": [{ "op": "add", "unit": "vortimer-Land Raider-redeemer", "count": 1 }] }
       ]
     }
   ],

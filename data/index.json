@@ -280,6 +280,27 @@
       "version": "1.0.Beta"
     },
     {
+      "id": "ear-de/o/bloodaxeclan",
+      "ruleset": "ear-de",
+      "faction": "Orks",
+      "name": "Klan der Blood Axes, Roter WAAAGH!",
+      "version": "1.0"
+    },
+    {
+      "id": "ear-de/o/snakebiteclan",
+      "ruleset": "ear-de",
+      "faction": "Orks",
+      "name": "Snakebite-Klan, WAAAGH! Ghazghkull",
+      "version": "1.0.Beta-2"
+    },
+    {
+      "id": "ear-de/o/speedfreks",
+      "ruleset": "ear-de",
+      "faction": "Orks",
+      "name": "Speedfreaks der Evil Sunz, WAAAGH! Gazbag",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "ear-de/tau/sacea",
       "ruleset": "ear-de",
       "faction": "T'au",
@@ -373,6 +394,97 @@
       "faction": "Eldar",
       "name": "Weltenschiff Iyanden",
       "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/eldar/masqueoftheveiledpath",
+      "ruleset": "ear-de",
+      "faction": "Eldar / Harlekine",
+      "name": "Weltenschiff Lugganath",
+      "version": "0.6.2"
+    },
+    {
+      "id": "ear-de/eldar/mymeara",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Mymeara",
+      "version": "1.1"
+    },
+    {
+      "id": "ear-de/eldar/saimhann",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Saim-Hann",
+      "version": "Beta 0.1.1"
+    },
+    {
+      "id": "ear-de/eldar/ulthwe",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Ulthwé",
+      "version": "1.0.Beta-2"
+    },
+    {
+      "id": "ear-de/eldar/ymeloc",
+      "ruleset": "ear-de",
+      "faction": "Eldar",
+      "name": "Weltenschiff Yme-Loc",
+      "version": "Alpha 0.6.1"
+    },
+    {
+      "id": "ear-de/iq/deathwatch",
+      "ruleset": "ear-de",
+      "faction": "Imperiale Inquisition",
+      "name": "Deathwatch",
+      "version": "0.6.0"
+    },
+    {
+      "id": "ear-de/iq/adeptasororitas",
+      "ruleset": "ear-de",
+      "faction": "Imperiale Inquisition",
+      "name": "Adepta Sororitas",
+      "version": "1.0.Beta-3"
+    },
+    {
+      "id": "ear-de/nc/maynarkhdynasty",
+      "ruleset": "ear-de",
+      "faction": "Necron",
+      "name": "Maynarkh-Dynastie",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "ear-de/nc/sautekhdynasty",
+      "ruleset": "ear-de",
+      "faction": "Necron",
+      "name": "Sautekh-Dynastie",
+      "version": "0.5.0"
+    },
+    {
+      "id": "ear-de/nid/cultofthestarspawn",
+      "ruleset": "ear-de",
+      "faction": "Tyraniden",
+      "name": "Kult der Sternengeborenen",
+      "version": "0.6.5"
+    },
+    {
+      "id": "ear-de/nid/dagon",
+      "ruleset": "ear-de",
+      "faction": "Tyraniden",
+      "name": "Schwarmflotte Dagon",
+      "version": "1.0.beta-4"
+    },
+    {
+      "id": "ear-de/nid/gscult",
+      "ruleset": "ear-de",
+      "faction": "Tyraniden",
+      "name": "Kult der Rostklaue",
+      "version": "1.0.beta-3"
+    },
+    {
+      "id": "ear-de/nid/hydra",
+      "ruleset": "ear-de",
+      "faction": "Tyraniden",
+      "name": "Schwarmflotte Hydra",
+      "version": "1.0.Beta-2"
     },
     {
       "id": "euk/ig/vanaheim",

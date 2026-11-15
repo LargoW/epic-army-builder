@@ -6,10 +6,8 @@ import {
 } from "../engine/engine.js";
 import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
 
-// T'au - Third Phase Expansion (Epic UK, 200824).
-// NOTE: no source PDF was available when these tests were written. Points and units below are taken from the
-// current data file, so they pin the data down but do not prove it against the original list.
-// Structure (selectors, limits, choices, profiles) is checked independently of that.
+// T'au - Third Phase Expansion (Epic UK, TauQuickRef200824, v6.8).
+// Points, units, upgrades, unit values, weapons and transport texts are checked against that reference sheet.
 const load = (p) => JSON.parse(readFileSync(new URL(`../data/euk/tau/${p}.json`, import.meta.url), "utf8"));
 const raw = load("tau");
 const profiles = load("tau.profiles");
@@ -184,8 +182,8 @@ test("upgrades add the listed units for the listed price", () => {
   const rows = [
     ["f-crisis-cadre", "u-crisis-suits", "1", 50, { "xv8-crisis": 1 }],
     ["f-crisis-cadre", "u-crisis-suits", "2", 75, { "xv8-crisis": 2 }],
-    ["f-crisis-cadre", "u-crisis-suits", "3", 150, { "xv8-crisis": 3 }],
-    ["f-crisis-cadre", "u-crisis-suits", "4", 200, { "xv8-crisis": 4 }],
+    ["f-crisis-cadre", "u-crisis-suits", "3", 125, { "xv8-crisis": 3 }], // a pair for 75 plus one for 50
+    ["f-crisis-cadre", "u-crisis-suits", "4", 150, { "xv8-crisis": 4 }], // two pairs
     ["f-crisis-cadre", "u-gun-drones", "1", 25, { "gun-drone": 2 }],
     ["f-fire-warrior-cadre", "u-bonded-teams", "1", 25, { bondedTeam: 1 }],
     ["f-fire-warrior-cadre", "u-broadsides", "1", 150, { "xv88-broadside": 3 }],
@@ -309,4 +307,132 @@ test("export -> link -> import round-trips sizes, choices and upgrades", () => {
   assert.deepEqual(back.state, s);
   assert.equal(back.dropped, 0);
   assert.equal(summarize(data, back.state).total, total);
+});
+
+// ---------------------------------------------------------------- reference sheet
+
+test("formation names, sections and the upgrades each formation may take match the army list", () => {
+  const expected = {
+    "f-crisis-cadre": ["Crisis Battlesuit Cadre", ["u-shas-o", "u-crisis-suits", "u-gun-drones"]],
+    "f-fire-warrior-cadre": ["Fire Warrior Cadre", ["u-bonded-teams", "u-broadsides", "u-ethereal", "u-fire-warriors", "u-gun-drones", "u-hammerheads", "u-pathfinders", "u-piranhas", "u-skyray"]],
+    "f-armour-group": ["Armour Group", ["u-hammerheads", "u-skyray"]],
+    "f-broadside-group": ["Broadside Group", ["u-gun-drones"]],
+    "f-kroot-kindred": ["Kroot Kindred", ["u-kroot", "u-kroot-hounds", "u-krootox"]],
+    "f-pathfinder-group": ["Pathfinder Group", ["u-gun-drones", "u-piranhas"]],
+    "f-recon-group": ["Recon Group", ["u-gun-drones", "u-piranhas"]],
+    "f-skysweep-group": ["Skysweep Group", []],
+    "f-stealth-group": ["Stealth Group", ["u-gun-drones"]],
+    "f-barracuda-squadron": ["Barracuda Squadron", []],
+    "f-manta": ["Manta Dropship", []],
+    "f-orca": ["Orca Dropship", []],
+    "f-spacecraft": ["0-1 Spacecraft", []],
+    "f-tiger-shark-squadron": ["Tiger Shark Squadron", ["u-tiger-shark-drones"]],
+    "f-tiger-shark-ax-1-0-squadron": ["Tiger Shark AX-1-0 Squadron", []],
+  };
+  for (const [id, [name, upgrades]] of Object.entries(expected)) {
+    const f = raw.formations.find((x) => x.id === id);
+    assert.equal(f.name, name, `${id} name`);
+    assert.deepEqual(f.upgrades, upgrades, `${id} upgrades`);
+  }
+  assert.deepEqual(data.sections.map((s) => [s.id, s.description]), [
+    ["core", "Any amount of core formations may be selected."],
+    ["support", "Up to three may be selected per core formation."],
+    ["air", "1/3rd of your army list may be Air Caste formations."],
+  ]);
+  assert.equal(raw.strategy, 3);
+  assert.deepEqual(raw.initiative, [{ formations: ["f-crisis-cadre", "f-manta"], value: "1+" }, { formations: ["*"], value: "2+" }]);
+});
+
+test("Crisis Suits cost 50 each or 75 a pair", () => {
+  const prices = raw.upgrades.find((u) => u.id === "u-crisis-suits").variants.map((v) => v.pts);
+  assert.deepEqual(prices, [50, 75, 125, 150]);
+});
+
+test("unit profiles match the reference sheet (type, speed, armour, close combat, firefight)", () => {
+  const ch = ["CH", "n/a", null, null, null];
+  const hammer = ["AV", "30cm", "4+", "6+", "5+"];
+  const expected = {
+    ethereal: ch, "shas-o": ch, "shas-el": ch, bondedTeam: ch,
+    "fire-warrior": ["Inf", "15cm", "5+", "6+", "5+"],
+    "gun-drone": ["Inf", "20cm", "5+", "6+", "5+"],
+    pathfinder: ["Inf", "15cm", "5+", "6+", "5+"],
+    "kroot-master-shaper": ["Inf", "15cm", "6+", "4+", "5+"],
+    "kroot-warrior": ["Inf", "15cm", null, "4+", "5+"],
+    "kroot-hound": ["Inf", "20cm", null, "3+", null],
+    krootox: ["Inf", "15cm", "4+", "4+", "5+"],
+    "xv8-crisis": ["Inf", "20cm", "3+", "5+", "5+"],
+    "xv15-stealth": ["Inf", "20cm", "5+", "6+", "5+"],
+    "xv88-broadside": ["LV", "15cm", "4+", "6+", "5+"],
+    tetra: ["LV", "35cm", "5+", "6+", "6+"],
+    piranha: ["LV", "35cm", "5+", "6+", "6+"],
+    devilfish: ["AV", "30cm", "5+", "6+", "6+"],
+    "hammerhead-ionhead": hammer, "hammerhead-fusionhead": hammer, "hammerhead-railhead": hammer,
+    skyray: ["AV", "30cm", "5+", "6+", "6+"],
+    orca: ["WE", "Bomber", "4+", "6+", "6+"],
+    manta: ["WE", "20cm", "5+", null, "4+"],
+    barracuda: ["AC", "Fighter", "6+", null, null],
+    "tiger-shark": ["AC", "Bomber", "4+", null, null],
+    "tiger-shark-ax-1-0": ["AC", "Bomber", "4+", null, null],
+    "protector-cruiser": ["Spaceship", "n/a", "n/a", "n/a", "n/a"],
+    "custodian-battleship": ["Spaceship", "n/a", "n/a", "n/a", "n/a"],
+  };
+  assert.deepEqual(Object.keys(expected).sort(), Object.keys(profiles.units).sort(), "covers every unit");
+  for (const [id, want] of Object.entries(expected)) {
+    const p = profiles.units[id];
+    assert.deepEqual([p.type, p.speed, p.armour, p.cc, p.ff], want, id);
+  }
+});
+
+test("weapons match the reference sheet (name | range | AP/AT/AA/MW values)", () => {
+  const smart = "Smart Missile System|30cm|AP5+";
+  const seeker = "Seeker Missiles|90cm|AT6+";
+  const pods = "Twin Missile Pods|45cm|AP5+,AT6+";
+  const burst = "Twin Burst Cannons|15cm|AA6+";
+  const gunDrones = "Burst Cannon and Gun Drones|15cm|AP5+";
+  const expected = {
+    ethereal: ["Honour Blade|Base Contact|"],
+    "shas-o": ["Experimental Weapons|30cm|AP4+"],
+    "shas-el": [], bondedTeam: [],
+    "fire-warrior": ["Pulse Rifles|30cm|AP4+", "Pulse Carbines|15cm|AP5+"],
+    "gun-drone": ["Twin Pulse Carbines|15cm|AP4+"],
+    pathfinder: ["Rail Rifles|30cm|AP5+", "Pulse Carbines|15cm|AP5+"],
+    "kroot-master-shaper": ["Mercenary Weapons|Base Contact|", "Kroot Rifles|15cm|"],
+    "kroot-warrior": ["Kroot Rifles|15cm|"],
+    "kroot-hound": ["Fangs|Base Contact|"],
+    krootox: ["Kroot Guns|45cm|AP5+,AT6+", "Claws|Base Contact|"],
+    "xv8-crisis": ["Twin Missile Pods|45cm|AP5+,AT6+", "Twin Plasma Rifles|30cm|AP4+", "Twin Fusion Blasters|15cm|MW4+"],
+    "xv15-stealth": ["Silenced Burst Cannons|15cm|AP4+"],
+    "xv88-broadside": ["Twin Railguns|60cm|AT3+", smart],
+    tetra: ["Tetra Pulse Rifles|30cm|AP6+"],
+    piranha: [gunDrones, seeker],
+    devilfish: [gunDrones, seeker],
+    "hammerhead-ionhead": [smart, seeker, "Ion Cannon|60cm|AP4+,AT5+"],
+    "hammerhead-fusionhead": [smart, seeker, "Twin Fusion Cannon|30cm|MW4+"],
+    "hammerhead-railhead": ["Burst Cannons|15cm|AP5+", seeker, "Hammerhead Railgun (AP)|75cm|AP5+", "Hammerhead Railgun (AT)|75cm|AT4+"],
+    skyray: [smart, "Hunter Missiles|60cm|AA5+", seeker],
+    orca: [burst, pods, "Aircraft Seeker Missiles|45cm|AT6+"],
+    manta: ["Twin Heavy Railcannons|90cm|MW2+", "Heavy Ion Phalanx|75cm|AP3+,AT4+", "Twin Manta Burst Cannons|30cm|AP5+,AA6+", pods, seeker],
+    barracuda: ["Ion Cannon|30cm|AP4+,AT5+,AA5+", burst, pods],
+    "tiger-shark": ["Twin Ion Cannons|30cm|AP3+,AT4+,AA4+", burst, pods],
+    "tiger-shark-ax-1-0": ["Twin Railcannons|45cm|MW3+", burst, pods, "Aircraft Seeker Missiles|45cm|AT6+"],
+    "protector-cruiser": ["Pin-Point Attack|n/a|MW2+"],
+    "custodian-battleship": ["Pin-Point Attack|n/a|MW2+", "Gravitic Tracer Salvo|n/a|MW4+"],
+  };
+  const values = (fp) => (String(fp).match(/(?:AP|AT|AA|MW)\d\+/g) || []).join(",");
+  for (const [id, want] of Object.entries(expected))
+    assert.deepEqual(profiles.units[id].weapons.map((w) => `${w.name}|${w.range}|${values(w.firepower)}`), want, id);
+});
+
+test("transport texts of Orca, Manta, Tiger Shark and the spaceships keep the lists from the reference sheet", () => {
+  const rule = (id) => profiles.units[id].specialRules.map((r) => r.name || r).find((r) => r.startsWith("Transport"));
+  const orca = rule("orca");
+  for (const u of ["Fire Warriors", "Pathfinders", "Stealth", "Crisis", "Gun Drones", "Broadsides", "Kroot", "Kroot Master Shaper", "Kroot Hounds"]) assert.ok(orca.includes(u), `Orca carries ${u}`);
+  assert.ok(orca.includes("up to twelve") && !orca.includes("Krootox") && orca.includes("two slots"), "Orca: twelve slots, no Krootox");
+  const manta = rule("manta");
+  for (const u of ["Fire Warriors", "Pathfinders", "Stealth", "Gun Drones", "Crisis", "Broadsides", "Kroot", "Kroot Master Shaper", "Kroot Hounds", "Krootox", "Devilfish", "Hammerhead", "Skyray", "Piranha", "Tetra"]) assert.ok(manta.includes(u), `Manta carries ${u}`);
+  assert.ok(manta.includes("up to twenty") && manta.includes("four vehicles") && manta.includes("three Tetras"), "Manta: twenty slots, four vehicles");
+  const shark = rule("tiger-shark");
+  assert.ok(shark.includes("Three Gun Drone units") && shark.includes("completely independent formation") && shark.includes("split across multiple Tiger Sharks"));
+  assert.ok(rule("protector-cruiser").includes("up to 3 Orcas") && rule("protector-cruiser").includes("count as 3 Orcas"));
+  assert.ok(rule("custodian-battleship").includes("up to 18 Orcas") && rule("custodian-battleship").includes("count as 3 Orcas"));
 });

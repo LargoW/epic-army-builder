@@ -506,7 +506,7 @@
         "Planetfall",
         "Damage Capacity 2",
         "Critical: Orca and all units aboard are destroyed",
-        "Transport (up to twelve eligible units; Crisis units use two slots)"
+        "Transport (up to twelve: Fire Warriors, Pathfinders, Stealth, Crisis, Gun Drones, Broadsides, Kroot, Kroot Master Shaper and Kroot Hounds; Crisis take two slots each)"
       ]
     },
     "manta": {
@@ -552,7 +552,7 @@
         "Tau Deflector Shield",
         "Damage Capacity 8",
         "Critical: Tau Deflector Shield is destroyed; further critical hits cause one point of damage",
-        "Transport (up to twenty eligible units; Crisis units use two slots; may carry up to four eligible vehicles)"
+        "Transport (up to twenty: Fire Warriors, Pathfinders, Stealth, Gun Drones, Crisis, Broadsides, Kroot, Kroot Master Shaper, Kroot Hounds and Krootox; Crisis units take up two slots each; the Manta may also carry four vehicles of the following types: Devilfish, Hammerhead, Skyray, Piranha or Tetra; three Tetras may be carried in each vehicle slot)"
       ]
     },
     "barracuda": {
@@ -606,7 +606,7 @@
         }
       ],
       "specialRules": [
-        "Transport (three Gun Drone units; see army list rules for deployment)"
+        "Transport (Three Gun Drone units). Transported Gun Drone formations may be split across multiple Tiger Sharks as an exception to the normal aircraft transport rules. The Tiger Shark cannot land, make an Engagement, or embark units, but can disembark transported Drones after an approach move. The Drone formation may shoot when it disembarks as normal (see 4.2.5), and counts as having activated for that turn. After this initial deployment the Gun Drones are a completely independent formation. Transported Drones do not generate blast markers for being destroyed until after they are disembarked"
       ]
     },
     "tiger-shark-ax-1-0": {
@@ -655,7 +655,7 @@
         }
       ],
       "specialRules": [
-        "Transport (up to three Orcas; Mantas count as three Orcas)"
+        "Transport (may carry up to 3 Orcas plus any troops carried in them; Mantas and any embarked troops can also be carried but count as 3 Orcas for transport purposes)"
       ]
     },
     "custodian-battleship": {
@@ -678,7 +678,7 @@
         }
       ],
       "specialRules": [
-        "Transport (up to eighteen Orcas; Mantas count as three Orcas)",
+        "Transport (may carry up to 18 Orcas plus any troops carried in them; Mantas and any embarked troops can also be carried but count as 3 Orcas for transport purposes)",
         "Gravitic Tracer Salvo may target a marked formation of any type"
       ]
     }

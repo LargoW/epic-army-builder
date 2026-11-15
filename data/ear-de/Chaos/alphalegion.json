@@ -24,7 +24,7 @@
     "al-rhino": { "name": "Alpha-Legion-Rhino", "from": "CSM.json", "type": "AV" },
     "al-vindicator": { "name": "Alpha-Legion-Vindicator", "from": "CSM.json", "type": "AV" },
     "al-predator": { "name": "Alpha-Legion-Predator", "from": "CSM.json", "type": "AV" },
-    "al-land-schattenbarke": { "name": "Alpha-Legion-Land Raider", "from": "CSM.json", "type": "AV" },
+    "al-Land Raider": { "name": "Alpha-Legion-Land Raider", "from": "CSM.json", "type": "AV" },
     "al-sicarian": { "name": "Alpha-Legion-Sicarian-Kampfpanzer", "from": "CSM.json", "type": "AV" },
     "al-daemonenprinz": { "name": "Dämonenprinz", "from": "chaoscultists.json", "type": "AV" },
     "al-aufstrebender-champion": { "name": "Aufstrebender Champion", "from": "chaoscultists.json", "type": "AV" },

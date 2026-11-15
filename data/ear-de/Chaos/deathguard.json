@@ -23,13 +23,13 @@
     "dg-havoc": { "name": "Havocs", "from": "CSM.json", "type": "AV" },
     "dg-seuchenterminator": { "name": "Seuchenfürsten-Terminatoren", "from": "CSM.json", "type": "AV" },
     "dg-seuchenmarine": { "name": "Seuchenmarines", "from": "CSM.json", "type": "INF" },
-    "dg-rhino": { "name": "Death Guard Rhino", "from": "CSM.json", "type": "AV" },
-    "dg-land-schattenbarke": { "name": "Death Guard Land Raider", "from": "CSM.json", "type": "AV" },
-    "dg-vindicator": { "name": "Death Guard Vindicator", "from": "CSM.json", "type": "AV" },
+    "dg-rhino": { "name": "Death-Guard-Rhino", "from": "CSM.json", "type": "AV" },
+    "dg-Land Raider": { "name": "Death-Guard-Land Raider", "from": "CSM.json", "type": "AV" },
+    "dg-vindicator": { "name": "Death-Guard-Vindicator", "from": "CSM.json", "type": "AV" },
     "dg-cybot": { "name": "Chaos-Cybot", "from": "CSM.json", "type": "AV" },
-    "dg-jaeger": { "name": "Death Guard Jäger", "from": "CSM.json", "type": "AV" },
+    "dg-jaeger": { "name": "Death-Guard-Jäger", "from": "CSM.json", "type": "AV" },
     "dg-seuchenwaender": { "name": "Seuchenwandler des Nurgle", "from": "chaoscultists.json", "type": "AV" },
-    "dg-defiler": { "name": "Nurgle Geißel", "from": "darkmechanicus.json", "type": "AV" },
+    "dg-defiler": { "name": "Geißel", "from": "darkmechanicus.json", "type": "AV" },
     "dg-seuchedrohne": { "name": "Seuchendrohne", "from": "darkmechanicus.json", "type": "AV" },
     "dg-seuchenmaschine": { "name": "Seuchenmaschine", "from": "darkmechanicus.json", "type": "AV" },
     "dg-seucheturm": { "name": "Seuchenturm", "from": "darkmechanicus.json", "type": "AV" },
@@ -271,14 +271,14 @@
       "variants": [
         { "id": "1", "label": "Füge 4 Death Guard Rhinos hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "dg-rhino", "count": 4 }] },
         { "id": "2", "label": "Füge 1 Seuchenturm hinzu", "pts": 150, "effects": [{ "op": "add", "unit": "dg-seucheturm", "count": 1 }] },
-        { "id": "3", "label": "Füge 4 Death Guard Land Raiders hinzu", "pts": 200, "effects": [{ "op": "add", "unit": "dg-land-schattenbarke", "count": 4 }] }
+        { "id": "3", "label": "Füge 4 Death Guard Land Raiders hinzu", "pts": 200, "effects": [{ "op": "add", "unit": "dg-Land Raider", "count": 4 }] }
       ]
     },
     {
       "id": "dg-upgrade-terminatortransporter",
       "name": "Terminator-Transporter",
       "variants": [
-        { "id": "1", "label": "Ersetze 1 Blightlord Terminator durch 3 Death Guard Land Raiders", "pts": 100, "effects": [{ "op": "replace", "from": "dg-seuchenterminator", "to": "dg-land-schattenbarke", "count": 1 }] },
+        { "id": "1", "label": "Ersetze 1 Blightlord Terminator durch 3 Death Guard Land Raiders", "pts": 100, "effects": [{ "op": "replace", "from": "dg-seuchenterminator", "to": "dg-Land Raider", "count": 1 }] },
         { "id": "2", "label": "Füge 1 Seuchenturm hinzu", "pts": 150, "effects": [{ "op": "add", "unit": "dg-seucheturm", "count": 1 }] }
       ]
     },
@@ -287,7 +287,7 @@
       "name": "Havoc-Transporter",
       "variants": [
         { "id": "1", "label": "Füge 2 Death Guard Rhinos hinzu", "pts": 25, "effects": [{ "op": "add", "unit": "dg-rhino", "count": 2 }] },
-        { "id": "2", "label": "Füge 2 Death Guard Land Raiders hinzu", "pts": 100, "effects": [{ "op": "add", "unit": "dg-land-schattenbarke", "count": 2 }] }
+        { "id": "2", "label": "Füge 2 Death Guard Land Raiders hinzu", "pts": 100, "effects": [{ "op": "add", "unit": "dg-Land Raider", "count": 2 }] }
       ]
     },
     {

@@ -60,12 +60,14 @@
     {
       "id": "core",
       "name": "Tau Core Formations",
+      "description": "Any amount of core formations may be selected.",
       "formations": ["f-crisis-cadre", "f-fire-warrior-cadre"],
       "tags": ["core"]
     },
     {
       "id": "support",
       "name": "Tau Support Formations",
+      "description": "Up to three may be selected per core formation.",
       "formations": [
         "f-armour-group",
         "f-broadside-group",
@@ -80,6 +82,7 @@
     {
       "id": "air",
       "name": "Air Caste Formations",
+      "description": "1/3rd of your army list may be Air Caste formations.",
       "formations": [
         "f-barracuda-squadron",
         "f-manta",
@@ -243,7 +246,7 @@
     },
     {
       "id": "f-spacecraft",
-      "name": "Spacecraft",
+      "name": "0-1 Spacecraft",
       "pts": 200,
       "tags": ["air", "spacecraft"],
       "sizes": [
@@ -339,13 +342,13 @@
         {
           "id": "3",
           "label": "Add three XV8 Crisis Battlesuits",
-          "pts": 150,
+          "pts": 125,
           "effects": [{"op": "add", "unit": "xv8-crisis", "count": 3}]
         },
         {
           "id": "4",
           "label": "Add four XV8 Crisis Battlesuits",
-          "pts": 200,
+          "pts": 150,
           "effects": [{"op": "add", "unit": "xv8-crisis", "count": 4}]
         }
       ]

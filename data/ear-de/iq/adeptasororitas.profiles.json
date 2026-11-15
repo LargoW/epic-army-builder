@@ -1,0 +1,1467 @@
+{
+  "army": "ear-de/iq/adeptasororitas",
+  "source": {
+    "file": "lists_de/IQ/adeptasororitas.json",
+    "version": "1.0.Beta-3",
+    "commit": null
+  },
+  "specialRules": [],
+  "units": {
+    "aq-paladine": {
+      "name": "Palatine",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "aq-prinzipalin": {
+      "name": "Prinzipalin",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "aq-sororitas-schwestern": {
+      "name": "Sororitas-Schwestern",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-dominion-schwestern": {
+      "name": "Dominion-Schwestern",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Meltergewehre",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "aq-celestia-schwestern": {
+      "name": "Celestia-Schwestern",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-retributor-schwestern": {
+      "name": "Retributor-Schwestern",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schwerer Flammenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-seraphim-schwestern": {
+      "name": "Seraphim-Schwestern",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Boltpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "aq-repentia-schwestern": {
+      "name": "Repentia-Schwestern",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Eviszeratoren",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "aq-redemptionisten": {
+      "name": "Redemptionisten",
+      "type": "INF",
+      "speed": 15,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-arco-flagellanten": {
+      "name": "Arco-Flagellanten",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Kampfflegel",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Maschinengeist",
+          "description": [
+            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+          ]
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "aq-ministorumspriester": {
+      "name": "Ministorumspriester",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "aq-lebende-heilige": {
+      "name": "Lebende Heilige",
+      "type": "INF",
+      "speed": 35,
+      "armour": 3,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ardent Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "aq-orco-inquisitor": {
+      "name": "Ordo-Hereticus-Inquisitor",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "aq-orco-grossinquisitor": {
+      "name": "Ordo-Hereticus-Großinquisitor",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "aq-orco-landtransporter": {
+      "name": "Ordo-Hereticus-Landtransporter",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren.",
+      "weapons": [
+        {
+          "name": "Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-prioris": {
+      "name": "Prioris-Exorzist",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Exorzist Werfer",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-sanctorum": {
+      "name": "Sanctorum-Exorzist",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Whirlwind Werfer",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-exorzistenjaeger": {
+      "name": "Exorzistenjäger",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Jagd-Killer",
+          "modes": [
+            {
+              "firepower": "AT4+/AA4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        }
+      ]
+    },
+    "aq-sororitas-rhino": {
+      "name": "Sororitas-Rhino",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-sororitas-repressor": {
+      "name": "Sororitas-Repressor",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann 2 Infanterieeinheiten ohne Beritten oder Jet Packs transportieren.",
+      "weapons": [
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-sororitas-immolator": {
+      "name": "Sororitas-Immolator",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann eine Infanterieeinheit ohne Beritten oder Sprungmodule transportieren.",
+      "weapons": [
+        {
+          "name": "Zwillings-Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-sororitas-stormlord": {
+      "name": "Sororitas-Stormlord",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann acht Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren; zwei davon dürfen vom Schießdeck aus feuern und sich bei Nahkämpfen mit ihrem FF beteiligen.",
+      "crit": "Stormlord ist bewegungsunfähig und darf sich für den Rest des Spiels nicht mehr bewegen. 1W3 zufällige transportierte Einheiten erleiden einen Treffer. Weitere kritische Treffer zerstören die Einheit.",
+      "weapons": [
+        {
+          "name": "Vulcan-Megabolter",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT5+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Schwerer Flammenwerfer",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-laeuterer": {
+      "name": "Läuterer",
+      "type": "LV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Flammenwerfer",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Energie-Saws",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Maschinengeist",
+          "description": [
+            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "aq-mortifier": {
+      "name": "Mortifier",
+      "type": "LV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Schwere Bolter",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Penitent Flegel",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Treu",
+          "description": [
+            "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "aq-stoßtruppen": {
+      "name": "Stoßtruppen",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Plasmageschütze",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "aq-chimare": {
+      "name": "Chimäre",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-hydra": {
+      "name": "Hydra",
+      "type": "AV",
+      "speed": 30,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Hydra Maschinenkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-hoellenhund": {
+      "name": "Höllenhund",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Inferno Kanone",
+          "modes": [
+            {
+              "firepower": "AP3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-vulture": {
+      "name": "Vulture",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Höllenschlagraketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT2+",
+              "range": 120,
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "aq-valkyrie": {
+      "name": "Valkyrie",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann zwei Infanterieeinheiten oder einen Abwurf-Sentinel transportieren. Ogryns können nicht transportiert werden.",
+      "weapons": [
+        {
+          "name": "Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multilaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "aq-blitzschlag": {
+      "name": "Blitzschlag-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "Blackstar-Hurrikanbolter",
+          "modes": [
+            {
+              "firepower": "AP5+/AA5+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-marauder": {
+      "name": "Marauder-Zerstörer",
+      "type": "AC",
+      "speed": "Bomber (B)",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC Zwillings-Maschinenkanone",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Raketenbatterie",
+          "modes": [
+            {
+              "firepower": "2x AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-Sturmkanone Turm",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-schwerer Bolter-Turm",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-lunar-kreuzer": {
+      "name": "Kreuzer der Lunar-Klasse",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "aq-emperor-kreuz": {
+      "name": "Schlachtschiff der Emperor-Klasse",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "8BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 auf dem Schlachtfeld eintreffen)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

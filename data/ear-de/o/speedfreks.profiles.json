@@ -1,0 +1,831 @@
+{
+  "army": "ear-de/o/speedfreks",
+  "source": {
+    "file": "lists_de/O/speedfreeks.json",
+    "version": "1.0.Beta",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Köppe zählen",
+      "description": [
+        "Orks glauben, dass sie immer eine Chance auf den Sieg haben, solange noch eine ganze Menge von ihnen gemeinsam kämpfen (am besten etwas mehr, als sie zählen können), ganz gleich, wie schlecht die Chancen stehen. Deshalb erhalten Ork-Verbände mit mehr als fünf Einheiten (also mehr, als an einer Hand abzählbar sind; Grots und Kanonänbatterie werden nicht mitgezählt) einen Modifikator von +1 auf Sammelwürfe. Verbände mit mehr als 10 solchen Einheiten erhalten einen Modifikator von +2. Für diese Regel zählt jeder Punkt anfangs vorhandener Schadenskapazität einer Kriegsmaschine als eine Einheit. Kriegsmaschinen mit der Sonderregel Göttermaschine gelten immer als hätten sie mehr als 10 Einheiten."
+      ]
+    },
+    {
+      "name": "Macht des Waaagh!",
+      "description": [
+        "Orks sind nicht für ihre organisatorischen Fähigkeiten bekannt und haben daher meist einen niedrigen Initiativewert. Doch nichts spornt eine Ork-Kriegsbande so sehr an wie die Aussicht auf eine gute Rauferei! Deshalb erhalten Ork-Verbände bei Versuchen, eine Offensive oder einen Eilschritt durchzuführen, einen Modifikator von +2 auf ihren Aktionstest. Auch Ork-Piloten können es kaum erwarten, Dinge unter Beschuss zu nehmen, und erhalten bei Versuchen, Abfangen oder Bodenangriff durchzuführen, einen Modifikator von +2 auf ihren Aktionstest (siehe Flugzeuge)."
+      ]
+    },
+    {
+      "name": "Speedfreaks",
+      "description": [
+        "Jede Einheit einer Speedfreak-Armee der Evil Sunz muss mindestens 30 cm schnell sein oder in einer Einheit mit mindestens 30 cm Geschwindigkeit transportiert werden. Verbände dürfen also keine Einheiten mit weniger als 30 cm Geschwindigkeit enthalten, es sei denn, sie verfügen über ein Transportfahrzeug, das diese Einheiten transportieren kann."
+      ]
+    },
+    {
+      "name": "Waaaghboss der Speedfreaks",
+      "description": [
+        "Jede Speedfreak-Armee muss einen kostenlosen Oberbefehlshaber namens Mek Bad Ork Biker enthalten. Für diesen Mek müssen keine Punkte bezahlt werden. Er darf einem beliebigen Ork-Verband der Armee hinzugefügt werden."
+      ]
+    }
+  ],
+  "units": {
+    "sef-mekbikerboys": {
+      "name": "Mek des Bad-Ork-Bikerboys",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kustom-Blasta",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "join": "und",
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Choppa-Klingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "sef-heizakultoddboy": {
+      "name": "Heizakult-Oddboy",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Lifta Droppa",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "W3+1 Schpezialfelda",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": [
+                {
+                  "name": "Spec[*]",
+                  "description": "Sonderregel"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Deff-Rolla & Rote Farbä",
+          "modes": []
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Die Einheit ersetzt entweder eine Kanonä durch einen Lifta Droppa, oder [*] erhält W3+1 Kraftfelder, oder [**] wird mit einer Deff-Rolla (Geländegängig) und mit Rota Farbä (erhöhe die Geschwindigkeit um 10cm) ausgerüstet",
+          "description": null
+        }
+      ]
+    },
+    "sef-boys": {
+      "name": "Boys",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "sef-grots": {
+      "name": "Grots",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Grot-Knarren und Messer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Super-Entbehrlich",
+          "description": [
+            "Ein Verband erhält keine Beschussmarke, wenn eine Einheit mit Super-Entbehrlich zerstört wird. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Wird eine Super-Entbehrlich-Einheit von einer Waffe mit Versprengen getroffen, verursacht sie keine Beschussmarke.",
+            "Im Nahkampf getötete Super-Entbehrlich-Einheiten werden bei der Ermittlung des Ergebnisses nicht mitgezählt.",
+            "Verbände, die ausschliesslich aus Verbrauchbar- und/oder Super-Entbehrlich-Einheiten bestehen, profitieren nicht von den obigen Regeln."
+          ]
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "sef-boss": {
+      "name": "Bosse",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fette Wumme",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Fette Spalta",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Los geht's",
+          "description": [
+            "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+          ]
+        }
+      ]
+    },
+    "sef-bosswaaghbikes": {
+      "name": "Boss-Waaghbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Abgesägtä Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Fette Spalta",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "sef-waghbikes": {
+      "name": "Waaghbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Zwillings-Abgesägtä Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        }
+      ]
+    },
+    "sef-waghbikeaufklarer": {
+      "name": "Waaghbike-Aufklärer",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Zwillings-Abgesägtä Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "sef-mekspeedsta": {
+      "name": "Mek-Speedsta",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kustom-Kanone",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "W3 Schpezialfelda",
+          "description": null
+        }
+      ]
+    },
+    "sef-deffkopta": {
+      "name": "Deffkopta",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "sef-brennabuggy": {
+      "name": "Brennabuggy",
+      "type": "LV",
+      "speed": 35,
+      "armour": 6,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Brenna",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-buggy": {
+      "name": "Buggy",
+      "type": "LV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Fette Wumme",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-heizakultpikkup": {
+      "name": "Heizakult-Pikk-Up",
+      "type": "LV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "notes": "1 Einheit Boys oder Bosse. Einheiten dürfen während des Transports schießen und an Feuergefechten teilnehmen, sofern sich kein gegnerisches Modell in Basekontakt mit dem Transporter befindet.",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-kampfpanza": {
+      "name": "Kampfpanza",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "1 Einheit Boys, Bosse, Posas, Kommandos oder Grots.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-spleenrippa": {
+      "name": "Spleenrippa",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-flakpanza": {
+      "name": "Flakpanza",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "1 Einheit Boys, Bosse, Posas, Kommandos oder Grots.",
+      "weapons": [
+        {
+          "name": "Flakgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP6+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-megawummenpanza": {
+      "name": "Mega Wummenpanza",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "notes": "4 Boys, Bosse, Posas, Kommandos oder Grots. Kanonänbatterien belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 2 Grots-Einheiten mitgeführt werden.",
+      "crit": "Der Mega Wummenpanza wird zerstört, alle transportierten Einheiten werden getötet, ausser sie würfeln eine 6+.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Fette Wumme",
+          "count": 5,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-megatransportpanza": {
+      "name": "Mega Transportpanza",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "notes": "8 Boys, Posas, Bosse, Kommandos oder Grots. Kanonänbatterien belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 4 Grots-Einheiten mitgeführt werden.",
+      "crit": "Der Mega Transportpanza wird zerstört, alle transportierten Einheiten werden getötet, ausser sie würfeln eine 6+.",
+      "weapons": [
+        {
+          "name": "Kanonä",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Fette Wumme",
+          "count": 4,
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-dakkajet": {
+      "name": "Dakkajet",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Supa-Knarre",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-landingsschiff": {
+      "name": "Landungsschiff",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "10 Killa Bots, Waaghbikes, Boys, Bosse, Kommandos, Stormboys oder Grots. Kanonänbatterie, Warbuggies, Brennabuggies und Deff Dreads belegen jeweils 2 Plätze. Zusätzlich zu anderen transportierten Einheiten dürfen 4 Grots-Einheiten mitgeführt werden.",
+      "crit": "Das Landungsschiff und alle transportierten Einheiten werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Flakka-Dakka-Türme",
+          "modes": [
+            {
+              "firepower": "W3+1x AP5+/AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC-Panzerknacker-Raketen",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "sef-blitza": {
+      "name": "Blitza-Bomma",
+      "type": "AC",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "weapons": [
+        {
+          "name": "AC Flakka",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "AC-Zwillings-Supa-Knarre",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+/AA6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Boom Bomben",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-killkreuzer": {
+      "name": "Kill-Kreuzer",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "1D6BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "sef-schlachtkreuzer": {
+      "name": "Schlachtkreuzer",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "1D6+4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen)",
+          "description": null
+        },
+        {
+          "name": "Transport: Kann 12 Landungsschiffe und die auf ihnen mitgeführten Einheiten transportieren",
+          "description": null
+        }
+      ]
+    }
+  }
+}

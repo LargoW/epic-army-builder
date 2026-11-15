@@ -695,8 +695,8 @@
         }
       ]
     },
-    "cu-land-schattenbarke": {
-      "name": "Custodes-Land-Schattenbarke",
+    "cu-Land Raider": {
+      "name": "Custodes-Land Raider",
       "type": "AV",
       "speed": 25,
       "armour": 4,
@@ -737,6 +737,67 @@
         },
         {
           "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "cu-rhino": {
+      "name": "Rhino der Schwestern der Stille",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten (außer Terminatoren) ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Sturmbolter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "cu-jager": {
+      "name": "Jäger der Schwestern der Stille",
+      "type": "AV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Jagd-Killer",
+          "modes": [
+            {
+              "firepower": "AT4+/AA4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
           "description": null
         }
       ]

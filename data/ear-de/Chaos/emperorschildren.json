@@ -25,7 +25,7 @@
     "ec-noise-marine": { "name": "Noise Marines", "from": "CSM.json", "type": "INF" },
     "ec-chaos-sturm-bike": { "name": "Chaos-Sturmbikes", "from": "CSM.json", "type": "AV" },
     "ec-rhino": { "name": "Emperor's-Children-Rhino", "from": "CSM.json", "type": "AV" },
-    "ec-land-schattenbarke": { "name": "Emperor's-Children-Land-Schattenbarke", "from": "CSM.json", "type": "AV" },
+    "ec-Land Raider": { "name": "Emperor's-Children-Land Raider", "from": "CSM.json", "type": "AV" },
     "ec-predator": { "name": "Emperor's-Children-Predator", "from": "CSM.json", "type": "AV" },
     "ec-cybot": { "name": "Emperor's-Children-Cybot", "from": "CSM.json", "type": "AV" },
     "ec-chaos-jaeger": { "name": "Chaos-Jäger", "from": "CSM.json", "type": "AV" },
@@ -275,14 +275,14 @@
       "name": "Gefolge-Transporter",
       "variants": [
         { "id": "1", "label": "Füge bis zu 3 Emperor's Children Rhinos hinzu", "pts": 10, "effects": [{ "op": "add", "unit": "ec-rhino", "count": 3 }] },
-        { "id": "2", "label": "Füge bis zu 3 Emperor's Children Land Raiders hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-land-schattenbarke", "count": 3 }] }
+        { "id": "2", "label": "Füge bis zu 3 Emperor's Children Land Raiders hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "ec-Land Raider", "count": 3 }] }
       ]
     },
     {
       "id": "ec-upgrade-terminatortransporter",
       "name": "Terminator-Transporter",
       "variants": [
-        { "id": "1", "label": "Ersetze 1 Sirenshriek Terminator durch 3 Emperor's Children Land Raiders", "pts": 100, "effects": [{ "op": "replace", "from": "ec-sirenenschrei-terminator", "to": "ec-land-schattenbarke", "count": 1 }] }
+        { "id": "1", "label": "Ersetze 1 Sirenshriek Terminator durch 3 Emperor's Children Land Raiders", "pts": 100, "effects": [{ "op": "replace", "from": "ec-sirenenschrei-terminator", "to": "ec-Land Raider", "count": 1 }] }
       ]
     },
     {

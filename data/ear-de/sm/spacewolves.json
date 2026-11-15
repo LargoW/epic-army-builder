@@ -40,7 +40,7 @@
     "sw-whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
     "sw-vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
     "sw-sturmtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" },
-    "sw-stormwolf-sturmboot": { "name": "Stormwolf-Sturmsboot", "from": "SM.json", "type": "AV" },
+    "sw-stormwolf-sturmboot": { "name": "Stormwolf-Sturmboot", "from": "SM.json", "type": "AV" },
     "sw-stormfang-landungsschiff": { "name": "Stormfang-Landungsschiff", "from": "SM.json", "type": "AV" },
     "sw-schlachtbarke": { "name": "Schlachtbarke", "from": "SM.json", "type": "AV" },
     "sw-angriffskreuzer": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AV" },

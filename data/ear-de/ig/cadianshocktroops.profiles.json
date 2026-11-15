@@ -310,6 +310,50 @@
       ],
       "specialRules": []
     },
+    "deathstrike": {
+      "name": "Todesstoß Raketenlafette",
+      "type": "AV",
+      "speed": 20,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Todesstoß-Rakete",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": "Unbegrenzt",
+              "specialRules": [
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Bolter",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
     "chimera": {
       "name": "Chimäre",
       "type": "AV",

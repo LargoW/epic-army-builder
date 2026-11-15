@@ -37,9 +37,9 @@
     "cu-pallas": { "name": "Antigravschweber Pallas", "from": "CU.json", "type": "AV" },
     "cu-caladius": { "name": "Caladius-Antigravpanzer", "from": "CU.json", "type": "AV" },
     "cu-corus": { "name": "Coronus", "from": "CU.json", "type": "AV" },
-    "cu-land-schattenbarke": { "name": "Custodes-Land-Schattenbarke", "from": "CU.json", "type": "AV" },
-    "cu-rhino": { "name": "Rhino der Schwesteren der Stille", "from": "CU.json", "type": "AV" },
-    "cu-jager": { "name": "Jäger der Schwesteren der Stille", "from": "CU.json", "type": "AV" },
+    "cu-Land Raider": { "name": "Custodes-Land Raider", "from": "CU.json", "type": "AV" },
+    "cu-rhino": { "name": "Rhino der Schwestern der Stille", "from": "CU.json", "type": "AV" },
+    "cu-jager": { "name": "Jäger der Schwestern der Stille", "from": "CU.json", "type": "AV" },
     "cu-orion": { "name": "Orion-Angriffsschiff", "from": "CU.json", "type": "AV" },
     "sm-stormtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" }
   },
@@ -275,7 +275,7 @@
           "label": "Füge genügend Transportoptionen hinzu",
           "pts": 50,
           "effects": [
-            { "op": "add", "unit": "cu-land-schattenbarke", "count": 1 }
+            { "op": "add", "unit": "cu-Land Raider", "count": 1 }
           ]
         }
       ]

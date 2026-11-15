@@ -22,7 +22,7 @@
     "cadian-sentinel": { "name": "Gepanzerter Sentinel", "from": "IG.json", "type": "INF" },
     "basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
     "medusa": { "name": "Medusa", "from": "IG.json", "type": "AV" },
-    "deathstrike": { "name": "Todesstoß-Raketenlafette", "from": "IG.json", "type": "AV" },
+    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
     "chimera": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
     "hellhound": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
     "leman-russ": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },

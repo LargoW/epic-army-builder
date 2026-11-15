@@ -1,0 +1,1772 @@
+{
+  "army": "ear-de/eldar/masqueoftheveiledpath",
+  "source": {
+    "file": "lists_de/EL/masqueoftheveiledpath.json",
+    "version": "0.6.2",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Avatar (Lugganath)",
+      "description": [
+        "Der Avatar muss das Spiel in Reserve beginnen. Stelle ihn in der Strategiephase einer beliebigen Runde vor dem Strategiewurf innerhalb von 15 cm zu einem Geisterseher-Charakter oder einer Runenprophet-Einheit auf.",
+        "Der Avatar gilt als eigener Verband und darf nur auf diese Weise ins Spiel kommen.",
+        "Solange er sich auf dem Spielfeld befindet, darf der Avatar nur um Missionsziele konkurrieren. Entferne ihn in der Endphase der Runde, in der er eingetroffen ist, bevor Verbände sich sammeln oder Missionsziele gezählt werden. Nach dem Entfernen kann er nicht zurückkehren."
+      ]
+    },
+    {
+      "name": "Darf keine Garnison bilden (Lugganath)",
+      "description": [
+        "Im Epic-Turnierszenario dürfen nur Korsaren-Geisterläufer und Korsaren-Wespen Missionsziele als Garnison besetzen."
+      ]
+    },
+    {
+      "name": "Weitsicht",
+      "description": [
+        "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+        "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+        "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+      ]
+    },
+    {
+      "name": "Schlag und Flucht",
+      "description": [
+        "Eldar-, Drukhari- und Harlekin-Verbände, die Vorrücken oder einen Eilschritt durchführen, dürfen vor oder nach jeder Bewegung Schießen, aber insgesamt weiterhin nur einmal. Entscheidet sich der Verband für einen Eilschritt, gilt der Trefferwurfmodifikator von -1 auch dann, wenn vor der Bewegung geschossen wird. außerdem dürfen Verbände, die einen Nahkampf gewinnen, sich bis zu ihrem Geschwindigkeitswert statt der üblichen 5cm neu formieren."
+      ]
+    },
+    {
+      "name": "Netzportal",
+      "description": [
+        "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+        "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+        "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+        "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+      ]
+    },
+    {
+      "name": "Flink zu Fuß",
+      "description": [
+        "Drukhari- und Harlekin-Verbände erhalten einen Bonus von +1, wenn sie versuchen, einen Marsch durchzuführen. Außerdem dürfen sie nach einem Marsch weiterhin Unterstützungsfeuer in Nahkämpfen leisten, einen Kreuzfeuerbonus beanspruchen und Flugabwehrfeuer abgeben."
+      ]
+    },
+    {
+      "name": "Cegorach, der Lachende Gott",
+      "description": [
+        "Solange sich mindestens ein Solitär auf dem Schlachtfeld befindet, gelten alle gegnerischen Verbände ohne Harlekine bei Sammeltests in der Endphase als innerhalb von 30 cm zu einer gegnerischen Einheit."
+      ]
+    },
+    {
+      "name": "Schattensicht",
+      "description": [
+        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Schattensicht teleportieren, dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen. Dies gilt auch, wenn die Einheit mit Schattensicht selbst teleportiert."
+      ]
+    },
+    {
+      "name": "Meister des Netzportals",
+      "description": [
+        "Harlekine sind die unvergleichlichen Meister des Webway. Sie müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch Teleportation oder ein Wraithgate betreten. Harlekine dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen."
+      ]
+    }
+  ],
+  "units": {
+    "mas-avatar": {
+      "name": "Avatar des Khaine",
+      "type": "WE",
+      "speed": 15,
+      "armour": 3,
+      "cc": 2,
+      "ff": 4,
+      "crit": "Der Avatar wird zerstört. Alle Weltenschiff-Eldar-Verbände (eigene und gegnerische) mit Sichtlinie zum Avatar erhalten 1 Beschussmarke.",
+      "weapons": [
+        {
+          "name": "Klagendes Verderben",
+          "modes": [
+            {
+              "firepower": "MW5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "mas-geisterseher": {
+      "name": "Geisterseher",
+      "type": "CH",
+      "notes": "Einheiten mit einem Geisterseher können verwendet werden, um den Avatar zu beschwören.",
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Weitsicht",
+          "description": [
+            "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+            "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+            "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+          ]
+        }
+      ]
+    },
+    "mas-eldar-autarch": {
+      "name": "Eldar-Autarch",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Eldar-Energiewaffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "mas-eldar-exarch": {
+      "name": "Eldar-Exarch",
+      "type": "CH",
+      "notes": "Asuryans Jäger, Kriegsfalken und Warpspinnen haben eine Exarch-Fernkampfwaffe. Banshees und Skorpionkrieger haben eine Exarch-Nahkampfwaffe. Schwarze Khaindar haben einen Khaindar-Raketenwerfer, Feuerdrachen eine Feuerlanze und Sternenlanzen eine Sternenlanze.",
+      "weapons": [
+        {
+          "name": "Exarch-Fernkampfwaffe",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Exarch-Nahkampfwaffe",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Feuerlanze",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Khaindar-Raketenwerfer",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "AP3+/AT6+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sternenlanze",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "mas-eldar-runenprophet": {
+      "name": "Eldar-Runenprophet",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Der Runenprophet kann verwendet werden, um den Avatar zu beschwören.",
+      "weapons": [
+        {
+          "name": "Hexenklingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shurikenpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Weitsicht",
+          "description": [
+            "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+            "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+            "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+          ]
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "mas-gardisten": {
+      "name": "Eldar-Gardisten",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Shuriken-Katapulte",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-eldar-jetbikes": {
+      "name": "Eldar-Jetbikes",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Zwillings-Shurikenkatapult",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-viper": {
+      "name": "Viper",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-asuryans-jager": {
+      "name": "Asuryans Jäger",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Avenger-Shurikenkatapulte",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-feuerdrachen": {
+      "name": "Feuerdrachen",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fusionsstrahler",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-schwarze-khaindar": {
+      "name": "Schwarze Khaindar",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Khaindar-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP3+/AT6+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-banshees": {
+      "name": "Banshees",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 2,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Bansheemaske",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Shurikenpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Erstschlag",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "mas-skorpionkrieger": {
+      "name": "Skorpionkrieger",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Mandiblaster",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shurikenpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-phantom-schnitter": {
+      "name": "Phantom-Schnitter",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "D-Sensen",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "mas-korsaren-geisterlaeufer": {
+      "name": "Korsaren-Geisterläufer",
+      "type": "INF",
+      "speed": 30,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Ranger-Jagdgewehr",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shurikenpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "mas-korsaren-wespe": {
+      "name": "Korsaren-Wespe",
+      "type": "LV",
+      "speed": 35,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Sternenkanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "mas-schattenviper": {
+      "name": "Schattenviper",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Splitterkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Splittergewehr",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Der Transporter kann eine INF-Einheit ohne Sprungmodule oder Beritten transportieren.",
+          "description": null
+        }
+      ]
+    },
+    "mas-wellenschlange": {
+      "name": "Wellenschlange",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann bis zu 2 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar, Kriegsfalken, Phantomklingen oder Phantomdroiden. Phantomklingen und Phantomdroiden belegen jeweils 2 Plätze.",
+      "weapons": [
+        {
+          "name": "Zwillings-Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "mas-illum-zar": {
+      "name": "Illum Zar",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Prismenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5+",
+              "range": 75,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-falcon": {
+      "name": "Falcon",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann bis zu 1 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar oder Kriegsfalken.",
+      "weapons": [
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "mas-feuersturm": {
+      "name": "Feuersturm",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann bis zu 1 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar oder Kriegsfalken.",
+      "weapons": [
+        {
+          "name": "Zwillings-Salvenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "mas-kobra": {
+      "name": "Kobra",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Die Kobra wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei einer 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Cobra D-Kanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(W3+1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbohrer",
+                  "description": "Schildbohrer"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            },
+            {
+              "firepower": "3BP",
+              "join": "oder",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eldar-Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-sturmserpent": {
+      "name": "Sturmserpent",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Der Sturmserpent wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei einer 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Sturmserpent-Impulslaser",
+          "modes": [
+            {
+              "firepower": "2x AT3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Netzportal",
+          "description": [
+            "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+            "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+            "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+            "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+          ]
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-skorpion": {
+      "name": "Skorpion",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Der Skorpion wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei einer 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Zwillings-Pulsar",
+          "modes": [
+            {
+              "firepower": "2× MW2+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "mas-skathach-phantomritter": {
+      "name": "Skathach-Phantomritter",
+      "type": "H-AV",
+      "speed": 30,
+      "cc": 4,
+      "ff": 3,
+      "notes": "Skathach-Phantomritter sind entweder mit einer Zwillings-Todeshüllenkanone oder einer Zwillings-Inferno-Lanze bewaffnet.",
+      "weapons": [
+        {
+          "name": "Zwillings-Todeshüllenkanone",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "2BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Inferno-Lanze",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zwillings-Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (3+)",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "mas-harlekin-avatar": {
+      "name": "Harlekin-Avatar",
+      "type": "CH",
+      "notes": "Darf sich nur Harlekin-Truppn oder Skyweaver-Jetbikes anschließen.",
+      "weapons": [
+        {
+          "name": "Kuss des Harlekins",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                },
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "mas-schattenseher": {
+      "name": "Schattenseher",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Lichtsplitter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "mas-meistermime": {
+      "name": "Meistermime",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Monomolecular Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                },
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "mas-solitar": {
+      "name": "Solitär",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Kuss des Harlekins",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                },
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
+    },
+    "mas-mimen": {
+      "name": "Mimen",
+      "type": "INF",
+      "speed": 20,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Verborgene Mimerklingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "mas-todesnarren": {
+      "name": "Todesnarren",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shrieker Kanonen",
+          "modes": [
+            {
+              "firepower": "2x AP5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "mas-harlekin-trupp": {
+      "name": "Harlekin-Trupp",
+      "type": "INF",
+      "speed": 15,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Harlekins Umarmung",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "mas-skyweaver-jetbikes": {
+      "name": "Skyweaver-Jetbikes",
+      "type": "INF",
+      "speed": 40,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Zephyrgleve",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "mas-starweaver": {
+      "name": "Starweaver",
+      "type": "LV",
+      "speed": 40,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        },
+        {
+          "name": "Transport 1 (kann eine Harlekin-Trupp oder eine Einheit Todesnarren transportieren)",
+          "description": null
+        }
+      ]
+    },
+    "mas-voidweaver": {
+      "name": "Voidweaver",
+      "type": "LV",
+      "speed": 40,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Prismatic Kanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT4+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        },
+        {
+          "name": "Windflink",
+          "description": [
+            "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+          ]
+        }
+      ]
+    },
+    "mas-nachtschatten-abfangjager": {
+      "name": "Nachtschatten-Abfangjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC Laserlanze",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mas-hemlock-phantomjager": {
+      "name": "Hemlock-Phantomjäger",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 4,
+      "weapons": [
+        {
+          "name": "AC Schwerer D-Sense",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Weitsicht",
+          "description": [
+            "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+            "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+            "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+          ]
+        }
+      ]
+    },
+    "mas-korsaren-vampirejager": {
+      "name": "Korsaren-Vampire-Jäger",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "notes": "Kann vier Korsaren-Geisterläufer oder Korsaren-Wespen transportieren.",
+      "crit": "Der Korsaren-Vampire-Jäger und alle Einheiten an Bord werden zerstört.",
+      "weapons": [
+        {
+          "name": "AC Vampire-Jäger-Zwillingspulsar",
+          "modes": [
+            {
+              "firepower": "2x MW2+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Zwillings-Phoenix Raketenwerfer",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+/AA5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (5+)",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "mas-phantomschiff": {
+      "name": "Phantomschiff",
+      "type": "SC",
+      "weapons": [
+        {
+          "name": "0–1x Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": "0-1",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ist entweder mit Orbitalbombardement oder einem Punktziel-Angriff ausgerüstet (die Auswahl erfolgt zu Beginn der Schlacht)",
+          "description": null
+        }
+      ]
+    },
+    "mas-drachschiff": {
+      "name": "Drachenschiff",
+      "type": "SC",
+      "notes": "Kann bis zu zwölf Vampires und alle darin transportierten Einheiten mitführen.",
+      "weapons": [
+        {
+          "name": "0–1x Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "8BP, MW"
+            }
+          ]
+        },
+        {
+          "name": "Präzisionsschuss",
+          "count": "0-1 2",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "specialRules": [
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ist entweder mit Orbitalbombardement oder zwei Präzisionsschüssen ausgerüstet (die Auswahl erfolgt zu Beginn der Schlacht)",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

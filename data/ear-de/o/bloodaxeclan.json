@@ -1,0 +1,203 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/o/bloodaxeclan",
+  "name": "Klan der Blood Axes, Roter WAAAGH!",
+  "faction": "Orks",
+  "version": "1.0",
+  "source": { "file": "lists_de/O/bloodaxeclan.json", "version": "1.0", "commit": null },
+  "strategy": 3,
+  "initiative": [{ "formations": ["*"], "value": "3+" }],
+  "units": {
+    "ba-waghboss": { "name": "Waaghboss", "from": "ORK.json", "type": "CH" },
+    "ba-oddboy": { "name": "Oddboy", "from": "ORK.json", "type": "CH" },
+    "ba-boss": { "name": "Bosse", "from": "ORK.json", "type": "CH" },
+    "ba-boys": { "name": "Boys", "from": "ORK.json", "type": "INF" },
+    "ba-grots": { "name": "Grots", "from": "ORK.json", "type": "INF" },
+    "ba-kommandos": { "name": "Kommandos", "from": "ORK.json", "type": "INF" },
+    "ba-stormboys": { "name": "Stormboys", "from": "ORK.json", "type": "INF" },
+    "ba-deffkopta": { "name": "Deffkopta", "from": "ORK.json", "type": "AV" },
+    "ba-waaghkopta": { "name": "Waaghkopta", "from": "ORK.json", "type": "AV" },
+    "ba-transportpanza": { "name": "Transportpanza", "from": "ORK.json", "type": "LV" },
+    "ba-flakpanza": { "name": "Flakpanza", "from": "ORK.json", "type": "AV" },
+    "ba-kampfpanza": { "name": "Kampfpanza", "from": "ORK.json", "type": "AV" },
+    "ba-deffdread": { "name": "Deff-Dread", "from": "ORK.json", "type": "AV" },
+    "ba-mekadread": { "name": "Meka-Dread", "from": "ORK.json", "type": "AV" },
+    "ba-killa-bot": { "name": "Killa Bot", "from": "ORK.json", "type": "AV" },
+    "ba-mega-transportpanza": { "name": "Mega Transportpanza", "from": "ORK.json", "type": "AV" },
+    "ba-mega-wummenpanza": { "name": "Mega Wummenpanza", "from": "ORK.json", "type": "AV" },
+    "ba-jagdbomma": { "name": "Jagdbomma", "from": "ORK.json", "type": "AC" },
+    "ba-landingsschiff": { "name": "Landungsschiff", "from": "ORK.json", "type": "SC" },
+    "ba-killkreuzer": { "name": "Blood Axes Kill Kroozer", "from": "ORK.json", "type": "SC" },
+    "ba-battlekroozer": { "name": "Blood Axes Battlekroozer", "from": "ORK.json", "type": "SC" },
+    "ba-brennabuggy": { "name": "Brennabuggy", "from": "ORK.json", "type": "AV" },
+    "ba-buggy": { "name": "Buggy", "from": "ORK.json", "type": "AV" },
+    "ba-kanonabatterie": { "name": "Kanonänbatterie", "from": "ORK.json", "type": "AV" },
+    "ba-waghbikes": { "name": "Waaghbikes", "from": "ORK.json", "type": "LV" },
+    "ba-stampfa": { "name": "Stampfa", "from": "ORK.json", "type": "AV" },
+    "ba-supap": { "name": "Supa-Stampfa", "from": "ORK.json", "type": "AV" },
+    "ba-gargant": { "name": "Gargant", "from": "ORK.json", "type": "AV" },
+    "ba-greatgargant": { "name": "Großer Gargant", "from": "ORK.json", "type": "AV" }
+  },
+  "sections": [
+    {
+      "id": "main",
+      "name": "Ork-Verbände",
+      "formations": ["ba-mob", "ba-pluenderer", "ba-heizakult", "ba-kommando", "ba-stormboyz", "ba-mekwummen", "ba-mekdread", "ba-killkroozer"]
+    },
+    {
+      "id": "fleet",
+      "name": "Ork-Flugzeug- und Gargant-Verbände",
+      "formations": ["ba-jagdbomma", "ba-landingsschiff", "ba-gargant", "ba-greatgargant"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "ba-mob",
+      "name": "Mob der Blood Axes",
+      "pts": 200,
+      "tags": ["main"],
+      "units": [
+        { "unit": "ba-boss", "count": 2 },
+        { "unit": "ba-boys", "count": 6 },
+        { "unit": "ba-grots", "count": 2 }
+      ],
+      "upgrades": ["ba-upgrade-boss"]
+    },
+    {
+      "id": "ba-pluenderer",
+      "name": "Plünderer-Brigade",
+      "pts": 150,
+      "tags": ["main"],
+      "units": [
+        { "oneOf": ["ba-killa-bot", "ba-brennabuggy", "ba-waaghbike", "ba-buggy", "ba-flakpanza", "ba-kampfpanza", "ba-deffkopta", "ba-megawummen", "ba-mega-transportpanza"], "count": 4, "mixed": true }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ba-heizakult",
+      "name": "Kult des Heizakults",
+      "pts": 200,
+      "tags": ["main"],
+      "units": [
+        { "oneOf": ["ba-brennabuggy", "ba-waghbike", "ba-buggy"], "count": 8, "mixed": true }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "ba-kommando",
+      "name": "Kommando-Mob",
+      "pts": 150,
+      "tags": ["main"],
+      "units": [{ "unit": "ba-kommandos", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-stormboyz",
+      "name": "Stormboyz-Mob",
+      "pts": 150,
+      "tags": ["main"],
+      "units": [{ "unit": "ba-stormboys", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-mekwummen",
+      "name": "Mekwummen-Mob",
+      "pts": 125,
+      "tags": ["main"],
+      "units": [{ "unit": "ba-kanonabatterie", "count": 5 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-mekdread",
+      "name": "Mek-Dread-Mob",
+      "pts": 125,
+      "tags": ["main"],
+      "units": [{ "unit": "ba-mekadread", "count": 1 }, { "unit": "ba-killa-bot", "count": 3 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-killkroozer",
+      "name": "0–1 Blood Axes Kill Kroozer",
+      "pts": 100,
+      "tags": ["main"],
+      "units": [{ "unit": "ba-killkreuzer", "count": 1 }],
+      "upgrades": ["ba-upgrade-battlekroozer"]
+    },
+    {
+      "id": "ba-jagdbomma",
+      "name": "Jagdbomma-Staffel",
+      "pts": 150,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ba-jagdbomma", "count": 3 }],
+      "upgrades": ["ba-upgrade-jagdbomma"]
+    },
+    {
+      "id": "ba-landingsschiff",
+      "name": "Landungsschiff",
+      "pts": 225,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ba-landingsschiff", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-gargant",
+      "name": "Gargant",
+      "pts": 550,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ba-gargant", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "ba-greatgargant",
+      "name": "Großer Gargant",
+      "pts": 700,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ba-greatgargant", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ba-upgrade-boss",
+      "name": "Bosse",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Bosse hinzu", "pts": 35, "effects": [{ "op": "add", "unit": "ba-boss", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "ba-upgrade-boys",
+      "name": "Boys",
+      "variants": [
+        { "id": "n", "label": "Boys", "pts": 15, "effects": [{ "op": "add", "unit": "ba-boys", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ba-upgrade-grots",
+      "name": "Grots",
+      "variants": [
+        { "id": "n", "label": "Grots", "pts": 35, "effects": [{ "op": "add", "unit": "ba-grots", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ba-upgrade-jagdbomma",
+      "name": "Jagdbomma",
+      "variants": [
+        { "id": "n", "label": "Jagdbomma", "pts": 50, "effects": [{ "op": "add", "unit": "ba-jagdbomma", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "ba-upgrade-battlekroozer",
+      "name": "Schlachtkreuzer",
+      "variants": [
+        { "id": "1", "label": "Ersetze den Blood Axes Kill Kroozer durch einen Blood Axes Battlekroozer für +50 Punkte", "pts": 50, "effects": [{ "op": "replace", "from": "ba-killkreuzer", "to": "ba-battlekroozer", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

@@ -1076,8 +1076,8 @@
         }
       ]
     },
-    "vortimer-land-schattenbarke": {
-      "name": "Vortimer-Land-Schattenbarke",
+    "vortimer-Land Raider": {
+      "name": "Vortimer-Land Raider",
       "type": "AV",
       "speed": 25,
       "armour": 4,
@@ -1137,8 +1137,8 @@
         }
       ]
     },
-    "vortimer-land-schattenbarke-redeemer": {
-      "name": "Vortimer-Land-Schattenbarke-Redeemer",
+    "vortimer-Land Raider-redeemer": {
+      "name": "Vortimer-Land Raider-Redeemer",
       "type": "AV",
       "speed": 25,
       "armour": 4,
@@ -1331,6 +1331,65 @@
       ],
       "specialRules": []
     },
+    "feurerraptor": {
+      "name": "Feuerraptor",
+      "type": "AC/WE",
+      "speed": "Bomber (B)",
+      "armour": 5,
+      "crit": "Fire Raptor wird zerstört.",
+      "weapons": [
+        {
+          "name": "AC-Zwillings-Avenger-Bolterkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Raketenbatterie",
+          "modes": [
+            {
+              "firepower": "2x AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC-Vierlings-Schwere Bolter-Türme",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 2",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
     "sturmadler": {
       "name": "Sturmadler",
       "type": "AC/WE",
@@ -1415,6 +1474,33 @@
         }
       ],
       "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "grey-angriffskreuzer": {
+      "name": "Grey-Knights-Angriffskreuzer",
+      "type": "SC",
+      "notes": "Kann 20 Infanterieeinheiten, Trikes oder Cybots sowie 10 leichte oder gepanzerte Fahrzeugeinheiten (außer Trikes und Cybots), 6 Thunderhawks/Sturmadler und genügend Landungskapseln oder Landungsschiffe für alle übrigen mitgeführten Einheiten transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "4BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Navis Nobilite",
+          "description": [
+            "Die Raumschiffe der Grey Knights gehören zu den schnellsten und am besten gesteuerten Schiffen der Galaxis. Wurde ein Grey-Knights-Schlachtkreuzer gekauft, gilt für den Spieler der Blood Ravens bei der Wahl der Runde, in der das Raumschiff das Schlachtfeld überfliegt, ein Strategiewert von 6."
+          ]
+        },
         {
           "name": "Transport",
           "description": null

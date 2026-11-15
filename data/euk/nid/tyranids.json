@@ -97,6 +97,10 @@
         {"unit": "tyranid-warriors", "count": 2},
         {"unit": "termagants", "count": 8}
       ],
+      "unitLimits": [
+        {"id": "assault-raveners-zoanthropes", "label": "Raveners / Zoanthropes", "units": ["raveners", "zoanthrope"], "max": 3, "scale": true},
+        {"id": "assault-large-creatures", "label": "Exocrines / Malefactors / Haruspexes", "units": ["exocrine", "malefactor", "haruspex"], "max": 3, "scale": true}
+      ],
       "upgrades": [
         "u-assault-hormagaunts",
         "u-termagants",
@@ -105,8 +109,11 @@
         "u-hive-tyrant",
         "u-carnifex",
         "u-hierodule",
-        "u-raveners-zoanthropes",
-        "u-large-creatures"
+        "u-assault-raveners",
+        "u-assault-zoanthropes",
+        "u-assault-exocrines",
+        "u-assault-malefactors",
+        "u-assault-haruspexes"
       ]
     },
     {
@@ -132,13 +139,22 @@
         {"unit": "hive-tyrant", "count": 1},
         {"oneOf": ["exocrine", "haruspex", "malefactor"], "count": 3, "mixed": true}
       ],
+      "unitLimits": [
+        {"id": "brute-carnifex-swaps", "label": "Carnifex (swapped)", "units": ["carnifex"], "max": 6, "scale": true}
+      ],
       "upgrades": [
         "u-termagants",
         "u-biovores",
         "u-dactylis",
         "u-hierodules",
-        "u-brute-monsters",
-        "u-brute-carnifex-replace"
+        "u-brute-exocrines",
+        "u-brute-haruspexes",
+        "u-brute-malefactors",
+        "u-brute-zoanthropes",
+        "u-brute-raveners",
+        "u-brute-swap-exocrines",
+        "u-brute-swap-haruspexes",
+        "u-brute-swap-malefactors"
       ]
     },
     {
@@ -147,12 +163,19 @@
       "pts": 500,
       "tags": ["core"],
       "units": [{"unit": "dominatrix", "count": 1}],
+      "unitLimits": [
+        {"id": "dominatrix-creatures", "label": "Exocrines / Haruspexes / Malefactors / Raveners / Zoanthropes", "units": ["exocrine", "haruspex", "malefactor", "raveners", "zoanthrope"], "max": 3}
+      ],
       "upgrades": [
         "u-termagants",
         "u-hierodules-dominatrix",
         "u-dactylis-dominatrix",
         "u-carnifex-dominatrix",
-        "u-dominatrix-creatures"
+        "u-dominatrix-exocrines",
+        "u-dominatrix-haruspexes",
+        "u-dominatrix-malefactors",
+        "u-dominatrix-raveners",
+        "u-dominatrix-zoanthropes"
       ]
     },
     {
@@ -179,11 +202,20 @@
         {"unit": "termagants", "count": 3},
         {"oneOf": ["exocrine", "haruspex", "malefactor"], "count": 2, "mixed": true}
       ],
+      "unitLimits": [
+        {"id": "hybrid-carnifex-swaps", "label": "Carnifex (swapped)", "units": ["carnifex"], "max": 6, "scale": true}
+      ],
       "upgrades": [
         "u-termagants",
         "u-biovores",
-        "u-hybrid-creatures",
-        "u-hybrid-carnifex-replace",
+        "u-hybrid-exocrines",
+        "u-hybrid-haruspexes",
+        "u-hybrid-malefactors",
+        "u-hybrid-zoanthropes",
+        "u-hybrid-raveners",
+        "u-hybrid-swap-exocrines",
+        "u-hybrid-swap-haruspexes",
+        "u-hybrid-swap-malefactors",
         "u-hybrid-gargoyles"
       ]
     },
@@ -217,7 +249,8 @@
         "u-biovores-nest",
         "u-exocrines-nest",
         "u-dactylis-nest",
-        "u-nest-creatures"
+        "u-nest-zoanthropes",
+        "u-nest-raveners"
       ]
     },
     {
@@ -325,21 +358,39 @@
       ]
     },
     {
-      "id": "u-raveners-zoanthropes",
-      "name": "Raveners or Zoanthropes",
+      "id": "u-assault-raveners",
+      "name": "Raveners",
       "variants": [
-        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "raveners", "count": 1}]},
-        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
-        
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
       ]
     },
     {
-      "id": "u-large-creatures",
-      "name": "Exocrines, Malefactors, or Haruspexes",
+      "id": "u-assault-zoanthropes",
+      "name": "Zoanthropes",
       "variants": [
-        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
-        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
-        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}      ]
+        {"id": "1", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-assault-exocrines",
+      "name": "Exocrines",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-assault-malefactors",
+      "name": "Malefactors",
+      "variants": [
+        {"id": "1", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-assault-haruspexes",
+      "name": "Haruspexes",
+      "variants": [
+        {"id": "1", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}
+      ]
     },
     {
       "id": "u-dactylis",
@@ -356,23 +407,59 @@
       ]
     },
     {
-      "id": "u-brute-monsters",
-      "name": "Brute Swarm creatures",
+      "id": "u-brute-exocrines",
+      "name": "Exocrines",
       "variants": [
-        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
-        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
-        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
-        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
-        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+        {"id": "1", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]}
       ]
     },
     {
-      "id": "u-brute-carnifex-replace",
-      "name": "Replace Brute Swarm creatures with Carnifexes",
+      "id": "u-brute-haruspexes",
+      "name": "Haruspexes",
       "variants": [
-       {"id": "exocrine", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]},
-        {"id": "haruspex", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]},
-        {"id": "malefactor", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
+        {"id": "1", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-malefactors",
+      "name": "Malefactors",
+      "variants": [
+        {"id": "1", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-zoanthropes",
+      "name": "Zoanthropes",
+      "variants": [
+        {"id": "1", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-raveners",
+      "name": "Raveners",
+      "variants": [
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-swap-exocrines",
+      "name": "Exocrines to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-swap-haruspexes",
+      "name": "Haruspexes to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-brute-swap-malefactors",
+      "name": "Malefactors to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
       ]
     },
     {
@@ -397,34 +484,94 @@
       ]
     },
     {
-      "id": "u-dominatrix-creatures",
-      "name": "Dominatrix creatures",
+      "id": "u-dominatrix-exocrines",
+      "name": "Exocrines",
       "variants": [
-        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
-        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
-        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
-        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "raveners", "count": 1}]},
-        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "max": 3, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+        {"id": "1", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]}
       ]
     },
     {
-      "id": "u-hybrid-creatures",
-      "name": "Hybrid Swarm creatures",
+      "id": "u-dominatrix-haruspexes",
+      "name": "Haruspexes",
       "variants": [
-        {"id": "exocrine", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]},
-        {"id": "haruspex", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]},
-        {"id": "malefactor", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]},
-        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
-        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+        {"id": "1", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}
       ]
     },
     {
-      "id": "u-hybrid-carnifex-replace",
-      "name": "Replace Hybrid Swarm creatures with Carnifexes",
+      "id": "u-dominatrix-malefactors",
+      "name": "Malefactors",
       "variants": [
-        {"id": "exocrine", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]},
-        {"id": "haruspex", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]},
-        {"id": "malefactor", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "max": 6, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
+        {"id": "1", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-dominatrix-raveners",
+      "name": "Raveners",
+      "variants": [
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-dominatrix-zoanthropes",
+      "name": "Zoanthropes",
+      "variants": [
+        {"id": "1", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-exocrines",
+      "name": "Exocrines",
+      "variants": [
+        {"id": "1", "label": "Add Exocrines", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "exocrine", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-haruspexes",
+      "name": "Haruspexes",
+      "variants": [
+        {"id": "1", "label": "Add Haruspexes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "haruspex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-malefactors",
+      "name": "Malefactors",
+      "variants": [
+        {"id": "1", "label": "Add Malefactors", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "malefactor", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-zoanthropes",
+      "name": "Zoanthropes",
+      "variants": [
+        {"id": "1", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-raveners",
+      "name": "Raveners",
+      "variants": [
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-swap-exocrines",
+      "name": "Exocrines to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Exocrines with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "exocrine", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-swap-haruspexes",
+      "name": "Haruspexes to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Haruspexes with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "haruspex", "to": "carnifex", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-hybrid-swap-malefactors",
+      "name": "Malefactors to Carnifex",
+      "variants": [
+        {"id": "1", "label": "Replace Malefactors with Carnifex", "pts": 5, "perUnit": true, "effects": [{"op": "replace", "from": "malefactor", "to": "carnifex", "count": 1}]}
       ]
     },
     {
@@ -463,12 +610,18 @@
       ]
     },
     {
-      "id": "u-nest-creatures",
-      "name": "Nest Swarm creatures",
+      "id": "u-nest-zoanthropes",
+      "name": "Zoanthropes",
       "variants": [
-        {"id": "zoanthrope", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]},
-        {"id": "raveners", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
-       ]
+        {"id": "1", "label": "Add Zoanthropes", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "zoanthrope", "count": 1}]}
+      ]
+    },
+    {
+      "id": "u-nest-raveners",
+      "name": "Raveners",
+      "variants": [
+        {"id": "1", "label": "Add Raveners", "pts": 35, "perUnit": true, "effects": [{"op": "add", "unit": "raveners", "count": 1}]}
+      ]
     },
     {
       "id": "u-harassment-gargoyles",

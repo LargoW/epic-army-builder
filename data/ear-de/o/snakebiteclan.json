@@ -1,0 +1,156 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/o/snakebiteclan",
+  "name": "Snakebite-Klan, WAAAGH! Ghazghkull",
+  "faction": "Orks",
+  "version": "1.0.Beta-2",
+  "source": { "file": "lists_de/O/snakebiteclan.json", "version": "1.0.Beta-2", "commit": null },
+  "strategy": 3,
+  "initiative": [{ "formations": ["*"], "value": "3+" }],
+  "units": {
+    "sn-wyrdboy": { "name": "Wyrdboy", "from": "ORK.json", "type": "CH" },
+    "sn-pigdok": { "name": "Pigdok", "from": "ORK.json", "type": "CH" },
+    "sn-boys": { "name": "Boys", "from": "ORK.json", "type": "INF" },
+    "sn-grots": { "name": "Grots", "from": "ORK.json", "type": "INF" },
+    "sn-wildorks": { "name": "Wildorks", "from": "ORK.json", "type": "INF" },
+    "sn-jager": { "name": "Jäger", "from": "ORK.json", "type": "INF" },
+    "sn-schrottkarren": { "name": "Schrottkarren", "from": "ORK.json", "type": "INF" },
+    "sn-lobba": { "name": "Lobba", "from": "ORK.json", "type": "INF" },
+    "sn-fallensteller": { "name": "Fallensteller", "from": "ORK.json", "type": "INF" },
+    "sn-irreboys": { "name": "Irre Boys", "from": "ORK.json", "type": "INF" },
+    "sn-squiggokatapult": { "name": "Squig-Katapult", "from": "ORK.json", "type": "INF" },
+    "sn-schrottpikkup": { "name": "Schrott-Pikk-Up", "from": "ORK.json", "type": "LV" },
+    "sn-squiggofant": { "name": "Squiggofant", "from": "ORK.json", "type": "LV" },
+    "sn-flakkasquiggofant": { "name": "Flakka-Squiggofant", "from": "ORK.json", "type": "LV" },
+    "sn-supalobbasquiggofant": { "name": "Supa-Lobba-Squiggofant", "from": "ORK.json", "type": "LV" },
+    "sn-riesensquiggofant": { "name": "Riesensquiggofant", "from": "ORK.json", "type": "WE" },
+    "sn-orkosaurus": { "name": "Orkeosaurus", "from": "ORK.json", "type": "WE" },
+    "sn-dampfgargant": { "name": "Dampf-Gargant", "from": "ORK.json", "type": "WE" },
+    "sn-waghbikes": { "name": "Waaghbikes", "from": "ORK.json", "type": "INF" },
+    "sn-waghbikeaufklarer": { "name": "Waaghbike-Aufklärer", "from": "ORK.json", "type": "INF" },
+    "sn-mekadread": { "name": "Mek-Speedsta", "from": "ORK.json", "type": "AV" },
+    "sn-deffkopta": { "name": "Deffkopta", "from": "ORK.json", "type": "LV" },
+    "sn-buggy": { "name": "Buggy", "from": "ORK.json", "type": "LV" },
+    "sn-brennabuggy": { "name": "Brennabuggy", "from": "ORK.json", "type": "LV" },
+    "sn-flakpanza": { "name": "Flakpanza", "from": "ORK.json", "type": "AV" },
+    "sn-kampfpanza": { "name": "Kampfpanza", "from": "ORK.json", "type": "AV" },
+    "sn-heizakultkampfpanza": { "name": "Heizakult-Kampfpanza", "from": "ORK.json", "type": "AV" },
+    "sn-heizakultflakpanza": { "name": "Heizakult-Flakpanza", "from": "ORK.json", "type": "AV" },
+    "sn-killabot": { "name": "Killa Bot", "from": "ORK.json", "type": "AV" },
+    "sn-deffdread": { "name": "Deff-Dread", "from": "ORK.json", "type": "AV" },
+    "sn-mekadread2": { "name": "Meka-Dread", "from": "ORK.json", "type": "AV" },
+    "sn-stampfa": { "name": "Stampfa", "from": "ORK.json", "type": "H-AV" },
+    "sn-megatransportpanza": { "name": "Mega Transportpanza", "from": "ORK.json", "type": "WE" },
+    "sn-megawummenpanza": { "name": "Mega Wummenpanza", "from": "ORK.json", "type": "WE" },
+    "sn-gargant": { "name": "Gargant", "from": "ORK.json", "type": "WE" },
+    "sn-groessergargant": { "name": "Großer Gargant", "from": "ORK.json", "type": "WE" },
+    "sn-megagargant": { "name": "Mega-Gargant", "from": "ORK.json", "type": "WE" },
+    "sn-jagdbomma": { "name": "Jagdbomma", "from": "ORK.json", "type": "AC" },
+    "sn-dakkajet": { "name": "Dakkajet", "from": "ORK.json", "type": "AC" },
+    "sn-blitza": { "name": "Blitza-Bomma", "from": "ORK.json", "type": "AC" },
+    "sn-bomba": { "name": "Bomma", "from": "ORK.json", "type": "AC/WE" },
+    "sn-landingsschiff": { "name": "Landungsschiff", "from": "ORK.json", "type": "AC/WE" },
+    "sn-landungsrakete": { "name": "Landungsrakete", "from": "ORK.json", "type": "WE" },
+    "sn-killkreuzer": { "name": "Kill-Kreuzer", "from": "ORK.json", "type": "SC" },
+    "sn-blaekillkreuzer": { "name": "Blood Axes Kill Kroozer", "from": "ORK.json", "type": "SC" },
+    "sn-schlachtkreuzer": { "name": "Schlachtkreuzer", "from": "ORK.json", "type": "SC" },
+    "sn-battlekroozer": { "name": "Blood Axes Battlekroozer", "from": "ORK.json", "type": "SC" },
+    "sn-mehbikerboys": { "name": "Mek des Bad-Ork-Bikerboys", "from": "ORK.json", "type": "INF" },
+    "sn-heizakultoddboy": { "name": "Heizakult-Oddboy", "from": "ORK.json", "type": "CH" },
+    "sn-bigmek": { "name": "Big Mek", "from": "ORK.json", "type": "CH" },
+    "sn-badmoonsoddboy": { "name": "Bad-Moons-Oddboy", "from": "ORK.json", "type": "CH" },
+    "sn-posas": { "name": "Posas", "from": "ORK.json", "type": "INF" },
+    "sn-kanonabatterie": { "name": "Kanonänbatterie", "from": "ORK.json", "type": "INF" }
+  },
+  "sections": [
+    {
+      "id": "snakebite",
+      "name": "Kriegerscharen der Snakebites",
+      "formations": ["sn-mob", "sn-boarboyz"]
+    },
+    {
+      "id": "support",
+      "name": "Unterstützungsmobs der Snakebites",
+      "formations": ["sn-junka", "sn-lobba", "sn-madboyz", "sn-trappas", "sn-wildboyz"]
+    },
+    {
+      "id": "gargant",
+      "name": "Gargants der Snakebites",
+      "formations": ["sn-dampfgargant"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "sn-mob",
+      "name": "Mob der Snakebites",
+      "pts": 200,
+      "tags": ["snakebite"],
+      "units": [{ "unit": "sn-boys", "count": 6 }, { "unit": "sn-grots", "count": 3 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-boarboyz",
+      "name": "Boarboyz-Mob",
+      "pts": 200,
+      "tags": ["snakebite"],
+      "units": [{ "unit": "sn-boys", "count": 8 }, { "unit": "sn-wyrdboy", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-junka",
+      "name": "Junka-Brigade",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "sn-mehbikerboys", "count": 1 }, { "unit": "sn-waghbikes", "count": 5 }, { "unit": "sn-buggy", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-lobba",
+      "name": "Lobba-Mob",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "sn-lobba", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-madboyz",
+      "name": "Madboyz-Mob",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "sn-irreboys", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-trappas",
+      "name": "Trappas-Mob",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "sn-fallensteller", "count": 8 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-wildboyz",
+      "name": "Wildboyz-Mob",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "sn-wildorks", "count": 7 }],
+      "upgrades": []
+    },
+    {
+      "id": "sn-dampfgargant",
+      "name": "Gargant-Mob der Snakebites",
+      "pts": 225,
+      "tags": ["gargant"],
+      "units": [{ "unit": "sn-dampfgargant", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

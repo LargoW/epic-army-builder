@@ -1,0 +1,246 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/iq/deathwatch",
+  "name": "Deathwatch",
+  "faction": "Imperiale Inquisition",
+  "version": "0.6.0",
+  "source": { "file": "lists_de/IQ/deathwatch.json", "version": "0.6.0", "commit": null },
+  "strategy": 5,
+  "initiative": [
+    {
+      "formations": ["dw-oraxenos-task-force", "dw-planetarer-verdichtungszug"],
+      "value": "2+"
+    },
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "dw-oraxenos-grossinquisitor": { "name": "Ordo-Xenos-Großinquisitor", "from": "IQ.json", "type": "INF" },
+    "dw-oraxenos-inquisitor": { "name": "Ordo-Xenos-Inquisitor", "from": "IQ.json", "type": "INF" },
+    "dw-oraxenos-akolythen": { "name": "Akolythen des Ordo Xenos", "from": "IQ.json", "type": "INF" },
+    "dw-oraxenos-arbitrator": { "name": "Arbitratoren", "from": "IQ.json", "type": "INF" },
+    "dw-oraxenos-arbites": { "name": "Arbites-Repressor", "from": "IQ.json", "type": "AV" },
+    "dw-befehlshaber": { "name": "Deathwatch-Befehlshaber", "from": "SM.json", "type": "CH" },
+    "dw-sergeant": { "name": "Deathwatch-Sergeant", "from": "SM.json", "type": "CH" },
+    "dw-ordenspriester": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "dw-scriptor": { "name": "Scriptor", "from": "SM.json", "type": "CH" },
+    "dw-taktische-trupps": { "name": "Deathwatch-Taktische-Trupps", "from": "SM.json", "type": "INF" },
+    "dw-sturmtrupps": { "name": "Deathwatch-Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "dw-schwarze-schilde": { "name": "Deathwatch-Schwarze-Schilde", "from": "SM.json", "type": "INF" },
+    "dw-devastortrupps": { "name": "Deathwatch-Devastortrupps", "from": "SM.json", "type": "INF" },
+    "dw-terminatoren": { "name": "Deathwatch-Terminatoren", "from": "SM.json", "type": "INF" },
+    "dw-cybot": { "name": "Deathwatch-Cybot", "from": "SM.json", "type": "AV" },
+    "dw-trike": { "name": "Deathwatch-Trike", "from": "SM.json", "type": "LV" },
+    "dw-land-speeder-tornado": { "name": "Deathwatch-Land-Speeder-Tornado", "from": "SM.json", "type": "LV" },
+    "dw-Land Raider": { "name": "Deathwatch-Land Raider", "from": "SM.json", "type": "AV" },
+    "dw-corvus": { "name": "Corvus-Blackstar-Landungsschiff", "from": "SM.json", "type": "AC/WE" },
+    "dw-thunderhawk": { "name": "Deathwatch-Thunderhawk-Transporter", "from": "SM.json", "type": "AC/WE" },
+    "dw-dark-hunter": { "name": "Dark-Hunter-Klasse-Zerstörer", "from": "SM.json", "type": "SC" },
+    "dw-vulture": { "name": "Vulture", "from": "IG.json", "type": "AV" },
+    "dw-vendetta": { "name": "Vendetta", "from": "IG.json", "type": "AV" },
+    "dw-pdf-infanterie": { "name": "Infanterie der Planetaren Verteidigungsstreitkräfte", "from": "IG.json", "type": "INF" },
+    "dw-flakteam": { "name": "Flakteam", "from": "IG.json", "type": "INF" },
+    "dw-thudd": { "name": "Thudd-Geschütz", "from": "IG.json", "type": "INF" },
+    "dw-gepanzerter-sentinel": { "name": "Gepanzerter Sentinel", "from": "IG.json", "type": "LV" },
+    "dw-lord-russ": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },
+    "dw-lord-russ-thunderer": { "name": "Leman Russ Thunderer", "from": "IG.json", "type": "AV" },
+    "dw-landtransporter": { "name": "Landtransporter", "from": "IG.json", "type": "LV" }
+  },
+  "sections": [
+    {
+      "id": "special",
+      "name": "Deathwatch-Spezialregeln",
+      "formations": ["dw-officio-assassinorum"]
+    },
+    {
+      "id": "core",
+      "name": "Deathwatch-Verbände",
+      "formations": ["dw-deathwatch-kill-team", "dw-angriff-der-deathwatch", "dw-sturmtrupps", "dw-deathwatch-terminatoren", "dw-dark-hunter"]
+    },
+    {
+      "id": "orxenos",
+      "name": "Ordu-Xenos-Verbände",
+      "description": "Pro Deathwatch-Kernformation darf eine Ordu-Xenos-Verband gewählt werden.",
+      "formations": ["dw-oraxenos-task-force", "dw-oraxenos-akolythen", "dw-planetarer-verdichtungszug", "dw-leman-russ-staffel", "dw-gepanzerte-sentinel-staffel"]
+    },
+    {
+      "id": "fleet",
+      "name": "Deathwatch-Luftlande-Verbände",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für Deathwatch-Luftlande-Verbände ausgegeben werden.",
+      "formations": ["dw-corvus-blackstar", "dw-thunderhawk"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "dw-officio-assassinorum",
+      "name": "0–1 Officio Assassinorum",
+      "pts": 50,
+      "tags": ["special"],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "dw-deathwatch-kill-team",
+      "name": "Deathwatch-Kill-Team",
+      "pts": 150,
+      "tags": ["core"],
+      "units": [
+        { "unit": "dw-sergeant", "count": 1 },
+        { "unit": "dw-taktische-trupps", "count": 3 }
+      ],
+      "upgrades": ["dw-upgrade-specialists", "dw-upgrade-support"]
+    },
+    {
+      "id": "dw-angriff-der-deathwatch",
+      "name": "Angriff der Deathwatch",
+      "pts": 175,
+      "tags": ["core"],
+      "units": [
+        { "unit": "dw-sergeant", "count": 1 },
+        { "unit": "dw-trike", "count": 3 },
+        { "unit": "dw-land-speeder-tornado", "count": 1 }
+      ],
+      "upgrades": ["dw-upgrade-specialists"]
+    },
+    {
+      "id": "dw-sturmtrupps",
+      "name": "Deathwatch-Sturmtrupps",
+      "pts": 175,
+      "tags": ["core"],
+      "units": [
+        { "unit": "dw-sergeant", "count": 1 },
+        { "unit": "dw-sturmtrupps", "count": 3 }
+      ],
+      "upgrades": ["dw-upgrade-specialists"]
+    },
+    {
+      "id": "dw-deathwatch-terminatoren",
+      "name": "Deathwatch-Terminatoren",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [
+        { "unit": "dw-sergeant", "count": 1 },
+        { "unit": "dw-terminatoren", "count": 2 }
+      ],
+      "upgrades": ["dw-upgrade-specialists", "dw-upgrade-support"]
+    },
+    {
+      "id": "dw-dark-hunter",
+      "name": "0–1 Dark-Hunter-Zerstörer",
+      "pts": 75,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "dw-dark-hunter", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "dw-oraxenos-task-force",
+      "name": "0–1 Ordo Xenos Inquisitor Task Force",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [
+        { "unit": "dw-oraxenos-inquisitor", "count": 1 },
+        { "unit": "dw-oraxenos-arbitrator", "count": 9 },
+        { "unit": "dw-oraxenos-arbites", "count": 5 }
+      ],
+      "upgrades": ["dw-upgrade-thunderer"]
+    },
+    {
+      "id": "dw-oraxenos-akolythen",
+      "name": "Akolythen des Ordo Xenos",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [
+        { "unit": "dw-oraxenos-akolythen", "count": 3 },
+        { "unit": "dw-vendetta", "count": 3 }
+      ],
+      "upgrades": ["dw-upgrade-vulture"]
+    },
+    {
+      "id": "dw-planetarer-verdichtungszug",
+      "name": "Planetarer Verteidigungszug",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [
+        { "unit": "dw-pdf-infanterie", "count": 8 },
+        { "unit": "dw-landtransporter", "count": 4 }
+      ],
+      "upgrades": ["dw-upgrade-thudd"]
+    },
+    {
+      "id": "dw-leman-russ-staffel",
+      "name": "Leman-Russ-Staffel",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [{ "unit": "dw-lord-russ", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "dw-gepanzerte-sentinel-staffel",
+      "name": "Gepanzerte Sentinel-Staffel",
+      "pts": 125,
+      "tags": ["support"],
+      "units": [{ "unit": "dw-gepanzerter-sentinel", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "dw-corvus-blackstar",
+      "name": "Corvus-Blackstar-Landungsschiff",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "dw-corvus", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "dw-thunderhawk",
+      "name": "Deathwatch-Thunderhawk-Transporter",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "dw-thunderhawk", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "dw-upgrade-specialists",
+      "name": "Deathwatch-Spezialisten",
+      "variants": [
+        { "id": "1", "label": "Füge 1 Scriptor hinzu", "pts": 25, "effects": [{ "op": "add", "unit": "dw-scriptor", "count": 1 }] },
+        { "id": "2", "label": "Füge 1 Ordenspriester hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "dw-ordenspriester", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "dw-upgrade-support",
+      "name": "Deathwatch-Unterstützung",
+      "variants": [
+        { "id": "1", "label": "Füge 1 Deathwatch-Cybot hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "dw-cybot", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "dw-upgrade-thunderer",
+      "name": "Leman Russ Thunderer",
+      "variants": [
+        { "id": "1", "label": "Füge 3 Leman Russ Thunderer hinzu", "pts": 150, "effects": [{ "op": "add", "unit": "dw-lord-russ-thunderer", "count": 3 }] }
+      ]
+    },
+    {
+      "id": "dw-upgrade-vulture",
+      "name": "Vulture",
+      "variants": [
+        { "id": "1", "label": "Füge bis zu 2 Vultures hinzu", "pts": 100, "effects": [{ "op": "add", "unit": "dw-vulture", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "dw-upgrade-thudd",
+      "name": "Thudd-Geschütz",
+      "variants": [
+        { "id": "1", "label": "Ersetze bis zu 3 Landtransporter durch Thudd-Geschütze", "pts": 25, "effects": [{ "op": "replace", "from": "dw-landtransporter", "to": "dw-thudd", "count": 3 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

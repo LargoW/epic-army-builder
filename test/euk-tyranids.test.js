@@ -5,6 +5,7 @@ import {
   createState, addFormation, setUpgrade, setSize, setChoice, summarize, validate, withProfiles, rosterProfiles,
 } from "../engine/engine.js";
 import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
+import { messageFor } from "../ui/messages.de.js";
 
 // Tyranids (Epic UK quick reference). Expected values come from the PDF, not from the data file.
 const dataUrl = (p) => new URL(`../data/${p}`, import.meta.url);
@@ -189,25 +190,25 @@ test("priced additions: points and units grow with the chosen number", () => {
     ["f-assault-swarm", "u-hive-tyrant", "1", 1, 50, "hive-tyrant", 0],
     ["f-assault-swarm", "u-carnifex", "1", 3, 40, "carnifex", 0],
     ["f-assault-swarm", "u-hierodule", "1", 1, 125, "hierodule", 0],
-    ["f-assault-swarm", "u-raveners-zoanthropes", "raveners", 3, 35, "raveners", 0],
-    ["f-assault-swarm", "u-raveners-zoanthropes", "zoanthrope", 2, 35, "zoanthrope", 0],
-    ["f-assault-swarm", "u-large-creatures", "exocrine", 3, 35, "exocrine", 0],
-    ["f-assault-swarm", "u-large-creatures", "malefactor", 3, 35, "malefactor", 0],
-    ["f-assault-swarm", "u-large-creatures", "haruspex", 3, 35, "haruspex", 0],
+    ["f-assault-swarm", "u-assault-raveners", "1", 3, 35, "raveners", 0],
+    ["f-assault-swarm", "u-assault-zoanthropes", "1", 2, 35, "zoanthrope", 0],
+    ["f-assault-swarm", "u-assault-exocrines", "1", 3, 35, "exocrine", 0],
+    ["f-assault-swarm", "u-assault-malefactors", "1", 3, 35, "malefactor", 0],
+    ["f-assault-swarm", "u-assault-haruspexes", "1", 3, 35, "haruspex", 0],
     ["f-brute-swarm", "u-termagants", "1", 10, 15, "termagants", 0],
     ["f-brute-swarm", "u-biovores", "1", 3, 25, "biovore", 0],
     ["f-brute-swarm", "u-dactylis", "1", 4, 50, "dactylis", 0],
     ["f-brute-swarm", "u-hierodules", "1", 2, 125, "hierodule", 0],
-    ["f-brute-swarm", "u-brute-monsters", "zoanthrope", 5, 35, "zoanthrope", 0],
-    ["f-brute-swarm", "u-brute-monsters", "raveners", 7, 35, "raveners", 0],
+    ["f-brute-swarm", "u-brute-zoanthropes", "1", 5, 35, "zoanthrope", 0],
+    ["f-brute-swarm", "u-brute-raveners", "1", 7, 35, "raveners", 0],
     ["f-dominatrix", "u-termagants", "1", 10, 15, "termagants", 0],
     ["f-dominatrix", "u-hierodules-dominatrix", "1", 4, 125, "hierodule", 0],
     ["f-dominatrix", "u-dactylis-dominatrix", "1", 6, 50, "dactylis", 0],
     ["f-dominatrix", "u-carnifex-dominatrix", "1", 6, 40, "carnifex", 0],
-    ["f-dominatrix", "u-dominatrix-creatures", "haruspex", 3, 35, "haruspex", 0],
+    ["f-dominatrix", "u-dominatrix-haruspexes", "1", 3, 35, "haruspex", 0],
     ["f-hybrid-swarm", "u-termagants", "1", 4, 15, "termagants", 3],
     ["f-hybrid-swarm", "u-biovores", "1", 3, 25, "biovore", 0],
-    ["f-hybrid-swarm", "u-hybrid-creatures", "raveners", 4, 35, "raveners", 0],
+    ["f-hybrid-swarm", "u-hybrid-raveners", "1", 4, 35, "raveners", 0],
     ["f-hybrid-swarm", "u-hybrid-gargoyles", "1", 2, 20, "gargoyles", 0],
     ["f-lictor-swarm", "u-lictors", "1", 3, 35, "lictors", 5],
     ["f-genestealers", "u-genestealers", "1", 3, 25, "genestealers", 6],
@@ -215,8 +216,8 @@ test("priced additions: points and units grow with the chosen number", () => {
     ["f-nest-swarm", "u-biovores-nest", "1", 4, 25, "biovore", 0],
     ["f-nest-swarm", "u-exocrines-nest", "1", 4, 35, "exocrine", 0],
     ["f-nest-swarm", "u-dactylis-nest", "1", 4, 50, "dactylis", 0],
-    ["f-nest-swarm", "u-nest-creatures", "zoanthrope", 2, 35, "zoanthrope", 0],
-    ["f-nest-swarm", "u-nest-creatures", "raveners", 5, 35, "raveners", 0],
+    ["f-nest-swarm", "u-nest-zoanthropes", "1", 2, 35, "zoanthrope", 0],
+    ["f-nest-swarm", "u-nest-raveners", "1", 5, 35, "raveners", 0],
     ["f-subterranean-swarm", "u-subterranean-raveners", "1", 4, 35, "raveners", 2],
   ];
   for (const [formation, upgrade, variant, n, price, unit, inBase] of rows) {
@@ -242,8 +243,6 @@ test("'up to N' limits are doubled for a Big formation, 'any number' has no limi
     ["f-assault-swarm", "u-hive-tyrant", "1", 1],
     ["f-assault-swarm", "u-carnifex", "1", 3],
     ["f-assault-swarm", "u-hierodule", "1", 1],
-    ["f-assault-swarm", "u-raveners-zoanthropes", "raveners", 3],
-    ["f-assault-swarm", "u-large-creatures", "haruspex", 3],
     ["f-brute-swarm", "u-biovores", "1", 3],
     ["f-brute-swarm", "u-dactylis", "1", 4],
     ["f-brute-swarm", "u-hierodules", "1", 2],
@@ -263,7 +262,7 @@ test("'up to N' limits are doubled for a Big formation, 'any number' has no limi
       assert.ok(bigAllowed);
     }
   }
-  const limits = { "f-dominatrix": [["u-hierodules-dominatrix", "1", 4], ["u-dactylis-dominatrix", "1", 6], ["u-carnifex-dominatrix", "1", 6], ["u-dominatrix-creatures", "haruspex", 3]],
+  const limits = { "f-dominatrix": [["u-hierodules-dominatrix", "1", 4], ["u-dactylis-dominatrix", "1", 6], ["u-carnifex-dominatrix", "1", 6]],
     "f-lictor-swarm": [["u-lictors", "1", 3]], "f-genestealers": [["u-genestealers", "1", 3]],
     "f-nest-swarm": [["u-biovores-nest", "1", 4], ["u-exocrines-nest", "1", 4], ["u-dactylis-nest", "1", 4]],
     "f-subterranean-swarm": [["u-subterranean-raveners", "1", 4]] };
@@ -275,7 +274,7 @@ test("'up to N' limits are doubled for a Big formation, 'any number' has no limi
       s = setUpgrade(s, u, upgrade, variant, 0, max + 1);
       assert.deepEqual(codes(s), ["variant-max"], `${formation}/${upgrade}: ${max + 1} is one too many`);
     }
-  for (const [formation, upgrade, variant] of [["f-assault-swarm", "u-termagants", "1"], ["f-brute-swarm", "u-brute-monsters", "exocrine"], ["f-hybrid-swarm", "u-hybrid-creatures", "haruspex"], ["f-nest-swarm", "u-nest-creatures", "raveners"]]) {
+  for (const [formation, upgrade, variant] of [["f-assault-swarm", "u-termagants", "1"], ["f-brute-swarm", "u-brute-exocrines", "1"], ["f-hybrid-swarm", "u-hybrid-haruspexes", "1"], ["f-nest-swarm", "u-nest-raveners", "1"]]) {
     let [s, [u]] = army(formation);
     s = setUpgrade(s, u, upgrade, variant, 0, 25);
     assert.deepEqual(codes(s), [], `${formation}/${upgrade}: any number`);
@@ -299,31 +298,91 @@ test("Assault Swarm: up to six Termagants become Hormagaunts for free", () => {
 
 test("Brute and Hybrid Swarm: swap Exocrines, Haruspexes or Malefactors for Carnifex at 5 points each", () => {
   let [s, [u]] = army("f-brute-swarm");
-  s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 3);
+  s = setUpgrade(s, u, "u-brute-swap-exocrines", "1", 0, 3);
   assert.equal(entry(s).pts, 175 + 15);
   assert.deepEqual(entry(s).roster, { "hive-tyrant": 1, carnifex: 3 });
   assert.deepEqual(codes(s), []);
-  s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 4);
+  s = setUpgrade(s, u, "u-brute-swap-exocrines", "1", 0, 4);
   assert.ok(codes(s).includes("replace-insufficient"), "only three Exocrines in the swarm");
-  s = setUpgrade(s, u, "u-brute-carnifex-replace", "haruspex", 0, 1);
+  s = setUpgrade(s, u, "u-brute-swap-haruspexes", "1", 0, 1);
   assert.ok(codes(s).includes("replace-insufficient"), "the swarm has no Haruspex");
 
   // Exocrines bought as extra creatures can be swapped too (the formation lists creatures before swaps)
   [s, [u]] = army("f-brute-swarm");
-  s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 6);
-  s = setUpgrade(s, u, "u-brute-monsters", "exocrine", 0, 3);
+  s = setUpgrade(s, u, "u-brute-swap-exocrines", "1", 0, 6);
+  s = setUpgrade(s, u, "u-brute-exocrines", "1", 0, 3);
   assert.equal(entry(s).pts, 175 + 105 + 30);
   assert.deepEqual(entry(s).roster, { "hive-tyrant": 1, carnifex: 6 });
   assert.deepEqual(codes(s), []);
-  s = setUpgrade(s, u, "u-brute-carnifex-replace", "exocrine", 0, 7);
-  assert.ok(codes(s).includes("variant-max"), "up to six");
 
   [s, [u]] = army("f-hybrid-swarm");
   s = setChoice(s, u, 2, { malefactor: 2 });
-  s = setUpgrade(s, u, "u-hybrid-carnifex-replace", "malefactor", 0, 2);
+  s = setUpgrade(s, u, "u-hybrid-swap-malefactors", "1", 0, 2);
   assert.equal(entry(s).pts, 175 + 10);
   assert.deepEqual(entry(s).roster, { "tyranid-warriors": 1, termagants: 3, carnifex: 2 });
   assert.deepEqual(codes(s), []);
+});
+
+test("'up to N from the following': the group limit counts all unit types together and can be mixed", () => {
+  // Assault Swarm: up to three Raveners/Zoanthropes and, separately, up to three Exocrines/Malefactors/Haruspexes
+  let [s, [u]] = army("f-assault-swarm");
+  s = setUpgrade(s, u, "u-assault-raveners", "1", 0, 2);
+  s = setUpgrade(s, u, "u-assault-zoanthropes", "1", 0, 1);
+  assert.deepEqual(codes(s), [], "two Raveners and a Zoanthrope");
+  assert.deepEqual(entry(s).roster, { "tyranid-warriors": 2, termagants: 8, raveners: 2, zoanthrope: 1 });
+  assert.equal(entry(s).pts, 225 + 105);
+  s = setUpgrade(s, u, "u-assault-exocrines", "1", 0, 1);
+  s = setUpgrade(s, u, "u-assault-malefactors", "1", 0, 1);
+  s = setUpgrade(s, u, "u-assault-haruspexes", "1", 0, 1);
+  assert.deepEqual(codes(s), [], "the second group is counted on its own");
+  s = setUpgrade(s, u, "u-assault-zoanthropes", "1", 0, 2);
+  assert.deepEqual(codes(s), ["unit-group-max"], "two Raveners and two Zoanthropes");
+  assert.equal(messageFor(validate(data, s)[0]), "Raveners / Zoanthropes: höchstens 3 erlaubt (gewählt: 4).");
+  s = setUpgrade(s, u, "u-assault-zoanthropes", "1", 0, 1);
+  s = setUpgrade(s, u, "u-assault-exocrines", "1", 0, 3);
+  assert.deepEqual(codes(s), ["unit-group-max"], "five Exocrines/Malefactors/Haruspexes");
+  assert.equal(validate(data, s)[0].params.id, "assault-large-creatures");
+
+  // Big: the limit doubles
+  [s, [u]] = army("f-assault-swarm");
+  s = setSize(s, u, "big");
+  s = setUpgrade(s, u, "u-assault-raveners", "1", 0, 4);
+  s = setUpgrade(s, u, "u-assault-zoanthropes", "1", 0, 2);
+  assert.deepEqual(codes(s), [], "Big: six");
+  s = setUpgrade(s, u, "u-assault-zoanthropes", "1", 0, 3);
+  assert.deepEqual(codes(s), ["unit-group-max"], "Big: seven");
+
+  // Dominatrix: up to three of five types, not doubled
+  [s, [u]] = army("f-dominatrix");
+  s = setUpgrade(s, u, "u-dominatrix-exocrines", "1", 0, 1);
+  s = setUpgrade(s, u, "u-dominatrix-raveners", "1", 0, 1);
+  s = setUpgrade(s, u, "u-dominatrix-zoanthropes", "1", 0, 1);
+  assert.deepEqual(codes(s), [], "one of three different types");
+  assert.equal(entry(s).pts, 500 + 105);
+  s = setUpgrade(s, u, "u-dominatrix-haruspexes", "1", 0, 1);
+  assert.deepEqual(codes(s), ["unit-group-max"], "a fourth creature");
+
+  // Brute Swarm: swap up to six, from any of the three types; Big allows twelve
+  [s, [u]] = army("f-brute-swarm");
+  s = setChoice(s, u, 1, { exocrine: 1, haruspex: 1, malefactor: 1 });
+  s = setUpgrade(s, u, "u-brute-haruspexes", "1", 0, 2);
+  s = setUpgrade(s, u, "u-brute-swap-exocrines", "1", 0, 1);
+  s = setUpgrade(s, u, "u-brute-swap-haruspexes", "1", 0, 3);
+  s = setUpgrade(s, u, "u-brute-swap-malefactors", "1", 0, 1);
+  assert.deepEqual(codes(s), [], "five swaps from three types");
+  assert.deepEqual(entry(s).roster, { "hive-tyrant": 1, carnifex: 5 });
+  assert.equal(entry(s).pts, 175 + 70 + 25);
+  s = setUpgrade(s, u, "u-brute-haruspexes", "1", 0, 5);
+  s = setUpgrade(s, u, "u-brute-swap-haruspexes", "1", 0, 6);
+  assert.deepEqual(codes(s), ["unit-group-max"], "eight swaps");
+  assert.equal(messageFor(validate(data, s)[0]), "Carnifex (swapped): höchstens 6 erlaubt (gewählt: 8).");
+
+  // Nest Swarm: any number from Zoanthropes and Raveners, mixed
+  [s, [u]] = army("f-nest-swarm");
+  s = setUpgrade(s, u, "u-nest-zoanthropes", "1", 0, 4);
+  s = setUpgrade(s, u, "u-nest-raveners", "1", 0, 5);
+  assert.deepEqual(codes(s), []);
+  assert.equal(entry(s).pts, 175 + 9 * 35);
 });
 
 test("upgrades are only offered where the list allows them", () => {
@@ -483,9 +542,9 @@ test("export -> link -> import round-trips sizes, choices, per-unit counts and u
   let [s, [brute, assault, nest]] = army("f-brute-swarm", "f-assault-swarm", "f-nest-swarm");
   s = setSize(s, brute, "big");
   s = setChoice(s, brute, 1, { exocrine: 2, haruspex: 2, malefactor: 2 });
-  s = setUpgrade(s, brute, "u-brute-monsters", "zoanthrope", 0, 4);
+  s = setUpgrade(s, brute, "u-brute-zoanthropes", "1", 0, 4);
   s = setUpgrade(s, assault, "u-assault-hormagaunts", "1", 0, 5);
-  s = setUpgrade(s, assault, "u-large-creatures", "malefactor", 0, 2);
+  s = setUpgrade(s, assault, "u-assault-malefactors", "1", 0, 2);
   s = setChoice(s, nest, 1, { termagants: 1, hormagaunts: 3 });
   const { total, entries } = summarize(data, s);
   const exp = buildExport({ army: ARMY, armyVersion: raw.version, name: "Hive Ärger", state: s, entries, total });

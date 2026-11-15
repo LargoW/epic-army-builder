@@ -1,0 +1,2639 @@
+{
+  "army": "ear-de/nid/dagon",
+  "source": {
+    "file": "lists_de/NID/dagon.json",
+    "version": "1.0.beta-4",
+    "commit": null
+  },
+  "specialRules": [
+    {
+      "name": "Synapse",
+      "description": [
+        "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+        "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+      ]
+    },
+    {
+      "name": "Knoten des Schwarmbewusstseins",
+      "description": [
+        "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+      ]
+    },
+    {
+      "name": "Schwarmbewusstsein",
+      "description": [
+        "Alle Tyraniden-Verbände erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive durchführen, sowie +1 auf ihre Sammeltests."
+      ]
+    },
+    {
+      "name": "Schießt auf die Großen!",
+      "description": [
+        "Die Feinde der Tyraniden haben gelernt, dass die Vernichtung der Synapsenkreaturen des Schwarmbewusstseins die Tyranidenschwärme in Unordnung bringt. Deshalb werden bestimmte Einheiten, die normalerweise Infanterie wären, stattdessen als leichte Fahrzeuge eingestuft."
+      ]
+    },
+    {
+      "name": "Extreme Beweglichkeit",
+      "description": [
+        "Tyraniden-AV- und WE-Einheiten legen keine Tests für gefährliches Gelände ab. Tyraniden-LV bewegen sich durch Gelände und erhalten Deckung wie INF; Tyraniden-INF müssen keine Tests für schwieriges Gelände ablegen. Befestigte Stellungen wie Minenfelder, Stacheldraht und besondere Geländestücke wirken normal auf Tyraniden."
+      ]
+    },
+    {
+      "name": "Tunnelgräber",
+      "description": [
+        "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+        "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+        "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+        "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+      ]
+    }
+  ],
+  "units": {
+    "dag-dagon-dominatrix": {
+      "name": "Dagon-Dominatrix",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "notes": "Darf Einheiten sowie unpassierbares oder gefährliches Gelände überschreiten, das niedriger als sein Körper und bis zu 2 cm breit ist.",
+      "crit": "Würfle einen W6: 1: Einheiten im Basekontakt werden bei 6+ von einem MW-Angriff getroffen. 2-5: Erleidet 1 zusätzlichen Schaden. 6: Erleidet W3 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Biotitan-Biokanone",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Bioplasmastrahl",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+/AA5",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bioplasma-Salve",
+          "modes": [
+            {
+              "firepower": "4BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 6",
+          "description": null
+        },
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        }
+      ]
+    },
+    "dag-schwarmtyrant": {
+      "name": "Schwarmtyrant",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4",
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Gift Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmtyrant-shrike": {
+      "name": "Schwarmtyrant-Shrike",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5",
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Gift Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmherrscher": {
+      "name": "Schwarmherrscher",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4",
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Gift Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unterstützte Schwarmbildung",
+          "description": [
+            "Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen befreundeten Verbänden innerhalb von 15 cm zur Einheit (einschliesslich des eigenen Verbands) beim Schwarmen einen Erzeugungspunkt hinzu (siehe Armeeregel <i>Schwarmbildung</i>). Mehrere Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen jeweils einen Punkt hinzu."
+          ]
+        },
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmherrscher-shrike": {
+      "name": "Schwarmherrscher-Shrike",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5",
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Gift Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unterstützte Schwarmbildung",
+          "description": [
+            "Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen befreundeten Verbänden innerhalb von 15 cm zur Einheit (einschliesslich des eigenen Verbands) beim Schwarmen einen Erzeugungspunkt hinzu (siehe Armeeregel <i>Schwarmbildung</i>). Mehrere Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen jeweils einen Punkt hinzu."
+          ]
+        },
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "dag-dagon-oberherrscher": {
+      "name": "Dagon-Oberherrscher",
+      "type": "AV",
+      "speed": "20cm",
+      "armour": "4",
+      "cc": 2,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Knochenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
+    "dag-dagon-oberherrscher-shrike": {
+      "name": "Dagon-Oberherrscher-Shrike",
+      "type": "AV",
+      "speed": "30cm",
+      "armour": "5",
+      "cc": 2,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Knochenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "dag-symbionten": {
+      "name": "Symbionten",
+      "type": "INF",
+      "speed": 20,
+      "armour": 6,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Reiß Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "dag-liktor": {
+      "name": "Liktor",
+      "type": "LV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Fleischhaken",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Scythed Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Erstschlag",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Teleportieren",
+          "description": null
+        }
+      ]
+    },
+    "dag-tyranidenkrieger": {
+      "name": "Tyranidenkrieger",
+      "type": "LV",
+      "speed": "20cm",
+      "armour": "4",
+      "cc": 2,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Todesspucker",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dag-tyranidenkrieger-shrike": {
+      "name": "Tyranidenkrieger-Shrikes",
+      "type": "LV",
+      "speed": "30cm",
+      "armour": "5",
+      "cc": 2,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Todesspucker",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "dag-zoantroph": {
+      "name": "Zoantroph",
+      "type": "LV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Warpstrahl",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dag-alpha-venatoren": {
+      "name": "Alpha-Venatoren",
+      "type": "LV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Grabklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        }
+      ]
+    },
+    "dag-venatoren": {
+      "name": "Venatoren",
+      "type": "INF",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Grabklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ganten",
+          "description": [
+            "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+          ]
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        }
+      ]
+    },
+    "dag-termaganten": {
+      "name": "Termaganten",
+      "type": "INF",
+      "speed": 20,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Fleischbohrer",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ganten",
+          "description": [
+            "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+          ]
+        }
+      ]
+    },
+    "dag-stachelganten": {
+      "name": "Stachelganten",
+      "type": "INF",
+      "speed": 15,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Ganten-Biokanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ganten",
+          "description": [
+            "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+          ]
+        }
+      ]
+    },
+    "dag-hornaganten": {
+      "name": "Hormaganten",
+      "type": "INF",
+      "speed": 20,
+      "cc": 5,
+      "weapons": [
+        {
+          "name": "Reißende Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ganten",
+          "description": [
+            "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        }
+      ]
+    },
+    "dag-gargoyles": {
+      "name": "Gargoyles",
+      "type": "INF",
+      "speed": 30,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Schwarmangriff",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Ganten",
+          "description": [
+            "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+          ]
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "dag-biovore": {
+      "name": "Biovore",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Sporenminen",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "dag-harpyieie": {
+      "name": "Harpyieie",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Stranglethorn Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Sporenkyste",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grasping Krallen",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmdrude": {
+      "name": "Schwarmdrude",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Drool Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tentakliden",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Grasping Krallen",
+          "modes": [
+            {
+              "firepower": "AA5+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "dag-dactylis": {
+      "name": "Dactylis",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Bio-Säure-Giftkapseln",
+          "modes": [
+            {
+              "firepower": "1BP",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-exocrine": {
+      "name": "Exocrine",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Bioplasmakanone",
+          "modes": [
+            {
+              "firepower": "2x MW5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-haruspex": {
+      "name": "Haruspex",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Säure Jets",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-malefaktor": {
+      "name": "Malefaktor",
+      "type": "AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann bis zu vier Einheiten Barbgaunts, Termaganten, Hormaganten, Gargoyles und Venatoren transportieren. Biovores, Pyrovores, Tyranidenkrieger und Zoantrophen zählen jeweils als eineinhalb Einheiten, aufgerundet.",
+      "weapons": [
+        {
+          "name": "Frag Stacheln",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dag-stachel-carnifex": {
+      "name": "Stachel-Carnifex",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Gift Kanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reißende Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-kreischer-killer-carnifex": {
+      "name": "Kreischer-Killer-Carnifex",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Bioplasma",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmwachen": {
+      "name": "Schwarmwachen",
+      "type": "INF",
+      "speed": 10,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Pfählerkanone",
+          "modes": [
+            {
+              "firepower": "AP6+/AT3+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-tervigon": {
+      "name": "Tervigon",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann zwei Einheiten mit der Sonderregel „Ganten“ transportieren.",
+      "weapons": [
+        {
+          "name": "Frag Stacheln",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gantenbeutel",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Augmented Schwarmbildung(+1)",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dag-tyrannofex": {
+      "name": "Tyrannofex",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Rupture Kanone",
+          "modes": [
+            {
+              "firepower": "MW3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-viragon": {
+      "name": "Viragon",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "cc": 3,
+      "ff": 6,
+      "crit": "Viragon wird zerstört.",
+      "weapons": [
+        {
+          "name": "Bioelektrisches Feld",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 4",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        }
+      ]
+    },
+    "dag-trygon-alpha": {
+      "name": "Trygon-Alpha",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Bioelektrisches Feld",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        }
+      ]
+    },
+    "dag-trygon": {
+      "name": "Trygon",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Bioelektrisches Feld",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Tunnelgräber",
+          "description": [
+            "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+            "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+            "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+            "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+          ]
+        }
+      ]
+    },
+    "dag-harridan": {
+      "name": "Harridan",
+      "type": "WE",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann bis zu vier Einheiten Gargoyles transportieren.",
+      "crit": "Harridan wird zerstört.",
+      "weapons": [
+        {
+          "name": "Bio-Kanone",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Tentakliden",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarm-harridan": {
+      "name": "Schwarm-Harridan",
+      "type": "WE",
+      "speed": 35,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "notes": "Kann bis zu 4 Gargoyle-Einheiten transportieren.",
+      "crit": "Harridan wird zerstört.",
+      "weapons": [
+        {
+          "name": "Drool Kanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tentakliden",
+          "modes": [
+            {
+              "firepower": "AA4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dag-stachel-hierodule-alpha": {
+      "name": "Stachel-Hierodule-Alpha",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "crit": "Hierodule Prime wird zerstört.",
+      "weapons": [
+        {
+          "name": "Zwillings-Bio-Kanone",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-stachel-hierodule": {
+      "name": "Stachel-Hierodule",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "crit": "Hierodule wird zerstört.",
+      "weapons": [
+        {
+          "name": "Zwillings-Bio-Kanone",
+          "modes": [
+            {
+              "firepower": "3x AP3+/AT4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-sensen-hierodule-alpha": {
+      "name": "Sensen-Hierodule-Alpha",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "crit": "Scythed Hierodule Prime wird zerstört.",
+      "weapons": [
+        {
+          "name": "Pyro-Säure",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-sensen-hierodule": {
+      "name": "Sensen-Hierodule",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "crit": "Scythed Hierodule wird zerstört.",
+      "weapons": [
+        {
+          "name": "Pyro-Säure",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarmnest": {
+      "name": "Schwarmnest",
+      "type": "WE",
+      "speed": "Immobile",
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "crit": "Hive Nest wird zerstört.",
+      "weapons": [
+        {
+          "name": "Zerfleischerschwärme",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        }
+      ]
+    },
+    "dag-bru": {
+      "name": "Brutnest",
+      "type": "WE",
+      "speed": "Immobile",
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "crit": "Brutnest wird zerstört.",
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Unterstützte Schwarmbildung",
+          "description": [
+            "Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen befreundeten Verbänden innerhalb von 15 cm zur Einheit (einschliesslich des eigenen Verbands) beim Schwarmen einen Erzeugungspunkt hinzu (siehe Armeeregel <i>Schwarmbildung</i>). Mehrere Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen jeweils einen Punkt hinzu."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        }
+      ]
+    },
+    "dag-hydra-dominatrix": {
+      "name": "Hydra-Dominatrix",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "notes": "Kann fünf Einheiten mit der Sonderregel „Ganten“ transportieren. Darf Einheiten sowie unpassierbares oder gefährliches Gelände überschreiten, das niedriger als sein Körper und bis zu 2 cm breit ist.",
+      "crit": "Würfle einen W6: 1: Einheiten im Basekontakt werden bei 6+ von einem MW-Angriff getroffen. 2-5: Erleidet 1 zusätzlichen Schaden. 6: Erleidet W3 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Bioenergieimpuls",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            },
+            {
+              "firepower": "AA5+",
+              "range": 30,
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gantenbeutel",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 6",
+          "description": null
+        },
+        {
+          "name": "Knoten des Schwarmbewusstseins",
+          "description": [
+            "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+          ]
+        },
+        {
+          "name": "Synapse",
+          "description": [
+            "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+            "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+          ]
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Transport",
+          "description": null
+        },
+        {
+          "name": "Augmented Schwarmbildung(+1)",
+          "description": null
+        },
+        {
+          "name": "Unterstützte Schwarmbildung",
+          "description": [
+            "Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen befreundeten Verbänden innerhalb von 15 cm zur Einheit (einschliesslich des eigenen Verbands) beim Schwarmen einen Erzeugungspunkt hinzu (siehe Armeeregel <i>Schwarmbildung</i>). Mehrere Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen jeweils einen Punkt hinzu."
+          ]
+        }
+      ]
+    },
+    "dag-hierophant": {
+      "name": "Hierophant",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "notes": "Kann Einheiten sowie unpassierbares oder gefährliches Gelände überschreiten, sofern es niedriger als der Körper und höchstens 2 cm breit ist.",
+      "crit": "Würfle einen W6: 1: Einheiten im Basekontakt werden bei 6+ von einem MW-Angriff getroffen. 2-5: Erleidet 1 zusätzlichen Schaden. 6: Erleidet W3 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Biotitan-Biokanone",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Hagel aus Stachelspeeren",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Massive Sensenklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 4",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        }
+      ]
+    },
+    "dag-hydraphant": {
+      "name": "Hydraphant",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "cc": 3,
+      "ff": 5,
+      "notes": "Kann Einheiten sowie unpassierbares oder gefährliches Gelände überschreiten, sofern es niedriger als der Körper und höchstens 2 cm breit ist.",
+      "crit": "Würfle einen W6: 1: Einheiten im Basekontakt werden bei 6+ von einem MW-Angriff getroffen. 2-5: Erleidet 1 zusätzlichen Schaden. 6: Erleidet W3 zusätzlichen Schaden.",
+      "weapons": [
+        {
+          "name": "Biotitan-Biokanone",
+          "modes": [
+            {
+              "firepower": "4x AP3+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Bioplasma-Salve",
+          "modes": [
+            {
+              "firepower": "4BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hagel aus Stachelspeeren",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ripper-Tentakel",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Monströse Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 6",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        }
+      ]
+    },
+    "dag-dimachaeron": {
+      "name": "Dimachaeron",
+      "type": "LV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 2,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Große Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        }
+      ]
+    },
+    "dag-landungsspore": {
+      "name": "Landungsspore",
+      "type": "Special",
+      "speed": "n/a",
+      "notes": "Kann einen Verband transportieren, der ausschließlich aus folgenden Einheitentypen besteht: Barbgaunts, Termaganten, Hormaganten, Venatoren, Biovores, Pyrovores, Carnifex beliebigen Typs, Schwarmtyrant, Schwarmherrscher, Dagon-Oberherrscher, Tyranidenkrieger oder Zoantroph. Tyranidenkrieger-Shrikes dürfen nicht enthalten sein. Nach der Landung greift die Myzetische Spore alle gegnerischen Einheiten innerhalb von 15 cm an. Jeder angegriffene gegnerische Verband erhält eine BM, weil er unter Beschuss gerät, sowie eine zusätzliche BM pro Verlust. Anschließend werden die transportierten Verbände innerhalb von 5cm um den Landepunkt der Myzetischen Spore oder innerhalb von 5cm um eine bereits ausgestiegene Einheit desselben Verbands aufgestellt (jedoch höchstens 15 cm vom Landepunkt der Myzetischen Spore entfernt).",
+      "weapons": [
+        {
+          "name": "Tentakel",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Planetfall",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dag-razorfiend": {
+      "name": "Razorfiend",
+      "type": "SC",
+      "notes": "Kann zwei Myzetische Sporen einschließlich ihrer Fracht transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "3BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dag-schwarm-schiff": {
+      "name": "Schwarm-Schiff",
+      "type": "SC",
+      "notes": "Kann drei Myzetische Sporen einschließlich ihrer Fracht transportieren.",
+      "weapons": [
+        {
+          "name": "Orbitalbombardement",
+          "modes": [
+            {
+              "firepower": "6BP, MW"
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verzögerte Ankunft (darf erst ab Runde 2 eintreffen), Transport",
+          "description": null
+        }
+      ]
+    }
+  }
+}

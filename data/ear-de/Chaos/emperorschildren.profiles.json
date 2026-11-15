@@ -561,8 +561,8 @@
         }
       ]
     },
-    "ec-land-schattenbarke": {
-      "name": "Emperor's-Children-Land-Schattenbarke",
+    "ec-Land Raider": {
+      "name": "Emperor's-Children-Land Raider",
       "type": "AV",
       "speed": 25,
       "armour": 4,
