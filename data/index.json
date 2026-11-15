@@ -400,7 +400,8 @@
       "ruleset": "ear-de",
       "faction": "Eldar / Harlekine",
       "name": "Weltenschiff Lugganath",
-      "version": "0.6.2"
+      "version": "0.6.2",
+      "hidden": true
     },
     {
       "id": "ear-de/eldar/mymeara",
@@ -428,14 +429,16 @@
       "ruleset": "ear-de",
       "faction": "Eldar",
       "name": "Weltenschiff Yme-Loc",
-      "version": "Alpha 0.6.1"
+      "version": "Alpha 0.6.1",
+      "hidden": true
     },
     {
       "id": "ear-de/iq/deathwatch",
       "ruleset": "ear-de",
       "faction": "Imperiale Inquisition",
       "name": "Deathwatch",
-      "version": "0.6.0"
+      "version": "0.6.0",
+      "hidden": true
     },
     {
       "id": "ear-de/iq/adeptasororitas",
@@ -456,14 +459,16 @@
       "ruleset": "ear-de",
       "faction": "Necron",
       "name": "Sautekh-Dynastie",
-      "version": "0.5.0"
+      "version": "0.5.0",
+      "hidden": true
     },
     {
       "id": "ear-de/nid/cultofthestarspawn",
       "ruleset": "ear-de",
       "faction": "Tyraniden",
       "name": "Kult der Sternengeborenen",
-      "version": "0.6.5"
+      "version": "0.6.5",
+      "hidden": true
     },
     {
       "id": "ear-de/nid/dagon",
