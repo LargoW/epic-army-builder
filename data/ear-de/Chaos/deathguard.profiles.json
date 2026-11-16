@@ -1517,6 +1517,45 @@
         }
       ]
     },
+    "dg-hoellendrache": {
+      "name": "Höllendrache",
+      "type": "AC",
+      "speed": "Jäger",
+      "armour": 6,
+      "weapons": [
+        {
+          "name": "AC Hades Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AC Kolbengetriebene  Klauen",
+          "modes": [
+            {
+              "firepower": "AA6+",
+              "range": 15,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
     "dg-harbringer": {
       "name": "Harbringer-Bomber (B)",
       "type": "AC/WE",
@@ -1575,38 +1614,6 @@
         {
           "name": "Schadenskapazität 3",
           "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dg-hoellendrache": {
-      "name": "Höllendrache",
-      "type": "AV",
-      "speed": "Jäger (F)",
-      "armour": "6+",      
-      "weapons": [
-        {
-          "name": "AC-Hades Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+/AA6+, FxF",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "AC Kolbengetriebene Klauen",
-          "modes": [
-            {
-              "firepower": "AA6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
         },
         {
           "name": "Unmodifizierter Rettungswurf",

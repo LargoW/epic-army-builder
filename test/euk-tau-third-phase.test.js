@@ -195,6 +195,7 @@ test("upgrades add the listed units for the listed price", () => {
     ["f-fire-warrior-cadre", "u-hammerheads", "3", 100, { "hammerhead-railhead": 2 }],
     ["f-fire-warrior-cadre", "u-hammerheads", "4", 50, { "hammerhead-fusionhead": 1 }],
     ["f-fire-warrior-cadre", "u-hammerheads", "5", 100, { "hammerhead-fusionhead": 2 }],
+    ["f-fire-warrior-cadre", "u-hammerheads", "6", 100, { "hammerhead-railhead": 1, "hammerhead-fusionhead": 1 }], // one or two Railheads or Fusionheads in any mix
     ["f-fire-warrior-cadre", "u-pathfinders", "1", 100, { pathfinder: 2, devilfish: 1 }],
     ["f-fire-warrior-cadre", "u-piranhas", "1", 75, { piranha: 3 }],
     ["f-fire-warrior-cadre", "u-skyray", "1", 100, { skyray: 1 }],
@@ -341,6 +342,19 @@ test("formation names, sections and the upgrades each formation may take match t
   ]);
   assert.equal(raw.strategy, 3);
   assert.deepEqual(raw.initiative, [{ formations: ["f-crisis-cadre", "f-manta"], value: "1+" }, { formations: ["*"], value: "2+" }]);
+});
+
+test("Hammerheads: two Ionheads for 75, or one or two Railheads/Fusionheads at 50 each, also mixed", () => {
+  const prices = raw.upgrades.find((u) => u.id === "u-hammerheads").variants.map((v) => [v.pts, v.effects.reduce((a, e) => a + e.count, 0)]);
+  assert.deepEqual(prices, [[75, 2], [50, 1], [100, 2], [50, 1], [100, 2], [100, 2]]);
+  for (const f of ["f-fire-warrior-cadre", "f-armour-group"]) {
+    let [s, [u]] = army(f);
+    const base = entry(s);
+    s = setUpgrade(s, u, "u-hammerheads", "6");
+    assert.equal(entry(s).pts, base.pts + 100, f);
+    assert.equal(entry(s).roster["hammerhead-railhead"], (base.roster["hammerhead-railhead"] || 0) + 1, f);
+    assert.equal(entry(s).roster["hammerhead-fusionhead"], (base.roster["hammerhead-fusionhead"] || 0) + 1, f);
+  }
 });
 
 test("Crisis Suits cost 50 each or 75 a pair", () => {

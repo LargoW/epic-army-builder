@@ -432,6 +432,12 @@
           "label": "Add two Fusionhead Gunships",
           "pts": 100,
           "effects": [{"op": "add", "unit": "hammerhead-fusionhead", "count": 2}]
+        },
+        {
+          "id": "6",
+          "label": "Add one Railhead and one Fusionhead Gunship",
+          "pts": 100,
+          "effects": [{"op": "add", "unit": "hammerhead-railhead", "count": 1}, {"op": "add", "unit": "hammerhead-fusionhead", "count": 1}]
         }
       ]
     },

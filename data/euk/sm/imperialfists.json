@@ -1,0 +1,375 @@
+{
+  "schema": 0,
+  "ruleset": "epic-uk",
+  "lang": "en",
+  "id": "euk/sm/imperialfists",
+  "name": "Imperial Fists",
+  "faction": "Space Marines",
+  "version": "1.0",
+  "source": {
+    "file": "IMPERIAL FISTS QRF 031125.pdf",
+    "version": "031125"
+  },
+  "strategy": 5,
+  "initiative": [
+    {
+      "formations": [
+        "thunderbolts",
+        "marauders"
+      ],
+      "value": "2+"
+    },
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "1+"
+    }
+  ],
+  "units": {
+    "captain": { "name": "Captain", "from": "SM.json", "type": "CH" },
+    "chaplain": { "name": "Ordenspriester", "from": "SM.json", "type": "CH" },
+    "techmarine": { "name": "Techmarine", "from": "SM.json", "type": "CH" },
+    "assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
+    "tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
+    "devastator": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
+    "scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "scout-sniper": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },
+    "bike": { "name": "Sturm-Bikes", "from": "SM.json", "type": "INF" },
+    "land-speeder": { "name": "Land Speeder", "from": "SM.json", "type": "LV" },
+    "land-speeder-tornado": { "name": "Land Speeder Tornado", "from": "SM.json", "type": "LV" },
+    "land-speeder-typhoon": { "name": "Land Speeder Typhoon", "from": "SM.json", "type": "LV" },
+    "predator-destructor": { "name": "Predator Destructor", "from": "SM.json", "type": "AV" },
+    "predator-annihilator": { "name": "Predator Annihilator", "from": "SM.json", "type": "AV" },
+    "land-raider": { "name": "Land Raider", "from": "SM.json", "type": "AV" },
+    "vindicator": { "name": "Vindicator", "from": "SM.json", "type": "AV" },
+    "hunter": { "name": "Hunter", "from": "SM.json", "type": "AV" },
+    "stalker": { "name": "Stalker", "from": "SM.json", "type": "AV" },
+    "whirlwind": { "name": "Whirlwind", "from": "SM.json", "type": "AV" },
+    "rhino": { "name": "Rhino", "from": "SM.json", "type": "AV" },
+    "razorback": { "name": "Razorback", "from": "SM.json", "type": "AV" },
+    "thunderhawk": { "name": "Thunderhawk", "from": "SM.json", "type": "AC" },
+    "thunderhawk-transporter": { "name": "Thunderhawk-Transporter", "from": "SM.json", "type": "AC" },
+    "stormtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AC" },
+    "strike-cruiser": { "name": "Angriffskreuzer", "from": "SM.json", "type": "AC" },
+    "battle-barge": { "name": "Schlachtbarke", "from": "SM.json", "type": "AC" },
+    "landing-craft": { "name": "Landungsschiff", "from": "SM.json", "type": "AC" },
+    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AC" },
+    "warlord": { "name": "Warlord-Titan", "from": "ImperialAllies.json", "type": "WE" },
+    "reaver": { "name": "Reaver-Titan", "from": "ImperialAllies.json", "type": "WE" },
+    "warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "WE" },
+    "fellblade": { "name": "Fellblade", "from": "SM.json", "type": "WE" },
+    "bastion": { "name": "Bastion", "from": "SM.json", "type": "WE" }
+  },
+  "sections": [
+    {
+      "id": "main",
+      "name": "Imperial Fists Main Detachments",
+      "formations": [
+        "f-ifs-bastion",
+        "f-ifs-devastator",
+        "f-ifs-land-raider",
+        "f-ifs-land-speeder",
+        "f-ifs-predator",
+        "f-ifs-scout",
+        "f-ifs-terminator",
+        "f-ifs-tactical",
+        "f-ifs-vindicator",
+        "f-ifs-whirlwind"
+      ]
+    },
+    {
+      "id": "fleet",
+      "name": "Imperial Fists Aircraft, Spacecraft and Titans",
+      "formations": [
+        "f-ifs-fellblade",
+        "f-ifs-landing-craft",
+        "f-ifs-marauder",
+        "f-ifs-reaver",
+        "f-ifs-stormtalon",
+        "f-ifs-strike-cruiser",
+        "f-ifs-thunderhawk",
+        "f-ifs-thunderhawk-transporter",
+        "f-ifs-warlord"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-ifs-bastion",
+      "name": "Bastion",
+      "pts": 200,
+      "tags": ["main"],
+      "units": [{ "unit": "bastion", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-devastator",
+      "name": "Devastator",
+      "pts": 250,
+      "tags": ["main", "non-scout", "transport"],
+      "units": [{ "unit": "devastator", "count": 4 }],
+      "upgrades": ["u-commander", "u-hunter", "u-anti-air", "u-land-raider-transport", "u-razorbacks", "u-vindicators"]
+    },
+    {
+      "id": "f-ifs-land-raider",
+      "name": "Land Raiders",
+      "pts": 350,
+      "tags": ["main", "non-scout"],
+      "units": [{ "unit": "land-raider", "count": 3 }],
+      "upgrades": ["u-commander", "u-hunter", "u-vindicators", "u-anti-air", "u-extra-land-raider"]
+    },
+    {
+      "id": "f-ifs-land-speeder",
+      "name": "Land Speeders",
+      "pts": 200,
+      "tags": ["main", "non-scout"],
+      "units": [{ "oneOf": ["land-speeder", "land-speeder-tornado"], "count": 5, "mixed": true }],
+      "upgrades": ["u-commander", "u-typhoon"]
+    },
+    {
+      "id": "f-ifs-predator",
+      "name": "Predators",
+      "pts": 225,
+      "tags": ["main", "non-scout"],
+      "units": [{ "oneOf": ["predator-destructor", "predator-annihilator"], "count": 4, "mixed": true }],
+      "upgrades": ["u-annihilators", "u-commander", "u-hunter", "u-vindicators", "u-anti-air"]
+    },
+    {
+      "id": "f-ifs-scout",
+      "name": "Scout",
+      "pts": 150,
+      "tags": ["main", "scouts", "transport"],
+      "units": [{ "unit": "scout", "count": 4 }],
+      "upgrades": ["u-razorbacks", "u-snipers"]
+    },
+    {
+      "id": "f-ifs-terminator",
+      "name": "Terminators",
+      "pts": 350,
+      "tags": ["main", "non-scout"],
+      "units": [{ "unit": "terminator", "count": 4 }],
+      "upgrades": ["u-commander", "u-land-raider-transport"]
+    },
+    {
+      "id": "f-ifs-tactical",
+      "name": "Tactical",
+      "pts": 300,
+      "tags": ["main", "non-scout", "transport"],
+      "units": [{ "unit": "tactical", "count": 6 }],
+      "upgrades": ["u-commander", "u-land-raider-transport", "u-razorbacks", "u-vindicators", "u-hunter"]
+    },
+    {
+      "id": "f-ifs-vindicator",
+      "name": "Vindicators",
+      "pts": 250,
+      "tags": ["main", "non-scout"],
+      "units": [{ "unit": "vindicator", "count": 4 }],
+      "upgrades": ["u-commander", "u-hunter", "u-vindicators", "u-anti-air"]
+    },
+    {
+      "id": "f-ifs-whirlwind",
+      "name": "Whirlwinds",
+      "pts": 300,
+      "tags": ["main", "non-scout"],
+      "units": [{ "unit": "whirlwind", "count": 4 }],
+      "upgrades": ["u-commander", "u-hunter"]
+    },
+    {
+      "id": "f-ifs-fellblade",
+      "name": "Fellblade",
+      "pts": 325,
+      "tags": ["fleet"],
+      "units": [{ "unit": "fellblade", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-landing-craft",
+      "name": "Landing Craft",
+      "pts": 350,
+      "tags": ["fleet"],
+      "units": [{ "unit": "landing-craft", "count": 1 }],
+      "upgrades": ["u-battle-barge"]
+    },
+    {
+      "id": "f-ifs-marauder",
+      "name": "Marauder Bombers",
+      "pts": 250,
+      "tags": ["fleet"],
+      "units": [{ "unit": "marauder", "count": 2 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-reaver",
+      "name": "Reaver",
+      "pts": 650,
+      "tags": ["fleet"],
+      "units": [{ "unit": "reaver", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-stormtalon",
+      "name": "Stormtalons",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "stormtalon", "count": 2 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-strike-cruiser",
+      "name": "Strike Cruiser",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "strike-cruiser", "count": 1 }],
+      "upgrades": ["u-battle-barge"]
+    },
+    {
+      "id": "f-ifs-thunderhawk",
+      "name": "Thunderhawk",
+      "pts": 250,
+      "tags": ["fleet"],
+      "units": [{ "unit": "thunderhawk", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-thunderhawk-transporter",
+      "name": "Thunderhawk Transporter",
+      "pts": 175,
+      "tags": ["fleet"],
+      "units": [{ "unit": "thunderhawk-transporter", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-ifs-warlord",
+      "name": "Warlord Class (Deathstrike)",
+      "pts": 850,
+      "tags": ["fleet"],
+      "units": [{ "unit": "warlord", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-annihilators",
+      "name": "Annihilators",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace 2 Predator Destructors with 2 Predator Annihilators",
+          "pts": 25,
+          "effects": [{ "op": "replace", "from": "predator-destructor", "to": "predator-annihilator", "count": 2 }]
+        },
+        {
+          "id": "2",
+          "label": "Replace 4 Predator Destructors with 4 Predator Annihilators",
+          "pts": 50,
+          "effects": [{ "op": "replace", "from": "predator-destructor", "to": "predator-annihilator", "count": 4 }]
+        }
+      ]
+    },
+    {
+      "id": "u-anti-air",
+      "name": "Anti-Air",
+      "variants": [
+        { "id": "hunter", "label": "1 Hunter", "pts": 75, "effects": [{ "op": "add", "unit": "hunter", "count": 1 }] },
+        { "id": "stalker", "label": "1 Stalker", "pts": 50, "effects": [{ "op": "add", "unit": "stalker", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-battle-barge",
+      "name": "Battle Barge",
+      "variants": [
+        { "id": "1", "label": "Replace Strike Cruiser with Battle Barge", "pts": 150, "effects": [{ "op": "replace", "from": "strike-cruiser", "to": "battle-barge", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-commander",
+      "name": "Commander",
+      "variants": [
+        { "id": "captain", "label": "Captain", "pts": 25, "effects": [{ "op": "add", "unit": "captain", "count": 1 }] },
+        { "id": "chaplain", "label": "Chaplain", "pts": 50, "effects": [{ "op": "add", "unit": "chaplain", "count": 1 }] },
+        { "id": "supreme", "label": "0-1 Supreme Commander", "pts": 75, "perArmy": 1, "effects": [{ "op": "add", "unit": "captain", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-extra-land-raider",
+      "name": "Additional Land Raider",
+      "variants": [
+        { "id": "1", "label": "1 Additional Land Raider", "pts": 75, "effects": [{ "op": "add", "unit": "land-raider", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-hunter",
+      "name": "Hunter",
+      "variants": [
+        { "id": "1", "label": "1 Hunter", "pts": 75, "effects": [{ "op": "add", "unit": "hunter", "count": 1 }] },
+        { "id": "2", "label": "2 Hunters", "pts": 125, "effects": [{ "op": "add", "unit": "hunter", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "u-land-raider-transport",
+      "name": "Land Raider Transport",
+      "variants": [
+        { "id": "1", "label": "1 Land Raider", "pts": 50, "effects": [{ "op": "add", "unit": "land-raider", "count": 1 }] },
+        { "id": "2", "label": "2 Land Raiders", "pts": 100, "effects": [{ "op": "add", "unit": "land-raider", "count": 2 }] },
+        { "id": "3", "label": "3 Land Raiders", "pts": 150, "effects": [{ "op": "add", "unit": "land-raider", "count": 3 }] },
+        { "id": "4", "label": "4 Land Raiders", "pts": 200, "effects": [{ "op": "add", "unit": "land-raider", "count": 4 }] }
+      ]
+    },
+    {
+      "id": "u-razorbacks",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "1 Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "razorback", "count": 1 }] },
+        { "id": "2", "label": "2 Razorbacks", "pts": 50, "effects": [{ "op": "add", "unit": "razorback", "count": 2 }] },
+        { "id": "3", "label": "3 Razorbacks", "pts": 75, "effects": [{ "op": "add", "unit": "razorback", "count": 3 }] },
+        { "id": "4", "label": "4 Razorbacks", "pts": 100, "effects": [{ "op": "add", "unit": "razorback", "count": 4 }] }
+      ]
+    },
+    {
+      "id": "u-snipers",
+      "name": "Snipers",
+      "variants": [
+        { "id": "1", "label": "All Scouts gain the Sniper ability", "pts": 25, "effects": [{ "op": "replace", "from": "scout", "to": "scout-sniper", "count": 4 }] }
+      ]
+    },
+    {
+      "id": "u-typhoon",
+      "name": "Typhoon",
+      "variants": [
+        { "id": "1", "label": "Replace 1 Land Speeder with Land Speeder Typhoon", "pts": 10, "effects": [{ "op": "replace", "from": "land-speeder", "to": "land-speeder-typhoon", "count": 1 }] },
+        { "id": "2", "label": "Replace 2 Land Speeders with Land Speeder Typhoons", "pts": 20, "effects": [{ "op": "replace", "from": "land-speeder", "to": "land-speeder-typhoon", "count": 2 }] },
+        { "id": "3", "label": "Replace 3 Land Speeders with Land Speeder Typhoons", "pts": 30, "effects": [{ "op": "replace", "from": "land-speeder", "to": "land-speeder-typhoon", "count": 3 }] },
+        { "id": "4", "label": "Replace 4 Land Speeders with Land Speeder Typhoons", "pts": 40, "effects": [{ "op": "replace", "from": "land-speeder", "to": "land-speeder-typhoon", "count": 4 }] },
+        { "id": "5", "label": "Replace 5 Land Speeders with Land Speeder Typhoons", "pts": 50, "effects": [{ "op": "replace", "from": "land-speeder", "to": "land-speeder-typhoon", "count": 5 }] }
+      ]
+    },
+    {
+      "id": "u-vindicators",
+      "name": "Vindicators",
+      "variants": [
+        { "id": "1", "label": "1 Vindicator", "pts": 50, "effects": [{ "op": "add", "unit": "vindicator", "count": 1 }] },
+        { "id": "2", "label": "2 Vindicators", "pts": 100, "effects": [{ "op": "add", "unit": "vindicator", "count": 2 }] }
+      ]
+    }
+  ],
+  "autoTransport": [
+    {
+      "id": "rhino",
+      "vehicle": "rhino",
+      "capacity": 2,
+      "appliesTo": ["tag:transport"],
+      "carries": { "type": "INF", "excludeUnits": ["terminator"], "excludeRules": ["Beritten", "Sprungmodule"] },
+      "others": { "razorback": 1, "land-raider": 2 },
+      "rule": "Rhinos are included in the points: the minimum number needed is taken to transport the formation after all upgrades have been added. Razorbacks and Land Raiders transport first, the rest rides in Rhinos."
+    }
+  ],
+  "formationConstraints": [
+    { "id": "scouts-per-detachment", "from": ["tag:scouts"], "forEach": ["tag:non-scout"], "max": 1 },
+    { "id": "fleet-share", "from": ["tag:fleet"], "maxShare": [1, 3] }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

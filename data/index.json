@@ -526,6 +526,55 @@
       "name": "Tyranids",
       "version": "1.0"
     },
+    {
+      "id": "euk/sm/blacktemplars",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Black Templars",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/bloodangels",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Blood Angels",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/codexastartes",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Codex Astartes",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/darkangels",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Dark Angels",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/imperialfists",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Imperial Fists",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/spacewolves",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "Space Wolves",
+      "version": "1.0"
+    },
+    {
+      "id": "euk/sm/whitescars",
+      "ruleset": "euk",
+      "faction": "Space Marines",
+      "name": "White Scars",
+      "version": "1.0"
+    },
 	{
       "id": "netea/squats/squats",
       "ruleset": "netea",
