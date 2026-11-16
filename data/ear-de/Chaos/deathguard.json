@@ -40,7 +40,7 @@
     "dg-groesser-verpester": { "name": "Großer Verpester", "from": "daemons.json", "type": "AV" },
     "dg-seuchenhund": { "name": "Seuchenhund", "from": "traitortitanlegions.json", "type": "AV" },
     "dg-abscheulicher-titan": { "name": "Abscheulicher Titan", "from": "traitortitanlegions.json", "type": "AV" },
-    "dg-hoellenklinge": { "name": "Höllenklinge", "from": "chaosnavy.json", "type": "AV" },
+    "dg-hoellendrache": { "name": "Höllendrache", "from": "chaosnavy.json", "type": "AV" },
     "dg-harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
     "dg-plagueship": { "name": "Plagueship", "from": "chaosnavy.json", "type": "AV" }
   },
@@ -75,7 +75,7 @@
       "formations": [
         "fdg-seuchenhund",
         "fdg-repugnant",
-        "fdg-hoellen-drachen",
+        "fdg-hoellendrache",
         "fdg-harbringer",
         "fdg-plagueship"
       ]
@@ -206,12 +206,12 @@
       "upgrades": []
     },
     {
-      "id": "fdg-hoellenklinge",
-      "name": "Höllenklinge",
+      "id": "fdg-hoellendrache",
+      "name": "Höllendrache",
       "pts": 225,
       "tags": ["titans-navy"],
       "units": [
-        { "unit": "dg-hoellenklinge", "count": 2 }
+        { "unit": "dg-hoellendrache", "count": 2 }
       ],
       "upgrades": []
     },
