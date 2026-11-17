@@ -27,7 +27,7 @@
         }
     ],
     "pools": [
-        { "id": "lesser", "name": "Lesser Daemon Pool", "paid": ["f-lesser-daemon-pool"], "free": [{ "upgrade": "u-daemonic-pact", "label": "Daemonic Pact" }] },
+        { "id": "lesser", "name": "Lesser Daemon Pool", "paid": ["f-lesser-daemon-pool"], "free": [{ "upgrade": "u-daemonic-pact", "label": "Daemonic Pact" }, { "unit": "cabal-of-sorcerers", "label": "Daemonic Pact (Cabal)" }] },
         { "id": "greater", "name": "Greater Daemon Pool", "paid": ["f-greater-daemon-pool"], "free": [] }
     ],
     "units": {
@@ -220,8 +220,7 @@
                 {
                     "unit": "cabal-of-sorcerers",
                     "count": 1
-                },
-                {
+                },{
                     "unit": "thousand-sons",
                     "count": 5
                 }
