@@ -247,7 +247,7 @@
     },
     {
       "id": "fdg-pool-groesse-daemone",
-      "name": "Pool großer Dämonen",
+      "name": "Pool große Dämonen",
       "pts": 50,
       "tags": ["daemon-pool"],
       "units": [
@@ -261,7 +261,7 @@
       "id": "dg-upgrade-commander",
       "name": "0–1 Oberbefehlshaber",
       "variants": [
-        { "id": "1", "label": "Ersetze den Chaos-Lord durch einen Klanlord", "pts": 50, "effects": [{ "op": "add", "unit": "dg-kriegsherr", "count": 1 }] },
+        { "id": "1", "label": "Ersetze den Chaos-Lord durch einen Kriegsherr", "pts": 50, "effects": [{ "op": "add", "unit": "dg-kriegsherr", "count": 1 }] },
         { "id": "2", "label": "Ersetze den Chaos-Lord und seine Einheit durch einen Dämonenprinz des Nurgle", "pts": 100, "effects": [{ "op": "add", "unit": "dg-daemonenprinz", "count": 1 }] }
       ]
     },

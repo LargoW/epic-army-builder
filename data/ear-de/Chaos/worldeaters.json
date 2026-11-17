@@ -9,7 +9,7 @@
   "source": { "file": "lists_de/Chaos/worldeaters.json", "version": "1.0.Beta", "commit": null },
   "strategy": 4,
   "initiative": [
-    { "formations": ["tag:we-core"], "value": "1+" },
+    { "formations": ["tag:we-core", "tag:we-elite"], "value": "1+" },
     { "formations": ["*"], "value": "2+" }
   ],
   "units": {
@@ -18,6 +18,7 @@
     "chaoschampion": { "name": "Chaoschampion", "from": "CSM.json", "type": "CH" },
     "ikonentraeger": { "name": "Ikonenträger", "from": "CSM.json", "type": "CH" },
     "we-daemonenprinz": { "name": "Dämonenprinz des Khorne", "from": "CSM.json", "type": "AV" },
+    "we-verdammnisblaster": { "name": "Verdammnisblaster", "from": "../lists/darkmechanicus.json", "type": "AV" },
     "chaos-sturmmarine": { "name": "Chaos-Sturmmarines", "from": "CSM.json", "type": "INF" },
     "chaos-space-marine": { "name": "Chaos Space Marines", "from": "CSM.json", "type": "INF" },
     "skullseeker-terminator": { "name": "Schädeljäger-Terminatoren", "from": "CSM.json", "type": "AV" },
@@ -64,7 +65,7 @@
       "id": "support",
       "name": "Unterstützungsverbände der World Eaters",
       "description": "Pro Kernverband dürfen zwei Unterstützungsverbände aufgestellt werden.",
-      "formations": ["we-doomblasters", "we-khorne-geiselmachte", "we-kanonen-des-khorne", "we-daeemonische-sturmmaschine"]
+      "formations": ["we-verdammnisblasters", "we-khorne-geiselmachte", "we-kanonen-des-khorne", "we-daeemonische-sturmmaschine"]
     },
     {
       "id": "war-machines",
@@ -91,7 +92,7 @@
         { "unit": "chaos-space-marine", "count": 6 },
         { "unit": "we-rhino", "count": 3 }
       ],
-      "upgrades": ["we-upgrade-commander", "we-upgrade-berzerker-transporter", "we-upgrade-skullseeker-transporter", "we-upgrade-daeemonpakt", "we-upgrade-stalker", "we-upgrade-champion", "we-upgrade-ikonentraeger", "we-upgrade-vindicators"]
+      "upgrades": ["we-upgrade-commander", "we-upgrade-berzerker-transporter", "we-upgrade-daeemonpakt", "we-upgrade-stalker", "we-upgrade-champion", "we-upgrade-ikonentraeger", "we-upgrade-vindicators", "we-upgrade-berzerker-cybot"]
     },
     {
       "id": "we-skullseeker-terminatoren",
@@ -102,7 +103,7 @@
         { "unit": "we-kriegsherr", "count": 1 },
         { "unit": "skullseeker-terminator", "count": 4 }
       ],
-      "upgrades": ["we-upgrade-commander", "we-upgrade-champion", "we-upgrade-ikonentraeger", "we-upgrade-skullseeker-transporter"]
+      "upgrades": ["we-upgrade-commander", "we-upgrade-champion", "we-upgrade-ikonentraeger", "we-upgrade-skullseeker-transporter", "we-upgrade-mutilator"]
     },
     {
       "id": "we-destruktoren",
@@ -123,7 +124,7 @@
         { "unit": "we-kriegsherr", "count": 1 },
         { "unit": "khorne-sturmbike", "count": 6 }
       ],
-      "upgrades": ["we-upgrade-champion", "we-upgrade-ikonentraeger"]
+      "upgrades": ["we-upgrade-commander", "we-upgrade-champion", "we-upgrade-ikonentraeger"]
     },
     {
       "id": "we-juggernaut-reiter",
@@ -134,7 +135,7 @@
         { "unit": "we-kriegsherr", "count": 1 },
         { "unit": "juggernaut", "count": 6 }
       ],
-      "upgrades": ["we-upgrade-champion", "we-upgrade-ikonentraeger"]
+      "upgrades": ["we-upgrade-commander", "we-upgrade-champion", "we-upgrade-ikonentraeger"]
     },
     {
       "id": "we-chaos-space-marine",
@@ -145,15 +146,15 @@
         { "unit": "chaos-space-marine", "count": 6 },
         { "unit": "we-rhino", "count": 3 }
       ],
-      "upgrades": ["we-upgrade-vindicators", "we-upgrade-stalker"]
+      "upgrades": ["we-upgrade-vindicators", "we-upgrade-stalker", "we-upgrade-land-raider"]
     },
     {
-      "id": "we-doomblasters",
-      "name": "Doomblasters",
+      "id": "we-verdammnisblaster",
+      "name": "Verdammnisblaster",
       "pts": 200,
       "tags": ["support"],
       "units": [
-        { "unit": "we-daemonenprinz", "count": 3 }
+        { "unit": "we-erdammnisblaster", "count": 3 }
       ],
       "upgrades": []
     },
@@ -259,7 +260,7 @@
     },
     {
       "id": "we-pool-groesse-daemo",
-      "name": "Pool großer Dämonen",
+      "name": "Pool große Dämonen",
       "pts": 50,
       "tags": ["daemon-pool"],
       "units": [
@@ -273,8 +274,22 @@
       "id": "we-upgrade-commander",
       "name": "0–1 Oberbefehlshaber",
       "variants": [
-        { "id": "1", "label": "Ersetze den Chaos-Lord durch einen Klanlord", "pts": 50, "effects": [{ "op": "add", "unit": "we-kriegsherr", "count": 1 }] },
+        { "id": "1", "label": "Ersetze den Chaos-Lord durch einen Kriegsherr", "pts": 50, "effects": [{ "op": "add", "unit": "we-kriegsherr", "count": 1 }] },
         { "id": "2", "label": "Ersetze den Chaos-Lord und seine Einheit durch einen Dämonenprinz des Khorne", "pts": 100, "effects": [{ "op": "add", "unit": "we-daemonenprinz", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "we-upgrade-berzerker-cybot",
+      "name": "Berzerker Cybot",
+      "variants": [
+        { "id": "1", "label": "Füge 2 Berzerker Cybots hinzu", "pts": 75, "effects": [{ "op": "add", "unit": "berserker-cybot", "count": 2 }] }
+      ]
+    },
+    {
+      "id": "we-upgrade-land-raider",
+      "name": "Land Raider",
+      "variants": [
+        { "id": "1", "label": "Ersetze 3 World Eaters Rhinos durch 3 Chaos Land Raiders", "pts": 125, "effects": [{ "op": "replace", "from": "we-rhino", "to": "chaos-land-raider", "count": 3 }] }
       ]
     },
     {

@@ -267,7 +267,7 @@
     },
     {
       "id": "wb-pool-groesse-daemo",
-      "name": "Pool großer Dämonen",
+      "name": "Pool große Dämonen",
       "pts": 50,
       "tags": ["daemon-pool"],
       "units": [

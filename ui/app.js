@@ -265,15 +265,41 @@ function renderOverview(entries, violations, total) {
         return v ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
       })
       .filter(Boolean);
+    
+    // Fetch special rules for this formation
+    const formationRules = data.specialRules.filter(r => r.formation === def.id);
+    const globalRules = data.specialRules.filter(r => !r.formation);
+
     return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
-            ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-            
-          <ul>${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
+      <div class="ov-head">      
+        <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span>
+        <span class="pts">${calc.pts} Pkt.</span>
+      </div>
+      ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
+      
+      <ul>
+        ${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}
+      </ul>
+      
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
+      
+      <!-- New: Special rules for this formation -->
+      <div class="special-rules">
+        <strong>Sonstige Regeln:</strong>
+        ${text(formationRules.map(r => r.text)).trim() || "Keine"}
+      </div>
+
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;
   }).join("");
+
+  // New: Display global special rules at the bottom
+  const $globalRules = $(`#global-rules`);
+  $globalRules.innerHTML = `
+    <h3>Globale Spezialregeln</h3>
+    ${text(globalRules.map(r => r.text)).trim() || "Keine"}
+  `;
+
   return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
@@ -281,7 +307,7 @@ function armyButtons() {
   return index.rulesets.filter((r) => !r.hidden && !r.disabled).map((r) => {
     const byFaction = {};
     index.armies.filter((a) => a.ruleset === r.id && !a.hidden && !a.disabled).forEach((a) => (byFaction[a.faction] ||= []).push(a));
-    return `<section class="picker-section"><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
+    return `<section class="picker-section" data-search><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
       `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
   }).join("");
 }
@@ -292,6 +318,7 @@ function renderStart() {
   $("#army-sub").textContent = "Tippe hier, um eine Armee zu wählen";
   document.body.classList.add("no-list");
   app.innerHTML = `<div class="start"><h2>Willkommen!</h2><p>Wähle eine Armee, um eine neue Liste zu beginnen. Die Armee kannst du später jederzeit oben über den Titel wechseln.</p>
+    <input class="sheet-search" type="search" data-act="search" placeholder="Armee suchen …" aria-label="Armee suchen">
     ${armyButtons()}
     <section class="picker-section"><h3>Liste erhalten?</h3><button class="pick" type="button" data-act="import"><span class="name">Liste importieren</span></button></section></div>`;
 }
@@ -574,7 +601,13 @@ document.addEventListener("click", async (e) => {
 document.addEventListener("input", (e) => {
   if (e.target.dataset.act !== "search") return;
   const q = e.target.value.trim().toLowerCase();
-  dlg.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { b.hidden = q && !b.textContent.toLowerCase().includes(q); });
+  const matches = (b) => !q || b.textContent.toLowerCase().includes(q);
+  document.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { b.hidden = !matches(b); });
+  document.querySelectorAll('.picker-section[data-search]').forEach((s) => {
+    let anyVisible = false;
+    s.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { if (!b.hidden) anyVisible = true; });
+    s.hidden = !!q && !anyVisible;
+  });
 });
 
 document.addEventListener("change", (e) => {

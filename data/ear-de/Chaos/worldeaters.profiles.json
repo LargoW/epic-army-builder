@@ -276,6 +276,38 @@
         }
       ]
     },
+    "we-verdammnisblaster": {
+      "name": "Verdammnisblaster",
+      "type": "AV",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Verdammnisblaster",
+          "modes": []
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Daemon Engine (Khorne)",
+          "description": null
+        }
+      ]
+    },
     "chaos-sturmmarine": {
       "name": "Chaos-Sturmmarines",
       "type": "INF",

@@ -49,6 +49,7 @@ body {
 .list-row .sub { display: block; font-size: .8rem; color: var(--mut); font-weight: 400; }
 .sheet-search { width: calc(100% - 28px); margin: 10px 14px 0; padding: 10px 12px; font: inherit; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: inherit; }
 .start { padding: 4px 0 24px; }
+.start .sheet-search { margin: 0 0 12px; width: 100%; }
 .start h2 { margin: 8px 0 4px; }
 .start > p { color: var(--mut); margin: 0 0 8px; }
 .start .picker-section { padding: 10px 0 0; }
@@ -140,6 +141,7 @@ dialog::backdrop { background: rgba(0, 0, 0, .55); }
 .picker-section h3 { margin: 8px 0 2px; }
 .picker-section p { font-size: .85rem; color: var(--mut); margin: 0 0 6px; }
 .pick { display: flex; width: 100%; gap: 10px; align-items: baseline; text-align: left; margin-bottom: 8px; padding: 10px 12px; min-height: 52px; }
+.pick[hidden] { display: none; }
 .pick .name { flex: 1; font-weight: 600; }
 .sheet-pad { padding: 10px 14px 16px; display: grid; gap: 8px; }
 .order-row { display: flex; align-items: center; gap: 6px; border-top: 1px solid var(--line); padding: 4px 0; }

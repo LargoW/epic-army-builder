@@ -434,7 +434,7 @@
     },
     {
       "id": "di-pool-groesser-damon",
-      "name": "Pool großer Dämonen",
+      "name": "Pool große Dämonen",
       "pts": 75,
       "tags": [
         "daemon-pool"

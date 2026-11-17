@@ -498,7 +498,7 @@
       "name": "Vanaheim Air Cavalry",
       "version": "090625"
     },
-	{
+    {
       "id": "euk/chaos/ts",
       "ruleset": "euk",
       "faction": "Chaos",
@@ -575,7 +575,7 @@
       "name": "White Scars",
       "version": "1.0"
     },
-	{
+    {
       "id": "netea/squats/squats",
       "ruleset": "netea",
       "faction": "Squats",
