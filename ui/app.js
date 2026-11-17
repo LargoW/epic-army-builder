@@ -258,22 +258,43 @@ function renderOverview(entries, violations, total) {
     const def = formationById[entry.formation];
     const calc = entries[i];
     const probs = problemTexts(problemsFor(violations, entry.uid));
+    
+    // Safely access data and its specialRules
+    const dataWithSpecialRules = data && data.specialRules ? data.specialRules : [];
+
     const ups = entry.upgrades
       .map((sel) => {
         const u = upgradeById[sel.upgrade];
         const v = u && u.variants.find((x) => x.id === sel.variant);
-        return v ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
+        return v 
+          ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}`
+          : null;
       })
       .filter(Boolean);
+
+    // Filter special rules for this formation
+    const formationRules = dataWithSpecialRules.filter(r => r.formation === def.id);
+    const globalRules = dataWithSpecialRules.filter(r => !r.formation);
+
     return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
-            ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-            
-          <ul>${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
+      <div class="ov-head">      
+        <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span>
+        <span class="pts">${calc.pts} Pkt.</span>
+      </div>
+      ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
+      
+      <ul>
+        ${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}
+      </ul>
+      
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
+      
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;
   }).join("");
+
+
+
   return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
