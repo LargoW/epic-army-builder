@@ -265,41 +265,15 @@ function renderOverview(entries, violations, total) {
         return v ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}` : null;
       })
       .filter(Boolean);
-    
-    // Fetch special rules for this formation
-    const formationRules = data.specialRules.filter(r => r.formation === def.id);
-    const globalRules = data.specialRules.filter(r => !r.formation);
-
     return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head">      
-        <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span>
-        <span class="pts">${calc.pts} Pkt.</span>
-      </div>
-      ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-      
-      <ul>
-        ${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}
-      </ul>
-      
+      <div class="ov-head">      <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span></div>
+            ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
+            
+          <ul>${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}</ul>
       ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
-      
-      <!-- New: Special rules for this formation -->
-      <div class="special-rules">
-        <strong>Sonstige Regeln:</strong>
-        ${text(formationRules.map(r => r.text)).trim() || "Keine"}
-      </div>
-
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;
   }).join("");
-
-  // New: Display global special rules at the bottom
-  const $globalRules = $(`#global-rules`);
-  $globalRules.innerHTML = `
-    <h3>Globale Spezialregeln</h3>
-    ${text(globalRules.map(r => r.text)).trim() || "Keine"}
-  `;
-
   return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
