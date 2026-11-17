@@ -27,7 +27,14 @@
             "value": "2+"
         }
     ],
+    "pools": [
+        { "id": "lesser", "name": "Pool niedere Dämonen", "paid": ["we-pool-niedere-daemo"], "free": [{ "upgrade": "we-upgrade-daeemonpakt", "label": "Dämonenpakt" }] },
+        { "id": "greater", "name": "Pool großer Dämonen", "paid": ["we-pool-groesse-daemo"], "free": [] }
+    ],
     "units": {
+        "we-daemonenpakt": {
+            "name": "Dämonenpakt"
+        },
         "we-kriegsherr": {
             "name": "Kriegsherr",
             "from": "CSM.json",
@@ -726,7 +733,7 @@
                     "effects": [
                         {
                             "op": "add",
-                            "unit": "we-daemonenprinz",
+                            "unit": "we-daemonenpakt",
                             "count": 1
                         }
                     ]

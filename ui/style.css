@@ -123,6 +123,12 @@ input[type=number] { width: 76px; }
 .ov li .st { flex: 1 0 100%; padding-left: calc(2.2em + 8px); color: var(--mut); font-size: .82rem; }
 .ov .ups { margin-top: 8px; font-size: .88rem; color: var(--mut); }
 .ov .ups b { color: var(--fg); }
+.pools { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 12px 14px; margin: 12px 0; box-shadow: 0 8px 24px var(--shadow); }
+.pools h3 { margin: 0 0 6px; font-size: 1rem; }
+.pool { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; padding: 5px 0; border-top: 1px solid var(--line); }
+.pools h3 + .pool { border-top: 0; }
+.pool .pn { font-variant-numeric: tabular-nums; }
+.pool small { flex: 1 0 100%; color: var(--mut); }
 .ov-total { display: flex; justify-content: space-between; padding: 8px 4px 0; font-weight: 700; }
 .ov-total span:last-child { color: var(--gold); }
 .ov-problems { color: var(--bad); font-size: .85rem; margin: 6px 0 0; }

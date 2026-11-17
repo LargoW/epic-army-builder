@@ -1,6 +1,6 @@
 import {
   createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf, unitSlots,
-  summarize, validate, withProfiles, rosterProfiles, matches,
+  summarize, validate, withProfiles, rosterProfiles, matches, poolSummary,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
 import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
@@ -219,6 +219,18 @@ const isAir = (calc) => {
 const btsBadge = () => `<span class="bts" title="Break Their Spirit">BTS</span>`;
 const btsAirNote = () => `<p class="bts-note">BTS-Verband ist Luftverband: Gilt als vernichtet, wenn er am Spielende nicht auf dem Tisch ist.</p>`;
 
+// Army-wide pools (Chaos daemon pools): bought points plus free points from pacts.
+function poolBlock() {
+  const pools = poolSummary(data, state).filter((p) => p.total > 0);
+  if (!pools.length) return "";
+  return `<section class="pools"><h3>Dämonenpool</h3>${pools
+    .map((p) => {
+      const from = p.sources.filter((s) => s.points > 0).map((s) => `${s.count}× ${esc(s.label)}`).join(", ");
+      return `<div class="pool"><span class="nm">${esc(p.name)}</span><span class="pn">${p.paid} gekauft${p.free ? ` + ${p.free} frei` : ""} = <b>${p.total}</b></span>${from ? `<small>Frei durch: ${from}</small>` : ""}</div>`;
+    })
+    .join("")}</section>`;
+}
+
 function renderBuild(entries, violations) {
   const bts = btsSet(entries);
   return state.formations.map((entry, i) => {
@@ -295,7 +307,7 @@ function renderOverview(entries, violations, total) {
 
 
 
-  return cards + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
+  return cards + poolBlock() + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
 function armyButtons() {
@@ -334,7 +346,7 @@ function render() {
     app.innerHTML = `<p class="empty">Noch keine Verbände.<br>Tippe auf „+ Verband“, um zu beginnen.</p>`;
     return;
   }
-  app.innerHTML = view === "overview" ? renderOverview(entries, violations, total) : renderBuild(entries, violations);
+  app.innerHTML = view === "overview" ? renderOverview(entries, violations, total) : renderBuild(entries, violations) + poolBlock();
 }
 
 function armyText() {

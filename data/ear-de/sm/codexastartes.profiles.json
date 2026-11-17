@@ -247,7 +247,12 @@
             {
               "firepower": "AP5+",
               "range": 30,
-              "specialRules": []
+              "specialRules": [
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
             }
           ]
         }

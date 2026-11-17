@@ -12,6 +12,9 @@
     { "formations": ["tag:al-cultists"], "value": "2+" },
     { "formations": ["*"], "value": "1+" }
   ],
+  "pools": [
+    { "id": "lesser", "name": "Pool niedere Dämonen", "paid": ["al-pool-niedere-daemo"], "free": [{ "unit": "al-ikon", "label": "Ikon (Dämonenpakt)" }] }
+  ],
   "units": {
     "al-fuerst": { "name": "Alpha-Legion-Fürst", "from": "CSM.json", "type": "AV" },
     "al-hexer": { "name": "Alpha-Legion-Hexer", "from": "CSM.json", "type": "AV" },

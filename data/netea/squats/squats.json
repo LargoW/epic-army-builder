@@ -167,6 +167,10 @@
         "bomb-battlecar": {
             "name": "Bomb Battlecar",
             "type": "CH"
+        },
+        "leviathan": {
+            "name": "Leviathan",
+            "type": "WE"
         }
     },
     "sections": [
@@ -246,7 +250,7 @@
                 "u-termite",
                 "u-mole",
                 "u-berserkers"
-                ]
+            ]
         },
         {
             "id": "f-thunderer",
@@ -373,7 +377,8 @@
             ],
             "upgrades": [
                 "u-grandwarlord",
-                "u-living-ancestor"]
+                "u-living-ancestor"
+            ]
         },
         {
             "id": "f-artillery-battery",
@@ -658,7 +663,8 @@
             ],
             "upgrades": [
                 "u-grandwarlord",
-                "u-living-ancestor"]
+                "u-living-ancestor"
+            ]
         }
     ],
     "upgrades": [

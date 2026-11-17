@@ -51,6 +51,17 @@
     }
   ],
   "units": {
+    "we-daemonenpakt": {
+      "name": "Dämonenpakt",
+      "type": null,
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Dämonenpakt",
+          "description": "Der Verband darf Dämonen beschwören. Der Pakt stellt zu Beginn der Schlacht einen Punkt für den Pool der niederen Dämonen bereit."
+        }
+      ]
+    },
     "we-kriegsherr": {
       "name": "Kriegsherr",
       "type": "CH",

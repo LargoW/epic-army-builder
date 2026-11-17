@@ -19,7 +19,7 @@
     "supreme-commander": { "name": "Oberbefehlshaber", "from": "SM.json", "type": "CH" },
     "assault": { "name": "Sturmtrupps", "from": "SM.json", "type": "INF" },
     "scout": { "name": "Scout", "from": "SM.json", "type": "INF" },
-    "scout-sniper": { "name": "Scout", "from": "SM.json", "type": "INF" },
+    "scout-sniper": { "name": "Scout (Scharfschütze)", "from": "SM.json", "type": "INF" },
     "tactical": { "name": "Taktische Trupps", "from": "SM.json", "type": "INF" },
     "devastator": { "name": "Devastor-Trupps", "from": "SM.json", "type": "INF" },
     "terminator": { "name": "Terminatoren", "from": "SM.json", "type": "INF" },

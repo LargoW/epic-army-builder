@@ -11,6 +11,9 @@
   "initiative": [
     { "formations": ["*"], "value": "1+" }
   ],
+  "pools": [
+    { "id": "lesser", "name": "Pool niedere Dämonen", "paid": ["nl-pool-niedere-daemo"], "free": [{ "unit": "nl-hauptmann", "label": "Hauptmann (Dämonenpakt)" }, { "unit": "nl-erster-hauptmann", "label": "Erster Hauptmann (Dämonenpakt)" }] }
+  ],
   "units": {
     "nl-erster-hauptmann": { "name": "Night-Lords-Erster Hauptmann", "from": "CSM.json", "type": "AV" },
     "nl-hauptmann": { "name": "Night-Lords-Hauptmann", "from": "CSM.json", "type": "AV" },

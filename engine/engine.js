@@ -287,6 +287,38 @@ export function summarize(data, state) {
   return { total: entries.reduce((a, e) => a + e.pts, 0), entries };
 }
 
+// Army-wide pools such as the Chaos daemon pools. data.pools: [{ id, name, paid, free: [{ upgrade | unit, points, label }] }].
+// paid (formation selectors): every unit in a matching formation is one purchased pool point.
+// free: every selected upgrade (per unit for per-unit upgrades) or every unit of the army adds `points` (default 1) at no cost,
+// e.g. each Daemonic Pact adds a point to the pool of lesser daemons.
+export function poolSummary(data, state) {
+  if (!(data.pools || []).length) return [];
+  const { entries } = summarize(data, state);
+  const formations = index(data.formations);
+  const upgrades = index(data.upgrades);
+  return data.pools.map((pool) => {
+    const paid = entries
+      .filter((e) => matches(pool.paid, formations[e.formation]))
+      .reduce((a, e) => a + Object.values(e.roster).reduce((x, n) => x + Math.max(0, n), 0), 0);
+    const sources = (pool.free || []).map((src) => {
+      let count = 0;
+      if (src.upgrade)
+        state.formations.forEach((e) =>
+          e.upgrades.forEach((sel) => {
+            if (sel.upgrade !== src.upgrade) return;
+            const v = upgrades[sel.upgrade] && upgrades[sel.upgrade].variants.find((x) => x.id === sel.variant);
+            count += v && v.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
+          })
+        );
+      if (src.unit) entries.forEach((e) => (count += Math.max(0, e.roster[src.unit] || 0)));
+      const label = src.label || (src.upgrade ? (upgrades[src.upgrade] || {}).name : (data.units[src.unit] || {}).name) || src.upgrade || src.unit;
+      return { label, count, points: count * (src.points == null ? 1 : src.points) };
+    });
+    const free = sources.reduce((a, s) => a + s.points, 0);
+    return { id: pool.id, name: pool.name, paid, free, total: paid + free, sources };
+  });
+}
+
 export function validate(data, state) {
   const formations = index(data.formations);
   const upgrades = index(data.upgrades);

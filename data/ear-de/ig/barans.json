@@ -210,10 +210,30 @@
       "pts": 125,
       "tags": ["titans-navy"],
       "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
-      "upgrades": [ { "upgrade": "emperor-battleship", "variant": "1", "chimeras": 0 } ]
+      "upgrades": ["emperor-battleship"]
     }
   ],
-  "upgrades": [],
+  "upgrades": [
+    {
+      "id": "emperor-battleship",
+      "name": "Schlachtschiff der Emperor-Klasse",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Kreuzer durch Schlachtschiff ersetzen",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "lunar-cruiser",
+              "to": "emperor-battleship",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "formationConstraints": [],
   "upgradeConstraints": []
 }

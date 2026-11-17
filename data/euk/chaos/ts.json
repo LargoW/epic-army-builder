@@ -26,6 +26,10 @@
             "value": "1+"
         }
     ],
+    "pools": [
+        { "id": "lesser", "name": "Lesser Daemon Pool", "paid": ["f-lesser-daemon-pool"], "free": [{ "upgrade": "u-daemonic-pact", "label": "Daemonic Pact" }] },
+        { "id": "greater", "name": "Greater Daemon Pool", "paid": ["f-greater-daemon-pool"], "free": [] }
+    ],
     "units": {
         "ts-warlord": {
             "name": "Thousand Sons Warlord",
@@ -528,9 +532,8 @@
                     "pts": 50,
                     "effects": [
                         {
-                            "op": "replace",
-                            "from": "cabal-of-sorcerers",
-                            "to": "ts-warlord",
+                            "op": "add",
+                            "unit": "ts-warlord",
                             "count": 1
                         }
                     ]

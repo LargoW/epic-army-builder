@@ -12,6 +12,10 @@
     { "formations": ["tag:ec-core"], "value": "1+" },
     { "formations": ["*"], "value": "2+" }
   ],
+  "pools": [
+    { "id": "lesser", "name": "Pool niedere Dämonen", "paid": ["ec-pool-niedere-daemo"], "free": [] },
+    { "id": "greater", "name": "Pool großer Dämonen", "paid": ["ec-pool-groesse-daemo"], "free": [] }
+  ],
   "units": {
     "ec-noise-kriegsherr": { "name": "Noise-Kriegsherr", "from": "CSM.json", "type": "AV" },
     "ec-noise-fuerst": { "name": "Noise-Fürst", "from": "CSM.json", "type": "AV" },
