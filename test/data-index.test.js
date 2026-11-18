@@ -42,3 +42,58 @@ test("every army file can be read and carries units, formations and upgrades", (
     assert.ok(p.units || p.profiles, `${a.id}: profiles`);
   }
 });
+
+test("all formation upgrades are strings and resolve to an existing upgrade definition", () => {
+  const issues = [];
+  for (const a of index.armies) {
+    const d = JSON.parse(readFileSync(join(root, `${a.id}.json`), "utf8"));
+    const upgrades = new Set((d.upgrades || []).map((u) => u.id));
+    for (const f of d.formations || []) {
+      for (const up of f.upgrades || []) {
+        if (typeof up !== "string") issues.push(`${a.id} formation ${f.id}: malformed non-string upgrade ${JSON.stringify(up)}`);
+        else if (!upgrades.has(up)) issues.push(`${a.id} formation ${f.id}: dangling upgrade ref ${up}`);
+      }
+    }
+  }
+  assert.deepEqual(issues, [], "no malformed or dangling formation upgrades");
+});
+
+test("all units referenced in formations and upgrade effects resolve to an existing unit definition", () => {
+  const issues = [];
+  for (const a of index.armies) {
+    const d = JSON.parse(readFileSync(join(root, `${a.id}.json`), "utf8"));
+    const unitIds = new Set(Object.keys(d.units || {}));
+    for (const f of d.formations || []) {
+      for (const u of f.units || []) {
+        const slots = u.oneOf ? u.oneOf : (u.unit ? [u.unit] : []);
+        for (const uid of slots) {
+          if (!unitIds.has(uid)) issues.push(`${a.id} formation ${f.id}: missing unit ${uid}`);
+        }
+      }
+    }
+    for (const up of d.upgrades || []) {
+      for (const v of up.variants || []) {
+        for (const fx of v.effects || []) {
+          if (fx.unit && !unitIds.has(fx.unit)) issues.push(`${a.id} upgrade ${up.id}: missing add unit ${fx.unit}`);
+          if (fx.from && !unitIds.has(fx.from)) issues.push(`${a.id} upgrade ${up.id}: missing replace from unit ${fx.from}`);
+          if (fx.to && !unitIds.has(fx.to)) issues.push(`${a.id} upgrade ${up.id}: missing replace to unit ${fx.to}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(issues, [], "no dangling unit references");
+});
+
+test("all formations referenced in sections resolve to an existing formation definition", () => {
+  const issues = [];
+  for (const a of index.armies) {
+    const d = JSON.parse(readFileSync(join(root, `${a.id}.json`), "utf8"));
+    const formIds = new Set((d.formations || []).map((f) => f.id));
+    for (const s of d.sections || []) {
+      for (const fid of s.formations || []) {
+        if (!formIds.has(fid)) issues.push(`${a.id} section ${s.id}: missing formation ${fid}`);
+      }
+    }
+  }
+  assert.deepEqual(issues, [], "no dangling section formations");
+});

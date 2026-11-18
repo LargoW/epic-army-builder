@@ -229,14 +229,6 @@
         "std-todesrad",
         "std-hoellenritter"
       ]
-    },
-    {
-      "id": "daemon-pool",
-      "name": "Dämonenpool",
-      "formations": [
-        "di-pool-niedere-daemonen",
-        "di-pool-groesser-damon"
-      ]
     }
   ],
   "formations": [

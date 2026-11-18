@@ -1,5 +1,5 @@
 import {
-  createState, addFormation, removeFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf, unitSlots,
+  createState, addFormation, removeFormation, cloneFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf, unitSlots,
   summarize, validate, withProfiles, rosterProfiles, matches, poolSummary,
 } from "../engine/engine.js";
 import { messageFor } from "./messages.de.js";
@@ -27,6 +27,14 @@ const $ = (s) => document.querySelector(s);
 const app = $("#app");
 const open = new Set();
 let view = localStorage.getItem("eab:view") === "overview" ? "overview" : "build";
+let showHidden = localStorage.getItem("eab:showHidden") === "true";
+let openRulesets;
+try {
+  const stored = localStorage.getItem("eab:openRulesets");
+  openRulesets = stored ? new Set(JSON.parse(stored)) : new Set(index.rulesets.map((r) => r.id));
+} catch {
+  openRulesets = new Set(index.rulesets.map((r) => r.id));
+}
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const text = (d) => (Array.isArray(d) ? d.join(" ") : d || "");
@@ -241,6 +249,7 @@ function renderBuild(entries, violations) {
     return `<details class="entry${probs.length ? " has-problem" : ""}" data-key="${key}"${open.has(key) ? " open" : ""}>
       <summary><div class="entry-head">
         <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span>
+        <button class="icon" type="button" aria-label="Verband duplizieren" title="Duplizieren" data-act="clone" data-uid="${entry.uid}">⧉</button>
         <button class="icon" type="button" aria-label="Verband entfernen" data-act="remove" data-uid="${entry.uid}">×</button>
       </div>
       ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
@@ -310,13 +319,35 @@ function renderOverview(entries, violations, total) {
   return cards + poolBlock() + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
 }
 
+function rulesetSections(prefixPlus = false) {
+  return index.rulesets
+    .filter((r) => !r.hidden && !r.disabled)
+    .map((r) => {
+      const byFaction = {};
+      const armies = index.armies.filter((a) => a.ruleset === r.id && !a.disabled && (showHidden || !a.hidden));
+      armies.forEach((a) => (byFaction[a.faction] ||= []).push(a));
+      const isOpen = openRulesets.has(r.id);
+      return `<details class="picker-section ruleset-group" data-ruleset="${r.id}" data-search${isOpen ? " open" : ""}>
+        <summary class="ruleset-head">
+          <div class="ruleset-title">
+            <span class="ruleset-caret" aria-hidden="true">▾</span>
+            <h3>${esc(r.name)}</h3>
+          </div>
+          <span class="ruleset-count">${armies.length} Armeen</span>
+        </summary>
+        ${Object.entries(byFaction).map(([f, as]) => `
+          <div class="faction-group">
+            <p>${esc(f)}</p>
+            ${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">${prefixPlus ? "+ " : ""}${esc(a.name)}${a.hidden ? ` <span class="dev-badge">WIP</span>` : ""}</span><span>v${esc(a.version)}</span></button>`).join("")}
+          </div>
+        `).join("")}
+      </details>`;
+    })
+    .join("");
+}
+
 function armyButtons() {
-  return index.rulesets.filter((r) => !r.hidden && !r.disabled).map((r) => {
-    const byFaction = {};
-    index.armies.filter((a) => a.ruleset === r.id && !a.hidden && !a.disabled).forEach((a) => (byFaction[a.faction] ||= []).push(a));
-    return `<section class="picker-section" data-search><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
-      `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
-  }).join("");
+  return rulesetSections(false);
 }
 
 function renderStart() {
@@ -327,7 +358,9 @@ function renderStart() {
   app.innerHTML = `<div class="start"><h2>Willkommen!</h2><p>Wähle eine Armee, um eine neue Liste zu beginnen. Die Armee kannst du später jederzeit oben über den Titel wechseln.</p>
     <input class="sheet-search" type="search" data-act="search" placeholder="Armee suchen …" aria-label="Armee suchen">
     ${armyButtons()}
-    <section class="picker-section"><h3>Liste erhalten?</h3><button class="pick" type="button" data-act="import"><span class="name">Liste importieren</span></button></section></div>`;
+    <section class="picker-section"><h3>Liste erhalten?</h3><button class="pick" type="button" data-act="import"><span class="name">Liste importieren</span></button></section>
+    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">Unterstütze LargoW auf Patreon</a></p>
+  </div>`;
 }
 
 function render() {
@@ -404,15 +437,11 @@ function openLists() {
       <button class="icon" type="button" data-act="delete-list" data-id="${l.id}" aria-label="Löschen">🗑</button>
     </div>`;
   }).join("");
-  const rs = index.rulesets.filter((r) => !r.hidden && !r.disabled).map((r) => {
-    const byFaction = {};
-    index.armies.filter((a) => a.ruleset === r.id && !a.hidden && !a.disabled).forEach((a) => (byFaction[a.faction] ||= []).push(a));
-    return `<section class="picker-section" data-search><h3>${esc(r.name)}</h3>${Object.entries(byFaction).map(([f, as]) =>
-      `<p>${esc(f)}</p>${as.map((a) => `<button class="pick" type="button" data-act="new-list" data-army="${a.id}"><span class="name">+ ${esc(a.name)}</span><span>v${esc(a.version)}</span></button>`).join("")}`).join("")}</section>`;
-  }).join("");
+  const rs = rulesetSections(true);
   sheet("Meine Listen", `<section class="picker-section">${rows}</section>
     <div class="sheet-pad">${exchangeButtons()}</div>
-    <input class="sheet-search" type="search" data-act="search" placeholder="Neue Liste: Armee suchen …" aria-label="Armee suchen">${rs}`);
+    <input class="sheet-search" type="search" data-act="search" placeholder="Neue Liste: Armee suchen …" aria-label="Armee suchen">${rs}
+    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">Unterstütze LargoW auf Patreon</a></p>`);
 }
 
 // --- Import / export ---
@@ -502,6 +531,8 @@ function openMore() {
     ${exchangeButtons()}
     <button type="button" data-act="copy">Liste als Text kopieren</button>
     <button type="button" data-act="theme-toggle">Design wechseln (${currentTheme() === "dark" ? "hell" : "dunkel"})</button>
+    <button type="button" data-act="toggle-hidden">Armeen in Entwicklung: ${showHidden ? "ausblenden" : "anzeigen"}</button>
+    <a class="patreon-btn" href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">♥ Auf Patreon unterstützen</a>
     <button type="button" class="danger" data-act="reset">Alle Verbände entfernen</button>
   </div>`);
 }
@@ -569,6 +600,14 @@ document.addEventListener("click", async (e) => {
       render();
       return toast("Liste importiert");
     }
+    case "clone": {
+      e.preventDefault();
+      const uid = Number(el.dataset.uid);
+      const clonedUid = state.nextUid;
+      open.add(`f${clonedUid}`);
+      update(cloneFormation(state, uid));
+      return toast("Verband dupliziert");
+    }
     case "remove":
       e.preventDefault();
       return update(removeFormation(state, Number(el.dataset.uid)));
@@ -594,6 +633,11 @@ document.addEventListener("click", async (e) => {
     case "theme-toggle":
       applyTheme(currentTheme() === "dark" ? "light" : "dark");
       return act === "theme-toggle" ? openMore() : undefined;
+    case "toggle-hidden":
+      showHidden = !showHidden;
+      localStorage.setItem("eab:showHidden", String(showHidden));
+      openMore();
+      return render();
     case "close":
       return dlg.close();
     case "copy":
@@ -614,6 +658,14 @@ document.addEventListener("input", (e) => {
     let anyVisible = false;
     s.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { if (!b.hidden) anyVisible = true; });
     s.hidden = !!q && !anyVisible;
+    if (s.tagName === "DETAILS") {
+      s.open = q ? anyVisible : openRulesets.has(s.dataset.ruleset);
+    }
+  });
+  document.querySelectorAll('.picker-section[data-search] .faction-group').forEach((fg) => {
+    let anyVisible = false;
+    fg.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { if (!b.hidden) anyVisible = true; });
+    fg.hidden = !!q && !anyVisible;
   });
 });
 
@@ -658,11 +710,21 @@ document.addEventListener("change", (e) => {
   }
 });
 
-// Remember which cards are expanded across re-renders.
-app.addEventListener("toggle", (e) => {
+// Remember which cards and ruleset groups are expanded across re-renders.
+document.addEventListener("toggle", (e) => {
   const k = e.target.dataset && e.target.dataset.key;
-  if (!k) return;
-  e.target.open ? open.add(k) : open.delete(k);
+  if (k) {
+    e.target.open ? open.add(k) : open.delete(k);
+    return;
+  }
+  const rs = e.target.dataset && e.target.dataset.ruleset;
+  if (rs) {
+    const searchInput = document.querySelector('.sheet-search[data-act="search"]');
+    if (searchInput && searchInput.value.trim()) return;
+    if (e.target.open) openRulesets.add(rs);
+    else openRulesets.delete(rs);
+    localStorage.setItem("eab:openRulesets", JSON.stringify([...openRulesets]));
+  }
 }, true);
 
 render();

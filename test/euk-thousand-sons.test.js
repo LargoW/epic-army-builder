@@ -200,17 +200,17 @@ test("Warlord and Daemon Prince replace the commander, Supreme Daemon Prince rep
   assert.ok(codes(s).includes("replace-insufficient"), "the commander cannot be replaced twice");
 });
 
-test("retinue has no Chaos Lord: Warlord must replace the Cabal of Sorcerers (variant 2)", () => {
+test("retinue has no Chaos Lord: Warlord must add alongside the Cabal of Sorcerers (variant 2)", () => {
   let [s, [u]] = army("f-ts-retinue");
   s = setUpgrade(s, u, "u-warlord", "1");
   assert.ok(codes(s).includes("replace-insufficient"));
   s = setUpgrade(s, u, "u-warlord", "2");
   assert.equal(entry(s).pts, 325);
-  assert.deepEqual(entry(s).roster, { "ts-warlord": 1, "thousand-sons": 5 });
+  assert.deepEqual(entry(s).roster, { "cabal-of-sorcerers": 1, "thousand-sons": 5, "ts-warlord": 1 });
   assert.deepEqual(codes(s), []);
   s = setUpgrade(s, u, "u-daemon-prince", "2");
   assert.equal(entry(s).pts, 375);
-  assert.deepEqual(entry(s).roster, { "ts-daemon-prince-supreme": 1, "thousand-sons": 5 });
+  assert.deepEqual(entry(s).roster, { "cabal-of-sorcerers": 1, "thousand-sons": 5, "ts-daemon-prince-supreme": 1 });
 });
 
 test("armoured company: swap Predators for Land Raiders at 25 points each", () => {

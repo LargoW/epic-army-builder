@@ -60,6 +60,16 @@ export const removeFormation = (state, uid) => ({
   formations: state.formations.filter((e) => e.uid !== uid),
 });
 
+export function cloneFormation(state, uid) {
+  const idx = state.formations.findIndex((e) => e.uid === uid);
+  if (idx < 0) return state;
+  const source = state.formations[idx];
+  const clone = { ...structuredClone(source), uid: state.nextUid };
+  const formations = [...state.formations];
+  formations.splice(idx + 1, 0, clone);
+  return { nextUid: state.nextUid + 1, formations };
+}
+
 // Moves one entry up (-1) or down (+1); does nothing at the ends.
 export function moveFormation(state, uid, delta) {
   const from = state.formations.findIndex((e) => e.uid === uid);

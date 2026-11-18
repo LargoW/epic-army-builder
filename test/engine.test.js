@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
-  createState, addFormation, setUpgrade, setChoice, summarize, validate, moveFormation, sortFormations,
+  createState, addFormation, setUpgrade, setChoice, summarize, validate, moveFormation, sortFormations, cloneFormation, setSize,
 } from "../engine/engine.js";
 
 const data = JSON.parse(readFileSync(new URL("../data/ear-de/ig/steellegion.json", import.meta.url), "utf8"));
@@ -165,4 +165,24 @@ test("sortFormations: by section keeps list order inside a section; by points is
   const ids = (st) => st.formations.map((e) => e.uid);
   assert.deepEqual(ids(sortFormations(data, s, "section")), [co1, co2, sen, flak, reaver]);
   assert.deepEqual(ids(sortFormations(data, s, "points")), [reaver, co2, co1, flak, sen]);
+});
+
+
+test("cloneFormation duplicates a formation with its size, choices, and upgrades", () => {
+  let [s, [c, sent]] = army("mech-company", "sentinels");
+  s = setUpgrade(s, c, "hellhounds", "2");
+  s = setUpgrade(s, c, "fire-support", "2", 1);
+  const cloned = cloneFormation(s, c);
+  assert.equal(cloned.nextUid, s.nextUid + 1);
+  assert.equal(cloned.formations.length, 3);
+  assert.equal(cloned.formations[0].uid, c);
+  assert.equal(cloned.formations[1].uid, s.nextUid);
+  assert.equal(cloned.formations[2].uid, sent);
+  assert.equal(cloned.formations[1].formation, "mech-company");
+  assert.deepEqual(cloned.formations[1].upgrades, cloned.formations[0].upgrades);
+  assert.deepEqual(cloned.formations[1].choices, cloned.formations[0].choices);
+  const { entries } = summarize(data, cloned);
+  assert.equal(entries[0].pts, entries[1].pts);
+  assert.deepEqual(entries[0].roster, entries[1].roster);
+  assert.equal(cloneFormation(s, 999), s);
 });

@@ -63,12 +63,12 @@ test("Thousand Sons (Epic UK): per-unit daemons are bought points, Daemonic Pact
   s = setUpgrade(s, 3, "u-lesser-daemon", "n", 0, 3);
   s = setUpgrade(s, 4, "u-greater-daemon", "n", 0, 2);
   let p = pools(data, s);
-  assert.deepEqual([p.lesser.paid, p.lesser.free, p.lesser.total, p.greater.paid, p.greater.total], [3, 0, 3, 2, 2]);
+  assert.deepEqual([p.lesser.paid, p.lesser.free, p.lesser.total, p.greater.paid, p.greater.total], [3, 1, 4, 2, 2]);
   s = setUpgrade(s, 2, "u-daemonic-pact", "1");
-  s = setUpgrade(s, 1, "u-daemonic-pact", "1");
   p = pools(data, s);
   assert.deepEqual([p.lesser.paid, p.lesser.free, p.lesser.total], [3, 2, 5], "3 bought + 2 free from two pacts");
-  assert.equal(p.lesser.sources[0].count, 2);
+  assert.equal(p.lesser.sources.find((s) => s.label === "Daemonic Pact").count, 1);
+  assert.equal(p.lesser.sources.find((s) => s.label === "Daemonic Pact (Cabal)").count, 1);
   assert.equal(summarize(data, s).entries[1].roster["daemonic-pact"], 1);
 });
 

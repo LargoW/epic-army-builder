@@ -251,7 +251,6 @@
       "id": "daemon-pool",
       "name": "Dämonenpool",
       "formations": [
-        "di-pool-niedere-daemonen",
         "di-pool-groesser-damon"
       ]
     }
@@ -352,7 +351,7 @@
       "units": [
         {
           "unit": "di-hollenstreiter",
-          "count":  4
+          "count": 4
         }
       ],
       "upgrades": []
