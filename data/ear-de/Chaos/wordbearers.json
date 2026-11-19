@@ -58,7 +58,6 @@
     "harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
     "kreuzer": { "name": "Kreuzer der Devastation-Klasse", "from": "chaosnavy.json", "type": "AV" },
     "schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" },
-    "maulerfiends": { "name": "Maulerfiends", "from": "CSM.json", "type": "AV" }
   },
   "sections": [
     {
@@ -185,7 +184,7 @@
       "pts": 225,
       "tags": ["daemon-machines"],
       "units": [
-        { "unit": "maulerfiends", "count": 4 }
+        { "unit": "wb-daemonenprinz", "count": 4 }
       ],
       "upgrades": []
     },

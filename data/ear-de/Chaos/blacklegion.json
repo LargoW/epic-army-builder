@@ -27,10 +27,6 @@
         }
     ],
     "units": {
-        "daemonenpakt": {
-            "name": "Dämonenpakt",
-            "from": "CSM.json"
-        },
         "bl-kriegsherr": {
             "name": "Kriegsherr",
             "from": "CSM.json",
@@ -726,7 +722,7 @@
                     "effects": [
                         {
                             "op": "add",
-                            "unit": "daemonenpakt",
+                            "unit": "bl-daemonenprinz",
                             "count": 1
                         }
                     ]

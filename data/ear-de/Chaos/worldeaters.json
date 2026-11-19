@@ -32,10 +32,6 @@
         { "id": "greater", "name": "Pool großer Dämonen", "paid": ["we-pool-groesse-daemo"], "free": [] }
     ],
     "units": {
-        "we-daemonenpakt": {
-            "name": "Dämonenpakt",
-            "from": "CSM.json"
-        },
         "we-kriegsherr": {
             "name": "Kriegsherr",
             "from": "CSM.json",
@@ -733,7 +729,7 @@
                     "effects": [
                         {
                             "op": "add",
-                            "unit": "we-daemonenpakt",
+                            "unit": "we-daemonenprinz",
                             "count": 1
                         }
                     ]
