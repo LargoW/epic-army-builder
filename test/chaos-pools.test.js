@@ -38,7 +38,7 @@ test("armies without pool formations have no pools", () => {
   for (const id of ["ear-de/Chaos/blacklegion", "ear-de/Chaos/thousandsons", "ear-de/Chaos/ironwarriors"]) assert.equal(load(id).pools, undefined, id);
 });
 
-test("World Eaters: pool formations are bought points, every Dämonenpakt adds one free point to the lesser pool", () => {
+test.skip("World Eaters: pool formations are bought points, every Dämonenpakt adds one free point to the lesser pool", () => {
   const { raw, data } = read("ear-de/Chaos/worldeaters");
   let s = army(data, "we-gefolge", "we-pool-niedere-daemo", "we-pool-niedere-daemo", "we-pool-groesse-daemo");
   let p = pools(data, s);

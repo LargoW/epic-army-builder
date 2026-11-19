@@ -138,6 +138,13 @@
       "version": "1.0.Beta"
     },
     {
+      "id": "ear-de/Chaos/daemons",
+      "ruleset": "ear-de",
+      "faction": "Chaos",
+      "name": "Streitkräfte der Dämonenlegion",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "ear-de/cultists/di",
       "ruleset": "ear-de",
       "faction": "Chaos-Kultisten",

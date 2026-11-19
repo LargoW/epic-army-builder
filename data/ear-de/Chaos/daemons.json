@@ -1,0 +1,185 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/Chaos/daemons",
+  "name": "Streitkräfte der Dämonenlegion",
+  "faction": "Chaos",
+  "version": "1.0.Beta",
+  "source": {
+    "file": "lists_de/daemons.json",
+    "version": "1.0.Beta"
+  },
+  "strategy": 4,
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "1+"
+    }
+  ],
+  "units": {
+    "erhabener-hueter-der-geheimnisse": {
+      "name": "Erhabener Hüter der Geheimnisse",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "hueter-der-geheimnisse": {
+      "name": "Hüter der Geheimnisse",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "herold-des-slaanesh": {
+      "name": "Herold des Slaanesh",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "herold-des-slaanesh-auf-sucherstreitwagen": {
+      "name": "Herold des Slaanesh auf Sucherstreitwagen",
+      "from": "daemons.json",
+      "type": "LV"
+    },
+    "daemonetten-des-slaanesh": {
+      "name": "Dämonetten des Slaanesh",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "slaaneshbestien": {
+      "name": "Slaaneshbestien",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "slaanesh-reiterinnen": {
+      "name": "Slaanesh-Reiterinnen",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "erhabener-grosser-verpester": {
+      "name": "Erhabener Großer Verpester",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "grosser-verpester": {
+      "name": "Großer Verpester",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "herold-des-nurgle-auf-einer-saenfte": {
+      "name": "Herold des Nurgle auf einer Sänfte",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "herold-des-nurgle-auf-seuchenfliege": {
+      "name": "Herold des Nurgle auf Seuchenfliege",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "seuchenhueter-des-nurgle": {
+      "name": "Seuchenhüter des Nurgle",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "seuchenbestien-des-nurgle": {
+      "name": "Seuchenbestien des Nurgle",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "seuchendrohnen-des-nurgle": {
+      "name": "Seuchendrohnen des Nurgle",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "erhabener-blutdaemon": {
+      "name": "Erhabener Blutdämon",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "blutdaemon": {
+      "name": "Blutdämon",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "herold-des-khorne-auf-schaedelkanone": {
+      "name": "Herold des Khorne auf Schädelkanone",
+      "from": "daemons.json",
+      "type": "LV"
+    },
+    "herold-des-khorne-auf-moloch": {
+      "name": "Herold des Khorne auf Moloch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "zerfleischer-des-khorne": {
+      "name": "Zerfleischer des Khorne",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "bluthunde-des-khorne": {
+      "name": "Bluthunde des Khorne",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "zerschmetterer-des-khorne": {
+      "name": "Zerschmetterer des Khorne",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "erhabener-herrscher-des-wandels": {
+      "name": "Erhabener Herrscher des Wandels",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "herrscher-des-wandels": {
+      "name": "Herrscher des Wandels",
+      "from": "daemons.json",
+      "type": "WE"
+    },
+    "herold-des-tzeentch": {
+      "name": "Herold des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "herold-des-tzeentch-auf-brennendem-streitwagen": {
+      "name": "Herold des Tzeentch auf Brennendem Streitwagen",
+      "from": "daemons.json",
+      "type": "LV"
+    },
+    "horrors-des-tzeentch": {
+      "name": "Horrors des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "feuerdaemonen-des-tzeentch": {
+      "name": "Feuerdämonen des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "kreischer-des-tzeentch": {
+      "name": "Kreischer des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "daemonische-bestien-des-ungeteilten-chaos": {
+      "name": "Dämonische Bestien des ungeteilten Chaos",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "furien-des-ungeteilten-chaos": {
+      "name": "Furien des ungeteilten Chaos",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "seelenzermalmer": {
+      "name": "Seelenzermalmer",
+      "from": "daemons.json",
+      "type": "AV"
+    }
+  },
+  "sections": [],
+  "formations": [],
+  "upgrades": [],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

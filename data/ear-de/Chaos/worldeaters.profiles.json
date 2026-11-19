@@ -51,17 +51,6 @@
     }
   ],
   "units": {
-    "we-daemonenpakt": {
-      "name": "Dämonenpakt",
-      "type": null,
-      "weapons": [],
-      "specialRules": [
-        {
-          "name": "Dämonenpakt",
-          "description": "Der Verband darf Dämonen beschwören. Der Pakt stellt zu Beginn der Schlacht einen Punkt für den Pool der niederen Dämonen bereit."
-        }
-      ]
-    },
     "we-kriegsherr": {
       "name": "Kriegsherr",
       "type": "CH",
@@ -96,8 +85,8 @@
         }
       ]
     },
-    "we-chaosfuerst": {
-      "name": "Chaosfürst",
+    "we-chaoslord": {
+      "name": "Chaos Lord",
       "type": "CH",
       "weapons": [
         {
@@ -217,6 +206,17 @@
           "description": null
         }
       ]
+    },
+    "we-daemonenpakt":{
+      "name": "Dämonen-Pakt",
+      "type": null,
+      "speed":null,
+      "armour":null,
+      "cc":null,
+      "ff":null,
+      "weapons":[],
+      "specialRules":["Die Formation darf Dämonen beschwören."]
+
     },
     "we-daemonenprinz": {
       "name": "Dämonenprinz des Khorne",

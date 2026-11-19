@@ -6,6 +6,16 @@
     "commit": null
   },
   "units": {
+    "dameonicPact":{
+      "name": "Daemonic Pact",
+      "type": null,
+      "speed":null,
+      "armour":null,
+      "cc":null,
+      "ff":null,
+      "weapons":[],
+      "specialRules":["The formation may summon daemons."]
+    },
     "ts-warlord": {
       "name": "Thousand Sons Warlord",
       "type": "CH",

@@ -41,8 +41,8 @@
             "from": "CSM.json",
             "type": "AV"
         },
-        "we-chaosfuerst": {
-            "name": "Chaosfürst",
+        "we-chaoslord": {
+            "name": "Chaos Lord",
             "from": "CSM.json",
             "type": "AV"
         },
@@ -271,7 +271,7 @@
             ],
             "units": [
                 {
-                    "unit": "we-kriegsherr",
+                    "unit": "we-chaoslord",
                     "count": 1
                 },
                 {
@@ -280,11 +280,11 @@
                 },
                 {
                     "unit": "chaos-space-marine",
-                    "count": 6
+                    "count": 4
                 },
                 {
                     "unit": "we-rhino",
-                    "count": 3
+                    "count": 4
                 }
             ],
             "upgrades": [
@@ -307,7 +307,7 @@
             ],
             "units": [
                 {
-                    "unit": "we-kriegsherr",
+                    "unit": "we-chaoslord",
                     "count": 1
                 },
                 {
@@ -347,7 +347,7 @@
             ],
             "units": [
                 {
-                    "unit": "we-kriegsherr",
+                    "unit": "we-chaoslord",
                     "count": 1
                 },
                 {
@@ -370,7 +370,7 @@
             ],
             "units": [
                 {
-                    "unit": "we-kriegsherr",
+                    "unit": "we-chaoslord",
                     "count": 1
                 },
                 {
@@ -597,24 +597,26 @@
             "variants": [
                 {
                     "id": "1",
-                    "label": "Ersetze den Chaos-Lord durch einen Kriegsherr",
+                    "label": "Ersetze den Chaos Lord durch einen Kriegsherr",
                     "pts": 50,
                     "effects": [
                         {
-                            "op": "add",
-                            "unit": "we-kriegsherr",
+                            "op": "replace",
+                            "from": "we-chaoslord",
+                            "to": "we-kriegsherr",
                             "count": 1
                         }
                     ]
                 },
                 {
                     "id": "2",
-                    "label": "Ersetze den Chaos-Lord und seine Einheit durch einen Dämonenprinz des Khorne",
+                    "label": "Ersetze den Chaos Lord und seine Einheit durch einen Dämonenprinz des Khorne",
                     "pts": 100,
                     "effects": [
                         {
-                            "op": "add",
-                            "unit": "we-daemonenprinz",
+                            "op": "replace",
+                            "from": "we-chaoslord",
+                            "to": "we-daemonenprinz",
                             "count": 1
                         }
                     ]
@@ -668,9 +670,10 @@
                     "pts": 0,
                     "effects": [
                         {
-                            "op": "add",
-                            "unit": "we-rhino",
-                            "count": 1
+                            "op": "replace",
+                            "from": "we-rhino",
+                            "to": "we-rhino",
+                            "count": 4
                         }
                     ]
                 },
@@ -680,8 +683,9 @@
                     "pts": 100,
                     "effects": [
                         {
-                            "op": "add",
-                            "unit": "chaos-spartan",
+                            "op": "replace",
+                            "from": "we-rhino",
+                            "to": "chaos-spartan",
                             "count": 2
                         }
                     ]

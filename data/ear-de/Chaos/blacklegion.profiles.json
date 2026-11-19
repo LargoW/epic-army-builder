@@ -51,6 +51,17 @@
     }
   ],
   "units": {
+    "daemonenpakt":{
+      "name": "Dämonen-Pakt",
+      "type": null,
+      "speed":null,
+      "armour":null,
+      "cc":null,
+      "ff":null,
+      "weapons":[],
+      "specialRules":["Die Formation darf Dämonen beschwören."]
+
+    },
     "bl-kriegsherr": {
       "name": "Kriegsherr",
       "type": "CH",
@@ -86,7 +97,7 @@
       ]
     },
     "bl-chaosfuerst": {
-      "name": "Chaosfürst",
+      "name": "Chaos Lord",
       "type": "CH",
       "weapons": [
         {

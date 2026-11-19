@@ -18,7 +18,7 @@
   ],
   "units": {
     "dg-kriegsherr": { "name": "Kriegsherr", "from": "CSM.json", "type": "AV" },
-    "dg-chaosfuerst": { "name": "Chaosfürst", "from": "CSM.json", "type": "AV" },
+    "dg-chaosfuerst": { "name": "Chaos Lord", "from": "CSM.json", "type": "AV" },
     "dg-hexerfuerst": { "name": "Hexerfürst", "from": "CSM.json", "type": "AV" },
     "dg-chaoschampion": { "name": "Chaoschampion", "from": "CSM.json", "type": "CH" },
     "dg-ikonentraeger": { "name": "Ikonenträger", "from": "CSM.json", "type": "CH" },
@@ -265,8 +265,8 @@
       "id": "dg-upgrade-commander",
       "name": "0–1 Oberbefehlshaber",
       "variants": [
-        { "id": "1", "label": "Ersetze den Chaos-Lord durch einen Kriegsherr", "pts": 50, "effects": [{ "op": "add", "unit": "dg-kriegsherr", "count": 1 }] },
-        { "id": "2", "label": "Ersetze den Chaos-Lord und seine Einheit durch einen Dämonenprinz des Nurgle", "pts": 100, "effects": [{ "op": "add", "unit": "dg-daemonenprinz", "count": 1 }] }
+        { "id": "1", "label": "Ersetze den Chaos Lord durch einen Kriegsherr", "pts": 50, "effects": [{ "op": "add", "unit": "dg-kriegsherr", "count": 1 }] },
+        { "id": "2", "label": "Ersetze den Chaos Lord und seine Einheit durch einen Dämonenprinz des Nurgle", "pts": 100, "effects": [{ "op": "add", "unit": "dg-daemonenprinz", "count": 1 }] }
       ]
     },
     {

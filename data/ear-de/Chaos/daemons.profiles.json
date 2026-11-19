@@ -1,0 +1,1774 @@
+{
+  "army": "ear-de/Chaos/daemons",
+  "source": {
+    "file": "lists_de/daemons.json",
+    "version": "1.0.Beta"
+  },
+  "specialRules": [],
+  "units": {
+    "erhabener-hueter-der-geheimnisse": {
+      "name": "Erhabener Hüter der Geheimnisse",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Erhabene Große Dämon wird zerstört. Alle beschworenen Dämonen innerhalb von 5cm werden zerstört.",
+      "weapons": [
+        {
+          "name": "Schneidende Splitter",
+          "modes": [
+            {
+              "firepower": "3x MW4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peitsche der Qual",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Warp-Riss",
+          "description": [
+            "Verbände mit mindestens einem Modell mit der Sonderregel Warp-Riss müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch einen Warp-Riss oder ein Chaostor betreten.",
+            "Warp-Risse werden genau wie Selbstständige Planetare Landungen geplant. Sowohl die Ankunftsrunde als auch die Lande-Koordinaten müssen notiert werden. Die Ankunftsrunde eines Verbands muss nicht bekanntgegeben werden.",
+            "Die geplanten Koordinaten des Warp-Risses müssen bei Ankunft in Runde eins innerhalb von 60 cm zum befreundeten Blitz-Missionsziel liegen; bei Ankunft in Runde zwei oder drei dürfen sie sich an beliebiger Stelle auf dem Schlachtfeld befinden.",
+            "In der festgelegten Runde wird der Warp-Rift-Verband wie bei einer Selbstständigen Planetaren Landung in der normalen Aktivierungsreihenfolge aktiviert.",
+            "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder seine Ankunft auf die folgende Runde verschieben und in Reserve bleiben.",
+            "Gelingt die Aktivierung, platziere einen Warp-Rift-Marker an den geplanten Koordinaten. Er weicht nicht ab.",
+            "Würde sich ein Warp-Riss auf Gelände öffnen, das für die hindurchtretenden Einheiten unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass er zu einem anderen Einstiegspunkt umgeleitet wird. Verschiebe den Warp-Riss zum nächstgelegenen Ort, an dem er sich öffnen kann.",
+            "anschließend führt der aktivierte Verband den zu Beginn seiner Aktion festgelegten Befehl aus und muss sich aus dem Warp-Riss herausbewegen. Miss alle Entfernungen vom Mittelpunkt des Markers.",
+            "Alle Einheiten des aktivierten Verbands müssen sich aus dem Warp-Riss herausbewegen. Einheiten, die ihn nicht verlassen können, werden zerstört. Entferne anschliessend den Warp-Rift-Marker vom Schlachtfeld."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+W3)",
+          "description": null
+        }
+      ]
+    },
+    "hueter-der-geheimnisse": {
+      "name": "Hüter der Geheimnisse",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Große Dämon wird zerstört. Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört",
+      "weapons": [
+        {
+          "name": "Schneidende Splitter",
+          "modes": [
+            {
+              "firepower": "3x MW4+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peitsche der Qual",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-slaanesh": {
+      "name": "Herold des Slaanesh",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Stachelklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kakophonischer Schallstoß",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-slaanesh-auf-sucherstreitwagen": {
+      "name": "Herold des Slaanesh auf Sucherstreitwagen",
+      "type": "LV",
+      "speed": 35,
+      "armour": 4,
+      "cc": 2,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Stachelklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kakophonischer Schallstoß",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT6",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "daemonetten-des-slaanesh": {
+      "name": "Dämonetten des Slaanesh",
+      "type": "INF",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Durchbohrend Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "slaaneshbestien": {
+      "name": "Slaaneshbestien",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "slaanesh-reiterinnen": {
+      "name": "Slaanesh-Reiterinnen",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Stachelklauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "erhabener-grosser-verpester": {
+      "name": "Erhabener Großer Verpester",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Erhabene Große Dämon wird zerstört. Alle beschworenen Dämonen innerhalb von 5cm werden zerstört.",
+      "weapons": [
+        {
+          "name": "Strom der Verderbnis",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Filth Streitkolben",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 5",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Warp-Riss",
+          "description": [
+            "Verbände mit mindestens einem Modell mit der Sonderregel Warp-Riss müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch einen Warp-Riss oder ein Chaostor betreten.",
+            "Warp-Risse werden genau wie Selbstständige Planetare Landungen geplant. Sowohl die Ankunftsrunde als auch die Lande-Koordinaten müssen notiert werden. Die Ankunftsrunde eines Verbands muss nicht bekanntgegeben werden.",
+            "Die geplanten Koordinaten des Warp-Risses müssen bei Ankunft in Runde eins innerhalb von 60 cm zum befreundeten Blitz-Missionsziel liegen; bei Ankunft in Runde zwei oder drei dürfen sie sich an beliebiger Stelle auf dem Schlachtfeld befinden.",
+            "In der festgelegten Runde wird der Warp-Rift-Verband wie bei einer Selbstständigen Planetaren Landung in der normalen Aktivierungsreihenfolge aktiviert.",
+            "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder seine Ankunft auf die folgende Runde verschieben und in Reserve bleiben.",
+            "Gelingt die Aktivierung, platziere einen Warp-Rift-Marker an den geplanten Koordinaten. Er weicht nicht ab.",
+            "Würde sich ein Warp-Riss auf Gelände öffnen, das für die hindurchtretenden Einheiten unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass er zu einem anderen Einstiegspunkt umgeleitet wird. Verschiebe den Warp-Riss zum nächstgelegenen Ort, an dem er sich öffnen kann.",
+            "anschließend führt der aktivierte Verband den zu Beginn seiner Aktion festgelegten Befehl aus und muss sich aus dem Warp-Riss herausbewegen. Miss alle Entfernungen vom Mittelpunkt des Markers.",
+            "Alle Einheiten des aktivierten Verbands müssen sich aus dem Warp-Riss herausbewegen. Einheiten, die ihn nicht verlassen können, werden zerstört. Entferne anschliessend den Warp-Rift-Marker vom Schlachtfeld."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+W3)",
+          "description": null
+        }
+      ]
+    },
+    "grosser-verpester": {
+      "name": "Großer Verpester",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Große Dämon wird zerstört. Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört",
+      "weapons": [
+        {
+          "name": "Strom der Verderbnis",
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": 15,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Filth Streitkolben",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-nurgle-auf-einer-saenfte": {
+      "name": "Herold des Nurgle auf einer Sänfte",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ranzige Heimsuchungen",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nurglinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-nurgle-auf-seuchenfliege": {
+      "name": "Herold des Nurgle auf Seuchenfliege",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Ranzige Heimsuchungen",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenfliege",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "seuchenhueter-des-nurgle": {
+      "name": "Seuchenhüter des Nurgle",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Seuchenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "seuchenbestien-des-nurgle": {
+      "name": "Seuchenbestien des Nurgle",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Schleimende Zuneigung",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "seuchendrohnen-des-nurgle": {
+      "name": "Seuchendrohnen des Nurgle",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Todesköpfe",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "IC",
+                  "description": "Deckung ignorieren"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Seuchenfliege",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "erhabener-blutdaemon": {
+      "name": "Erhabener Blutdämon",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "crit": "Der Erhabene Große Dämon wird zerstört. Alle beschworenen Dämonen innerhalb von 5cm werden zerstört.",
+      "weapons": [
+        {
+          "name": "Axt des Khorne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peitsche des Khorne",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Warp-Riss",
+          "description": [
+            "Verbände mit mindestens einem Modell mit der Sonderregel Warp-Riss müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch einen Warp-Riss oder ein Chaostor betreten.",
+            "Warp-Risse werden genau wie Selbstständige Planetare Landungen geplant. Sowohl die Ankunftsrunde als auch die Lande-Koordinaten müssen notiert werden. Die Ankunftsrunde eines Verbands muss nicht bekanntgegeben werden.",
+            "Die geplanten Koordinaten des Warp-Risses müssen bei Ankunft in Runde eins innerhalb von 60 cm zum befreundeten Blitz-Missionsziel liegen; bei Ankunft in Runde zwei oder drei dürfen sie sich an beliebiger Stelle auf dem Schlachtfeld befinden.",
+            "In der festgelegten Runde wird der Warp-Rift-Verband wie bei einer Selbstständigen Planetaren Landung in der normalen Aktivierungsreihenfolge aktiviert.",
+            "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder seine Ankunft auf die folgende Runde verschieben und in Reserve bleiben.",
+            "Gelingt die Aktivierung, platziere einen Warp-Rift-Marker an den geplanten Koordinaten. Er weicht nicht ab.",
+            "Würde sich ein Warp-Riss auf Gelände öffnen, das für die hindurchtretenden Einheiten unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass er zu einem anderen Einstiegspunkt umgeleitet wird. Verschiebe den Warp-Riss zum nächstgelegenen Ort, an dem er sich öffnen kann.",
+            "anschließend führt der aktivierte Verband den zu Beginn seiner Aktion festgelegten Befehl aus und muss sich aus dem Warp-Riss herausbewegen. Miss alle Entfernungen vom Mittelpunkt des Markers.",
+            "Alle Einheiten des aktivierten Verbands müssen sich aus dem Warp-Riss herausbewegen. Einheiten, die ihn nicht verlassen können, werden zerstört. Entferne anschliessend den Warp-Rift-Marker vom Schlachtfeld."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+W3)",
+          "description": null
+        }
+      ]
+    },
+    "blutdaemon": {
+      "name": "Blutdämon",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "crit": ". Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört",
+      "weapons": [
+        {
+          "name": "Axt des Khorne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "TK(W3)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Peitsche des Khorne",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-khorne-auf-schaedelkanone": {
+      "name": "Herold des Khorne auf Schädelkanone",
+      "type": "LV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schädelkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT4+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-khorne-auf-moloch": {
+      "name": "Herold des Khorne auf Moloch",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Schwert des Blutes",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Juggernaut",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "zerfleischer-des-khorne": {
+      "name": "Zerfleischer des Khorne",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Höllenklingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "bluthunde-des-khorne": {
+      "name": "Bluthunde des Khorne",
+      "type": "INF",
+      "speed": 35,
+      "armour": 5,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Klauen und Fangzähne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "zerschmetterer-des-khorne": {
+      "name": "Zerschmetterer des Khorne",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 2,
+      "weapons": [
+        {
+          "name": "Juggernaut",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "erhabener-herrscher-des-wandels": {
+      "name": "Erhabener Herrscher des Wandels",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "crit": "Der Erhabene Große Dämon wird zerstört. Alle Dämonen-Einheiten innerhalb von 5cm werden zerstört.",
+      "weapons": [
+        {
+          "name": "Withering Blick",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 45,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bedlam Stab",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Warp-Riss",
+          "description": [
+            "Verbände mit mindestens einem Modell mit der Sonderregel Warp-Riss müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch einen Warp-Riss oder ein Chaostor betreten.",
+            "Warp-Risse werden genau wie Selbstständige Planetare Landungen geplant. Sowohl die Ankunftsrunde als auch die Lande-Koordinaten müssen notiert werden. Die Ankunftsrunde eines Verbands muss nicht bekanntgegeben werden.",
+            "Die geplanten Koordinaten des Warp-Risses müssen bei Ankunft in Runde eins innerhalb von 60 cm zum befreundeten Blitz-Missionsziel liegen; bei Ankunft in Runde zwei oder drei dürfen sie sich an beliebiger Stelle auf dem Schlachtfeld befinden.",
+            "In der festgelegten Runde wird der Warp-Rift-Verband wie bei einer Selbstständigen Planetaren Landung in der normalen Aktivierungsreihenfolge aktiviert.",
+            "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder seine Ankunft auf die folgende Runde verschieben und in Reserve bleiben.",
+            "Gelingt die Aktivierung, platziere einen Warp-Rift-Marker an den geplanten Koordinaten. Er weicht nicht ab.",
+            "Würde sich ein Warp-Riss auf Gelände öffnen, das für die hindurchtretenden Einheiten unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass er zu einem anderen Einstiegspunkt umgeleitet wird. Verschiebe den Warp-Riss zum nächstgelegenen Ort, an dem er sich öffnen kann.",
+            "anschließend führt der aktivierte Verband den zu Beginn seiner Aktion festgelegten Befehl aus und muss sich aus dem Warp-Riss herausbewegen. Miss alle Entfernungen vom Mittelpunkt des Markers.",
+            "Alle Einheiten des aktivierten Verbands müssen sich aus dem Warp-Riss herausbewegen. Einheiten, die ihn nicht verlassen können, werden zerstört. Entferne anschliessend den Warp-Rift-Marker vom Schlachtfeld."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+W3)",
+          "description": null
+        }
+      ]
+    },
+    "herrscher-des-wandels": {
+      "name": "Herrscher des Wandels",
+      "type": "WE",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 3,
+      "crit": "Der Große Dämon wird zerstört. Alle beschworenen Dämonen-Einheiten innerhalb von 5cm werden bei 5+ zerstört.",
+      "weapons": [
+        {
+          "name": "Withering Blick",
+          "modes": [
+            {
+              "firepower": "2x MW3+",
+              "range": 45,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bedlam Stab",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-tzeentch": {
+      "name": "Herold des Tzeentch",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Violettes Feuer des Tzeentch",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "herold-des-tzeentch-auf-brennendem-streitwagen": {
+      "name": "Herold des Tzeentch auf Brennendem Streitwagen",
+      "type": "LV",
+      "speed": 30,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Violettes Feuer des Tzeentch",
+          "modes": [
+            {
+              "firepower": "2x AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "horrors-des-tzeentch": {
+      "name": "Horrors des Tzeentch",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zauberbolzen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "feuerdaemonen-des-tzeentch": {
+      "name": "Feuerdämonen des Tzeentch",
+      "type": "INF",
+      "speed": 20,
+      "armour": 5,
+      "cc": 5,
+      "ff": 2,
+      "weapons": [
+        {
+          "name": "Tzeentchs Flammen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "kreischer-des-tzeentch": {
+      "name": "Kreischer des Tzeentch",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Klauen und Fangzähne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "daemonische-bestien-des-ungeteilten-chaos": {
+      "name": "Dämonische Bestien des ungeteilten Chaos",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "furien-des-ungeteilten-chaos": {
+      "name": "Furien des ungeteilten Chaos",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Im Mitternachtsschwarz",
+          "description": [
+            "Furien des ungeteilten Chaos, die in einem Nahkampf getötet werden, zählen nicht für das Nahkampfergebnis, solange der Spieler der Night Lords den Angriff eingeleitet hat."
+          ]
+        },
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "seelenzermalmer": {
+      "name": "Seelenzermalmer",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Ernterkanone",
+          "modes": [
+            {
+              "firepower": "3x AP5+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Warpschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    }
+  }
+}
