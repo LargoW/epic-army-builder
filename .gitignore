@@ -8,3 +8,4 @@ patches/
 .scan3.cjs
 .scan-std.cjs
 test/report.txt
+extract-rules.js

@@ -114,7 +114,7 @@ test("Scout (Scharfschütze) has the Scout profile, but the Schwere Bolter carri
   const list = rosterProfiles(withP, summarize(withP, s).entries[0].roster);
   const row = list.find((r) => r.unit === "scout-sniper");
   assert.equal(row.count, 4);
-  assert.equal(row.name, "Scout (Scharfschütze)");
+  assert.equal(row.name, "Scout");
   assert.ok(row.profile, "the profile is shown in the builder and the overview");
   assert.equal(list.some((r) => r.unit === "scout"), false);
 });

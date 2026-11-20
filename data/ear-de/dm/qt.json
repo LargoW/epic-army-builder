@@ -15,7 +15,7 @@
   "initiative": [
     {
       "formations": [
-        "dm-chaos-warbringer"
+        "dm-Chaos Warbringer"
       ],
       "value": "1+"
     },
@@ -37,14 +37,13 @@
     "dm-krios-venator": { "name": "Krios Venator", "from": "darkmechanicus.json", "type": "AV" },
     "dm-ord-hereticus": { "name": "Ordinatus Hereticus", "from": "darkmechanicus.json", "type": "AV" },
     "dm-ord-hereticus-majoris": { "name": "Ordinatus HereticusMajoris", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-ord-retlaxi": { "name": "Ordinatus Retlaxi", "from": "darkmechanicus.json", "type": "AV" },
-    "chaos-rhino": { "name": "Chaos Rhino", "from": "chaosnavy.json", "type": "AV" },
+    "chaos-rhino": { "name": "Chaos Rhino", "from": "darkmechanicus.json", "type": "AV" },
     "dm-hollenritter": { "name": "Höllenritter", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-hollenharpyien": { "name": "Höllenharpyien", "from": "darkmechanicus.json", "type": "AV" },
+    "dm-hollenharpyien": { "name": "Höllengeißel", "from": "darkmechanicus.json", "type": "AV" },
     "dm-schander-ritter": { "name": "Schänder-Ritter", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-chaos-warbringer": { "name": "Chaos Warbringer", "from": "traitortitanlegions.json", "type": "AV" },
-    "dm-hollendrachen": { "name": "Höllendrachen", "from": "chaosnavy.json", "type": "AV" },
-    "dm-harbringer": { "name": "Harbringer", "from": "chaosnavy.json", "type": "AV" },
+    "dm-Chaos Warbringer": { "name": "Chaos Warbringer", "from": "traitortitanlegions.json", "type": "AV" },
+    "dm-hollendrachen": { "name": "Höllendrache", "from": "chaosnavy.json", "type": "AV" },
+    "dm-harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
     "dm-chaos-schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" },
     "dm-chrono-gladiatoren": { "name": "Chrono-Gladiatoren", "from": "darkmechanicus.json", "type": "AV" }
   },
@@ -78,7 +77,7 @@
         "dm-chrono-gladiatoren",
         "dm-ord-hereticus",
         "dm-ord-hereticus-majoris",
-        "dm-chaos-warbringer",
+        "dm-Chaos Warbringer",
         "dm-hollendrachen",
         "dm-harbringer",
         "dm-chaos-schlachtschiff"
@@ -263,14 +262,14 @@
       "upgrades": []
     },
     {
-      "id": "dm-chaos-warbringer",
+      "id": "dm-Chaos Warbringer",
       "name": "Chaos Warbringer",
       "pts": 650,
       "tags": [
         "support"
       ],
       "units": [
-        { "unit": "dm-chaos-warbringer", "count": 1 }
+        { "unit": "dm-Chaos Warbringer", "count": 1 }
       ],
       "upgrades": []
     },

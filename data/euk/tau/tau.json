@@ -27,42 +27,159 @@
     }
   ],
   "units": {
-    "ethereal": {"name": "Ethereal", "type": "CH"},
-    "bondedTeam": {"name": "Bonded Team", "type": "CH"},
-    "shas-o": {"name": "Shas'o Commander", "type": "CH"},
-    "shas-el": {"name": "Shas'el Commander", "type": "CH"},
-    "fire-warrior": {"name": "Fire Warrior unit", "type": "INF"},
-    "gun-drone": {"name": "Gun Drone unit", "type": "INF"},
-    "pathfinder": {"name": "Pathfinder unit", "type": "INF"},
-    "kroot-master-shaper": {"name": "Kroot Master Shaper unit", "type": "INF"},
-    "kroot-warrior": {"name": "Kroot Warrior unit", "type": "INF"},
-    "kroot-hound": {"name": "Kroot Hound unit", "type": "INF"},
-    "krootox": {"name": "Krootox Herd unit", "type": "INF"},
-    "xv8-crisis": {"name": "XV8 Crisis Battlesuit unit", "type": "INF"},
-    "xv15-stealth": {"name": "XV15 Stealth Battlesuit unit", "type": "INF"},
-    "xv88-broadside": {"name": "XV88 Broadside Battlesuit", "type": "LV"},
-    "tetra": {"name": "Tetra Light Skimmer", "type": "LV"},
-    "piranha": {"name": "Piranha", "type": "LV"},
-    "devilfish": {"name": "Devilfish Troop Carrier", "type": "AV"},
-    "hammerhead-ionhead": {"name": "Hammerhead Gunship (Ionhead)", "type": "AV"},
-    "hammerhead-fusionhead": {"name": "Hammerhead Gunship (Fusionhead)", "type": "AV"},
-    "hammerhead-railhead": {"name": "Hammerhead Gunship (Railhead)", "type": "AV"},
-    "skyray": {"name": "Skyray Air Defence Gunship", "type": "AV"},
-    "orca": {"name": "Orca Dropship", "type": "WE"},
-    "manta": {"name": "Manta Dropship", "type": "WE"},
-    "barracuda": {"name": "Barracuda Fighter", "type": "AC"},
-    "tiger-shark": {"name": "Tiger Shark", "type": "AC"},
-    "tiger-shark-ax-1-0": {"name": "Tiger Shark AX-1-0", "type": "AC"},
-    "protector-cruiser": {"name": "Protector Class Cruiser", "type": "Spaceship"},
-    "custodian-battleship": {"name": "Custodian Class Battleship", "type": "Spaceship"}
+    "ethereal": {
+      "name": "Ethereal",
+      "type": "CH",
+      "from": "TAU.json"
+    },
+    "bondedTeam": {
+      "name": "Bonded Team",
+      "type": "CH",
+      "from": "TAU.json"
+    },
+    "shas-o": {
+      "name": "Shas'o Commander",
+      "type": "CH",
+      "from": "TAU.json"
+    },
+    "shas-el": {
+      "name": "Shas'el Commander",
+      "type": "CH",
+      "from": "TAU.json"
+    },
+    "fire-warrior": {
+      "name": "Fire Warrior unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "gun-drone": {
+      "name": "Gun Drone unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "pathfinder": {
+      "name": "Pathfinder unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "kroot-master-shaper": {
+      "name": "Kroot Master Shaper unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "kroot-warrior": {
+      "name": "Kroot Warrior unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "kroot-hound": {
+      "name": "Kroot Hound unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "krootox": {
+      "name": "Krootox Herd unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "xv8-crisis": {
+      "name": "XV8 Crisis Battlesuit unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "xv15-stealth": {
+      "name": "XV15 Stealth Battlesuit unit",
+      "type": "INF",
+      "from": "TAU.json"
+    },
+    "xv88-broadside": {
+      "name": "XV88 Broadside Battlesuit",
+      "type": "LV",
+      "from": "TAU.json"
+    },
+    "tetra": {
+      "name": "Tetra Light Skimmer",
+      "type": "LV",
+      "from": "TAU.json"
+    },
+    "piranha": {
+      "name": "Piranha",
+      "type": "LV",
+      "from": "TAU.json"
+    },
+    "devilfish": {
+      "name": "Devilfish Troop Carrier",
+      "type": "AV",
+      "from": "TAU.json"
+    },
+    "hammerhead-ionhead": {
+      "name": "Hammerhead Gunship (Ionhead)",
+      "type": "AV",
+      "from": "TAU.json"
+    },
+    "hammerhead-fusionhead": {
+      "name": "Hammerhead Gunship (Fusionhead)",
+      "type": "AV",
+      "from": "TAU.json"
+    },
+    "hammerhead-railhead": {
+      "name": "Hammerhead Gunship (Railhead)",
+      "type": "AV",
+      "from": "TAU.json"
+    },
+    "skyray": {
+      "name": "Skyray Air Defence Gunship",
+      "type": "AV",
+      "from": "TAU.json"
+    },
+    "orca": {
+      "name": "Orca Dropship",
+      "type": "WE",
+      "from": "TAU.json"
+    },
+    "manta": {
+      "name": "Manta Dropship",
+      "type": "WE",
+      "from": "TAU.json"
+    },
+    "barracuda": {
+      "name": "Barracuda Fighter",
+      "type": "AC",
+      "from": "TAU.json"
+    },
+    "tiger-shark": {
+      "name": "Tiger Shark",
+      "type": "AC",
+      "from": "TAU.json"
+    },
+    "tiger-shark-ax-1-0": {
+      "name": "Tiger Shark AX-1-0",
+      "type": "AC",
+      "from": "TAU.json"
+    },
+    "protector-cruiser": {
+      "name": "Protector Class Cruiser",
+      "type": "Spaceship",
+      "from": "TAU.json"
+    },
+    "custodian-battleship": {
+      "name": "Custodian Class Battleship",
+      "type": "Spaceship",
+      "from": "TAU.json"
+    }
   },
   "sections": [
     {
       "id": "core",
       "name": "Tau Core Formations",
       "description": "Any amount of core formations may be selected.",
-      "formations": ["f-crisis-cadre", "f-fire-warrior-cadre"],
-      "tags": ["core"]
+      "formations": [
+        "f-crisis-cadre",
+        "f-fire-warrior-cadre"
+      ],
+      "tags": [
+        "core"
+      ]
     },
     {
       "id": "support",
@@ -77,7 +194,9 @@
         "f-skysweep-group",
         "f-stealth-group"
       ],
-      "tags": ["support"]
+      "tags": [
+        "support"
+      ]
     },
     {
       "id": "air",
@@ -98,25 +217,44 @@
       "id": "f-crisis-cadre",
       "name": "Crisis Battlesuit Cadre",
       "pts": 250,
-      "tags": ["core"],
-      "units": [
-        {"unit": "shas-el", "count": 1},
-        {"unit": "xv8-crisis", "count": 4}
+      "tags": [
+        "core"
       ],
-      "upgrades": ["u-shas-o", "u-crisis-suits", "u-gun-drones"]
+      "units": [
+        {
+          "unit": "shas-el",
+          "count": 1
+        },
+        {
+          "unit": "xv8-crisis",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "u-shas-o",
+        "u-crisis-suits",
+        "u-gun-drones"
+      ]
     },
     {
       "id": "f-fire-warrior-cadre",
       "name": "Fire Warrior Cadre",
       "pts": 225,
-      "tags": ["core"],
+      "tags": [
+        "core"
+      ],
       "sizes": [
         {
           "id": "infantry",
           "label": "Eight Tau Fire Warrior units",
           "pts": 225,
           "mult": 1,
-          "units": [{"unit": "fire-warrior", "count": 8}]
+          "units": [
+            {
+              "unit": "fire-warrior",
+              "count": 8
+            }
+          ]
         },
         {
           "id": "transport",
@@ -124,12 +262,23 @@
           "pts": 225,
           "mult": 1,
           "units": [
-            {"unit": "fire-warrior", "count": 6},
-            {"unit": "devilfish", "count": 3}
+            {
+              "unit": "fire-warrior",
+              "count": 6
+            },
+            {
+              "unit": "devilfish",
+              "count": 3
+            }
           ]
         }
       ],
-      "units": [{"unit": "fire-warrior", "count": 8}],
+      "units": [
+        {
+          "unit": "fire-warrior",
+          "count": 8
+        }
+      ],
       "upgrades": [
         "u-bonded-teams",
         "u-broadsides",
@@ -146,142 +295,288 @@
       "id": "f-armour-group",
       "name": "Armour Group",
       "pts": 200,
-      "tags": ["support"],
+      "tags": [
+        "support"
+      ],
       "sizes": [
         {
           "id": "ion-fusion",
           "label": "Four Ionhead or Fusionhead Gunships",
           "pts": 200,
           "mult": 1,
-          "units": [{"oneOf": ["hammerhead-ionhead", "hammerhead-fusionhead"], "count": 4, "mixed": true}]
+          "units": [
+            {
+              "oneOf": [
+                "hammerhead-ionhead",
+                "hammerhead-fusionhead"
+              ],
+              "count": 4,
+              "mixed": true
+            }
+          ]
         },
         {
           "id": "railhead",
           "label": "Four Railhead Gunships",
           "pts": 225,
           "mult": 1,
-          "units": [{"unit": "hammerhead-railhead", "count": 4}]
+          "units": [
+            {
+              "unit": "hammerhead-railhead",
+              "count": 4
+            }
+          ]
         }
       ],
-      "units": [{"oneOf": ["hammerhead-ionhead", "hammerhead-fusionhead"], "count": 4, "mixed": true}],
-      "upgrades": ["u-hammerheads", "u-skyray"]
+      "units": [
+        {
+          "oneOf": [
+            "hammerhead-ionhead",
+            "hammerhead-fusionhead"
+          ],
+          "count": 4,
+          "mixed": true
+        }
+      ],
+      "upgrades": [
+        "u-hammerheads",
+        "u-skyray"
+      ]
     },
     {
       "id": "f-broadside-group",
       "name": "Broadside Group",
       "pts": 300,
-      "tags": ["support"],
-      "units": [{"unit": "xv88-broadside", "count": 6}],
-      "upgrades": ["u-gun-drones"]
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "xv88-broadside",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "u-gun-drones"
+      ]
     },
     {
       "id": "f-kroot-kindred",
       "name": "Kroot Kindred",
       "pts": 175,
-      "tags": ["support"],
-      "units": [
-        {"unit": "kroot-master-shaper", "count": 1},
-        {"unit": "kroot-warrior", "count": 9}
+      "tags": [
+        "support"
       ],
-      "upgrades": ["u-kroot", "u-kroot-hounds", "u-krootox"]
+      "units": [
+        {
+          "unit": "kroot-master-shaper",
+          "count": 1
+        },
+        {
+          "unit": "kroot-warrior",
+          "count": 9
+        }
+      ],
+      "upgrades": [
+        "u-kroot",
+        "u-kroot-hounds",
+        "u-krootox"
+      ]
     },
     {
       "id": "f-pathfinder-group",
       "name": "Pathfinder Group",
       "pts": 200,
-      "tags": ["support"],
-      "units": [
-        {"unit": "pathfinder", "count": 4},
-        {"unit": "devilfish", "count": 2}
+      "tags": [
+        "support"
       ],
-      "upgrades": ["u-gun-drones", "u-piranhas"]
+      "units": [
+        {
+          "unit": "pathfinder",
+          "count": 4
+        },
+        {
+          "unit": "devilfish",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "u-gun-drones",
+        "u-piranhas"
+      ]
     },
     {
       "id": "f-recon-group",
       "name": "Recon Group",
       "pts": 175,
-      "tags": ["support"],
-      "units": [{"oneOf": ["tetra", "piranha"], "count": 6, "mixed": true}],
-      "upgrades": ["u-gun-drones", "u-piranhas"]
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "tetra",
+            "piranha"
+          ],
+          "count": 6,
+          "mixed": true
+        }
+      ],
+      "upgrades": [
+        "u-gun-drones",
+        "u-piranhas"
+      ]
     },
     {
       "id": "f-skysweep-group",
       "name": "Skysweep Group",
       "pts": 250,
-      "tags": ["support"],
-      "units": [{"unit": "skyray", "count": 3}],
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "skyray",
+          "count": 3
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "f-stealth-group",
       "name": "Stealth Group",
       "pts": 225,
-      "tags": ["support"],
-      "units": [{"unit": "xv15-stealth", "count": 6}],
-      "upgrades": ["u-gun-drones"]
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "xv15-stealth",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "u-gun-drones"
+      ]
     },
     {
       "id": "f-barracuda-squadron",
       "name": "Barracuda Squadron",
       "pts": 150,
-      "tags": ["air"],
-      "units": [{"unit": "barracuda", "count": 2}],
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "barracuda",
+          "count": 2
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "f-manta",
       "name": "Manta Dropship",
       "pts": 650,
-      "tags": ["air", "warengine"],
-      "units": [{"unit": "manta", "count": 1}],
+      "tags": [
+        "air",
+        "warengine"
+      ],
+      "units": [
+        {
+          "unit": "manta",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "f-orca",
       "name": "Orca Dropship",
       "pts": 150,
-      "tags": ["air"],
-      "units": [{"unit": "orca", "count": 1}],
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "orca",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "f-spacecraft",
       "name": "0-1 Spacecraft",
       "pts": 200,
-      "tags": ["air", "spacecraft"],
+      "tags": [
+        "air",
+        "spacecraft"
+      ],
       "sizes": [
         {
           "id": "protector",
           "label": "One Protector Class Cruiser",
           "pts": 200,
           "mult": 1,
-          "units": [{"unit": "protector-cruiser", "count": 1}]
+          "units": [
+            {
+              "unit": "protector-cruiser",
+              "count": 1
+            }
+          ]
         },
         {
           "id": "custodian",
           "label": "One Custodian Class Battleship",
           "pts": 225,
           "mult": 1,
-          "units": [{"unit": "custodian-battleship", "count": 1}]
+          "units": [
+            {
+              "unit": "custodian-battleship",
+              "count": 1
+            }
+          ]
         }
       ],
-      "units": [{"unit": "protector-cruiser", "count": 1}],
+      "units": [
+        {
+          "unit": "protector-cruiser",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "f-tiger-shark-squadron",
       "name": "Tiger Shark Squadron",
       "pts": 175,
-      "tags": ["air"],
-      "units": [{"unit": "tiger-shark", "count": 2}],
-      "upgrades": ["u-tiger-shark-drones"]
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "tiger-shark",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "u-tiger-shark-drones"
+      ]
     },
     {
       "id": "f-tiger-shark-ax-1-0-squadron",
       "name": "Tiger Shark AX-1-0 Squadron",
       "pts": 350,
-      "tags": ["air"],
-      "units": [{"unit": "tiger-shark-ax-1-0", "count": 2}],
+      "tags": [
+        "air"
+      ],
+      "units": [
+        {
+          "unit": "tiger-shark-ax-1-0",
+          "count": 2
+        }
+      ],
       "upgrades": []
     }
   ],
@@ -294,7 +589,13 @@
           "id": "1",
           "label": "Formation counts as containing an additional Leader and removes an extra blast marker when rallying or regrouping",
           "pts": 25,
-          "effects": [{"op": "add", "unit": "bondedTeam", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "bondedTeam",
+              "count": 1
+            }
+          ]
         }
       ]
     },
@@ -306,7 +607,13 @@
           "id": "1",
           "label": "Add three XV88 Broadside Battlesuits",
           "pts": 150,
-          "effects": [{"op": "add", "unit": "xv88-broadside", "count": 3}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv88-broadside",
+              "count": 3
+            }
+          ]
         }
       ]
     },
@@ -319,7 +626,14 @@
           "label": "Replace Shas'el with Shas'o",
           "pts": 50,
           "perArmy": 1,
-          "effects": [{"op": "replace", "from": "shas-el", "to": "shas-o", "count": 1}]
+          "effects": [
+            {
+              "op": "replace",
+              "from": "shas-el",
+              "to": "shas-o",
+              "count": 1
+            }
+          ]
         }
       ]
     },
@@ -331,25 +645,49 @@
           "id": "1",
           "label": "Add one XV8 Crisis Battlesuit",
           "pts": 50,
-          "effects": [{"op": "add", "unit": "xv8-crisis", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8-crisis",
+              "count": 1
+            }
+          ]
         },
         {
           "id": "2",
           "label": "Add two XV8 Crisis Battlesuits",
           "pts": 75,
-          "effects": [{"op": "add", "unit": "xv8-crisis", "count": 2}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8-crisis",
+              "count": 2
+            }
+          ]
         },
         {
           "id": "3",
           "label": "Add three XV8 Crisis Battlesuits",
           "pts": 125,
-          "effects": [{"op": "add", "unit": "xv8-crisis", "count": 3}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8-crisis",
+              "count": 3
+            }
+          ]
         },
         {
           "id": "4",
           "label": "Add four XV8 Crisis Battlesuits",
           "pts": 150,
-          "effects": [{"op": "add", "unit": "xv8-crisis", "count": 4}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "xv8-crisis",
+              "count": 4
+            }
+          ]
         }
       ]
     },
@@ -362,7 +700,13 @@
           "label": "Add one Ethereal",
           "pts": 50,
           "perArmy": 1,
-          "effects": [{"op": "add", "unit": "ethereal", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ethereal",
+              "count": 1
+            }
+          ]
         }
       ]
     },
@@ -374,15 +718,29 @@
           "id": "1",
           "label": "Add four Fire Warrior units",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "fire-warrior", "count": 4}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fire-warrior",
+              "count": 4
+            }
+          ]
         },
         {
           "id": "2",
           "label": "Add four Fire Warrior units and two Devilfish",
           "pts": 125,
           "effects": [
-            {"op": "add", "unit": "fire-warrior", "count": 4},
-            {"op": "add", "unit": "devilfish", "count": 2}
+            {
+              "op": "add",
+              "unit": "fire-warrior",
+              "count": 4
+            },
+            {
+              "op": "add",
+              "unit": "devilfish",
+              "count": 2
+            }
           ]
         }
       ]
@@ -395,7 +753,13 @@
           "id": "1",
           "label": "Add two Gun Drone units",
           "pts": 25,
-          "effects": [{"op": "add", "unit": "gun-drone", "count": 2}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "gun-drone",
+              "count": 2
+            }
+          ]
         }
       ]
     },
@@ -407,37 +771,78 @@
           "id": "1",
           "label": "Add two Ionhead Gunships",
           "pts": 75,
-          "effects": [{"op": "add", "unit": "hammerhead-ionhead", "count": 2}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-ionhead",
+              "count": 2
+            }
+          ]
         },
         {
           "id": "2",
           "label": "Add one Railhead Gunship",
           "pts": 50,
-          "effects": [{"op": "add", "unit": "hammerhead-railhead", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-railhead",
+              "count": 1
+            }
+          ]
         },
         {
           "id": "3",
           "label": "Add two Railhead Gunships",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "hammerhead-railhead", "count": 2}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-railhead",
+              "count": 2
+            }
+          ]
         },
         {
           "id": "4",
           "label": "Add one Fusionhead Gunship",
           "pts": 50,
-          "effects": [{"op": "add", "unit": "hammerhead-fusionhead", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-fusionhead",
+              "count": 1
+            }
+          ]
         },
         {
           "id": "5",
           "label": "Add two Fusionhead Gunships",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "hammerhead-fusionhead", "count": 2}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-fusionhead",
+              "count": 2
+            }
+          ]
         },
         {
           "id": "6",
           "label": "Add one Railhead and one Fusionhead Gunship",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "hammerhead-railhead", "count": 1}, {"op": "add", "unit": "hammerhead-fusionhead", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hammerhead-railhead",
+              "count": 1
+            },
+            {
+              "op": "add",
+              "unit": "hammerhead-fusionhead",
+              "count": 1
+            }
+          ]
         }
       ]
     },
@@ -449,7 +854,13 @@
           "id": "1",
           "label": "Add five Kroot Warrior units",
           "pts": 75,
-          "effects": [{"op": "add", "unit": "kroot-warrior", "count": 5}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kroot-warrior",
+              "count": 5
+            }
+          ]
         }
       ]
     },
@@ -461,7 +872,13 @@
           "id": "1",
           "label": "Add three Kroot Hound packs",
           "pts": 50,
-          "effects": [{"op": "add", "unit": "kroot-hound", "count": 3}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "kroot-hound",
+              "count": 3
+            }
+          ]
         }
       ]
     },
@@ -473,7 +890,13 @@
           "id": "1",
           "label": "Add three Krootox Herds",
           "pts": 50,
-          "effects": [{"op": "add", "unit": "krootox", "count": 3}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "krootox",
+              "count": 3
+            }
+          ]
         }
       ]
     },
@@ -486,8 +909,16 @@
           "label": "Add two Pathfinder units and one Devilfish",
           "pts": 100,
           "effects": [
-            {"op": "add", "unit": "pathfinder", "count": 2},
-            {"op": "add", "unit": "devilfish", "count": 1}
+            {
+              "op": "add",
+              "unit": "pathfinder",
+              "count": 2
+            },
+            {
+              "op": "add",
+              "unit": "devilfish",
+              "count": 1
+            }
           ]
         }
       ]
@@ -500,7 +931,13 @@
           "id": "1",
           "label": "Add three Piranhas",
           "pts": 75,
-          "effects": [{"op": "add", "unit": "piranha", "count": 3}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "piranha",
+              "count": 3
+            }
+          ]
         }
       ]
     },
@@ -512,7 +949,13 @@
           "id": "1",
           "label": "Add one Skyray Air Defence Gunship",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "skyray", "count": 1}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "skyray",
+              "count": 1
+            }
+          ]
         }
       ]
     },
@@ -524,7 +967,13 @@
           "id": "1",
           "label": "Add a formation of six Gun Drone units to the army. The Tigershark may start the game transporting this formation.",
           "pts": 100,
-          "effects": [{"op": "add", "unit": "gun-drone", "count": 6}]
+          "effects": [
+            {
+              "op": "add",
+              "unit": "gun-drone",
+              "count": 6
+            }
+          ]
         }
       ]
     }
@@ -532,26 +981,41 @@
   "formationConstraints": [
     {
       "id": "support-per-core",
-      "from": ["tag:support"],
-      "forEach": ["tag:core"],
+      "from": [
+        "tag:support"
+      ],
+      "forEach": [
+        "tag:core"
+      ],
       "max": 3
     },
     {
       "id": "air-caste-third",
-      "from": ["tag:air"],
-      "maxShare": [1, 3]
+      "from": [
+        "tag:air"
+      ],
+      "maxShare": [
+        1,
+        3
+      ]
     },
     {
       "id": "spacecraft-limit",
-      "from": ["tag:spacecraft"],
+      "from": [
+        "tag:spacecraft"
+      ],
       "max": 1
     }
   ],
   "upgradeConstraints": [
     {
       "id": "max-three-upgrades",
-      "appliesTo": ["*"],
-      "from": ["*"],
+      "appliesTo": [
+        "*"
+      ],
+      "from": [
+        "*"
+      ],
       "maxTotal": 3
     }
   ]

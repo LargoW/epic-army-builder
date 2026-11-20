@@ -46,7 +46,7 @@
     {
       "name": "Charaktere der World Eaters",
       "description": [
-        "World-Eaters-Charaktere dürfen nur World-Eaters-Sturmtrupps, Khorne Berserker, Skullseeker Terminatoren, Juggernaut Riders oder Khorne-Berserker-Angriffsbikes hinzugefügt werden."
+        "World Eaters Charaktere dürfen nur World Eaters Sturmtrupps, Khorne Berserker, Skullseeker Terminatoren, Juggernaut Riders oder Khorne-Berserker-Angriffsbikes hinzugefügt werden."
       ]
     }
   ],
@@ -206,17 +206,6 @@
           "description": null
         }
       ]
-    },
-    "we-daemonenpakt":{
-      "name": "Dämonen-Pakt",
-      "type": null,
-      "speed":null,
-      "armour":null,
-      "cc":null,
-      "ff":null,
-      "weapons":[],
-      "specialRules":["Die Formation darf Dämonen beschwören."]
-
     },
     "we-daemonenprinz": {
       "name": "Dämonenprinz des Khorne",
@@ -646,7 +635,7 @@
       ]
     },
     "we-rhino": {
-      "name": "World-Eaters-Rhino",
+      "name": "World Eaters Rhino",
       "type": "AV",
       "speed": 30,
       "armour": 5,
@@ -693,7 +682,7 @@
       "specialRules": []
     },
     "we-vindicator": {
-      "name": "World-Eaters-Vindicator",
+      "name": "World Eaters Vindicator",
       "type": "AV",
       "speed": 30,
       "armour": 4,

@@ -57,7 +57,7 @@
     "hoellenklinge": { "name": "Höllendrache", "from": "chaosnavy.json", "type": "AV" },
     "harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
     "kreuzer": { "name": "Kreuzer der Devastation-Klasse", "from": "chaosnavy.json", "type": "AV" },
-    "schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" },
+    "schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" }
   },
   "sections": [
     {

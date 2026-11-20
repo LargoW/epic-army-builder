@@ -1,26 +1,63 @@
 import {
-  createState, addFormation, removeFormation, cloneFormation, moveFormation, sortFormations, setChoice, setUpgrade, removeUpgrade, setSize, sizeOf, unitSlots,
-  summarize, validate, withProfiles, rosterProfiles, matches, poolSummary,
+    createState,
+    addFormation,
+    removeFormation,
+    cloneFormation,
+    moveFormation,
+    sortFormations,
+    setChoice,
+    setUpgrade,
+    removeUpgrade,
+    setSize,
+    sizeOf,
+    unitSlots,
+    summarize,
+    validate,
+    withProfiles,
+    rosterProfiles,
+    matches,
+    poolSummary,
 } from "../engine/engine.js";
-import { messageFor } from "./messages.de.js";
-import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
+import { uiText, messageFor } from "./messages.js";
+import {
+    buildExport,
+    toToken,
+    parseInput,
+    sanitize
+} from "../engine/exchange.js";
 
 const LEGACY = "eab:ear-de/ig/steellegion";
 const index = await fetch("data/index.json").then((r) => r.json());
+const RULE_DICT = await fetch("data/rules.json").then((r) => r.ok ? r.json() : {}).catch(() => ({}));
 const armyInfo = (id) => index.armies.find((a) => a.id === id);
 
 let base, data, formationById, upgradeById;
 async function loadArmy(id) {
-  const [b, p] = await Promise.all([
-    fetch(`data/${id}.json`).then((r) => r.json()),
-    fetch(`data/${id}.profiles.json`).then((r) => (r.ok ? r.json() : { units: {}, specialRules: [] })).catch(() => ({ units: {}, specialRules: [] })),
-  ]);
-  return { base: b, data: withProfiles(b, p || { units: {}, specialRules: [] }) };
+    const [b, p] = await Promise.all([
+        fetch(`data/${id}.json`).then((r) => r.json()),
+        fetch(`data/${id}.profiles.json`).then((r) => (r.ok ? r.json() : {
+            units: {},
+            specialRules: []
+        })).catch(() => ({
+            units: {},
+            specialRules: []
+        })),
+    ]);
+    return {
+        base: b,
+        data: withProfiles(b, p || {
+            units: {},
+            specialRules: []
+        })
+    };
 }
 async function useArmy(id) {
-  ({ base, data } = await loadArmy(id));
-  formationById = Object.fromEntries(data.formations.map((f) => [f.id, f]));
-  upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
+    ({
+        base,
+        data
+    } = await loadArmy(id));
+    formationById = Object.fromEntries(data.formations.map((f) => [f.id, f]));
+    upgradeById = Object.fromEntries(data.upgrades.map((u) => [u.id, u]));
 }
 
 const $ = (s) => document.querySelector(s);
@@ -28,37 +65,72 @@ const app = $("#app");
 const open = new Set();
 let view = localStorage.getItem("eab:view") === "overview" ? "overview" : "build";
 let showHidden = localStorage.getItem("eab:showHidden") === "true";
+let keepPickerOpen = localStorage.getItem("eab:keepPickerOpen") === "true";
+let lang = localStorage.getItem("eab:lang") || "de"; // NEU: Sprache
+
+const t = (key, params) => {
+    let str = uiText[lang][key] || key;
+    if (params) {
+        Object.keys(params).forEach(p => {
+            str = str.replace(`\${${p}}`, params[p]);
+        });
+    }
+    return str;
+};
+
 let openRulesets;
 try {
-  const stored = localStorage.getItem("eab:openRulesets");
-  openRulesets = stored ? new Set(JSON.parse(stored)) : new Set(index.rulesets.map((r) => r.id));
+    const stored = localStorage.getItem("eab:openRulesets");
+    openRulesets = stored ? new Set(JSON.parse(stored)) : new Set(index.rulesets.map((r) => r.id));
 } catch {
-  openRulesets = new Set(index.rulesets.map((r) => r.id));
+    openRulesets = new Set(index.rulesets.map((r) => r.id));
 }
 
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+} [c]));
 const text = (d) => (Array.isArray(d) ? d.join(" ") : d || "");
 const unitName = (id) => (data.units[id] ? data.units[id].name : id);
-const names = { upgrade: (id) => (upgradeById[id] ? upgradeById[id].name : id), unit: unitName };
+const names = {
+    upgrade: (id) => (upgradeById[id] ? upgradeById[id].name : id),
+    unit: unitName
+};
 
-// Theme: no stored choice means "follow the system"; the button then sets an explicit choice.
 function currentTheme() {
-  return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" :
+        "dark");
 }
+
 function applyTheme(t) {
-  document.documentElement.dataset.theme = t;
-  localStorage.setItem("eab:theme", t);
-  document.querySelector('meta[name="theme-color"]').content = t === "light" ? "#f3f4f6" : "#0b0f17";
+    document.documentElement.dataset.theme = t;
+    localStorage.setItem("eab:theme", t);
+    document.querySelector('meta[name="theme-color"]').content = t === "light" ? "#f3f4f6" : "#0b0f17";
 }
 applyTheme(currentTheme());
 
-// Lists: any number per army, each with its own name. Stored as one array.
 let lists = [];
-try { lists = JSON.parse(localStorage.getItem("eab:lists")) || []; } catch { lists = []; }
+try {
+    lists = JSON.parse(localStorage.getItem("eab:lists")) || [];
+} catch {
+    lists = [];
+}
 if (!lists.length) {
-  let migrated = null;
-  try { migrated = JSON.parse(localStorage.getItem(LEGACY)); } catch { /* ignore */ }
-  if (migrated && Array.isArray(migrated.formations)) lists.push({ id: "l1", army: "ear-de/ig/steellegion", name: "Stahllegion 1", state: migrated });
+    let migrated = null;
+    try {
+        migrated = JSON.parse(localStorage.getItem(LEGACY));
+    } catch {
+        /* ignore */
+    }
+    if (migrated && Array.isArray(migrated.formations)) lists.push({
+        id: "l1",
+        army: "ear-de/ig/steellegion",
+        name: "Stahllegion 1",
+        state: migrated
+    });
 }
 lists = lists.filter((l) => armyInfo(l.army));
 let currentId = localStorage.getItem("eab:current");
@@ -66,268 +138,359 @@ let state;
 const cur = () => lists.find((l) => l.id === currentId);
 
 const persist = () => {
-  localStorage.setItem("eab:lists", JSON.stringify(lists));
-  if (currentId) localStorage.setItem("eab:current", currentId);
-  else localStorage.removeItem("eab:current");
+    localStorage.setItem("eab:lists", JSON.stringify(lists));
+    if (currentId) localStorage.setItem("eab:current", currentId);
+    else localStorage.removeItem("eab:current");
 };
 const save = () => {
-  const l = cur();
-  l.state = state;
-  l.total = summarize(data, state).total;
-  persist();
+    const l = cur();
+    l.state = state;
+    l.total = summarize(data, state).total;
+    persist();
 };
 
 function newName(armyId) {
-  const a = armyInfo(armyId);
-  let n = 1;
-  while (lists.some((l) => l.army === armyId && l.name === `${a.name} ${n}`)) n++;
-  return `${a.name} ${n}`;
+    const a = armyInfo(armyId);
+    let n = 1;
+    while (lists.some((l) => l.army === armyId && l.name === `${a.name} ${n}`)) n++;
+    return `${a.name} ${n}`;
 }
 
 async function openList(id) {
-  const l = lists.find((x) => x.id === id);
-  currentId = id;
-  await useArmy(l.army);
-  state = l.state && Array.isArray(l.state.formations)
-    ? { ...l.state, formations: l.state.formations.filter((e) => formationById[e.formation]) }
-    : createState();
-  open.clear();
-  persist();
+    const l = lists.find((x) => x.id === id);
+    currentId = id;
+    await useArmy(l.army);
+    state = l.state && Array.isArray(l.state.formations) ? {
+            ...l.state,
+            formations: l.state.formations.filter((e) => formationById[e.formation])
+        } :
+        createState();
+    open.clear();
+    persist();
 }
 
 async function createList(armyId, name, from) {
-  let n = 1;
-  while (lists.some((l) => l.id === `l${n}`)) n++;
-  lists.push({ id: `l${n}`, army: armyId, name: name || newName(armyId), state: from || createState() });
-  await openList(`l${n}`);
-  save();
+    let n = 1;
+    while (lists.some((l) => l.id === `l${n}`)) n++;
+    lists.push({
+        id: `l${n}`,
+        army: armyId,
+        name: name || newName(armyId),
+        state: from || createState()
+    });
+    await openList(`l${n}`);
+    save();
 }
 
-// First visit: no default list. The start screen asks the user to pick an army.
 if (!cur() && lists.length) currentId = lists[0].id;
 if (cur()) await openList(currentId);
 
 function update(next) {
-  state = next;
-  save();
-  render();
+    state = next;
+    save();
+    render();
 }
 
 function toast(msg) {
-  const t = $("#toast");
-  t.textContent = msg;
-  t.classList.add("show");
-  setTimeout(() => t.classList.remove("show"), 1800);
+    const el = $("#toast");
+    el.textContent = msg;
+    el.classList.add("show");
+    setTimeout(() => el.classList.remove("show"), 1800);
 }
 
 const stat = (label, v) => (v == null ? "" : `<span><b>${label}</b>${esc(v)}</span>`);
 
 function weaponLine(w) {
-  const modesList = w.modes || [{ range: w.range, firepower: w.firepower, specialRules: [] }];
-  const modes = modesList
-    .map((m) => {
-      const rules = (m.specialRules || []).map((r) => esc(r.name || r)).join(", ");
-      const rangeStr = m.range ? (typeof m.range === "number" || /^\d+$/.test(m.range) ? `${esc(m.range)} cm ` : `${esc(m.range)} `) : "";
-      return `${m.join ? `<i>${esc(m.join)}</i> ` : ""}${rangeStr}${esc(m.firepower || "")}${rules ? ` (${rules})` : ""}`.trim();
-    })
-    .join(" ");
-  return `<li><b>${w.count ? `${esc(w.count)}× ` : ""}${esc(w.name)}</b> ${modes}</li>`;
+    const modesList = w.modes || [{
+        range: w.range,
+        firepower: w.firepower,
+        specialRules: []
+    }];
+    const modes = modesList
+        .map((m) => {
+            const rules = (m.specialRules || []).map((r) => esc(r.name || r)).join(", ");
+            const rangeStr = m.range ? (typeof m.range === "number" || /^\d+$/.test(m.range) ?
+                `${esc(m.range)} cm ` : `${esc(m.range)} `) : "";
+            return `${m.join ? `<i>${esc(m.join)}</i> ` : ""}${rangeStr}${esc(m.firepower || "")}${rules ? ` (${rules})` : ""}`
+                .trim();
+        })
+        .join(" ");
+    return `<li><b>${w.count ? `${esc(w.count)}× ` : ""}${esc(w.name)}</b> ${modes}</li>`;
 }
 
 function unitBlock(entryUid, r) {
-  const p = r.profile;
-  const key = `u${entryUid}:${r.unit}`;
-  const wp = p && Array.isArray(p.weapons) ? p.weapons : [];
-  const sr = p && Array.isArray(p.specialRules) ? p.specialRules : [];
-  const body = p
-    ? `<div class="stats">${stat("Typ", p.type)}${stat("Geschw.", p.speed)}${stat("ARM", p.armour != null ? plus(p.armour) : null)}${stat("CC", p.cc != null ? plus(p.cc) : null)}${stat("FF", p.ff != null ? plus(p.ff) : null)}</div>
+    const p = r.profile;
+    const key = `u${entryUid}:${r.unit}`;
+    const wp = p && Array.isArray(p.weapons) ? p.weapons : [];
+    const sr = p && Array.isArray(p.specialRules) ? p.specialRules : [];
+    const body = p ?
+        `<div class="stats">${stat("Typ", p.type)}${stat("Geschw.", p.speed)}${stat("ARM", p.armour != null ? plus(p.armour) : null)}${stat("CC", p.cc != null ? plus(p.cc) : null)}${stat("FF", p.ff != null ? plus(p.ff) : null)}</div>
        ${wp.length ? `<ul class="weapons">${wp.map(weaponLine).join("")}</ul>` : ""}
        ${p.notes ? `<p class="note">${esc(p.notes)}</p>` : ""}
-       ${sr.length ? `<dl class="rules">${sr.map((r2) => `<dt>${esc(r2.name || r2)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}`
-    : `<p class="muted">Kein Profil vorhanden.</p>`;
-    
-  const countPrefix = r.count > 0 ? `${r.count}× ` : `<span style="visibility: hidden">0× </span>`;
+       ${sr.length ? `<dl class="rules">${sr.map((r2) => `<dt>${esc(r2.name || r2)}</dt>${r2.description ? `<dd>${esc(text(r2.description))}</dd>` : ""}`).join("")}</dl>` : ""}` :
+        `<p class="muted">${t("no_profile")}</p>`;
 
-  return `<details class="unit" data-key="${key}"${open.has(key) ? " open" : ""}>
+    const countPrefix = r.count > 0 ? `${r.count}× ` : `<span style="visibility: hidden">0× </span>`;
+
+    return `<details class="unit" data-key="${key}"${open.has(key) ? " open" : ""}>
     <summary><span>${countPrefix}${esc(r.name)}</span>${p && p.type ? `<span class="type">${esc(p.type)}</span>` : ""}</summary>${body}</details>`;
 }
 
 const sizeSuffix = (def, entry) => {
-  const s = sizeOf(def, entry);
-  return s && s.mult > 1 ? ` (${s.label.replace(/ \(.*/, "")})` : "";
+    const s = sizeOf(def, entry);
+    return s && s.mult > 1 ? ` (${s.label.replace(/ \(.*/, "")})` : "";
 };
 
 function sizeControls(entry, def) {
-  if (!def.sizes) return "";
-  const cur = sizeOf(def, entry).id;
-  return `<h3>Größe</h3><div class="row"><label for="s${entry.uid}">Verbandsgröße</label>
+    if (!def.sizes) return "";
+    const cur = sizeOf(def, entry).id;
+    return `<h3>${t("size")}</h3><div class="row"><label for="s${entry.uid}">${t("size")}</label>
     <select id="s${entry.uid}" data-act="size" data-uid="${entry.uid}">
-      ${def.sizes.map((s) => `<option value="${s.id}"${s.id === cur ? " selected" : ""}>${esc(s.label)} – ${s.pts} Pkt.</option>`).join("")}
+      ${def.sizes.map((s) => `<option value="${s.id}"${s.id === cur ? " selected" : ""}>${esc(s.label)} – ${s.pts} ${t("pts")}</option>`).join("")}
     </select></div>`;
 }
 
 function choiceControls(entry, def) {
-  const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
-  const slots = unitSlots(def, entry).map((s, i) => ({ s, i })).filter((x) => x.s.oneOf);
-  if (!slots.length) return "";
-  return `<h3>Einheiten wählen</h3>` + slots.map(({ s, i }) => {
-    const count = s.count * mult;
-    const dist = entry.choices[i] || { [s.oneOf[0]]: count };
-    if (!s.mixed) {
-      const cur = Object.keys(dist).find((u) => dist[u] > 0) || s.oneOf[0];
-      return `<div class="row"><label>${count}×</label>
+    const mult = (sizeOf(def, entry) || {
+        mult: 1
+    }).mult;
+    const slots = unitSlots(def, entry).map((s, i) => ({
+        s,
+        i
+    })).filter((x) => x.s.oneOf);
+    if (!slots.length) return "";
+    return `<h3>${t("choose_units")}</h3>` + slots.map(({
+        s,
+        i
+    }) => {
+        const count = s.count * mult;
+        const dist = entry.choices[i] || {
+            [s.oneOf[0]]: count
+        };
+        if (!s.mixed) {
+            const cur = Object.keys(dist).find((u) => dist[u] > 0) || s.oneOf[0];
+            return `<div class="row"><label>${count}×</label>
         <select data-act="choice-single" data-uid="${entry.uid}" data-slot="${i}" data-count="${count}">
           ${s.oneOf.map((u) => `<option value="${u}"${u === cur ? " selected" : ""}>${esc(unitName(u))}</option>`).join("")}
         </select></div>`;
-    }
-    return s.oneOf.map((u) => `<div class="row"><label>${esc(unitName(u))}</label>
+        }
+        return s.oneOf.map((u) => `<div class="row"><label>${esc(unitName(u))}</label>
       <input type="number" min="0" max="${count}" inputmode="numeric" value="${dist[u] || 0}"
-        data-act="choice-mixed" data-uid="${entry.uid}" data-slot="${i}" data-unit="${u}"></div>`).join("")
-      + `<p class="note">Summe muss ${count} ergeben.</p>`;
-  }).join("");
+        data-act="choice-mixed" data-uid="${entry.uid}" data-slot="${i}" data-unit="${u}"></div>`).join("") +
+            `<p class="note">${t("sum_must_be", {count})}</p>`;
+    }).join("");
 }
 
 function upgradeControls(entry, def) {
-  if (!def.upgrades.length) return "";
-  const canTransport = (data.transport || []).find((t) => matches(t.appliesTo, def));
-  const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
-  return `<h3>Aufwertungen</h3>` + def.upgrades.map((id) => {
-    const u = upgradeById[id];
-    const sel = entry.upgrades.find((x) => x.upgrade === id);
-    const v0 = u.variants[0];
-    if (u.variants.length === 1 && v0.perUnit) {
-      const max = v0.max != null ? ` max="${v0.max * mult}"` : "";
-      return `<div class="row"><label for="u${entry.uid}-${id}">${esc(v0.label)} (+${v0.pts} je${v0.max != null ? `, 0–${v0.max * mult}` : ""})</label>
+    if (!def.upgrades.length) return "";
+    const canTransport = (data.transport || []).find((t) => matches(t.appliesTo, def));
+    const mult = (sizeOf(def, entry) || {
+        mult: 1
+    }).mult;
+    return `<h3>${t("upgrades")}</h3>` + def.upgrades.map((id) => {
+        const u = upgradeById[id];
+        const sel = entry.upgrades.find((x) => x.upgrade === id);
+        const v0 = u.variants[0];
+        if (u.variants.length === 1 && v0.perUnit) {
+            const max = v0.max != null ? ` max="${v0.max * mult}"` : "";
+            return `<div class="row"><label for="u${entry.uid}-${id}">${esc(v0.label)} (+${v0.pts} je${v0.max != null ? `, 0–${v0.max * mult}` : ""})</label>
         <input id="u${entry.uid}-${id}" type="number" min="0"${max} inputmode="numeric" value="${sel ? sel.count || 1 : 0}" data-act="perunit" data-uid="${entry.uid}" data-upgrade="${id}" data-variant="${v0.id}"></div>`;
-    }
-    return `<div class="row"><label for="u${entry.uid}-${id}">${esc(u.name)}</label>
+        }
+        return `<div class="row"><label for="u${entry.uid}-${id}">${esc(u.name)}</label>
       <select id="u${entry.uid}-${id}" data-act="upgrade" data-uid="${entry.uid}" data-upgrade="${id}">
         <option value="">–</option>
         ${u.variants.map((v) => `<option value="${v.id}"${sel && sel.variant === v.id ? " selected" : ""}>${esc(v.label)} (+${v.pts})</option>`).join("")}
       </select>
-      ${sel && u.transportable && canTransport ? `<div class="sub"><label for="c${entry.uid}-${id}">Chimären (+${canTransport.pts} je)</label>
+      ${sel && u.transportable && canTransport ? `<div class="sub"><label for="c${entry.uid}-${id}">${t("chimera", {pts: canTransport.pts})}</label>
         <input id="c${entry.uid}-${id}" type="number" min="0" inputmode="numeric" value="${sel.chimeras || 0}" data-act="chimeras" data-uid="${entry.uid}" data-upgrade="${id}"></div>` : ""}
     </div>`;
-  }).join("");
+    }).join("");
 }
 
 const problemsFor = (violations, uid) =>
-  violations.filter((v) => v.refs && (v.refs.uid === uid || (v.refs.uids && v.refs.uids.includes(uid))));
-const problemTexts = (probs) => [...new Set(probs.map((v) => messageFor(v, names)))];
+    violations.filter((v) => v.refs && (v.refs.uid === uid || (v.refs.uids && v.refs.uids.includes(uid))));
+const problemTexts = (probs) => [...new Set(probs.map((v) => messageFor(v, names, lang)))];
 
-// BTS (Break Their Spirit): the most expensive formation(s); ties are all flagged.
 function btsSet(entries) {
-  const max = Math.max(0, ...entries.map((e) => e.pts));
-  return new Set(entries.map((e, i) => (e.pts === max && max > 0 ? i : -1)).filter((i) => i >= 0));
+    const max = Math.max(0, ...entries.map((e) => e.pts));
+    return new Set(entries.map((e, i) => (e.pts === max && max > 0 ? i : -1)).filter((i) => i >= 0));
 }
 const isAir = (calc) => {
-  const rp = rosterProfiles(data, calc.roster);
-  return rp.length > 0 && rp.every((r) => r.profile && r.profile.type === "AC");
+    const rp = rosterProfiles(data, calc.roster);
+    return rp.length > 0 && rp.every((r) => r.profile && r.profile.type === "AC");
 };
 const btsBadge = () => `<span class="bts" title="Break Their Spirit">BTS</span>`;
-const btsAirNote = () => `<p class="bts-note">BTS-Verband ist Luftverband: Gilt als vernichtet, wenn er am Spielende nicht auf dem Tisch ist.</p>`;
+const btsAirNote = () => `<p class="bts-note">${t("bts_air")}</p>`;
 
-// Army-wide pools (Chaos daemon pools): bought points plus free points from pacts.
 function poolBlock() {
-  const pools = poolSummary(data, state).filter((p) => p.total > 0);
-  if (!pools.length) return "";
-  return `<section class="pools"><h3>Dämonenpool</h3>${pools
+    const pools = poolSummary(data, state).filter((p) => p.total > 0);
+    if (!pools.length) return "";
+    return `<section class="pools"><h3>${t("daemon_pool")}</h3>${pools
     .map((p) => {
       const from = p.sources.filter((s) => s.points > 0).map((s) => `${s.count}× ${esc(s.label)}`).join(", ");
-      return `<div class="pool"><span class="nm">${esc(p.name)}</span><span class="pn">${p.paid} gekauft${p.free ? ` + ${p.free} frei` : ""} = <b>${p.total}</b></span>${from ? `<small>Frei durch: ${from}</small>` : ""}</div>`;
+      return `<div class="pool"><span class="nm">${esc(p.name)}</span><span class="pn">${p.paid} ${t("bought")}${p.free ? ` + ${p.free} ${t("free")}` : ""} = <b>${p.total}</b></span>${from ? `<small>${t("free_from")} ${from}</small>` : ""}</div>`;
     })
     .join("")}</section>`;
 }
 
 function renderBuild(entries, violations) {
-  const bts = btsSet(entries);
-  return state.formations.map((entry, i) => {
-    const def = formationById[entry.formation];
-    const calc = entries[i];
-    const probs = problemsFor(violations, entry.uid);
-    const key = `f${entry.uid}`;
-    return `<details class="entry${probs.length ? " has-problem" : ""}" data-key="${key}"${open.has(key) ? " open" : ""}>
-      <summary><div class="entry-head">
-        <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span><span class="pts">${calc.pts} Pkt.</span>
-        <button class="icon" type="button" aria-label="Verband duplizieren" title="Duplizieren" data-act="clone" data-uid="${entry.uid}">⧉</button>
-        <button class="icon" type="button" aria-label="Verband entfernen" data-act="remove" data-uid="${entry.uid}">×</button>
+    const bts = btsSet(entries);
+    return state.formations.map((entry, i) => {
+        const def = formationById[entry.formation];
+        const calc = entries[i];
+        const probs = problemsFor(violations, entry.uid);
+        const key = `f${entry.uid}`;
+
+        return `<div class="entry-wrapper${probs.length ? " has-problem" : ""}">
+      <details class="entry" data-key="${key}"${open.has(key) ? " open" : ""}>
+        <summary>
+          <div class="entry-head">
+            <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span>
+            <span class="pts">${calc.pts} ${t("pts")}</span>
+          </div>
+          ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
+          ${probs.length ? `<ul class="problems">${problemTexts(probs).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
+        </summary>
+        <div class="entry-body">
+          ${sizeControls(entry, def)}
+          ${choiceControls(entry, def)}
+          ${upgradeControls(entry, def)}
+          <h3>${t("units")}</h3>
+          ${rosterProfiles(data, calc.roster).map((r) => unitBlock(entry.uid, r)).join("")}
+        </div>
+      </details>
+      <div class="entry-actions">
+        <button class="icon" type="button" aria-label="${t("copy")}" title="${t("copy")}" data-act="clone" data-uid="${entry.uid}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </button>
+        <button class="icon" type="button" aria-label="${t("delete")}" data-act="remove" data-uid="${entry.uid}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+          </svg>
+        </button>
       </div>
-      ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-      ${probs.length ? `<ul class="problems">${problemTexts(probs).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : ""}
-      </summary>
-      <div class="entry-body">
-        ${sizeControls(entry, def)}
-        ${choiceControls(entry, def)}
-        ${upgradeControls(entry, def)}
-        <h3>Einheiten</h3>
-        ${rosterProfiles(data, calc.roster).map((r) => unitBlock(entry.uid, r)).join("")}
-      </div></details>`;
-  }).join("");
+    </div>`;
+    }).join("");
 }
 
 const plus = (v) => (typeof v === "number" ? `${v}+` : v);
+
 function compactStats(p) {
-  if (!p) return "";
-  const parts = [p.type, p.speed != null ? (typeof p.speed === "number" ? `${p.speed} cm` : p.speed) : null, p.armour != null ? `ARM ${plus(p.armour)}` : null, p.cc != null ? `CC ${plus(p.cc)}` : null, p.ff != null ? `FF ${plus(p.ff)}` : null];
-  return parts.filter(Boolean).join(" · ");
+    if (!p) return "";
+    const parts = [p.type, p.speed != null ? (typeof p.speed === "number" ? `${p.speed} cm` : p.speed) : null, p
+        .armour != null ? `ARM ${plus(p.armour)}` : null, p.cc != null ? `CC ${plus(p.cc)}` : null, p.ff != null ?
+        `FF ${plus(p.ff)}` : null
+    ];
+    return parts.filter(Boolean).join(" · ");
 }
 
-// Game-time view: final units per formation and the chosen upgrades, no controls.
+function renderRuleList(rules) {
+    return rules.map((r) => {
+        let name, desc;
+        if (typeof r === "string") {
+            name = r;
+            desc = "";
+        } else {
+            name = r.name || String(r);
+            desc = r.description ? text(r.description) : "";
+        }
+        if (!desc && RULE_DICT[name]) {
+            desc = text(RULE_DICT[name]);
+        }
+        if (!desc) {
+            return `<div class="rule-item"><b>${esc(name)}</b></div>`;
+        }
+        return `<details class="rule-item">
+      <summary><b>${esc(name)}</b></summary>
+      <div class="rule-desc">${esc(desc)}</div>
+    </details>`;
+    }).join("");
+}
+
+function globalRulesBlock(data) {
+    const special = data && Array.isArray(data.specialRules) ? data.specialRules : [];
+    const army = data && Array.isArray(data.armyRules) ? data.armyRules : [];
+    const combined = [...army, ...special];
+    const rules = combined.filter((r) => !r.formation);
+    if (!rules.length) return "";
+    return `<section class="ov-global-rules">
+    <h3>${t("army_rules")}</h3>
+    <dl class="rules">${renderRuleList(rules)}</dl>
+  </section>`;
+}
+function formationRulesBlock(data, def) {
+    const all = data && Array.isArray(data.specialRules) ? data.specialRules : [];
+    const rules = all.filter((r) => r.formation === def.id);
+    if (!rules.length) return "";
+    return `<div class="ov-formation-rules"><b>${t("formation_rules")}</b><dl class="rules">${renderRuleList(rules)}</dl></div>`;
+}
+
+function unitRulesBlock(profile) {
+    const sr = profile && Array.isArray(profile.specialRules) ? profile.specialRules : [];
+    if (!sr.length) return "";
+    return `<dl class="rules">${renderRuleList(sr)}</dl>`;
+}
+
 function renderOverview(entries, violations, total) {
-  const bts = btsSet(entries);
-  const cards = state.formations.map((entry, i) => {
-    const def = formationById[entry.formation];
-    const calc = entries[i];
-    const probs = problemTexts(problemsFor(violations, entry.uid));
-    
-    // Safely access data and its specialRules
-    const dataWithSpecialRules = data && data.specialRules ? data.specialRules : [];
+    const bts = btsSet(entries);
+    const cards = state.formations.map((entry, i) => {
+        const def = formationById[entry.formation];
+        const calc = entries[i];
+        const probs = problemTexts(problemsFor(violations, entry.uid));
 
-    const ups = entry.upgrades
-      .map((sel) => {
-        const u = upgradeById[sel.upgrade];
-        const v = u && u.variants.find((x) => x.id === sel.variant);
-        return v 
-          ? `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} Chimäre${sel.chimeras > 1 ? "n" : ""}` : ""}`
-          : null;
-      })
-      .filter(Boolean);
+        const ups = entry.upgrades
+            .map((sel) => {
+                const u = upgradeById[sel.upgrade];
+                const v = u && u.variants.find((x) => x.id === sel.variant);
+                return v ?
+                    `${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${esc(v.label)}${sel.chimeras ? ` + ${sel.chimeras} ${t("chimera")}${sel.chimeras > 1 ? t("chimera_s") : ""}` : ""}` :
+                    null;
+            })
+            .filter(Boolean);
 
-    // Filter special rules for this formation
-    const formationRules = dataWithSpecialRules.filter(r => r.formation === def.id);
-    const globalRules = dataWithSpecialRules.filter(r => !r.formation);
-
-    return `<section class="ov${probs.length ? " has-problem" : ""}">
-      <div class="ov-head">      
+        return `<section class="ov${probs.length ? " has-problem" : ""}">
+      <div class="ov-head">
         <span class="name">${esc(def.name)}${sizeSuffix(def, entry)}${bts.has(i) ? btsBadge() : ""}</span>
-        <span class="pts">${calc.pts} Pkt.</span>
+        <span class="pts">${calc.pts} ${t("pts")}</span>
       </div>
       ${bts.has(i) && isAir(calc) ? btsAirNote() : ""}
-      
+
       <ul>
-        ${rosterProfiles(data, calc.roster).map((r) => `<li>${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}<span class="nm">${esc(r.name)}</span><span class="st">${esc(compactStats(r.profile))}</span>${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}</li>`).join("")}
+        ${rosterProfiles(data, calc.roster).map((r) => `<li>
+          ${r.count > 0 ? `<span class="n">${r.count}×</span>` : `<span class="n" style="visibility: hidden;">0×</span>`}
+          <span class="nm">${esc(r.name)}</span>
+          <span class="st">${esc(compactStats(r.profile))}</span>
+          ${r.profile && Array.isArray(r.profile.weapons) && r.profile.weapons.length ? `<ul class="wp">${r.profile.weapons.map(weaponLine).join("")}</ul>` : ""}
+          ${unitRulesBlock(r.profile)}
+        </li>`).join("")}
       </ul>
-      
-      ${ups.length ? `<div class="ups"><b>Aufwertungen:</b> ${ups.join("; ")}</div>` : ""}
-      
+
+      ${formationRulesBlock(data, def)}
+      ${ups.length ? `<div class="ups"><b>${t("upgrades_overview")}</b> ${ups.join("; ")}</div>` : ""}
       ${probs.length ? `<p class="ov-problems">${probs.map(esc).join("<br>")}</p>` : ""}
     </section>`;
-  }).join("");
 
-
-
-  return cards + poolBlock() + `<div class="ov-total"><span>${state.formations.length} Verbände</span><span>${total} Pkt.</span></div>`;
+    }).join("");
+    return globalRulesBlock(data) + cards + poolBlock() +
+        `<div class="ov-total"><span>${state.formations.length} ${t("formations")}</span><span>${total} ${t("pts")}</span></div>`;
 }
 
 function rulesetSections(prefixPlus = false) {
-  return index.rulesets
-    .filter((r) => !r.hidden && !r.disabled)
-    .map((r) => {
-      const byFaction = {};
-      const armies = index.armies.filter((a) => a.ruleset === r.id && !a.disabled && (showHidden || !a.hidden));
-      armies.forEach((a) => (byFaction[a.faction] ||= []).push(a));
-      const isOpen = openRulesets.has(r.id);
-      return `<details class="picker-section ruleset-group" data-ruleset="${r.id}" data-search${isOpen ? " open" : ""}>
+    return index.rulesets
+        .filter((r) => !r.hidden && !r.disabled)
+        .map((r) => {
+            const byFaction = {};
+            const armies = index.armies.filter((a) => a.ruleset === r.id && !a.disabled && (showHidden || !a
+                .hidden));
+            armies.forEach((a) => (byFaction[a.faction] ||= []).push(a));
+            const isOpen = openRulesets.has(r.id);
+            return `<details class="picker-section ruleset-group" data-ruleset="${r.id}" data-search${isOpen ? " open" : ""}>
         <summary class="ruleset-head">
           <div class="ruleset-title">
             <span class="ruleset-caret" aria-hidden="true">▾</span>
@@ -342,399 +505,600 @@ function rulesetSections(prefixPlus = false) {
           </div>
         `).join("")}
       </details>`;
-    })
-    .join("");
+        })
+        .join("");
 }
 
 function armyButtons() {
-  return rulesetSections(false);
+    return rulesetSections(false);
+}
+
+function translateStaticDOM() {
+     const addBtn = document.querySelector("#add");
+    if (addBtn) addBtn.textContent = t("add_formation");
+    
+    const sortBtn = document.querySelector("#sort");
+    if (sortBtn) sortBtn.textContent = t("sort");
+    
+    const moreBtn = document.querySelector("#more");
+    if (moreBtn) moreBtn.textContent = t("more");
+    
+    // WICHTIG: #lists wird hier NICHT mehr überschrieben, 
+    // da es der Container für #army-name und #army-sub ist!
+
+    document.querySelectorAll(".tabs button").forEach(b => {
+        if (b.dataset.view === "build") b.textContent = t("tab_build");
+        if (b.dataset.view === "overview") b.textContent = t("tab_overview");
+    });
 }
 
 function renderStart() {
-  $("#total").textContent = 0;
-  $("#army-name").textContent = "Armee wählen";
-  $("#army-sub").textContent = "Tippe hier, um eine Armee zu wählen";
-  document.body.classList.add("no-list");
-  app.innerHTML = `<div class="start"><h2>Willkommen!</h2><p>Wähle eine Armee, um eine neue Liste zu beginnen. Die Armee kannst du später jederzeit oben über den Titel wechseln.</p>
-    <input class="sheet-search" type="search" data-act="search" placeholder="Armee suchen …" aria-label="Armee suchen">
+    $("#total").textContent = 0;
+    $("#army-name").textContent = t("army_choose");
+    $("#army-sub").textContent = t("army_tap");
+    document.body.classList.add("no-list");
+    app.innerHTML = `<div class="start"><h2>${t("welcome")}</h2><p>${t("welcome_text")}</p>
+    <input class="sheet-search" type="search" data-act="search" placeholder="${t("search_army")}" aria-label="${t("search_army")}">
     ${armyButtons()}
-    <section class="picker-section"><h3>Liste erhalten?</h3><button class="pick" type="button" data-act="import"><span class="name">Liste importieren</span></button></section>
-    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">Unterstütze LargoW auf Patreon</a></p>
+    <section class="picker-section"><h3>${t("get_list")}</h3><button class="pick" type="button" data-act="import"><span class="name">${t("import_list")}</span></button></section>
+    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">${t("patreon")}</a></p>
   </div>`;
 }
 
 function render() {
-  if (!cur()) return renderStart();
-  document.body.classList.remove("no-list");
-  const { total, entries } = summarize(data, state);
-  const violations = validate(data, state);
-  $("#total").textContent = total;
-  if (cur().total !== total) { cur().total = total; persist(); }
-  $("#army-name").textContent = cur().name;
-  $("#army-sub").textContent = `${base.name} · ${base.faction} · v${base.version}`;
-  document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.view === view));
-  $("#sort").disabled = state.formations.length < 2;
+    translateStaticDOM();
+    if (!cur()) return renderStart();
+    document.body.classList.remove("no-list");
+    const {
+        total,
+        entries
+    } = summarize(data, state);
+    const violations = validate(data, state);
+    $("#total").textContent = total;
+    if (cur().total !== total) {
+        cur().total = total;
+        persist();
+    }
+    $("#army-name").textContent = cur().name;
+    $("#army-sub").textContent = `${base.name} · ${base.faction} · v${base.version}`;
+    document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.view === view));
+    $("#sort").disabled = state.formations.length < 2;
 
-  if (!state.formations.length) {
-    app.innerHTML = `<p class="empty">Noch keine Verbände.<br>Tippe auf „+ Verband“, um zu beginnen.</p>`;
-    return;
-  }
-  app.innerHTML = view === "overview" ? renderOverview(entries, violations, total) : renderBuild(entries, violations) + poolBlock();
+    if (!state.formations.length) {
+        app.innerHTML = `<p class="empty">${t("no_formations")}</p>`;
+        return;
+    }
+    app.innerHTML = view === "overview" ? renderOverview(entries, violations, total) : renderBuild(entries,
+        violations) + poolBlock();
 }
 
 function armyText() {
-  const { total, entries } = summarize(data, state);
-  const lines = [`${base.name} (${base.faction}) – ${total} Pkt.`, ""];
-  entries.forEach((e, i) => {
-    lines.push(`${e.name}${sizeSuffix(formationById[e.formation], state.formations[i])} – ${e.pts} Pkt.`);
-    lines.push("  " + rosterProfiles(data, e.roster).map((r) => `${r.count}× ${r.name}`).join(", "));
-    state.formations[i].upgrades.forEach((sel) => {
-      const u = upgradeById[sel.upgrade];
-      const v = u && u.variants.find((x) => x.id === sel.variant);
-      if (v) lines.push(`  + ${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${v.label}${sel.chimeras ? `, ${sel.chimeras} Chimäre(n)` : ""}`);
+    const {
+        total,
+        entries
+    } = summarize(data, state);
+    const lines = [`${base.name} (${base.faction}) – ${total} ${t("pts")}`, ""];
+    entries.forEach((e, i) => {
+        lines.push(`${e.name}${sizeSuffix(formationById[e.formation], state.formations[i])} – ${e.pts} ${t("pts")}`);
+        lines.push("  " + rosterProfiles(data, e.roster).map((r) => `${r.count}× ${r.name}`).join(", "));
+        state.formations[i].upgrades.forEach((sel) => {
+            const u = upgradeById[sel.upgrade];
+            const v = u && u.variants.find((x) => x.id === sel.variant);
+            if (v) lines.push(
+                `  + ${v.perUnit && sel.count > 1 ? `${sel.count}× ` : ""}${v.label}${sel.chimeras ? `, ${sel.chimeras} ${t("chimera")}${sel.chimeras > 1 ? t("chimera_s") : ""}` : ""}`
+            );
+        });
     });
-  });
-  return lines.join("\n");
+    return lines.join("\n");
 }
 
 const dlg = $("#picker");
 const sheet = (title, body) => {
-  dlg.innerHTML = `<div class="picker-head"><h2>${esc(title)}</h2><button class="icon" type="button" data-act="close" aria-label="Schließen">×</button></div>${body}`;
-  if (!dlg.open) dlg.showModal();
+    dlg.innerHTML = `
+        <div class="picker-head">
+            <h2>${esc(title)}</h2>
+            <button class="icon" type="button" data-act="close" aria-label="${t("close")}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        ${body}
+    `;
+    if (!dlg.open) dlg.showModal();
 };
 
 function openPicker() {
-  sheet("Verband hinzufügen", base.sections.map((s) => `<section class="picker-section"><h3>${esc(s.name)}</h3>${s.description ? `<p>${esc(s.description)}</p>` : ""}
+    sheet(t("add_title"), base.sections.map((s) => `<section class="picker-section"><h3>${esc(s.name)}</h3>${s.description ? `<p>${esc(s.description)}</p>` : ""}
     ${s.formations.map((id) => {
-      const f = formationById[id];
-      return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.sizes ? "ab " : ""}${f.pts} Pkt.</span></button>`;
-    }).join("")}</section>`).join(""));
+    const f = formationById[id];
+    return `<button class="pick" type="button" data-act="add" data-formation="${id}"><span class="name">${esc(f.name)}</span><span>${f.sizes ? "ab " : ""}${f.pts} ${t("pts")}</span></button>`;
+  }).join("")}</section>`).join(""));
 }
 
 function openSort() {
-  const last = state.formations.length - 1;
-  sheet("Verbände sortieren", `<div class="sheet-pad">
-    <button type="button" data-act="sort-auto" data-mode="section">Nach Abschnitt der Armeeliste</button>
-    <button type="button" data-act="sort-auto" data-mode="points">Nach Punkten (höchste zuerst)</button>
+    const last = state.formations.length - 1;
+    sheet(t("sort_title"), `<div class="sheet-pad">
+    <button type="button" data-act="sort-auto" data-mode="section">${t("sort_section")}</button>
+    <button type="button" data-act="sort-auto" data-mode="points">${t("sort_points")}</button>
     <div>${state.formations.map((e, i) => `<div class="order-row">
       <span class="name">${esc(formationById[e.formation].name)}</span>
-      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="-1" aria-label="Nach oben"${i === 0 ? " disabled" : ""}>▲</button>
-      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="1" aria-label="Nach unten"${i === last ? " disabled" : ""}>▼</button>
-    </div>`).join("")}</div></div>`);
+      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="-1" aria-label="${t("move_up")}"${i === 0 ? " disabled" : ""}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+      <button class="icon" type="button" data-act="move" data-uid="${e.uid}" data-delta="1" aria-label="${t("move_down")}"${i === last ? " disabled" : ""}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+          </div>`).join("")}</div></div>`);
 }
 
 function exchangeButtons() {
-  return `<button type="button" data-act="import">Liste importieren</button>`;
+    return `<button type="button" data-act="import">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+    ${t("import_list")}
+  </button>`;
 }
 
 function openLists() {
-  const rows = lists.map((l) => {
-    const a = armyInfo(l.army);
-    return `<div class="list-row${l.id === currentId ? " cur" : ""}">
-      <button class="pick" type="button" data-act="open-list" data-id="${l.id}"><span class="name">${esc(l.name)}<span class="sub">${esc(a.name)} · v${esc(a.version)}</span></span><span>${l.total || 0} Pkt.</span></button>
-      <button class="icon" type="button" data-act="rename-list" data-id="${l.id}" aria-label="Umbenennen">✎</button>
-      <button class="icon" type="button" data-act="copy-list" data-id="${l.id}" aria-label="Duplizieren">⧉</button>
-      <button class="icon" type="button" data-act="delete-list" data-id="${l.id}" aria-label="Löschen">🗑</button>
+    const rows = lists.map((l) => {
+        const a = armyInfo(l.army);
+        return `<div class="list-row${l.id === currentId ? " cur" : ""}">
+      <button class="pick" type="button" data-act="open-list" data-id="${l.id}"><span class="name">${esc(l.name)}<span class="sub">${esc(a.name)} · v${esc(a.version)}</span></span><span>${l.total || 0} ${t("pts")}</span></button>
+      <button class="icon" type="button" data-act="rename-list" data-id="${l.id}" aria-label="${t("rename")}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+        </svg>
+      </button>
+      <button class="icon" type="button" data-act="copy-list" data-id="${l.id}" aria-label="${t("copy")}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+      <button class="icon" type="button" data-act="delete-list" data-id="${l.id}" aria-label="${t("delete")}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="3 6 5 6 21 6"></polyline>
+          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          <line x1="10" y1="11" x2="10" y2="17"></line>
+          <line x1="14" y1="11" x2="14" y2="17"></line>
+        </svg>
+      </button>
     </div>`;
-  }).join("");
-  const rs = rulesetSections(true);
-  sheet("Meine Listen", `<section class="picker-section">${rows}</section>
+    }).join("");
+    const rs = rulesetSections(true);
+    sheet(t("my_lists"),
+        `<section class="picker-section">${rows}</section>
     <div class="sheet-pad">${exchangeButtons()}</div>
-    <input class="sheet-search" type="search" data-act="search" placeholder="Neue Liste: Armee suchen …" aria-label="Armee suchen">${rs}
-    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">Unterstütze LargoW auf Patreon</a></p>`);
+    <input class="sheet-search" type="search" data-act="search" placeholder="${t("search_new_list")}" aria-label="${t("search_new_list")}">${rs}
+    <p class="patreon-note">Dieses Projekt wird durch die Community ermöglicht. <a href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">${t("patreon")}</a></p>`
+    );
 }
 
-// --- Import / export ---
-const IMPORT_ERRORS = {
-  empty: "Nichts zum Importieren gefunden.",
-  unreadable: "Das ist keine gültige Liste.",
-  format: "Das ist keine gültige Liste.",
-  version: "Die Liste stammt aus einer neueren Version der App. Bitte die App aktualisieren.",
-  army: "Diese Armee gibt es in dieser App nicht.",
-};
 let pendingImport = null;
 
 function currentExport() {
-  const { total, entries } = summarize(data, state);
-  return buildExport({ army: cur().army, armyVersion: base.version, name: cur().name, state, entries, total });
+    const { total, entries } = summarize(data, state);
+    return buildExport({
+        army: cur().army,
+        armyVersion: base.version,
+        name: cur().name,
+        state,
+        entries,
+        total
+    });
 }
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9äöüß]+/g, "-").replace(/^-|-$/g, "") || "liste";
 
 function openQr() {
-  const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
-  let svg;
-  try {
-    const q = qrcode(0, "L");
-    q.addData(url);
-    q.make();
-    svg = q.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
-  } catch {
-    return sheet("QR-Code", `<div class="sheet-pad"><p class="problems">Diese Liste ist für einen QR-Code zu groß. Bitte den Link oder die Datei verwenden.</p></div>`);
-  }
-  const { total } = summarize(data, state);
-  sheet("QR-Code", `<div class="sheet-pad"><div class="qr">${svg}</div>
-    <p class="qr-cap"><b>${esc(cur().name)}</b> · ${total} Pkt.<br>Mit der Kamera des anderen Telefons scannen.</p></div>`);
+    const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
+    let svg;
+    try {
+        const q = qrcode(0, "L");
+        q.addData(url);
+        q.make();
+        svg = q.createSvgTag({
+            cellSize: 4,
+            margin: 4,
+            scalable: true
+        });
+    } catch {
+        return sheet("QR-Code",
+            `<div class="sheet-pad"><p class="problems">${t("qr_too_large")}</p></div>`
+        );
+    }
+    const { total } = summarize(data, state);
+    sheet("QR-Code",
+        `<div class="sheet-pad"><div class="qr">${svg}</div>
+    <p class="qr-cap"><b>${esc(cur().name)}</b> · ${total} ${t("pts")}<br>${t("qr_cap")}</p></div>`
+    );
 }
 
 function shareLink() {
-  const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
-  const { total } = summarize(data, state);
-  if (navigator.share) return navigator.share({ title: cur().name, text: `${cur().name} – ${total} Pkt.`, url }).catch(() => {});
-  return navigator.clipboard.writeText(url).then(() => toast("Link kopiert"), () => toast("Kopieren nicht möglich"));
+    const url = `${location.origin}${location.pathname}#l=${toToken(currentExport())}`;
+    const { total } = summarize(data, state);
+    if (navigator.share) return navigator.share({
+        title: cur().name,
+        text: `${cur().name} – ${total} ${t("pts")}`,
+        url
+    }).catch(() => {});
+    return navigator.clipboard.writeText(url).then(() => toast(t("toast_copy_link")), () => toast(t("toast_copy_fail")));
 }
 
 function exportFile() {
-  const file = new File([JSON.stringify(currentExport(), null, 2)], `${slug(cur().name)}.json`, { type: "application/json" });
-  if (navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({ files: [file], title: cur().name }).catch(() => {});
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(file);
-  a.download = file.name;
-  a.click();
-  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  toast("Datei gespeichert");
+    const file = new File([JSON.stringify(currentExport(), null, 2)], `${slug(cur().name)}.json`, {
+        type: "application/json"
+    });
+    if (navigator.canShare && navigator.canShare({ files: [file] })) return navigator.share({
+        files: [file],
+        title: cur().name
+    }).catch(() => {});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(file);
+    a.download = file.name;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    toast(t("toast_file_saved"));
 }
 
 function openImport(msg) {
-  sheet("Liste importieren", `<div class="sheet-pad">
+    sheet(t("import_title"), `<div class="sheet-pad">
     ${msg ? `<p class="problems">${esc(msg)}</p>` : ""}
-    <label>Datei auswählen<input type="file" accept=".json,application/json" data-act="import-file"></label>
-    <textarea class="sheet-area" id="import-text" placeholder="Oder Link / Listentext hier einfügen" aria-label="Link oder Listentext"></textarea>
-    <button class="primary" type="button" data-act="import-check">Prüfen</button></div>`);
+    <label>${t("import_file")}<input type="file" accept=".json,application/json" data-act="import-file"></label>
+    <textarea class="sheet-area" id="import-text" placeholder="${t("import_placeholder")}" aria-label="${t("import_placeholder")}"></textarea>
+    <button class="primary" type="button" data-act="import-check">${t("check")}</button></div>`);
 }
 
 async function previewImport(text) {
-  try {
-    const obj = parseInput(text);
-    if (!obj || obj.format !== "epic-army-builder") throw new Error("format");
-    if (!armyInfo(obj.army)) throw new Error("army");
-    const { data: d, base: b } = await loadArmy(obj.army);
-    const r = sanitize(obj, d);
-    const total = summarize(d, r.state).total;
-    pendingImport = { army: obj.army, name: r.name, state: r.state };
-    const notes = [];
-    if (r.dropped) notes.push(`${r.dropped} Einträge passen nicht zu dieser Armeeversion und wurden ausgelassen.`);
-    if (obj.armyVersion && obj.armyVersion !== b.version) notes.push(`Erstellt mit Version ${obj.armyVersion}, aktuell ist ${b.version}.`);
-    sheet("Liste importieren", `<div class="sheet-pad">
-      <div class="import-sum"><b>${esc(r.name || newName(obj.army))}</b><br>${esc(b.name)} · v${esc(b.version)}<br>${r.state.formations.length} Verbände · ${total} Pkt.</div>
+    try {
+        const obj = parseInput(text);
+        if (!obj || obj.format !== "epic-army-builder") throw new Error("format");
+        if (!armyInfo(obj.army)) throw new Error("army");
+        const { data: d, base: b } = await loadArmy(obj.army);
+        const r = sanitize(obj, d);
+        const total = summarize(d, r.state).total;
+        pendingImport = { army: obj.army, name: r.name, state: r.state };
+        const notes = [];
+        if (r.dropped) notes.push(`${r.dropped} Einträge passen nicht zu dieser Armeeversion und wurden ausgelassen.`);
+        if (obj.armyVersion && obj.armyVersion !== b.version) notes.push(`Erstellt mit Version ${obj.armyVersion}, aktuell ist ${b.version}.`);
+        sheet(t("import_title"), `<div class="sheet-pad">
+      <div class="import-sum"><b>${esc(r.name || newName(obj.army))}</b><br>${esc(b.name)} · v${esc(b.version)}<br>${r.state.formations.length} ${t("formations")} · ${total} ${t("pts")}</div>
       ${notes.map((n) => `<p class="problems">${esc(n)}</p>`).join("")}
-      <button class="primary" type="button" data-act="import-confirm">Als neue Liste hinzufügen</button></div>`);
-  } catch (err) {
-    openImport(IMPORT_ERRORS[err.message] || IMPORT_ERRORS.unreadable);
-  }
+      <button class="primary" type="button" data-act="import-confirm">${t("import_confirm")}</button></div>`);
+    } catch (err) {
+        openImport(t("import_errors")[err.message] || t("import_errors").unreadable);
+    }
 }
 
 function openMore() {
-  sheet("Menü", `<div class="sheet-pad">
-    <button type="button" data-act="share">Liste teilen (Link)</button>
-    <button type="button" data-act="qr">QR-Code anzeigen</button>
-    <button type="button" data-act="export-file">Als Datei exportieren</button>
+    sheet(t("more"), `<div class="sheet-pad">
+    <button type="button" data-act="open-share">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+      ${t("menu_share")}
+    </button>
+              
+    <button type="button" data-act="open-settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+      ${t("menu_settings")}
+    </button>
+    
+    <hr class="menu-divider">
+    <a class="pick" href="https://largow.github.io/epic-guide/" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:0.5rem; text-decoration:none;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px;">
+        <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"></polyline>
+        <line x1="13" y1="19" x2="19" y2="13"></line>
+        <line x1="16" y1="16" x2="20" y2="20"></line>
+        <line x1="19" y1="21" x2="21" y2="19"></line>
+        <polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"></polyline>
+        <line x1="5" y1="14" x2="9" y2="18"></line>
+        <line x1="7" y1="17" x2="4" y2="20"></line>
+        <line x1="3" y1="19" x2="5" y2="21"></line>
+      </svg>
+      <span class="name">Epic Armageddon Helper Tool</span>
+    </a>
+<hr class="menu-divider">
+    <a class="patreon-btn" href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:0.5rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px; height:18px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      ${t("patreon")}
+    </a>
+    
+    <button type="button" class="danger" data-act="reset">${t("reset")}</button>
+  </div>`);
+}
+
+function openShareMenu() {
+    sheet(t("menu_share"), `<div class="sheet-pad">
+    <button type="button" data-act="more" style="margin-bottom: 1rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px;">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      ${t("back_menu")}
+    </button>
+    
+    <hr class="menu-divider">
+
+    <button type="button" data-act="share">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+      ${t("share_title")}
+    </button>
+    <button type="button" data-act="qr">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><rect x="7" y="7" width="3" height="3"></rect><rect x="14" y="7" width="3" height="3"></rect><rect x="7" y="14" width="3" height="3"></rect><rect x="14" y="14" width="3" height="3"></rect></svg>
+      ${t("qr_show")}
+    </button>
+    <button type="button" data-act="export-file">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+      ${t("export_file")}
+    </button>
     ${exchangeButtons()}
-    <button type="button" data-act="copy">Liste als Text kopieren</button>
-    <button type="button" data-act="theme-toggle">Design wechseln (${currentTheme() === "dark" ? "hell" : "dunkel"})</button>
-    <button type="button" data-act="toggle-hidden">Armeen in Entwicklung: ${showHidden ? "ausblenden" : "anzeigen"}</button>
-    <a class="patreon-btn" href="https://www.patreon.com/c/LargoW" target="_blank" rel="noopener noreferrer">♥ Auf Patreon unterstützen</a>
-    <button type="button" class="danger" data-act="reset">Alle Verbände entfernen</button>
+    <button type="button" data-act="copy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      ${t("copy_text")}
+    </button>
+  </div>`);
+}
+
+function openSettings() {
+  sheet(t("menu_settings"), `<div class="sheet-pad">
+    <button type="button" data-act="more" style="margin-bottom: 1rem;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px;">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      ${t("back_menu")}
+    </button>
+    
+    <hr class="menu-divider">
+
+    <button type="button" data-act="toggle-lang">${t("lang")} ${lang === "de" ? "English" : "Deutsch"}</button>
+    <button type="button" data-act="theme-toggle">${t("theme")} (${currentTheme() === "dark" ? "hell" : "dunkel"})</button>
+    <button type="button" data-act="toggle-hidden">${t("hidden")} ${showHidden ? t("hidden_hide") : t("hidden_show")}</button>
+    <button type="button" data-act="toggle-picker">${t("picker_open")} ${keepPickerOpen ? t("on") : t("off")}</button>
   </div>`);
 }
 
 document.addEventListener("click", async (e) => {
-  const el = e.target.closest("[data-act], [data-view], #lists, #add, #sort, #more, #theme");
-  if (!el) return;
-  if (el.dataset.view) {
-    view = el.dataset.view;
-    localStorage.setItem("eab:view", view);
-    return render();
-  }
-  const act = el.dataset.act || el.id;
-  const target = lists.find((l) => l.id === el.dataset.id);
-  switch (act) {
-    case "lists":
-      return openLists();
-    case "open-list":
-      await openList(el.dataset.id);
-      dlg.close();
-      return render();
-    case "new-list":
-      await createList(el.dataset.army);
-      dlg.close();
-      return render();
-    case "copy-list":
-      await createList(target.army, `${target.name} (Kopie)`, structuredClone(target.state));
-      return openLists(), render();
-    case "rename-list":
-      sheet("Liste umbenennen", `<div class="sheet-pad"><input id="rename" class="sheet-search" style="margin:0;width:100%" maxlength="40" value="${esc(target.name)}" aria-label="Name der Liste">
-        <button class="primary" type="button" data-act="save-name" data-id="${target.id}">Speichern</button></div>`);
-      return $("#rename").select();
-    case "save-name": {
-      const n = $("#rename").value.trim();
-      if (n) { target.name = n.slice(0, 40); persist(); render(); }
-      return openLists();
+    const el = e.target.closest("[data-act], [data-view], #lists, #add, #sort, #more, #theme");
+    if (!el) return;
+    if (el.dataset.view) {
+        view = el.dataset.view;
+        localStorage.setItem("eab:view", view);
+        return render();
     }
-    case "delete-list":
-      if (!confirm(`„${target.name}“ löschen?`)) return;
-      lists = lists.filter((l) => l !== target);
-      if (target.id === currentId) {
-        if (lists.length) await openList(lists[0].id);
-        else { currentId = null; state = null; persist(); }
-      } else persist();
-      render();
-      return openLists();
-    case "share":
-      dlg.close();
-      return shareLink();
-    case "qr":
-      return openQr();
-    case "export-file":
-      dlg.close();
-      return exportFile();
-    case "import":
-      return openImport();
-    case "import-check":
-      return previewImport($("#import-text").value);
-    case "import-confirm": {
-      const p = pendingImport;
-      pendingImport = null;
-      await createList(p.army, p.name || undefined, p.state);
-      view = "build";
-      dlg.close();
-      render();
-      return toast("Liste importiert");
+    const act = el.dataset.act || el.id;
+    const target = lists.find((l) => l.id === el.dataset.id);
+    switch (act) {
+        case "lists":
+            return openLists();
+        case "open-list":
+            await openList(el.dataset.id);
+            dlg.close();
+            return render();
+        case "new-list":
+            await createList(el.dataset.army);
+            dlg.close();
+            return render();
+        case "copy-list":
+            await createList(target.army, `${target.name} (Kopie)`, structuredClone(target.state));
+            return openLists(), render();
+        case "rename-list":
+            sheet(t("rename_title"), `<div class="sheet-pad"><input id="rename" class="sheet-search" style="margin:0;width:100%" maxlength="40" value="${esc(target.name)}" aria-label="${t("list_name")}">
+        <button class="primary" type="button" data-act="save-name" data-id="${target.id}">${t("save")}</button></div>`);
+            return $("#rename").select();
+        case "save-name": {
+            const n = $("#rename").value.trim();
+            if (n) {
+                target.name = n.slice(0, 40);
+                persist();
+                render();
+            }
+            return openLists();
+        }
+        case "delete-list":
+            if (!confirm(t("delete_confirm", {name: target.name}))) return;
+            lists = lists.filter((l) => l !== target);
+            if (target.id === currentId) {
+                if (lists.length) await openList(lists[0].id);
+                else {
+                    currentId = null;
+                    state = null;
+                    persist();
+                }
+            } else persist();
+            render();
+            return openLists();
+        case "open-share":
+            return openShareMenu();
+        case "share":
+            dlg.close();
+            return shareLink();
+        case "qr":
+            return openQr();
+        case "export-file":
+            dlg.close();
+            return exportFile();
+        case "import":
+            return openImport();
+        case "import-check":
+            return previewImport($("#import-text").value);
+        case "import-confirm": {
+            const p = pendingImport;
+            pendingImport = null;
+            await createList(p.army, p.name || undefined, p.state);
+            view = "build";
+            dlg.close();
+            render();
+            return toast(t("toast_imported"));
+        }
+        case "clone": {
+            const uid = Number(el.dataset.uid);
+            const clonedUid = state.nextUid;
+            open.add(`f${clonedUid}`);
+            update(cloneFormation(state, uid));
+            return toast(t("toast_clone"));
+        }
+        case "remove":
+            return update(removeFormation(state, Number(el.dataset.uid)));
+        case "add":
+            if (!el.dataset.formation) return openPicker();
+            view = "build";
+            localStorage.setItem("eab:view", view);
+            update(addFormation(state, el.dataset.formation));
+            open.add(`f${state.nextUid - 1}`);
+
+            if (!keepPickerOpen) {
+                dlg.close();
+            } else {
+                toast(t("toast_added", {name: formationById[el.dataset.formation].name}));
+            }
+            return render();
+        case "sort":
+            return openSort();
+        case "sort-auto":
+            update(sortFormations(data, state, el.dataset.mode));
+            return openSort();
+        case "move":
+            update(moveFormation(state, Number(el.dataset.uid), Number(el.dataset.delta)));
+            return openSort();
+        case "more":
+            return openMore();
+        case "open-settings":
+            return openSettings();
+        case "toggle-lang":
+            lang = lang === "de" ? "en" : "de";
+            localStorage.setItem("eab:lang", lang);
+            render();
+            openSettings();
+            return;
+        case "theme":
+        case "theme-toggle":
+            applyTheme(currentTheme() === "dark" ? "light" : "dark");
+            const themeBtn = document.querySelector('[data-act="theme-toggle"]');
+            if (themeBtn) themeBtn.textContent = `${t("theme")} (${currentTheme() === "dark" ? "hell" : "dunkel"})`;
+            return;
+        case "toggle-hidden":
+            showHidden = !showHidden;
+            localStorage.setItem("eab:showHidden", String(showHidden));
+            const hiddenBtn = document.querySelector('[data-act="toggle-hidden"]');
+            if (hiddenBtn) hiddenBtn.textContent = `${t("hidden")} ${showHidden ? t("hidden_hide") : t("hidden_show")}`;
+            render();
+            return;
+        case "toggle-picker":
+            keepPickerOpen = !keepPickerOpen;
+            localStorage.setItem("eab:keepPickerOpen", String(keepPickerOpen));
+            const pickerBtn = document.querySelector('[data-act="toggle-picker"]');
+            if (pickerBtn) pickerBtn.textContent = `${t("picker_open")} ${keepPickerOpen ? t("on") : t("off")}`;
+            return;
+        case "close":
+            return dlg.close();
+        case "copy":
+            dlg.close();
+            return navigator.clipboard.writeText(armyText()).then(() => toast(t("toast_copy_list")), () => toast(t("toast_copy_fail")));
+        case "reset":
+            dlg.close();
+            if (state.formations.length && confirm(t("reset_confirm"))) update(createState());
     }
-    case "clone": {
-      e.preventDefault();
-      const uid = Number(el.dataset.uid);
-      const clonedUid = state.nextUid;
-      open.add(`f${clonedUid}`);
-      update(cloneFormation(state, uid));
-      return toast("Verband dupliziert");
-    }
-    case "remove":
-      e.preventDefault();
-      return update(removeFormation(state, Number(el.dataset.uid)));
-    case "add":
-      if (!el.dataset.formation) return openPicker();
-      view = "build";
-      localStorage.setItem("eab:view", view);
-      update(addFormation(state, el.dataset.formation));
-      open.add(`f${state.nextUid - 1}`);
-      dlg.close();
-      return render();
-    case "sort":
-      return openSort();
-    case "sort-auto":
-      update(sortFormations(data, state, el.dataset.mode));
-      return openSort();
-    case "move":
-      update(moveFormation(state, Number(el.dataset.uid), Number(el.dataset.delta)));
-      return openSort();
-    case "more":
-      return openMore();
-    case "theme":
-    case "theme-toggle":
-      applyTheme(currentTheme() === "dark" ? "light" : "dark");
-      return act === "theme-toggle" ? openMore() : undefined;
-    case "toggle-hidden":
-      showHidden = !showHidden;
-      localStorage.setItem("eab:showHidden", String(showHidden));
-      openMore();
-      return render();
-    case "close":
-      return dlg.close();
-    case "copy":
-      dlg.close();
-      return navigator.clipboard.writeText(armyText()).then(() => toast("Liste kopiert"), () => toast("Kopieren nicht möglich"));
-    case "reset":
-      dlg.close();
-      if (state.formations.length && confirm("Alle Verbände entfernen?")) update(createState());
-  }
 });
 
 document.addEventListener("input", (e) => {
-  if (e.target.dataset.act !== "search") return;
-  const q = e.target.value.trim().toLowerCase();
-  const matches = (b) => !q || b.textContent.toLowerCase().includes(q);
-  document.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { b.hidden = !matches(b); });
-  document.querySelectorAll('.picker-section[data-search]').forEach((s) => {
-    let anyVisible = false;
-    s.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { if (!b.hidden) anyVisible = true; });
-    s.hidden = !!q && !anyVisible;
-    if (s.tagName === "DETAILS") {
-      s.open = q ? anyVisible : openRulesets.has(s.dataset.ruleset);
-    }
-  });
-  document.querySelectorAll('.picker-section[data-search] .faction-group').forEach((fg) => {
-    let anyVisible = false;
-    fg.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => { if (!b.hidden) anyVisible = true; });
-    fg.hidden = !!q && !anyVisible;
-  });
+    if (e.target.dataset.act !== "search") return;
+    const q = e.target.value.trim().toLowerCase();
+    const matches = (b) => !q || b.textContent.toLowerCase().includes(q);
+    document.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => {
+        b.hidden = !matches(b);
+    });
+    document.querySelectorAll('.picker-section[data-search]').forEach((s) => {
+        let anyVisible = false;
+        s.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => {
+            if (!b.hidden) anyVisible = true;
+        });
+        s.hidden = !!q && !anyVisible;
+        if (s.tagName === "DETAILS") {
+            s.open = q ? anyVisible : openRulesets.has(s.dataset.ruleset);
+        }
+    });
+    document.querySelectorAll('.picker-section[data-search] .faction-group').forEach((fg) => {
+        let anyVisible = false;
+        fg.querySelectorAll('.pick[data-act="new-list"]').forEach((b) => {
+            if (!b.hidden) anyVisible = true;
+        });
+        fg.hidden = !!q && !anyVisible;
+    });
 });
 
 document.addEventListener("change", (e) => {
-  const el = e.target;
-  if (el.dataset.act === "import-file") {
-    const f = el.files && el.files[0];
-    if (f) f.text().then(previewImport);
-    return;
-  }
-  const uid = Number(el.dataset.uid);
-  const entry = state.formations.find((x) => x.uid === uid);
-  if (!el.dataset.act || !entry) return;
-  switch (el.dataset.act) {
-    case "upgrade":
-      update(el.value ? setUpgrade(state, uid, el.dataset.upgrade, el.value, 0) : removeUpgrade(state, uid, el.dataset.upgrade));
-      break;
-    case "size":
-      update(setSize(state, uid, el.value));
-      break;
-    case "perunit": {
-      const n = Math.max(0, parseInt(el.value, 10) || 0);
-      update(n ? setUpgrade(state, uid, el.dataset.upgrade, el.dataset.variant, 0, n) : removeUpgrade(state, uid, el.dataset.upgrade));
-      break;
+    const el = e.target;
+    if (el.dataset.act === "import-file") {
+        const f = el.files && el.files[0];
+        if (f) f.text().then(previewImport);
+        return;
     }
-    case "chimeras": {
-      const sel = entry.upgrades.find((x) => x.upgrade === el.dataset.upgrade);
-      update(setUpgrade(state, uid, el.dataset.upgrade, sel.variant, Math.max(0, parseInt(el.value, 10) || 0)));
-      break;
+    const uid = Number(el.dataset.uid);
+    const entry = state.formations.find((x) => x.uid === uid);
+    if (!el.dataset.act || !entry) return;
+    switch (el.dataset.act) {
+        case "upgrade":
+            update(el.value ? setUpgrade(state, uid, el.dataset.upgrade, el.value, 0) : removeUpgrade(state, uid, el.dataset.upgrade));
+            break;
+        case "size":
+            update(setSize(state, uid, el.value));
+            break;
+        case "perunit": {
+            const n = Math.max(0, parseInt(el.value, 10) || 0);
+            update(n ? setUpgrade(state, uid, el.dataset.upgrade, el.dataset.variant, 0, n) : removeUpgrade(state, uid, el.dataset.upgrade));
+            break;
+        }
+        case "chimeras": {
+            const sel = entry.upgrades.find((x) => x.upgrade === el.dataset.upgrade);
+            update(setUpgrade(state, uid, el.dataset.upgrade, sel.variant, Math.max(0, parseInt(el.value, 10) || 0)));
+            break;
+        }
+        case "choice-single":
+            update(setChoice(state, uid, el.dataset.slot, {
+                [el.value]: Number(el.dataset.count)
+            }));
+            break;
+        case "choice-mixed": {
+            const def = unitSlots(formationById[entry.formation], entry)[el.dataset.slot];
+            const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || { mult: 1 }).mult;
+            const dist = {
+                ...(entry.choices[el.dataset.slot] || { [def.oneOf[0]]: slotCount })
+            };
+            dist[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
+            update(setChoice(state, uid, el.dataset.slot, dist));
+            break;
+        }
     }
-    case "choice-single":
-      update(setChoice(state, uid, el.dataset.slot, { [el.value]: Number(el.dataset.count) }));
-      break;
-    case "choice-mixed": {
-      const def = unitSlots(formationById[entry.formation], entry)[el.dataset.slot];
-      const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || { mult: 1 }).mult;
-      const dist = { ...(entry.choices[el.dataset.slot] || { [def.oneOf[0]]: slotCount }) };
-      dist[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
-      update(setChoice(state, uid, el.dataset.slot, dist));
-      break;
-    }
-  }
 });
 
-// Remember which cards and ruleset groups are expanded across re-renders.
 document.addEventListener("toggle", (e) => {
-  const k = e.target.dataset && e.target.dataset.key;
-  if (k) {
-    e.target.open ? open.add(k) : open.delete(k);
-    return;
-  }
-  const rs = e.target.dataset && e.target.dataset.ruleset;
-  if (rs) {
-    const searchInput = document.querySelector('.sheet-search[data-act="search"]');
-    if (searchInput && searchInput.value.trim()) return;
-    if (e.target.open) openRulesets.add(rs);
-    else openRulesets.delete(rs);
-    localStorage.setItem("eab:openRulesets", JSON.stringify([...openRulesets]));
-  }
+    const k = e.target.dataset && e.target.dataset.key;
+    if (k) {
+        e.target.open ? open.add(k) : open.delete(k);
+        return;
+    }
+    const rs = e.target.dataset && e.target.dataset.ruleset;
+    if (rs) {
+        const searchInput = document.querySelector('.sheet-search[data-act="search"]');
+        if (searchInput && searchInput.value.trim()) return;
+        if (e.target.open) openRulesets.add(rs);
+        else openRulesets.delete(rs);
+        localStorage.setItem("eab:openRulesets", JSON.stringify([...openRulesets]));
+    }
 }, true);
 
 render();
 
-// A share link opens the import preview directly (also when the app is already running).
 function checkHash() {
-  if (!location.hash.startsWith("#l=")) return;
-  const h = location.hash;
-  history.replaceState(null, "", location.pathname + location.search);
-  previewImport(h);
+    if (!location.hash.startsWith("#l=")) return;
+    const h = location.hash;
+    history.replaceState(null, "", location.pathname + location.search);
+    previewImport(h);
 }
 checkHash();
 addEventListener("hashchange", checkHash);

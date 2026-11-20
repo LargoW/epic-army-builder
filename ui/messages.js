@@ -1,0 +1,306 @@
+// ui/messages.js
+export const uiText = {
+    de: {
+        add_formation: "+ Verband",
+        sort: "Sortieren",
+        lists: "Listen",
+        more: "Menü",
+        tab_build: "Bauen",
+        tab_overview: "Übersicht",
+        army_choose: "Armee wählen",
+        army_tap: "Tippe hier, um eine Armee zu wählen",
+        pts: "Pkt.",
+        formations: "Verbände",
+        no_formations: "Noch keine Verbände.<br>Tippe auf „+ Verband“, um zu beginnen.",
+        welcome: "Willkommen!",
+        welcome_text: "Wähle eine Armee, um eine neue Liste zu beginnen. Die Armee kannst du später jederzeit oben über den Titel wechseln.",
+        search_army: "Armee suchen …",
+        get_list: "Liste erhalten?",
+        import_list: "Liste importieren",
+        patreon: "Auf Patreon unterstützen",
+        menu_share: "Teilen & Exportieren",
+        menu_settings: "Einstellungen",
+        back_menu: "Zurück zum Menü",
+        theme: "Design wechseln",
+        hidden: "Armeen in Entwicklung: ",
+        hidden_show: "anzeigen",
+        hidden_hide: "ausblenden",
+        picker_open: "Armee-Auswahl offen lassen: ",
+        on: "An",
+        off: "Aus",
+        lang: "Sprache: ",
+        reset_confirm: "Alle Verbände entfernen?",
+        reset: "Alle Verbände entfernen",
+        add_title: "Verband hinzufügen",
+        sort_title: "Verbände sortieren",
+        sort_section: "Nach Abschnitt der Armeeliste",
+        sort_points: "Nach Punkten (höchste zuerst)",
+        move_up: "Nach oben",
+        move_down: "Nach unten",
+        my_lists: "Meine Listen",
+        search_new_list: "Neue Liste: Armee suchen …",
+        rename: "Umbenennen",
+        copy: "Duplizieren",
+        delete: "Löschen",
+        delete_confirm: "„${name}“ löschen?",
+        rename_title: "Liste umbenennen",
+        list_name: "Name der Liste",
+        save: "Speichern",
+        import_title: "Liste importieren",
+        import_file: "Datei auswählen",
+        import_placeholder: "Oder Link / Listentext hier einfügen",
+        check: "Prüfen",
+        import_confirm: "Als neue Liste hinzufügen",
+        qr_too_large: "Diese Liste ist für einen QR-Code zu groß. Bitte den Link oder die Datei verwenden.",
+        qr_cap: "Mit der Kamera des anderen Telefons scannen.",
+        share_title: "Liste teilen (Link)",
+        qr_show: "QR-Code anzeigen",
+        export_file: "Als Datei exportieren",
+        copy_text: "Liste als Text kopieren",
+        toast_clone: "Verband dupliziert",
+        toast_copy_link: "Link kopiert",
+        toast_copy_fail: "Kopieren nicht möglich",
+        toast_copy_list: "Liste kopiert",
+        toast_file_saved: "Datei gespeichert",
+        toast_imported: "Liste importiert",
+        toast_added: "${name} hinzugefügt",
+        bts_air: "BTS-Verband ist Luftverband: Gilt als vernichtet, wenn er am Spielende nicht auf dem Tisch ist.",
+        daemon_pool: "Dämonenpool",
+        bought: "gekauft",
+        free: "frei",
+        free_from: "Frei durch:",
+        size: "Verbandsgröße",
+        choose_units: "Einheiten wählen",
+        sum_must_be: "Summe muss ${count} ergeben.",
+        upgrades: "Aufwertungen",
+        chimera: "Chimären (+${pts} je)",
+        units: "Einheiten",
+        no_profile: "Kein Profil vorhanden.",
+        army_rules: "Armee-Sonderregeln",
+        formation_rules: "Sonderregeln des Verbands:",
+        special_rules: "Spezialregeln",
+        upgrades_overview: "Aufwertungen:",
+        chimera_s: "n",
+        import_errors: {
+            empty: "Nichts zum Importieren gefunden.",
+            unreadable: "Das ist keine gültige Liste.",
+            format: "Das ist keine gültige Liste.",
+            version: "Die Liste stammt aus einer neueren Version der App. Bitte die App aktualisieren.",
+            army: "Diese Armee gibt es in dieser App nicht.",
+        }
+    },
+    en: {
+        add_formation: "+ Formation",
+        sort: "Sort",
+        lists: "Lists",
+        more: "Menu",
+        tab_build: "Build",
+        tab_overview: "Overview",
+        army_choose: "Choose Army",
+        army_tap: "Tap here to choose an army",
+        pts: "pts.",
+        formations: "Formations",
+        no_formations: "No formations yet.<br>Tap on „+ Formation“ to start.",
+        welcome: "Welcome!",
+        welcome_text: "Choose an army to start a new list. You can change the army later anytime via the title above.",
+        search_army: "Search army …",
+        get_list: "Received a list?",
+        import_list: "Import list",
+        patreon: "Support on Patreon",
+        menu_share: "Share & Export",
+        menu_settings: "Settings",
+        back_menu: "Back to menu",
+        theme: "Toggle theme",
+        hidden: "WIP Armies: ",
+        hidden_show: "show",
+        hidden_hide: "hide",
+        picker_open: "Keep army picker open: ",
+        on: "On",
+        off: "Off",
+        lang: "Language: ",
+        reset_confirm: "Remove all formations?",
+        reset: "Remove all formations",
+        add_title: "Add Formation",
+        sort_title: "Sort Formations",
+        sort_section: "By army list section",
+        sort_points: "By points (highest first)",
+        move_up: "Move up",
+        move_down: "Move down",
+        my_lists: "My Lists",
+        search_new_list: "New list: Search army …",
+        rename: "Rename",
+        copy: "Duplicate",
+        delete: "Delete",
+        delete_confirm: "Delete \"${name}\"?",
+        rename_title: "Rename List",
+        list_name: "List name",
+        save: "Save",
+        import_title: "Import List",
+        import_file: "Choose file",
+        import_placeholder: "Or paste link / list text here",
+        check: "Check",
+        import_confirm: "Add as new list",
+        qr_too_large: "This list is too large for a QR code. Please use the link or file instead.",
+        qr_cap: "Scan with the other phone's camera.",
+        share_title: "Share list (link)",
+        qr_show: "Show QR code",
+        export_file: "Export as file",
+        copy_text: "Copy list as text",
+        toast_clone: "Formation duplicated",
+        toast_copy_link: "Link copied",
+        toast_copy_fail: "Copy failed",
+        toast_copy_list: "List copied",
+        toast_file_saved: "File saved",
+        toast_imported: "List imported",
+        toast_added: "${name} added",
+        bts_air: "BTS formation is an air formation: Counts as destroyed if not on the table at the end of the game.",
+        daemon_pool: "Daemon Pool",
+        bought: "bought",
+        free: "free",
+        free_from: "Free from:",
+        size: "Formation size",
+        choose_units: "Choose units",
+        sum_must_be: "Sum must equal ${count}.",
+        upgrades: "Upgrades",
+        chimera: "Chimeras (+${pts} each)",
+        units: "Units",
+        no_profile: "No profile available.",
+        army_rules: "Army special rules",
+        formation_rules: "Formation special rules:",
+        special_rules: "Special rules",
+        upgrades_overview: "Upgrades:",
+        chimera_s: "s",
+        import_errors: {
+            empty: "Nothing to import found.",
+            unreadable: "This is not a valid list.",
+            format: "This is not a valid list.",
+            version: "The list is from a newer version of the app. Please update the app.",
+            army: "This army does not exist in this app.",
+        }
+    }
+};
+
+const violationTexts = {
+    de: {
+        "support-per-core": (p) => `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}).`,
+        "support-per-company": (p) =>
+            `Zu viele Unterstützungsverbände: ${p.count} (erlaubt: ${p.limit}, höchstens 2 pro Kompanie).`,
+        "scouts-per-detachment": (p) =>
+            `Zu viele Scout-Trupps: ${p.count} (erlaubt: ${p.limit}, höchstens 1 pro Verband ohne Scouts).`,
+        "dominatrix-limit": (p) =>
+            `Die Dominatrix darf höchstens ${p.limit}× gewählt werden (gewählt: ${p.count}).`,
+        "regimental-hq-limit": (p) => `Das Regimental HQ darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+        "orbital-support-limit": (p) => `Orbital Support darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+        "orbital-once": (p) => `Orbitale Unterstützung darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+        "kroozer-once": (p) => `Ein Kroozer darf nur einmal gewählt werden (gewählt: ${p.count}).`,
+        "imperial-navy-points-limit": (p) =>
+            `Imperiale Flotte: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+        "rare-points-limit": (p) =>
+            `Seltene Verbände: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+        "air-caste-third": (p) =>
+            `Luftkaste und Raumschiffe: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+        "warengines-share": (p) =>
+            `Kriegsmaschinen: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+        "formation-limit": (p) => `Zu viele Verbände dieser Art: ${p.count} (erlaubt: ${p.limit}).`,
+        "share-limit": (p) =>
+            `Collegia Titanica und Flotte: ${p.pts} von ${p.total} Punkten (höchstens ein Drittel der Armee).`,
+        "upgrade-not-allowed": (p, up) => `Aufwertung „${up}“ ist für diesen Verband nicht erlaubt.`,
+        "replace-insufficient": (p, up, unit) =>
+            `„${up}“: Es sind nicht genug ${unit(p.from)} zum Ersetzen vorhanden (benötigt: ${p.count}).`,
+        "choice-invalid": () => `Die Zusammenstellung der Einheiten ist ungültig.`,
+        "transport-not-allowed": (p, up) => `Die Aufwertung „${up}“ darf keine Chimären hinzufügen.`,
+        "transport-too-many": (p, up) => `„${up}“: Höchstens ${p.max} zusätzliche Chimäre(n) erlaubt.`,
+        "variant-max": (p) => `„${p.label}“: höchstens ${p.max} erlaubt.`,
+        "variant-requires": (p, up, unit) =>
+            `„${p.label}“ benötigt eine der Einheiten: ${p.units.map(unit).join(", ")}.`,
+        "vehicle-surplus": (p, up, unit) =>
+            `Zu viele ${unit(p.unit)}: höchstens ${p.max} nötig, um den Verband zu transportieren.`,
+        "variant-army-limit": (p) =>
+            `„${p.label}“ darf höchstens ${p.limit}× pro Armee gewählt werden (gewählt: ${p.count}).`,
+        "transport-incomplete": (p) => p.units != null && p.units !== p.inf ?
+            `Enthält der Verband Transportfahrzeuge, müssen alle INF transportiert werden: ${p.units} INF belegen ${p.inf} Plätze (manche zählen doppelt), aber nur Platz für ${p.seats}.` :
+            `Enthält der Verband Transportfahrzeuge, müssen alle INF transportiert werden: ${p.inf} INF, aber nur Platz für ${p.seats ?? p.vehicles * p.capacity}.`,
+        "unit-group-min": (p) => `${p.label}: mindestens ${p.min} nötig (gewählt: ${p.count}).`,
+        "unit-group-max": (p) => `${p.label}: höchstens ${p.max} erlaubt (gewählt: ${p.count}).`,
+        "transport-mixed": (p, up, unit) =>
+            `${unit(p.unit)} und ${unit(p.other)} dürfen in einem Verband nicht kombiniert werden.`,
+        "unknown-formation": () => `Unbekannter Eintrag in der gespeicherten Liste.`,
+        "unknown-upgrade": () => `Unbekannter Eintrag in der gespeicherten Liste.`,
+        "unknown-variant": () => `Unbekannter Eintrag in der gespeicherten Liste.`,
+    },
+    en: {
+        "support-per-core": (p) => `Too many support formations: ${p.count} (allowed: ${p.limit}).`,
+        "support-per-company": (p) =>
+            `Too many support formations: ${p.count} (allowed: ${p.limit}, max 2 per company).`,
+        "scouts-per-detachment": (p) =>
+            `Too many scout squads: ${p.count} (allowed: ${p.limit}, max 1 per formation without scouts).`,
+        "dominatrix-limit": (p) => `The Dominatrix can be chosen at most ${p.limit}× (chosen: ${p.count}).`,
+        "regimental-hq-limit": (p) => `The Regimental HQ can only be chosen once (chosen: ${p.count}).`,
+        "orbital-support-limit": (p) => `Orbital Support can only be chosen once (chosen: ${p.count}).`,
+        "orbital-once": (p) => `Orbital support can only be chosen once (chosen: ${p.count}).`,
+        "kroozer-once": (p) => `A Kroozer can only be chosen once (chosen: ${p.count}).`,
+        "imperial-navy-points-limit": (p) =>
+            `Imperial Navy: ${p.pts} of ${p.total} points (max one third of the army).`,
+        "rare-points-limit": (p) => `Rare formations: ${p.pts} of ${p.total} points (max one third of the army).`,
+        "air-caste-third": (p) =>
+            `Air caste and spacecraft: ${p.pts} of ${p.total} points (max one third of the army).`,
+        "warengines-share": (p) => `War engines: ${p.pts} of ${p.total} points (max one third of the army).`,
+        "formation-limit": (p) => `Too many formations of this type: ${p.count} (allowed: ${p.limit}).`,
+        "share-limit": (p) =>
+            `Collegia Titanica and Fleet: ${p.pts} of ${p.total} points (max one third of the army).`,
+        "upgrade-not-allowed": (p, up) => `Upgrade "${up}" is not allowed for this formation.`,
+        "replace-insufficient": (p, up, unit) =>
+            `"${up}": Not enough ${unit(p.from)} available to replace (required: ${p.count}).`,
+        "choice-invalid": () => `The unit composition is invalid.`,
+        "transport-not-allowed": (p, up) => `The upgrade "${up}" may not add Chimeras.`,
+        "transport-too-many": (p, up) => `"${up}": Max ${p.max} additional Chimera(s) allowed.`,
+        "variant-max": (p) => `"${p.label}": max ${p.max} allowed.`,
+        "variant-requires": (p, up, unit) =>
+            `"${p.label}" requires one of the units: ${p.units.map(unit).join(", ")}.`,
+        "vehicle-surplus": (p, up, unit) =>
+            `Too many ${unit(p.unit)}: max ${p.max} needed to transport the formation.`,
+        "variant-army-limit": (p) =>
+            `"${p.label}" can be chosen at most ${p.limit}× per army (chosen: ${p.count}).`,
+        "transport-incomplete": (p) => p.units != null && p.units !== p.inf ?
+            `If the formation contains transport vehicles, all INF must be transported: ${p.units} INF take up ${p.inf} slots (some count double), but only space for ${p.seats}.` :
+            `If the formation contains transport vehicles, all INF must be transported: ${p.inf} INF, but only space for ${p.seats ?? p.vehicles * p.capacity}.`,
+        "unit-group-min": (p) => `${p.label}: at least ${p.min} required (chosen: ${p.count}).`,
+        "unit-group-max": (p) => `${p.label}: at most ${p.max} allowed (chosen: ${p.count}).`,
+        "transport-mixed": (p, up, unit) =>
+            `${unit(p.unit)} and ${unit(p.other)} cannot be combined in one formation.`,
+        "unknown-formation": () => `Unknown entry in the saved list.`,
+        "unknown-upgrade": () => `Unknown entry in the saved list.`,
+        "unknown-variant": () => `Unknown entry in the saved list.`,
+    }
+};
+
+export function messageFor(v, names = {}, lang = "de") {
+    const p = v.params || {};
+    const up = names.upgrade ? names.upgrade(p.upgrade) : p.upgrade;
+    const unit = (id) => (names.unit ? names.unit(id) : id);
+    const dict = violationTexts[lang] || violationTexts["de"];
+
+    if (v.code === "upgrade-limit") {
+        if (lang === "en") {
+            return p.id === "company-max-three" ?
+                `Too many upgrades: ${p.count} (max 3 per company).` :
+                p.id === "max-three-upgrades" ?
+                `Too many upgrades: ${p.count} (max 3 per formation).` :
+                p.id === "company-upgrade-limit" ?
+                `Too many company upgrades: ${p.count} (max 2 per company).` :
+                `Upgrades can only be chosen once per formation.`;
+        } else {
+            return p.id === "company-max-three" ?
+                `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Kompanie).` :
+                p.id === "max-three-upgrades" ?
+                `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Verband).` :
+                p.id === "company-upgrade-limit" ?
+                `Zu viele Kompanie-Aufwertungen: ${p.count} (höchstens 2 pro Kompanie).` :
+                `Aufwertungen dürfen pro Verband nur einmal gewählt werden.`;
+        }
+    }
+
+    const fn = dict[v.code];
+    if (fn) return fn(p, up, unit);
+    return v.code;
+}

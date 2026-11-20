@@ -166,6 +166,13 @@
       "version": "1.0.Beta-3"
     },
     {
+      "id": "ear-de/cultists/kultisten",
+      "ruleset": "ear-de",
+      "faction": "Chaos-Kultisten",
+      "name": "Streitkräfte der Chaos-Kultisten",
+      "version": "1.0.Beta"
+    },
+    {
       "id": "ear-de/sm/bloodangels",
       "ruleset": "ear-de",
       "faction": "Space Marines",

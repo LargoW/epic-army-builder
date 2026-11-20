@@ -1,0 +1,428 @@
+{
+  "Göttermaschine": [
+    "Kriegsmaschinen mit mindestens 8 DC unterliegen den Sonderregeln Göttermaschine und Geteiltes Feuer.",
+    "Die Erhabenheit dieser ehrfurchtgebietenden Konstrukte hat ihren Preis: Sollte eine solche Verkörperung der Macht ins Wanken geraten oder zerstört werden, werden die zu ihrer Unterstützung herbeigeeilten Streitkräfte schwer erschüttert.",
+    "Aus diesem Grund erhält jeder befreundete Verband eine Beschussmarke, sobald eine Einheit mit der Sonderregel Göttermaschine aufgerieben wird (auch wenn sie bereits aufgerieben ist und eine Offensive verliert). Wird eine Einheit mit der Sonderregel Göttermaschine zerstört, erhalten alle befreundeten Verbände auf dem Schlachtfeld W3 Beschussmarken.",
+    "Einheiten mit der Sonderregel Göttermaschine sind selbst immun gegen diesen Effekt."
+  ],
+  "Geteiltes Feuer": [
+    "Eine Kriegsmaschine mit dieser Sonderregel kann beim Versuch, die Aktion Dauerfeuer oder Vorrücken durchzuführen, Geteiltes Feuer ansagen und erleidet dafür einen Modifikator von -1 auf den Wurf. Ist die Aktion erfolgreich, darf die WE auf bis zu zwei gegnerische Verbände feuern, aber mit jeder einzelnen Waffe höchstens einen Verband als Ziel wählen."
+  ],
+  "Erweiterte Befehlsreichweite": [
+    "Verbände mit mindestens einer Einheit mit der Fähigkeit <i>Extended Command</i> vergrössern die Reichweite, innerhalb derer Kommandeure in ihrem Verband andere Verbände bei einem gemeinsamen Angriff zum Folgen auffordern können, von 5cm auf 15 cm (siehe 2.1.2)."
+  ],
+  "Maschinengeist": [
+    "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+  ],
+  "Schwerfällig": [
+    "Einheiten mit der Sonderregel Schwerfällig dürfen beim Aufgeriebenwerden oder bei einem misslungenen Sammelversuch nur einen einzelnen Rückzugsschritt statt zwei durchführen."
+  ],
+  "Starrköpfig": [
+    "Jeder Verband, in dem sich mindestens eine Einheit mit Starrköpfig befindet, verringert den durch Beschussmarken verursachten Schaden, solange der Verband aufgerieben ist, um eins; verringert die Anzahl zusätzlicher Treffer durch einen verlorenen Nahkampf um eins; benötigt eine zusätzliche Beschussmarke, bevor er aufgerieben wird; und darf bei der Ermittlung der Unterdrückung eine Beschussmarke ignorieren."
+  ],
+  "Tunnelgräber": [
+    "Tunnelbohrer dürfen vor Schlachtbeginn gleichzeitig mit den Raumschiffen aufgestellt werden, sodass sie die eigene Spielfeldkante berühren (siehe 4.3.1). Zu diesem Zeitpunkt müssen auch alle in ihnen transportierten Einheiten beiseitegestellt werden. Notiere geheim den Ort, an dem der Tunnelbohrer auftauchen soll, wie auch die Koordinaten einer Landezone (siehe 4.3.1). Notiere ausserdem geheim die Runde, in der er auftauchen wird. Soll er innerhalb der Aufstellungszone und bis zu 30 cm von einer Spielfeldkante entfernt auftauchen, kann er ab der ersten Runde eintreffen. Liegt der Auftauchpunkt innerhalb der Aufstellungszone und bis zu 65 cm von einer Spielfeldkante entfernt, kann er in Runde zwei erscheinen. Ab der dritten Runde kann er an jeder Stelle des Schlachtfelds erscheinen.",
+    "Stelle die Tunnelbohrer zu Beginn der angegebenen Runde am notierten Ort auf, bevor bestimmt wird, wer den Strategiewurf gewinnt. Das Auftauchen gilt nicht als Bewegung und löst daher kein gegnerisches Feuerbereitschaftsfeuer aus. Wäre ein Tunnelbohrer auf Gelände aufgetaucht, das für ihn unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass seine Bordsensoren ihn zu einem anderen Einstiegspunkt umleiten. Bewege die Einheit zum nächstgelegenen Ort, an dem sie auftauchen kann.",
+    "Bei Verbänden mit mehreren Tunnelbohrern muss nur ein gemeinsamer Auftauchort notiert werden. Stelle die erste Tunnelbohrer-Einheit dort auf. Alle weiteren Tunnelbohrer müssen innerhalb von 5cm zu einem bereits aufgestellten Tunnelbohrer und vollständig innerhalb eines Radius von 15 cm um die ursprünglichen Auftauchkoordinaten aufgestellt werden; dieser Punkt darf ausserhalb der Bereiche liegen, in denen Tunnelbohrer in dieser Runde auftauchen können. Beim Auftauchen müssen Tunnelbohrer keine Würfe für gefährliches oder schwieriges Gelände ablegen. Nachdem alle Tunnelbohrer aufgestellt wurden, dürfen transportierte Einheiten sofort aussteigen und bei einem Auftauchen in Runde zwei auch auf der gegnerischen Spielfeldhälfte.",
+    "Das Aussteigen löst wie üblich Feuerbereitschaftsfeuer aus. Tunnelbohrer und alle von ihnen transportierten Einheiten dürfen in der Runde, in der sie erscheinen, eine Aktion durchführen."
+  ],
+  "Ionen-Flammenschild": [
+    "Ritter mit <i>Ionen-Flammenschild</i> dürfen ihren Ionenschild auch gegen CC-Angriffe einsetzen."
+  ],
+  "Sabotage": [
+    "Vor dem Wurf für die erste Runde und vor Teleportationen darf der Spieler für jeden Verband mit mindestens einer Einheit mit der Sonderregel Sabotage einen gegnerischen Verband auswählen (beide Verbände müssen auf dem Schlachtfeld aufgestellt sein) und einen W6 würfeln.",
+    "Bei einem Wurf von 2-5 beginnt der gegnerische Verband mit einer Beschussmarke. Bei einer 6 beginnt er mit d3 Beschussmarken. Bei einer 1 erhält der Verband mit Sabotage eine Beschussmarke. Kein Verband darf mehr als einmal Ziel von Sabotage sein, auch wenn der erste Wurf eine 1 ergibt."
+  ],
+  "Dämonischer Fokus": [
+    "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+  ],
+  "Warp-Riss": [
+    "Verbände mit mindestens einem Modell mit der Sonderregel Warp-Riss müssen das Spiel in Reserve beginnen und dürfen das Schlachtfeld nur durch einen Warp-Riss oder ein Chaostor betreten.",
+    "Warp-Risse werden genau wie Selbstständige Planetare Landungen geplant. Sowohl die Ankunftsrunde als auch die Lande-Koordinaten müssen notiert werden. Die Ankunftsrunde eines Verbands muss nicht bekanntgegeben werden.",
+    "Die geplanten Koordinaten des Warp-Risses müssen bei Ankunft in Runde eins innerhalb von 60 cm zum befreundeten Blitz-Missionsziel liegen; bei Ankunft in Runde zwei oder drei dürfen sie sich an beliebiger Stelle auf dem Schlachtfeld befinden.",
+    "In der festgelegten Runde wird der Warp-Rift-Verband wie bei einer Selbstständigen Planetaren Landung in der normalen Aktivierungsreihenfolge aktiviert.",
+    "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder seine Ankunft auf die folgende Runde verschieben und in Reserve bleiben.",
+    "Gelingt die Aktivierung, platziere einen Warp-Rift-Marker an den geplanten Koordinaten. Er weicht nicht ab.",
+    "Würde sich ein Warp-Riss auf Gelände öffnen, das für die hindurchtretenden Einheiten unpassierbar ist, unter einer befreundeten Einheit oder in einer gegnerischen Kontrollzone, wird angenommen, dass er zu einem anderen Einstiegspunkt umgeleitet wird. Verschiebe den Warp-Riss zum nächstgelegenen Ort, an dem er sich öffnen kann.",
+    "anschließend führt der aktivierte Verband den zu Beginn seiner Aktion festgelegten Befehl aus und muss sich aus dem Warp-Riss herausbewegen. Miss alle Entfernungen vom Mittelpunkt des Markers.",
+    "Alle Einheiten des aktivierten Verbands müssen sich aus dem Warp-Riss herausbewegen. Einheiten, die ihn nicht verlassen können, werden zerstört. Entferne anschliessend den Warp-Rift-Marker vom Schlachtfeld."
+  ],
+  "Im Mitternachtsschwarz": [
+    "Furien des ungeteilten Chaos, die in einem Nahkampf getötet werden, zählen nicht für das Nahkampfergebnis, solange der Spieler der Night Lords den Angriff eingeleitet hat."
+  ],
+  "Regeneration": [
+    "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+  ],
+  "Befall": [
+    "Verbände, die ausschließlich aus Einheiten mit der Sonderregel <i>Befall</i> bestehen, müssen in Reserve gehalten und nach den Regeln für Teleportation aufgestellt werden. außerdem dürfen Einheiten mit der Sonderregel <i>Befall</i> nur um Szenario-Missionsziele konkurrieren."
+  ],
+  "Reparaturen auf dem Schlachtfeld": [
+    "Solange ein Verband eine Einheit mit der Sonderfähigkeit <i>Reparaturen auf dem Schlachtfeld</i> enthält, erhalten alle gepanzerten Fahrzeugeinheiten des Verbands Unverwundbar."
+  ],
+  "Bionik": [
+    "Die umfangreichen bionischen Modifikationen der Iron Hands und Iron Krieger erhöhen ihre Widerstandsfähigkeit gegen körperliche Verletzungen. Charaktere mit der Sonderregel Bionik erhöhen den Rüstungswert ihrer Einheit auf 3+, wenn sie einer INF-Einheit hinzugefügt werden."
+  ],
+  "Hilfstransportschiff": [
+    "Hilfstransportschiff sind Antigravfahrzeuge und gelten für Sichtlinien und Gelände stets als aufgetaucht. Verfügt das Hilfstransportschiff über eine Transportoption, darf es Einheiten wie üblich ein- und ausschiffen. Eingeschiffte Einheiten dürfen einen Schutzwurf ablegen (siehe 1.7.5), wenn das Hilfstransportschiff zerstört wird.",
+    "Hilfstransportschiff blockieren keine Sichtlinie und müssen bei Offensiven stets ihre Antigravfähigkeit einsetzen, um ein Feuergefecht zu erzwingen. Infanterie in Basekontakt mit einem Hilfstransportschiff kann dieses nicht als Deckung nutzen."
+  ],
+  "Herolde der Wahrheit": [
+    "Jeder Verband mit mindestens einer Einheit mit der Sonderregel Herolde der Wahrheit ignoriert beim Sammeln den Modifikator von -1 für gegnerische Verbände innerhalb von 30 cm."
+  ],
+  "Chaostor": [
+    "Verbände der Dämonischer Einfall in Reserve dürfen Chaostors verwenden, um das Schlachtfeld zu betreten. Pro Runde dürfen beliebig viele Verbände ein Chaostor nutzen, wenn es Teil eines Missionsziels ist; ein auf einer Kriegsmaschine montiertes Chaostor darf jedoch nur von einem Verband pro Runde verwendet werden.",
+    "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder in Reserve bleiben.",
+    "Chaostors, die Teil von Missionszielen sind, können nicht zerstört werden. Auf Kriegsmaschinen montierte Chaostors werden zerstört, wenn die Kriegsmaschine zerstört wird.",
+    "Jeder Verband, der durch ein auf einer aufgeriebenen Kriegsmaschine montiertes Chaostor das Schlachtfeld betritt, erhält eine Beschussmarke. Miss alle Bewegungsentfernungen vom Chaostor aus ab dem Mittelpunkt des Markers oder der Kante der Kriegsmaschine.",
+    "Befindet sich ein Chaostor in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+  ],
+  "Windflink": [
+    "Einheiten mit <i>Windflink</i> ignorieren den Trefferwurfmodifikator von -1 beim Schiessen während eines Eilschritts, erhalten beim Dauerfeuer jedoch nicht den Trefferwurfbonus von +1."
+  ],
+  "Weitsicht": [
+    "Eldar-Verbände mit einer Einheit, die Weitsicht besitzt, dürfen den Modifikator von -1 auf Aktionstestwürfe ignorieren, wenn sie versuchen, die Initiative zu behalten.",
+    "Zusätzlich darf der Eldar-Spieler einmal pro Runde versuchen, die Initiative zweimal hintereinander zu behalten (d. h. der Eldar-Spieler kann drei Aktivierungen hintereinander durchführen). Jeder Eldar-Verband darf ausgewählt werden, auch ohne eine Einheit mit Weitsicht, aber mindestens eine Einheit mit Weitsicht muss sich auf dem Schlachtfeld befinden.",
+    "Der ausgewählte Verband muss weiterhin einen Aktionstest mit einem Modifikator von -1 ablegen, ausser er enthält eine Einheit mit Weitsicht."
+  ],
+  "Netzportal": [
+    "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+    "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+    "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+    "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+  ],
+  "Gravfallschirme": [
+    "Einheiten mit der Sonderregel <i>Gravfallschirme</i> dürfen innerhalb von 10cm statt der üblichen 5cm von einem <i>Antigrav</i>-Transportfahrzeug aussteigen."
+  ],
+  "Treu": [
+    "Wenn eine Offensive zu einem Nahkampf führt (d. h. mindestens eine Einheit sich innerhalb von 15 cm zu einer gegnerischen Einheit befindet), erhalten Einheiten mit der Sonderregel <i>Treu</i> Furchtlos, und der Verband zählt, als enthalte er einen zusätzlichen Charakter mit der Sonderregel <i>Inspirierend</i>. Diese Effekte halten bis zum Ende der aktuellen Runde an, gehen jedoch verloren, wenn alle Einheiten mit <i>Treu</i> im Verband zerstört werden."
+  ],
+  "Teleportieren-Peilsender": [
+    "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+    "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+    "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+  ],
+  "Schwingen des Himmelsengels": [
+    "Alle Deathwatch-Kontingente müssen das Spiel in Reserve beginnen und entweder in einem Dark-Hunter-Klasse-Zerstörer, einem Corvus-Blackstar-Landungsschiff oder einem Deathwatch-Thunderhawk-Transporter eingeschifft sein.",
+    "Gegen Corvus-Blackstar-Landungsschiffe erleiden alle Flugabwehrschüsse zusätzlich einen Trefferwurfmodifikator von -1."
+  ],
+  "Ausdauernd": [
+    "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+  ],
+  "Lebendes Metall": [
+    "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+  ],
+  "Brutbrüder": [
+    "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+  ],
+  "Knoten des Schwarmbewusstseins": [
+    "Solange die Tyraniden-Armee eine Einheit mit Knoten des Schwarmbewusstseins enthält, darf sie einmal pro Runde einen einzelnen misslungenen Aktionstest beliebigen Typs wiederholen (es sei denn, alle Einheiten mit Knoten des Schwarmbewusstseins befinden sich ausserhalb des Spielfelds)."
+  ],
+  "Synapse": [
+    "Die folgenden Regeln gelten nur für Primär- und Sekundär-Synapsenschwarm-Verbände. Synapsenkreaturen sind alle Einheiten mit der Sonderregel <i>Synapse</i>. Ein Synapsenschwarm ohne verbliebene Synapsenkreaturen hat einen Initiativwert von 3+ und darf weder Missionsziele einnehmen noch bestreiten, einschliesslich „Sie Können Nicht Vorbei“.",
+    "Ein Synapsenschwarm mit verbliebenen Synapsenkreaturen darf am Ende seiner Aktion andere Synapsenschwarm-Verbände ohne verbliebene Synapsenkreaturen aufnehmen. Eine Einheit des aufnehmenden Verbands muss sich innerhalb von 5cm zu einer Einheit der aufzunehmenden Verbände befinden. Einheiten und Beschussmarken des aufgenommenen Verbands werden Teil des aufnehmenden Verbands (aufgeriebene Verbände gelten als hätten sie so viele Beschussmarken wie verbliebene Einheiten bzw. anfängliche DC). Für das Ziel Brecht Ihren Willen gilt der aufgenommene Verband als vollständig zerstört."
+  ],
+  "Unterstützte Schwarmbildung": [
+    "Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen befreundeten Verbänden innerhalb von 15 cm zur Einheit (einschliesslich des eigenen Verbands) beim Schwarmen einen Erzeugungspunkt hinzu (siehe Armeeregel <i>Schwarmbildung</i>). Mehrere Einheiten mit <i>Unterstützte Schwarmbildung</i> fügen jeweils einen Punkt hinzu."
+  ],
+  "Ganten": [
+    "Die Hälfte (aufgerundet) aller Einheiten mit der Sonderregel <i>Ganten</i>, die im Nahkampf getötet werden, zählt nicht für das Nahkampfergebnis. <i>Ganten</i> sind ausserdem <i>Verbrauchbar</i>, solange sich noch mindestens eine Einheit mit <i>Synapse</i> im Verband befindet."
+  ],
+  "Ehrengarde": [
+    "Einheiten mit der Sonderregel Ehrengarde sind Furchtlos, solange ihr Verband einen Charakter mit der Sonderregel Oberbefehlshaber enthält. Befinden sie sich im selben Verband, darf der Oberbefehlshaber einer Einheit mit dieser Sonderregel hinzugefügt werden."
+  ],
+  "Los geht's": [
+    "Einheiten mit der Sonderregel Los geht's erhalten zusätzlich 5cm Geschwindigkeit, wenn ihr Verband eine Offensive durchführt."
+  ],
+  "Super-Entbehrlich": [
+    "Ein Verband erhält keine Beschussmarke, wenn eine Einheit mit Super-Entbehrlich zerstört wird. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Wird eine Super-Entbehrlich-Einheit von einer Waffe mit Versprengen getroffen, verursacht sie keine Beschussmarke.",
+    "Im Nahkampf getötete Super-Entbehrlich-Einheiten werden bei der Ermittlung des Ergebnisses nicht mitgezählt.",
+    "Verbände, die ausschliesslich aus Verbrauchbar- und/oder Super-Entbehrlich-Einheiten bestehen, profitieren nicht von den obigen Regeln."
+  ],
+  "Lucifer-Muster-Maschine": [
+    "Einheiten mit der Sonderregel Lucifer-Muster-Maschine erhalten bei einer Offensive zusätzlich 5cm Geschwindigkeit."
+  ],
+  "Abstieg der Engel": [
+    "Einheiten eines Verbands mit Stormravens müssen bei Anwendung der Sonderregel Planetare Landung keinen Abweichungswurf ablegen. Stelle den ersten Stormraven innerhalb von 15 cm zu den vorher festgelegten Koordinaten der Landezone auf und alle übrigen Einheiten des Verbands innerhalb von 15 cm zu diesem Modell und in Verband. Einheiten dürfen nicht auf unpassierbarem Gelände oder in gegnerischen Kontrollzonen aufgestellt werden."
+  ],
+  "Navis Nobilite": [
+    "Die Raumschiffe der Grey Knights gehören zu den schnellsten und am besten gesteuerten Schiffen der Galaxis. Wurde ein Grey-Knights-Schlachtkreuzer gekauft, gilt für den Spieler der Blood Ravens bei der Wahl der Runde, in der das Raumschiff das Schlachtfeld überfliegt, ein Strategiewert von 6."
+  ],
+  "Einsatz des Overlords": [
+    "Einige Primaris Space Marines sind mit schweren Sprungmodulen oder Gravfallschirme ausgerüstet, die dafür vorgesehen sind, sie aus niedriger Umlaufbahn von den Landebuchten tief fliegender Angriffsschiffe auf das Schlachtfeld abzusetzen. Dies wird dadurch dargestellt, dass der Verband die Sonderregel <i>Selbststaendige Planetare Landung</i> erhält, mit einer Ausnahme: Würfle nur für die erste Einheit des Verbands auf Abweichung. Stelle anschliessend alle übrigen Einheiten innerhalb von 5cm zur ersten Einheit auf."
+  ],
+  "Expertenaufklärung": [
+    "Befreundete Raven-Guard-Verbände, die durch <i>Planetare Landung</i> das Schlachtfeld betreten und innerhalb von 30 cm zu einer Einheit mit der Sonderregel <i>Expertenaufklärung</i> aufgestellt werden, müssen nicht auf Abweichung würfeln. Befreundete Raven-Guard-Verbände, die durch <i>Teleportieren</i> das Schlachtfeld betreten und innerhalb von 15 cm zu einer Einheit mit der Sonderregel <i>Expertenaufklärung</i> aufgestellt werden, dürfen ausserdem beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen."
+  ],
+  "Sturmangriff": [
+    "Die Waffe oder Einheit erhält <i>Erstschlag</i> bei Offensiven, die von ihrem Verband eingeleitet werden."
+  ],
+  "Im Sattel geboren": [
+    "Die White Scars sind Meister blitzschneller Störangriffe und lassen dem Gegner nie zu, einen entscheidenden oder statischen Kampf zu erzwingen. Einheiten mit <i>Im Sattel geboren</i> dürfen sich bis zu 15 cm statt der üblichen 5cm neu formieren."
+  ],
+  "Geisterlords": [
+    "Ein Verband mit einem lebenden Ahnen erleidet keinen Modifikator von -1 auf seinen Aktionstest, wenn er versucht, die Initiative zu behalten."
+  ],
+  "Koordinierter Beschuss": [
+    "Ein Verband mit mindestens einer Einheit mit Koordinierter Beschuss darf bis zu zwei weitere nicht aufgeriebene Verbände innerhalb von 15 cm, die in dieser Runde noch keine Aktion durchgeführt haben, auffordern, ihm bei Vorrücken, einem Eilschritt oder Dauerfeuer zu folgen.",
+    "Lege einen einzelnen Initiativwurf für alle Verbände ab und berücksichtige dabei einen gemeinsamen Modifikator von -1, falls einer der Verbände Beschussmarken hat. Misslingt der Test, erhält der ursprüngliche Verband (mit der Einheit, die Koordinierter Beschuss einsetzt) eine Beschussmarke und muss Halten durchführen. Die anderen Verbände sind nicht betroffen und dürfen später in der Runde eine Aktion durchführen. Gelingt der Test, dürfen alle beteiligten Verbände Vorrücken, einen Eilschritt oder Dauerfeuer durchführen.",
+    "Nicht alle Verbände müssen dieselbe Aktion durchführen; die Aktionen dürfen in beliebiger Reihenfolge abgehandelt werden, müssen sich aber alle gegen denselben Zielverband richten. Kann oder will ein aktivierter Verband nicht auf den ausgewählten Verband feuern, darf er in dieser Runde überhaupt nicht feuern. Die Verbände müssen keinen bestimmten Abstand zueinander einhalten und führen ihre Aktionen nacheinander durch. Die Aktion jedes Verbands wird angesagt und abgehandelt (einschliesslich des Tests, ob der Zielverband aufgerieben wird), bevor der nächste Tau-Verband an die Reihe kommt."
+  ],
+  "Himmlischer": [
+    "Alle Einheiten eines Verbands, dem sich ein Himmlischer angeschlossen hat, erhalten Furchtlos. Wird die Einheit mit dem Himmlischen ausgeschaltet, verliert der Verband Furchtlos und erhält 1D3 Beschussmarken."
+  ],
+  "Tau-Sprungmodule": [
+    "Tau-Sprungmodule folgen allen Regeln für Sprungmodule. Verbände, die ausschliesslich aus Einheiten mit Tau-Sprungmodulen bestehen, dürfen am Ende einer Aktion Vorrücken, Eilschritt oder Marsch zusätzlich bis zu 10cm weit bewegt werden. Diese zusätzliche Bewegung ist unabhängig davon erlaubt, ob die Einheit feuert, und erfolgt nach dem Schiessen. Sie darf in jede Richtung führen und folgt allen normalen Bewegungsregeln; Einheiten müssen also wie üblich den Zusammenhalt und Kontrollzonen beachten."
+  ],
+  "Zielmarker": [
+    "Alle gegnerischen Verbände mit mindestens einer Einheit innerhalb von 30 cm und Sichtlinie zu mindestens einer Tau-Einheit mit der Sonderregel Zielmarker gelten als markiert. Bei Fernkampfangriffen gegen einen markierten Verband erhalten alle Fernkampfwaffen einen zusätzlichen Trefferwurfmodifikator von +1. Dieser Bonus gilt nicht bei Flugabwehrangriffen oder Sperrfeuerangriffen. Ein aufgeriebener Tau-Verband oder ein Verband, der in dieser Runde einen Marsch durchgeführt hat, darf keine gegnerischen Verbände markieren."
+  ],
+  "Ablenkschild": [
+    "Tau-Deflektorschilde funktionieren in jeder Hinsicht wie Unverwundbar, bieten jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+  ],
+  "Characters": [
+    "Certain units are noted as being characters. These units represent important individuals rather than groups of soldiers or the crew of a vehicle or war engine. Because of this they are not represented by a separate model on the tabletop, and are instead added to another unit in the army. The unit the character is added to receives any weapons and abilities that the character has noted on their datasheet. For example, Space Marine Chaplains are characters that are armed with a Power Weapon (assault weapon, macro-weapon, extra attack (+1)), and have the invulnerable save and inspiring abilities. Any unit they are added to will count as having all of these things in addition to their normal weapons and abilities. Note that characters can be added to any type of unit, including vehicles and war engines.",
+    "The unit and the character must operate together throughout the entire battle. The character can be transported in any vehicle allowed to transport the unit that he joins, and does not take up an extra space. The character should be represented by a suitable model or command banner that is added to the unit he joins. Characters that are taken as an upgrade for a formation must be added to a unit from the formation they were taken as an upgrade for."
+  ],
+  "Commanders": [
+    "Some units and characters are noted as being commanders. Commanders can order up to three formations of troops to follow them when they make an assault, as long as all the formations have at least one unit within 5cm of a unit from the commander’s formation.",
+    "Make a single initiative roll for all the formations, counting a -1 modifier if any have Blast markers. If the test is failed then the commander’s formation receives a Blast marker and must take a hold action, but the other formations are unaffected (and may take an action later in the turn).",
+    "If the test is passed then all three formations may take an engage action. Treat the three formations as if they were a single formation for all rules purposes for the duration of the assault. A 2D6 roll is used to resolve a combined assault. If the attackers lose then each formation is broken. If they win then each formation receives a number of Blast markers equal to the casualties it suffered in the combat."
+  ],
+  "Fearless": [
+    "Some units are noted as being fearless. Such units are either exceptionally brave or so crazed that they will never run away even when broken (though you can choose to have them make a withdrawal move if you want them to).",
+    "Units that are Fearless are immune to damage from losing an assault (both the additional hits and being wiped out if already broken) and from the damage inflicted by Blast markers if broken. When broken or otherwise forced to take a withdrawal move, Fearless units may choose not to withdraw, and if the unit elects to withdraw it will be destroyed only if it ends its move within 5cm of the enemy rather than 15cm. Fearless units that remain stationary do not take additional damage. Note that other units in the formation that are not fearless will be affected normally by additional hits for Blast markers or losing an assault or whatever—just don’t allocate any of the hits to the units that are immune, but hand them out as normal to units that are not.",
+    "Fearless units still count as part of a formation, and so will sometimes be dragged along as their formation withdraws even though they don’t have to, simply in order to stay in formation. Finally, note that not needing to withdraw can mean that fearless units can end an assault still in an enemy zone of control, or even in base-to-base contact with the enemy."
+  ],
+  "Infiltrators": [
+    "Some units are noted as being infiltrators. These are allowed to double their speed when they make a charge move (and only when they charge!), and they can also ignore enemy zones of control from the formation they are charging. These two special abilities allow them to sneak past enemy units when they charge in order to attack enemy units that are further back. Note that the unit coherency rules still apply to infiltrators."
+  ],
+  "Inspiring": [
+    "Some units or characters are noted as being inspiring. Each inspiring unit involved in an assault adds +1 to the result roll (as long as it survives the combat of course!)"
+  ],
+  "Invulnerable Saves": [
+    "Certain units or characters receive a special invulnerable save. These units either have protective devices or supernatural vitality that will allow them to survive an attack that would kill another creature. To represent this, units with an invulnerable save receive a second save of 6+ if they fail their first save for any reason. They may take this second save against any form of attack, even attacks that would normally not allow a save to be taken. No modifiers ever apply to the second save."
+  ],
+  "Jump Packs": [
+    "Some units are noted as having jump packs. These units are equipped with special devices that allow them to fly for short distances, usually in a series of long hops.",
+    "Units equipped with jump packs may ignore dangerous or impassable terrain as they move (they jump over it). They may not land on impassable terrain, and if they land in dangerous terrain they must take a dangerous terrain test. Units equipped with jump packs may also move over other friendly units as they move, but may not land on them. Units with jump packs are affected by enemy units and zones of control normally, and cannot jump over enemy formations."
+  ],
+  "Leaders": [
+    "Some units or characters are noted as being leaders. A formation that includes any leaders may remove one extra Blast marker for each leader whenever it regroups or successfully rallies."
+  ],
+  "Light Vehicles": [
+    "Light vehicles include any unarmoured vehicles where the crew is exposed to enemy fire, such as Ork buggies and Space Marine Land Speeders. The only difference between light vehicles and armoured vehicles is that light vehicles can be affected by AP fire as well as AT fire; in effect they count as infantry targets against AP fire and armoured targets against AT fire.",
+    "Light vehicles rely on speed and agility to protect them from enemy fire, and because of this their saving throw is based on these factors rather than the thickness of any armour they may carry. This aside, their saving throw works in exactly the same manner as the saving throw of any other unit, and will be ignored by macro-weapons, can be used against barrages, and so on."
+  ],
+  "Mounted": [
+    "Some infantry units are noted as being mounted, and will either ride on bikes or living creatures such as horses. Mounted units count as vehicles for terrain effects, and as infantry units for all other purposes."
+  ],
+  "Reinforced Armour": [
+    "Units with reinforced armour are protected by armour many times thicker than that found on most armoured vehicles and have extremely robust internal construction too. Because of this they still take their saving throw when hit by macro-weapons. In addition, they may re-roll a failed save against any non-macro-weapon hit, including those inflicted during an assault."
+  ],
+  "Scouts": [
+    "Some units are noted as being scouts. These units are trained to operate on their own, scouting ahead of their formation to seek out the enemy. Scout units only have to remain within 20cm of another unit from their formation, rather than 5cm as would normally be the case. In addition, scouts are trained to spread out so they can cover a wide area, and so have a 10cm zone of control. Note that these abilities only apply to scout units and cannot be transferred to other units in the same formation or transport units carrying the scouts."
+  ],
+  "Skimmers": [
+    "Some units are noted as being skimmers. These units are equipped with devices that allow them to hover a short distance above the ground, so that they can fly over terrain that would slow other units down. Note that skimmers do not follow any of the rules for aircraft.",
+    "Skimmers may ignore dangerous or impassable terrain as they move. They may not land on impassable terrain, and if they land in dangerous terrain they must take a dangerous terrain test. Skimmers may also move over other friendly units as they move, but may not land on them. Enemy units and zones of control affect skimmers normally.",
+    "A skimmer may declare that it is popping up at the start of any action that it takes, including when the skimmer goes into overwatch. A skimmer may not pop up as part of a sustained fire action or a marshal action, but may pop-up when it goes onto overwatch. Popping up counts as movement for the purposes of triggering firing by enemy units on overwatch.",
+    "A skimmer that has popped up, pops down at the conclusion of the action. Skimmers on overwatch do not pop down until after they make their overwatch attack. Skimmers with a transport capacity may not embark or disembark units while they are popped up, and if they are destroyed while they are popped up then any units on board will be destroyed with no save.",
+    "A skimmer that has popped up is assumed to be flying high enough that nearby intervening terrain that is closer to the skimmer than the target does not block the line of fire. To check if the line of fire is blocked, simply measure the distance between the skimmer and the terrain, and then measure the distance between the terrain and the target unit. If the skimmer is nearer to the intervening terrain then the line of fire is not blocked. If the skimmer is further from the terrain, then work out the line of fire normally. If the distance is is equal, then both the skimmer and the target unit can fire at each other, but they both count as being in cover and the cover to hit modifier will apply.",
+    "Skimmers may always choose to use their firefight value in an assault, even if there are enemy units in base contact with the skimmer. If they do this then the enemy must use their firefight value also. This represents the skimmer lifting off the ground out of reach of enemy ground units."
+  ],
+  "Sniper": [
+    "Some infantry units are noted as being snipers. Roll separately when attacking with a sniper unit. If they hit, the attacker can choose which enemy unit is hit from those within range and in the line of fire of the sniper unit. In addition the target suffers a -1 save modifier."
+  ],
+  "Supreme Commanders": [
+    "Supreme Commanders represent high-level command units. They count as commanders and leaders. In addition, each supreme commander unit in the army allows a player to re-roll one failed initiative test (of any type) once per turn."
+  ],
+  "Thick Rear Armour": [
+    "Some armoured units are noted as having thick rear armour. These vehicles have equally thick armour all round, and so ignore the -1 save modifier when they are caught in a crossfire."
+  ],
+  "Teleport": [
+    "Units with the teleport ability can appear suddenly on the battlefield, either because they have access to technological or arcane devices that allow them to be instantaneously moved from one place to another, or because they are capable of hiding extremely well and then suddenly appear as if from nowhere.",
+    "Formations where all of the units have this ability may be kept off the table, and can appear at the start of any turn. Simply place the unit anywhere you like on the table at the start of any turn, before determining who wins the strategy roll. The unit must be placed within 5cms of another unit from its own formation if there are any already in play. So, for example, if a whole formation teleported into play then the first unit could be placed anywhere, but any other units would need to be placed within 5cms of a unit that had already been placed. All units must be placed outside enemy zones of control. If placed in dangerous terrain then a dangerous terrain test must be taken when the unit is placed on the table.",
+    "Teleporting is an inherently dangerous business, and doesn’t always go as planned. To represent this roll a D6 for each unit that teleports into play. On a roll of a 1 the formation that the unit belongs to receives a Blast marker."
+  ],
+  "Walkers": [
+    "Some vehicle units are noted as being walkers. They are able to negotiate dangerous terrain more easily than other vehicles. To represent this they may re-roll any failed dangerous terrain tests."
+  ],
+  "Slow and Steady": [
+    "Some spacecraft units are noted as being slow and steady. They may not be used on the first two turns of a battle unless the scenario specifically says otherwise."
+  ],
+  "Support Craft": [
+    "Support craft are much like a hybrid between a skimmer and an aircraft. They remain high up in the air, hovering over the battlefield, firing over intervening terrain when possible. Support craft function identically to a skimmer unit that is always popped up. Support craft fire and are fired at normally (i.e. anti-aircraft ability is not required). In an assault, support craft automatically force a firefight in the same manner skimmers may choose. It is assumed that support craft transports or the troops they carry are appropriately equipped to embark and disembark troops as normal."
+  ],
+  "Self Planetfall": [
+    "Self planetfall is plotted exactly as planetfall. Both the turn in which the formation arrives and the landing location is plotted. The only exception is that, because these units are much smaller than orbiting spacecraft, they may be plotted to arrive in the same turn that an enemy spacecraft is present.",
+    "On the designated turn the self planetfalling unit is activated in the normal activation sequence, as with spacecraft. Nominate the action for the formation and roll to activate. If the unit fails to activate its arrival is delayed to the next following turn. If the activation is successful, place the formation at the plotted landing zone and determine scatter as if it were a normal planetfall, including loaded units disembarking up to 5cm. The formation’s action proceeds as normal in all respects from that point. In other words, the formation gets the free move from planetfall placement at the beginning of its action but in all other ways activates as normal. Note: The action is chosen at activation, before scatter is determined. Choose the action carefully as a poor scatter role could render some actions ineffective."
+  ],
+  "Expendable": [
+    "Some units are seen by their allies as ablative or just plain disposable. This may be because the units are specifically created to sacrifice themselves or because the units are simply not valued.",
+    "A formation does not receive a Blast marker when a unit with expendable is destroyed, this includes the extra Blast marker from the first casualty of a crossfire and for units destroyed for being out of formation after a move. If an expendable unit is hit by a weapon with disrupt it does not inflict a Blast marker. If a formation is comprised completely of expendable units then they do not benefit from any of the rules above.",
+    "Expendable units killed in an assault count for the purposes of working out its result."
+  ],
+  "Tunneler": [
+    "Formations where all of the units have tunneler (or are transported in units that have the ability) may be kept off the table and can appear at the start of the second turn or after. Set up the units touching their own side’s table edge before the battle starts at the same time that spacecraft are setup. Any units transported in the tunneler should be placed to one side at this time too.",
+    "Secretly write down the location where the tunneler will surface at the same time and in the same manner that you record the coordinates of a drop zone. You must also secretly record when the tunneler will surface. If it is going to surface in your half of the table it may arrive from the second turn onwards. If it is going to surface in the opposing half of the table, it may arrive from turn three onwards.",
+    "Set up the tunneler at the start of the stated turn, before placing units with teleport, at the location you wrote down. Any units being transported are allowed to disembark immediately upon surfacing. Surfacing does not count as movement for the purposes of triggering overwatch fire. Disembarking triggers overwatch fire as normal.",
+    "If the tunneler surfaces on terrain that is impassable for it, under a friendly unit, or in an enemy zone of control then it is assumed that on-board sensor equipment will divert it towards another entry point. The unit should be moved by the opposing player to the nearest area where it can surface.",
+    "Formations of multiple tunneler need only record one location where they will surface. Place a unit at this location, or within 5cm of another unit that has already been placed, so long as all units are placed within 15cm of the location and on the appropriate half of the table.",
+    "Tunneler, and any units being transported in them, may take an action on the turn they appear."
+  ],
+  "Self-Reliant": [
+    "Some units or characters are noted as being self-reliant. A formation that includes one or more self-reliant units may remove one extra Blast marker whenever it regroups or successfully rallies. Multiple self-reliant units in a formation does not allow it to remove multiple Blaster markers, simply check for the presence of one or more self-reliant units and remove one Blast marker if they are found.",
+    "Some self-reliant units may have a trailing number noted in parentheses (e.g. self-reliant (x)). If this is the case, remove a number of Blaster markers equal to x instead (e.g. a formation of self-reliant (2) units would remove two Blast markers instead of one). If a unit has multiple self-reliant abilities then use the one with the greatest number and ignore the rest. Similiarlly, if a formation contains units with different self-reliant abilities then use the one with the greatest number and ignore the rest."
+  ],
+  "Anti-aircraft Weapons": [
+    "Some of the weapons used in Epic are used in dogfights or to defend against aircraft. These weapons are collectively known as anti-aircraft weapons in the rules. Anti-aircraft weapons have an AA firepower value, in addition they may also have AP or AT firepower values. For example, the Space Marine Hunter has a Firepower value of AT4+/AA4+. The rules for carrying out AA shooting are described in full in the rules for Aerospace Operations."
+  ],
+  "Disrupt": [
+    "Certain weapons are designed to disrupt enemy formations as much as kill enemy troops. To represent this weapons noted as having the disrupt ability inflict a Blast marker on an enemy formation for each hit they inflict instead of for each kill they inflict. Note that the hits inflicted by disruptor weapons are saved for normally. Any units that fail their save are removed as casualties but do not cause a second Blast marker to be placed on the target formation."
+  ],
+  "Extra Attacks": [
+    "Some assault and close combat weapons are noted as having extra attacks (+x). Units armed with these weapons receive a number of extra attacks equal to x during an assault. For example, an assault weapon noted as having extra attacks (+2) would allow the unit using it to make two extra close combat attacks in an assault. Sometimes the entry will specify a dice roll rather than a fixed number. For example, a weapon that had extra attacks (D3) would attack D3 times each time it attacked. Extra attacks can apply to shooting attacks, close combat attacks, and firefight attacks."
+  ],
+  "First Strike": [
+    "Weapons with the first strike ability attack first in an assault. Resolve the attack and inflict damage for the weapon before any enemy units make their attacks. This may result in some enemy units being destroyed before they can attack. If the ability is noted for a weapon with extra attacks then only the extra attacks gets the first strike ability; otherwise it will count for all close combat attacks if noted for an assault weapon, or all firefight attacks if noted for small arms. If opposing units both have first strike weapons then all first strike attacks are resolved simultaneously and their results applied to both sides before other attacks are resolved."
+  ],
+  "Ignore Cover": [
+    "Some weapons are noted as being able to ignore cover. These weapons are designed to negate the effects of cover, either by blasting it apart or simply bypassing it altogether. These weapons ignore cover to hit modifiers, and negate infantry cover saves."
+  ],
+  "Macro-Weapons": [
+    "Some of the weapons used in Epic are absolutely huge. These weapons are collectively known as macro-weapons in the rules. Only units with reinforced armour or invulnerable saves receive a saving throw against hits from a macro-weapon. Any other type of target that is hit does not get a saving throw at all. The following rules explain in detail how this works, but as long as you bear in mind the principle that macro-weapons cancel saves then you won’t go too far wrong.",
+    "Shooting Attacks: Macro-weapons that can be used for shooting attacks do not have AP or AT firepower values. Instead they have a macro-weapon value (abbreviated to MW). For example, the volcano cannon mounted on an Imperial Warlord Titan has a fire value of MW 2+. You should roll to hit normally when firing a macro-weapon. Macro-weapons can affect any type of target, so the volcano cannon mentioned above would hit any type of target on a roll of 2+. Only units with reinforced armour or invulnerable saves receive a saving throw against hits from a macro-weapon. Any other type of target that is hit does not get a saving throw. Cover saves are also negated, although the -1 to hit modifier does apply. Units on board a transport vehicle destroyed by a macro-weapon only receive a save if they would have one were they hit by the macro-weapon directly.",
+    "Barrages: Work out the macro-weapon’s barrage normally, except that any units hit do not receive a saving throw unless they have reinforced armour or an invulnerable save.",
+    "Assaults: In an assault, some small arms and assault weapons that are allowed extra attacks can have the macro-weapon ability as well. In this case the macro-weapon ability only applies to the extra attacks.",
+    "Allocating Hits: If an attacking formation scores hits both with normal weapons and weapons with the macro-weapon ability, then the opposing player must allocate and make any saves for the normal hits first, and then allocate and make any saves for the macro-weapon hits. Hits from macro-weapons can only be applied to units that are in a position to be hit by a macro-weapon."
+  ],
+  "Single Shot": [
+    "Some weapons are noted as being single shot. These weapons may be used once per battle and may not then be fired again. You may want to record which single shot weapons have been fired on a piece of scrap paper."
+  ],
+  "Slow Firing": [
+    "Some weapons are noted as being slow firing. These weapons must take one turn to reload after they have fired. This means that if they fire on one turn they may not fire during the next. We have found that the best way of remembering this is simply to turn the unit around to face away from the enemy when it fires, and then turn it back again when the formation is activated again next turn, but you can use any method you prefer."
+  ],
+  "Titan Killers": [
+    "Some weapons are noted as being Titan Killers. Enemy units hit by such weapons may not take a cover or armour save, even if they have reinforced armour. In addition, further special rules apply if the target unit is a war engine. In all other ways, Titan killers are treated as macro-weapons."
+  ],
+  "Indirect Fire": [
+    "Some weapons that can fire barrages are noted as having the indirect fire ability. Units armed with indirect fire weapons are allowed to fire indirectly if their formation takes a sustained fire action. Units belonging to a formation that fails the action test may shoot normally as part of their hold action, but may not fire indirectly. Units firing an indirect barrage receive the +1 modifier for taking a sustained fire action. In addition, no line of fire is required for an indirect barrage, as it is assumed that the barrage is fired high in the air so that the shots rain down on the target and ignore any intervening terrain. Co-ordinates for the barrage are provided by spotters that are either in other friendly formations that do have a line of fire, or from orbiting spy satellites or planes. Finally, the high trajectory used by weapons firing indirectly greatly increases their range, but means they cannot fire at targets that are too close by. To represent this, weapons firing indirectly double their range, but have a minimum range of 30cms."
+  ],
+  "Charaktermodell": [
+    "Bestimmte Einheiten werden als Charaktermodell bezeichnet. Bei diesen Einheiten handelt es sich eher um wichtige Einzelpersonen als um Gruppen von Soldaten oder die Besatzung eines Fahrzeugs oder einer Kriegsmaschine. Aus diesem Grund werden sie nicht durch ein separates Modell auf dem Tisch dargestellt, sondern einer anderen Einheit in der Armee hinzugefügt. Die Einheit, der das Charaktermodell hinzugefügt wird, erhält alle Waffen und Fähigkeiten, die in seinem Profil notiert sind. Space Marine Ordenspriester sind beispielsweise Charaktermodelle, die als Inspirierend gelten, mit einer Energiewaffe (Nahkampfwaffe, Makrowaffe, zusätzliche Attacke +1) bewaffnet sind, sowie einen unmodifizierten Rettungswurf besitzen. Jede Einheit, der sie hinzugefügt werden, verfügt zusätzlich zu ihren normalen Waffen und Fähigkeiten über all diese Waffen und Fähigkeiten. Charaktermodelle können jeder Art von Einheit hinzugefügt werden, einschließlich Fahrzeugen und Kriegsmaschinen.",
+    "Die Einheit und das Charaktermodell müssen während des gesamten Spiels zusammenbleiben. Das Charaktermodell kann in jedem Fahrzeug transportiert werden, das zum Transport der Einheit, der er sich anschließt, zugelassen ist, und nimmt keinen zusätzlichen Platz ein. Das Charaktermodell sollte durch ein geeignetes Modell oder Kommandobanner in der Einheit repräsentiert werden. Werden Charaktermodelle als Aufwertung für einen Verband ausgewählt, müssen sie einer Einheit aus dem Verband hinzugefügt werden, für den sie als Aufwertung ausgewählt wurden."
+  ],
+  "Befehlshaber": [
+    "Einige Einheiten und Charaktermodelle werden als Befehlshaber bezeichnet. Befehlshaber können bis zu drei Verbänden befehlen, ihnen zu folgen, wenn sie eine Offensive durchführen, solange sich in allen Verbänden mindestens eine Einheit im Umkreis von 5 cm um eine Einheit vom Verband des Kommandanten befindet.",
+    "Es wird ein einzelner, gemeinsamer Aktivierungswurf durchgeführt. Sollte einer der Verbände Beschussmarken haben, wird ein einmaliger Modifikator von -1 auf den Aktivierungswurf angewendet. Bei Fehlschlag erhält der Verband des Befehlshabers eine Beschussmarke und muss eine Halten Aktion durchführen. Die anderen Verbände bleiben davon unberührt und können später in der Runde eine Aktion ausführen.",
+    "Wenn der Test bestanden wird, führen alle drei Verbände eine Offensive Aktion durch. Die bis zu drei Verbände werden für die Dauer des Angriffs als ein einziger Verband behandelt. Ein 2W6-Wurf wird verwendet, um den Angriff abzuwickeln. Wenn die Angreifer verlieren, werden sie alle aufgerieben. Gewinnen sie, erhält jeder Verband eine Anzahl an Beschussmarken, entsprechend ihrer Verluste."
+  ],
+  "Furchtlos": [
+    "Einige Einheiten gelten als furchtlos. Solche Einheiten sind entweder außergewöhnlich mutig oder so verrückt, dass sie niemals weglaufen, selbst wenn sie aufgerieben wurden.",
+    "Furchtlose Einheiten sind immun gegen den Schaden durch einen verlorenen Angriff. Diese Immunität schützt gegen die zusätzlichen Treffer im Angriff, gegen die Vernichtung falls die Einheit bereits aufgerieben ist als auch gegen Schaden durch Beschussmarken verursacht wenn der Verband bereits aufgerieben ist. Wenn furchtlose Einheiten aufgerieben oder anderweitig zu einem Rückzug gezwungen werden, können sie sich entscheiden, sich nicht zurückzuziehen. Wenn sich die Einheit für einen Rückzug entscheidet, wird sie nur dann zerstört, wenn sie ihre Bewegung innerhalb von 5 cm statt 15 cm vom Feind beendet. Furchtlose Einheiten, die stationär bleiben, erleiden keinen zusätzlichen Schaden. Ihre Immunität überträgt sich nicht auf andere nicht-furchtlose Einheiten im selben Verband.",
+    "Furchtlose Einheiten zählen immer noch als Teil eines Verbands und werden daher manchmal mitgeschleppt, wenn sich ihr Verband zurückzieht. Dies kann notwendig sein, damit die furchtlose Einheit weiterhin in Formation bleibt und nicht als Verlust vom Tisch entfernt werden muss. Furchtlose Einheiten müssen sich nach einem Angriff nicht zurückziehen und können in einer feindlichen Kontrollzone oder sogar in Basekontakt mit dem Feind ihren Zug beenden. Einzelheiten zum Umgang mit Einheiten die ihre Aktion in einer feindlichen Kontrollzone beginnen werden erläutert."
+  ],
+  "Infiltratoren": [
+    "Einige Einheiten gelten als Infiltratoren. Diese Einheiten dürfen ihre Geschwindigkeit verdoppeln, wenn sie eine Angriffsbewegung ausführen. Sie können feindliche Kontrollzonen des Verbands, den sie angreifen, ignorieren. Diese beiden Spezialfähigkeiten ermöglichen es ihnen, sich beim Angriff an feindlichen Einheiten vorbeizuschleichen, um weiter zurückliegende feindliche Einheiten anzugreifen. Die Formation muss bei dieser Bewegung eingehalten werden."
+  ],
+  "Inspirierend": [
+    "Einige Einheiten oder Charaktermodelle werden als inspirierend bezeichnet. Jede inspirierende Einheit, die an einem Angriff beteiligt ist, addiert +1 zum Ergebniswurf solange sie den Kampf überlebt."
+  ],
+  "Unmodifizierter Rettungswurf": [
+    "Bestimmte Einheiten oder Charaktere erhalten einen besonderen unmodifizierten Rettungswurf. Sie verfügen entweder über eine Schutzvorrichtung oder über eine übernatürliche Vitalität, die es ihnen ermöglicht, einen Angriff zu überleben, der eine andere Kreatur töten würde. Um dies darzustellen, erhalten Einheiten mit einem unmodifizierten Rettungswurf einen zweiten Rettungswurf von 6+, wenn ihr erster Rettungswurf aus irgendeinem Grund fehlschlägt. Sie können diesen zweiten Rettungswurf gegen jede Art von Angriff ausführen, auch gegen Angriffe, bei denen normalerweise kein Rettungswurf möglich wäre. Dieser Rettungswurf wird niemals modifiziert."
+  ],
+  "Sprungmodule": [
+    "Einige Einheiten verfügen über Sprungmodule. Diese Einheiten sind mit speziellen Vorrichtungen ausgestattet, welche es ihnen ermöglichen, kurze Distanzen zu fliegen, normalerweise in einer Reihe langer Sprünge. Sie können bei ihrer Bewegung gefährliches oder unpassierbares Gelände ignorieren (sie springen darüber). Sie dürfen nicht auf unpassierbaren Gelände landen, und wenn sie in gefährlichem Gelände landen, müssen sie einen Test für gefährliches Gelände absolvieren. Einheiten, die mit Sprungmodulen ausgestattet sind, können sich während ihrer Bewegung auch über andere befreundete Einheiten hinwegbewegen, dürfen jedoch nicht auf ihnen landen. Einheiten mit Sprungmodulen werden wie üblich von feindlichen Einheiten und ihren Kontrollzonen beeinflusst und können daher nicht über feindliche Verbände springen."
+  ],
+  "Anführer": [
+    "Einige Einheiten oder Charaktermodelle werden als Anführer bezeichnet. Ein Verband kann für jeden angeschlossenen Anführer eine zusätzliche Beschussmarke entfernen, wenn sie sich neugruppiert oder erfolgreich sammelt."
+  ],
+  "Leichte Fahrzeuge": [
+    "Zu leichten Fahrzeugen zählen alle ungepanzerten Fahrzeuge, bei denen die Besatzung feindlichem Feuer ausgesetzt ist, wie zum Beispiel Ork Buggys und Landspeeder der Space Marines. Leichte Fahrzeugen können sowohl von AP als auch von AT Waffen beschossen werden. Sie zählen als Infanterieziele gegen AP-Beschuss und als gepanzerte Ziele gegen AT-Beschuss. In allen anderen Belangen zählen sie als gepanzertes Fahrzeug.",
+    "Leichte Fahrzeuge sind auf Geschwindigkeit und Beweglichkeit angewiesen, um sich vor feindlichem Feuer zu schützen. Aus diesem Grund basiert ihr Rettungswurf auf diesen Faktoren und nicht auf der Stärke der Panzerung, die sie möglicherweise tragen. Abgesehen davon funktioniert ihr Rettungswurf genau so wie der Rettungswurf jeder anderen Einheit, wird von Makrowaffen ignoriert und kann gegen Sperrfeuer usw. eingesetzt werden."
+  ],
+  "Beritten": [
+    "Einige Infanterieeinheiten gelten als beritten. Sie fahren entweder auf Motorrädern oder reiten auf Lebewesen wie Pferden. Berittene Einheiten gelten für Geländeeffekte als Fahrzeuge und für alle anderen Zwecke als Infanterieeinheiten."
+  ],
+  "Verstärkte Panzerung": [
+    "Einheiten mit verstärkter Panzerung sind durch eine um ein vielfaches dickere Panzerung geschützt als jener der meisten gepanzerten Fahrzeuge, und verfügen außerdem über eine äußerst robuste Innenkonstruktion. Aus diesem Grund führen sie immer noch ihren Rettungswurf durch, wenn sie von Makrowaffen getroffen werden. Darüber hinaus können sie einen fehlgeschlagenen Rettungswurf gegen jeden Treffer, der keine Makrowaffe ist, wiederholen, einschließlich solcher, die während eines Angriffs verursacht wurden."
+  ],
+  "Aufklärer": [
+    "Einige Einheiten gelten als Aufklärer. Diese Einheiten sind darauf trainiert, selbstständig zu agieren und vor dem Rest der Streitmacht nach dem Feind Ausschau zu halten. Aufklärer müssen nur 20 cm Abstand zu einer anderen Einheit in ihrem Verband entfernt bleiben, anstatt 5 cm, wie es normalerweise der Fall wäre um in Foramtion zu bleiben. Darüber hinaus werden Späher darauf trainiert, sich auszubreiten, sodass sie ein großes Gebiet abdecken können. Sie verfügen daher über eine Kontrollzone von 10 cm. Diese Fähigkeiten gelten nur für Einheiten mit der Aufklärer Eigenschaft und nicht für andere Einheiten im selben Verband oder Einheiten welche die Aufklärer transportieren."
+  ],
+  "Antigrav": [
+    "Einige Einheiten werden als Antigrav bezeichnet. Diese Einheiten sind mit Geräten ausgestattet, die es ihnen ermöglichen, eine kurze Distanz über dem Boden zu schweben, sodass sie über Gelände fliegen können, das andere Einheiten verlangsamen würde. Antigrav Einheiten nutzen nicht die Regeln für Flugzeuge.",
+    "Antigrav Einheiten ignorieren gefährliches oder unpassierbares Gelände, während ihrer Bewegung. Sie dürfen ihre Bewegung nicht in unpassierbarem Gelände beenden. Beenden sie ihre Bewegung in gefährlichem Gelände, müssen sie einen Test für gefährliches Gelände absolvieren. Antigrav Einheiten können sich während ihrer Bewegung auch über andere befreundete Einheiten bewegen, dürfen aber nicht auf ihnen landen. Feindliche Einheiten und Kontrollzonen wirken sich normal auf Antigrav Einheiten aus.",
+    "Ein Antigrav Einheit kann zu Beginn jeder Aktion die sie ausführt, erklären das sie auftaucht, auch wenn die Antigrav Einheit Feuerbereitschaft einnimmt. Eine Antigrav Einheit kann nicht als Teil einer Dauerfeuer oder Ordnen Aktion auftauchen. Das Auftauchen zählt als Bewegung für das Auslösen der Feuerbereitschaft feindlicher Einheiten.",
+    "Eine aufgetauchte Antigrav Einheit taucht am Ende der Aktion wieder ab. Antigrav Einheiten in Feuerbereitschaft tauchen erst ab, nachdem sie ihren Angriff durchgeführt haben. Aus Antigrav Einheiten mit Transportkapazität dürfen keine Einheiten ein- oder aussteigen, während sie aufgetaucht sind. Wenn sie zerstört werden während sie aufgetaucht sind, werden alle an Bord befindlichen Einheiten ohne Rettungswurf ebenfalls zerstört.",
+    "Es wird davon ausgegangen, dass eine aufgetauchte Antigrav Einheit so hoch fliegt, dass dazwischen liegendes Gelände, das näher an der Antigrav Einheit ist, die Schusslinie nicht blockiert. Um zu überprüfen ob die Schusslinie blockiert ist, wird der Abstand zwischen der Antigrav Einheit und dem Gelände und dann der Abstand zwischen dem Gelände und der Zieleinheit gemessen. Befindet sich die Antigrav Einheit näher am dazwischen liegenden Gelände, wird die Schusslinie nicht blockiert. Befindet sich die Antigrav Einheit weiter vom Gelände entfernt, wird die Schusslinie normal ermittelt. Ist der Abstand gleich, können sowohl die Antigrav Einheit als auch die Zieleinheit aufeinander schießen, aber beide gelten als in Deckung und der Trefferwurf wird um -1 modifiziert.",
+    "Antigrav Einheiten können sich während eines Angriffs immer dafür entscheiden, ihren Feuergefechtswert einzusetzen, auch wenn sich feindliche Einheiten in Basekontakt mit ihnen befinden. Wenn sie dies tun, muss der Feind ebenfalls seinen Feuergefechtswert nutzen. Dies stellt dar, dass die Antigrav Einheit vom Boden abhebt und sich außerhalb der Reichweite feindlicher Nahkampfwaffen befindet."
+  ],
+  "Scharfschütze": [
+    "Einige Infanterieeinheiten gelten als Scharfschützen. Würfelt diese separat, wenn ihr mit einer Scharfschützeneinheit angreift. Wenn sie treffen, kann der Angreifer aus den Einheiten innerhalb der Reichweite und Schusslinie der Scharfschützeneinheit auswählen, welche gegnerische Einheit getroffen wird. Zusätzlich erleidet das Ziel einen Rettungswurfmodifikator von -1."
+  ],
+  "Oberbefehlshaber": [
+    "Oberbefehlshaber repräsentieren hochrangige Kommandoeinheiten. Sie gelten als Befehlshaber und Anführer. Darüber hinaus erlaubt jede Oberbefehlshabereinheit in der Armee einem Spieler, einmal pro Spielzug einen fehlgeschlagenen Aktionstest (beliebiger Art) zu wiederholen."
+  ],
+  "Verstärkte Heckpanzerung": [
+    "Einige gepanzerte Einheiten weisen eine dicke Heckpanzerung auf. Diese Fahrzeuge haben rundum die gleiche dicke Panzerung und ignorieren daher den Rettungswurfmodifikator von -1, wenn sie ins Kreuzfeuer geraten."
+  ],
+  "Teleportieren": [
+    "Einheiten mit der Fähigkeit Teleportieren können plötzlich auf dem Schlachtfeld auftauchen, entweder weil sie Zugang zu technologischen oder arkanen Geräten haben, die es ihnen ermöglichen, sich sofort von einem Ort zum anderen zu bewegen, oder weil sie sich sehr gut verstecken können und dann plötzlich wie aus dem Nichts auftauchen.",
+    "Verbände, in denen alle Einheiten über diese Fähigkeit verfügen, können als Reserve zurückgehalten werden. Sie können zu Beginn jeder Runde erscheinen. Platziere den Verband einfach zu Beginn einer beliebigen Runde an einer beliebigen Stelle auf dem Tisch, bevor der Strategiewurf abgehandelt wird. Einheiten müssen innerhalb von 5 cm von anderen Einheiten aus dem selben Verband platziert werden. Wenn sich beispielsweise ein ganzer Verband ins Spiel teleportiert, könnte die erste Einheit irgendwo platziert werden, alle anderen Einheiten müssten jedoch innerhalb von 5 cm von einer bereits platzierten Einheit platziert werden. Alle Einheiten müssen außerhalb feindlicher Kontrollzonen platziert werden. Wenn eine Einheit in gefährlichem Gelände platziert wird, muss beim Platzieren ein Test für gefährliches Gelände abgelegt werden.",
+    "Teleportieren ist von Natur aus gefährlich und verläuft nicht immer wie geplant. Um dies darzustellen, würfelt einen W6 für jede Einheit, die sich ins Spiel teleportiert. Für jede gewürfelte 1 erhält der Verband eine Beschussmarke."
+  ],
+  "Geländegängig": [
+    "Einige Fahrzeugeinheiten werden als geländegängig bezeichnet. Sie können gefährliches Gelände leichter bewältigen als andere Fahrzeuge. Um dies darzustellen, können sie alle fehlgeschlagenen Tests für gefährliches Gelände wiederholen."
+  ],
+  "Langsam und stetig": [
+    "Einige Raumschiffeinheiten gelten als langsam und stetig. Sie dürfen nicht in den ersten beiden Runden eines Gefechts verwendet werden, es sei denn, das Szenario sieht ausdrücklich etwas anderes vor."
+  ],
+  "Planetare Selbstlandung": [
+    "Die planetare Selbstlandung wird genauso abgehandelt wie eine Planetare Landung. Sowohl die Runde, in dem die Einheit ankommt, als auch der Landeort werden vorab festgelegt. Die einzige Ausnahme besteht darin, dass diese Einheiten, da sie viel kleiner als den Planeten umkreisende Raumschiffe sind, in der selben Runde wie ein feindliches Raumschiff erscheinen dürfen.",
+    "In der vorgesehenen Runde wird die Einheit mit planetarer Selbstlandung in der normalen Aktivierungssequenz aktiviert, wie bei Raumschiffen. Nominiert die Aktion für den Verband und würfelt um ihn zu aktivieren. Wenn der Verband nicht aktiviert werden kann, wird seine Ankunft auf die nächstfolgende Runde verschoben. Wenn die Aktivierung erfolgreich ist, platzier der Verband an der geplanten Landezone und bestimm die Abweichung, als wäre es eine normale planetare Landung, einschließlich beladener Einheiten, die in bis zu 5 cm landen. Ab diesem Zeitpunkt verläuft die Aktion des Verbands wie üblich. Der Verband erhält zu Beginn seiner Aktion die freie Bewegung durch die Platzierung der planetaren Landung, wird aber ansonsten wie gewohnt aktiviert.",
+    "Hinweis: Die Aktion wird bei der Aktivierung ausgewählt, bevor die Abweichung bestimmt wird. Wähle die Aktion sorgfältig aus, da eine schlechte Abweichung dazu führen kann, dass einige Aktionen unwirksam sind."
+  ],
+  "Entbehrlich": [
+    "Einige Einheiten werden von ihren Verbündeten als ablativ oder entbehrlich angesehen. Dies kann daran liegen, dass die Einheiten speziell dafür geschaffen wurden, sich selbst zu opfern oder dass die Einheiten einfach keinen Wert haben.",
+    "Ein Verband erhält keine Beschussmarken, wenn eine Einheit mit der Eigenschaft Entbehrlich zerstört wird. Dazu gehören die zusätzliche Beschussmarke für den ersten Verlust eines Kreuzfeuers und jene für Einheiten, die zerstört werden, weil sie sich nach einer Bewegung außerhalb der Formation befinden.",
+    "Wenn eine entbehrliche Einheit von einer Waffe mit Versprengen getroffen wird, verursacht sie keine Beschussmarke. Wenn ein Verband vollständig aus entbehrlichen Einheiten besteht, gilt für sie keine der oben genannten Regeln.",
+    "Entbehrliche Einheiten, die bei einem Angriff vernichtet wurden, zählen regulär zur Berechnung des Ergebnisses."
+  ],
+  "Flugabwehrwaffen": [
+    "Einige der in Epic verwendeten Waffen werden in Luftkämpfen oder zur Verteidigung gegen Flugzeuge eingesetzt. Diese Waffen werden in den Regeln zusammenfassend als Flugabwehrwaffen bezeichnet. Flugabwehrwaffen haben einen AA-Feuerkraftwert, zusätzlich können sie auch AP- oder AT-Feuerkraftwerte haben. Beispielsweise hat der Space Marine Hunter einen Feuerkraftwert von AT4+/AA4+. Die Regeln für das Abhandeln von Flugabwehrfeuer sind vollständig in den Regeln für Luft- und Raumfahrteinsätze beschrieben."
+  ],
+  "Versprengen": [
+    "Bestimmte Waffen dienen dazu, feindliche Verbände zu versprengen und feindliche Truppen zu zerstreuen. Waffen mit Versprengen verursachen bei einem gegnerischen Verband für jeden Treffer den sie verursachen, eine Beschussmarke und nicht für jeden verursachten Verlust. Es werden keine zusätzlichen Beschussmarken für Verluste durch Waffen mit Versprengen platziert sondern ausschließlich für erfolgreiche Trefferwürfe."
+  ],
+  "Zusätzliche Attacken": [
+    "Einige Waffen verfügen über zusätzliche Attacken (EA+x). Mit diesen Waffen bewaffnete Einheiten erhalten während eines Angriffs zusätzliche Attacken in Höhe von x. Eine Nahkampfwaffe, die Beispielsweise über zusätzliche Attacken (EA+2) verfügt, gewährt der Einheit die sie verwendet zwei zusätzliche Nahkampfattacken bei einem Angriff. Gibt der Eintrag einen Würfelwurf statt einer Zahl an, wird die Anzahl der Attacken zufällig ermittelt. Eine Handfeuerwaffe mit zusätzlichen Attacken (W3) würde zum Beispiel bei W3-mal angreifen. Zusätzliche Attacken können für Nahkampf- und Feuergefechtangriffe gelten.",
+    "Wenn die Fähigkeit Erstschlag, Makrowaffe oder Titanen-Killer für eine Waffe mit zusätzlichen Attacken angegeben ist, erhalten nur die zusätzlichen Attacken diese Eigenschaft. Andernfalls zählt es für alle Nahkampfangriffe, wenn es sich um eine Angriffswaffe handelt, bzw. alle Feuergefechtsangriffe, wenn es eine Handfeuerwaffe ist."
+  ],
+  "Erstschlag": [
+    "Erstschlag Waffen schlagen bei einem Angriff zuerst zu. Führe den Angriff aus und füge der feindlichen Einheit Schaden zu, bevor die feindliche Einheiten angreifen. Dies kann dazu führen, dass einige feindliche Einheiten bereits vernichtet werden, bevor sie angreifen können.",
+    "Wenn gegnerische Einheiten ebenfalls von Erstschlag profitieren, werden alle Erstschlagangriffe gleichzeitig ausgeführt und ihre Ergebnisse auf beide Seiten angewendet, bevor weitere andere Angriffe abgehandelt werden."
+  ],
+  "Deckung ignorieren": [
+    "Einige Waffen sind in der Lage Deckung zu ignorieren. Diese Waffen machen Deckung zunichte, indem sie diese entweder sprengen oder einfach ganz umgehen. Waffen mit dieser Eigenschaft negieren sowohl den Trefferwurfmodifikator als auch den Deckungswurf vollständig."
+  ],
+  "Makrowaffen": [
+    "Einige der in Epic verwendeten Waffen sind riesig. Diese Waffen werden in den Regeln zusammenfassend als Makrowaffen bezeichnet. Nur Einheiten mit verstärkter Panzerung oder unmodifizierten Rettungswürfen erhalten einen Rettungswurf gegen Treffer einer Makrowaffe. Alle anderen getroffenen Ziele erhalten überhaupt keinen Rettungswurf. Die folgenden Regeln erläutern im Detail wie das funktioniert.",
+    "Schussangriffe: Makrowaffen, die für Schussangriffe verwendet werden können, haben keine AP- oder AT-Werte. Stattdessen haben sie einen Makrowaffenwert (MW). Beispielsweise hat das auf einem Warlord Titan montierte Vulkangeschütz einen Feuerwert von MW 2+. Führt einen normalen Trefferwurf durch. Makrowaffen können jede Art von Ziel treffen, das erwähnte Vulkangeschütz trifft daher bei einem Wurf von 2+ jede Art von Ziel. Nur Einheiten mit verstärkter Panzerung oder unmodifizierten Rettungswürfen erhalten einen Rettungswurf gegen Treffer einer Makrowaffe. Alle anderen getroffenen Ziele erhalten keinen Rettungswurf. Deckungswürfe werden ebenfalls annulliert, der Treffermodifikator -1 wird aber angewendet. Einheiten an Bord eines Transportfahrzeugs, die durch eine Makrowaffe zerstört wurden, erhalten nur dann einen Rettungswurf, wenn sie auch gegen einen Treffer mit einer Makrowaffe einen Rettungswurf hätten.",
+    "Sperrfeuer: Sperrfeuer einer Makrowaffe wird wie üblich abgehandelt, mit der Ausnahme, dass getroffene Einheiten keinen Rettungswurf erhalten, es sei denn, sie verfügen über eine verstärkte Panzerung oder einen unmodifizierten Rettungswurf.",
+    "Angriff: Bei einem Angriff können einige Handfeuerwaffen und Nahkampfwaffen über die Makrowaffenfähigkeit verfügen. Getroffene Ziele erhalten nur dann einen Rettungswurf wenn sie über verstärkte Panzerung oder einen unmodifizierten Rettungswurf verfügen.",
+    "Zuweisen von Treffern: Wenn ein angreifender Verband sowohl mit normalen Waffen als auch mit Makrowaffen Treffer erzielt, muss der gegnerische Spieler zuerst die normalen Treffer zuteilen, Rettungswürfe ausführen und dann die Makrowaffentreffer zuweisen und Rettungswürfe durchführen. Treffer durch Makrowaffen können nur auf Einheiten angewendet werden, die in der Lage sind, von einer Makrowaffe getroffen zu werden."
+  ],
+  "Einzelschuss": [
+    "Bei einigen Waffen handelt es sich um Einzelschusswaffen. Diese Waffen dürfen nur einmal pro Spiel verwendet werden und dürfen danach nicht erneut abgefeuert werden. Notiert dies auf einem Stück Papier oder über eine andere Form der Markierung, z.B. durch einen Würfel oder einen Marker."
+  ],
+  "Langsames Feuern": [
+    "Einige Waffen schießen sehr langsam. Das Nachladen dieser Waffen nach dem Abfeuern dauert einen kompletten Zug. Einheiten die gefeuert haben können im nächsten Zug nicht feuern. Dreh die Einheit einfach um, sodass sie vom Feind abgewandt ist, wenn sie nicht feuern kann und dreh sie zurück wenn sie nächste Runde erneut feuern kann. Natürlich kann auch jede andere Markierung verwendet werden."
+  ],
+  "Titanen-Killer": [
+    "Einige Waffen gelten als Titanen-Killer. Feindliche Einheiten, die von solchen Waffen getroffen werden, dürfen keinen Deckungs- oder Rettungswurf absolvieren, selbst wenn sie über eine verstärkte Panzerung verfügen. Darüber hinaus gelten weitere Sonderregeln, wenn es sich bei der Zieleinheit um eine Kriegsmaschine handelt. Ansonsten werden Titanen-Killer als Makrowaffen behandelt."
+  ],
+  "Indirektes Feuer": [
+    "Einige Waffen verfügen über die Fähigkeit zum indirekten Feuern. Diese Waffen dürfen indirekt schießen wenn der Verband eine Dauerfeuer Aktion durchführt. Wenn ein Verband den Aktionstest nicht besteht, können die Einheiten im Rahmen ihrer Halten Aktion normal schießen, sie dürfen jedoch nicht indirekt schießen. Einheiten, die indirekt schießen, erhalten den Modifikator +1 für die Durchführung der Dauerfeuer Aktion. Für ein indirektes Feuer ist keine Schusslinie erforderlich, da die Geschosse hoch in die Luft abgefeuert werden und die Schüsse auf das Ziel niedergehen und dabei das dazwischenliegende Gelände ignorieren. Die Koordinaten für den Beschuss werden von Spähern bereitgestellt, die sich entweder in anderen verbündeten Verbänden befinden, die über eine Schusslinie verfügen, oder von umlaufenden Spionagesatelliten oder -flugzeugen zur Verfügung gestellt werden. Die hohe Flugbahn erhöht die Reichweite der indirekt abgefeuerten Waffen erheblich, bedeutet aber, dass sie nicht auf Ziele in der Nähe schießen können. Waffen die indirekt schießen verdoppeln ihre Reichweite, haben jedoch eine Mindestreichweite von 30 cm."
+  ]
+}

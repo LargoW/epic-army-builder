@@ -102,7 +102,7 @@
       "type": "AV"
     },
     "ttl-warp-hund": {
-      "name": "Warp-Hund",
+      "name": "Warp Hund",
       "from": "traitortitanlegions.json",
       "type": "AV"
     },
@@ -111,23 +111,8 @@
       "from": "traitortitanlegions.json",
       "type": "AV"
     },
-    "ttl-chaos-warbringer": {
+    "ttl-Chaos Warbringer": {
       "name": "Chaos Warbringer",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-chaos-imperator-titan": {
-      "name": "Chaos-Imperator-Titan",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-chaos-warlord-titan": {
-      "name": "Chaos-Warlord-Titan",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-chaos-reaver-titan": {
-      "name": "Chaos Reaver-Titan",
       "from": "traitortitanlegions.json",
       "type": "AV"
     },
@@ -183,16 +168,16 @@
     },
     "ttl-chaos-rhino": {
       "name": "Chaos Rhino",
-      "from": "chaosnavy.json",
+      "from": "darkmechanicus.json",
       "type": "AV"
     },
     "ttl-hollendrachen": {
-      "name": "Höllendrachen",
+      "name": "Höllendrache",
       "from": "chaosnavy.json",
       "type": "AV"
     },
     "ttl-harbringer": {
-      "name": "Harbringer",
+      "name": "Harbringer-Bomber (B)",
       "from": "chaosnavy.json",
       "type": "AV"
     },
@@ -248,8 +233,14 @@
       ],
       "units": [
         {
-          "unit": "ttl-chaos-imperator-titan",
-          "count": 1
+          "oneOf": [
+            "ttl-lasterbringer-titan",
+            "ttl-finsternisbringer-titan",
+            "ttl-zwistbringer-titan",
+            "ttl-wandelbringer-titan"
+          ],
+          "count": 1,
+          "mixed": true
         }
       ],
       "upgrades": []
@@ -263,8 +254,14 @@
       ],
       "units": [
         {
-          "unit": "ttl-chaos-warlord-titan",
-          "count": 1
+          "oneOf": [
+            "ttl-schmerzensfuerst-titan",
+            "ttl-seuchenfuerst-titan",
+            "ttl-verderbensfuerst-titan",
+            "ttl-warpfuerst-titan"
+          ],
+          "count": 1,
+          "mixed": true
         }
       ],
       "upgrades": []
@@ -278,8 +275,14 @@
       ],
       "units": [
         {
-          "unit": "ttl-chaos-reaver-titan",
-          "count": 1
+          "oneOf": [
+            "ttl-reviler-titan",
+            "ttl-abscheulicher-titan",
+            "ttl-verwueter-titan",
+            "ttl-mutator-titan"
+          ],
+          "count": 1,
+          "mixed": true
         }
       ],
       "upgrades": []
@@ -514,7 +517,7 @@
           "effects": [
             {
               "op": "add",
-              "unit": "ttl-chaos-warbringer",
+              "unit": "ttl-Chaos Warbringer",
               "count": 1
             }
           ]

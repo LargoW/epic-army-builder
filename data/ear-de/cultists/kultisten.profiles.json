@@ -1,0 +1,871 @@
+{
+  "army": "ear-de/cultists/kultisten",
+  "source": {
+    "file": "lists_de/chaoscultists.json",
+    "version": "1.0.Beta"
+  },
+  "specialRules": [],
+  "units": {
+    "erzhaeretiker": {
+      "name": "Erzhäretiker",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Dämon Waffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        }
+      ]
+    },
+    "ikonentraeger": {
+      "name": "Ikonenträger",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "demagoge": {
+      "name": "Demagoge",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Granate Werfer",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Dämon Waffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+2D3)",
+          "description": null
+        }
+      ]
+    },
+    "daemonische-ikone": {
+      "name": "Dämonische Ikone",
+      "type": "CH",
+      "weapons": [],
+      "specialRules": [
+        {
+          "name": "Dämonenpakt",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        }
+      ]
+    },
+    "aufstrebender-champion": {
+      "name": "Aufstrebender Champion",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Dämon Waffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "gefallener-befehlshaber": {
+      "name": "Gefallener Befehlshaber",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AT6+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Dämon Waffe",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Befehlshaber",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "daemonenprinz": {
+      "name": "Dämonenprinz",
+      "type": "INF",
+      "speed": 30,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "weapons": [
+        {
+          "name": "Warp-Bolter",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Æther Klinge",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Oberbefehlshaber",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "kultisten": {
+      "name": "Kultisten",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Granate Werfer",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "mutanten": {
+      "name": "Mutanten",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Automatikpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "kultistenkavallerie": {
+      "name": "Kultistenkavallerie",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Laserpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        }
+      ]
+    },
+    "grosse-mutanten": {
+      "name": "Große Mutanten",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 5,
+      "notes": "Zählt beim Transport als zwei INF-Einheiten.",
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Massive Nahkampfwaffen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaosbrut": {
+      "name": "Chaosbrut",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "notes": "Zählt beim Transport als 2 INF-Einheiten.",
+      "weapons": [
+        {
+          "name": "Schreckliche Mutationen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "gefluegelte-chaosbrut": {
+      "name": "Geflügelte Chaosbrut",
+      "type": "INF",
+      "speed": 25,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schreckliche Mutationen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Zauberbolzen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        }
+      ]
+    },
+    "chaos-hunde": {
+      "name": "Chaos-Hunde",
+      "type": "INF",
+      "speed": 30,
+      "armour": 6,
+      "cc": 4,
+      "notes": "Kann nicht transportiert werden.",
+      "weapons": [
+        {
+          "name": "Klauen und Fangzähne",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        }
+      ]
+    },
+    "landtransporter": {
+      "name": "Landtransporter",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 6,
+      "notes": "Kann zwei Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren.",
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "bewaffneter-gelaendewagen": {
+      "name": "Bewaffneter Geländewagen",
+      "type": "LV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Schwerer-Maschinengewehr-Turm",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "chaosaltar": {
+      "name": "Chaosaltar",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Der Chaosaltar wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen MW-Treffer.",
+      "weapons": [
+        {
+          "name": "Arkane Technologie",
+          "modes": [
+            {
+              "firepower": "D3x AP4+/AT4+/AA4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Augmented Beschwörung (+W3)",
+          "description": null
+        }
+      ]
+    },
+    "warpaltar": {
+      "name": "Warpaltar",
+      "type": "WE",
+      "speed": 10,
+      "armour": 4,
+      "cc": 4,
+      "ff": 4,
+      "crit": "Warp Altar wird zerstört. Alle Daemon-Legion-Einheiten innerhalb von 5cm werden zerstört, alle anderen Einheiten innerhalb von 5cm erleiden bei 6+ einen MW-Treffer.",
+      "weapons": [
+        {
+          "name": "Arkane Technologie",
+          "modes": [
+            {
+              "firepower": "D3x AP4+/AT4+/AA4+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Inspirierend",
+          "description": null
+        },
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Augmented Beschwörung (+W3)",
+          "description": null
+        },
+        {
+          "name": "Chaostor",
+          "description": [
+            "Verbände der Dämonischer Einfall in Reserve dürfen Chaostors verwenden, um das Schlachtfeld zu betreten. Pro Runde dürfen beliebig viele Verbände ein Chaostor nutzen, wenn es Teil eines Missionsziels ist; ein auf einer Kriegsmaschine montiertes Chaostor darf jedoch nur von einem Verband pro Runde verwendet werden.",
+            "Zürst muss die Aktion des Verbands festgelegt werden. Würfle danach, um Dämonen zu beschwören, und anschliessend zur Aktivierung. Misslingt die Aktivierung, muss der Verband die Aktion Halten durchführen. Er darf dann entweder durch ein beliebiges verfügbares Chaostor das Schlachtfeld betreten oder in Reserve bleiben.",
+            "Chaostors, die Teil von Missionszielen sind, können nicht zerstört werden. Auf Kriegsmaschinen montierte Chaostors werden zerstört, wenn die Kriegsmaschine zerstört wird.",
+            "Jeder Verband, der durch ein auf einer aufgeriebenen Kriegsmaschine montiertes Chaostor das Schlachtfeld betritt, erhält eine Beschussmarke. Miss alle Bewegungsentfernungen vom Chaostor aus ab dem Mittelpunkt des Markers oder der Kante der Kriegsmaschine.",
+            "Befindet sich ein Chaostor in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+          ]
+        }
+      ]
+    },
+    "seuchenwandler-des-nurgle": {
+      "name": "Seuchenwandler des Nurgle",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "weapons": [
+        {
+          "name": "Wandelnde Pest",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Befall",
+          "description": [
+            "Verbände, die ausschließlich aus Einheiten mit der Sonderregel <i>Befall</i> bestehen, müssen in Reserve gehalten und nach den Regeln für Teleportation aufgestellt werden. außerdem dürfen Einheiten mit der Sonderregel <i>Befall</i> nur um Szenario-Missionsziele konkurrieren."
+          ]
+        }
+      ]
+    },
+    "tzaangors": {
+      "name": "Tzaangors",
+      "type": "INF",
+      "speed": 15,
+      "armour": 6,
+      "cc": 4,
+      "ff": 6,
+      "weapons": [
+        {
+          "name": "Automatikpistolen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Kettenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": []
+    },
+    "tzaangor-discreiter": {
+      "name": "Tzaangor-Discreiter",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Divining Speer",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Beritten",
+          "description": null
+        },
+        {
+          "name": "Sprungmodule",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "mutalith-vortexbestie": {
+      "name": "Mutalith-Vortexbestie",
+      "type": "LV",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Strahl der Unwirklichkeit",
+          "modes": [
+            {
+              "firepower": "D3x AP6+/AT6+/AA6+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mahlstrom des Wahnsinns",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+W3)",
+                  "description": "Zusätzliche Angriffe +W3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Regeneration",
+          "description": [
+            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+          ]
+        },
+        {
+          "name": "Verstärkte Beschwörung (+2D3)",
+          "description": null
+        }
+      ]
+    }
+  }
+}

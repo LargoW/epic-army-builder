@@ -1,0 +1,140 @@
+{
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/cultists/kultisten",
+  "name": "Streitkräfte der Chaos-Kultisten",
+  "faction": "Chaos-Kultisten",
+  "version": "1.0.Beta",
+  "source": {
+    "file": "lists_de/chaoscultists.json",
+    "version": "1.0.Beta"
+  },
+  "strategy": 4,
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "1+"
+    }
+  ],
+  "units": {
+    "erzhaeretiker": {
+      "name": "Erzhäretiker",
+      "from": "chaoscultists.json",
+      "type": "CH"
+    },
+    "ikonentraeger": {
+      "name": "Ikonenträger",
+      "from": "chaoscultists.json",
+      "type": "CH"
+    },
+    "demagoge": {
+      "name": "Demagoge",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "daemonische-ikone": {
+      "name": "Dämonische Ikone",
+      "from": "chaoscultists.json",
+      "type": "CH"
+    },
+    "aufstrebender-champion": {
+      "name": "Aufstrebender Champion",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "gefallener-befehlshaber": {
+      "name": "Gefallener Befehlshaber",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "daemonenprinz": {
+      "name": "Dämonenprinz",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "kultisten": {
+      "name": "Kultisten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "mutanten": {
+      "name": "Mutanten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "kultistenkavallerie": {
+      "name": "Kultistenkavallerie",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "grosse-mutanten": {
+      "name": "Große Mutanten",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "chaosbrut": {
+      "name": "Chaosbrut",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "gefluegelte-chaosbrut": {
+      "name": "Geflügelte Chaosbrut",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "chaos-hunde": {
+      "name": "Chaos-Hunde",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "landtransporter": {
+      "name": "Landtransporter",
+      "from": "chaoscultists.json",
+      "type": "LV"
+    },
+    "bewaffneter-gelaendewagen": {
+      "name": "Bewaffneter Geländewagen",
+      "from": "chaoscultists.json",
+      "type": "LV"
+    },
+    "chaosaltar": {
+      "name": "Chaosaltar",
+      "from": "chaoscultists.json",
+      "type": "WE"
+    },
+    "warpaltar": {
+      "name": "Warpaltar",
+      "from": "chaoscultists.json",
+      "type": "WE"
+    },
+    "seuchenwandler-des-nurgle": {
+      "name": "Seuchenwandler des Nurgle",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "tzaangors": {
+      "name": "Tzaangors",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "tzaangor-discreiter": {
+      "name": "Tzaangor-Discreiter",
+      "from": "chaoscultists.json",
+      "type": "INF"
+    },
+    "mutalith-vortexbestie": {
+      "name": "Mutalith-Vortexbestie",
+      "from": "chaoscultists.json",
+      "type": "LV"
+    }
+  },
+  "sections": [],
+  "formations": [],
+  "upgrades": [],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": []
+}

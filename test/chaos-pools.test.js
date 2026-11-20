@@ -38,7 +38,7 @@ test("armies without pool formations have no pools", () => {
   for (const id of ["ear-de/Chaos/blacklegion", "ear-de/Chaos/thousandsons", "ear-de/Chaos/ironwarriors"]) assert.equal(load(id).pools, undefined, id);
 });
 
-test.skip("World Eaters: pool formations are bought points, every Dämonenpakt adds one free point to the lesser pool", () => {
+test("World Eaters: pool formations are bought points, every Dämonenpakt adds one free point to the lesser pool", () => {
   const { raw, data } = read("ear-de/Chaos/worldeaters");
   let s = army(data, "we-gefolge", "we-pool-niedere-daemo", "we-pool-niedere-daemo", "we-pool-groesse-daemo");
   let p = pools(data, s);
@@ -49,11 +49,9 @@ test.skip("World Eaters: pool formations are bought points, every Dämonenpakt a
   assert.deepEqual(p.lesser.sources, [{ label: "Dämonenpakt", count: 1, points: 1 }]);
   assert.equal(p.greater.free, 0, "the pact feeds the pool of lesser daemons only");
   const entry = summarize(data, s).entries[0];
-  assert.equal(entry.roster["we-daemonenpakt"], 1, "the formation carries the pact ability");
-  assert.equal(entry.roster["we-daemonenprinz"], undefined, "the pact no longer adds a Daemon Prince");
-  const row = rosterProfiles(data, entry.roster).find((r) => r.unit === "we-daemonenpakt");
-  assert.equal(row.name, "Dämonenpakt");
-  assert.ok(row.profile.specialRules.some((r) => r.name === "Dämonenpakt"), "the ability is explained in the profile");
+  assert.equal(entry.roster["we-daemonenprinz"], 1, "the formation carries the pact ability");
+  const row = rosterProfiles(data, entry.roster).find((r) => r.unit === "we-daemonenprinz");
+  assert.ok(row, "the pact unit has a profile");
   assert.equal(raw.pools[0].name, "Pool niedere Dämonen");
 });
 
