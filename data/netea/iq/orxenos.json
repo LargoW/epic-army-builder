@@ -1,0 +1,254 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/iq/orxenos",
+  "name": "Ordo Xenos",
+  "faction": "Inquisition",
+  "version": "1.0",
+  "source": { "file": "Ordo Xenos", "version": "1.0" },
+  "strategy": 5,
+  "initiative": [{ "formations": ["*"], "value": "2+" }],
+  "units": {
+    "ox-oraxenos-grossinquisitor": { "name": "Ordo-Xenos-Großinquisitor", "type": "INF", "from": "IQ.json" },
+    "ox-oraxenos-inquisitor": { "name": "Ordo-Xenos-Inquisitor", "type": "INF", "from": "IQ.json" },
+    "ox-oraxenos-akolythen": { "name": "Akolythen des Ordo Xenos", "type": "INF", "from": "IQ.json" },
+    "ox-oraxenos-arbitrator": { "name": "Arbitratoren", "type": "INF", "from": "IQ.json" },
+    "ox-oraxenos-arbites": { "name": "Arbites-Repressor", "type": "AV", "from": "IQ.json" },
+    "ox-kommissar": { "name": "Kommissar", "type": "CH", "from": "IG.json" },
+    "ox-infantry": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "ox-chimera": { "name": "Chimäre", "type": "AV", "from": "IG.json" },
+    "ox-dw-befehlshaber": { "name": "Deathwatch-Befehlshaber", "type": "CH", "from": "SM.json" },
+    "ox-captain": { "name": "Captain", "type": "CH", "from": "SM.json" },
+    "ox-dw-sturmtrupps": { "name": "Deathwatch-Sturmtrupps", "type": "INF", "from": "SM.json" },
+    "ox-dw-trike": { "name": "Deathwatch-Trike", "type": "LV", "from": "SM.json" },
+    "ox-dw-land-speeder-tornado": { "name": "Deathwatch-Land-Speeder-Tornado", "type": "LV", "from": "SM.json" },
+    "ox-dw-land-speeder-typhoon": { "name": "Land Speeder Typhoon", "type": "LV", "from": "SM.json" },
+    "ox-dw-terminatoren": { "name": "Deathwatch-Terminatoren", "type": "INF", "from": "SM.json" },
+    "ox-scout": { "name": "Scout", "type": "INF", "from": "SM.json" },
+    "ox-dw-schwarze-schilde": { "name": "Deathwatch-Schwarze-Schilde", "type": "INF", "from": "SM.json" },
+    "ox-dw-land-raider": { "name": "Deathwatch-Land Raider", "type": "AV", "from": "SM.json" },
+    "ox-dw-razorback": { "name": "Deathwatch-Razorback", "type": "AV", "from": "SM.json" },
+    "ox-dw-corvus": { "name": "Corvus-Blackstar-Landungsschiff", "type": "AC/WE", "from": "SM.json" },
+    "ox-dw-thunderhawk": { "name": "Deathwatch-Thunderhawk-Transporter", "type": "AC/WE", "from": "SM.json" },
+    "ox-dw-cybot": { "name": "Deathwatch-Cybot", "type": "AV", "from": "SM.json" },
+    "ox-dw-devastortrupps": { "name": "Deathwatch-Devastortrupps", "type": "INF", "from": "SM.json" },
+    "ox-dw-taktische-trupps": { "name": "Deathwatch-Taktische-Trupps", "type": "INF", "from": "SM.json" },
+    "ox-lord-russ": { "name": "Leman Russ Kampfpanzer", "type": "AV", "from": "IG.json" },
+    "ox-sentinel": { "name": "Sentinel", "type": "LV", "from": "IG.json" },
+    "ox-hydra": { "name": "Hydra", "type": "AV", "from": "IG.json" },
+    "ox-warhound": { "name": "Warhound", "type": "WE", "from": "ImperialAllies.json" },
+    "ox-reaver": { "name": "Reaver-Titan", "type": "WE", "from": "ImperialAllies.json" },
+    "ox-warlord": { "name": "Warlord-Titan", "type": "WE", "from": "ImperialAllies.json" },
+    "ox-marauder": { "name": "Marauder-Bomber (B)", "type": "AC", "from": "ImperialNavy.json" },
+    "ox-thunderhawk": { "name": "Thunderhawk", "type": "AC/WE", "from": "SM.json" }
+  },
+  "sections": [
+    {
+      "id": "deathwatch",
+      "name": "Deathwatch Detachments",
+      "formations": ["f-ox-dw-assault", "f-ox-dw-bike", "f-ox-dw-land-speeder", "f-ox-dw-terminator", "f-ox-dw-scout", "f-ox-dw-veterans"]
+    },
+    {
+      "id": "support",
+      "name": "Inquisitorial Support",
+      "formations": ["f-ox-inquisitor-infantry", "f-ox-sentinel-staffel", "f-ox-leman-russ"]
+    },
+    {
+      "id": "fleet",
+      "name": "Deathwatch Aircraft",
+      "formations": ["f-ox-marauder", "f-ox-thunderhawk", "f-ox-reaver", "f-ox-warhound", "f-ox-warlord"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-ox-dw-assault",
+      "name": "Deathwatch Assault",
+      "pts": 225,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-dw-sturmtrupps", "count": 4 }],
+      "upgrades": ["u-ox-commander", "u-ox-corvus-blackstars"]
+    },
+    {
+      "id": "f-ox-dw-bike",
+      "name": "Deathwatch Bike",
+      "pts": 225,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-dw-trike", "count": 4 }],
+      "upgrades": ["u-ox-commander", "u-ox-corvus-blackstars"]
+    },
+    {
+      "id": "f-ox-dw-land-speeder",
+      "name": "Deathwatch Land Speeder",
+      "pts": 200,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-dw-land-speeder-tornado", "count": 5 }],
+      "upgrades": ["u-ox-commander", "u-ox-typhoon"]
+    },
+    {
+      "id": "f-ox-dw-terminator",
+      "name": "Deathwatch Terminator",
+      "pts": 350,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-dw-terminatoren", "count": 4 }],
+      "upgrades": ["u-ox-commander", "u-ox-corvus-blackstars", "u-ox-land-raider"]
+    },
+    {
+      "id": "f-ox-dw-scout",
+      "name": "Deathwatch Scout",
+      "pts": 250,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-scout", "count": 4 }],
+      "upgrades": ["u-ox-commander", "u-ox-corvus-blackstars", "u-ox-razorback"]
+    },
+    {
+      "id": "f-ox-dw-veterans",
+      "name": "Deathwatch Veterans",
+      "pts": 225,
+      "tags": ["deathwatch"],
+      "units": [{ "unit": "ox-dw-schwarze-schilde", "count": 4 }],
+      "upgrades": ["u-ox-commander", "u-ox-corvus-blackstars", "u-ox-land-raider", "u-ox-razorback"]
+    },
+    {
+      "id": "f-ox-inquisitor-infantry",
+      "name": "Inquisitorial Infantry",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [{ "unit": "ox-oraxenos-inquisitor", "count": 1 }, { "unit": "ox-infantry", "count": 12 }],
+      "upgrades": ["u-ox-commissar", "u-ox-hydra", "u-ox-inquisitor-lord", "u-ox-chimera"]
+    },
+    {
+      "id": "f-ox-sentinel-staffel",
+      "name": "Sentinel Squadron",
+      "pts": 100,
+      "tags": ["support"],
+      "units": [{ "unit": "ox-sentinel", "count": 4 }],
+      "upgrades": ["u-ox-commissar"]
+    },
+    {
+      "id": "f-ox-leman-russ",
+      "name": "Leman Russ",
+      "pts": 400,
+      "tags": ["support"],
+      "units": [{ "unit": "ox-lord-russ", "count": 6 }],
+      "upgrades": ["u-ox-commissar", "u-ox-hydra"]
+    },
+    {
+      "id": "f-ox-marauder",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ox-marauder", "count": 2 }]
+    },
+    {
+      "id": "f-ox-thunderhawk",
+      "name": "Thunderhawk Gunship",
+      "pts": 200,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ox-thunderhawk", "count": 1 }]
+    },
+    {
+      "id": "f-ox-reaver",
+      "name": "Reaver Titan",
+      "pts": 650,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ox-reaver", "count": 1 }]
+    },
+    {
+      "id": "f-ox-warhound",
+      "name": "Warhound Titan",
+      "pts": 275,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ox-warhound", "count": 1 }]
+    },
+    {
+      "id": "f-ox-warlord",
+      "name": "Warlord Titan",
+      "pts": 825,
+      "tags": ["fleet"],
+      "units": [{ "unit": "ox-warlord", "count": 1 }]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-ox-commander",
+      "name": "Commander",
+      "variants": [
+        { "id": "1", "label": "Add Captain", "pts": 50, "effects": [{ "op": "add", "unit": "ox-captain", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-commissar",
+      "name": "Commissar",
+      "variants": [
+        { "id": "1", "label": "Add Commissar", "pts": 25, "effects": [{ "op": "add", "unit": "ox-kommissar", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-hydra",
+      "name": "Hydra",
+      "variants": [
+        { "id": "1", "label": "Add one Hydra", "pts": 50, "effects": [{ "op": "add", "unit": "ox-hydra", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-inquisitor-lord",
+      "name": "Inquisitor Lord",
+      "variants": [
+        { "id": "1", "label": "Add Ordo Xenos Inquisitor Lord", "pts": 50, "effects": [{ "op": "add", "unit": "ox-oraxenos-grossinquisitor", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-supreme-commander",
+      "name": "Supreme Commander",
+      "variants": [
+        { "id": "1", "label": "Add Supreme Commander", "pts": 100, "effects": [{ "op": "add", "unit": "ox-oraxenos-grossinquisitor", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-corvus-blackstars",
+      "name": "Corvus Blackstars",
+      "variants": [
+        { "id": "1", "label": "Add Corvus Blackstar", "pts": 50, "effects": [{ "op": "add", "unit": "ox-dw-corvus", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-typhoon",
+      "name": "Typhoons",
+      "variants": [
+        { "id": "1", "label": "Replace one Land Speeder with a Land Speeder Typhoon", "pts": 10, "effects": [{ "op": "replace", "from": "ox-dw-land-speeder-tornado", "to": "ox-dw-land-speeder-typhoon", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-land-raider",
+      "name": "Land Raiders",
+      "variants": [
+        { "id": "1", "label": "Add one Deathwatch Land Raider", "pts": 75, "effects": [{ "op": "add", "unit": "ox-dw-land-raider", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-razorback",
+      "name": "Razorbacks",
+      "variants": [
+        { "id": "1", "label": "Add one Deathwatch Razorback", "pts": 25, "effects": [{ "op": "add", "unit": "ox-dw-razorback", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ox-chimera",
+      "name": "Chimera",
+      "variants": [
+        { "id": "1", "label": "Add seven Chimera", "pts": 150, "effects": [{ "op": "add", "unit": "ox-chimera", "count": 7 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-detachment", "from": ["tag:support"], "forEach": ["tag:deathwatch"], "max": 1 }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true },
+    { "id": "inquisitor-lord-per-army", "from": ["u-ox-inquisitor-lord"], "max": 1, "perArmy": true },
+    { "id": "supreme-commander-per-army", "from": ["u-ox-supreme-commander"], "max": 1, "perArmy": true },
+    { "id": "aircraft-share", "from": ["tag:fleet"], "maxShare": [1, 3] }
+  ]
+}

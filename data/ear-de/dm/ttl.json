@@ -102,7 +102,7 @@
       "type": "AV"
     },
     "ttl-warp-hund": {
-      "name": "Warp Hund",
+      "name": "Warp-Hound",
       "from": "traitortitanlegions.json",
       "type": "AV"
     },
@@ -112,7 +112,7 @@
       "type": "AV"
     },
     "ttl-Chaos Warbringer": {
-      "name": "Chaos Warbringer",
+      "name": "Chaos-Warbringer",
       "from": "traitortitanlegions.json",
       "type": "AV"
     },

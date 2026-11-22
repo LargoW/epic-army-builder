@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createState, addFormation, setUpgrade, setSize, summarize, validate } from "../engine/engine.js";
-import { messageFor } from "../ui/messages.de.js";
+import { messageFor } from "../ui/messages.js";
 
 // formation.unitLimits: limits on the total of several unit types, with synthetic data.
 const data = {

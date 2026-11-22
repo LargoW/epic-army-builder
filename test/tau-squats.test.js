@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createState, addFormation, setUpgrade, setChoice, summarize, validate } from "../engine/engine.js";
-import { messageFor } from "../ui/messages.de.js";
+import { messageFor } from "../ui/messages.js";
 
 const load = (p) => JSON.parse(readFileSync(new URL(`../data/ear-de/${p}.json`, import.meta.url), "utf8"));
 const armies = { sacea: load("tau/sacea"), viorla: load("tau/viorla"), squats: load("sq/squats") };

@@ -1,0 +1,108 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/minervan",
+  "name": "Minervan Tank Legion",
+  "faction": "Imperial Guard",
+  "version": "1.0",
+  "source": { "file": "Minervan Tank Legion", "version": "1.0" },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "2+" }],
+  "units": {
+    "mk-commander": { "name": "Oberbefehlshaber des Todeskorps von Krieg", "type": "INF", "from": "IG.json" },
+    "mk-supreme": { "name": "Oberbefehlshaber des Todeskorps von Krieg", "type": "INF", "from": "IG.json" },
+    "mk-infantry": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "mk-commissar": { "name": "Kommissar", "type": "CH", "from": "IG.json" },
+    "mk-basilisk": { "name": "Basilisk", "type": "AV", "from": "IG.json" },
+    "mk-bombard": { "name": "Bombarde", "type": "AV", "from": "IG.json" },
+    "mk-medusa": { "name": "Medusa", "type": "LV", "from": "IG.json" },
+    "mk-baneblade": { "name": "Baneblade", "type": "WE", "from": "IG.json" },
+    "mk-macharius": { "name": "Macharius", "type": "H-AV", "from": "IG.json" },
+    "mk-trojan": { "name": "Trojan", "type": "LV", "from": "IG.json" },
+    "mk-valkyrie": { "name": "Valkyrie", "type": "AV", "from": "IG.json" },
+    "mk-centaur": { "name": "Centaur", "type": "LV", "from": "IG.json" },
+    "mk-gorgon": { "name": "Gorgon", "type": "WE", "from": "IG.json" },
+    "mk-hydra": { "name": "Hydra", "type": "AV", "from": "IG.json" },
+    "mk-lrt": { "name": "Leman Russ Thunderer", "type": "AV", "from": "IG.json" },
+    "mk-vulture": { "name": "Vulture", "type": "AV", "from": "IG.json" }
+  },
+  "sections": [
+    { "id": "core", "name": "Core Formations", "formations": ["f-mk-tank-company", "f-mk-super-heavy-tank-company", "f-mk-artillery-company"] },
+    { "id": "support", "name": "Support Formations", "formations": ["f-mk-artillery-battery", "f-mk-assault-gun-battery", "f-mk-basilisk-battery", "f-mk-vulture-squadron"] },
+    { "id": "wareengines", "name": "War Engines", "formations": ["f-mk-super-heavy-tank-company"] }
+  ],
+  "formations": [
+    {
+      "id": "f-mk-tank-company",
+      "name": "Tank Company",
+      "pts": 280,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "mk-lrt", "count": 6 }]
+    },
+    {
+      "id": "f-mk-super-heavy-tank-company",
+      "name": "Super-heavy Tank Company",
+      "pts": 500,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "mk-baneblade", "count": 1 }]
+    },
+    {
+      "id": "f-mk-artillery-company",
+      "name": "Artillery Company",
+      "pts": 550,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "mk-basilisk", "count": 9 }]
+    },
+    {
+      "id": "f-mk-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [{ "unit": "mk-bombard", "count": 3 }]
+    },
+    {
+      "id": "f-mk-assault-gun-battery",
+      "name": "Assault Gun Battery",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "mk-medusa", "count": 3 }]
+    },
+    {
+      "id": "f-mk-basilisk-battery",
+      "name": "Basilisk Battery",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "mk-basilisk", "count": 3 }]
+    },
+    {
+      "id": "f-mk-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [{ "unit": "mk-vulture", "count": 4 }]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-mk-flak",
+      "name": "Flak",
+      "variants": [{ "id": "1", "label": "Add up to two Hydra", "pts": 50, "effects": [{ "op": "add", "unit": "mk-hydra", "count": 2 }] }]
+    },
+    {
+      "id": "u-mk-supreme",
+      "name": "Supreme Commander",
+      "variants": [{ "id": "1", "label": "Add one Supreme Commander", "pts": 75, "effects": [{ "op": "add", "unit": "mk-supreme", "count": 1 }] }]
+    },
+    {
+      "id": "u-mk-tank-squadron",
+      "name": "Tank Squadron",
+      "variants": [{ "id": "1", "label": "Add any three Leman Russ variants", "pts": 140, "effects": [{ "op": "add", "unit": "mk-lrt", "count": 3 }] }]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 },
+    { "id": "wareengines-share", "from": ["tag:wareengine"], "maxShare": [1, 3] }
+  ]
+}

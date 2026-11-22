@@ -41,7 +41,7 @@
     "dm-hollenritter": { "name": "Höllenritter", "from": "darkmechanicus.json", "type": "AV" },
     "dm-hollenharpyien": { "name": "Höllengeißel", "from": "darkmechanicus.json", "type": "AV" },
     "dm-schander-ritter": { "name": "Schänder-Ritter", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-Chaos Warbringer": { "name": "Chaos Warbringer", "from": "traitortitanlegions.json", "type": "AV" },
+    "dm-Chaos Warbringer": { "name": "Chaos-Warbringer", "from": "traitortitanlegions.json", "type": "AV" },
     "dm-hollendrachen": { "name": "Höllendrache", "from": "chaosnavy.json", "type": "AV" },
     "dm-harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
     "dm-chaos-schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" },

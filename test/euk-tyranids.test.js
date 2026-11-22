@@ -5,7 +5,7 @@ import {
   createState, addFormation, setUpgrade, setSize, setChoice, summarize, validate, withProfiles, rosterProfiles,
 } from "../engine/engine.js";
 import { buildExport, toToken, parseInput, sanitize } from "../engine/exchange.js";
-import { messageFor } from "../ui/messages.de.js";
+import { messageFor } from "../ui/messages.js";
 
 // Tyranids (Epic UK quick reference). Expected values come from the PDF, not from the data file.
 const dataUrl = (p) => new URL(`../data/${p}`, import.meta.url);

@@ -1,0 +1,175 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/baran",
+  "name": "Baran Siegemasters",
+  "faction": "Imperial Guard",
+  "version": "1.0",
+  "source": { "file": "Baran Siegemasters", "version": "1.0" },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "2+" }],
+  "units": {
+    "bs-belongungsmeister": { "name": "Baran-Belagerungsmeister", "type": "INF", "from": "IG.json" },
+    "bs-befehlshaber": { "name": "Baran-Befehlshaber", "type": "INF", "from": "IG.json" },
+    "bs-kommissar": { "name": "Kommissar", "type": "CH", "from": "IG.json" },
+    "bs-siege-infantry": { "name": "Belagerungsinfanterie", "type": "INF", "from": "IG.json" },
+    "bs-pioniere": { "name": "Pioniere", "type": "INF", "from": "IG.json" },
+    "bs-todesreiter": { "name": "Todesreiter", "type": "INF", "from": "IG.json" },
+    "bs-scharfschützen": { "name": "Scharfschützen", "type": "INF", "from": "IG.json" },
+    "bs-ogryns": { "name": "Ogryns", "type": "INF", "from": "IG.json" },
+    "bs-thudd-gun": { "name": "Thudd-Geschütz", "type": "INF", "from": "IG.json" },
+    "bs-rapier": { "name": "Rapier", "type": "INF", "from": "IG.json" },
+    "bs-maulwurfswerfer": { "name": "Maulwurfs-Mörser", "type": "INF", "from": "IG.json" },
+    "bs-greif": { "name": "Greif", "type": "AV", "from": "IG.json" },
+    "bs-flak": { "name": "Schwere Flugabwehrkanone", "type": "LV", "from": "IG.json" },
+    "bs-medusabunker": { "name": "Medusa-Kanone", "type": "LV", "from": "IG.json" },
+    "bs-haubitze": { "name": "Haubitze", "type": "LV", "from": "IG.json" },
+    "bs-höllenhund": { "name": "Höllenhund", "type": "AV", "from": "IG.json" },
+    "bs-ragnarok": { "name": "Ragnarok-Schwerer Kampfpanzer", "type": "AV", "from": "IG.json" },
+    "bs-macharius": { "name": "Macharius", "type": "H-AV", "from": "IG.json" },
+    "bs-hades": { "name": "Hades-Aufbrechbohrer", "type": "AV", "from": "IG.json" },
+    "bs-marauder": { "name": "Marauder-Bomber (B)", "type": "AC", "from": "ImperialNavy.json" },
+    "bs-donnerkeil": { "name": "Donnerkeil-Jäger", "type": "AC", "from": "ImperialNavy.json" },
+    "bs-lunar": { "name": "Kreuzer der Lunar-Klasse", "type": "SC", "from": "ImperialNavy.json" },
+    "bs-emperor": { "name": "Schlachtschiff der Emperor-Klasse", "type": "SC", "from": "ImperialNavy.json" }
+  },
+  "sections": [
+    { "id": "core", "name": "Core Formations", "formations": ["f-baran-regimental-hq", "f-baran-infantry-company"] },
+    { "id": "support", "name": "Support Formations", "formations": [
+      "f-baran-schwere-panzerkompanie",
+      "f-baran-macharius-kompanie",
+      "f-baran-pioniierkompanie",
+      "f-baran-belagerungsartillerie",
+      "f-baran-haubitzen",
+      "f-baran-flak",
+      "f-baran-greif",
+      "f-baran-todesreiter"
+    ] },
+    { "id": "flotte", "name": "Imperial Navy", "formations": ["f-baran-donnerkeil", "f-baran-marauder", "f-baran-orbital"] }
+  ],
+  "formations": [
+    {
+      "id": "f-baran-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 225,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "bs-belongungsmeister", "count": 1 }, { "unit": "bs-siege-infantry", "count": 9 }]
+    },
+    {
+      "id": "f-baran-infantry-company",
+      "name": "Infantry Company",
+      "pts": 175,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "bs-befehlshaber", "count": 1 }, { "unit": "bs-siege-infantry", "count": 9 }]
+    },
+    {
+      "id": "f-baran-schwere-panzerkompanie",
+      "name": "Heavy Tank Platoon",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-ragnarok", "count": 6 }]
+    },
+    {
+      "id": "f-baran-macharius-kompanie",
+      "name": "Macharius Company",
+      "pts": 350,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-macharius", "count": 2 }]
+    },
+    {
+      "id": "f-baran-pioniierkompanie",
+      "name": "Pioneer Platoon",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-pioniere", "count": 8 }, { "unit": "bs-hades", "count": 1 }]
+    },
+    {
+      "id": "f-baran-belagerungsartillerie",
+      "name": "Siege Artillery",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-medusabunker", "count": 4 }]
+    },
+    {
+      "id": "f-baran-haubitzen",
+      "name": "Siege Battery",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-haubitze", "count": 3 }]
+    },
+    {
+      "id": "f-baran-flak",
+      "name": "Flak Battery",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-flak", "count": 3 }]
+    },
+    {
+      "id": "f-baran-greif",
+      "name": "Greif Battery",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-greif", "count": 3 }]
+    },
+    {
+      "id": "f-baran-todesreiter",
+      "name": "Death Rider",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "bs-todesreiter", "count": 6 }]
+    },
+    {
+      "id": "f-baran-donnerkeil",
+      "name": "Donnerkeil Staffel",
+      "pts": 175,
+      "tags": ["flotte"],
+      "units": [{ "unit": "bs-donnerkeil", "count": 2 }]
+    },
+    {
+      "id": "f-baran-marauder",
+      "name": "Marauder Staffel",
+      "pts": 250,
+      "tags": ["flotte"],
+      "units": [{ "unit": "bs-marauder", "count": 2 }]
+    },
+    {
+      "id": "f-baran-orbital",
+      "name": "Orbital Support",
+      "pts": 125,
+      "tags": ["flotte"],
+      "units": [{ "unit": "bs-lunar", "count": 1 }]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-baran-hellhound-squadron",
+      "name": "Hellhound Squadron",
+      "variants": [{ "id": "1", "label": "Add up to three Hellhounds", "pts": 75, "effects": [{ "op": "add", "unit": "bs-höllenhund", "count": 3 }] }]
+    },
+    {
+      "id": "u-baran-rapier-platoon",
+      "name": "Rapier Platoon",
+      "variants": [{ "id": "1", "label": "Add three Rapier Laser Destroyers", "pts": 75, "effects": [{ "op": "add", "unit": "bs-rapier", "count": 3 }] }]
+    },
+    {
+      "id": "u-baran-siege-platoon",
+      "name": "Siege Infantry Platoon",
+      "variants": [{ "id": "1", "label": "Add six Siege Infantry units", "pts": 75, "effects": [{ "op": "add", "unit": "bs-siege-infantry", "count": 6 }] }]
+    },
+    {
+      "id": "u-baran-snipers",
+      "name": "Snipers",
+      "variants": [{ "id": "1", "label": "Add up to two Snipers", "pts": 50, "effects": [{ "op": "add", "unit": "bs-scharfschützen", "count": 2 }] }]
+    },
+    {
+      "id": "u-baran-thudd-platoon",
+      "name": "Thudd Gun Platoon",
+      "variants": [{ "id": "1", "label": "Add three Thudd Guns", "pts": 75, "effects": [{ "op": "add", "unit": "bs-thudd-gun", "count": 3 }] }]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 }
+  ]
+}

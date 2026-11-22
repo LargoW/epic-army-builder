@@ -1,0 +1,263 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/steellegion",
+  "name": "Armageddon Steel Legion",
+  "faction": "Imperial Guard",
+  "version": "1.0",
+  "source": { "file": "Armageddon Steel Legion", "version": "1.0" },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "2+" }],
+  "units": {
+    "sl-oberbefehlshaber": { "name": "Oberbefehlshaber der Stahllegion", "type": "INF", "from": "IG.json" },
+    "sl-befehlshaber": { "name": "Befehlshaber der Stahllegion", "type": "INF", "from": "IG.json" },
+    "sl-kommissar": { "name": "Kommissar", "type": "CH", "from": "IG.json" },
+    "sl-infantry": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "sl-chimera": { "name": "Chimäre", "type": "AV", "from": "IG.json" },
+    "sl-basilisk": { "name": "Basilisk", "type": "AV", "from": "IG.json" },
+    "sl-bombard": { "name": "Bombarde", "type": "AV", "from": "IG.json" },
+    "sl-todesstoß": { "name": "Todesstoß Raketenlafette", "type": "AV", "from": "IG.json" },
+    "sl-greif": { "name": "Greif", "type": "AV", "from": "IG.json" },
+    "sl-hydra": { "name": "Hydra", "type": "AV", "from": "IG.json" },
+    "sl-kavallerie": { "name": "Kavallerie", "type": "INF", "from": "IG.json" },
+    "sl-sentinel": { "name": "Sentinel", "type": "LV", "from": "IG.json" },
+    "sl-baneblade": { "name": "Baneblade", "type": "WE", "from": "IG.json" },
+    "sl-leman-russ": { "name": "Leman Russ Kampfpanzer", "type": "AV", "from": "IG.json" },
+    "sl-leman-russ-vanquisher": { "name": "Leman Russ Vanquisher", "type": "AV", "from": "IG.json" },
+    "sl-leman-russ-punisher": { "name": "Leman Russ Punisher", "type": "AV", "from": "IG.json" },
+    "sl-vulture": { "name": "Vulture", "type": "AV", "from": "IG.json" },
+    "sl-stoßtruppen": { "name": "Stoßtruppen", "type": "INF", "from": "IG.json" },
+    "sl-valkyrie": { "name": "Valkyrie", "type": "AV", "from": "IG.json" },
+    "sl-taurox": { "name": "Taurox", "type": "AV", "from": "IG.json" },
+    "sl-ogryns": { "name": "Ogryns", "type": "INF", "from": "IG.json" },
+    "sl-scharfschützen": { "name": "Scharfschützen", "type": "INF", "from": "IG.json" },
+    "sl-feuerunterstützung": { "name": "Feuerunterstützungstrupp", "type": "INF", "from": "IG.json" },
+    "sl-höllenhund": { "name": "Höllenhund", "type": "AV", "from": "IG.json" },
+    "sl-mantikor": { "name": "Mantikor", "type": "AV", "from": "IG.json" },
+    "sl-warhound": { "name": "Warhound", "type": "WE", "from": "ImperialAllies.json" },
+    "sl-reaver": { "name": "Reaver-Titan", "type": "WE", "from": "ImperialAllies.json" },
+    "sl-warlord": { "name": "Warlord-Titan", "type": "WE", "from": "ImperialAllies.json" },
+    "sl-donnerkeil": { "name": "Donnerkeil-Jäger", "type": "AC", "from": "ImperialNavy.json" },
+    "sl-marauder": { "name": "Marauder-Bomber (B)", "type": "AC", "from": "ImperialNavy.json" },
+    "sl-lunar": { "name": "Kreuzer der Lunar-Klasse", "type": "SC", "from": "ImperialNavy.json" },
+    "sl-emperor": { "name": "Schlachtschiff der Emperor-Klasse", "type": "SC", "from": "ImperialNavy.json" }
+  },
+  "sections": [
+    { "id": "core", "name": "Core Formations", "formations": ["f-sl-regimental-hq", "f-sl-mechanised-company", "f-sl-infantry-company", "f-sl-leman-russ-company"] },
+    { "id": "support", "name": "Support Formations", "formations": [
+      "f-sl-mechanised-patrol",
+      "f-sl-artillery-battery",
+      "f-sl-todesstoß-battery",
+      "f-sl-greif-battery",
+      "f-sl-flak-battery",
+      "f-sl-kavallerie-patrol",
+      "f-sl-sentinel-squadron",
+      "f-sl-supreme-tank-patrol",
+      "f-sl-leman-russ-zug",
+      "f-sl-vulture-squadron",
+      "f-sl-stoßtruppen-kompanie"
+    ] },
+    { "id": "flotte", "name": "Imperial Navy and Titans", "formations": [
+      "f-sl-warhound",
+      "f-sl-reaver",
+      "f-sl-warlord",
+      "f-sl-donnerkeil",
+      "f-sl-marauder",
+      "f-sl-orbital"
+    ] }
+  ],
+  "formations": [
+    {
+      "id": "f-sl-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 375,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "sl-oberbefehlshaber", "count": 1 }, { "unit": "sl-infantry", "count": 9 }, { "unit": "sl-chimera", "count": 5 }]
+    },
+    {
+      "id": "f-sl-mechanised-company",
+      "name": "Mechanised Infantry Company",
+      "pts": 325,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "sl-befehlshaber", "count": 1 }, { "unit": "sl-infantry", "count": 9 }, { "unit": "sl-chimera", "count": 5 }]
+    },
+    {
+      "id": "f-sl-infantry-company",
+      "name": "Infantry Company",
+      "pts": 250,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "sl-befehlshaber", "count": 1 }, { "unit": "sl-infantry", "count": 12 }]
+    },
+    {
+      "id": "f-sl-leman-russ-company",
+      "name": "Leman Russ Company",
+      "pts": 500,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "sl-leman-russ-vanquisher", "count": 1 }, { "unit": "sl-leman-russ", "count": 7 }]
+    },
+    {
+      "id": "f-sl-mechanised-patrol",
+      "name": "Mechanised Infantry Patrol",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-infantry", "count": 6 }, { "unit": "sl-chimera", "count": 3 }]
+    },
+    {
+      "id": "f-sl-artillery-battery",
+      "name": "Artillery Battery",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-basilisk", "count": 3 }]
+    },
+    {
+      "id": "f-sl-todesstoß-battery",
+      "name": "Deathstrike Battery",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-todesstoß", "count": 2 }]
+    },
+    {
+      "id": "f-sl-greif-battery",
+      "name": "Greif Battery",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-greif", "count": 3 }]
+    },
+    {
+      "id": "f-sl-flak-battery",
+      "name": "Flak Battery",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-hydra", "count": 3 }]
+    },
+    {
+      "id": "f-sl-kavallerie-patrol",
+      "name": "Kavallerie Patrol",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-kavallerie", "count": 6 }]
+    },
+    {
+      "id": "f-sl-sentinel-squadron",
+      "name": "Sentinel Squadron",
+      "pts": 100,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-sentinel", "count": 4 }]
+    },
+    {
+      "id": "f-sl-supreme-tank-patrol",
+      "name": "Superschwerer Panzerzug",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-baneblade", "count": 1 }]
+    },
+    {
+      "id": "f-sl-leman-russ-zug",
+      "name": "Leman Russ Zug",
+      "pts": 375,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-leman-russ", "count": 6 }]
+    },
+    {
+      "id": "f-sl-vulture-squadron",
+      "name": "Vulture Squadron",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-vulture", "count": 4 }]
+    },
+    {
+      "id": "f-sl-stoßtruppen-kompanie",
+      "name": "Stoßtruppen Kompanie",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "sl-stoßtruppen", "count": 8 }]
+    },
+    {
+      "id": "f-sl-warhound",
+      "name": "Warhound",
+      "pts": 275,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-warhound", "count": 1 }]
+    },
+    {
+      "id": "f-sl-reaver",
+      "name": "Reaver",
+      "pts": 600,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-reaver", "count": 1 }]
+    },
+    {
+      "id": "f-sl-warlord",
+      "name": "Warlord",
+      "pts": 750,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-warlord", "count": 1 }]
+    },
+    {
+      "id": "f-sl-donnerkeil",
+      "name": "Donnerkeil Staffel",
+      "pts": 175,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-donnerkeil", "count": 2 }]
+    },
+    {
+      "id": "f-sl-marauder",
+      "name": "Marauder Staffel",
+      "pts": 250,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-marauder", "count": 2 }]
+    },
+    {
+      "id": "f-sl-orbital",
+      "name": "Orbital Support",
+      "pts": 125,
+      "tags": ["navy"],
+      "units": [{ "unit": "sl-lunar", "count": 1 }]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-sl-fire-support",
+      "name": "Fire Support Platoon",
+      "variants": [
+        { "id": "1", "label": "Add two Fire Support Squads", "pts": 50, "effects": [{ "op": "add", "unit": "sl-feuerunterstützung", "count": 2 }] },
+        { "id": "2", "label": "Add four Fire Support Squads", "pts": 100, "effects": [{ "op": "add", "unit": "sl-feuerunterstützung", "count": 4 }] }
+      ]
+    },
+    {
+      "id": "u-sl-flak",
+      "name": "Flak",
+      "variants": [{ "id": "1", "label": "Add one Hydra", "pts": 50, "effects": [{ "op": "add", "unit": "sl-hydra", "count": 1 }] }]
+    },
+    {
+      "id": "u-sl-hellhound-squadron",
+      "name": "Hellhound Squadron",
+      "variants": [{ "id": "1", "label": "Add three Hellhounds", "pts": 75, "effects": [{ "op": "add", "unit": "sl-höllenhund", "count": 3 }] }]
+    },
+    {
+      "id": "u-sl-infantry-platoon",
+      "name": "Infantry Platoon",
+      "variants": [{ "id": "1", "label": "Add six Infantry units", "pts": 75, "effects": [{ "op": "add", "unit": "sl-infantry", "count": 6 }] }]
+    },
+    {
+      "id": "u-sl-ogryns",
+      "name": "Ogryns",
+      "variants": [{ "id": "1", "label": "Add up to two Ogryns", "pts": 50, "effects": [{ "op": "add", "unit": "sl-ogryns", "count": 2 }] }]
+    },
+    {
+      "id": "u-sl-scharfschützen",
+      "name": "Snipers",
+      "variants": [{ "id": "1", "label": "Add up to two Snipers", "pts": 50, "effects": [{ "op": "add", "unit": "sl-scharfschützen", "count": 2 }] }]
+    },
+    {
+      "id": "u-sl-leman-russ",
+      "name": "Leman Russ",
+      "variants": [{ "id": "1", "label": "Add three Leman Russ", "pts": 150, "effects": [{ "op": "add", "unit": "sl-leman-russ", "count": 3 }] }]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 }
+  ]
+}

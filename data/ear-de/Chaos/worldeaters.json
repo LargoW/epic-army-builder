@@ -103,7 +103,7 @@
             "type": "AV"
         },
         "we-rhino": {
-            "name": "World Eaters Rhino",
+            "name": "World-Eaters-Rhino",
             "from": "CSM.json",
             "type": "AV"
         },
@@ -113,7 +113,7 @@
             "type": "AV"
         },
         "we-vindicator": {
-            "name": "World Eaters Vindicator",
+            "name": "World-Eaters-Vindicator",
             "from": "CSM.json",
             "type": "AV"
         },

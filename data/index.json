@@ -595,6 +595,41 @@
       "faction": "Squats",
       "name": "Grindel Stronghold",
       "version": "1.7.2"
+    },
+    {
+      "id": "netea/ig/deathkorps",
+      "ruleset": "netea",
+      "faction": "Imperial Guard",
+      "name": "Death Korps of Krieg",
+      "version": "1.0"
+    },
+    {
+      "id": "netea/ig/minervan",
+      "ruleset": "netea",
+      "faction": "Imperial Guard",
+      "name": "Minervan Tank Legion",
+      "version": "1.0"
+    },
+    {
+      "id": "netea/ig/baran",
+      "ruleset": "netea",
+      "faction": "Imperial Guard",
+      "name": "Baran Siegemasters",
+      "version": "1.0"
+    },
+    {
+      "id": "netea/ig/steellegion",
+      "ruleset": "netea",
+      "faction": "Imperial Guard",
+      "name": "Armageddon Steel Legion",
+      "version": "1.0"
+    },
+    {
+      "id": "netea/iq/orxenos",
+      "ruleset": "netea",
+      "faction": "Inquisition",
+      "name": "Ordo Xenos",
+      "version": "1.0"
     }
   ]
 }

@@ -34,7 +34,7 @@
     "feuerdämon": { "name": "Feuerdämonen des Tzeentch", "from": "daemons.json", "type": "AV" },
     "kreischer": { "name": "Kreischer des Tzeentch", "from": "daemons.json", "type": "AV" },
     "herr-der-wandel": { "name": "Herrscher des Wandels", "from": "daemons.json", "type": "AV" },
-    "warphound": { "name": "Warp Hund", "from": "traitortitanlegions.json", "type": "AV" },
+    "warphound": { "name": "Warp-Hound", "from": "traitortitanlegions.json", "type": "AV" },
     "doomwing": { "name": "Doomwing", "from": "chaosnavy.json", "type": "AV" },
     "firelord": { "name": "Firelord", "from": "chaosnavy.json", "type": "AV" },
     "warpship": { "name": "Warpship", "from": "chaosnavy.json", "type": "AV" }

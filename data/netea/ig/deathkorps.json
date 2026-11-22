@@ -1,0 +1,93 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/ig/deathkorps",
+  "name": "Death Korps of Krieg",
+  "faction": "Imperial Guard",
+  "version": "1.0",
+  "source": { "file": "Death Korps of Krieg", "version": "1.0" },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "2+" }],
+  "units": {
+    "dk-commander": { "name": "Oberbefehlshaber des Todeskorps von Krieg", "type": "INF", "from": "IG.json" },
+    "dk-supreme-commander": { "name": "Oberbefehlshaber des Todeskorps von Krieg", "type": "INF", "from": "IG.json" },
+    "dk-infantry": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "dk-commissar": { "name": "Kommissar", "type": "CH", "from": "IG.json" },
+    "dk-death-rider": { "name": "Todesreiter", "type": "INF", "from": "IG.json" },
+    "dk-grenadier": { "name": "Grenadiere", "type": "INF", "from": "IG.json" },
+    "dk-fire-support": { "name": "Feuerunterstützungstrupp", "type": "INF", "from": "IG.json" },
+    "dk-mortar-support": { "name": "Mörserteam", "type": "INF", "from": "IG.json" },
+    "dk-sniper": { "name": "Scharfschützen", "type": "INF", "from": "IG.json" },
+    "dk-valkyrie": { "name": "Valkyrie", "type": "AV", "from": "IG.json" },
+    "dk-centaur": { "name": "Centaur", "type": "LV", "from": "IG.json" },
+    "dk-bombard": { "name": "Bombarde", "type": "AV", "from": "IG.json" },
+    "dk-medusa": { "name": "Medusa", "type": "LV", "from": "IG.json" },
+    "dk-baneblade": { "name": "Baneblade", "type": "WE", "from": "IG.json" },
+    "dk-gorgon": { "name": "Gorgon", "type": "WE", "from": "IG.json" },
+    "dk-macharius": { "name": "Macharius", "type": "H-AV", "from": "IG.json" },
+    "dk-trojan": { "name": "Trojan", "type": "LV", "from": "IG.json" }
+  },
+  "sections": [
+    { "id": "core", "name": "Core Formations", "formations": ["f-dk-infantry-company", "f-dk-regimental-hq"] },
+    { "id": "support", "name": "Support Formations", "formations": ["f-dk-grenadiers-platoon"] },
+    { "id": "wareengines", "name": "War Engines", "formations": ["f-dk-baneblade"] }
+  ],
+  "formations": [
+    {
+      "id": "f-dk-infantry-company",
+      "name": "Infantry Company",
+      "pts": 300,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "dk-commander", "count": 1 }, { "unit": "dk-infantry", "count": 19 }]
+    },
+    {
+      "id": "f-dk-regimental-hq",
+      "name": "Regimental HQ",
+      "pts": 400,
+      "tags": ["company", "core"],
+      "units": [{ "unit": "dk-supreme-commander", "count": 1 }, { "unit": "dk-infantry", "count": 19 }]
+    },
+    {
+      "id": "f-dk-grenadiers-platoon",
+      "name": "Grenadiers Platoon",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "dk-grenadier", "count": 8 }]
+    },
+    {
+      "id": "f-dk-baneblade",
+      "name": "Baneblade",
+      "pts": 200,
+      "tags": ["wareengines"],
+      "units": [{ "unit": "dk-baneblade", "count": 1 }]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-dk-fire-support-battery",
+      "name": "Fire Support Battery",
+      "variants": [{ "id": "1", "label": "Add four Fire Support units", "pts": 75, "effects": [{ "op": "add", "unit": "dk-fire-support", "count": 4 }] }]
+    },
+    {
+      "id": "u-dk-gorgon-siege-transporters",
+      "name": "Gorgon Siege Transporters",
+      "variants": [{ "id": "1", "label": "Add two Gorgons", "pts": 200, "effects": [{ "op": "add", "unit": "dk-gorgon", "count": 2 }] }]
+    },
+    {
+      "id": "u-dk-heavy-tank",
+      "name": "Heavy Tank",
+      "variants": [{ "id": "1", "label": "Add one Macharius", "pts": 125, "effects": [{ "op": "add", "unit": "dk-macharius", "count": 1 }] }]
+    },
+    {
+      "id": "u-dk-infantry-platoon",
+      "name": "Infantry Platoon",
+      "variants": [{ "id": "1", "label": "Add ten Infantry units", "pts": 175, "effects": [{ "op": "add", "unit": "dk-infantry", "count": 10 }] }]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 2 },
+    { "id": "wareengines-share", "from": ["tag:wareengine"], "maxShare": [1, 3] }
+  ]
+}
