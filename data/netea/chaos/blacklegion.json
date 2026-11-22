@@ -1,0 +1,197 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/blacklegion",
+  "name": "Black Legion",
+  "faction": "Chaos Space Marines",
+  "version": "1.0.Beta",
+  "source": { "file": "Chaos/blacklegion.json", "version": "1.0.Beta" },
+  "strategy": 4,
+  "initiative": [
+    { "formations": ["tag:bl-core"], "value": "1+" },
+    { "formations": ["*"], "value": "2+" }
+  ],
+  "units": {
+    "bl-kriegsherr": { "name": "Chaos Lord", "type": "CH", "from": "CSM.json" },
+    "bl-daemonenprinz": { "name": "Dämonenprinz", "type": "INF", "from": "CSM.json" },
+    "bl-ikonentraeger": { "name": "Ikonenträger", "type": "CH", "from": "CSM.json" },
+    "bl-chaos-space-marine": { "name": "Chaos Space Marines", "type": "INF", "from": "CSM.json" },
+    "bl-noise-marines": { "name": "Noise Marines", "type": "INF", "from": "CSM.json" },
+    "bl-havoc": { "name": "Havocs", "type": "INF", "from": "CSM.json" },
+    "bl-auserkorene": { "name": "Auserkorene", "type": "INF", "from": "CSM.json" },
+    "bl-raptor": { "name": "Raptoren", "type": "INF", "from": "CSM.json" },
+    "bl-chaos-terminator": { "name": "Chaos-Terminatoren", "type": "INF", "from": "CSM.json" },
+    "bl-chaos-rhino": { "name": "Chaos Rhino", "type": "AV", "from": "CSM.json" },
+    "bl-chaos-land-raider": { "name": "Chaos Land Raider", "type": "AV", "from": "CSM.json" },
+    "bl-chaos-predator": { "name": "Chaos Predator", "type": "AV", "from": "CSM.json" },
+    "bl-chaos-vindicator": { "name": "Chaos Vindicator", "type": "AV", "from": "CSM.json" },
+    "bl-chaos-cybot": { "name": "Chaos-Cybot", "type": "AV", "from": "CSM.json" },
+    "bl-chaos-sturmbike": { "name": "Chaos-Sturmbikes", "type": "INF", "from": "CSM.json" },
+    "bl-khorne-berserker": { "name": "Khorne Berserker", "type": "INF", "from": "CSM.json" },
+    "bl-dezimator": { "name": "Dezimator", "type": "WE", "from": "darkmechanicus.json" },
+    "bl-geisel": { "name": "Geißel", "type": "AV", "from": "darkmechanicus.json" },
+    "bl-todesrad": { "name": "Todesrad", "type": "WE", "from": "darkmechanicus.json" },
+    "bl-warhound": { "name": "Chaos-Warhound", "type": "WE", "from": "traitortitanlegions.json" },
+    "bl-hoellenklinge": { "name": "Höllenklinge Abfangjäger", "type": "AC", "from": "chaosnavy.json" },
+    "bl-hoellenklaue": { "name": "Höllenklaue-Jagdbomber", "type": "AC", "from": "chaosnavy.json" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Black Legion Core Formations",
+      "formations": ["f-bl-gefolge"]
+    },
+    {
+      "id": "elite",
+      "name": "Black Legion Elite Formations",
+      "formations": ["f-bl-auserkorene", "f-bl-chaos-terminatoren"]
+    },
+    {
+      "id": "support",
+      "name": "Black Legion Support Formations",
+      "formations": ["f-bl-raptorenkult", "f-bl-panzerkompanie", "f-bl-havocs", "f-bl-bike-kompanie"]
+    },
+    {
+      "id": "war-machines",
+      "name": "Black Legion War Engines",
+      "formations": ["f-bl-dezimator", "f-bl-warhound", "f-bl-hoellenklinge", "f-bl-hoellenklaue"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-bl-gefolge",
+      "name": "Gefolge der Black Legion",
+      "pts": 275,
+      "tags": ["bl-core"],
+      "units": [{ "unit": "bl-kriegsherr", "count": 1 }, { "unit": "bl-chaos-space-marine", "count": 8 }],
+      "upgrades": ["u-bl-transport", "u-bl-ikonentraeger", "u-bl-daeemonpakt", "u-bl-cultmarines"]
+    },
+    {
+      "id": "f-bl-auserkorene",
+      "name": "Auserkorene",
+      "pts": 150,
+      "tags": ["elite"],
+      "units": [{ "unit": "bl-auserkorene", "count": 4 }, { "unit": "bl-chaos-rhino", "count": 2 }],
+      "upgrades": ["u-bl-daeemonpakt"]
+    },
+    {
+      "id": "f-bl-chaos-terminatoren",
+      "name": "Chaos Terminators",
+      "pts": 275,
+      "tags": ["elite"],
+      "units": [{ "unit": "bl-chaos-terminator", "count": 4 }],
+      "upgrades": ["u-bl-commander", "u-bl-daeemonpakt", "u-bl-transport"]
+    },
+    {
+      "id": "f-bl-raptorenkult",
+      "name": "Raptor Cult",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "bl-raptor", "count": 4 }],
+      "upgrades": ["u-bl-daeemonpakt"]
+    },
+    {
+      "id": "f-bl-panzerkompanie",
+      "name": "Panzerkompanie",
+      "pts": 200,
+      "tags": ["support"],
+      "units": [{ "unit": "bl-chaos-predator", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-bl-havocs",
+      "name": "Havocs",
+      "pts": 225,
+      "tags": ["support"],
+      "units": [{ "unit": "bl-havoc", "count": 4 }, { "unit": "bl-chaos-rhino", "count": 2 }],
+      "upgrades": ["u-bl-daeemonpakt"]
+    },
+    {
+      "id": "f-bl-bike-kompanie",
+      "name": "Bike Company",
+      "pts": 300,
+      "tags": ["support"],
+      "units": [{ "unit": "bl-chaos-sturmbike", "count": 8 }],
+      "upgrades": ["u-bl-ikonentraeger", "u-bl-daeemonpakt"]
+    },
+    {
+      "id": "f-bl-dezimator",
+      "name": "Dezimator",
+      "pts": 225,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "bl-dezimator", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-bl-warhound",
+      "name": "Chaos Warhound Titan",
+      "pts": 275,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "bl-warhound", "count": 1 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-bl-hoellenklinge",
+      "name": "Höllenklinge Staffel",
+      "pts": 175,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "bl-hoellenklinge", "count": 3 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-bl-hoellenklaue",
+      "name": "Höllenklaue Staffel",
+      "pts": 225,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "bl-hoellenklaue", "count": 2 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-bl-commander",
+      "name": "Chaos Commander",
+      "variants": [
+        { "id": "1", "label": "Add Chaos Lord", "pts": 50, "effects": [{ "op": "add", "unit": "bl-kriegsherr", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-bl-daeemonpakt",
+      "name": "Daemonic Pact",
+      "variants": [
+        { "id": "1", "label": "Add Daemon Prince", "pts": 25, "effects": [{ "op": "add", "unit": "bl-daemonenprinz", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-bl-ikonentraeger",
+      "name": "Ikonenträger",
+      "variants": [
+        { "id": "1", "label": "Add Icon Bearer", "pts": 25, "effects": [{ "op": "add", "unit": "bl-ikonentraeger", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-bl-transport",
+      "name": "Transporter",
+      "variants": [
+        { "id": "1", "label": "Add Chaos Rhino", "pts": 10, "effects": [{ "op": "add", "unit": "bl-chaos-rhino", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-bl-cultmarines",
+      "name": "Cult Marines",
+      "variants": [
+        { "id": "1", "label": "Replace Chaos Space Marines with Noise Marines", "pts": 150, "effects": [{ "op": "replace", "from": "bl-chaos-space-marine", "to": "bl-noise-marines", "count": 4 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "elite-per-core", "from": ["tag:elite"], "forEach": ["tag:bl-core"], "max": 1 },
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:bl-core"], "max": 2 },
+    { "id": "war-machines-share", "from": ["tag:war-machines"], "maxShare": [1, 3] }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

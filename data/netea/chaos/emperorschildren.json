@@ -1,0 +1,114 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/emperorschildren",
+  "name": "Emperor's Children",
+  "faction": "Chaos Space Marines",
+  "version": "1.0.Beta",
+  "source": { "file": "Chaos/emperorschildren.json", "version": "1.0.Beta" },
+  "strategy": 4,
+  "initiative": [
+    { "formations": ["tag:core"], "value": "1+" },
+    { "formations": ["tag:support"], "value": "1+" },
+    { "formations": ["tag:elite"], "value": "1+" },
+    { "formations": ["*"], "value": "2+" }
+  ],
+  "units": {
+    "ec-kriegsherr": { "name": "Chaos Lord", "type": "CH", "from": "CSM.json" },
+    "ec-daemonenprinz": { "name": "Dämonenprinz", "type": "INF", "from": "CSM.json" },
+    "ec-ikonentraeger": { "name": "Ikonenträger", "type": "CH", "from": "CSM.json" },
+    "ec-chaos-space-marine": { "name": "Chaos Space Marines", "type": "INF", "from": "CSM.json" },
+    "ec-noise-marine": { "name": "Noise Marines", "type": "INF", "from": "CSM.json" },
+    "ec-chaos-rhino": { "name": "Chaos Rhino", "type": "AV", "from": "CSM.json" },
+    "ec-raptor": { "name": "Raptoren", "type": "INF", "from": "CSM.json" },
+    "ec-questor": { "name": "Questor", "type": "WE", "from": "darkmechanicus.json" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Emperor's Children Retinues",
+      "formations": ["f-ec-retinue"]
+    },
+    {
+      "id": "elite",
+      "name": "Emperor's Children Elite Formations",
+      "formations": ["f-ec-noise-marines"]
+    },
+    {
+      "id": "support",
+      "name": "Emperor's Children Support Formations",
+      "formations": ["f-ec-raptor-cult"]
+    },
+    {
+      "id": "war-machines",
+      "name": "Emperor's Children War Engines",
+      "formations": ["f-ec-questor"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-ec-retinue",
+      "name": "Retinue",
+      "pts": 225,
+      "tags": ["core"],
+      "units": [{ "unit": "ec-chaos-space-marine", "count": 6 }, { "unit": "ec-kriegsherr", "count": 1 }],
+      "upgrades": ["u-ec-daeemonpakt", "u-ec-transport"]
+    },
+    {
+      "id": "f-ec-noise-marines",
+      "name": "Emperor's Children Noise Marines",
+      "pts": 300,
+      "tags": ["elite"],
+      "units": [{ "unit": "ec-noise-marine", "count": 6 }],
+      "upgrades": ["u-ec-daeemonpakt", "u-ec-icon"]
+    },
+    {
+      "id": "f-ec-raptor-cult",
+      "name": "Raptor Cult",
+      "pts": 175,
+      "tags": ["support"],
+      "units": [{ "unit": "ec-raptor", "count": 4 }],
+      "upgrades": ["u-ec-daeemonpakt"]
+    },
+    {
+      "id": "f-ec-questor",
+      "name": "Questor Titan",
+      "pts": 300,
+      "tags": ["war-machines"],
+      "units": [{ "unit": "ec-questor", "count": 1 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-ec-daeemonpakt",
+      "name": "Daemonic Pact",
+      "variants": [
+        { "id": "1", "label": "Add Daemon Prince", "pts": 25, "effects": [{ "op": "add", "unit": "ec-daemonenprinz", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ec-transport",
+      "name": "Transporter",
+      "variants": [
+        { "id": "1", "label": "Add Chaos Rhino", "pts": 10, "effects": [{ "op": "add", "unit": "ec-chaos-rhino", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-ec-icon",
+      "name": "Icon Bearer",
+      "variants": [
+        { "id": "1", "label": "Add Icon Bearer", "pts": 25, "effects": [{ "op": "add", "unit": "ec-ikonentraeger", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "elite-per-core", "from": ["tag:elite"], "forEach": ["tag:core"], "max": 1 },
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 1 }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

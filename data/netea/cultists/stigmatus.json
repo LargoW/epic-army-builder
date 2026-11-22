@@ -1,0 +1,119 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/cultists/stigmatus",
+  "name": "Stigmatus Covenant",
+  "faction": "Chaos Cultists",
+  "version": "1.0",
+  "source": { "file": "Cultists/StD.json", "version": "1.0" },
+  "strategy": 2,
+  "initiative": [{ "formations": ["*"], "value": "3+" }],
+  "units": {
+    "st-demagoge": { "name": "Demagoge", "type": "INF", "from": "chaoscultists.json" },
+    "st-kultisten": { "name": "Kultisten", "type": "INF", "from": "chaoscultists.json" },
+    "st-mutanten": { "name": "Mutanten", "type": "INF", "from": "chaoscultists.json" },
+    "st-grosse-mutanten": { "name": "Große Mutanten", "type": "INF", "from": "chaoscultists.json" },
+    "st-ikonentraeger": { "name": "Ikonenträger", "type": "CH", "from": "chaoscultists.json" },
+    "st-daeemonische-ikone": { "name": "Dämonische Ikone", "type": "CH", "from": "chaoscultists.json" },
+    "st-gefallener-befehlshaber": { "name": "Gefallener Befehlshaber", "type": "INF", "from": "chaoscultists.json" },
+    "st-daeemonprinz": { "name": "Dämonenprinz", "type": "INF", "from": "CSM.json" },
+    "st-infanterie": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "st-lord-russ": { "name": "Leman Russ Kampfpanzer", "type": "AV", "from": "IG.json" },
+    "st-basilisk": { "name": "Basilisk", "type": "AV", "from": "IG.json" },
+    "st-hydra": { "name": "Hydra", "type": "AV", "from": "IG.json" },
+    "st-sentinel": { "name": "Sentinel", "type": "LV", "from": "IG.json" },
+    "st-marauder": { "name": "Marauder-Bomber (B)", "type": "AC", "from": "ImperialNavy.json" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Covens",
+      "formations": ["f-sigm-coven"]
+    },
+    {
+      "id": "support",
+      "name": "Support Covens",
+      "formations": ["f-sigm-armoured-company", "f-sigm-artillery", "f-sigm-marauder"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-sigm-coven",
+      "name": "Coven",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [{ "unit": "st-demagoge", "count": 1 }, { "unit": "st-kultisten", "count": 11 }],
+      "upgrades": ["u-sigm-daeemon-prinz", "u-sigm-daeemonpakt", "u-sigm-ikonentraeger", "u-sigm-cultists"]
+    },
+    {
+      "id": "f-sigm-armoured-company",
+      "name": "Armoured Company",
+      "pts": 400,
+      "tags": ["support"],
+      "units": [{ "unit": "st-lord-russ", "count": 6 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-sigm-artillery",
+      "name": "Artillery Battery",
+      "pts": 325,
+      "tags": ["support"],
+      "units": [{ "unit": "st-basilisk", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-sigm-marauder",
+      "name": "Marauder Squadron",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [{ "unit": "st-marauder", "count": 2 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-sigm-daeemon-prinz",
+      "name": "Daemon Prince (per allegiance)",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace Demagogue with Daemon Prince",
+          "pts": 50,
+          "effects": [{ "op": "replace", "from": "st-demagoge", "to": "st-daeemonprinz", "count": 1 }]
+        }
+      ]
+    },
+    {
+      "id": "u-sigm-daeemonpakt",
+      "name": "Daemonic Pact",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Summon Daemon Prince",
+          "pts": 25,
+          "effects": [{ "op": "add", "unit": "st-daeemonprinz", "count": 1 }]
+        }
+      ]
+    },
+    {
+      "id": "u-sigm-ikonentraeger",
+      "name": "Icon Bearer",
+      "variants": [
+        { "id": "1", "label": "Add Icon Bearer", "pts": 25, "effects": [{ "op": "add", "unit": "st-ikonentraeger", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-sigm-cultists",
+      "name": "Cultists or Mutants",
+      "variants": [
+        { "id": "1", "label": "Add Cultists", "pts": 15, "effects": [{ "op": "add", "unit": "st-kultisten", "count": 8 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

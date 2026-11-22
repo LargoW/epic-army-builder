@@ -630,6 +630,41 @@
       "faction": "Inquisition",
       "name": "Ordo Xenos",
       "version": "1.0"
+    },
+    {
+      "id": "netea/cultists/std",
+      "ruleset": "netea",
+      "faction": "Chaos Cultists",
+      "name": "Slaves to Darkness",
+      "version": "1.0.Beta-3"
+    },
+    {
+      "id": "netea/cultists/stigmatus",
+      "ruleset": "netea",
+      "faction": "Chaos Cultists",
+      "name": "Stigmatus Covenant",
+      "version": "1.0"
+    },
+    {
+      "id": "netea/chaos/blacklegion",
+      "ruleset": "netea",
+      "faction": "Chaos Space Marines",
+      "name": "Black Legion",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "netea/chaos/emperorschildren",
+      "ruleset": "netea",
+      "faction": "Chaos Space Marines",
+      "name": "Emperor's Children",
+      "version": "1.0.Beta"
+    },
+    {
+      "id": "netea/chaos/ironwarriors",
+      "ruleset": "netea",
+      "faction": "Chaos Space Marines",
+      "name": "Iron Krieger",
+      "version": "1.0.Beta-2"
     }
   ]
 }

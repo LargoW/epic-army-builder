@@ -1,0 +1,123 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/cultists/std",
+  "name": "Slaves to Darkness",
+  "faction": "Chaos Cultists",
+  "version": "1.0.Beta-3",
+  "source": { "file": "Cultists/StD.json", "version": "1.0.Beta-3" },
+  "strategy": 1,
+  "initiative": [
+    { "formations": ["tag:cs-marine"], "value": "1+" },
+    { "formations": ["*"], "value": "2+" }
+  ],
+  "units": {
+    "st-demagoge": { "name": "Demagoge", "type": "INF", "from": "chaoscultists.json" },
+    "st-kultisten": { "name": "Kultisten", "type": "INF", "from": "chaoscultists.json" },
+    "st-mutanten": { "name": "Mutanten", "type": "INF", "from": "chaoscultists.json" },
+    "st-grosse-mutanten": { "name": "Große Mutanten", "type": "INF", "from": "chaoscultists.json" },
+    "st-ikonentraeger": { "name": "Ikonenträger", "type": "CH", "from": "chaoscultists.json" },
+    "st-daeemonische-ikone": { "name": "Dämonische Ikone", "type": "CH", "from": "chaoscultists.json" },
+    "st-gefallener-befehlshaber": { "name": "Gefallener Befehlshaber", "type": "INF", "from": "chaoscultists.json" },
+    "st-daeemonprinz": { "name": "Dämonenprinz", "type": "INF", "from": "CSM.json" },
+    "st-infanterie": { "name": "Infanterie", "type": "INF", "from": "IG.json" },
+    "st-feuerunderstuetzung": { "name": "Feuerunterstützungstrupp", "type": "INF", "from": "IG.json" },
+    "st-ogryns": { "name": "Ogryns", "type": "AV", "from": "IG.json" },
+    "st-kavallerie": { "name": "Kavallerie", "type": "LV", "from": "IG.json" },
+    "st-sentinel": { "name": "Sentinel", "type": "LV", "from": "IG.json" },
+    "st-basilisk": { "name": "Basilisk", "type": "AV", "from": "IG.json" },
+    "st-chimera": { "name": "Chimäre", "type": "AV", "from": "IG.json" },
+    "st-greif": { "name": "Greif", "type": "AV", "from": "IG.json" },
+    "st-hoellenklinge": { "name": "Höllenklinge Abfangjäger", "type": "AC", "from": "chaosnavy.json" },
+    "st-hoellenklaue": { "name": "Höllenklaue-Jagdbomber", "type": "AC", "from": "chaosnavy.json" },
+    "st-chaos-space-marine": { "name": "Chaos Space Marines", "type": "INF", "from": "CSM.json" },
+    "st-chaos-rhino": { "name": "Chaos Rhino", "type": "AV", "from": "CSM.json" },
+    "st-daeomonische-sturmmaschine": { "name": "Dämonische Sturmmaschine", "type": "AV", "from": "darkmechanicus.json" },
+    "st-herr-der-schlachten": { "name": "Herr der Schlachten", "type": "WE", "from": "darkmechanicus.json" },
+    "st-silberturm": { "name": "Silberturm", "type": "AV", "from": "darkmechanicus.json" },
+    "st-warppalast": { "name": "Warp-Palast", "type": "AV", "from": "darkmechanicus.json" },
+    "st-geissel": { "name": "Geißel", "type": "AV", "from": "darkmechanicus.json" },
+    "st-dezimator": { "name": "Dezimator", "type": "WE", "from": "darkmechanicus.json" },
+    "st-todesrad": { "name": "Todesrad", "type": "WE", "from": "darkmechanicus.json" },
+    "st-hoellenritter": { "name": "Höllenritter", "type": "AV", "from": "darkmechanicus.json" },
+    "st-doomwing": { "name": "Doomwing", "type": "AC", "from": "chaosnavy.json" },
+    "st-firelord": { "name": "Firelord", "type": "AC", "from": "chaosnavy.json" },
+    "st-seuchenwandler": { "name": "Seuchenwandler des Nurgle", "type": "INF", "from": "chaoscultists.json" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Covens",
+      "formations": ["f-st-coven"]
+    },
+    {
+      "id": "support",
+      "name": "Support Covens",
+      "formations": ["f-st-chaos-space-marine", "f-st-khorne-assault-engines", "f-st-doomwing", "f-st-firelord"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-st-coven",
+      "name": "Coven",
+      "pts": 200,
+      "tags": ["core"],
+      "units": [{ "unit": "st-demagoge", "count": 1 }, { "unit": "st-kultisten", "count": 11 }],
+      "upgrades": ["u-st-daeemonpakt"]
+    },
+    {
+      "id": "f-st-chaos-space-marine",
+      "name": "Chaos Space Marines",
+      "pts": 250,
+      "tags": ["cs-marine"],
+      "units": [{ "unit": "st-chaos-space-marine", "count": 6 }, { "unit": "st-chaos-rhino", "count": 3 }],
+      "upgrades": ["u-st-daeemonpakt"]
+    },
+    {
+      "id": "f-st-khorne-assault-engines",
+      "name": "Khorne Daemonic Assault Engines",
+      "pts": 275,
+      "tags": ["support"],
+      "units": [{ "unit": "st-daeomonische-sturmmaschine", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-st-doomwing",
+      "name": "Tzeentch Doomwings",
+      "pts": 150,
+      "tags": ["support"],
+      "units": [{ "unit": "st-doomwing", "count": 3 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-st-firelord",
+      "name": "Tzeentch Firelords",
+      "pts": 250,
+      "tags": ["support"],
+      "units": [{ "unit": "st-firelord", "count": 2 }],
+      "upgrades": []
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-st-daeemonpakt",
+      "name": "Daemon Prince",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Replace Demagogue with Daemon Prince",
+          "pts": 50,
+          "effects": [{ "op": "replace", "from": "st-demagoge", "to": "st-daeemonprinz", "count": 1 }]
+        }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "support-per-core", "from": ["tag:support"], "forEach": ["tag:core"], "max": 1 }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}

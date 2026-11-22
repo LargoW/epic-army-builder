@@ -1,0 +1,91 @@
+{
+  "schema": 0,
+  "ruleset": "netea",
+  "lang": "en",
+  "id": "netea/chaos/ironwarriors",
+  "name": "Iron Krieger",
+  "faction": "Chaos Space Marines",
+  "version": "1.0.Beta-2",
+  "source": { "file": "Chaos/ironwarriors.json", "version": "1.0.Beta-2" },
+  "strategy": 4,
+  "initiative": [
+    { "formations": ["*"], "value": "1+" }
+  ],
+  "units": {
+    "iw-kriegsherr": { "name": "Chaos Lord", "type": "CH", "from": "CSM.json" },
+    "iw-daemonenprinz": { "name": "Dämonenprinz", "type": "INF", "from": "CSM.json" },
+    "iw-ikonentraeger": { "name": "Ikonenträger", "type": "CH", "from": "CSM.json" },
+    "iw-chaos-space-marine": { "name": "Chaos Space Marines", "type": "INF", "from": "CSM.json" },
+    "iw-havoc": { "name": "Havocs", "type": "INF", "from": "CSM.json" },
+    "iw-basilisk": { "name": "Basilisk", "type": "AV", "from": "IG.json" },
+    "iw-chaos-terminator": { "name": "Chaos-Terminatoren", "type": "INF", "from": "CSM.json" },
+    "iw-chaos-land-raider": { "name": "Chaos Land Raider", "type": "AV", "from": "CSM.json" }
+  },
+  "sections": [
+    {
+      "id": "core",
+      "name": "Iron Warrior Core Formations",
+      "formations": ["f-iw-retinue"]
+    },
+    {
+      "id": "siege-support",
+      "name": "Iron Warrior Siege Support Formations",
+      "formations": ["f-iw-artillery"]
+    },
+    {
+      "id": "siege-assault",
+      "name": "Iron Warrior Siege Assault Formations",
+      "formations": ["f-iw-chaos-terminatoren"]
+    }
+  ],
+  "formations": [
+    {
+      "id": "f-iw-retinue",
+      "name": "Retinue",
+      "pts": 300,
+      "tags": ["core"],
+      "units": [{ "unit": "iw-chaos-space-marine", "count": 6 }, { "unit": "iw-havoc", "count": 2 }, { "unit": "iw-kriegsherr", "count": 1 }],
+      "upgrades": ["u-iw-daeemonpakt"]
+    },
+    {
+      "id": "f-iw-artillery",
+      "name": "Artillery Battery",
+      "pts": 325,
+      "tags": ["siege-support"],
+      "units": [{ "unit": "iw-basilisk", "count": 4 }],
+      "upgrades": []
+    },
+    {
+      "id": "f-iw-chaos-terminatoren",
+      "name": "Chaos Terminators",
+      "pts": 275,
+      "tags": ["siege-assault"],
+      "units": [{ "unit": "iw-chaos-terminator", "count": 4 }],
+      "upgrades": ["u-iw-daeemonpakt", "u-iw-land-raider"]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "u-iw-daeemonpakt",
+      "name": "Daemon Prince",
+      "variants": [
+        { "id": "1", "label": "Add Daemon Prince", "pts": 50, "effects": [{ "op": "add", "unit": "iw-daemonenprinz", "count": 1 }] }
+      ]
+    },
+    {
+      "id": "u-iw-land-raider",
+      "name": "Land Raiders",
+      "variants": [
+        { "id": "1", "label": "Add Chaos Land Raider", "pts": 75, "effects": [{ "op": "add", "unit": "iw-chaos-land-raider", "count": 1 }] }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [
+    { "id": "siege-support-per-core", "from": ["tag:siege-support"], "forEach": ["tag:core"], "max": 2 },
+    { "id": "siege-assault-per-core", "from": ["tag:siege-assault"], "forEach": ["tag:core"], "max": 1 }
+  ],
+  "upgradeConstraints": [
+    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+  ]
+}
