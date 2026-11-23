@@ -295,7 +295,7 @@ function choiceControls(entry, def) {
 }
 
 function upgradeControls(entry, def) {
-    if (!def.upgrades.length) return "";
+if (!def.upgrades || !def.upgrades.length) return "";
     const canTransport = (data.transport || []).find((tr) => matches(tr.appliesTo, def));
     const mult = (sizeOf(def, entry) || {
         mult: 1

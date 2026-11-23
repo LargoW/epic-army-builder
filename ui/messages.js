@@ -277,7 +277,8 @@ export function messageFor(v, names = {}, lang = "de") {
   const unit = (id) => (names.unit ? names.unit(id) : id);
   const dict = violationTexts[lang] || violationTexts["de"];
 
-  if (v.code === "upgrade-limit") {
+   if (v.code === "upgrade-limit") {
+    const maxText = p.max ? ` ${p.max}` : "";
     if (lang === "en") {
       return p.id === "company-max-three"
         ? `Too many upgrades: ${p.count} (max 3 per company).`
@@ -285,7 +286,7 @@ export function messageFor(v, names = {}, lang = "de") {
           ? `Too many upgrades: ${p.count} (max 3 per formation).`
           : p.id === "company-upgrade-limit"
           ? `Too many company upgrades: ${p.count} (max 2 per company).`
-          : `Upgrades can only be chosen once per formation.`;
+          : `Too many upgrades: ${p.count} (max${maxText} allowed).`;
     } else {
       return p.id === "company-max-three"
         ? `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Kompanie).`
@@ -293,7 +294,7 @@ export function messageFor(v, names = {}, lang = "de") {
           ? `Zu viele Aufwertungen: ${p.count} (höchstens 3 pro Verband).`
           : p.id === "company-upgrade-limit"
           ? `Zu viele Kompanie-Aufwertungen: ${p.count} (höchstens 2 pro Kompanie).`
-          : `Aufwertungen dürfen pro Verband nur einmal gewählt werden.`;
+          : `Zu viele Aufwertungen: ${p.count} (höchstens${maxText} pro Verband).`;
     }
   }
 

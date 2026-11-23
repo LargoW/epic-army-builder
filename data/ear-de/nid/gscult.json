@@ -1,229 +1,588 @@
 {
-  "schema": 0,
-  "ruleset": "ear-de",
-  "lang": "de",
-  "id": "ear-de/nid/gscult",
-  "name": "Kult der Rostklaue",
-  "faction": "Tyraniden",
-  "version": "1.0.beta-3",
-  "source": { "file": "lists_de/NID/gscult.json", "version": "1.0.beta-3", "commit": null },
-  "strategy": 2,
-  "initiative": [{ "formations": ["*"], "value": "2+" }],
-  "units": {
-    "cos-symbiontenpatriarch": { "name": "Symbiontenpatriarch", "from": "GS2.json", "type": "CH" },
-    "cos-symbiontenmagus": { "name": "Symbiontenmagus", "from": "GS2.json", "type": "CH" },
-    "cos-symbiontenprimus": { "name": "Symbiontenprimus", "from": "GS2.json", "type": "CH" },
-    "cos-hybridikonwart": { "name": "Hybrid-Ikonwart", "from": "GS2.json", "type": "CH" },
-    "cos-akolythenhybriden": { "name": "Akolythenhybriden", "from": "GS2.json", "type": "INF" },
-    "cos-symbionten": { "name": "Symbionten", "from": "GS2.json", "type": "INF" },
-    "cos-aberranten": { "name": "Aberranten", "from": "GS2.json", "type": "INF" },
-    "cos-metamorphhybriden": { "name": "Metamorph-Hybriden", "from": "GS2.json", "type": "INF" },
-    "cos-neophyten": { "name": "Neophyten", "from": "GS2.json", "type": "INF" },
-    "cos-neophyten-ausreiter": { "name": "Neophyten-Ausreiter", "from": "GS2.json", "type": "INF" },
-    "cos-neophyten-feuerunterstuetzung": { "name": "Neophyten-Feuerunterstützung", "from": "GS2.json", "type": "INF" },
-    "cos-ausreiterquadbike": { "name": "Ausreiter-Quadbike", "from": "GS2.json", "type": "LV" },
-    "cos-bewaffneter-geländewagen": { "name": "Bewaffneter Geländewagen", "from": "GS2.json", "type": "LV" },
-    "cos-goliathtruck": { "name": "Goliath-Truck", "from": "GS2.json", "type": "AV" },
-    "cos-goliathschuerfer": { "name": "Goliath-Schürfer", "from": "GS2.json", "type": "AV" },
-    "cos-ridgerunner": { "name": "Ridgerunner", "from": "GS2.json", "type": "LV" },
-    "cos-chimare": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
-    "cos-basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
-    "cos-hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
-    "cos-hollenhund": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
-    "cos-lermanusskampfpanzer": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },
-    "cos-sentinel": { "name": "Sentinel", "from": "IG.json", "type": "LV" },
-    "cos-donnerkeiljaeger": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AC" }
-  },
-  "sections": [
-    {
-      "id": "core",
-      "name": "Akolythen-Verbände",
-      "formations": ["cos-brutkult", "cos-akolythenkult"]
+    "schema": 0,
+    "ruleset": "ear-de",
+    "lang": "de",
+    "id": "ear-de/nid/gscult",
+    "name": "Kult der Rostklaue",
+    "faction": "Tyraniden",
+    "version": "1.0.beta-3",
+    "source": {
+        "file": "lists_de/NID/gscult.json",
+        "version": "1.0.beta-3",
+        "commit": null
     },
-    {
-      "id": "elite",
-      "name": "Elite-Verbände",
-      "formations": ["cos-atalan-schakale", "cos-symbiontenschwarm", "cos-sturmangriffs-konklave", "cos-ridgerunner-staffel"]
+    "strategy": 2,
+    "initiative": [
+        {
+            "formations": [
+                "*"
+            ],
+            "value": "2+"
+        }
+    ],
+    "units": {
+        "cos-symbiontenpatriarch": {
+            "name": "Symbiontenpatriarch",
+            "from": "GS2.json",
+            "type": "CH"
+        },
+        "cos-symbiontenmagus": {
+            "name": "Symbiontenmagus",
+            "from": "GS2.json",
+            "type": "CH"
+        },
+        "cos-symbiontenprimus": {
+            "name": "Symbiontenprimus",
+            "from": "GS2.json",
+            "type": "CH"
+        },
+        "cos-hybridikonwart": {
+            "name": "Hybrid-Ikonwart",
+            "from": "GS2.json",
+            "type": "CH"
+        },
+        "cos-akolythenhybriden": {
+            "name": "Akolythenhybriden",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-symbionten": {
+            "name": "Symbionten",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-aberranten": {
+            "name": "Aberranten",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-metamorphhybriden": {
+            "name": "Metamorph-Hybriden",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-neophyten": {
+            "name": "Neophyten",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-neophyten-ausreiter": {
+            "name": "Neophyten-Ausreiter",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-neophyten-feuerunterstuetzung": {
+            "name": "Neophyten-Feuerunterstützung",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-ausreiterquadbike": {
+            "name": "Ausreiter-Quadbike",
+            "from": "GS2.json",
+            "type": "LV"
+        },
+        "cos-bewaffneter-geländewagen": {
+            "name": "Bewaffneter Geländewagen",
+            "from": "GS2.json",
+            "type": "LV"
+        },
+        "cos-goliathtruck": {
+            "name": "Goliath-Truck",
+            "from": "GS2.json",
+            "type": "AV"
+        },
+        "cos-goliathschuerfer": {
+            "name": "Goliath-Schürfer",
+            "from": "GS2.json",
+            "type": "AV"
+        },
+        "cos-ridgerunner": {
+            "name": "Ridgerunner",
+            "from": "GS2.json",
+            "type": "LV"
+        },
+        "cos-chimare": {
+            "name": "Chimäre",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "cos-basilisk": {
+            "name": "Basilisk",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "cos-hydra": {
+            "name": "Hydra",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "cos-hollenhund": {
+            "name": "Höllenhund",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "cos-lermanusskampfpanzer": {
+            "name": "Leman Russ Kampfpanzer",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "cos-sentinel": {
+            "name": "Sentinel",
+            "from": "IG.json",
+            "type": "LV"
+        },
+        "cos-donnerkeiljaeger": {
+            "name": "Donnerkeil-Jäger",
+            "from": "ImperialNavy.json",
+            "type": "AC"
+        }
     },
-    {
-      "id": "support",
-      "name": "Unterstützungsformationen",
-      "formations": [
-        "cos-mechanisierter-neophytenzug",
-        "cos-neophytenkompanie",
-        "cos-sentinel-staffel",
-        "cos-flakbatterie",
-        "cos-artilleriebatterie",
-        "cos-lermanuss-staffel",
-        "cos-donnerkeil-staffel"
-      ]
-    }
-  ],
-  "formations": [
-    {
-      "id": "cos-brutkult",
-      "name": "1 Brutkult",
-      "pts": 275,
-      "tags": ["core"],
-      "units": [{ "unit": "cos-symbiontenpatriarch", "count": 1 }, { "unit": "cos-metamorphhybriden", "count": 8 }],
-      "upgrades": ["cos-upgrade-symbionten", "cos-upgrade-bewaffneter-geländewagen"]
-    },
-    {
-      "id": "cos-akolythenkult",
-      "name": "Akolythenkult",
-      "pts": 175,
-      "tags": ["core"],
-      "units": [{ "unit": "cos-metamorphhybriden", "count": 1 }, { "unit": "cos-hybridikonwart", "count": 1 }, { "unit": "cos-akolythenhybriden", "count": 7 }],
-      "upgrades": ["cos-upgrade-aberranten", "cos-upgrade-akolythenhybriden", "cos-upgrade-konklavenfuehrer"]
-    },
-    {
-      "id": "cos-atalan-schakale",
-      "name": "Atalan-Schakale",
-      "pts": 225,
-      "tags": ["elite"],
-      "units": [{ "unit": "cos-hybridikonwart", "count": 1 }, { "unit": "cos-neophyten-ausreiter", "count": 10 }],
-      "upgrades": ["cos-upgrade-quadbikes", "cos-upgrade-bewaffneter-geländewagen", "cos-upgrade-konklavenfuehrer"]
-    },
-    {
-      "id": "cos-symbiontenschwarm",
-      "name": "Symbiontenschwarm",
-      "pts": 175,
-      "tags": ["elite"],
-      "units": [{ "unit": "cos-symbiontenpatriarch", "count": 1 }, { "unit": "cos-symbionten", "count": 6 }],
-      "upgrades": ["cos-upgrade-symbionten"]
-    },
-    {
-      "id": "cos-sturmangriffs-konklave",
-      "name": "Sturmangriffs-Konklave",
-      "pts": 275,
-      "tags": ["elite"],
-      "units": [
-        { "unit": "cos-hybridikonwart", "count": 1 },
-        { "unit": "cos-aberranten", "count": 4 },
-        { "oneOf": ["cos-goliathtruck", "cos-goliathschuerfer"], "count": 4, "mixed": true }
-      ],
-      "upgrades": ["cos-upgrade-aberranten"]
-    },
-    {
-      "id": "cos-ridgerunner-staffel",
-      "name": "Ridgerunner-Staffel",
-      "pts": 200,
-      "tags": ["elite"],
-      "units": [{ "unit": "cos-ridgerunner", "count": 6 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-mechanisierter-neophytenzug",
-      "name": "Mechanisierter Neophytenzug",
-      "pts": 200,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-hybridikonwart", "count": 1 }, { "unit": "cos-neophyten", "count": 6 }, { "unit": "cos-chimare", "count": 3 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-neophytenkompanie",
-      "name": "Neophytenkompanie",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-hybridikonwart", "count": 1 }, { "unit": "cos-neophyten", "count": 13 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-sentinel-staffel",
-      "name": "Sentinel-Staffel",
-      "pts": 100,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-sentinel", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-flakbatterie",
-      "name": "Flakbatterie",
-      "pts": 150,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-hydra", "count": 3 }],
-      "upgrades": ["cos-upgrade-flak"]
-    },
-    {
-      "id": "cos-artilleriebatterie",
-      "name": "Artilleriebatterie",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-basilisk", "count": 3 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-lermanuss-staffel",
-      "name": "Leman-Russ-Staffel",
-      "pts": 275,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-lermanusskampfpanzer", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "cos-donnerkeil-staffel",
-      "name": "Donnerkeil-Jäger",
-      "pts": 175,
-      "tags": ["support"],
-      "units": [{ "unit": "cos-donnerkeiljaeger", "count": 2 }],
-      "upgrades": []
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "cos-upgrade-aberranten",
-      "name": "Aberranten",
-      "variants": [
-        { "id": "1", "label": "Ersetze bis zu zwei Akolythenhybriden durch Aberranten", "pts": 30, "effects": [{ "op": "replace", "from": "cos-akolythenhybriden", "to": "cos-aberranten", "count": 2 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-akolythenhybriden",
-      "name": "Akolythenhybriden",
-      "variants": [
-        { "id": "1", "label": "Füge bis zu vier Akolythenhybriden hinzu", "pts": 60, "effects": [{ "op": "add", "unit": "cos-akolythenhybriden", "count": 4 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-konklavenfuehrer",
-      "name": "Konklaven-Anführer",
-      "variants": [
-        { "id": "1", "label": "Ersetze einen Hybrid-Ikonwart durch einen Symbiontenprimus", "pts": 25, "effects": [{ "op": "replace", "from": "cos-hybridikonwart", "to": "cos-symbiontenprimus", "count": 1 }] },
-        { "id": "2", "label": "Ersetze einen Hybrid-Ikonwart durch einen Symbiontenmagus", "pts": 25, "effects": [{ "op": "replace", "from": "cos-hybridikonwart", "to": "cos-symbiontenmagus", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-flak",
-      "name": "Flak",
-      "variants": [
-        { "id": "1", "label": "Füge eine Hydra hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "cos-hydra", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-symbionten",
-      "name": "Symbionten",
-      "variants": [
-        { "id": "1", "label": "Füge bis zu drei Symbionten hinzu", "pts": 75, "effects": [{ "op": "add", "unit": "cos-symbionten", "count": 3 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-quadbikes",
-      "name": "Quadbikes",
-      "variants": [
-        { "id": "1", "label": "Ersetze bis zu fünf Neophyten-Ausreiter durch Ausreiter-Quadbikes", "pts": 0, "effects": [{ "op": "replace", "from": "cos-neophyten-ausreiter", "to": "cos-ausreiterquadbike", "count": 5 }] }
-      ]
-    },
-    {
-      "id": "cos-upgrade-bewaffneter-geländewagen",
-      "name": "Bewaffnete Geländewagen",
-      "variants": [
-        { "id": "1", "label": "Füge bis zu zwei Bewaffnete Geländewagen hinzu", "pts": 40, "effects": [{ "op": "add", "unit": "cos-bewaffneter-geländewagen", "count": 2 }] }
-      ]
-    }
-  ],
-  "transport": [],
-  "formationConstraints": [],
-  "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
-  ]
+    "sections": [
+        {
+            "id": "core",
+            "name": "Akolythen-Verbände",
+            "formations": [
+                "cos-brutkult",
+                "cos-akolythenkult"
+            ]
+        },
+        {
+            "id": "elite",
+            "name": "Elite-Verbände",
+            "formations": [
+                "cos-atalan-schakale",
+                "cos-symbiontenschwarm",
+                "cos-sturmangriffs-konklave",
+                "cos-ridgerunner-staffel"
+            ]
+        },
+        {
+            "id": "support",
+            "name": "Unterstützungsformationen",
+            "formations": [
+                "cos-mechanisierter-neophytenzug",
+                "cos-neophytenkompanie",
+                "cos-sentinel-staffel",
+                "cos-flakbatterie",
+                "cos-artilleriebatterie",
+                "cos-lermanuss-staffel",
+                "cos-donnerkeil-staffel"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "id": "cos-brutkult",
+            "name": "1 Brutkult",
+            "pts": 275,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "cos-symbiontenpatriarch",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-metamorphhybriden",
+                    "count": 8
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-symbionten",
+                "cos-upgrade-bewaffneter-geländewagen"
+            ]
+        },
+        {
+            "id": "cos-akolythenkult",
+            "name": "Akolythenkult",
+            "pts": 175,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "cos-metamorphhybriden",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-hybridikonwart",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-akolythenhybriden",
+                    "count": 7
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-aberranten",
+                "cos-upgrade-akolythenhybriden",
+                "cos-upgrade-konklavenfuehrer"
+            ]
+        },
+        {
+            "id": "cos-atalan-schakale",
+            "name": "Atalan-Schakale",
+            "pts": 225,
+            "tags": [
+                "elite"
+            ],
+            "units": [
+                {
+                    "unit": "cos-hybridikonwart",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-neophyten-ausreiter",
+                    "count": 10
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-quadbikes",
+                "cos-upgrade-bewaffneter-geländewagen",
+                "cos-upgrade-konklavenfuehrer"
+            ]
+        },
+        {
+            "id": "cos-symbiontenschwarm",
+            "name": "Symbiontenschwarm",
+            "pts": 175,
+            "tags": [
+                "elite"
+            ],
+            "units": [
+                {
+                    "unit": "cos-symbiontenpatriarch",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-symbionten",
+                    "count": 6
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-symbionten"
+            ]
+        },
+        {
+            "id": "cos-sturmangriffs-konklave",
+            "name": "Sturmangriffs-Konklave",
+            "pts": 275,
+            "tags": [
+                "elite"
+            ],
+            "units": [
+                {
+                    "unit": "cos-hybridikonwart",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-aberranten",
+                    "count": 4
+                },
+                {
+                    "oneOf": [
+                        "cos-goliathtruck",
+                        "cos-goliathschuerfer"
+                    ],
+                    "count": 4,
+                    "mixed": true
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-aberranten"
+            ]
+        },
+        {
+            "id": "cos-ridgerunner-staffel",
+            "name": "Ridgerunner-Staffel",
+            "pts": 200,
+            "tags": [
+                "elite"
+            ],
+            "units": [
+                {
+                    "unit": "cos-ridgerunner",
+                    "count": 6
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-mechanisierter-neophytenzug",
+            "name": "Mechanisierter Neophytenzug",
+            "pts": 200,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-hybridikonwart",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-neophyten",
+                    "count": 6
+                },
+                {
+                    "unit": "cos-chimare",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-neophytenkompanie",
+            "name": "Neophytenkompanie",
+            "pts": 250,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-hybridikonwart",
+                    "count": 1
+                },
+                {
+                    "unit": "cos-neophyten",
+                    "count": 13
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-sentinel-staffel",
+            "name": "Sentinel-Staffel",
+            "pts": 100,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-sentinel",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-flakbatterie",
+            "name": "Flakbatterie",
+            "pts": 150,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-hydra",
+                    "count": 3
+                }
+            ],
+            "upgrades": [
+                "cos-upgrade-flak"
+            ]
+        },
+        {
+            "id": "cos-artilleriebatterie",
+            "name": "Artilleriebatterie",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-basilisk",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-lermanuss-staffel",
+            "name": "Leman-Russ-Staffel",
+            "pts": 275,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-lermanusskampfpanzer",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "cos-donnerkeil-staffel",
+            "name": "Donnerkeil-Jäger",
+            "pts": 175,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "cos-donnerkeiljaeger",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "cos-upgrade-aberranten",
+            "name": "Aberranten",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze bis zu zwei Akolythenhybriden durch Aberranten",
+                    "pts": 30,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "cos-akolythenhybriden",
+                            "to": "cos-aberranten",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-akolythenhybriden",
+            "name": "Akolythenhybriden",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu vier Akolythenhybriden hinzu",
+                    "pts": 60,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-akolythenhybriden",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-konklavenfuehrer",
+            "name": "Konklaven-Anführer",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze einen Hybrid-Ikonwart durch einen Symbiontenprimus",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "cos-hybridikonwart",
+                            "to": "cos-symbiontenprimus",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Ersetze einen Hybrid-Ikonwart durch einen Symbiontenmagus",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "cos-hybridikonwart",
+                            "to": "cos-symbiontenmagus",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-flak",
+            "name": "Flak",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge eine Hydra hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-hydra",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-symbionten",
+            "name": "Symbionten",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu drei Symbionten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-symbionten",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-quadbikes",
+            "name": "Quadbikes",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze bis zu fünf Neophyten-Ausreiter durch Ausreiter-Quadbikes",
+                    "pts": 0,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "cos-neophyten-ausreiter",
+                            "to": "cos-ausreiterquadbike",
+                            "count": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-bewaffneter-geländewagen",
+            "name": "Bewaffnete Geländewagen",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu zwei Bewaffnete Geländewagen hinzu",
+                    "pts": 40,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-bewaffneter-geländewagen",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [],
+    "formationConstraints": [],
+    "upgradeConstraints": [
+        {
+            "id": "once-per-formation",
+            "from": [
+                "*"
+            ],
+            "max": 1,
+            "perUpgrade": true,
+            "perFormation": true
+        }
+    ]
 }

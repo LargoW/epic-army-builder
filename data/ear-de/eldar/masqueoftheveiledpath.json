@@ -1,372 +1,779 @@
 {
-  "schema": 0,
-  "ruleset": "ear-de",
-  "lang": "de",
-  "id": "ear-de/eldar/masqueoftheveiledpath",
-  "name": "Weltenschiff Lugganath",
-  "faction": "Eldar / Harlekine",
-  "version": "0.6.2",
-  "source": { "file": "lists_de/EL/masqueoftheveiledpath.json", "version": "0.6.2", "commit": null },
-  "strategy": 4,
-  "initiative": [
-    {
-      "formations": [
-        "mas-avatar",
-        "mas-berittter-aspektkriegertrupp",
-        "mas-harlekin-trupp",
-        "mas-purpurgeschwader",
-        "mas-skathach-phantomritter"
-      ],
-      "value": "1+"
+    "schema": 0,
+    "ruleset": "ear-de",
+    "lang": "de",
+    "id": "ear-de/eldar/masqueoftheveiledpath",
+    "name": "Weltenschiff Lugganath",
+    "faction": "Eldar / Harlekine",
+    "version": "0.6.2",
+    "source": {
+        "file": "lists_de/EL/masqueoftheveiledpath.json",
+        "version": "0.6.2",
+        "commit": null
     },
-    { "formations": ["*"], "value": "2+" }
-  ],
-  "units": {
-    "mas-avatar": { "name": "Avatar des Khaine", "from": "EL.json", "type": "WE" },
-    "mas-geisterseher": { "name": "Geisterseher", "from": "EL.json", "type": "CH" },
-    "mas-eldar-autarch": { "name": "Eldar-Autarch", "from": "EL.json", "type": "CH" },
-    "mas-eldar-exarch": { "name": "Eldar-Exarch", "from": "EL.json", "type": "CH" },
-    "mas-eldar-runenprophet": { "name": "Eldar-Runenprophet", "from": "EL.json", "type": "INF" },
-    "mas-gardisten": { "name": "Eldar-Gardisten", "from": "EL.json", "type": "INF" },
-    "mas-eldar-jetbikes": { "name": "Eldar-Jetbikes", "from": "EL.json", "type": "INF" },
-    "mas-viper": { "name": "Viper", "from": "EL.json", "type": "LV" },
-    "mas-asuryans-jager": { "name": "Asuryans Jäger", "from": "EL.json", "type": "INF" },
-    "mas-feuerdrachen": { "name": "Feuerdrachen", "from": "EL.json", "type": "INF" },
-    "mas-schwarze-khaindar": { "name": "Schwarze Khaindar", "from": "EL.json", "type": "INF" },
-    "mas-banshees": { "name": "Banshees", "from": "EL.json", "type": "INF" },
-    "mas-skorpionkrieger": { "name": "Skorpionkrieger", "from": "EL.json", "type": "INF" },
-    "mas-phantom-schnitter": { "name": "Phantom-Schnitter", "from": "EL.json", "type": "INF" },
-    "mas-korsaren-geisterlaeufer": { "name": "Korsaren-Geisterläufer", "from": "EL.json", "type": "INF" },
-    "mas-korsaren-wespe": { "name": "Korsaren-Wespe", "from": "EL.json", "type": "LV" },
-    "mas-schattenviper": { "name": "Schattenviper", "from": "EL.json", "type": "LV" },
-    "mas-wellenschlange": { "name": "Wellenschlange", "from": "EL.json", "type": "AV" },
-    "mas-illum-zar": { "name": "Illum Zar", "from": "EL.json", "type": "AV" },
-    "mas-falcon": { "name": "Falcon", "from": "EL.json", "type": "AV" },
-    "mas-feuersturm": { "name": "Feuersturm", "from": "EL.json", "type": "AV" },
-    "mas-kobra": { "name": "Kobra", "from": "EL.json", "type": "WE" },
-    "mas-sturmserpent": { "name": "Sturmserpent", "from": "EL.json", "type": "WE" },
-    "mas-skorpion": { "name": "Skorpion", "from": "EL.json", "type": "WE" },
-    "mas-skathach-phantomritter": { "name": "Skathach-Phantomritter", "from": "EL.json", "type": "H-AV" },
-    "mas-harlekin-avatar": { "name": "Harlekin-Avatar", "from": "HQ.json", "type": "CH" },
-    "mas-schattenseher": { "name": "Schattenseher", "from": "HQ.json", "type": "CH" },
-    "mas-meistermime": { "name": "Meistermime", "from": "HQ.json", "type": "CH" },
-    "mas-solitar": { "name": "Solitär", "from": "HQ.json", "type": "CH" },
-    "mas-mimen": { "name": "Mimen", "from": "HQ.json", "type": "INF" },
-    "mas-todesnarren": { "name": "Todesnarren", "from": "HQ.json", "type": "INF" },
-    "mas-harlekin-trupp": { "name": "Harlekin-Trupp", "from": "HQ.json", "type": "INF" },
-    "mas-skyweaver-jetbikes": { "name": "Skyweaver-Jetbikes", "from": "HQ.json", "type": "INF" },
-    "mas-starweaver": { "name": "Starweaver", "from": "HQ.json", "type": "LV" },
-    "mas-voidweaver": { "name": "Voidweaver", "from": "HQ.json", "type": "LV" },
-    "mas-nachtschatten-abfangjager": { "name": "Nachtschatten-Abfangjäger", "from": "eldarNavy.json", "type": "AC" },
-    "mas-hemlock-phantomjager": { "name": "Hemlock-Phantomjäger", "from": "eldarNavy.json", "type": "AC" },
-    "mas-korsaren-vampirejager": { "name": "Korsaren-Vampire-Jäger", "from": "eldarNavy.json", "type": "AC/WE" },
-    "mas-phantomschiff": { "name": "Phantomschiff", "from": "eldarNavy.json", "type": "SC" },
-    "mas-drachschiff": { "name": "Drachenschiff", "from": "eldarNavy.json", "type": "SC" }
-  },
-  "sections": [
-    {
-      "id": "special",
-      "name": "Spezialregeln des Weltenschiffs Lugganath",
-      "formations": ["mas-avatar", "mas-netzportal"]
-    },
-    {
-      "id": "war-machines",
-      "name": "Lugganath-Kriegsscharn und Phantomkriegsscharn",
-      "description": "Für jede Kriegsschar von Lugganath darf bis zu eine Phantomkriegsschar von Lugganath gewählt werden.",
-      "formations": ["mas-kriegsschar", "mas-phantomkriegsschar"]
-    },
-    {
-      "id": "support",
-      "name": "Lugganath-Trupps",
-      "description": "Für jede Kriegsschar oder Phantomkriegsschar von Lugganath darf ein Lugganath-Trupp gewählt werden.",
-      "formations": [
-        "mas-korsaren-aufklaerer",
-        "mas-berittter-aspektkriegertrupp",
-        "mas-illum-zar-trupp",
-        "mas-schwerter-vaul",
-        "mas-kriegsmaschinen-vaul"
-      ]
-    },
-    {
-      "id": "saedah",
-      "name": "Saedahs der Maske des Verhüllten Pfads",
-      "description": "Für jede Kriegsschar oder Phantomkriegsschar aus Lugganath darf eine Saedath des Verhüllten Pfads gewählt werden.",
-      "formations": [
-        "mas-cegorachs-entkommen",
-        "mas-schuppenkleid",
-        "mas-jagd-des-verschlingers",
-        "mas-cegorachs-rache",
-        "mas-festmahl-des-verschlingers",
-        "mas-ynneads-traum"
-      ]
-    },
-    {
-      "id": "fleet",
-      "name": "Lugganath-Flugzeuge, Raumschiffe und Titanen",
-      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
-      "formations": [
-        "mas-skathach-phantomritter",
-        "mas-purpurgeschwader",
-        "mas-hemlock-geschwader",
-        "mas-korsaren-vampirejager",
-        "mas-raumschiff"
-      ]
-    }
-  ],
-  "formations": [
-    {
-      "id": "mas-avatar",
-      "name": "0–1 Avatar",
-      "pts": 50,
-      "tags": ["special"],
-      "units": [{ "unit": "mas-avatar", "count": 1 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-netzportal",
-      "name": "1 Netzportal",
-      "pts": 0,
-      "tags": ["special"],
-      "units": [],
-      "upgrades": []
-    },
-    {
-      "id": "mas-kriegsschar",
-      "name": "Kriegsschar von Lugganath",
-      "pts": 250,
-      "tags": ["war-machines"],
-      "units": [
-        { "unit": "mas-eldar-runenprophet", "count": 1 },
-        { "unit": "mas-gardisten", "count": 4 },
-        { "unit": "mas-schattenviper", "count": 5 }
-      ],
-      "upgrades": ["mas-upgrade-eldar-autarch"]
-    },
-    {
-      "id": "mas-phantomkriegsschar",
-      "name": "Phantomkriegsschar von Lugganath",
-      "pts": 375,
-      "tags": ["war-machines"],
-      "units": [
-        { "unit": "mas-geisterseher", "count": 1 },
-        { "unit": "mas-phantom-schnitter", "count": 4 },
-        { "unit": "mas-wellenschlange", "count": 4 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-korsaren-aufklaerer",
-      "name": "Korsaren-Aufklärer",
-      "pts": 150,
-      "tags": ["support"],
-      "units": [{ "unit": "mas-korsaren-geisterlaeufer", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-berittter-aspektkriegertrupp",
-      "name": "Berittener Aspektkriegertrupp",
-      "pts": 325,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-schwarze-khaindar", "count": 6, "mixed": true, "oneOf": ["mas-schwarze-khaindar", "mas-asuryans-jager", "mas-feuerdrachen", "mas-banshees", "mas-skorpionkrieger"] },
-        { "unit": "mas-wellenschlange", "count": 3 }
-      ],
-      "upgrades": ["mas-upgrade-exarch"]
-    },
-    {
-      "id": "mas-illum-zar-trupp",
-      "name": "Illum-Zar-Trupp",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [{ "unit": "mas-illum-zar", "count": 3 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-schwerter-vaul",
-      "name": "Schwerter von Vaul",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [{ "unit": "mas-falcon", "count": 5 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-kriegsmaschinen-vaul",
-      "name": "Kriegsmaschinen von Vaul",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [{ "unit": "mas-kobra", "count": 1, "oneOf": ["mas-kobra", "mas-sturmserpent", "mas-skorpion"] }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-cegorachs-entkommen",
-      "name": "Cegorachs Entkommen",
-      "pts": 200,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-harlekin-avatar", "count": 1 },
-        { "unit": "mas-harlekin-trupp", "count": 2 },
-        { "unit": "mas-todesnarren", "count": 1 },
-        { "unit": "mas-starweaver", "count": 3 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-schuppenkleid",
-      "name": "Schuppenkleid der Schlange",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-harlekin-avatar", "count": 1 },
-        { "unit": "mas-skyweaver-jetbikes", "count": 3 },
-        { "unit": "mas-voidweaver", "count": 2 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-jagd-des-verschlingers",
-      "name": "Jagd des Verschlingers",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-meistermime", "count": 1 },
-        { "unit": "mas-mimen", "count": 6 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-cegorachs-rache",
-      "name": "Cegorachs Rache",
-      "pts": 325,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-harlekin-avatar", "count": 1 },
-        { "unit": "mas-harlekin-trupp", "count": 2 },
-        { "unit": "mas-todesnarren", "count": 2 },
-        { "unit": "mas-starweaver", "count": 4 },
-        { "unit": "mas-skyweaver-jetbikes", "count": 3 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-festmahl-des-verschlingers",
-      "name": "0–1 Festmahl des Verschlingers",
-      "pts": 350,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-meistermime", "count": 1 },
-        { "unit": "mas-solitar", "count": 1 },
-        { "unit": "mas-mimen", "count": 8 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-ynneads-traum",
-      "name": "0–1 Ynneads Traum",
-      "pts": 450,
-      "tags": ["support"],
-      "units": [
-        { "unit": "mas-harlekin-avatar", "count": 1 },
-        { "unit": "mas-schattenseher", "count": 1 },
-        { "unit": "mas-harlekin-trupp", "count": 3 },
-        { "unit": "mas-todesnarren", "count": 3 },
-        { "unit": "mas-starweaver", "count": 6 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "mas-skathach-phantomritter",
-      "name": "Skathach-Phantomritter",
-      "pts": 350,
-      "tags": ["fleet"],
-      "units": [{ "unit": "mas-skathach-phantomritter", "count": 2 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-purpurgeschwader",
-      "name": "Purpurgeschwader",
-      "pts": 250,
-      "tags": ["fleet"],
-      "units": [{ "unit": "mas-nachtschatten-abfangjager", "count": 2 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-hemlock-geschwader",
-      "name": "Hemlock-Geschwader",
-      "pts": 225,
-      "tags": ["fleet"],
-      "units": [{ "unit": "mas-hemlock-phantomjager", "count": 2 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-korsaren-vampirejager",
-      "name": "Korsaren-Vampire-Jäger",
-      "pts": 225,
-      "tags": ["fleet"],
-      "units": [{ "unit": "mas-korsaren-vampirejager", "count": 1 }],
-      "upgrades": []
-    },
-    {
-      "id": "mas-raumschiff",
-      "name": "0–1 Raumschiff",
-      "pts": 175,
-      "tags": ["fleet"],
-      "units": [{ "unit": "mas-phantomschiff", "count": 1 }],
-      "upgrades": ["mas-upgrade-drachschiff"]
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "mas-upgrade-eldar-autarch",
-      "name": "Eldar-Autarch",
-      "variants": [
+    "strategy": 4,
+    "initiative": [
         {
-          "id": "1",
-          "label": "Füge einer Runenpropheten- oder Aspektkrieger-Einheit einen Eldar-Autarchen hinzu",
-          "pts": 75,
-          "effects": [{ "op": "add", "unit": "mas-eldar-autarch", "count": 1 }]
-        }
-      ]
-    },
-    {
-      "id": "mas-upgrade-exarch",
-      "name": "Exarch",
-      "variants": [
+            "formations": [
+                "mas-avatar",
+                "mas-berittter-aspektkriegertrupp",
+                "mas-harlekin-trupp",
+                "mas-purpurgeschwader",
+                "mas-skathach-phantomritter"
+            ],
+            "value": "1+"
+        },
         {
-          "id": "1",
-          "label": "Füge 1 Exarch-Charakter zu einer Aspektkrieger-Einheit hinzu",
-          "pts": 25,
-          "effects": [{ "op": "add", "unit": "mas-eldar-exarch", "count": 1 }]
+            "formations": [
+                "*"
+            ],
+            "value": "2+"
         }
-      ]
+    ],
+    "units": {
+        "mas-avatar": {
+            "name": "Avatar des Khaine",
+            "from": "EL.json",
+            "type": "WE"
+        },
+        "mas-geisterseher": {
+            "name": "Geisterseher",
+            "from": "EL.json",
+            "type": "CH"
+        },
+        "mas-eldar-autarch": {
+            "name": "Eldar-Autarch",
+            "from": "EL.json",
+            "type": "CH"
+        },
+        "mas-eldar-exarch": {
+            "name": "Eldar-Exarch",
+            "from": "EL.json",
+            "type": "CH"
+        },
+        "mas-eldar-runenprophet": {
+            "name": "Eldar-Runenprophet",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-gardisten": {
+            "name": "Eldar-Gardisten",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-eldar-jetbikes": {
+            "name": "Eldar-Jetbikes",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-viper": {
+            "name": "Viper",
+            "from": "EL.json",
+            "type": "LV"
+        },
+        "mas-asuryans-jager": {
+            "name": "Asuryans Jäger",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-feuerdrachen": {
+            "name": "Feuerdrachen",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-schwarze-khaindar": {
+            "name": "Schwarze Khaindar",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-banshees": {
+            "name": "Banshees",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-skorpionkrieger": {
+            "name": "Skorpionkrieger",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-phantom-schnitter": {
+            "name": "Phantom-Schnitter",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-korsaren-geisterlaeufer": {
+            "name": "Korsaren-Geisterläufer",
+            "from": "EL.json",
+            "type": "INF"
+        },
+        "mas-korsaren-wespe": {
+            "name": "Korsaren-Wespe",
+            "from": "EL.json",
+            "type": "LV"
+        },
+        "mas-schattenviper": {
+            "name": "Schattenviper",
+            "from": "EL.json",
+            "type": "LV"
+        },
+        "mas-wellenschlange": {
+            "name": "Wellenschlange",
+            "from": "EL.json",
+            "type": "AV"
+        },
+        "mas-illum-zar": {
+            "name": "Illum Zar",
+            "from": "EL.json",
+            "type": "AV"
+        },
+        "mas-falcon": {
+            "name": "Falcon",
+            "from": "EL.json",
+            "type": "AV"
+        },
+        "mas-feuersturm": {
+            "name": "Feuersturm",
+            "from": "EL.json",
+            "type": "AV"
+        },
+        "mas-kobra": {
+            "name": "Kobra",
+            "from": "EL.json",
+            "type": "WE"
+        },
+        "mas-sturmserpent": {
+            "name": "Sturmserpent",
+            "from": "EL.json",
+            "type": "WE"
+        },
+        "mas-skorpion": {
+            "name": "Skorpion",
+            "from": "EL.json",
+            "type": "WE"
+        },
+        "mas-skathach-phantomritter": {
+            "name": "Skathach-Phantomritter",
+            "from": "EL.json",
+            "type": "H-AV"
+        },
+        "mas-harlekin-avatar": {
+            "name": "Harlekin-Avatar",
+            "from": "HQ.json",
+            "type": "CH"
+        },
+        "mas-schattenseher": {
+            "name": "Schattenseher",
+            "from": "HQ.json",
+            "type": "CH"
+        },
+        "mas-meistermime": {
+            "name": "Meistermime",
+            "from": "HQ.json",
+            "type": "CH"
+        },
+        "mas-solitar": {
+            "name": "Solitär",
+            "from": "HQ.json",
+            "type": "CH"
+        },
+        "mas-mimen": {
+            "name": "Mimen",
+            "from": "HQ.json",
+            "type": "INF"
+        },
+        "mas-todesnarren": {
+            "name": "Todesnarren",
+            "from": "HQ.json",
+            "type": "INF"
+        },
+        "mas-harlekin-trupp": {
+            "name": "Harlekin-Trupp",
+            "from": "HQ.json",
+            "type": "INF"
+        },
+        "mas-skyweaver-jetbikes": {
+            "name": "Skyweaver-Jetbikes",
+            "from": "HQ.json",
+            "type": "INF"
+        },
+        "mas-starweaver": {
+            "name": "Starweaver",
+            "from": "HQ.json",
+            "type": "LV"
+        },
+        "mas-voidweaver": {
+            "name": "Voidweaver",
+            "from": "HQ.json",
+            "type": "LV"
+        },
+        "mas-nachtschatten-abfangjager": {
+            "name": "Nachtschatten-Abfangjäger",
+            "from": "eldarNavy.json",
+            "type": "AC"
+        },
+        "mas-hemlock-phantomjager": {
+            "name": "Hemlock-Phantomjäger",
+            "from": "eldarNavy.json",
+            "type": "AC"
+        },
+        "mas-korsaren-vampirejager": {
+            "name": "Korsaren-Vampire-Jäger",
+            "from": "eldarNavy.json",
+            "type": "AC/WE"
+        },
+        "mas-phantomschiff": {
+            "name": "Phantomschiff",
+            "from": "eldarNavy.json",
+            "type": "SC"
+        },
+        "mas-drachschiff": {
+            "name": "Drachenschiff",
+            "from": "eldarNavy.json",
+            "type": "SC"
+        }
     },
-    {
-      "id": "mas-upgrade-eldar-jetbikes",
-      "name": "Eldar-Jetbikes",
-      "variants": [
+    "sections": [
         {
-          "id": "1",
-          "label": "Füge bis zu drei Eldar-Jetbikes hinzu",
-          "pts": 75,
-          "effects": [{ "op": "add", "unit": "mas-eldar-jetbikes", "count": 3 }]
-        }
-      ]
-    },
-    {
-      "id": "mas-upgrade-drachschiff",
-      "name": "Drachenschiff",
-      "variants": [
+            "id": "special",
+            "name": "Spezialregeln des Weltenschiffs Lugganath",
+            "formations": [
+                "mas-avatar",
+                "mas-netzportal"
+            ]
+        },
         {
-          "id": "1",
-          "label": "Ersetze das Phantomschiff durch ein Drachenschiff",
-          "pts": 125,
-          "effects": [{ "op": "replace", "from": "mas-phantomschiff", "to": "mas-drachschiff", "count": 1 }]
+            "id": "war-machines",
+            "name": "Lugganath-Kriegsscharn und Phantomkriegsscharn",
+            "description": "Für jede Kriegsschar von Lugganath darf bis zu eine Phantomkriegsschar von Lugganath gewählt werden.",
+            "formations": [
+                "mas-kriegsschar",
+                "mas-phantomkriegsschar"
+            ]
+        },
+        {
+            "id": "support",
+            "name": "Lugganath-Trupps",
+            "description": "Für jede Kriegsschar oder Phantomkriegsschar von Lugganath darf ein Lugganath-Trupp gewählt werden.",
+            "formations": [
+                "mas-korsaren-aufklaerer",
+                "mas-berittter-aspektkriegertrupp",
+                "mas-illum-zar-trupp",
+                "mas-schwerter-vaul",
+                "mas-kriegsmaschinen-vaul"
+            ]
+        },
+        {
+            "id": "saedah",
+            "name": "Saedahs der Maske des Verhüllten Pfads",
+            "description": "Für jede Kriegsschar oder Phantomkriegsschar aus Lugganath darf eine Saedath des Verhüllten Pfads gewählt werden.",
+            "formations": [
+                "mas-cegorachs-entkommen",
+                "mas-schuppenkleid",
+                "mas-jagd-des-verschlingers",
+                "mas-cegorachs-rache",
+                "mas-festmahl-des-verschlingers",
+                "mas-ynneads-traum"
+            ]
+        },
+        {
+            "id": "fleet",
+            "name": "Lugganath-Flugzeuge, Raumschiffe und Titanen",
+            "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+            "formations": [
+                "mas-skathach-phantomritter",
+                "mas-purpurgeschwader",
+                "mas-hemlock-geschwader",
+                "mas-korsaren-vampirejager",
+                "mas-raumschiff"
+            ]
         }
-      ]
-    }
-  ],
-  "transport": [],
-  "formationConstraints": [],
-  "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
-  ]
+    ],
+    "formations": [
+        {
+            "id": "mas-avatar",
+            "name": "0–1 Avatar",
+            "pts": 50,
+            "tags": [
+                "special"
+            ],
+            "units": [
+                {
+                    "unit": "mas-avatar",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-netzportal",
+            "name": "1 Netzportal",
+            "pts": 0,
+            "tags": [
+                "special"
+            ],
+            "units": [],
+            "upgrades": []
+        },
+        {
+            "id": "mas-kriegsschar",
+            "name": "Kriegsschar von Lugganath",
+            "pts": 250,
+            "tags": [
+                "war-machines"
+            ],
+            "units": [
+                {
+                    "unit": "mas-eldar-runenprophet",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-gardisten",
+                    "count": 4
+                },
+                {
+                    "unit": "mas-schattenviper",
+                    "count": 5
+                }
+            ],
+            "upgrades": [
+                "mas-upgrade-eldar-autarch"
+            ]
+        },
+        {
+            "id": "mas-phantomkriegsschar",
+            "name": "Phantomkriegsschar von Lugganath",
+            "pts": 375,
+            "tags": [
+                "war-machines"
+            ],
+            "units": [
+                {
+                    "unit": "mas-geisterseher",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-phantom-schnitter",
+                    "count": 4
+                },
+                {
+                    "unit": "mas-wellenschlange",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-korsaren-aufklaerer",
+            "name": "Korsaren-Aufklärer",
+            "pts": 150,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-korsaren-geisterlaeufer",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-berittter-aspektkriegertrupp",
+            "name": "Berittener Aspektkriegertrupp",
+            "pts": 325,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-schwarze-khaindar",
+                    "count": 6,
+                    "mixed": true,
+                    "oneOf": [
+                        "mas-schwarze-khaindar",
+                        "mas-asuryans-jager",
+                        "mas-feuerdrachen",
+                        "mas-banshees",
+                        "mas-skorpionkrieger"
+                    ]
+                },
+                {
+                    "unit": "mas-wellenschlange",
+                    "count": 3
+                }
+            ],
+            "upgrades": [
+                "mas-upgrade-exarch"
+            ]
+        },
+        {
+            "id": "mas-illum-zar-trupp",
+            "name": "Illum-Zar-Trupp",
+            "pts": 250,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-illum-zar",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-schwerter-vaul",
+            "name": "Schwerter von Vaul",
+            "pts": 250,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-falcon",
+                    "count": 5
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-kriegsmaschinen-vaul",
+            "name": "Kriegsmaschinen von Vaul",
+            "pts": 250,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-kobra",
+                    "count": 1,
+                    "oneOf": [
+                        "mas-kobra",
+                        "mas-sturmserpent",
+                        "mas-skorpion"
+                    ]
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-cegorachs-entkommen",
+            "name": "Cegorachs Entkommen",
+            "pts": 200,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-harlekin-avatar",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-harlekin-trupp",
+                    "count": 2
+                },
+                {
+                    "unit": "mas-todesnarren",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-starweaver",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-schuppenkleid",
+            "name": "Schuppenkleid der Schlange",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-harlekin-avatar",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-skyweaver-jetbikes",
+                    "count": 3
+                },
+                {
+                    "unit": "mas-voidweaver",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-jagd-des-verschlingers",
+            "name": "Jagd des Verschlingers",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-meistermime",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-mimen",
+                    "count": 6
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-cegorachs-rache",
+            "name": "Cegorachs Rache",
+            "pts": 325,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-harlekin-avatar",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-harlekin-trupp",
+                    "count": 2
+                },
+                {
+                    "unit": "mas-todesnarren",
+                    "count": 2
+                },
+                {
+                    "unit": "mas-starweaver",
+                    "count": 4
+                },
+                {
+                    "unit": "mas-skyweaver-jetbikes",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-festmahl-des-verschlingers",
+            "name": "0–1 Festmahl des Verschlingers",
+            "pts": 350,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-meistermime",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-solitar",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-mimen",
+                    "count": 8
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-ynneads-traum",
+            "name": "0–1 Ynneads Traum",
+            "pts": 450,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "mas-harlekin-avatar",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-schattenseher",
+                    "count": 1
+                },
+                {
+                    "unit": "mas-harlekin-trupp",
+                    "count": 3
+                },
+                {
+                    "unit": "mas-todesnarren",
+                    "count": 3
+                },
+                {
+                    "unit": "mas-starweaver",
+                    "count": 6
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-skathach-phantomritter",
+            "name": "Skathach-Phantomritter",
+            "pts": 350,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "mas-skathach-phantomritter",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-purpurgeschwader",
+            "name": "Purpurgeschwader",
+            "pts": 250,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "mas-nachtschatten-abfangjager",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-hemlock-geschwader",
+            "name": "Hemlock-Geschwader",
+            "pts": 225,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "mas-hemlock-phantomjager",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-korsaren-vampirejager",
+            "name": "Korsaren-Vampire-Jäger",
+            "pts": 225,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "mas-korsaren-vampirejager",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "mas-raumschiff",
+            "name": "0–1 Raumschiff",
+            "pts": 175,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "mas-phantomschiff",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "mas-upgrade-drachschiff"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "mas-upgrade-eldar-autarch",
+            "name": "Eldar-Autarch",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge einer Runenpropheten- oder Aspektkrieger-Einheit einen Eldar-Autarchen hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "mas-eldar-autarch",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mas-upgrade-exarch",
+            "name": "Exarch",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Exarch-Charakter zu einer Aspektkrieger-Einheit hinzu",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "mas-eldar-exarch",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mas-upgrade-eldar-jetbikes",
+            "name": "Eldar-Jetbikes",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu drei Eldar-Jetbikes hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "mas-eldar-jetbikes",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mas-upgrade-drachschiff",
+            "name": "Drachenschiff",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze das Phantomschiff durch ein Drachenschiff",
+                    "pts": 125,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "mas-phantomschiff",
+                            "to": "mas-drachschiff",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [],
+    "formationConstraints": [],
+    "upgradeConstraints": [
+        {
+            "id": "once-per-formation",
+            "from": [
+                "*"
+            ],
+            "max": 1,
+            "perUpgrade": true,
+            "perFormation": true
+        }
+    ]
 }

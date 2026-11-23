@@ -1,201 +1,471 @@
 {
-  "schema": 0,
-  "ruleset": "ear-de",
-  "lang": "de",
-  "id": "ear-de/nc/maynarkhdynasty",
-  "name": "Maynarkh-Dynastie",
-  "faction": "Necron",
-  "version": "1.0.Beta",
-  "source": { "file": "lists_de/NC/maynarkhdynasty.json", "version": "1.0.Beta", "commit": null },
-  "strategy": 1,
-  "initiative": [{ "formations": ["*"], "value": "1+" }],
-  "units": {
-    "nm-necronlord": { "name": "Necronlord", "from": "NC.json", "type": "INF" },
-    "nm-necron-hochlord": { "name": "Necron-Hochlord", "from": "NC.json", "type": "INF" },
-    "nm-destruktorlord": { "name": "Destruktorlord", "from": "NC.json", "type": "INF" },
-    "nm-destruktoren": { "name": "Destruktoren", "from": "NC.json", "type": "INF" },
-    "nm-schwere-destruktoren": { "name": "Schwere Destruktoren", "from": "NC.json", "type": "INF" },
-    "nm-necronkrieger": { "name": "Necronkrieger", "from": "NC.json", "type": "INF" },
-    "nm-pariahs": { "name": "Pariahs", "from": "NC.json", "type": "INF" },
-    "nm-extinktoren": { "name": "Extinktoren", "from": "NC.json", "type": "INF" },
-    "nm-alptraum": { "name": "Alpträume", "from": "NC.json", "type": "INF" },
-    "nm-canoptek-skarabae": { "name": "Canoptek-Skarabäen", "from": "NC.json", "type": "INF" },
-    "nm-canoptek-phantome": { "name": "Canoptek-Phantome", "from": "NC.json", "type": "INF" },
-    "nm-monolith": { "name": "Monolith", "from": "NC.json", "type": "AV" },
-    "nm-obelisk": { "name": "Obelisk", "from": "NC.json", "type": "AV" },
-    "nm-canoptek-gruftspinne": { "name": "Canoptek-Gruftspinne", "from": "NC.json", "type": "INF" },
-    "nm-pylon": { "name": "Pylon", "from": "NC.json", "type": "WE" },
-    "nm-megalith": { "name": "Megalith", "from": "NC.json", "type": "WE" },
-    "nm-aeonensphaere": { "name": "Äonen-Sphäre", "from": "NC.json", "type": "WE" },
-    "nm-abattoir": { "name": "Abattoir", "from": "NC.json", "type": "WE" },
-    "nm-todessicheljaeger": { "name": "Todessichel-Jäger", "from": "necronNavy.json", "type": "AC" },
-    "nm-nachtmantelbomber": { "name": "Nachtmantel-Bomber (B)", "from": "necronNavy.json", "type": "AC" },
-    "nm-cairngruftschiff": { "name": "Cairn-Klasse Gruftschiff", "from": "necronNavy.json", "type": "SC" }
-  },
-  "sections": [
-    {
-      "id": "special",
-      "name": "Spezialregeln der Maynarkh-Dynastie",
-      "formations": ["nm-gruftkomplex"]
+    "schema": 0,
+    "ruleset": "ear-de",
+    "lang": "de",
+    "id": "ear-de/nc/maynarkhdynasty",
+    "name": "Maynarkh-Dynastie",
+    "faction": "Necron",
+    "version": "1.0.Beta",
+    "source": {
+        "file": "lists_de/NC/maynarkhdynasty.json",
+        "version": "1.0.Beta",
+        "commit": null
     },
-    {
-      "id": "core",
-      "name": "Kernformationen der Maynarkh-Dynastie",
-      "formations": ["nm-necron-phalanx"]
+    "strategy": 1,
+    "initiative": [
+        {
+            "formations": [
+                "*"
+            ],
+            "value": "1+"
+        }
+    ],
+    "units": {
+        "nm-necronlord": {
+            "name": "Necronlord",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-necron-hochlord": {
+            "name": "Necron-Hochlord",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-destruktorlord": {
+            "name": "Destruktorlord",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-destruktoren": {
+            "name": "Destruktoren",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-schwere-destruktoren": {
+            "name": "Schwere Destruktoren",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-necronkrieger": {
+            "name": "Necronkrieger",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-pariahs": {
+            "name": "Pariahs",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-extinktoren": {
+            "name": "Extinktoren",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-alptraum": {
+            "name": "Alpträume",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-canoptek-skarabae": {
+            "name": "Canoptek-Skarabäen",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-canoptek-phantome": {
+            "name": "Canoptek-Phantome",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-monolith": {
+            "name": "Monolith",
+            "from": "NC.json",
+            "type": "AV"
+        },
+        "nm-obelisk": {
+            "name": "Obelisk",
+            "from": "NC.json",
+            "type": "AV"
+        },
+        "nm-canoptek-gruftspinne": {
+            "name": "Canoptek-Gruftspinne",
+            "from": "NC.json",
+            "type": "INF"
+        },
+        "nm-pylon": {
+            "name": "Pylon",
+            "from": "NC.json",
+            "type": "WE"
+        },
+        "nm-megalith": {
+            "name": "Megalith",
+            "from": "NC.json",
+            "type": "WE"
+        },
+        "nm-aeonensphaere": {
+            "name": "Äonen-Sphäre",
+            "from": "NC.json",
+            "type": "WE"
+        },
+        "nm-abattoir": {
+            "name": "Abattoir",
+            "from": "NC.json",
+            "type": "WE"
+        },
+        "nm-todessicheljaeger": {
+            "name": "Todessichel-Jäger",
+            "from": "necronNavy.json",
+            "type": "AC"
+        },
+        "nm-nachtmantelbomber": {
+            "name": "Nachtmantel-Bomber (B)",
+            "from": "necronNavy.json",
+            "type": "AC"
+        },
+        "nm-cairngruftschiff": {
+            "name": "Cairn-Klasse Gruftschiff",
+            "from": "necronNavy.json",
+            "type": "SC"
+        }
     },
-    {
-      "id": "war-machines",
-      "name": "Portalformationen der Maynarkh-Dynastie",
-      "description": "Für jede Necron-Phalanx darf bis zu eine Portalformation gewählt werden.",
-      "formations": ["nm-portal-phalanx"]
-    },
-    {
-      "id": "support",
-      "name": "Unterstützungsformationen der Maynarkh-Dynastie",
-      "description": "Für jede Necron-Phalanx dürfen bis zu zwei Unterstützungsformationen gewählt werden. Eine Necron-Armee muss mindestens eine 'Die Ungebetenen'-Verband enthalten.",
-      "formations": ["nm-die-ungebetenen", "nm-obelisk-phalanx", "nm-zerstoerer-phalanx", "nm-gruftwaeter"]
-    },
-    {
-      "id": "fleet",
-      "name": "Ernter und Flotte der Maynarkh-Dynastie",
-      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
-      "formations": ["nm-megalith-conduit", "nm-erntemaschine"]
-    }
-  ],
-  "formations": [
-    {
-      "id": "nm-gruftkomplex",
-      "name": "0–1 Necron-Gruftkomplex",
-      "pts": 75,
-      "tags": ["special"],
-      "units": [],
-      "upgrades": []
-    },
-    {
-      "id": "nm-necron-phalanx",
-      "name": "Necron-Phalanx",
-      "pts": 300,
-      "tags": ["core"],
-      "units": [
-        { "unit": "nm-necronkrieger", "count": 8 },
-        { "unit": "nm-necronlord", "count": 1 }
-      ],
-      "upgrades": ["nm-upgrade-hochlord", "nm-upgrade-canoptek-phantome", "nm-upgrade-canoptek-gruftspinne", "nm-upgrade-pariah"]
-    },
-    {
-      "id": "nm-portal-phalanx",
-      "name": "Portal-Phalanx",
-      "pts": 175,
-      "tags": ["war-machines"],
-      "units": [
-        { "unit": "nm-monolith", "count": 1 },
-        { "unit": "nm-obelisk", "count": 2 }
-      ],
-      "upgrades": ["nm-upgrade-monolith"]
-    },
-    {
-      "id": "nm-die-ungebetenen",
-      "name": "1+ Die Ungebetenen",
-      "pts": 200,
-      "tags": ["support"],
-      "units": [{ "unit": "nm-alptraum", "count": 7 }],
-      "upgrades": []
-    },
-    {
-      "id": "nm-obelisk-phalanx",
-      "name": "Obelisk-Phalanx",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [{ "unit": "nm-obelisk", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "nm-zerstoerer-phalanx",
-      "name": "Zerstörer-Phalanx",
-      "pts": 275,
-      "tags": ["support"],
-      "units": [{ "unit": "nm-destruktoren", "count": 7 }],
-      "upgrades": ["nm-upgrade-destruktorlord"]
-    },
-    {
-      "id": "nm-gruftwaeter",
-      "name": "Gruftwächter",
-      "pts": 200,
-      "tags": ["support"],
-      "units": [{ "unit": "nm-pylon", "count": 1 }],
-      "upgrades": []
-    },
-    {
-      "id": "nm-megalith-conduit",
-      "name": "Megalith Conduit",
-      "pts": 350,
-      "tags": ["fleet"],
-      "units": [{ "unit": "nm-megalith", "count": 1 }],
-      "upgrades": ["nm-upgrade-obelisk", "nm-upgrade-monolith"]
-    },
-    {
-      "id": "nm-erntemaschine",
-      "name": "0–1 Erntemaschine",
-      "pts": 450,
-      "tags": ["fleet"],
-      "units": [{ "unit": "nm-abattoir", "count": 1 }],
-      "upgrades": []
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "nm-upgrade-hochlord",
-      "name": "Necron-Hochlord",
-      "variants": [
-        { "id": "1", "label": "Ersetze einen Necronlord durch einen Necron-Hochlord", "pts": 75, "effects": [{ "op": "replace", "from": "nm-necronlord", "to": "nm-necron-hochlord", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-canoptek-phantome",
-      "name": "Canoptek-Phantome",
-      "variants": [
-        { "id": "1", "label": "Füge bis zu 2 Canoptek-Phantome hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nm-canoptek-phantome", "count": 2 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-canoptek-gruftspinne",
-      "name": "Canoptek-Gruftspinne",
-      "variants": [
-        { "id": "1", "label": "Füge 1 Canoptek-Gruftspinne hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nm-canoptek-gruftspinne", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-pariah",
-      "name": "Pariahs",
-      "variants": [
-        { "id": "1", "label": "Ersetze 3 Necronkrieger durch 3 Pariahs", "pts": 50, "effects": [{ "op": "replace", "from": "nm-necronkrieger", "to": "nm-pariahs", "count": 3 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-monolith",
-      "name": "Monolith",
-      "variants": [
-        { "id": "1", "label": "Ersetze bis zu 2 Obelisks durch Monoliths", "pts": 50, "effects": [{ "op": "replace", "from": "nm-obelisk", "to": "nm-monolith", "count": 2 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-obelisk",
-      "name": "Obelisk",
-      "variants": [
-        { "id": "1", "label": "Füge bis zu 2 Obelisks hinzu", "pts": 100, "effects": [{ "op": "add", "unit": "nm-obelisk", "count": 2 }] }
-      ]
-    },
-    {
-      "id": "nm-upgrade-destruktorlord",
-      "name": "Destruktorlord",
-      "variants": [
-        { "id": "1", "label": "Ersetze einen Destruktor durch einen Destruktorlord", "pts": 25, "effects": [{ "op": "replace", "from": "nm-destruktoren", "to": "nm-destruktorlord", "count": 1 }] }
-      ]
-    }
-  ],
-  "transport": [],
-  "formationConstraints": [],
-  "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
-  ]
+    "sections": [
+        {
+            "id": "special",
+            "name": "Spezialregeln der Maynarkh-Dynastie",
+            "formations": [
+                "nm-gruftkomplex"
+            ]
+        },
+        {
+            "id": "core",
+            "name": "Kernformationen der Maynarkh-Dynastie",
+            "formations": [
+                "nm-necron-phalanx"
+            ]
+        },
+        {
+            "id": "war-machines",
+            "name": "Portalformationen der Maynarkh-Dynastie",
+            "description": "Für jede Necron-Phalanx darf bis zu eine Portalformation gewählt werden.",
+            "formations": [
+                "nm-portal-phalanx"
+            ]
+        },
+        {
+            "id": "support",
+            "name": "Unterstützungsformationen der Maynarkh-Dynastie",
+            "description": "Für jede Necron-Phalanx dürfen bis zu zwei Unterstützungsformationen gewählt werden. Eine Necron-Armee muss mindestens eine 'Die Ungebetenen'-Verband enthalten.",
+            "formations": [
+                "nm-die-ungebetenen",
+                "nm-obelisk-phalanx",
+                "nm-zerstoerer-phalanx",
+                "nm-gruftwaeter"
+            ]
+        },
+        {
+            "id": "fleet",
+            "name": "Ernter und Flotte der Maynarkh-Dynastie",
+            "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+            "formations": [
+                "nm-megalith-conduit",
+                "nm-erntemaschine"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "id": "nm-gruftkomplex",
+            "name": "0–1 Necron-Gruftkomplex",
+            "pts": 75,
+            "tags": [
+                "special"
+            ],
+            "units": [],
+            "upgrades": []
+        },
+        {
+            "id": "nm-necron-phalanx",
+            "name": "Necron-Phalanx",
+            "pts": 300,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "nm-necronkrieger",
+                    "count": 8
+                },
+                {
+                    "unit": "nm-necronlord",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "nm-upgrade-hochlord",
+                "nm-upgrade-canoptek-phantome",
+                "nm-upgrade-canoptek-gruftspinne",
+                "nm-upgrade-pariah"
+            ]
+        },
+        {
+            "id": "nm-portal-phalanx",
+            "name": "Portal-Phalanx",
+            "pts": 175,
+            "tags": [
+                "war-machines"
+            ],
+            "units": [
+                {
+                    "unit": "nm-monolith",
+                    "count": 1
+                },
+                {
+                    "unit": "nm-obelisk",
+                    "count": 2
+                }
+            ],
+            "upgrades": [
+                "nm-upgrade-monolith"
+            ]
+        },
+        {
+            "id": "nm-die-ungebetenen",
+            "name": "1+ Die Ungebetenen",
+            "pts": 200,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "nm-alptraum",
+                    "count": 7
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "nm-obelisk-phalanx",
+            "name": "Obelisk-Phalanx",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "nm-obelisk",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "nm-zerstoerer-phalanx",
+            "name": "Zerstörer-Phalanx",
+            "pts": 275,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "nm-destruktoren",
+                    "count": 7
+                }
+            ],
+            "upgrades": [
+                "nm-upgrade-destruktorlord"
+            ]
+        },
+        {
+            "id": "nm-gruftwaeter",
+            "name": "Gruftwächter",
+            "pts": 200,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "nm-pylon",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "nm-megalith-conduit",
+            "name": "Megalith Conduit",
+            "pts": 350,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "nm-megalith",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "nm-upgrade-obelisk",
+                "nm-upgrade-monolith"
+            ]
+        },
+        {
+            "id": "nm-erntemaschine",
+            "name": "0–1 Erntemaschine",
+            "pts": 450,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "nm-abattoir",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "nm-upgrade-hochlord",
+            "name": "Necron-Hochlord",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze einen Necronlord durch einen Necron-Hochlord",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nm-necronlord",
+                            "to": "nm-necron-hochlord",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-canoptek-phantome",
+            "name": "Canoptek-Phantome",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu 2 Canoptek-Phantome hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nm-canoptek-phantome",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-canoptek-gruftspinne",
+            "name": "Canoptek-Gruftspinne",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Canoptek-Gruftspinne hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nm-canoptek-gruftspinne",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-pariah",
+            "name": "Pariahs",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze 3 Necronkrieger durch 3 Pariahs",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nm-necronkrieger",
+                            "to": "nm-pariahs",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-monolith",
+            "name": "Monolith",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze bis zu 2 Obelisks durch Monoliths",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nm-obelisk",
+                            "to": "nm-monolith",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-obelisk",
+            "name": "Obelisk",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge bis zu 2 Obelisks hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nm-obelisk",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "nm-upgrade-destruktorlord",
+            "name": "Destruktorlord",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze einen Destruktor durch einen Destruktorlord",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nm-destruktoren",
+                            "to": "nm-destruktorlord",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [],
+    "formationConstraints": [],
+    "upgradeConstraints": [
+        {
+            "id": "once-per-formation",
+            "from": [
+                "*"
+            ],
+            "max": 1,
+            "perUpgrade": true,
+            "perFormation": true
+        }
+    ]
 }

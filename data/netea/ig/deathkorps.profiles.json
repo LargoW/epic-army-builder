@@ -961,7 +961,7 @@
         },
         "dk-macharius": {
             "name": "Macharius",
-            "type": "H-AV",
+            "type": "WE",
             "speed": 20,
             "armour": 4,
             "cc": 6,
@@ -995,7 +995,7 @@
         },
         "dk-macharius-command": {
             "name": "Macharius Command",
-            "type": "H-AV",
+            "type": "WE",
             "speed": 20,
             "armour": 4,
             "cc": 6,

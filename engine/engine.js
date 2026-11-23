@@ -162,7 +162,7 @@ export function computeEntry(data, entry) {
   let addedCarriable;
   const upgradeCounts = {};
   // Apply upgrades in the order the formation lists them, so replace effects do not depend on the order of selection.
-  const rank = (sel) => { const i = def.upgrades.indexOf(sel.upgrade); return i < 0 ? 9999 : i; };
+  const rank = (sel) => { const i = (def.upgrades || []).indexOf(sel.upgrade); return i < 0 ? 9999 : i; };
   [...entry.upgrades].sort((x, y) => rank(x) - rank(y)).forEach((sel) => {
     const upDef = upgrades[sel.upgrade];
     if (upDef && upDef.show) {
@@ -380,7 +380,7 @@ export function validate(data, state) {
       ups.forEach((u) => (counts[u.upgrade] = (counts[u.upgrade] || 0) + 1));
       const tooMany = c.maxTotal != null && ups.length > c.maxTotal;
       const dup = c.max != null && (c.perUpgrade ? Object.values(counts).some((n) => n > c.max) : ups.length > c.max);
-      if (tooMany || dup) violations.push({ code: "upgrade-limit", params: { id: c.id, count: ups.length }, refs: { uid: e.uid } });
+      if (tooMany || dup) violations.push({ code: "upgrade-limit", params: { id: c.id, count: ups.length, max: c.maxTotal || c.max }, refs: { uid: e.uid } });
     }
   }
   return violations;

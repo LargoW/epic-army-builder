@@ -1,306 +1,747 @@
 {
-  "schema": 0,
-  "ruleset": "ear-de",
-  "lang": "de",
-  "id": "ear-de/iq/adeptasororitas",
-  "name": "Adepta Sororitas",
-  "faction": "Imperiale Inquisition",
-  "version": "1.0.Beta-3",
-  "source": { "file": "lists_de/IQ/adeptasororitas.json", "version": "1.0.Beta-3", "commit": null },
-  "strategy": 3,
-  "initiative": [
-    {
-      "formations": ["aq-orco-inquisitor-gefolge", "aq-vulture", "aq-redemption", "aq-infernus", "aq-blitzschlag", "aq-marauder", "aq-lunar-kreuzer"],
-      "value": "2+"
+    "schema": 0,
+    "ruleset": "ear-de",
+    "lang": "de",
+    "id": "ear-de/iq/adeptasororitas",
+    "name": "Adepta Sororitas",
+    "faction": "Imperiale Inquisition",
+    "version": "1.0.Beta-3",
+    "source": {
+        "file": "lists_de/IQ/adeptasororitas.json",
+        "version": "1.0.Beta-3",
+        "commit": null
     },
-    { "formations": ["*"], "value": "1+" }
-  ],
-  "units": {
-    "aq-paladine": { "name": "Palatine", "from": "IQ.json", "type": "CH" },
-    "aq-prinzipalin": { "name": "Prinzipalin", "from": "IQ.json", "type": "CH" },
-    "aq-sororitas-schwestern": { "name": "Sororitas-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-dominion-schwestern": { "name": "Dominion-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-celestia-schwestern": { "name": "Celestia-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-retributor-schwestern": { "name": "Retributor-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-seraphim-schwestern": { "name": "Seraphim-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-repentia-schwestern": { "name": "Repentia-Schwestern", "from": "IQ.json", "type": "INF" },
-    "aq-redemptionisten": { "name": "Redemptionisten", "from": "IQ.json", "type": "INF" },
-    "aq-arco-flagellanten": { "name": "Arco-Flagellanten", "from": "IQ.json", "type": "INF" },
-    "aq-ministorumspriester": { "name": "Ministorumspriester", "from": "IQ.json", "type": "CH" },
-    "aq-lebende-heilige": { "name": "Lebende Heilige", "from": "IQ.json", "type": "INF" },
-    "aq-orco-inquisitor": { "name": "Ordo-Hereticus-Inquisitor", "from": "IQ.json", "type": "INF" },
-    "aq-orco-grossinquisitor": { "name": "Ordo-Hereticus-Großinquisitor", "from": "IQ.json", "type": "INF" },
-    "aq-orco-landtransporter": { "name": "Ordo-Hereticus-Landtransporter", "from": "IQ.json", "type": "LV" },
-    "aq-prioris": { "name": "Prioris-Exorzist", "from": "IQ.json", "type": "AV" },
-    "aq-sanctorum": { "name": "Sanctorum-Exorzist", "from": "IQ.json", "type": "AV" },
-    "aq-exorzistenjaeger": { "name": "Exorzistenjäger", "from": "IQ.json", "type": "AV" },
-    "aq-sororitas-rhino": { "name": "Sororitas-Rhino", "from": "IQ.json", "type": "AV" },
-    "aq-sororitas-repressor": { "name": "Sororitas-Repressor", "from": "IQ.json", "type": "AV" },
-    "aq-sororitas-immolator": { "name": "Sororitas-Immolator", "from": "IQ.json", "type": "AV" },
-    "aq-sororitas-stormlord": { "name": "Sororitas-Stormlord", "from": "IQ.json", "type": "WE" },
-    "aq-laeuterer": { "name": "Läuterer", "from": "IQ.json", "type": "LV" },
-    "aq-mortifier": { "name": "Mortifier", "from": "IQ.json", "type": "LV" },
-    "aq-stoßtruppen": { "name": "Stoßtruppen", "from": "IG.json", "type": "INF" },
-    "aq-chimare": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
-    "aq-hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
-    "aq-hoellenhund": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
-    "aq-vulture": { "name": "Vulture", "from": "IG.json", "type": "AV" },
-    "aq-valkyrie": { "name": "Valkyrie", "from": "IG.json", "type": "AV" },
-    "aq-blitzschlag": { "name": "Blitzschlag-Abfangjäger", "from": "ImperialNavy.json", "type": "AC" },
-    "aq-marauder": { "name": "Marauder-Zerstörer", "from": "ImperialNavy.json", "type": "AC" },
-    "aq-lunar-kreuzer": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "SC" },
-    "aq-emperor-kreuz": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "SC" }
-  },
-  "sections": [
-    {
-      "id": "core",
-      "name": "Adepta-Sororitas-Kernformationen",
-      "formations": ["aq-mission", "aq-orco-inquisitor-gefolge"]
+    "strategy": 3,
+    "initiative": [
+        {
+            "formations": [
+                "aq-orco-inquisitor-gefolge",
+                "aq-vulture",
+                "aq-redemption",
+                "aq-infernus",
+                "aq-blitzschlag",
+                "aq-marauder",
+                "aq-lunar-kreuzer"
+            ],
+            "value": "2+"
+        },
+        {
+            "formations": [
+                "*"
+            ],
+            "value": "1+"
+        }
+    ],
+    "units": {
+        "aq-paladine": {
+            "name": "Palatine",
+            "from": "IQ.json",
+            "type": "CH"
+        },
+        "aq-prinzipalin": {
+            "name": "Prinzipalin",
+            "from": "IQ.json",
+            "type": "CH"
+        },
+        "aq-sororitas-schwestern": {
+            "name": "Sororitas-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-dominion-schwestern": {
+            "name": "Dominion-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-celestia-schwestern": {
+            "name": "Celestia-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-retributor-schwestern": {
+            "name": "Retributor-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-seraphim-schwestern": {
+            "name": "Seraphim-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-repentia-schwestern": {
+            "name": "Repentia-Schwestern",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-redemptionisten": {
+            "name": "Redemptionisten",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-arco-flagellanten": {
+            "name": "Arco-Flagellanten",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-ministorumspriester": {
+            "name": "Ministorumspriester",
+            "from": "IQ.json",
+            "type": "CH"
+        },
+        "aq-lebende-heilige": {
+            "name": "Lebende Heilige",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-orco-inquisitor": {
+            "name": "Ordo-Hereticus-Inquisitor",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-orco-grossinquisitor": {
+            "name": "Ordo-Hereticus-Großinquisitor",
+            "from": "IQ.json",
+            "type": "INF"
+        },
+        "aq-orco-landtransporter": {
+            "name": "Ordo-Hereticus-Landtransporter",
+            "from": "IQ.json",
+            "type": "LV"
+        },
+        "aq-prioris": {
+            "name": "Prioris-Exorzist",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-sanctorum": {
+            "name": "Sanctorum-Exorzist",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-exorzistenjaeger": {
+            "name": "Exorzistenjäger",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-sororitas-rhino": {
+            "name": "Sororitas-Rhino",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-sororitas-repressor": {
+            "name": "Sororitas-Repressor",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-sororitas-immolator": {
+            "name": "Sororitas-Immolator",
+            "from": "IQ.json",
+            "type": "AV"
+        },
+        "aq-sororitas-stormlord": {
+            "name": "Sororitas-Stormlord",
+            "from": "IQ.json",
+            "type": "WE"
+        },
+        "aq-laeuterer": {
+            "name": "Läuterer",
+            "from": "IQ.json",
+            "type": "LV"
+        },
+        "aq-mortifier": {
+            "name": "Mortifier",
+            "from": "IQ.json",
+            "type": "LV"
+        },
+        "aq-stoßtruppen": {
+            "name": "Stoßtruppen",
+            "from": "IG.json",
+            "type": "INF"
+        },
+        "aq-chimare": {
+            "name": "Chimäre",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "aq-hydra": {
+            "name": "Hydra",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "aq-hoellenhund": {
+            "name": "Höllenhund",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "aq-vulture": {
+            "name": "Vulture",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "aq-valkyrie": {
+            "name": "Valkyrie",
+            "from": "IG.json",
+            "type": "AV"
+        },
+        "aq-blitzschlag": {
+            "name": "Blitzschlag-Abfangjäger",
+            "from": "ImperialNavy.json",
+            "type": "AC"
+        },
+        "aq-marauder": {
+            "name": "Marauder-Zerstörer",
+            "from": "ImperialNavy.json",
+            "type": "AC"
+        },
+        "aq-lunar-kreuzer": {
+            "name": "Kreuzer der Lunar-Klasse",
+            "from": "ImperialNavy.json",
+            "type": "SC"
+        },
+        "aq-emperor-kreuz": {
+            "name": "Schlachtschiff der Emperor-Klasse",
+            "from": "ImperialNavy.json",
+            "type": "SC"
+        }
     },
-    {
-      "id": "support",
-      "name": "Adepta Sororita Unterstützungsformationen",
-      "formations": [
-        "aq-immolation",
-        "aq-exorcism",
-        "aq-seraph",
-        "aq-retribution",
-        "aq-repentance",
-        "aq-dominus",
-        "aq-stormlord"
-      ]
-    },
-    {
-      "id": "orco",
-      "name": "Ordo-Hereticus-Verbände",
-      "formations": ["aq-vulture", "aq-redemption", "aq-infernus"]
-    },
-    {
-      "id": "fleet",
-      "name": "Verbände der Imperial Flotte",
-      "formations": ["aq-blitzschlag", "aq-marauder", "aq-lunar-kreuzer"]
-    }
-  ],
-  "formations": [
-    {
-      "id": "aq-mission",
-      "name": "Mission",
-      "pts": 250,
-      "tags": ["core"],
-      "units": [
-        { "unit": "aq-paladine", "count": 1 },
-        { "unit": "aq-sororitas-schwestern", "count": 8 }
-      ],
-      "upgrades": ["aq-upgrade-orco-hereticus", "aq-upgrade-hunter", "aq-upgrade-transport"]
-    },
-    {
-      "id": "aq-orco-inquisitor-gefolge",
-      "name": "0–1 Ordo Hereticus Inquisitor Gefolge",
-      "pts": 250,
-      "tags": ["core"],
-      "units": [
-        { "unit": "aq-orco-inquisitor", "count": 1 },
-        { "unit": "aq-stoßtruppen", "count": 5 },
-        { "unit": "aq-chimare", "count": 3 }
-      ],
-      "upgrades": ["aq-upgrade-hydra", "aq-upgrade-valkyrie", "aq-upgrade-hoellenhund", "aq-upgrade-orco-hereticus"]
-    },
-    {
-      "id": "aq-immolation",
-      "name": "Immolation",
-      "pts": 250,
-      "tags": ["support"],
-      "units": [
-        { "unit": "aq-paladine", "count": 1 },
-        { "unit": "aq-celestia-schwestern", "count": 3 },
-        { "unit": "aq-sororitas-immolator", "count": 3 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "aq-exorcism",
-      "name": "Exorcism",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [{ "unit": "aq-prioris", "count": 4 }],
-      "upgrades": ["aq-upgrade-sanctorum", "aq-upgrade-hunter"]
-    },
-    {
-      "id": "aq-seraph",
-      "name": "Seraph",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [
-        { "unit": "aq-paladine", "count": 1 },
-        { "unit": "aq-seraphim-schwestern", "count": 6 }
-      ],
-      "upgrades": ["aq-upgrade-lebende-heilige"]
-    },
-    {
-      "id": "aq-retribution",
-      "name": "Retribution",
-      "pts": 225,
-      "tags": ["support"],
-      "units": [
-        { "unit": "aq-retributor-schwestern", "count": 4 },
-        { "unit": "aq-sororitas-rhino", "count": 2 }
-      ],
-      "upgrades": ["aq-upgrade-transport"]
-    },
-    {
-      "id": "aq-repentance",
-      "name": "Repentance",
-      "pts": 175,
-      "tags": ["support"],
-      "units": [
-        { "unit": "aq-repentia-schwestern", "count": 3 },
-        { "unit": "aq-mortifier", "count": 3 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "aq-dominus",
-      "name": "Dominus",
-      "pts": 175,
-      "tags": ["support"],
-      "units": [
-        { "unit": "aq-paladine", "count": 1 },
-        { "unit": "aq-dominion-schwestern", "count": 4 },
-        { "unit": "aq-sororitas-rhino", "count": 2 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "aq-stormlord",
-      "name": "Stormlord",
-      "pts": 175,
-      "tags": ["support"],
-      "units": [{ "unit": "aq-sororitas-stormlord", "count": 1 }],
-      "upgrades": []
-    },
-    {
-      "id": "aq-vulture",
-      "name": "Vulture",
-      "pts": 300,
-      "tags": ["orco"],
-      "units": [{ "unit": "aq-vulture", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "aq-redemption",
-      "name": "Redemption",
-      "pts": 175,
-      "tags": ["orco"],
-      "units": [
-        { "unit": "aq-ministorumspriester", "count": 1 },
-        { "unit": "aq-redemptionisten", "count": 8 },
-        { "unit": "aq-orco-landtransporter", "count": 4 }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "aq-infernus",
-      "name": "Infernus",
-      "pts": 200,
-      "tags": ["orco"],
-      "units": [{ "unit": "aq-hoellenhund", "count": 4 }],
-      "upgrades": []
-    },
-    {
-      "id": "aq-blitzschlag",
-      "name": "Blitzschlag-Staffel",
-      "pts": 150,
-      "tags": ["fleet"],
-      "units": [{ "unit": "aq-blitzschlag", "count": 2 }],
-      "upgrades": []
-    },
-    {
-      "id": "aq-marauder",
-      "name": "Marauder-Zerstörer",
-      "pts": 175,
-      "tags": ["fleet"],
-      "units": [{ "unit": "aq-marauder", "count": 1 }],
-      "upgrades": []
-    },
-    {
-      "id": "aq-lunar-kreuzer",
-      "name": "0–1 Orbale Unterstützung",
-      "pts": 125,
-      "tags": ["fleet"],
-      "units": [{ "unit": "aq-lunar-kreuzer", "count": 1 }],
-      "upgrades": ["aq-upgrade-emperor-kreuz"]
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "aq-upgrade-orco-hereticus",
-      "name": "Ordo Hereticus Superior (0–1 pro Armee)",
-      "variants": [
-        { "id": "1", "label": "Ersetze einen Palatine durch eine Prinzipalin", "pts": 50, "effects": [{ "op": "replace", "from": "aq-paladine", "to": "aq-prinzipalin", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-hunter",
-      "name": "Hunter",
-      "variants": [
-        { "id": "1", "label": "Füge 1 Exorzist Hunter hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "aq-exorzistenjaeger", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-transport",
-      "name": "Transporter",
-      "variants": [
-        { "id": "1", "label": "Füge 1 Sororitas-Immolator hinzu", "pts": 30, "effects": [{ "op": "add", "unit": "aq-sororitas-immolator", "count": 1 }] },
-        { "id": "2", "label": "Füge 1 Sororitas-Repressor hinzu", "pts": 20, "effects": [{ "op": "add", "unit": "aq-sororitas-repressor", "count": 1 }] },
-        { "id": "3", "label": "Füge 1 Sororitas-Rhino hinzu", "pts": 10, "effects": [{ "op": "add", "unit": "aq-sororitas-rhino", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-hydra",
-      "name": "Hydra",
-      "variants": [
-        { "id": "1", "label": "Füge 1 Hydra hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "aq-hydra", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-valkyrie",
-      "name": "Valkyrie",
-      "variants": [
-        { "id": "1", "label": "Ersetze 3 Chimären durch 3 Valkyries", "pts": 50, "effects": [{ "op": "replace", "from": "aq-chimare", "to": "aq-valkyrie", "count": 3 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-hoellenhund",
-      "name": "Höllenhund",
-      "variants": [
-        { "id": "1", "label": "Füge 1 Höllenhund hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "aq-hoellenhund", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-sanctorum",
-      "name": "Sanctorum-Exorzist",
-      "variants": [
-        { "id": "1", "label": "Ersetze 4 Exorzist Prioris durch 4 Exorzist Sanctorum", "pts": 25, "effects": [{ "op": "replace", "from": "aq-prioris", "to": "aq-sanctorum", "count": 4 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-lebende-heilige",
-      "name": "Living Saint",
-      "variants": [
-        { "id": "1", "label": "Ersetze einen Palatine durch eine Living Saint", "pts": 50, "effects": [{ "op": "replace", "from": "aq-paladine", "to": "aq-lebende-heilige", "count": 1 }] }
-      ]
-    },
-    {
-      "id": "aq-upgrade-emperor-kreuz",
-      "name": "Schlachtschiff der Emperor-Klasse",
-      "variants": [
-        { "id": "1", "label": "Ersetze den Kreuzer der Lunar-Klasse durch ein Schlachtschiff der Emperor-Klasse", "pts": 50, "effects": [{ "op": "replace", "from": "aq-lunar-kreuzer", "to": "aq-emperor-kreuz", "count": 1 }] }
-      ]
-    }
-  ],
-  "transport": [],
-  "formationConstraints": [],
-  "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
-  ]
+    "sections": [
+        {
+            "id": "core",
+            "name": "Adepta-Sororitas-Kernformationen",
+            "formations": [
+                "aq-mission",
+                "aq-orco-inquisitor-gefolge"
+            ]
+        },
+        {
+            "id": "support",
+            "name": "Adepta Sororita Unterstützungsformationen",
+            "formations": [
+                "aq-immolation",
+                "aq-exorcism",
+                "aq-seraph",
+                "aq-retribution",
+                "aq-repentance",
+                "aq-dominus",
+                "aq-stormlord"
+            ]
+        },
+        {
+            "id": "orco",
+            "name": "Ordo-Hereticus-Verbände",
+            "formations": [
+                "aq-vulture",
+                "aq-redemption",
+                "aq-infernus"
+            ]
+        },
+        {
+            "id": "fleet",
+            "name": "Verbände der Imperial Flotte",
+            "formations": [
+                "aq-blitzschlag",
+                "aq-marauder",
+                "aq-lunar-kreuzer"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "id": "aq-mission",
+            "name": "Mission",
+            "pts": 250,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "aq-paladine",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-sororitas-schwestern",
+                    "count": 8
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-orco-hereticus",
+                "aq-upgrade-hunter",
+                "aq-upgrade-transport"
+            ]
+        },
+        {
+            "id": "aq-orco-inquisitor-gefolge",
+            "name": "0–1 Ordo Hereticus Inquisitor Gefolge",
+            "pts": 250,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "aq-orco-inquisitor",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-stoßtruppen",
+                    "count": 5
+                },
+                {
+                    "unit": "aq-chimare",
+                    "count": 3
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-hydra",
+                "aq-upgrade-valkyrie",
+                "aq-upgrade-hoellenhund",
+                "aq-upgrade-orco-hereticus"
+            ]
+        },
+        {
+            "id": "aq-immolation",
+            "name": "Immolation",
+            "pts": 250,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-paladine",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-celestia-schwestern",
+                    "count": 3
+                },
+                {
+                    "unit": "aq-sororitas-immolator",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-exorcism",
+            "name": "Exorcism",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-prioris",
+                    "count": 4
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-sanctorum",
+                "aq-upgrade-hunter"
+            ]
+        },
+        {
+            "id": "aq-seraph",
+            "name": "Seraph",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-paladine",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-seraphim-schwestern",
+                    "count": 6
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-lebende-heilige"
+            ]
+        },
+        {
+            "id": "aq-retribution",
+            "name": "Retribution",
+            "pts": 225,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-retributor-schwestern",
+                    "count": 4
+                },
+                {
+                    "unit": "aq-sororitas-rhino",
+                    "count": 2
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-transport"
+            ]
+        },
+        {
+            "id": "aq-repentance",
+            "name": "Repentance",
+            "pts": 175,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-repentia-schwestern",
+                    "count": 3
+                },
+                {
+                    "unit": "aq-mortifier",
+                    "count": 3
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-dominus",
+            "name": "Dominus",
+            "pts": 175,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-paladine",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-dominion-schwestern",
+                    "count": 4
+                },
+                {
+                    "unit": "aq-sororitas-rhino",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-stormlord",
+            "name": "Stormlord",
+            "pts": 175,
+            "tags": [
+                "support"
+            ],
+            "units": [
+                {
+                    "unit": "aq-sororitas-stormlord",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-vulture",
+            "name": "Vulture",
+            "pts": 300,
+            "tags": [
+                "orco"
+            ],
+            "units": [
+                {
+                    "unit": "aq-vulture",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-redemption",
+            "name": "Redemption",
+            "pts": 175,
+            "tags": [
+                "orco"
+            ],
+            "units": [
+                {
+                    "unit": "aq-ministorumspriester",
+                    "count": 1
+                },
+                {
+                    "unit": "aq-redemptionisten",
+                    "count": 8
+                },
+                {
+                    "unit": "aq-orco-landtransporter",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-infernus",
+            "name": "Infernus",
+            "pts": 200,
+            "tags": [
+                "orco"
+            ],
+            "units": [
+                {
+                    "unit": "aq-hoellenhund",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-blitzschlag",
+            "name": "Blitzschlag-Staffel",
+            "pts": 150,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "aq-blitzschlag",
+                    "count": 2
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-marauder",
+            "name": "Marauder-Zerstörer",
+            "pts": 175,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "aq-marauder",
+                    "count": 1
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "aq-lunar-kreuzer",
+            "name": "0–1 Orbale Unterstützung",
+            "pts": 125,
+            "tags": [
+                "fleet"
+            ],
+            "units": [
+                {
+                    "unit": "aq-lunar-kreuzer",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "aq-upgrade-emperor-kreuz"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "aq-upgrade-orco-hereticus",
+            "name": "Ordo Hereticus Superior (0–1 pro Armee)",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze einen Palatine durch eine Prinzipalin",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-paladine",
+                            "to": "aq-prinzipalin",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-hunter",
+            "name": "Hunter",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Exorzist Hunter hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-exorzistenjaeger",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-transport",
+            "name": "Transporter",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Sororitas-Immolator hinzu",
+                    "pts": 30,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-sororitas-immolator",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 1 Sororitas-Repressor hinzu",
+                    "pts": 20,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-sororitas-repressor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "label": "Füge 1 Sororitas-Rhino hinzu",
+                    "pts": 10,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-sororitas-rhino",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-hydra",
+            "name": "Hydra",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Hydra hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-hydra",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-valkyrie",
+            "name": "Valkyrie",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze 3 Chimären durch 3 Valkyries",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-chimare",
+                            "to": "aq-valkyrie",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-hoellenhund",
+            "name": "Höllenhund",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Höllenhund hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-hoellenhund",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-sanctorum",
+            "name": "Sanctorum-Exorzist",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze 4 Exorzist Prioris durch 4 Exorzist Sanctorum",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-prioris",
+                            "to": "aq-sanctorum",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-lebende-heilige",
+            "name": "Living Saint",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze einen Palatine durch eine Living Saint",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-paladine",
+                            "to": "aq-lebende-heilige",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-emperor-kreuz",
+            "name": "Schlachtschiff der Emperor-Klasse",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze den Kreuzer der Lunar-Klasse durch ein Schlachtschiff der Emperor-Klasse",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-lunar-kreuzer",
+                            "to": "aq-emperor-kreuz",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [],
+    "formationConstraints": [],
+    "upgradeConstraints": [
+        {
+            "id": "once-per-formation",
+            "from": [
+                "*"
+            ],
+            "max": 1,
+            "perUpgrade": true,
+            "perFormation": true
+        }
+    ]
 }
