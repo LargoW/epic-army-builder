@@ -21,27 +21,111 @@
     }
   ],
   "units": {
-    "cu-tribun": { "name": "Tribun", "from": "CU.json", "type": "CH" },
-    "cu-generalkommandant": { "name": "Generalkommandant", "from": "CU.json", "type": "CH" },
-    "cu-centura": { "name": "Centura der Oblivion Knights", "from": "CU.json", "type": "AV" },
-    "cu-sagittarum": { "name": "Sagittarum", "from": "CU.json", "type": "AV" },
-    "cu-custodesgardist": { "name": "Custodesgardist", "from": "CU.json", "type": "AV" },
-    "cu-sentinel": { "name": "Sentinel-Wächter", "from": "CU.json", "type": "AV" },
-    "cu-custodes": { "name": "Custodeshüter", "from": "CU.json", "type": "AV" },
-    "cu-aquilon": { "name": "Aquilon-Terminator", "from": "CU.json", "type": "AV" },
-    "cu-venatari": { "name": "Venatari", "from": "CU.json", "type": "AV" },
-    "cu-schwester": { "name": "Schwester der Stille", "from": "CU.json", "type": "AV" },
-    "cu-vertus": { "name": "Vertus Praetors", "from": "CU.json", "type": "AV" },
-    "cu-achilles": { "name": "Achilles-Contemptor-Cybot", "from": "CU.json", "type": "AV" },
-    "cu-telemon": { "name": "Schwerer Telemon-Cybot", "from": "CU.json", "type": "AV" },
-    "cu-pallas": { "name": "Antigravschweber Pallas", "from": "CU.json", "type": "AV" },
-    "cu-caladius": { "name": "Caladius-Antigravpanzer", "from": "CU.json", "type": "AV" },
-    "cu-corus": { "name": "Coronus", "from": "CU.json", "type": "AV" },
-    "cu-Land Raider": { "name": "Custodes-Land Raider", "from": "CU.json", "type": "AV" },
-    "cu-rhino": { "name": "Rhino der Schwestern der Stille", "from": "CU.json", "type": "AV" },
-    "cu-jager": { "name": "Jäger der Schwestern der Stille", "from": "CU.json", "type": "AV" },
-    "cu-orion": { "name": "Orion-Angriffsschiff", "from": "CU.json", "type": "AV" },
-    "sm-stormtalon": { "name": "Sturmtalon", "from": "SM.json", "type": "AV" }
+    "cu-tribun": {
+      "name": "Tribun",
+      "from": "CU.json",
+      "type": "CH"
+    },
+    "cu-generalkommandant": {
+      "name": "Generalkommandant",
+      "from": "CU.json",
+      "type": "CH"
+    },
+    "cu-centura": {
+      "name": "Centura der Oblivion Knights",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-sagittarum": {
+      "name": "Sagittarum",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-custodesgardist": {
+      "name": "Custodesgardist",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-sentinel": {
+      "name": "Sentinel-Wächter",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-custodes": {
+      "name": "Custodeshüter",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-aquilon": {
+      "name": "Aquilon-Terminator",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-venatari": {
+      "name": "Venatari",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-schwester": {
+      "name": "Schwester der Stille",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-vertus": {
+      "name": "Vertus Praetors",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-achilles": {
+      "name": "Achilles-Contemptor-Cybot",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-telemon": {
+      "name": "Schwerer Telemon-Cybot",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-pallas": {
+      "name": "Antigravschweber Pallas",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-caladius": {
+      "name": "Caladius-Antigravpanzer",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-corus": {
+      "name": "Coronus",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-Land Raider": {
+      "name": "Custodes-Land Raider",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-rhino": {
+      "name": "Rhino der Schwestern der Stille",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-jager": {
+      "name": "Jäger der Schwestern der Stille",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "cu-orion": {
+      "name": "Orion-Angriffsschiff",
+      "from": "CU.json",
+      "type": "AV"
+    },
+    "sm-stormtalon": {
+      "name": "Sturmtalon",
+      "from": "SM.json",
+      "type": "AV"
+    }
   },
   "sections": [
     {
@@ -89,9 +173,28 @@
         "core"
       ],
       "units": [
-        { "unit": "cu-sagittarum", "count": 2 }
+        {
+          "unit": "cu-sagittarum",
+          "count": 2
+        },
+        {
+          "oneOf": [
+            "cu-custodesgardist",
+            "cu-sentinel"
+          ],
+          "count": 2
+        },
+        {
+          "oneOf": [
+            "cu-Land Raider",
+            "cu-corus"
+          ],
+          "count": 2
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-befehlshaber"
+      ]
     },
     {
       "id": "cu-waechterstaffel",
@@ -101,9 +204,16 @@
         "elite"
       ],
       "units": [
-        { "unit": "cu-custodes", "count": 5 }
+        {
+          "unit": "cu-custodes",
+          "count": 5
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-befehlshaber",
+        "cu-upgrade-cybot",
+        "cu-upgrade-transporter"
+      ]
     },
     {
       "id": "cu-cybot-staffel",
@@ -113,9 +223,18 @@
         "elite"
       ],
       "units": [
-        { "unit": "cu-achilles", "count": 3 }
+        {
+          "oneOf": [
+            "cu-achilles",
+            "cu-telemon"
+          ],
+          "count": 3,
+          "mixed": true
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-cybot"
+      ]
     },
     {
       "id": "cu-aquilon-custodes",
@@ -125,9 +244,16 @@
         "elite"
       ],
       "units": [
-        { "unit": "cu-aquilon", "count": 4 }
+        {
+          "unit": "cu-aquilon",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-befehlshaber",
+        "cu-upgrade-cybot",
+        "cu-upgrade-transporter"
+      ]
     },
     {
       "id": "cu-venatari-staffel",
@@ -137,9 +263,14 @@
         "support"
       ],
       "units": [
-        { "unit": "cu-venatari", "count": 5 }
+        {
+          "unit": "cu-venatari",
+          "count": 5
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-befehlshaber"
+      ]
     },
     {
       "id": "cu-kataphractoi",
@@ -149,9 +280,14 @@
         "support"
       ],
       "units": [
-        { "unit": "cu-vertus", "count": 6 }
+        {
+          "unit": "cu-vertus",
+          "count": 6
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-befehlshaber"
+      ]
     },
     {
       "id": "cu-pallas-antigravpanzer",
@@ -161,7 +297,10 @@
         "support"
       ],
       "units": [
-        { "unit": "cu-pallas", "count": 4 }
+        {
+          "unit": "cu-pallas",
+          "count": 4
+        }
       ],
       "upgrades": []
     },
@@ -173,7 +312,10 @@
         "support"
       ],
       "units": [
-        { "unit": "cu-caladius", "count": 3 }
+        {
+          "unit": "cu-caladius",
+          "count": 3
+        }
       ],
       "upgrades": []
     },
@@ -185,10 +327,18 @@
         "support"
       ],
       "units": [
-        { "unit": "cu-schwester", "count": 6 },
-        { "unit": "cu-rhino", "count": 3 }
+        {
+          "unit": "cu-schwester",
+          "count": 6
+        },
+        {
+          "unit": "cu-rhino",
+          "count": 3
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "cu-upgrade-jager"
+      ]
     },
     {
       "id": "cu-orion-angriffsschiff",
@@ -198,7 +348,10 @@
         "fleet"
       ],
       "units": [
-        { "unit": "cu-orion", "count": 1 }
+        {
+          "unit": "cu-orion",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -210,7 +363,10 @@
         "fleet"
       ],
       "units": [
-        { "unit": "sm-stormtalon", "count": 2 }
+        {
+          "unit": "sm-stormtalon",
+          "count": 2
+        }
       ],
       "upgrades": []
     }
@@ -222,18 +378,39 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge einen Generalkommandanten oder eine Centura der Oblivion Knights hinzu",
+          "label": "Füge einen Generalkommandanten hinzu",
           "pts": 50,
           "effects": [
-            { "op": "add", "unit": "cu-generalkommandant", "count": 1 }
+            {
+              "op": "add",
+              "unit": "cu-generalkommandant",
+              "count": 1
+            }
           ]
         },
         {
           "id": "2",
+          "label": "Füge eine Centura der Oblivion Knights hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "cu-centura",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "3",
           "label": "Füge 0–1 Tribune pro Armee hinzu",
           "pts": 100,
+          "perArmy": 1,
           "effects": [
-            { "op": "add", "unit": "cu-tribun", "count": 1 }
+            {
+              "op": "add",
+              "unit": "cu-tribun",
+              "count": 1
+            }
           ]
         }
       ]
@@ -244,11 +421,17 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge 1 Jäger der Schwestern der Stille hinzu",
+          "label": "Füge bis zu zwei Jäger der Schwestern der Stille hinzu",
           "pts": 75,
           "effects": [
-            { "op": "add", "unit": "cu-jager", "count": 1 }
-          ]
+            {
+              "op": "add",
+              "unit": "cu-jager",
+              "count": 1
+            }
+          ],
+          "perUnit": true,
+          "max": 2
         }
       ]
     },
@@ -258,10 +441,26 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Contemptor-Cybots oder Schwerer Telemon-Cybots hinzu",
+          "label": "Füge einen Contemptor Cybot Achilles hinzu",
           "pts": 100,
           "effects": [
-            { "op": "add", "unit": "cu-achilles", "count": 1 }
+            {
+              "op": "add",
+              "unit": "cu-achilles",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge einen schweren Telemon-Cybot hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "cu-telemon",
+              "count": 1
+            }
           ]
         }
       ]
@@ -272,10 +471,26 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge genügend Transportoptionen hinzu",
+          "label": "Füge einen Custodes-Land Raider hinzu",
           "pts": 50,
           "effects": [
-            { "op": "add", "unit": "cu-Land Raider", "count": 1 }
+            {
+              "op": "add",
+              "unit": "cu-Land Raider",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge einen Coronus hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "cu-corus",
+              "count": 1
+            }
           ]
         }
       ]
