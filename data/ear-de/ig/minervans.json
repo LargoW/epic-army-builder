@@ -6,58 +6,217 @@
   "name": "Minervanische Panzerlegion",
   "faction": "Astra Militarum",
   "version": "1.0.Beta-2",
-  "source": { "file": "lists_de/IG/minervans.json", "version": "1.0.Beta-2", "commit": null },
+  "source": {
+    "file": "lists_de/IG/minervans.json",
+    "version": "1.0.Beta-2",
+    "commit": null
+  },
   "strategy": 2,
-  "initiative": [ { "formations": ["*"], "value": "2+" } ],
+  "initiative": [
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
   "units": {
-    "lord-kommissar": { "name": "Lord-Kommissar", "from": "IG.json", "type": "CH" },
-    "kommissarkapitan": { "name": "Kommissarkapitän", "from": "IG.json", "type": "CH" },
-    "chimera": { "name": "Chimäre", "from": "IG.json", "type": "AV" },
-    "infantry": { "name": "Infanterie", "from": "IG.json", "type": "INF" },
-    "deathstrike": { "name": "Todesstoß Raketenlafette", "from": "IG.json", "type": "AV" },
-    "hellhound": { "name": "Höllenhund", "from": "IG.json", "type": "AV" },
-    "salamander": { "name": "Salamander-Spähpanzer", "from": "IG.json", "type": "AV" },
-    "basilisk": { "name": "Basilisk", "from": "IG.json", "type": "AV" },
-    "bombard": { "name": "Bombarde", "from": "IG.json", "type": "AV" },
-    "mantikor": { "name": "Mantikor", "from": "IG.json", "type": "AV" },
-    "greiff": { "name": "Greif", "from": "IG.json", "type": "AV" },
-    "medusa": { "name": "Medusa", "from": "IG.json", "type": "AV" },
-    "hydra": { "name": "Hydra", "from": "IG.json", "type": "AV" },
-    "leman-russ": { "name": "Leman Russ Kampfpanzer", "from": "IG.json", "type": "AV" },
-    "leman-russ-thunderer": { "name": "Leman Russ Thunderer", "from": "IG.json", "type": "AV" },
-    "leman-russ-vanquisher": { "name": "Leman Russ Vanquisher", "from": "IG.json", "type": "AV" },
-    "leman-russ-conqueror": { "name": "Leman Russ Conqueror", "from": "IG.json", "type": "AV" },
-    "leman-russ-punisher": { "name": "Leman Russ Punisher", "from": "IG.json", "type": "AV" },
-    "leman-russ-zerstörer": { "name": "Leman-Russ-Zerstörer", "from": "IG.json", "type": "AV" },
-    "leman-russ-belagerungspanzer": { "name": "Leman-Russ-Belagerungspanzer", "from": "IG.json", "type": "AV" },
-    "leman-russ-henker": { "name": "Leman-Russ-Henker", "from": "IG.json", "type": "AV" },
-    "leman-russ-exterminator": { "name": "Leman Russ Exterminator", "from": "IG.json", "type": "AV" },
-    "shadowsword": { "name": "Shadowsword", "from": "IG.json", "type": "AV" },
-    "baneblade": { "name": "Baneblade", "from": "IG.json", "type": "AV" },
-    "stormblade": { "name": "Stormblade", "from": "IG.json", "type": "AV" },
-    "stormsword": { "name": "Stormsword", "from": "IG.json", "type": "AV" },
-    "stormhammer": { "name": "Stormhammer", "from": "IG.json", "type": "AV" },
-    "warhound": { "name": "Warhound", "from": "ImperialAllies.json", "type": "AV" },
-    "thunderbolt": { "name": "Donnerkeil-Jäger", "from": "ImperialNavy.json", "type": "AV" },
-    "marauder": { "name": "Marauder-Bomber (B)", "from": "ImperialNavy.json", "type": "AV" },
-    "lunar-cruiser": { "name": "Kreuzer der Lunar-Klasse", "from": "ImperialNavy.json", "type": "AV" },
-    "emperor-battleship": { "name": "Schlachtschiff der Emperor-Klasse", "from": "ImperialNavy.json", "type": "AV" }
+    "lord-kommissar": {
+      "name": "Lord-Kommissar",
+      "from": "IG.json",
+      "type": "CH"
+    },
+    "kommissarkapitan": {
+      "name": "Kommissarkapitän",
+      "from": "IG.json",
+      "type": "CH"
+    },
+    "chimera": {
+      "name": "Chimäre",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "infantry": {
+      "name": "Infanterie",
+      "from": "IG.json",
+      "type": "INF"
+    },
+    "deathstrike": {
+      "name": "Todesstoß Raketenlafette",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "hellhound": {
+      "name": "Höllenhund",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "salamander": {
+      "name": "Salamander-Spähpanzer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "basilisk": {
+      "name": "Basilisk",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "bombard": {
+      "name": "Bombarde",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "mantikor": {
+      "name": "Mantikor",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "greiff": {
+      "name": "Greif",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "medusa": {
+      "name": "Medusa",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "hydra": {
+      "name": "Hydra",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ": {
+      "name": "Leman Russ Kampfpanzer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-thunderer": {
+      "name": "Leman Russ Thunderer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-vanquisher": {
+      "name": "Leman Russ Vanquisher",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-conqueror": {
+      "name": "Leman Russ Conqueror",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-punisher": {
+      "name": "Leman Russ Punisher",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-zerstörer": {
+      "name": "Leman-Russ-Zerstörer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-belagerungspanzer": {
+      "name": "Leman-Russ-Belagerungspanzer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-henker": {
+      "name": "Leman-Russ-Henker",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "leman-russ-exterminator": {
+      "name": "Leman Russ Exterminator",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "shadowsword": {
+      "name": "Shadowsword",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "baneblade": {
+      "name": "Baneblade",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "stormblade": {
+      "name": "Stormblade",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "stormsword": {
+      "name": "Stormsword",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "stormhammer": {
+      "name": "Stormhammer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "warhound": {
+      "name": "Warhound",
+      "from": "ImperialAllies.json",
+      "type": "AV"
+    },
+    "thunderbolt": {
+      "name": "Donnerkeil-Jäger",
+      "from": "ImperialNavy.json",
+      "type": "AV"
+    },
+    "marauder": {
+      "name": "Marauder-Bomber (B)",
+      "from": "ImperialNavy.json",
+      "type": "AV"
+    },
+    "lunar-cruiser": {
+      "name": "Kreuzer der Lunar-Klasse",
+      "from": "ImperialNavy.json",
+      "type": "AV"
+    },
+    "emperor-battleship": {
+      "name": "Schlachtschiff der Emperor-Klasse",
+      "from": "ImperialNavy.json",
+      "type": "AV"
+    }
   },
   "sections": [
     {
       "id": "company",
       "name": "Minervan Kompanie Verbände",
-      "formations": ["minovanian-panzerkompanie", "minovanian-superschwere", "minovanian-artillerie"]
+      "formations": [
+        "minovanian-panzerkompanie",
+        "minovanian-superschwere",
+        "minovanian-artillerie"
+      ]
     },
     {
       "id": "support",
       "name": "Minervan Unterstützungsverbände",
-      "formations": ["minovanian-leman-russ-staffel", "minovanian-artillerie"]
+      "formations": [
+        "minovanian-leman-russ-staffel",
+        "minovanian-infanteriezug",
+        "minovanian-artilleriebatterie",
+        "minovanian-greif-batterie",
+        "minovanian-panzerjager",
+        "minovanian-superschwerer-panzerzug",
+        "minovanian-todesstoß-batterie",
+        "minovanian-flakbatterie",
+        "minovanian-salamander-staffel"
+      ],
+      "description": "Pro Minervan-Kompanie dürfen bis zu drei Unterstützungsverbände aufgestellt werden."
     },
     {
       "id": "titans-navy",
       "name": "Minervan Flotte",
-      "formations": ["minovanian-donnerkeil-staffel", "minovanian-orbital"]
+      "formations": [
+        "minovanian-warhounds",
+        "minovanian-donnerkeil-staffel",
+        "minovanian-marauder-staffel",
+        "minovanian-orbital"
+      ]
     }
   ],
   "formations": [
@@ -65,49 +224,272 @@
       "id": "minovanian-panzerkompanie",
       "name": "Minervanische Panzerkompanie",
       "pts": 500,
-      "tags": ["company"],
-      "units": [ { "unit": "leman-russ-vanquisher", "count": 1 }, { "unit": "kommissarkapitan", "count": 1 }, { "unit": "leman-russ", "count": 7 } ],
+      "tags": [
+        "company"
+      ],
+      "units": [
+        {
+          "unit": "leman-russ-vanquisher",
+          "count": 1
+        },
+        {
+          "unit": "kommissarkapitan",
+          "count": 1
+        },
+        {
+          "unit": "leman-russ",
+          "count": 7
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "minovanian-superschwere",
       "name": "Minervanische Superschwere Panzerkompanie",
       "pts": 500,
-      "tags": ["company"],
-      "units": [ { "unit": "baneblade", "count": 3 } ],
+      "tags": [
+        "company"
+      ],
+      "units": [
+        {
+          "unit": "baneblade",
+          "count": 3
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "minovanian-artillerie",
       "name": "Artilleriekompanie",
       "pts": 400,
-      "tags": ["company"],
-      "units": [ { "unit": "basilisk", "count": 6 } ],
+      "tags": [
+        "company"
+      ],
+      "units": [
+        {
+          "unit": "basilisk",
+          "count": 6
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "minovanian-leman-russ-staffel",
       "name": "Leman-Russ-Staffel",
       "pts": 275,
-      "tags": ["support"],
-      "units": [ { "unit": "leman-russ", "count": 4 } ],
-      "upgrades": []
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "leman-russ",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "min-leman-russ-variante",
+        "min-flak-upg",
+        "min-hoellenhunde-upg"
+      ]
     },
     {
       "id": "minovanian-donnerkeil-staffel",
       "name": "Donnerkeil-Staffel",
       "pts": 175,
-      "tags": ["titans-navy"],
-      "units": [ { "unit": "thunderbolt", "count": 2 } ],
+      "tags": [
+        "titans-navy"
+      ],
+      "units": [
+        {
+          "unit": "thunderbolt",
+          "count": 2
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "minovanian-orbital",
       "name": "0–1 Orbitale Unterstützung",
       "pts": 125,
-      "tags": ["titans-navy"],
-      "units": [ { "unit": "lunar-cruiser", "count": 1 } ],
-      "upgrades": ["emperor-battleship"]
+      "tags": [
+        "titans-navy"
+      ],
+      "units": [
+        {
+          "unit": "lunar-cruiser",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "emperor-battleship"
+      ]
+    },
+    {
+      "id": "minovanian-infanteriezug",
+      "name": "Mechanisierter Infanteriezug",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "infantry",
+          "count": 6
+        },
+        {
+          "unit": "chimera",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "min-hoellenhunde-upg",
+        "min-leman-russ-upg"
+      ]
+    },
+    {
+      "id": "minovanian-artilleriebatterie",
+      "name": "Artilleriebatterie",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "basilisk",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "min-artillerie-variante",
+        "min-mantikor-statt-basilisk"
+      ]
+    },
+    {
+      "id": "minovanian-greif-batterie",
+      "name": "Greif-Batterie",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "greiff",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-panzerjager",
+      "name": "Panzerjäger-Schwadron",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "leman-russ-zerstörer",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-superschwerer-panzerzug",
+      "name": "Superschwerer Panzerzug",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "baneblade",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "min-shadowsword-statt-baneblade",
+        "min-stormsword-statt-baneblade",
+        "min-stormblade-statt-baneblade",
+        "min-stormhammer-statt-baneblade"
+      ]
+    },
+    {
+      "id": "minovanian-todesstoß-batterie",
+      "name": "Todesstoß-Batterie",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "deathstrike",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-flakbatterie",
+      "name": "Flakbatterie",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "hydra",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-salamander-staffel",
+      "name": "Salamander-Staffel",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "salamander",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "minovanian-warhounds",
+      "name": "Warhounds",
+      "pts": 275,
+      "tags": [
+        "titans-navy"
+      ],
+      "units": [
+        {
+          "unit": "warhound",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "min-extra-warhound"
+      ]
+    },
+    {
+      "id": "minovanian-marauder-staffel",
+      "name": "Marauder-Staffel",
+      "pts": 250,
+      "tags": [
+        "titans-navy"
+      ],
+      "units": [
+        {
+          "unit": "marauder",
+          "count": 2
+        }
+      ],
+      "upgrades": []
     }
   ],
   "upgrades": [
@@ -129,8 +511,326 @@
           ]
         }
       ]
+    },
+    {
+      "id": "min-leman-russ-variante",
+      "name": "Leman-Russ-Variante",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Thunderer",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-thunderer",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Exterminator",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-exterminator",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Belagerungspanzer",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-belagerungspanzer",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Punisher",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-punisher",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Thunderer",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-thunderer",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "Ersetze 4 Leman Russ durch 4 Leman Russ Conqueror",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "leman-russ",
+              "to": "leman-russ-conqueror",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-flak-upg",
+      "name": "Flak",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Hydra hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hydra",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-hoellenhunde-upg",
+      "name": "Höllenhunde",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Höllenhund hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hellhound",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge 2 Höllenhunde hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hellhound",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Füge 3 Höllenhunde hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "hellhound",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-leman-russ-upg",
+      "name": "Leman Russ Kampfpanzer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 3 Leman Russ hinzu",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "leman-russ",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-artillerie-variante",
+      "name": "Artillerie-Variante",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 3 Basilisken durch 3 Bombarden",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "basilisk",
+              "to": "bombard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Ersetze 3 Basilisken durch 4 Medusa",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "basilisk",
+              "to": "medusa",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-mantikor-statt-basilisk",
+      "name": "Mantikor statt Basilisk",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 3 Basilisken durch 3 Mantikors",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "basilisk",
+              "to": "mantikor",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-shadowsword-statt-baneblade",
+      "name": "Shadowsword statt Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 1 Baneblade durch 1 Shadowsword",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "baneblade",
+              "to": "shadowsword",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-stormsword-statt-baneblade",
+      "name": "Stormsword statt Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 1 Baneblade durch 1 Stormsword",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "baneblade",
+              "to": "stormsword",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-stormblade-statt-baneblade",
+      "name": "Stormblade statt Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze 1 Baneblade durch 1 Stormblade",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "baneblade",
+              "to": "stormblade",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-stormhammer-statt-baneblade",
+      "name": "Stormhammer statt Baneblade",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Werte 1 Baneblade zu einem Stormhammer auf",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "baneblade",
+              "to": "stormhammer",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "min-extra-warhound",
+      "name": "Zusätzlicher Warhound",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 zusätzlichen Warhound-Titan hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "warhound",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ],
-  "formationConstraints": [],
+  "formationConstraints": [
+    {
+      "id": "support-per-company",
+      "from": [
+        "tag:support"
+      ],
+      "forEach": [
+        "tag:company"
+      ],
+      "max": 3
+    }
+  ],
   "upgradeConstraints": []
 }

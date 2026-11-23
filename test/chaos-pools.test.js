@@ -101,3 +101,38 @@ test("the points of a pool formation match the points the player pays (20 per le
     assert.deepEqual(e.map((x) => x.pts), [pl, pg], id);
   }
 });
+
+test("Chaos Dreadclaw transport upgrades do not erroneously inject Rhinos into the roster", () => {
+  const weData = load("ear-de/Chaos/worldeaters");
+  let s = army(weData, "we-gefolge");
+  assert.equal(summarize(weData, s).entries[0].roster["we-rhino"], 4, "base gefolge has 4 rhinos");
+
+  // Replaced with Dreadclaws -> 4 rhinos removed
+  s = setUpgrade(s, s.formations[0].uid, "we-upgrade-berzerker-transporter", "1");
+  assert.equal(summarize(weData, s).entries[0].roster["we-rhino"] || 0, 0, "dreadclaws remove the 4 rhinos");
+
+  // Replaced with Spartans -> 4 rhinos become 2 spartans
+  s = setUpgrade(s, s.formations[0].uid, "we-upgrade-berzerker-transporter", "2");
+  const gefolgeRoster = summarize(weData, s).entries[0].roster;
+  assert.equal(gefolgeRoster["we-rhino"] || 0, 0, "spartan upgrade removes rhinos");
+  assert.equal(gefolgeRoster["chaos-spartan"], 2, "spartan upgrade adds 2 spartans");
+
+  // Skullseekers + Dreadclaws -> no rhino added
+  let s2 = army(weData, "we-skullseeker-terminatoren");
+  s2 = setUpgrade(s2, s2.formations[0].uid, "we-upgrade-skullseeker-transporter", "1");
+  assert.equal(summarize(weData, s2).entries[0].roster["we-rhino"] || 0, 0, "skullseeker dreadclaws do not add rhino");
+
+  // Emperor's Children, Iron Warriors, Night Lords Dreadclaws do not inject rhinos
+  for (const [id, form, upg] of [
+    ["ear-de/Chaos/emperorschildren", "ec-gefolge", "ec-upgrade-dreadclaws"],
+    ["ear-de/Chaos/ironwarriors", "iw-gefolge", "iw-upgrade-dreadclaws"],
+    ["ear-de/Chaos/nightlords", "nl-terminatorenkompanie", "nl-upgrade-dreadclaws"],
+  ]) {
+    const data = load(id);
+    let st = army(data, form);
+    const beforeRhinos = summarize(data, st).entries[0].roster["ec-rhino"] || summarize(data, st).entries[0].roster["chaos-rhino"] || 0;
+    st = setUpgrade(st, st.formations[0].uid, upg, "1");
+    const afterRhinos = summarize(data, st).entries[0].roster["ec-rhino"] || summarize(data, st).entries[0].roster["chaos-rhino"] || 0;
+    assert.equal(afterRhinos, beforeRhinos, `${id} dreadclaws should not add rhinos`);
+  }
+});

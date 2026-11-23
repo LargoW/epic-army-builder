@@ -6,67 +6,199 @@
   "name": "Night Lords",
   "faction": "Chaos",
   "version": "Alpha 0.6.0",
-  "source": { "file": "lists_de/Chaos/nightlords.json", "version": "Alpha 0.6.0", "commit": null },
+  "source": {
+    "file": "lists_de/Chaos/nightlords.json",
+    "version": "Alpha 0.6.0",
+    "commit": null
+  },
   "strategy": 4,
   "initiative": [
-    { "formations": ["*"], "value": "1+" }
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "1+"
+    }
   ],
   "pools": [
-    { "id": "lesser", "name": "Pool niedere Dämonen", "paid": ["nl-pool-niedere-daemo"], "free": [{ "unit": "nl-hauptmann", "label": "Hauptmann (Dämonenpakt)" }, { "unit": "nl-erster-hauptmann", "label": "Erster Hauptmann (Dämonenpakt)" }] }
+    {
+      "id": "lesser",
+      "name": "Pool niedere Dämonen",
+      "paid": [
+        "nl-pool-niedere-daemo"
+      ],
+      "free": [
+        {
+          "unit": "nl-hauptmann",
+          "label": "Hauptmann (Dämonenpakt)"
+        },
+        {
+          "unit": "nl-erster-hauptmann",
+          "label": "Erster Hauptmann (Dämonenpakt)"
+        }
+      ]
+    }
   ],
   "units": {
-    "nl-erster-hauptmann": { "name": "Night-Lords-Erster Hauptmann", "from": "CSM.json", "type": "AV" },
-    "nl-hauptmann": { "name": "Night-Lords-Hauptmann", "from": "CSM.json", "type": "AV" },
-    "ikonentraeger": { "name": "Ikonenträger", "from": "CSM.json", "type": "CH" },
-    "chaos-sturmmarine": { "name": "Chaos-Sturmmarines", "from": "CSM.json", "type": "INF" },
-    "chaos-space-marine": { "name": "Chaos Space Marines", "from": "CSM.json", "type": "INF" },
-    "raptor": { "name": "Raptoren", "from": "CSM.json", "type": "AV" },
-    "warp-klauen": { "name": "Warp-Klauen", "from": "CSM.json", "type": "AV" },
-    "nl-auserkorene": { "name": "Night-Lords-Auserkorene", "from": "CSM.json", "type": "AV" },
-    "chaos-zerstoerer": { "name": "Chaos-Zerstörer", "from": "CSM.json", "type": "AV" },
-    "atramentar-terminator": { "name": "Atramentar-Terminatoren", "from": "CSM.json", "type": "AV" },
-    "chaos-rhino": { "name": "Chaos Rhino", "from": "CSM.json", "type": "AV" },
-    "chaos-land-raider": { "name": "Chaos Land Raider", "from": "CSM.json", "type": "AV" },
-    "chaos-spartan": { "name": "Chaos-Spartan-Sturmpanzer", "from": "CSM.json", "type": "AV" },
-    "chaos-jaeger": { "name": "Chaos-Jäger", "from": "CSM.json", "type": "AV" },
-    "chaos-angriffs-bike": { "name": "Chaos-Angriffs-Bike", "from": "CSM.json", "type": "AV" },
-    "nl-cybot": { "name": "Night-Lords-Cybot", "from": "CSM.json", "type": "AV" },
-    "chaos-tarantel": { "name": "Chaos-Tarantel", "from": "darkmechanicus.json", "type": "AV" },
-    "furien": { "name": "Furien des ungeteilten Chaos", "from": "daemons.json", "type": "AV" },
-    "chaos-xiphon": { "name": "Chaos-Xiphon-Abfangjäger", "from": "chaosnavy.json", "type": "AV" },
-    "chaos-feuerraptor": { "name": "Chaos-Feuerraptor", "from": "chaosnavy.json", "type": "AV" },
-    "chaos-thunderhawk": { "name": "Chaos-Thunderhawk", "from": "chaosnavy.json", "type": "AV" },
-    "chaos-angriffskreuzer": { "name": "Chaos-Angriffskreuzer", "from": "chaosnavy.json", "type": "AV" }
+    "nl-erster-hauptmann": {
+      "name": "Night-Lords-Erster Hauptmann",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "nl-hauptmann": {
+      "name": "Night-Lords-Hauptmann",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "ikonentraeger": {
+      "name": "Ikonenträger",
+      "from": "CSM.json",
+      "type": "CH"
+    },
+    "chaos-sturmmarine": {
+      "name": "Chaos-Sturmmarines",
+      "from": "CSM.json",
+      "type": "INF"
+    },
+    "chaos-space-marine": {
+      "name": "Chaos Space Marines",
+      "from": "CSM.json",
+      "type": "INF"
+    },
+    "raptor": {
+      "name": "Raptoren",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "warp-klauen": {
+      "name": "Warp-Klauen",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "nl-auserkorene": {
+      "name": "Night-Lords-Auserkorene",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-zerstoerer": {
+      "name": "Chaos-Zerstörer",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "atramentar-terminator": {
+      "name": "Atramentar-Terminatoren",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-rhino": {
+      "name": "Chaos Rhino",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-land-raider": {
+      "name": "Chaos Land Raider",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-spartan": {
+      "name": "Chaos-Spartan-Sturmpanzer",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-jaeger": {
+      "name": "Chaos-Jäger",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-angriffs-bike": {
+      "name": "Chaos-Angriffs-Bike",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "nl-cybot": {
+      "name": "Night-Lords-Cybot",
+      "from": "CSM.json",
+      "type": "AV"
+    },
+    "chaos-tarantel": {
+      "name": "Chaos-Tarantel",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "furien": {
+      "name": "Furien des ungeteilten Chaos",
+      "from": "daemons.json",
+      "type": "AV"
+    },
+    "chaos-xiphon": {
+      "name": "Chaos-Xiphon-Abfangjäger",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    },
+    "chaos-feuerraptor": {
+      "name": "Chaos-Feuerraptor",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    },
+    "chaos-thunderhawk": {
+      "name": "Chaos-Thunderhawk",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    },
+    "chaos-angriffskreuzer": {
+      "name": "Chaos-Angriffskreuzer",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    }
   },
   "sections": [
     {
       "id": "core",
       "name": "Night Lords Kernverbände",
-      "formations": ["nl-nacht-raptor-kompanie"]
+      "formations": [
+        "nl-nacht-raptor-kompanie"
+      ]
     },
     {
       "id": "elite",
       "name": "Night Lords Eliteverbände",
       "description": "Pro Night Lords Kernverband darf bis zu ein Eliteverband aufgestellt werden",
-      "formations": ["nl-auserkorene", "nl-warpkrallenkult", "nl-terminatorenkompanie"]
+      "formations": [
+        "nl-auserkorene",
+        "nl-warpkrallenkult",
+        "nl-terminatorenkompanie"
+      ]
     },
     {
       "id": "support",
       "name": "Night Lords Unterstützungsverbände",
       "description": "Pro Night Lords Kernverband dürfen bis zu zwei Unterstützungsverbände aufgestellt werden.",
-      "formations": ["nl-destruktoren", "nl-terror-kompanie", "nl-unterstützungskompanie", "nl-sturmkompanie"]
+      "formations": [
+        "nl-destruktoren",
+        "nl-terror-kompanie",
+        "nl-unterstützungskompanie",
+        "nl-sturmkompanie"
+      ]
     },
     {
       "id": "titans-navy",
       "name": "Night-Lords-Verteidigungsanlagen und -Flotte",
       "description": "Bis zu einem Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden. Pro Verband der Auserkorenen ist höchstens ein Tarantula-Verband zulässig.",
-      "formations": ["nl-tarantula", "nl-feuerraptor", "nl-xiphon-staffel", "nl-thunderhawk", "nl-angriffskreuzer"]
+      "formations": [
+        "nl-tarantula",
+        "nl-feuerraptor",
+        "nl-xiphon-staffel",
+        "nl-thunderhawk",
+        "nl-angriffskreuzer"
+      ]
     },
     {
       "id": "daemon-pool",
       "name": "Dämonenpool",
       "description": "Es dürfen beliebig viele Punkte für den Dämonenpool ausgegeben werden.",
-      "formations": ["nl-pool-niedere-daemo"]
+      "formations": [
+        "nl-pool-niedere-daemo"
+      ]
     }
   ],
   "formations": [
@@ -74,31 +206,59 @@
       "id": "nl-nacht-raptor-kompanie",
       "name": "Nacht-Raptor-Kompanie",
       "pts": 275,
-      "tags": ["core"],
-      "units": [
-        { "unit": "nl-hauptmann", "count": 1 },
-        { "unit": "raptor", "count": 6 }
+      "tags": [
+        "core"
       ],
-      "upgrades": ["nl-upgrade-ikonentraeger", "nl-upgrade-dreadclaws", "nl-upgrade-cybots"]
+      "units": [
+        {
+          "unit": "nl-hauptmann",
+          "count": 1
+        },
+        {
+          "unit": "raptor",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-ikonentraeger",
+        "nl-upgrade-dreadclaws",
+        "nl-upgrade-cybots"
+      ]
     },
     {
       "id": "nl-auserkorene",
       "name": "Auserkorene",
       "pts": 175,
-      "tags": ["elite"],
-      "units": [
-        { "unit": "nl-auserkorene", "count": 4 },
-        { "unit": "chaos-rhino", "count": 2 }
+      "tags": [
+        "elite"
       ],
-      "upgrades": ["nl-upgrade-cybots", "nl-upgrade-dreadclaws"]
+      "units": [
+        {
+          "unit": "nl-auserkorene",
+          "count": 4
+        },
+        {
+          "unit": "chaos-rhino",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-cybots",
+        "nl-upgrade-dreadclaws"
+      ]
     },
     {
       "id": "nl-warpkrallenkult",
       "name": "Warpkrallenkult",
       "pts": 225,
-      "tags": ["elite"],
+      "tags": [
+        "elite"
+      ],
       "units": [
-        { "unit": "chaos-zerstoerer", "count": 3 }
+        {
+          "unit": "chaos-zerstoerer",
+          "count": 3
+        }
       ],
       "upgrades": []
     },
@@ -106,20 +266,38 @@
       "id": "nl-terminatorenkompanie",
       "name": "Terminatorenkompanie",
       "pts": 325,
-      "tags": ["elite"],
-      "units": [
-        { "unit": "nl-hauptmann", "count": 1 },
-        { "unit": "atramentar-terminator", "count": 4 }
+      "tags": [
+        "elite"
       ],
-      "upgrades": ["nl-upgrade-ikonentraeger", "nl-upgrade-cybots", "nl-upgrade-dreadclaws", "nl-upgrade-destruktoren"]
+      "units": [
+        {
+          "unit": "nl-hauptmann",
+          "count": 1
+        },
+        {
+          "unit": "atramentar-terminator",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-ikonentraeger",
+        "nl-upgrade-cybots",
+        "nl-upgrade-dreadclaws",
+        "nl-upgrade-destruktoren"
+      ]
     },
     {
       "id": "nl-destruktoren",
       "name": "Destruktoren",
       "pts": 175,
-      "tags": ["support"],
+      "tags": [
+        "support"
+      ],
       "units": [
-        { "unit": "chaos-zerstoerer", "count": 4 }
+        {
+          "unit": "chaos-zerstoerer",
+          "count": 4
+        }
       ],
       "upgrades": []
     },
@@ -127,44 +305,90 @@
       "id": "nl-terror-kompanie",
       "name": "Terror-Kompanie",
       "pts": 275,
-      "tags": ["support"],
-      "units": [
-        { "unit": "nl-hauptmann", "count": 1 },
-        { "unit": "chaos-sturmmarine", "count": 4 },
-        { "unit": "nl-cybot", "count": 2 }
+      "tags": [
+        "support"
       ],
-      "upgrades": ["nl-upgrade-ikonentraeger", "nl-upgrade-cybots", "nl-upgrade-dreadclaws"]
+      "units": [
+        {
+          "unit": "nl-hauptmann",
+          "count": 1
+        },
+        {
+          "unit": "chaos-sturmmarine",
+          "count": 4
+        },
+        {
+          "unit": "nl-cybot",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-ikonentraeger",
+        "nl-upgrade-cybots",
+        "nl-upgrade-dreadclaws"
+      ]
     },
     {
       "id": "nl-unterstützungskompanie",
       "name": "Unterstützungskompanie",
       "pts": 300,
-      "tags": ["support"],
-      "units": [
-        { "unit": "nl-hauptmann", "count": 1 },
-        { "unit": "chaos-space-marine", "count": 6 },
-        { "unit": "chaos-rhino", "count": 3 }
+      "tags": [
+        "support"
       ],
-      "upgrades": ["nl-upgrade-ikonentraeger", "nl-upgrade-stalker", "nl-upgrade-dreadclaws"]
+      "units": [
+        {
+          "unit": "nl-hauptmann",
+          "count": 1
+        },
+        {
+          "unit": "chaos-space-marine",
+          "count": 6
+        },
+        {
+          "unit": "chaos-rhino",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-ikonentraeger",
+        "nl-upgrade-stalker",
+        "nl-upgrade-dreadclaws"
+      ]
     },
     {
       "id": "nl-sturmkompanie",
       "name": "Sturmkompanie",
       "pts": 300,
-      "tags": ["support"],
-      "units": [
-        { "unit": "nl-hauptmann", "count": 1 },
-        { "unit": "chaos-sturmmarine", "count": 6 }
+      "tags": [
+        "support"
       ],
-      "upgrades": ["nl-upgrade-ikonentraeger", "nl-upgrade-stalker"]
+      "units": [
+        {
+          "unit": "nl-hauptmann",
+          "count": 1
+        },
+        {
+          "unit": "chaos-sturmmarine",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "nl-upgrade-ikonentraeger",
+        "nl-upgrade-stalker"
+      ]
     },
     {
       "id": "nl-tarantula",
       "name": "Tarantula",
       "pts": 125,
-      "tags": ["titans-navy"],
+      "tags": [
+        "titans-navy"
+      ],
       "units": [
-        { "unit": "chaos-tarantel", "count": 4 }
+        {
+          "unit": "chaos-tarantel",
+          "count": 4
+        }
       ],
       "upgrades": []
     },
@@ -172,9 +396,14 @@
       "id": "nl-feuerraptor",
       "name": "Feuerraptor",
       "pts": 175,
-      "tags": ["titans-navy"],
+      "tags": [
+        "titans-navy"
+      ],
       "units": [
-        { "unit": "chaos-feuerraptor", "count": 1 }
+        {
+          "unit": "chaos-feuerraptor",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -182,9 +411,14 @@
       "id": "nl-xiphon-staffel",
       "name": "Xiphon-Staffel",
       "pts": 225,
-      "tags": ["titans-navy"],
+      "tags": [
+        "titans-navy"
+      ],
       "units": [
-        { "unit": "chaos-xiphon", "count": 2 }
+        {
+          "unit": "chaos-xiphon",
+          "count": 2
+        }
       ],
       "upgrades": []
     },
@@ -192,9 +426,14 @@
       "id": "nl-thunderhawk",
       "name": "Thunderhawk",
       "pts": 225,
-      "tags": ["titans-navy"],
+      "tags": [
+        "titans-navy"
+      ],
       "units": [
-        { "unit": "chaos-thunderhawk", "count": 1 }
+        {
+          "unit": "chaos-thunderhawk",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -202,9 +441,14 @@
       "id": "nl-angriffskreuzer",
       "name": "0–1 Angriffskreuzer",
       "pts": 200,
-      "tags": ["titans-navy"],
+      "tags": [
+        "titans-navy"
+      ],
       "units": [
-        { "unit": "chaos-angriffskreuzer", "count": 1 }
+        {
+          "unit": "chaos-angriffskreuzer",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -212,9 +456,14 @@
       "id": "nl-pool-niedere-daemo",
       "name": "Pool niedere Dämonen",
       "pts": 20,
-      "tags": ["daemon-pool"],
+      "tags": [
+        "daemon-pool"
+      ],
       "units": [
-        { "unit": "furien", "count": 1 }
+        {
+          "unit": "furien",
+          "count": 1
+        }
       ],
       "upgrades": []
     }
@@ -224,41 +473,98 @@
       "id": "nl-upgrade-ikonentraeger",
       "name": "Ikonenträger",
       "variants": [
-        { "id": "1", "label": "Füge 1 Icon Bearer zum Verband hinzu", "pts": 25, "effects": [{ "op": "add", "unit": "ikonentraeger", "count": 1 }] }
+        {
+          "id": "1",
+          "label": "Füge 1 Icon Bearer zum Verband hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ikonentraeger",
+              "count": 1
+            }
+          ]
+        }
       ]
     },
     {
       "id": "nl-upgrade-dreadclaws",
       "name": "Dreadclaws",
       "variants": [
-        { "id": "1", "label": "Transportiere einen Verband in Landungskapseln", "pts": 10, "effects": [{ "op": "add", "unit": "chaos-rhino", "count": 1 }] }
+        {
+          "id": "1",
+          "label": "Transportiere einen Verband in Landungskapseln",
+          "pts": 10,
+          "effects": []
+        }
       ]
     },
     {
       "id": "nl-upgrade-cybots",
       "name": "Cybots",
       "variants": [
-        { "id": "1", "label": "Füge bis zu 2 Night Lords Cybots hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "nl-cybot", "count": 2 }] }
+        {
+          "id": "1",
+          "label": "Füge bis zu 2 Night Lords Cybots hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "nl-cybot",
+              "count": 2
+            }
+          ]
+        }
       ]
     },
     {
       "id": "nl-upgrade-stalker",
       "name": "Stalker",
       "variants": [
-        { "id": "1", "label": "Füge 1 Chaos Stalker hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "chaos-jaeger", "count": 1 }] }
+        {
+          "id": "1",
+          "label": "Füge 1 Chaos Stalker hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-jaeger",
+              "count": 1
+            }
+          ]
+        }
       ]
     },
     {
       "id": "nl-upgrade-destruktoren",
       "name": "Destruktoren",
       "variants": [
-        { "id": "1", "label": "Füge 1 Chaos Destruktoren hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "chaos-zerstoerer", "count": 1 }] }
+        {
+          "id": "1",
+          "label": "Füge 1 Chaos Destruktoren hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-zerstoerer",
+              "count": 1
+            }
+          ]
+        }
       ]
     }
   ],
   "transport": [],
   "formationConstraints": [],
   "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
   ]
 }

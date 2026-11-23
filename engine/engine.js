@@ -195,7 +195,14 @@ export function computeEntry(data, entry) {
     problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: want }, refs: { uid: entry.uid } });
   const swapped = Math.min(want, have);
   roster[fx.from] = have - swapped;
-  add(fx.to, swapped);
+  if (fx.to) {
+    const toAdd = fx.toCount !== undefined ? fx.toCount * n : swapped;
+    add(fx.to, toAdd);
+  }
+} else if (fx.op === "remove") {
+  const want = fx.count * n;
+  const have = roster[fx.unit || fx.from] || 0;
+  roster[fx.unit || fx.from] = Math.max(0, have - want);
 }
     });
 
