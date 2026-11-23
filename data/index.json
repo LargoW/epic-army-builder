@@ -665,6 +665,13 @@
       "faction": "Chaos Space Marines",
       "name": "Iron Krieger",
       "version": "1.0.Beta-2"
+    },
+    {
+      "id": "netea/de/kabaloftheblackheart",
+      "ruleset": "netea",
+      "faction": "Dark Eldar",
+      "name": "Kabal des Schwarzen Herzens",
+      "version": "1.0.Beta-2"
     }
   ]
 }
