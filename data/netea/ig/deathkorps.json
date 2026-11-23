@@ -487,23 +487,9 @@
             "units": [
                 {
                     "oneOf": [
-                        {
-                            "unit": "dk-baneblade",
-                            "count": 1
-                        },
-                        {
-                            "unit": "dk-shadowsword",
-                            "count": 1
-                        },
-                        {
-                            "unit": "dk-stormblade",
-                            "count": 1
-                        },
-                        {
-                            "unit": "dk-stormsword",
-                            "count": 1
-                        }
-                    ]
+                        "dk-baneblade","dk-shadowsword","dk-stormblade","dk-stormsword"
+                    ],
+                    "count":1
                 }
             ],
             "upgrades": []
