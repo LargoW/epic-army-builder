@@ -7,488 +7,262 @@
   "specialRules": [],
   "units": {
     "dk-commander": {
-      "name": "Oberbefehlshaber des Todeskorps von Krieg",
+      "name": "Commander",
       "type": "INF",
       "speed": 15,
       "armour": 5,
       "cc": 4,
       "ff": 5,
       "weapons": [
-        {
-          "name": "Schwerer Maschinengewehr",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
+        { "name": "Twin Heavy Stubber", "modes": [{ "firepower": "AP5+", "range": 30 }] },
+        { "name": "Power Weapon", "modes": [{ "firepower": "Assault Weapons", "specialRules": [{ "name": "EA(+1)", "description": "Extra Attacks (+1)" }, { "name": "MW", "description": "Macro-weapon" }] }] }
       ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        }
-      ]
+      "specialRules": [{ "name": "Supreme Commander", "description": null }]
     },
     "dk-supreme-commander": {
-      "name": "Oberbefehlshaber des Todeskorps von Krieg",
+      "name": "Supreme Commander",
       "type": "INF",
       "speed": 15,
       "armour": 5,
       "cc": 4,
       "ff": 5,
       "weapons": [
-        {
-          "name": "Schwerer Maschinengewehr",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
+        { "name": "Twin Heavy Stubber", "modes": [{ "firepower": "AP5+", "range": 30 }] },
+        { "name": "Power Weapon", "modes": [{ "firepower": "Assault Weapons", "specialRules": [{ "name": "EA(+1)", "description": "Extra Attacks (+1)" }, { "name": "MW", "description": "Macro-weapon" }] }] }
       ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        }
-      ]
+      "specialRules": [{ "name": "Supreme Commander", "description": null }]
     },
     "dk-infantry": {
-      "name": "Infanterie",
+      "name": "Infantry",
       "type": "INF",
       "speed": 15,
-      "cc": 6,
+      "cc": 5,
       "ff": 5,
-      "notes": "Jede zweite Einheit (aufgerundet) ist mit einer Maschinenkanone bewaffnet.",
-      "weapons": [
-        {
-          "name": "Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Lasergewehre",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
+      "weapons": [{ "name": "Lasguns", "modes": [{ "firepower": "Small Arms", "range": 15 }] }],
       "specialRules": []
     },
     "dk-commissar": {
-      "name": "Kommissar",
+      "name": "Commissar",
       "type": "CH",
-      "weapons": [
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "weapons": [{ "name": "Power Weapon", "modes": [{ "firepower": "Assault Weapons", "specialRules": [{ "name": "EA(+1)", "description": "Extra Attacks (+1)" }, { "name": "MW", "description": "Macro-weapon" }] }] }],
       "specialRules": [
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        }
+        { "name": "Leader", "description": null },
+        { "name": "Inspiring", "description": null },
+        { "name": "Fearless", "description": null }
       ]
     },
     "dk-death-rider": {
-      "name": "Todesreiter",
+      "name": "Death Rider",
       "type": "INF",
       "speed": 20,
       "armour": 5,
-      "cc": 3,
+      "cc": 4,
       "ff": 6,
       "weapons": [
-        {
-          "name": "Laserpistolen",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Jagdlanzen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "Sturmangriff",
-                  "description": "Sturmangriff"
-                }
-              ]
-            }
-          ]
-        }
+        { "name": "Laspistols", "modes": [{ "firepower": "Small Arms", "range": 15 }] },
+        { "name": "Power Lances", "modes": [{ "firepower": "Assault Weapons", "specialRules": [{ "name": "FS", "description": "First Strike" }] }] }
       ],
       "specialRules": [
-        {
-          "name": "Infiltratoren",
-          "description": null
-        },
-        {
-          "name": "Beritten",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
+        { "name": "Infiltrator", "description": null },
+        { "name": "Mounted", "description": null },
+        { "name": "Walker", "description": null }
       ]
     },
+    "dk-engineer": {
+      "name": "Engineer",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [{ "name": "Mole Launcher", "modes": [{ "firepower": "AP5+", "range": 30, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] }],
+      "specialRules": []
+    },
+    "dk-fire-support": {
+      "name": "Fire Support",
+      "type": "INF",
+      "speed": 15,
+      "cc": 5,
+      "ff": 4,
+      "weapons": [
+        { "name": "Twin Heavy Stubber", "modes": [{ "firepower": "AP5+", "range": 30 }] },
+        { "name": "Autocannon", "modes": [{ "firepower": "AP5+/AT6+", "range": 45 }] }
+      ],
+      "specialRules": []
+    },
     "dk-grenadier": {
-      "name": "Grenadiere",
+      "name": "Grenadier",
       "type": "INF",
       "speed": 15,
       "armour": 5,
       "cc": 5,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Schwerer Flammenwerfer",
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        }
-      ]
-    },
-    "dk-fire-support": {
-      "name": "Feuerunterstützungstrupp",
-      "type": "INF",
-      "speed": 15,
-      "cc": 6,
       "ff": 4,
       "weapons": [
-        {
-          "name": "Maschinenkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "Heavy Flamer", "modes": [{ "firepower": "AP4+", "range": 15, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] },
+        { "name": "Small Arms", "modes": [{ "firepower": "Small Arms", "range": 15, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] }
       ],
-      "specialRules": []
+      "specialRules": [{ "name": "Scout", "description": null }]
     },
-    "dk-mortar-support": {
-      "name": "Mörserteam",
+    "dk-heavy-mortar": {
+      "name": "Heavy Mortar",
       "type": "INF",
-      "speed": 15,
+      "speed": 5,
       "cc": 6,
       "ff": 6,
-      "weapons": [
-        {
-          "name": "Mörser",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "weapons": [{ "name": "Heavy Mortar", "modes": [{ "firepower": "1BP", "range": 30, "specialRules": [{ "name": "Ind", "description": "Indirect Fire" }] }] }],
       "specialRules": []
     },
-    "dk-sniper": {
-      "name": "Scharfschützen",
+    "dk-quad-launcher": {
+      "name": "Quad Launcher",
       "type": "INF",
-      "speed": 15,
+      "speed": 5,
       "cc": 6,
       "ff": 5,
-      "weapons": [
-        {
-          "name": "Scharfschützengewehre",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "S",
-                  "description": "Scharfschütze"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        }
-      ]
-    },
-    "dk-valkyrie": {
-      "name": "Valkyrie",
-      "type": "AV",
-      "speed": 35,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten oder einen Abwurf-Sentinel transportieren. Ogryns können nicht transportiert werden.",
-      "weapons": [
-        {
-          "name": "Raketenbehälter",
-          "modes": [
-            {
-              "firepower": "AP6+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Multilaser",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
+      "weapons": [{ "name": "Quad Launcher", "modes": [{ "firepower": "2× AP4+", "range": 45, "specialRules": [{ "name": "Ind", "description": "Indirect Fire" }] }] }],
+      "specialRules": []
     },
     "dk-centaur": {
       "name": "Centaur",
       "type": "LV",
-      "speed": 25,
+      "speed": 35,
       "armour": 6,
       "cc": 6,
       "ff": 6,
-      "weapons": [
-        {
-          "name": "Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
+      "weapons": [{ "name": "Heavy Stubber", "modes": [{ "firepower": "AP6+", "range": 30 }] }],
       "specialRules": [
-        {
-          "name": "Transportkapazität: eine Infanterieeinheit und ein Rapier- oder Thudd-Geschütz",
-          "description": null
-        }
+        { "name": "Transport", "description": "May transport one infantry unit with Jump Packs or Mounted. If transporting a Heavy Mortar or Quad Launcher the unit's speed is reduced to 20cm." }
       ]
     },
+    "dk-earthshaker-platform": {
+      "name": "Earthshaker Platform",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [{ "name": "Earthshaker", "modes": [{ "firepower": "AP4+/AT4+", "range": 120 }, { "firepower": "1BP", "range": 120, "specialRules": [{ "name": "Ind", "description": "Indirect Fire" }] }] }],
+      "specialRules": []
+    },
+    "dk-heavy-aa-platform": {
+      "name": "Heavy AA Platform",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [{ "name": "Heavy AA Gun", "modes": [{ "firepower": "AP5+/AT5+/AA5+", "range": 60 }] }],
+      "specialRules": []
+    },
+    "dk-hydra-platform": {
+      "name": "Hydra Platform",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [{ "name": "2× Twin Hydra Autocannon", "modes": [{ "firepower": "AP4+/AT5+/AA5+", "range": 45 }] }],
+      "specialRules": []
+    },
+    "dk-medusa-platform": {
+      "name": "Medusa Platform",
+      "type": "LV",
+      "speed": "Immobile",
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [{ "name": "Medusa Siege Gun", "modes": [{ "firepower": "1BP", "range": 60, "specialRules": [{ "name": "D", "description": "Disrupt" }, { "name": "IC", "description": "Ignores Cover" }, { "name": "Ind", "description": "Indirect Fire" }] }, { "firepower": "MW4+", "range": 30, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] }],
+      "specialRules": []
+    },
     "dk-bombard": {
-      "name": "Bombarde",
+      "name": "Bombard",
       "type": "AV",
       "speed": 20,
       "armour": 6,
       "cc": 6,
       "ff": 5,
       "weapons": [
-        {
-          "name": "Belagerungsmörser",
-          "modes": [
-            {
-              "firepower": "2BP",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                },
-                {
-                  "name": "Slow",
-                  "description": "Langsames Feuern"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "Siege Mortar", "modes": [{ "firepower": "2BP", "range": 45, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }, { "name": "Ind", "description": "Indirect Fire" }] }] },
+        { "name": "Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
       ],
       "specialRules": []
     },
-    "dk-medusa": {
-      "name": "Medusa",
+    "dk-hellhound": {
+      "name": "Hellhound",
       "type": "AV",
-      "speed": "20",
-      "armour": 5,
+      "speed": 30,
+      "armour": 4,
       "cc": 6,
-      "ff": 5,
+      "ff": 3,
       "weapons": [
-        {
-          "name": "Medusa Belagerungsgeschütz",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 60,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "Inferno Cannon", "modes": [{ "firepower": "AP3+", "range": 30, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] },
+        { "name": "Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
       ],
       "specialRules": []
+    },
+    "dk-leman-russ": {
+      "name": "Leman Russ",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        { "name": "Battle Cannon", "modes": [{ "firepower": "AP4+/AT4+", "range": 75 }] },
+        { "name": "Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "2× Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
+      ],
+      "specialRules": [{ "name": "Reinforced Armour", "description": null }]
+    },
+    "dk-leman-russ-demolisher": {
+      "name": "Leman Russ Demolisher",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 3,
+      "weapons": [
+        { "name": "Demolisher", "modes": [{ "firepower": "AP3+/AT4+", "range": 30, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] },
+        { "name": "Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "2× Plasma Cannon", "modes": [{ "firepower": "AP5+/AT5+", "range": 30 }] }
+      ],
+      "specialRules": [{ "name": "Reinforced Armour", "description": null }]
+    },
+    "dk-leman-russ-vanquisher": {
+      "name": "Leman Russ Vanquisher",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        { "name": "Vanquisher", "modes": [{ "firepower": "AP4+/AT2+", "range": 75 }] },
+        { "name": "Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "2× Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
+      ],
+      "specialRules": [{ "name": "Reinforced Armour", "description": null }]
+    },
+    "dk-thunderer": {
+      "name": "Thunderer",
+      "type": "AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [{ "name": "Demolisher", "modes": [{ "firepower": "AP3+/AT4+", "range": 30, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }] }] }],
+      "specialRules": [
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "Thick Rear Armour", "description": null }
+      ]
+    },
+    "dk-trojan": {
+      "name": "Trojan",
+      "type": "AV",
+      "speed": 20,
+      "armour": 6,
+      "cc": 6,
+      "ff": 6,
+      "weapons": [{ "name": "Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }],
+      "specialRules": [{ "name": "Transport", "description": "May transport one of the following units: Earthshaker Platform, Heavy AA Platform, Hydra Platform, Medusa Platform." }]
     },
     "dk-baneblade": {
       "name": "Baneblade",
@@ -497,90 +271,29 @@
       "armour": 4,
       "cc": 6,
       "ff": 4,
-      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+      "crit": "Destroyed. All units within 5cm suffer a hit on a roll of 6+.",
       "weapons": [
-        {
-          "name": "Baneblade Kanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT3+",
-              "range": 90,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Belagerungskanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwere Bolter",
-          "count": 3,
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
+        { "name": "Baneblade Battle Cannon", "modes": [{ "firepower": "2× AP3+/AT3+", "range": 75 }] },
+        { "name": "Autocannon", "modes": [{ "firepower": "AP5+/AT6+", "range": 45 }] },
+        { "name": "Demolisher", "modes": [{ "firepower": "AP3+/AT4+", "range": 30, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }, { "name": "IC", "description": "Ignores Cover" }] }] },
+        { "name": "2× Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "3× Twin Heavy Bolter", "modes": [{ "firepower": "AP4+", "range": 30 }] }
       ],
       "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null }
       ]
+    },
+    "dk-deathstrike-silo": {
+      "name": "Deathstrike Silo",
+      "type": "WE",
+      "speed": "Immobile",
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Destroyed.",
+      "weapons": [{ "name": "Deathstrike Missile", "modes": [{ "firepower": "MW2+", "range": 120, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }, { "name": "Single Shot", "description": null }] }] }],
+      "specialRules": [{ "name": "Damage Capacity 3", "description": null }]
     },
     "dk-gorgon": {
       "name": "Gorgon",
@@ -589,38 +302,30 @@
       "armour": 4,
       "cc": 6,
       "ff": 6,
-      "notes": "Kann 10 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
-      "crit": "Gorgon ist bewegungsunfähig und darf sich für den Rest des Spiels nicht mehr bewegen. 1W3 zufällige transportierte Einheiten erleiden einen Treffer. Weitere kritische Treffer zerstören Gorgon.",
+      "crit": "Immobilised. 1D3 random transported units suffer a hit. Further critical hits destroy.",
+      "weapons": [{ "name": "4× Twin Heavy Stubber", "modes": [{ "firepower": "AP5+", "range": 30 }] }],
+      "specialRules": [
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "Transport", "description": "May transport 10 infantry units." }
+      ]
+    },
+    "dk-gorgon-mortars": {
+      "name": "Gorgon Mortars",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 6,
+      "crit": "Immobilised. 1D3 random transported units suffer a hit. Further critical hits destroy.",
       "weapons": [
-        {
-          "name": "Zwillings-Schwerer Maschinengewehr",
-          "count": 4,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "Gorgon Mortars", "modes": [{ "firepower": "2BP", "range": 45, "specialRules": [{ "name": "IC", "description": "Ignores Cover" }, { "name": "Ind", "description": "Indirect Fire" }] }] },
+        { "name": "4× Twin Heavy Stubber", "modes": [{ "firepower": "AP5+", "range": 30 }] }
       ],
       "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "Transport", "description": "May transport 10 infantry units." }
       ]
     },
     "dk-macharius": {
@@ -631,69 +336,217 @@
       "cc": 6,
       "ff": 4,
       "weapons": [
-        {
-          "name": "Zwillings-Kampfgeschütz",
-          "modes": [
-            {
-              "firepower": "AP3+/AT3+",
-              "range": 75,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "2× Battle Cannon", "modes": [{ "firepower": "AP4+/AT4+", "range": 75 }] },
+        { "name": "2× Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
+      ],
+      "specialRules": [{ "name": "Reinforced Armour", "description": null }]
+    },
+    "dk-macharius-command": {
+      "name": "Macharius Command",
+      "type": "H-AV",
+      "speed": 20,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "weapons": [
+        { "name": "2× Battle Cannon", "modes": [{ "firepower": "AP4+/AT4+", "range": 75 }] },
+        { "name": "2× Heavy Bolter", "modes": [{ "firepower": "AP5+", "range": 30 }] }
       ],
       "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "Supreme Commander", "description": null }
       ]
     },
-    "dk-trojan": {
-      "name": "Trojan",
-      "type": "LV",
-      "speed": 20,
-      "armour": 5,
+    "dk-shadowsword": {
+      "name": "Shadowsword",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
       "cc": 6,
-      "ff": 5,
+      "ff": 4,
+      "crit": "Destroyed. All units within 5cm suffer a hit on a roll of 6+.",
       "weapons": [
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
+        { "name": "Volcano Cannon", "modes": [{ "firepower": "MW2+", "range": 90, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }, { "name": "TK(D3)", "description": "Titan Killer (D3)" }] }] },
+        { "name": "2× Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "3× Twin Heavy Bolter", "modes": [{ "firepower": "AP4+", "range": 30 }] }
       ],
       "specialRules": [
-        {
-          "name": "Transport: eine Erdbebenkanone oder eine Schwere Flugabwehrkanone",
-          "description": null
-        }
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null }
+      ]
+    },
+    "dk-stormblade": {
+      "name": "Stormblade",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Destroyed. All units within 5cm suffer a hit on a roll of 6+.",
+      "weapons": [
+        { "name": "Plasma Blastgun", "modes": [{ "firepower": "2× MW2+", "range": 60, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }, { "name": "Slw", "description": "Slow Firing" }] }] },
+        { "name": "2× Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "3× Twin Heavy Bolter", "modes": [{ "firepower": "AP4+", "range": 30 }] }
+      ],
+      "specialRules": [
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null }
+      ]
+    },
+    "dk-stormsword": {
+      "name": "Stormsword",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 6,
+      "ff": 4,
+      "crit": "Destroyed. All units within 5cm suffer a hit on a roll of 6+.",
+      "weapons": [
+        { "name": "Stormsword Siege Cannon", "modes": [{ "firepower": "2BP", "range": 45, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }, { "name": "IC", "description": "Ignores Cover" }] }] },
+        { "name": "2× Lascannon", "modes": [{ "firepower": "AT5+", "range": 45 }] },
+        { "name": "3× Twin Heavy Bolter", "modes": [{ "firepower": "AP4+", "range": 30 }] }
+      ],
+      "specialRules": [
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Reinforced Armour", "description": null }
+      ]
+    },
+    "dk-hades-breaching-drill": {
+      "name": "Hades Breaching Drill",
+      "type": "SPECIAL",
+      "speed": "Immobile",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [],
+      "specialRules": [
+        { "name": "Transport", "description": null },
+        { "name": "Tunneler", "description": "May carry 8 Death Korps Engineer units. Note that the Hades Breaching Drill is not a unit and so may not be shot at nor have hits applied to it. It is in all respects simply a marker. No Blast Marker is generated for its parent Hades Breach Drill leaving the formation behind during the game." }
+      ]
+    },
+    "dk-marauder-heavy-bomber": {
+      "name": "Marauder Heavy Bomber",
+      "type": "AC/WE",
+      "speed": "Bomber",
+      "armour": 5,
+      "cc": "n/a",
+      "ff": "n/a",
+      "crit": "Destroyed.",
+      "weapons": [
+        { "name": "Bomb Racks", "modes": [{ "firepower": "3BP", "range": 15, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }] }] },
+        { "name": "Twin Lascannon", "modes": [{ "firepower": "AT4+", "range": 45, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }] }] },
+        { "name": "2× Twin Heavy Bolter", "modes": [{ "firepower": "AP4+/AA5+", "range": 15 }] }
+      ],
+      "specialRules": [{ "name": "Damage Capacity 2", "description": null }]
+    },
+    "dk-thunderbolt-fighter": {
+      "name": "Thunderbolt Fighter",
+      "type": "AC/WE",
+      "speed": "Fighter",
+      "armour": 6,
+      "cc": "n/a",
+      "ff": "n/a",
+      "crit": "Destroyed.",
+      "weapons": [
+        { "name": "2× Autocannon", "modes": [{ "firepower": "AP5+/AT6+/AA5+", "range": 30 }] },
+        { "name": "2× Underwing Rockets", "modes": [{ "firepower": "AT4+", "range": 30, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }] }] }
+      ],
+      "specialRules": [{ "name": "Damage Capacity 1", "description": null }]
+    },
+    "dk-bunker": {
+      "name": "Bunker",
+      "type": "FORT",
+      "speed": "Immobile",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [],
+      "specialRules": [
+        { "name": "Fortification", "description": "Counts as Fortifications (see Terrain Effects). Can hold three units. Units in a bunker may not be barged by a war engine." },
+        { "name": "Terrain Effects", "description": "Infantry: 3+ Cover Save. Vehicle: Dangerous. War Engine: Dangerous." }
+      ]
+    },
+    "dk-trench": {
+      "name": "Trench",
+      "type": "FORT",
+      "speed": "Immobile",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [],
+      "specialRules": [
+        { "name": "Fortification", "description": "Can hold one infantry unit per 4cm of length. Units in a trench may not be barged by a war engine." },
+        { "name": "Terrain Effects", "description": "Infantry: 4+ Cover Save. Vehicle: Dangerous. War Engine: No Effect." }
+      ]
+    },
+    "dk-gun-emplacement": {
+      "name": "Gun Emplacement",
+      "type": "FORT",
+      "speed": "Immobile",
+      "cc": "n/a",
+      "ff": "n/a",
+      "weapons": [],
+      "specialRules": [
+        { "name": "Fortification", "description": "Provides vehicles with a Cover Save that works in the same manner as an infantry cover save. Can hold one unit. Units in a gun emplacement may not be barged by a war engine." },
+        { "name": "Terrain Effects", "description": "Infantry: 4+ Cover Save. Vehicle: 5+ Cover Save. War Engine: No Effect." }
+      ]
+    },
+    "titan-reaver": {
+      "name": "Reaver Class Titan",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
+      "ff": 3,
+      "crit": "Plasma reactor has been breached. Roll a D6 for each breach on the unit in the end phase of each turn. On a roll of 1 the unit is destroyed and all units within 5cm suffer a hit on a roll of 5+, and on a roll of 4–6 the breach has been repaired. Any breach not repaired causes one point of damage.",
+      "weapons": [
+        { "name": "2× Turbo-Laser Destructor", "modes": [{ "firepower": "4× AP5+/AT3+", "range": 60, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }] }] },
+        { "name": "Rocket Launcher", "modes": [{ "firepower": "3BP", "range": 60, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }] }] }
+      ],
+      "specialRules": [
+        { "name": "Damage Capacity 6", "description": null },
+        { "name": "Fearless", "description": null },
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "4 Void Shields", "description": null },
+        { "name": "Walker", "description": "May step over units and pieces of terrain that are lower than the unit's knees and less than 2cm wide." }
+      ]
+    },
+    "titan-warhound": {
+      "name": "Warhound Class Titan",
+      "type": "WE",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 4,
+      "crit": "The unit takes a point of damage and is moved D6cm in a random direction. If this move takes the titan into impassable terrain or another unit it can't move over then it stops immediately and is destroyed. All units it moves into or over suffer a hit on a roll of 6+.",
+      "weapons": [
+        { "name": "Plasma Blastgun", "modes": [{ "firepower": "2× MW2+", "range": 45, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }, { "name": "Slw", "description": "Slow Firing" }] }] },
+        { "name": "Vulcan Mega-Bolter", "modes": [{ "firepower": "4× AP3+/AT5+", "range": 45, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }] }] }
+      ],
+      "specialRules": [
+        { "name": "Damage Capacity 3", "description": null },
+        { "name": "Fearless", "description": null },
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "2 Void Shields", "description": null },
+        { "name": "Walker", "description": "May step over units and pieces of terrain that are lower than the unit's knees and less than 2cm wide." }
+      ]
+    },
+    "titan-warlord": {
+      "name": "Warlord Class Titan",
+      "type": "WE",
+      "speed": 15,
+      "armour": 4,
+      "cc": 2,
+      "ff": 3,
+      "crit": "The unit is destroyed.",
+      "weapons": [
+        { "name": "Volcano Cannon", "modes": [{ "firepower": "MW2+", "range": 90, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }, { "name": "TK(D3)", "description": "Titan Killer (D3)" }] }] },
+        { "name": "Gatling Blaster", "modes": [{ "firepower": "4× AP4+/AT4+", "range": 60, "specialRules": [{ "name": "FwA", "description": "Fixed Forward Arc" }] }] },
+        { "name": "2× Turbo-Laser Destructor", "modes": [{ "firepower": "4× AP5+/AT3+", "range": 60, "specialRules": [{ "name": "FxF", "description": "Fixed Forward" }] }] }
+      ],
+      "specialRules": [
+        { "name": "Damage Capacity 8", "description": null },
+        { "name": "Fearless", "description": null },
+        { "name": "Reinforced Armour", "description": null },
+        { "name": "6 Void Shields", "description": null },
+        { "name": "Walker", "description": "May step over units and pieces of terrain that are lower than the unit's knees and less than 2cm wide." }
       ]
     }
   }
