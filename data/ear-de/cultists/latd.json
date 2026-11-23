@@ -244,13 +244,20 @@
         "latd-unterwerfer-des-slaanesh",
         "latd-seuchenturm-des-nurgle",
         "latd-seuchenmaschinen-des-nurgle",
-        "latd-seuchenwandler-des-nurgle"
+        "latd-seuchenwandler-des-nurgle",
+        "latd-kanonen-des-khorne",
+        "latd-daeemonische-sturmmaschine",
+        "latd-herr-der-schlachten",
+        "latd-silbertuerme",
+        "latd-warp-palast",
+        "latd-feuerfuersten"
       ]
     },
     {
       "id": "daemon-pool",
       "name": "Dämonenpool",
       "formations": [
+        "latd-pool-niedere-daemo",
         "di-pool-groesser-damon"
       ]
     }
@@ -441,6 +448,111 @@
       "units": [
         {
           "unit": "di-erhabener-groesser-verpester",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-kanonen-des-khorne",
+      "name": "Kanonen des Khorne",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-khorne-kanone",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-daeemonische-sturmmaschine",
+      "name": "Dämonische Sturmmaschinen des Khorne",
+      "pts": 225,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-daeemonische-sturmmaschine",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-herr-der-schlachten",
+      "name": "Herr der Schlachten des Khorne",
+      "pts": 425,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-herr-der-schlachten",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-silbertuerme",
+      "name": "Silbertürme des Tzeentch",
+      "pts": 275,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-silberturm",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-warp-palast",
+      "name": "Warp-Palast des Tzeentch",
+      "pts": 450,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-warppalast",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-feuerfuersten",
+      "name": "Feuerfürsten des Tzeentch",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "di-firelord",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "latd-pool-niedere-daemo",
+      "name": "Pool niederer Dämonen",
+      "pts": 20,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [
+        {
+          "unit": "di-erhabener-blutdaemon",
           "count": 1
         }
       ],

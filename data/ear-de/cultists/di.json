@@ -282,7 +282,9 @@
           "count": 2
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "di-upgrade-seelenzermalmer"
+      ]
     },
     {
       "id": "di-nurgles-seuchenlegion",
@@ -297,7 +299,9 @@
           "count": 2
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "di-upgrade-seelenzermalmer"
+      ]
     },
     {
       "id": "di-khornes-blutlegion",
@@ -312,7 +316,9 @@
           "count": 2
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "di-upgrade-seelenzermalmer"
+      ]
     },
     {
       "id": "di-tzeentchs-schillernde-legion",
@@ -327,7 +333,9 @@
           "count": 2
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "di-upgrade-seelenzermalmer"
+      ]
     },
     {
       "id": "di-kultisten-konklave",
@@ -347,7 +355,15 @@
         }
       ],
       "upgrades": [
-        "di-upgrade-daeemonpakt"
+        "di-upgrade-daeemonpakt",
+        "di-upgrade-kultisten-mutanten",
+        "di-upgrade-chaos-hunde",
+        "di-upgrade-geländewagen",
+        "di-upgrade-chaosbrut",
+        "di-upgrade-grosse-mutanten",
+        "di-upgrade-ikonentraeger",
+        "di-upgrade-landtransporter",
+        "di-upgrade-warpaltar"
       ]
     },
     {

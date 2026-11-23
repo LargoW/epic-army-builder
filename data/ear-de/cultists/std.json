@@ -201,6 +201,41 @@
       "name": "Ogryns",
       "from": "IG.json",
       "type": "AV"
+    },
+    "di-leman-russ": {
+      "name": "Leman Russ Kampfpanzer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "di-leman-russ-demolisher": {
+      "name": "Leman Russ Demolisher",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "di-leman-russ-thunderer": {
+      "name": "Leman Russ Thunderer",
+      "from": "IG.json",
+      "type": "AV"
+    },
+    "di-hoellenharpyie": {
+      "name": "Höllenharpyien",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-seuchenschnitter": {
+      "name": "Seuchenschnitter",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-seuchenturm": {
+      "name": "Seuchenturm",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "di-blutdaemon": {
+      "name": "Blutdämon",
+      "from": "daemons.json",
+      "type": "AV"
     }
   },
   "sections": [
@@ -214,20 +249,43 @@
     {
       "id": "support",
       "name": "Sklaven der Dunkelheit Unterstützungsverbände",
+      "description": "Pro Verräter-Kompanie dürfen bis zu zwei Unterstützungsverbände aufgestellt werden.",
       "formations": [
         "std-flakbatterie",
         "std-artilleriebatterie",
         "std-sentinel-staffel",
         "std-kavalleriezug",
         "std-superschwerer-panzerzug",
-        "std-greif-batterie",
+        "std-leman-russ-staffel",
+        "std-greif-batterie"
+      ]
+    },
+    {
+      "id": "allies",
+      "name": "Sklaven der Dunkelheit Chaos Verbündete",
+      "description": "Bis zu einem Drittel der verfügbaren Punkte darf für Verbündete ausgegeben werden.",
+      "formations": [
         "std-hoellenklinge-staffel",
         "std-hoellenklaue-staffel",
         "std-chaos-space-marine",
         "std-decimator",
         "std-verwueter",
         "std-todesrad",
-        "std-hoellenritter"
+        "std-hoellenritter",
+        "std-hoellenharpyien",
+        "std-seuchenschnitter",
+        "std-seuchenturm",
+        "std-daeemonische-sturmmaschinen",
+        "std-herr-der-schlachten",
+        "std-silbertuerme",
+        "std-warp-palast"
+      ]
+    },
+    {
+      "id": "daemon-pool",
+      "name": "Dämonenpool",
+      "formations": [
+        "std-pool-niedere-daemone"
       ]
     }
   ],
@@ -350,7 +408,7 @@
       "name": "Höllenklinge-Staffel",
       "pts": 175,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
@@ -365,7 +423,7 @@
       "name": "Höllenklaue-Staffel",
       "pts": 225,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
@@ -380,7 +438,7 @@
       "name": "Chaos Space Marines des Ungeteilten Chaos",
       "pts": 250,
       "tags": [
-        "cs-marine"
+        "allies"
       ],
       "units": [
         {
@@ -401,7 +459,7 @@
       "name": "Decimator des Ungeteilten Chaos",
       "pts": 225,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
@@ -416,7 +474,7 @@
       "name": "Verwüster des Ungeteilten Chaos",
       "pts": 250,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
@@ -431,7 +489,7 @@
       "name": "Todesrad des Ungeteilten Chaos",
       "pts": 300,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
@@ -446,12 +504,152 @@
       "name": "Höllenritter",
       "pts": 325,
       "tags": [
-        "support"
+        "allies"
       ],
       "units": [
         {
           "unit": "di-hoellenritter",
           "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-leman-russ-staffel",
+      "name": "Leman-Russ-Staffel",
+      "pts": 275,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "di-leman-russ",
+            "di-leman-russ-demolisher",
+            "di-leman-russ-thunderer"
+          ],
+          "count": 4,
+          "mixed": true
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-hoellenharpyien",
+      "name": "Höllenharpyien",
+      "pts": 325,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-hoellenharpyie",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-seuchenschnitter",
+      "name": "Seuchenschnitter des Nurgle",
+      "pts": 200,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-seuchenschnitter",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-seuchenturm",
+      "name": "Seuchenturm des Nurgle",
+      "pts": 200,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-seuchenturm",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-daeemonische-sturmmaschinen",
+      "name": "Dämonische Sturmmaschinen des Khorne",
+      "pts": 225,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-daeemonische-sturmmaschine",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-herr-der-schlachten",
+      "name": "Herr der Schlachten des Khorne",
+      "pts": 425,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-herr-der-schlachten",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-silbertuerme",
+      "name": "Silbertürme des Tzeentch",
+      "pts": 275,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-silberturm",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-warp-palast",
+      "name": "Warp-Palast des Tzeentch",
+      "pts": 450,
+      "tags": [
+        "allies"
+      ],
+      "units": [
+        {
+          "unit": "di-warppalast",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "std-pool-niedere-daemone",
+      "name": "Pool niederer Dämonen",
+      "pts": 20,
+      "tags": [
+        "daemon-pool"
+      ],
+      "units": [
+        {
+          "unit": "di-blutdaemon",
+          "count": 1
         }
       ],
       "upgrades": []
