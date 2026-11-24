@@ -144,17 +144,33 @@ export function computeEntry(data, entry) {
   const forceShow = new Set();
 
   const slots = unitSlots(def, entry);
-  slots.forEach((slot, i) => {
+   slots.forEach((slot, i) => {
     const slotCount = slot.count * mult;
     if (!slot.oneOf) return add(slot.unit, slotCount);
-    const dist = entry.choices[i] || { [slot.oneOf[0]]: slotCount };
+    
+    const options = slot.oneOf.map(u => typeof u === 'string' ? { unit: u } : u);
+    const defaultUnit = options[0].unit;
+    const dist = entry.choices[i] || { [defaultUnit]: slotCount };
+    
     const total = Object.values(dist).reduce((a, b) => a + b, 0);
     const valid =
       total === slotCount &&
-      Object.entries(dist).every(([u, n]) => slot.oneOf.includes(u) && Number.isInteger(n) && n >= 0) &&
+      Object.entries(dist).every(([u, n]) => options.some(opt => opt.unit === u) && Number.isInteger(n) && n >= 0) &&
       (slot.mixed || Object.values(dist).filter((n) => n > 0).length <= 1);
+      
     if (!valid) problems.push({ code: "choice-invalid", params: { slot }, refs: { uid: entry.uid } });
-    Object.entries(dist).forEach(([u, n]) => add(u, n));
+    
+    Object.entries(dist).forEach(([u, n]) => {
+      add(u, n);
+      const opt = options.find(x => x.unit === u);
+      if (opt && opt.pts) pts += opt.pts * n;
+    });
+    
+    options.forEach(opt => {
+      if (opt.max != null && (dist[opt.unit] || 0) > opt.max) {
+        problems.push({ code: "variant-max", params: { label: opt.unit, max: opt.max }, refs: { uid: entry.uid } });
+      }
+    });
   });
 
   const rule = transportRule(data, def);
@@ -382,8 +398,7 @@ export function validate(data, state) {
     }
     for (const e of known) {
       if (c.appliesTo && !matches(c.appliesTo, formations[e.formation])) continue;
-      const ups = e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade]));
-      const counts = {};
+const ups = e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade]) && upgrades[u.upgrade].countsAsUpgrade !== false);      const counts = {};
       ups.forEach((u) => (counts[u.upgrade] = (counts[u.upgrade] || 0) + 1));
       const tooMany = c.maxTotal != null && ups.length > c.maxTotal;
       const dup = c.max != null && (c.perUpgrade ? Object.values(counts).some((n) => n > c.max) : ups.length > c.max);

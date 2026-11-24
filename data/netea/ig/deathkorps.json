@@ -487,9 +487,12 @@
             "units": [
                 {
                     "oneOf": [
-                        "dk-baneblade","dk-shadowsword","dk-stormblade","dk-stormsword"
+                        "dk-baneblade",
+                        "dk-shadowsword",
+                        "dk-stormblade",
+                        "dk-stormsword"
                     ],
-                    "count":1
+                    "count": 1
                 }
             ],
             "upgrades": []
@@ -524,15 +527,30 @@
             ],
             "units": [
                 {
-                    "unit": "dk-thunderer",
-                    "count": 6
+                    "oneOf": [
+                        {
+                            "unit": "dk-thunderer",
+                            "pts": 0
+                        },
+                        {
+                            "unit": "dk-leman-russ",
+                            "pts": 20
+                        },
+                        {
+                            "unit": "dk-leman-russ-demolisher",
+                            "pts": 20
+                        },
+                        {
+                            "unit": "dk-leman-russ-vanquisher",
+                            "pts": 50,
+                            "max": 1
+                        }
+                    ],
+                    "count": 6,
+                    "mixed": true
                 }
             ],
-            "upgrades": [
-                "u-dk-leman-russ",
-                "u-dk-leman-russ-demolisher",
-                "u-dk-leman-russ-vanquisher"
-            ]
+            "upgrades": []
         },
         {
             "id": "f-navy-marauder-heavy-bomber",
@@ -723,8 +741,8 @@
             "name": "Tank Squadron",
             "variants": [
                 {
-                    "id": "std",
-                    "label": "Add three Leman Russ variants (no Vanquisher)",
+                    "id": "thunderers",
+                    "label": "Add three Thunderers",
                     "pts": 140,
                     "effects": [
                         {
@@ -733,61 +751,28 @@
                             "count": 3
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "u-dk-leman-russ",
-            "name": "Leman Russ",
-            "variants": [
+                },
                 {
-                    "id": "1",
-                    "label": "Replace any number of Thunderers with Leman Russ",
-                    "pts": 20,
+                    "id": "l-russ",
+                    "label": "Add three Leman Russ",
+                    "pts": 200,
                     "effects": [
                         {
-                            "op": "replace",
-                            "from": "dk-thunderer",
-                            "to": "dk-leman-russ",
-                            "count":1
+                            "op": "add",
+                            "unit": "dk-leman-russ",
+                            "count": 3
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "id": "u-dk-leman-russ-demolisher",
-            "name": "Leman Russ Demolisher",
-            "variants": [
+                },
                 {
-                    "id": "1",
-                    "label": "Replace any number of Thunderers with Leman Russ Demolishers",
-                    "pts": 20,
+                    "id": "l-russ-dem",
+                    "label": "Add three Leman Russ Demolishers",
+                    "pts": 200,
                     "effects": [
                         {
-                            "op": "replace",
-                            "from": "dk-thunderer",
-                            "to": "dk-leman-russ-demolisher",
-                            "count":1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "u-dk-leman-russ-vanquisher",
-            "name": "Leman Russ Vanquisher",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Replace a Thunderer with a Leman Russ Vanquisher",
-                    "pts": 50,
-                    "effects": [
-                        {
-                            "op": "replace",
-                            "from": "dk-thunderer",
-                            "to": "dk-leman-russ-vanquisher",
-                            "count":1
+                            "op": "add",
+                            "unit": "dk-leman-russ-demolisher",
+                            "count": 3
                         }
                     ]
                 }

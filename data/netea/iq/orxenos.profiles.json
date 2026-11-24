@@ -1,7 +1,7 @@
 {
   "army": "netea/iq/orxenos",
   "source": {
-    "file": "Ordo Xenos",
+    "file": "IQ.json",
     "version": "1.0"
   },
   "specialRules": [],

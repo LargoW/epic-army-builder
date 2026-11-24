@@ -6,7 +6,7 @@
   "name": "Ordo Xenos",
   "faction": "Inquisition",
   "version": "1.0",
-  "source": { "file": "Ordo Xenos", "version": "1.0" },
+  "source": { "file": "IQ.json", "version": "1.0" },
   "strategy": 5,
   "initiative": [{ "formations": ["*"], "value": "2+" }],
   "units": {

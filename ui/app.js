@@ -264,33 +264,28 @@ function sizeControls(entry, def) {
 }
 
 function choiceControls(entry, def) {
-    const mult = (sizeOf(def, entry) || {
-        mult: 1
-    }).mult;
-    const slots = unitSlots(def, entry).map((s, i) => ({
-        s,
-        i
-    })).filter((x) => x.s.oneOf);
+    const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
+    const slots = unitSlots(def, entry).map((s, i) => ({ s, i })).filter((x) => x.s.oneOf);
     if (!slots.length) return "";
-    return `<h3>${t("choose_units")}</h3>` + slots.map(({
-        s,
-        i
-    }) => {
+    
+    return `<h3>${t("choose_units")}</h3>` + slots.map(({ s, i }) => {
         const count = s.count * mult;
-        const dist = entry.choices[i] || {
-            [s.oneOf[0]]: count
-        };
+        const options = s.oneOf.map(u => typeof u === 'string' ? { unit: u, name: unitName(u) } : { ...u, name: unitName(u.unit) });
+        const defaultUnit = options[0].unit;
+        const dist = entry.choices[i] || { [defaultUnit]: count };
+        
         if (!s.mixed) {
-            const cur = Object.keys(dist).find((u) => dist[u] > 0) || s.oneOf[0];
+            const cur = Object.keys(dist).find((u) => dist[u] > 0) || defaultUnit;
             return `<div class="row"><label for="c-${entry.uid}-${i}">${count}×</label>
         <select id="c-${entry.uid}-${i}" data-act="choice-single" data-uid="${entry.uid}" data-slot="${i}" data-count="${count}">
-          ${s.oneOf.map((u) => `<option value="${u}"${u === cur ? " selected" : ""}>${esc(unitName(u))}</option>`).join("")}
+          ${options.map((opt) => `<option value="${opt.unit}"${opt.unit === cur ? " selected" : ""}>${esc(opt.name)}${opt.pts ? ` (+${opt.pts} ${t("pts")})` : ""}</option>`).join("")}
         </select></div>`;
         }
-        return s.oneOf.map((u) => `<div class="row"><label for="c-${entry.uid}-${i}-${u}">${esc(unitName(u))}</label>
-      <input id="c-${entry.uid}-${i}-${u}" type="number" min="0" max="${count}" inputmode="numeric" value="${dist[u] || 0}"
-        data-act="choice-mixed" data-uid="${entry.uid}" data-slot="${i}" data-unit="${u}"></div>`).join("") +
-            `<p class="note">${t("sum_must_be", { count })}</p>`;
+        
+        return options.map((opt) => `<div class="row"><label for="c-${entry.uid}-${i}-${opt.unit}">${esc(opt.name)}${opt.pts ? ` (+${opt.pts} ${t("pts")})` : ""}</label>
+      <input id="c-${entry.uid}-${i}-${opt.unit}" type="number" min="0" max="${opt.max != null ? Math.min(opt.max, count) : count}" inputmode="numeric" value="${dist[opt.unit] || 0}"
+        data-act="choice-mixed" data-uid="${entry.uid}" data-slot="${i}" data-unit="${opt.unit}"></div>`).join("")
+            + `<p class="note">${t("sum_must_be", { count })}</p>`;
     }).join("");
 }
 
@@ -1104,14 +1099,12 @@ document.addEventListener("change", (e) => {
             break;
         case "choice-mixed": {
             const def = unitSlots(formationById[entry.formation], entry)[el.dataset.slot];
-            const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || {
-                mult: 1
-            }).mult;
-            const dist = {
-                ...(entry.choices[el.dataset.slot] || {
-                    [def.oneOf[0]]: slotCount
-                })
-            };
+            const slotCount = def.count * (sizeOf(formationById[entry.formation], entry) || { mult: 1 }).mult;
+            
+            // FIX: Prüfen, ob oneOf[0] ein String oder ein Objekt ist
+            const defaultUnit = typeof def.oneOf[0] === 'string' ? def.oneOf[0] : def.oneOf[0].unit;
+            
+            const dist = { ...(entry.choices[el.dataset.slot] || { [defaultUnit]: slotCount }) };
             dist[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
             update(setChoice(state, uid, el.dataset.slot, dist));
             break;
