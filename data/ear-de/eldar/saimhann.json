@@ -1,736 +1,895 @@
 {
-    "schema": 0,
-    "ruleset": "ear-de",
-    "lang": "de",
-    "id": "ear-de/eldar/saimhann",
-    "name": "Weltenschiff Saim-Hann",
-    "faction": "Eldar",
+  "schema": 0,
+  "ruleset": "ear-de",
+  "lang": "de",
+  "id": "ear-de/eldar/saimhann",
+  "name": "Weltenschiff Saim-Hann",
+  "faction": "Eldar",
+  "version": "Beta 0.1.1",
+  "source": {
+    "file": "lists_de/EL/saimhann.json",
     "version": "Beta 0.1.1",
-    "source": {
-        "file": "lists_de/EL/saimhann.json",
-        "version": "Beta 0.1.1",
-        "commit": null
+    "commit": null
+  },
+  "strategy": 4,
+  "initiative": [
+    {
+      "formations": [
+        "sah-avatar",
+        "sah-aspektkrieger-kriegsschar",
+        "sah-phantom-titan",
+        "sah-phantom-titanen"
+      ],
+      "value": "1+"
     },
-    "strategy": 4,
-    "initiative": [
-        {
-            "formations": [
-                "sah-avatar",
-                "sah-aspektkrieger-kriegsschar",
-                "sah-phantom-titan",
-                "sah-phantom-titanen"
-            ],
-            "value": "1+"
-        },
-        {
-            "formations": [
-                "*"
-            ],
-            "value": "2+"
-        }
-    ],
-    "units": {
-        "sah-haeuptling": {
-            "name": "Häuptling der Wilden Reiter",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-avatar": {
-            "name": "Avatar des Khaine",
-            "from": "EL.json",
-            "type": "WE"
-        },
-        "sah-eldar-exarch": {
-            "name": "Eldar-Exarch",
-            "from": "EL.json",
-            "type": "CH"
-        },
-        "sah-runenprophet": {
-            "name": "Eldar-Runenprophet",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-berittener-runenprophet": {
-            "name": "Berittener Runenprophet von Saim-Hann",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-gardisten": {
-            "name": "Eldar-Gardisten",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-schwerwaffenplattform": {
-            "name": "Eldar-Schwerwaffenplattform",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-phantomdroiden": {
-            "name": "Phantomdroiden",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-kampflaeuer": {
-            "name": "Kampfläufer",
-            "from": "EL.json",
-            "type": "LV"
-        },
-        "sah-wilde-reiter": {
-            "name": "Wilde Reiter von Saim-Hann",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-schleierlaeufer": {
-            "name": "Schleierläufer von Saim-Hann",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-asuryans-jager": {
-            "name": "Asuryans Jäger",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-feuerdrachen": {
-            "name": "Feuerdrachen",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-schwarze-khaindar": {
-            "name": "Schwarze Khaindar",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-banshees": {
-            "name": "Banshees",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-skorpionkrieger": {
-            "name": "Skorpionkrieger",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-sternenlanzen": {
-            "name": "Sternenlanzen",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-kriegsfalken": {
-            "name": "Kriegsfalken",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-warpspinnen": {
-            "name": "Warpspinnen",
-            "from": "EL.json",
-            "type": "INF"
-        },
-        "sah-hornets": {
-            "name": "Saim-Hann-Hornet",
-            "from": "EL.json",
-            "type": "LV"
-        },
-        "sah-viper": {
-            "name": "Saim-Hann-Viper",
-            "from": "EL.json",
-            "type": "LV"
-        },
-        "sah-wellenschlange": {
-            "name": "Wellenschlange",
-            "from": "EL.json",
-            "type": "AV"
-        },
-        "sah-falcon": {
-            "name": "Falcon",
-            "from": "EL.json",
-            "type": "AV"
-        },
-        "sah-illum-zar": {
-            "name": "Illum Zar",
-            "from": "EL.json",
-            "type": "AV"
-        },
-        "sah-nachtspinne": {
-            "name": "Nachtspinne",
-            "from": "EL.json",
-            "type": "AV"
-        },
-        "sah-feuersturm": {
-            "name": "Feuersturm",
-            "from": "EL.json",
-            "type": "AV"
-        },
-        "sah-skorpion": {
-            "name": "Skorpion",
-            "from": "EL.json",
-            "type": "WE"
-        },
-        "sah-kobra": {
-            "name": "Kobra",
-            "from": "EL.json",
-            "type": "WE"
-        },
-        "sah-sturmserpent": {
-            "name": "Sturmserpent",
-            "from": "EL.json",
-            "type": "WE"
-        },
-        "sah-phantom-titan": {
-            "name": "Phantom-Titan",
-            "from": "EL.json",
-            "type": "WE"
-        },
-        "sah-nachtschwinge": {
-            "name": "Nachtschwinge-Abfangjäger",
-            "from": "eldarNavy.json",
-            "type": "AC"
-        },
-        "sah-phoenixbomber": {
-            "name": "Phönix-Bomber (B)",
-            "from": "eldarNavy.json",
-            "type": "AC"
-        },
-        "sah-vampirejaeger": {
-            "name": "Vampire-Jäger",
-            "from": "eldarNavy.json",
-            "type": "AC/WE"
-        },
-        "sah-phantomschiff": {
-            "name": "Phantomschiff",
-            "from": "eldarNavy.json",
-            "type": "SC"
-        },
-        "sah-drachschiff": {
-            "name": "Drachenschiff",
-            "from": "eldarNavy.json",
-            "type": "SC"
-        }
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
+  ],
+  "units": {
+    "sah-haeuptling": {
+      "name": "Häuptling der Wilden Reiter",
+      "from": "EL.json",
+      "type": "INF"
     },
-    "sections": [
+    "sah-avatar": {
+      "name": "Avatar des Khaine",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "sah-eldar-exarch": {
+      "name": "Eldar-Exarch",
+      "from": "EL.json",
+      "type": "CH"
+    },
+    "sah-runenprophet": {
+      "name": "Eldar-Runenprophet",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-berittener-runenprophet": {
+      "name": "Berittener Runenprophet von Saim-Hann",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-gardisten": {
+      "name": "Eldar-Gardisten",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-schwerwaffenplattform": {
+      "name": "Eldar-Schwerwaffenplattform",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-phantomdroiden": {
+      "name": "Phantomdroiden",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-kampflaeuer": {
+      "name": "Kampfläufer",
+      "from": "EL.json",
+      "type": "LV"
+    },
+    "sah-wilde-reiter": {
+      "name": "Wilde Reiter von Saim-Hann",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-schleierlaeufer": {
+      "name": "Schleierläufer von Saim-Hann",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-asuryans-jager": {
+      "name": "Asuryans Jäger",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-feuerdrachen": {
+      "name": "Feuerdrachen",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-schwarze-khaindar": {
+      "name": "Schwarze Khaindar",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-banshees": {
+      "name": "Banshees",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-skorpionkrieger": {
+      "name": "Skorpionkrieger",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-sternenlanzen": {
+      "name": "Sternenlanzen",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-kriegsfalken": {
+      "name": "Kriegsfalken",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-warpspinnen": {
+      "name": "Warpspinnen",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "sah-hornets": {
+      "name": "Saim-Hann-Hornet",
+      "from": "EL.json",
+      "type": "LV"
+    },
+    "sah-viper": {
+      "name": "Saim-Hann-Viper",
+      "from": "EL.json",
+      "type": "LV"
+    },
+    "sah-wellenschlange": {
+      "name": "Wellenschlange",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "sah-falcon": {
+      "name": "Falcon",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "sah-illum-zar": {
+      "name": "Illum Zar",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "sah-nachtspinne": {
+      "name": "Nachtspinne",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "sah-feuersturm": {
+      "name": "Feuersturm",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "sah-skorpion": {
+      "name": "Skorpion",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "sah-kobra": {
+      "name": "Kobra",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "sah-sturmserpent": {
+      "name": "Sturmserpent",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "sah-phantom-titan": {
+      "name": "Phantom-Titan",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "sah-nachtschwinge": {
+      "name": "Nachtschwinge-Abfangjäger",
+      "from": "eldarNavy.json",
+      "type": "AC"
+    },
+    "sah-phoenixbomber": {
+      "name": "Phönix-Bomber (B)",
+      "from": "eldarNavy.json",
+      "type": "AC"
+    },
+    "sah-vampirejaeger": {
+      "name": "Vampire-Jäger",
+      "from": "eldarNavy.json",
+      "type": "AC/WE"
+    },
+    "sah-phantomschiff": {
+      "name": "Phantomschiff",
+      "from": "eldarNavy.json",
+      "type": "SC"
+    },
+    "sah-drachschiff": {
+      "name": "Drachenschiff",
+      "from": "eldarNavy.json",
+      "type": "SC"
+    }
+  },
+  "sections": [
+    {
+      "id": "special",
+      "name": "Saim-Hann-Spezialregeln",
+      "formations": [
+        "sah-avatar",
+        "sah-netzportal"
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Saim-Hann-Kriegsscharn",
+      "description": "Für jede Kriegsschar der Wilden Reiter darf jeweils eine Aspektkrieger-Kriegsschar und eine Kriegsschar berittener Gardisten gewählt werden.",
+      "formations": [
+        "sah-wildreiter-kriegsschar",
+        "sah-beritteter-gardisten-kriegsschar",
+        "sah-aspektkrieger-kriegsschar"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Saim-Hann-Verbände",
+      "description": "Bis zu drei Saim-Hann-Verbände pro gewählter Saim-Hann-Kriegsschar.",
+      "formations": [
+        "sah-wildreiter-truppe",
+        "sah-beritteter-aspektkriegertrupp",
+        "sah-kriegsmaschinen-vaul",
+        "sah-schwerter-vaul",
+        "sah-illum-zar-trupp",
+        "sah-nachtspinnen-trupp",
+        "sah-hornissen-trupp",
+        "sah-kampflaeuer-trupp"
+      ]
+    },
+    {
+      "id": "fleet",
+      "name": "Saim-Hann-Flugzeuge, Raumschiffe und Titanen",
+      "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+      "formations": [
+        "sah-nachtschwingen-staffel",
+        "sah-phoenix-bomberstaffel",
+        "sah-vampirejaeger",
+        "sah-phantom-titanen",
+        "sah-raumschiff"
+      ]
+    }
+  ],
+  "formations": [
+    {
+      "id": "sah-avatar",
+      "name": "1 Avatar",
+      "pts": 0,
+      "tags": [
+        "special"
+      ],
+      "units": [
         {
-            "id": "special",
-            "name": "Saim-Hann-Spezialregeln",
-            "formations": [
-                "sah-avatar",
-                "sah-netzportal"
-            ]
-        },
-        {
-            "id": "core",
-            "name": "Saim-Hann-Kriegsscharn",
-            "description": "Für jede Kriegsschar der Wilden Reiter darf jeweils eine Aspektkrieger-Kriegsschar und eine Kriegsschar berittener Gardisten gewählt werden.",
-            "formations": [
-                "sah-wildreiter-kriegsschar",
-                "sah-beritteter-gardisten-kriegsschar",
-                "sah-aspektkrieger-kriegsschar"
-            ]
-        },
-        {
-            "id": "support",
-            "name": "Saim-Hann-Verbände",
-            "description": "Bis zu drei Saim-Hann-Verbände pro gewählter Saim-Hann-Kriegsschar.",
-            "formations": [
-                "sah-wildreiter-truppe",
-                "sah-beritteter-aspektkriegertrupp",
-                "sah-kriegsmaschinen-vaul",
-                "sah-schwerter-vaul",
-                "sah-illum-zar-trupp",
-                "sah-nachtspinnen-trupp",
-                "sah-hornissen-trupp",
-                "sah-kampflaeuer-trupp"
-            ]
-        },
-        {
-            "id": "fleet",
-            "name": "Saim-Hann-Flugzeuge, Raumschiffe und Titanen",
-            "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
-            "formations": [
-                "sah-nachtschwingen-staffel",
-                "sah-phoenix-bomberstaffel",
-                "sah-vampirejaeger",
-                "sah-phantom-titanen",
-                "sah-raumschiff"
-            ]
+          "unit": "sah-avatar",
+          "count": 1
         }
-    ],
-    "formations": [
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-netzportal",
+      "name": "0–1 Netzportal",
+      "pts": 50,
+      "tags": [
+        "special"
+      ],
+      "units": [],
+      "upgrades": []
+    },
+    {
+      "id": "sah-wildreiter-kriegsschar",
+      "name": "Kriegsschar der Wilden Reiter",
+      "pts": 275,
+      "tags": [
+        "core"
+      ],
+      "units": [
         {
-            "id": "sah-avatar",
-            "name": "1 Avatar",
-            "pts": 0,
-            "tags": [
-                "special"
-            ],
-            "units": [
-                {
-                    "unit": "sah-avatar",
-                    "count": 1
-                }
-            ],
-            "upgrades": []
+          "unit": "sah-wilde-reiter",
+          "count": 8
         },
         {
-            "id": "sah-netzportal",
-            "name": "0–1 Netzportal",
-            "pts": 50,
-            "tags": [
-                "special"
-            ],
-            "units": [],
-            "upgrades": []
-        },
-        {
-            "id": "sah-wildreiter-kriegsschar",
-            "name": "Kriegsschar der Wilden Reiter",
-            "pts": 275,
-            "tags": [
-                "core"
-            ],
-            "units": [
-                {
-                    "unit": "sah-wilde-reiter",
-                    "count": 8
-                },
-                {
-                    "unit": "sah-berittener-runenprophet",
-                    "count": 1
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-wildreiter-haeuptling",
-                "sah-upgrade-hornets"
-            ]
-        },
-        {
-            "id": "sah-beritteter-gardisten-kriegsschar",
-            "name": "Berittene Gardisten-Kriegsschar",
-            "pts": 250,
-            "tags": [
-                "core"
-            ],
-            "units": [
-                {
-                    "unit": "sah-wellenschlange",
-                    "count": 3
-                },
-                {
-                    "unit": "sah-runenprophet",
-                    "count": 1
-                },
-                {
-                    "unit": "sah-gardisten",
-                    "count": 5
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-feuersturm"
-            ]
-        },
-        {
-            "id": "sah-aspektkrieger-kriegsschar",
-            "name": "Aspektkrieger-Kriegsschar",
-            "pts": 300,
-            "tags": [
-                "core"
-            ],
-            "units": [
-                {
-                    "unit": "sah-sternenlanzen",
-                    "count": 8,
-                    "mixed": true,
-                    "oneOf": [
-                        "sah-sternenlanzen",
-                        "sah-kriegsfalken"
-                    ]
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-exarch"
-            ]
-        },
-        {
-            "id": "sah-wildreiter-truppe",
-            "name": "Wildreiter-Truppe",
-            "pts": 200,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-wilde-reiter",
-                    "count": 6
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-hornets"
-            ]
-        },
-        {
-            "id": "sah-beritteter-aspektkriegertrupp",
-            "name": "Berittener Aspektkriegertrupp",
-            "pts": 325,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-wellenschlange",
-                    "count": 3
-                },
-                {
-                    "unit": "sah-schwarze-khaindar",
-                    "count": 6,
-                    "mixed": true,
-                    "oneOf": [
-                        "sah-schwarze-khaindar",
-                        "sah-asuryans-jager",
-                        "sah-feuerdrachen",
-                        "sah-banshees",
-                        "sah-skorpionkrieger"
-                    ]
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-exarch"
-            ]
-        },
-        {
-            "id": "sah-kriegsmaschinen-vaul",
-            "name": "Kriegsmaschinen von Vaul",
-            "pts": 250,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-kobra",
-                    "count": 1,
-                    "oneOf": [
-                        "sah-kobra",
-                        "sah-skorpion",
-                        "sah-sturmserpent"
-                    ]
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-schwerter-vaul",
-            "name": "Schwerter von Vaul",
-            "pts": 200,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-falcon",
-                    "count": 3
-                },
-                {
-                    "unit": "sah-gardisten",
-                    "count": 3
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-feuersturm"
-            ]
-        },
-        {
-            "id": "sah-illum-zar-trupp",
-            "name": "Illum-Zar-Trupp",
-            "pts": 250,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-illum-zar",
-                    "count": 3
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-nachtspinnen-trupp",
-            "name": "Nachtspinnen-Trupp",
-            "pts": 175,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-nachtspinne",
-                    "count": 3
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-nachtspinne"
-            ]
-        },
-        {
-            "id": "sah-hornissen-trupp",
-            "name": "Hornissen-Trupp",
-            "pts": 175,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-hornets",
-                    "count": 3
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-kampflaeuer-trupp",
-            "name": "Kampfläufer-Trupp",
-            "pts": 150,
-            "tags": [
-                "support"
-            ],
-            "units": [
-                {
-                    "unit": "sah-kampflaeuer",
-                    "count": 4
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-kampflaeuer"
-            ]
-        },
-        {
-            "id": "sah-nachtschwingen-staffel",
-            "name": "Nachtschwingen-Staffel",
-            "pts": 225,
-            "tags": [
-                "fleet"
-            ],
-            "units": [
-                {
-                    "unit": "sah-nachtschwinge",
-                    "count": 2
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-phoenix-bomberstaffel",
-            "name": "Phönix-Bomberstaffel",
-            "pts": 325,
-            "tags": [
-                "fleet"
-            ],
-            "units": [
-                {
-                    "unit": "sah-phoenixbomber",
-                    "count": 3
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-vampirejaeger",
-            "name": "Vampire-Jäger",
-            "pts": 225,
-            "tags": [
-                "fleet"
-            ],
-            "units": [
-                {
-                    "unit": "sah-vampirejaeger",
-                    "count": 1
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-phantom-titanen",
-            "name": "Phantom-Titanen",
-            "pts": 650,
-            "tags": [
-                "fleet"
-            ],
-            "units": [
-                {
-                    "unit": "sah-phantom-titan",
-                    "count": 2
-                }
-            ],
-            "upgrades": []
-        },
-        {
-            "id": "sah-raumschiff",
-            "name": "0–1 Raumschiff",
-            "pts": 175,
-            "tags": [
-                "fleet"
-            ],
-            "units": [
-                {
-                    "unit": "sah-phantomschiff",
-                    "count": 1
-                }
-            ],
-            "upgrades": [
-                "sah-upgrade-drachschiff"
-            ]
+          "unit": "sah-berittener-runenprophet",
+          "count": 1
         }
-    ],
-    "upgrades": [
+      ],
+      "upgrades": [
+        "sah-upgrade-wildreiter-haeuptling",
+        "sah-upgrade-hornets"
+      ]
+    },
+    {
+      "id": "sah-beritteter-gardisten-kriegsschar",
+      "name": "Berittene Gardisten-Kriegsschar",
+      "pts": 250,
+      "tags": [
+        "core"
+      ],
+      "units": [
         {
-            "id": "sah-upgrade-exarch",
-            "name": "Exarch",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Füge 1 Eldar-Exarch hinzu",
-                    "pts": 25,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "sah-eldar-exarch",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "id": "2",
-                    "label": "Füge 2 Eldar-Exarchen hinzu",
-                    "pts": 50,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "sah-eldar-exarch",
-                            "count": 2
-                        }
-                    ]
-                }
-            ]
+          "unit": "sah-wellenschlange",
+          "count": 3
         },
         {
-            "id": "sah-upgrade-feuersturm",
-            "name": "Feuersturm",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Ersetze einen Falcon durch einen Feuersturm",
-                    "pts": 0,
-                    "effects": [
-                        {
-                            "op": "replace",
-                            "from": "sah-falcon",
-                            "to": "sah-feuersturm",
-                            "count": 1
-                        }
-                    ]
-                }
-            ]
+          "unit": "sah-runenprophet",
+          "count": 1
         },
         {
-            "id": "sah-upgrade-hornets",
-            "name": "Saim-Hann-Hornet",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Füge bis zu zwei Saim-Hann-Hornets hinzu",
-                    "pts": 100,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "sah-hornets",
-                            "count": 2
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sah-upgrade-wildreiter-haeuptling",
-            "name": "Häuptling der Wilden Reiter",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Ersetze eine Einheit Wilde Reiter durch einen Häuptling der Wilden Reiter",
-                    "pts": 50,
-                    "effects": [
-                        {
-                            "op": "replace",
-                            "from": "sah-wilde-reiter",
-                            "to": "sah-haeuptling",
-                            "count": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sah-upgrade-nachtspinne",
-            "name": "Nachtspinne",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Füge 1 Nachtspinne hinzu",
-                    "pts": 75,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "sah-nachtspinne",
-                            "count": 1
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sah-upgrade-kampflaeuer",
-            "name": "Kampfläufer",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Füge bis zu zwei Kampfläufer hinzu",
-                    "pts": 50,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "sah-kampflaeuer",
-                            "count": 2
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "sah-upgrade-drachschiff",
-            "name": "Drachenschiff",
-            "variants": [
-                {
-                    "id": "1",
-                    "label": "Ersetze das Phantomschiff durch ein Drachenschiff",
-                    "pts": 125,
-                    "effects": [
-                        {
-                            "op": "replace",
-                            "from": "sah-phantomschiff",
-                            "to": "sah-drachschiff",
-                            "count": 1
-                        }
-                    ]
-                }
-            ]
+          "unit": "sah-gardisten",
+          "count": 5
         }
-    ],
-    "transport": [],
-    "formationConstraints": [],
-    "upgradeConstraints": [
+      ],
+      "upgrades": [
+        "sah-upgrade-feuersturm"
+      ]
+    },
+    {
+      "id": "sah-aspektkrieger-kriegsschar",
+      "name": "Aspektkrieger-Kriegsschar",
+      "pts": 300,
+      "tags": [
+        "core"
+      ],
+      "units": [
         {
-            "id": "once-per-formation",
-            "from": [
-                "*"
-            ],
-            "max": 1,
-            "perUpgrade": true,
-            "perFormation": true
+          "unit": "sah-sternenlanzen",
+          "count": 8,
+          "mixed": true,
+          "oneOf": [
+            "sah-sternenlanzen",
+            "sah-kriegsfalken"
+          ]
         }
-    ]
+      ],
+      "upgrades": [
+        "sah-upgrade-exarch"
+      ]
+    },
+    {
+      "id": "sah-wildreiter-truppe",
+      "name": "Wildreiter-Truppe",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-wilde-reiter",
+          "count": 6
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-hornets",
+        "sah-upgrade-viper-schleierlaeufer"
+      ]
+    },
+    {
+      "id": "sah-beritteter-aspektkriegertrupp",
+      "name": "Berittener Aspektkriegertrupp",
+      "pts": 325,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-wellenschlange",
+          "count": 3
+        },
+        {
+          "unit": "sah-schwarze-khaindar",
+          "count": 6,
+          "mixed": true,
+          "oneOf": [
+            "sah-schwarze-khaindar",
+            "sah-asuryans-jager",
+            "sah-feuerdrachen",
+            "sah-banshees",
+            "sah-skorpionkrieger"
+          ]
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-exarch"
+      ]
+    },
+    {
+      "id": "sah-kriegsmaschinen-vaul",
+      "name": "Kriegsmaschinen von Vaul",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "sah-kobra",
+            "sah-skorpion",
+            "sah-sturmserpent"
+          ],
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-kriegsmaschinen-vaul"
+      ]
+    },
+    {
+      "id": "sah-schwerter-vaul",
+      "name": "Schwerter von Vaul",
+      "pts": 200,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-falcon",
+          "count": 3
+        },
+        {
+          "unit": "sah-gardisten",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-feuersturm"
+      ]
+    },
+    {
+      "id": "sah-illum-zar-trupp",
+      "name": "Illum-Zar-Trupp",
+      "pts": 250,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-illum-zar",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-nachtspinnen-trupp",
+      "name": "Nachtspinnen-Trupp",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-nachtspinne",
+          "count": 3
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-nachtspinne"
+      ]
+    },
+    {
+      "id": "sah-hornissen-trupp",
+      "name": "Hornissen-Trupp",
+      "pts": 175,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-hornets",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-kampflaeuer-trupp",
+      "name": "Kampfläufer-Trupp",
+      "pts": 150,
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "unit": "sah-kampflaeuer",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-kampflaeuer"
+      ]
+    },
+    {
+      "id": "sah-nachtschwingen-staffel",
+      "name": "Nachtschwingen-Staffel",
+      "pts": 225,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "sah-nachtschwinge",
+          "count": 2
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-phoenix-bomberstaffel",
+      "name": "Phönix-Bomberstaffel",
+      "pts": 325,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "sah-phoenixbomber",
+          "count": 3
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-vampirejaeger",
+      "name": "Vampire-Jäger",
+      "pts": 225,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "sah-vampirejaeger",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sah-phantom-titanen",
+      "name": "Phantom-Titanen",
+      "pts": 650,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "sah-phantom-titan",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-unabhaengige-zwillinge"
+      ]
+    },
+    {
+      "id": "sah-raumschiff",
+      "name": "0–1 Raumschiff",
+      "pts": 175,
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "sah-phantomschiff",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "sah-upgrade-drachschiff"
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "sah-upgrade-exarch",
+      "name": "Exarch",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Eldar-Exarch hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-eldar-exarch",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge 2 Eldar-Exarchen hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-eldar-exarch",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-feuersturm",
+      "name": "Feuersturm",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze einen Falcon durch einen Feuersturm",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-falcon",
+              "to": "sah-feuersturm",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-hornets",
+      "name": "Saim-Hann-Hornet",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Saim-Hann-Hornets hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-hornets",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-wildreiter-haeuptling",
+      "name": "Häuptling der Wilden Reiter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze eine Einheit Wilde Reiter durch einen Häuptling der Wilden Reiter",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-wilde-reiter",
+              "to": "sah-haeuptling",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-nachtspinne",
+      "name": "Nachtspinne",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Nachtspinne hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-nachtspinne",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-kampflaeuer",
+      "name": "Kampfläufer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge bis zu zwei Kampfläufer hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-kampflaeuer",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-drachschiff",
+      "name": "Drachenschiff",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze das Phantomschiff durch ein Drachenschiff",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-phantomschiff",
+              "to": "sah-drachschiff",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-kriegsmaschinen-vaul",
+      "name": "Zusätzliche Kriegsmaschinen von Vaul",
+      "variants": [
+        {
+          "id": "kobra-1",
+          "label": "Füge 1 Kobra hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-kobra",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "skorpion-1",
+          "label": "Füge 1 Skorpion hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-skorpion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-1",
+          "label": "Füge 1 Sturmserpent hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-sturmserpent",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "kobra-2",
+          "label": "Füge 2 Kobra hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-kobra",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "skorpion-2",
+          "label": "Füge 2 Skorpion hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-skorpion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-2",
+          "label": "Füge 2 Sturmserpent hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "sah-sturmserpent",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-unabhaengige-zwillinge",
+      "name": "Unabhängige Zwillinge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gib dem Verband die Sonderregel 'Unabhängige Zwillinge'",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-viper-schleierlaeufer",
+      "name": "Ersetze Wilde Reiter durch Viper oder Schleierläufer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze bis zu drei Wilde Reiter durch Vipers",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-wilde-reiter",
+              "to": "sah-viper",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Ersetze bis zu drei Wilde Reiter durch Schleierläufer",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-wilde-reiter",
+              "to": "sah-schleierlaeufer",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sah-upgrade-gardisten-plattformen",
+      "name": "Schwerwaffenplattformen oder Phantomdroiden",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze zwei Eldar-Gardisten durch zwei Schwerwaffenplattformen",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-gardisten",
+              "to": "sah-schwerwaffenplattform",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Ersetze zwei Eldar-Gardisten durch eine Phantomdroiden-Einheit",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "sah-gardisten",
+              "to": "sah-phantomdroiden",
+              "count": 2,
+              "toCount": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transport": [],
+  "formationConstraints": [],
+  "upgradeConstraints": [
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
+  ]
 }

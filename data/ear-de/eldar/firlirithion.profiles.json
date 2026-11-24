@@ -1238,6 +1238,41 @@
           "description": null
         }
       ]
+    },
+    "fl-wellenschlange": {
+      "name": "Wellenschlange",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann bis zu 2 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar, Kriegsfalken, Phantomklingen oder Phantomdroiden. Phantomklingen und Phantomdroiden belegen jeweils 2 Plätze.",
+      "weapons": [
+        {
+          "name": "Zwillings-Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
     }
   }
 }

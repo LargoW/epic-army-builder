@@ -6,58 +6,166 @@
   "name": "Fir Lirithion",
   "faction": "Eldar",
   "version": "0.6.0",
-  "source": { "file": "lists_de/EL/firlirithion.json", "version": "0.6.0", "commit": null },
+  "source": {
+    "file": "lists_de/EL/firlirithion.json",
+    "version": "0.6.0",
+    "commit": null
+  },
   "strategy": 4,
   "initiative": [
     {
-      "formations": ["fl-avatar", "fl-phantomritter", "fl-phantomtitan", "fl-runenleser-titan", "fl-phantom-titan"],
+      "formations": [
+        "fl-avatar",
+        "fl-phantomritter",
+        "fl-phantomtitan",
+        "fl-runenleser-titan",
+        "fl-phantom-titan"
+      ],
       "value": "1+"
     },
-    { "formations": ["*"], "value": "2+" }
+    {
+      "formations": [
+        "*"
+      ],
+      "value": "2+"
+    }
   ],
   "units": {
-    "fl-avatar": { "name": "Avatar des Khaine", "from": "EL.json", "type": "WE" },
-    "fl-knochensaenger": { "name": "Knochensänger", "from": "EL.json", "type": "CH" },
-    "fl-geisterseher": { "name": "Geisterseher", "from": "EL.json", "type": "CH" },
-    "fl-phantomklingen": { "name": "Phantomklingen", "from": "EL.json", "type": "INF" },
-    "fl-phantome": { "name": "Phantomdroiden", "from": "EL.json", "type": "INF" },
-    "fl-phantomlord": { "name": "Phantomlord", "from": "EL.json", "type": "AV" },
-    "fl-phantomritter": { "name": "Phantomritter", "from": "EL.json", "type": "H-AV" },
-    "fl-skorpion": { "name": "Skorpion", "from": "EL.json", "type": "WE" },
-    "fl-kobra": { "name": "Kobra", "from": "EL.json", "type": "WE" },
-    "fl-sturmserpent": { "name": "Sturmserpent", "from": "EL.json", "type": "WE" },
-    "fl-phantomtitan": { "name": "Phantom-Titan", "from": "EL.json", "type": "WE" },
-    "fl-runenleser-titan": { "name": "Runenleser-Titan", "from": "EL.json", "type": "WE" },
-    "fl-mymeara-phantomtitan": { "name": "Mymeara-Phantomtitan", "from": "EL.json", "type": "WE" },
-    "fl-nachtschwinge": { "name": "Nachtschwinge-Abfangjäger", "from": "eldarNavy.json", "type": "AC" },
-    "fl-vampirejager": { "name": "Vampire-Jäger", "from": "eldarNavy.json", "type": "AC/WE" },
-    "fl-vampire": { "name": "Vampire Schattenbarke", "from": "eldarNavy.json", "type": "AC/WE" },
-    "fl-phantomschiff": { "name": "Phantomschiff", "from": "eldarNavy.json", "type": "SC" },
-    "fl-drachschiff": { "name": "Drachenschiff", "from": "eldarNavy.json", "type": "SC" }
+    "fl-avatar": {
+      "name": "Avatar des Khaine",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-knochensaenger": {
+      "name": "Knochensänger",
+      "from": "EL.json",
+      "type": "CH"
+    },
+    "fl-geisterseher": {
+      "name": "Geisterseher",
+      "from": "EL.json",
+      "type": "CH"
+    },
+    "fl-phantomklingen": {
+      "name": "Phantomklingen",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "fl-phantome": {
+      "name": "Phantomdroiden",
+      "from": "EL.json",
+      "type": "INF"
+    },
+    "fl-phantomlord": {
+      "name": "Phantomlord",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "fl-phantomritter": {
+      "name": "Phantomritter",
+      "from": "EL.json",
+      "type": "H-AV"
+    },
+    "fl-skorpion": {
+      "name": "Skorpion",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-kobra": {
+      "name": "Kobra",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-sturmserpent": {
+      "name": "Sturmserpent",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-phantomtitan": {
+      "name": "Phantom-Titan",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-runenleser-titan": {
+      "name": "Runenleser-Titan",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-mymeara-phantomtitan": {
+      "name": "Mymeara-Phantomtitan",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "fl-nachtschwinge": {
+      "name": "Nachtschwinge-Abfangjäger",
+      "from": "eldarNavy.json",
+      "type": "AC"
+    },
+    "fl-vampirejager": {
+      "name": "Vampire-Jäger",
+      "from": "eldarNavy.json",
+      "type": "AC/WE"
+    },
+    "fl-vampire": {
+      "name": "Vampire Schattenbarke",
+      "from": "eldarNavy.json",
+      "type": "AC/WE"
+    },
+    "fl-phantomschiff": {
+      "name": "Phantomschiff",
+      "from": "eldarNavy.json",
+      "type": "SC"
+    },
+    "fl-drachschiff": {
+      "name": "Drachenschiff",
+      "from": "eldarNavy.json",
+      "type": "SC"
+    },
+    "fl-wellenschlange": {
+      "name": "Wellenschlange",
+      "from": "EL.json",
+      "type": "AV"
+    }
   },
   "sections": [
     {
       "id": "special",
       "name": "Fir-Lirithion-Spezialregeln",
-      "formations": ["fl-avatar", "fl-netzportal"]
+      "formations": [
+        "fl-avatar",
+        "fl-netzportal"
+      ]
     },
     {
       "id": "war",
       "name": "Fir-Lirithion-Kampftitanen und Aufklärungstitanen",
       "description": "Für jeden Kampftitan dürfen bis zu zwei Scout-Titan-Verbände gewählt werden.",
-      "formations": ["fl-runenleser-titan", "fl-phantomtitan", "fl-phantom-titan"]
+      "formations": [
+        "fl-runenleser-titan",
+        "fl-phantomtitan",
+        "fl-phantom-titan"
+      ]
     },
     {
       "id": "support",
       "name": "Fir-Lirithion-Verbände",
       "description": "Für jeden Kampf- oder Kundschafter-Titan-Verband dürfen bis zu drei weitere Verbände gewählt werden.",
-      "formations": ["fl-phantomritter-trupp", "fl-kriegsmaschinen-vaul", "fl-phantomwachen"]
+      "formations": [
+        "fl-phantomritter-trupp",
+        "fl-kriegsmaschinen-vaul",
+        "fl-phantomwachen"
+      ]
     },
     {
       "id": "fleet",
       "name": "Weltenschiff-Flotte",
       "description": "Bis zu ein Viertel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
-      "formations": ["fl-nachtschwingen-staffel", "fl-vampirejager", "fl-vampire", "fl-raumschiff"]
+      "formations": [
+        "fl-nachtschwingen-staffel",
+        "fl-vampirejager",
+        "fl-vampire",
+        "fl-raumschiff"
+      ]
     }
   ],
   "formations": [
@@ -65,15 +173,24 @@
       "id": "fl-avatar",
       "name": "1 Avatar",
       "pts": 0,
-      "tags": ["special"],
-      "units": [{ "unit": "fl-avatar", "count": 1 }],
+      "tags": [
+        "special"
+      ],
+      "units": [
+        {
+          "unit": "fl-avatar",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "fl-netzportal",
       "name": "0–1 Netzportal",
       "pts": 50,
-      "tags": ["special"],
+      "tags": [
+        "special"
+      ],
       "units": [],
       "upgrades": []
     },
@@ -81,84 +198,175 @@
       "id": "fl-runenleser-titan",
       "name": "0–1 Runenleser-Titan",
       "pts": 850,
-      "tags": ["titan"],
-      "units": [{ "unit": "fl-runenleser-titan", "count": 1 }],
+      "tags": [
+        "titan"
+      ],
+      "units": [
+        {
+          "unit": "fl-runenleser-titan",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "fl-phantomtitan",
       "name": "Phantomtitan",
       "pts": 700,
-      "tags": ["titan"],
-      "units": [{ "unit": "fl-phantomtitan", "count": 1 }],
-      "upgrades": ["fl-upgrade-knochensaenger"]
+      "tags": [
+        "titan"
+      ],
+      "units": [
+        {
+          "unit": "fl-phantomtitan",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-knochensaenger"
+      ]
     },
     {
       "id": "fl-phantom-titan",
       "name": "Phantom-Titan",
       "pts": 650,
-      "tags": ["titan"],
-      "units": [{ "unit": "fl-phantomtitan", "count": 2 }],
-      "upgrades": []
+      "tags": [
+        "titan"
+      ],
+      "units": [
+        {
+          "unit": "fl-phantomtitan",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-unabhaengige-zwillinge"
+      ]
     },
     {
       "id": "fl-phantomritter-trupp",
       "name": "Phantomritter-Trupp",
       "pts": 300,
-      "tags": ["elite"],
-      "units": [{ "unit": "fl-phantomritter", "count": 2 }],
+      "tags": [
+        "elite"
+      ],
+      "units": [
+        {
+          "unit": "fl-phantomritter",
+          "count": 2
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "fl-kriegsmaschinen-vaul",
       "name": "Kriegsmaschinen von Vaul",
       "pts": 250,
-      "tags": ["support"],
-      "units": [{ "unit": "fl-kobra", "count": 1 }],
-      "upgrades": []
+      "tags": [
+        "support"
+      ],
+      "units": [
+        {
+          "oneOf": [
+            "fl-kobra",
+            "fl-skorpion",
+            "fl-sturmserpent"
+          ],
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-kriegsmaschinen-vaul",
+        "fl-upgrade-knochensaenger"
+      ]
     },
     {
       "id": "fl-phantomwachen",
       "name": "Phantomwachen-Phantomkriegsschar",
       "pts": 225,
-      "tags": ["support"],
-      "units": [
-        { "unit": "fl-geisterseher", "count": 1 },
-        { "unit": "fl-phantome", "count": 4 }
+      "tags": [
+        "support"
       ],
-      "upgrades": ["fl-upgrade-phantome", "fl-upgrade-phantomlord", "fl-upgrade-phantomklinge"]
+      "units": [
+        {
+          "unit": "fl-geisterseher",
+          "count": 1
+        },
+        {
+          "unit": "fl-phantome",
+          "count": 4
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-phantome",
+        "fl-upgrade-phantomlord",
+        "fl-upgrade-phantomklinge",
+        "fl-upgrade-wellenschlange"
+      ]
     },
     {
       "id": "fl-nachtschwingen-staffel",
       "name": "Nachtschwingen-Staffel",
       "pts": 225,
-      "tags": ["fleet"],
-      "units": [{ "unit": "fl-nachtschwinge", "count": 2 }],
-      "upgrades": []
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "fl-nachtschwinge",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-nachtschwinge"
+      ]
     },
     {
       "id": "fl-vampirejager",
       "name": "Vampire-Jäger",
       "pts": 325,
-      "tags": ["fleet"],
-      "units": [{ "unit": "fl-vampirejager", "count": 1 }],
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "fl-vampirejager",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "fl-vampire",
       "name": "Vampire",
       "pts": 200,
-      "tags": ["fleet"],
-      "units": [{ "unit": "fl-vampire", "count": 1 }],
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "fl-vampire",
+          "count": 1
+        }
+      ],
       "upgrades": []
     },
     {
       "id": "fl-raumschiff",
       "name": "0–1 Raumschiff",
       "pts": 175,
-      "tags": ["fleet"],
-      "units": [{ "unit": "fl-phantomschiff", "count": 1 }],
-      "upgrades": []
+      "tags": [
+        "fleet"
+      ],
+      "units": [
+        {
+          "unit": "fl-phantomschiff",
+          "count": 1
+        }
+      ],
+      "upgrades": [
+        "fl-upgrade-drachschiff"
+      ]
     }
   ],
   "upgrades": [
@@ -166,34 +374,231 @@
       "id": "fl-upgrade-knochensaenger",
       "name": "Knochensänger",
       "variants": [
-        { "id": "1", "label": "Füge 1 Knochensänger hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "fl-knochensaenger", "count": 1 }] }
+        {
+          "id": "1",
+          "label": "Füge 1 Knochensänger hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-knochensaenger",
+              "count": 1
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fl-upgrade-phantome",
       "name": "Phantomdroiden",
       "variants": [
-        { "id": "1", "label": "Füge zwei Eldar-Phantomdroiden hinzu", "pts": 75, "effects": [{ "op": "add", "unit": "fl-phantome", "count": 2 }] }
+        {
+          "id": "1",
+          "label": "Füge zwei Eldar-Phantomdroiden hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-phantome",
+              "count": 2
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fl-upgrade-phantomklinge",
       "name": "Phantomklingen",
       "variants": [
-        { "id": "1", "label": "Füge zwei Eldar-Phantomklingen hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "fl-phantomklingen", "count": 2 }] }
+        {
+          "id": "1",
+          "label": "Füge zwei Eldar-Phantomklingen hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-phantomklingen",
+              "count": 2
+            }
+          ]
+        }
       ]
     },
     {
       "id": "fl-upgrade-phantomlord",
       "name": "Phantomlord",
       "variants": [
-        { "id": "1", "label": "Füge bis zu drei Eldar-Phantomlords hinzu", "pts": 50, "effects": [{ "op": "add", "unit": "fl-phantomlord", "count": 3 }] }
+        {
+          "id": "1",
+          "label": "Füge bis zu drei Eldar-Phantomlords hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-phantomlord",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fl-upgrade-unabhaengige-zwillinge",
+      "name": "Unabhängige Zwillinge",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Gib dem Verband die Sonderregel 'Unabhängige Zwillinge'",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "fl-upgrade-kriegsmaschinen-vaul",
+      "name": "Zusätzliche Kriegsmaschinen von Vaul",
+      "variants": [
+        {
+          "id": "kobra-1",
+          "label": "Füge 1 Kobra hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-kobra",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "skorpion-1",
+          "label": "Füge 1 Skorpion hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-skorpion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-1",
+          "label": "Füge 1 Sturmserpent hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-sturmserpent",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "kobra-2",
+          "label": "Füge 2 Kobra hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-kobra",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "skorpion-2",
+          "label": "Füge 2 Skorpion hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-skorpion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-2",
+          "label": "Füge 2 Sturmserpent hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-sturmserpent",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fl-upgrade-wellenschlange",
+      "name": "Füge vier Wellenschlangen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge vier Wellenschlangen hinzu",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-wellenschlange",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fl-upgrade-nachtschwinge",
+      "name": "Füge 1 Nachtschwinge-Abfangjäger hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Nachtschwinge-Abfangjäger hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "fl-nachtschwinge",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fl-upgrade-drachschiff",
+      "name": "Ersetze Phantomschiff durch Drachenschiff",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze das Phantomschiff durch ein Drachenschiff",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "fl-phantomschiff",
+              "to": "fl-drachschiff",
+              "count": 1
+            }
+          ]
+        }
       ]
     }
   ],
   "transport": [],
   "formationConstraints": [],
   "upgradeConstraints": [
-    { "id": "once-per-formation", "from": ["*"], "max": 1, "perUpgrade": true, "perFormation": true }
+    {
+      "id": "once-per-formation",
+      "from": [
+        "*"
+      ],
+      "max": 1,
+      "perUpgrade": true,
+      "perFormation": true
+    }
   ]
 }

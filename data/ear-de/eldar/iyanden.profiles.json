@@ -1523,6 +1523,190 @@
           "description": null
         }
       ]
+    },
+    "iy-feuersturm": {
+      "name": "Feuersturm",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "notes": "Kann bis zu 1 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar oder Kriegsfalken.",
+      "weapons": [
+        {
+          "name": "Zwillings-Salvenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+/AA6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "iy-wellenschlange": {
+      "name": "Wellenschlange",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann bis zu 2 der folgenden Einheiten transportieren: Runenprophet, Gardisten, Eldar-Ranger, Eldar-Schwerwaffenplattform, Banshees, Skorpionkrieger, Feuerdrachen, Asuryans Jäger, Schwarze Khaindar, Kriegsfalken, Phantomklingen oder Phantomdroiden. Phantomklingen und Phantomdroiden belegen jeweils 2 Plätze.",
+      "weapons": [
+        {
+          "name": "Zwillings-Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "iy-skorpion": {
+      "name": "Skorpion",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Der Skorpion wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei einer 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Zwillings-Pulsar",
+          "modes": [
+            {
+              "firepower": "2× MW2+",
+              "range": 75,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Shurikenkanone",
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
+    },
+    "iy-sturmserpent": {
+      "name": "Sturmserpent",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Der Sturmserpent wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei einer 6+ einen Treffer.",
+      "weapons": [
+        {
+          "name": "Sturmserpent-Impulslaser",
+          "modes": [
+            {
+              "firepower": "2x AT3+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Impulslaser",
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 3",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Holofeld (4+)",
+          "description": null
+        },
+        {
+          "name": "Netzportal",
+          "description": [
+            "Eine Armee mit Netzportals darf bis zu drei Verbände in Reserve halten; Infanterieeinheiten dieser Reserveverbände dürfen als in ihren Transportern eingeschifft gelten. Diese Verbände können während des Spiels aktiviert werden und durch ein befreundetes Netzportal auf das Spielfeld ziehen. Ihre erste Bewegung wird von einem beliebigen Punkt innerhalb des vom Portal eingenommenen Bereichs aus gemessen.",
+            "Ein Netzportal darf nur einmal pro Runde verwendet werden. Misslingt einem Verband die Aktivierung beim Versuch, durch ein Netzportal einzutreten, darf er nur eine Halten-Aktion ausserhalb des Spielfelds durchführen und sich sammeln. Nur INF, LV oder AV mit der Fähigkeit Geländegängig dürfen Netzportals verwenden. H-AV-Einheiten dürfen Portale nur verwenden, wenn ausdrücklich anders angegeben.",
+            "Jedes Mal, wenn ein Verband ein zerstörtes Portal verwendet, erhält er eine Beschussmarke.",
+            "Befindet sich ein Netzportal in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den gegnerischen Verband bzw. die gegnerischen Verbände offensiv angreifen. Befindet sich das Portal zudem direkt unter einem gegnerischen Verband, muss der eintretende Verband so viel Basekontakt wie möglich herstellen."
+          ]
+        },
+        {
+          "name": "Antigrav",
+          "description": null
+        }
+      ]
     }
   }
 }

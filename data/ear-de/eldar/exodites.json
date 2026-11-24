@@ -29,32 +29,136 @@
     }
   ],
   "units": {
-    "exo-drachenfuerst": { "name": "Drachenfürst", "from": "eldarExo.json", "type": "CH" },
-    "exo-drachenprinz": { "name": "Drachenprinz", "from": "eldarExo.json", "type": "CH" },
-    "exo-weltenliedner": { "name": "Weltenliedsänger", "from": "eldarExo.json", "type": "CH" },
-    "exo-drachenvorreiter": { "name": "Drachen-Vorreiter", "from": "eldarExo.json", "type": "INF" },
-    "exo-exoditenmiliz": { "name": "Exoditenmiliz", "from": "eldarExo.json", "type": "INF" },
-    "exo-exoditenwaffenplattform": { "name": "Exoditen-Waffenplattform", "from": "eldarExo.json", "type": "INF" },
-    "exo-exoditenphantomdroiden": { "name": "Exoditen-Phantomdroiden", "from": "eldarExo.json", "type": "INF" },
-    "exo-drachentruppe": { "name": "Drachenritter", "from": "eldarExo.json", "type": "INF" },
-    "exo-windritter": { "name": "Windritter", "from": "eldarExo.json", "type": "INF" },
-    "exo-feuersturmritter": { "name": "Feuersturmritter", "from": "eldarExo.json", "type": "H-AV" },
-    "exo-glanzrossritter": { "name": "Glanzross-Ritter", "from": "eldarExo.json", "type": "H-AV" },
-    "exo-zerstoerer-ritter": { "name": "Überragender Zerstörer-Ritter", "from": "eldarExo.json", "type": "H-AV" },
-    "exo-groessermegadon": { "name": "Großer Megadon", "from": "eldarExo.json", "type": "WE" },
-    "exo-ewingerdragon": { "name": "Ewiger Drache", "from": "eldarExo.json", "type": "WE" },
-    "exo-kolossaler": { "name": "Kolossaler Carnosaurus", "from": "eldarExo.json", "type": "WE" },
-    "exo-himmelsdrache": { "name": "Himmelsdrache", "from": "eldarExo.json", "type": "LV" },
-    "exo-blutrachenmegadon": { "name": "Blutrachen-Megadon", "from": "eldarExo.json", "type": "LV" },
-    "exo-leerenprismamegadon": { "name": "Leerenprisma-Megadon", "from": "eldarExo.json", "type": "AV" },
-    "exo-korsarenfelarch": { "name": "Korsaren-Felarch", "from": "eldarCorsairs.json", "type": "CH" },
-    "exo-korsarenkrieger": { "name": "Korsarenkrieger", "from": "eldarCorsairs.json", "type": "INF" },
-    "exo-korsarenveteran": { "name": "Korsarenveteran", "from": "eldarCorsairs.json", "type": "INF" },
-    "exo-korsarenwespe": { "name": "Korsaren-Wespe", "from": "eldarCorsairs.json", "type": "LV" },
-    "exo-korsarenschattenviper": { "name": "Korsaren-Schattenviper", "from": "eldarCorsairs.json", "type": "LV" },
-    "exo-korsarenvampire": { "name": "Korsaren-Vampire-Schattenbarke", "from": "eldarCorsairs.json", "type": "AC" },
-    "exo-korsarnachtschwinge": { "name": "Korsaren-Nachtschwinge-Abfangjäger", "from": "eldarCorsairs.json", "type": "AC" },
-    "exo-geisterlauf": { "name": "Geisterläufer", "from": "eldarCorsairs.json", "type": "INF" }
+    "exo-drachenfuerst": {
+      "name": "Drachenfürst",
+      "from": "eldarExo.json",
+      "type": "CH"
+    },
+    "exo-drachenprinz": {
+      "name": "Drachenprinz",
+      "from": "eldarExo.json",
+      "type": "CH"
+    },
+    "exo-weltenliedner": {
+      "name": "Weltenliedsänger",
+      "from": "eldarExo.json",
+      "type": "CH"
+    },
+    "exo-drachenvorreiter": {
+      "name": "Drachen-Vorreiter",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-exoditenmiliz": {
+      "name": "Exoditenmiliz",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-exoditenwaffenplattform": {
+      "name": "Exoditen-Waffenplattform",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-exoditenphantomdroiden": {
+      "name": "Exoditen-Phantomdroiden",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-drachentruppe": {
+      "name": "Drachenritter",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-windritter": {
+      "name": "Windritter",
+      "from": "eldarExo.json",
+      "type": "INF"
+    },
+    "exo-feuersturmritter": {
+      "name": "Feuersturmritter",
+      "from": "eldarExo.json",
+      "type": "H-AV"
+    },
+    "exo-glanzrossritter": {
+      "name": "Glanzross-Ritter",
+      "from": "eldarExo.json",
+      "type": "H-AV"
+    },
+    "exo-zerstoerer-ritter": {
+      "name": "Überragender Zerstörer-Ritter",
+      "from": "eldarExo.json",
+      "type": "H-AV"
+    },
+    "exo-groessermegadon": {
+      "name": "Großer Megadon",
+      "from": "eldarExo.json",
+      "type": "WE"
+    },
+    "exo-ewingerdragon": {
+      "name": "Ewiger Drache",
+      "from": "eldarExo.json",
+      "type": "WE"
+    },
+    "exo-kolossaler": {
+      "name": "Kolossaler Carnosaurus",
+      "from": "eldarExo.json",
+      "type": "WE"
+    },
+    "exo-himmelsdrache": {
+      "name": "Himmelsdrache",
+      "from": "eldarExo.json",
+      "type": "LV"
+    },
+    "exo-blutrachenmegadon": {
+      "name": "Blutrachen-Megadon",
+      "from": "eldarExo.json",
+      "type": "LV"
+    },
+    "exo-leerenprismamegadon": {
+      "name": "Leerenprisma-Megadon",
+      "from": "eldarExo.json",
+      "type": "AV"
+    },
+    "exo-korsarenfelarch": {
+      "name": "Korsaren-Felarch",
+      "from": "eldarCorsairs.json",
+      "type": "CH"
+    },
+    "exo-korsarenkrieger": {
+      "name": "Korsarenkrieger",
+      "from": "eldarCorsairs.json",
+      "type": "INF"
+    },
+    "exo-korsarenveteran": {
+      "name": "Korsarenveteran",
+      "from": "eldarCorsairs.json",
+      "type": "INF"
+    },
+    "exo-korsarenwespe": {
+      "name": "Korsaren-Wespe",
+      "from": "eldarCorsairs.json",
+      "type": "LV"
+    },
+    "exo-korsarenschattenviper": {
+      "name": "Korsaren-Schattenviper",
+      "from": "eldarCorsairs.json",
+      "type": "LV"
+    },
+    "exo-korsarenvampire": {
+      "name": "Korsaren-Vampire-Schattenbarke",
+      "from": "eldarCorsairs.json",
+      "type": "AC"
+    },
+    "exo-korsarnachtschwinge": {
+      "name": "Korsaren-Nachtschwinge-Abfangjäger",
+      "from": "eldarCorsairs.json",
+      "type": "AC"
+    },
+    "exo-geisterlauf": {
+      "name": "Geisterläufer",
+      "from": "eldarCorsairs.json",
+      "type": "INF"
+    }
   },
   "sections": [
     {
@@ -69,25 +173,34 @@
     {
       "id": "war",
       "name": "Exoditen-Kriegsscharn",
-      "description": "Für jede Drachenritter- oder Windritter-Kriegsschar darf bis zu eine Ritter-Kriegsschar gewählt werden.",
       "formations": [
         "exo-drachenritter",
-        "exo-windritter",
-        "exo-ritter"
+        "exo-windritter"
       ]
     },
     {
       "id": "support",
       "name": "Exoditen-Unterstützungsverbände",
-      "description": "Bis zu drei Unterstützungsformationen pro Kriegsscharn-Verband.",
+      "rule": "Bis zu drei Unterstützungsformationen pro Kriegsscharn-Verband.",
       "formations": [
         "exo-drachenvorreiter",
         "exo-himmelsdrache",
         "exo-exoditenmiliz",
         "exo-leerenprisma",
         "exo-groessermegadon",
-        "exo-kolossaler",
-        "exo-korsaren"
+        "exo-kolossaler"
+      ]
+    },
+    {
+      "id": "corsairs",
+      "name": "Unterstützung durch Eldar-Ritter und Korsaren",
+      "rule": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
+      "formations": [
+        "exo-korsaren",
+        "exo-korsaren-vampire",
+        "exo-korsaren-nachtschwingen",
+        "exo-korsaren-feuerunterstuetzung",
+        "exo-ritter"
       ]
     }
   ],
@@ -166,33 +279,11 @@
       "units": [
         {
           "unit": "exo-drachenfuerst",
-          "count":  1
+          "count": 1
         },
         {
           "unit": "exo-windritter",
           "count": 8
-        }
-      ],
-      "upgrades": [
-        "exo-upgrade-drachenprinz",
-        "exo-upgrade-weltenliedner"
-      ]
-    },
-    {
-      "id": "exo-ritter",
-      "name": "Exoditen-RitterKriegsschar",
-      "pts": 275,
-      "tags": [
-        "elite"
-      ],
-      "units": [
-        {
-          "unit": "exo-drachenfuerst",
-          "count": 1
-        },
-        {
-          "unit": "exo-feuersturmritter",
-          "count": 2
         }
       ],
       "upgrades": [
@@ -322,9 +413,65 @@
         "exo-upgrade-korsarenwespe",
         "exo-upgrade-korsarenveteran",
         "exo-upgrade-geisterlauf",
-        "exo-upgrade-korsarenschattenviper",
-        "exo-upgrade-korsarenvampire"
+        "exo-upgrade-korsarenschattenviper"
       ]
+    },
+    {
+      "id": "exo-ritter",
+      "name": "Exoditen-RitterKriegsschar",
+      "pts": 275,
+      "units": [
+        {
+          "oneOf": [
+            "exo-feuersturmritter",
+            "exo-glanzrossritter",
+            "exo-zerstoerer-ritter"
+          ],
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-extra-ritter",
+        "exo-upgrade-weltenliedner-ritter"
+      ]
+    },
+    {
+      "id": "exo-korsaren-vampire",
+      "name": "Korsaren-Vampire-Schattenbarke (0–1 pro Raubzug-Trupp)",
+      "pts": 200,
+      "units": [
+        {
+          "unit": "exo-korsarenvampire",
+          "count": 1
+        }
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "exo-korsaren-nachtschwingen",
+      "name": "Korsaren-Nachtschwingen-Staffel",
+      "pts": 225,
+      "units": [
+        {
+          "unit": "exo-korsarnachtschwinge",
+          "count": 2
+        }
+      ],
+      "upgrades": [
+        "exo-upgrade-extra-nachtschwinge"
+      ]
+    },
+    {
+      "id": "exo-korsaren-feuerunterstuetzung",
+      "name": "Korsaren-Feuerunterstützung (0–1 pro Raubzug-Trupp)",
+      "pts": 150,
+      "units": [
+        {
+          "unit": "exo-korsarenwespe",
+          "count": 4
+        }
+      ],
+      "upgrades": []
     }
   ],
   "upgrades": [
@@ -532,18 +679,78 @@
       ]
     },
     {
-      "id": "exo-upgrade-korsarenvampire",
-      "name": "Füge bis zu zwei Korsaren-Vampire-Schattenbarken hinzu",
+      "id": "exo-upgrade-extra-ritter",
+      "name": "Zusätzlicher Ritter",
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Korsaren-Vampire-Schattenbarken hinzu",
+          "label": "Füge 1 Feuersturmritter hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-feuersturmritter",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge 1 Glanzross-Ritter hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-glanzrossritter",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Füge 1 Überragenden Zerstörer-Ritter hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-zerstoerer-ritter",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-weltenliedner-ritter",
+      "name": "Weltenliedsänger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Weltenliedsänger-Charakter hinzu",
           "pts": 50,
           "effects": [
             {
               "op": "add",
-              "unit": "exo-korsarenvampire",
-              "count": 2
+              "unit": "exo-weltenliedner",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exo-upgrade-extra-nachtschwinge",
+      "name": "Zusätzlicher Nachtschwinge-Abfangjäger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Korsaren-Nachtschwinge-Abfangjäger hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "exo-korsarnachtschwinge",
+              "count": 1
             }
           ]
         }

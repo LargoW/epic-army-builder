@@ -108,36 +108,34 @@
       ],
       "specialRules": []
     },
-    "dm-ikon": {
-      "name": "Chaos-Ikone",
-      "type": "CH",
+    "dm-phospexor": {
+      "name": "Phospexor",
+      "type": "INF",
+      "speed": 10,
+      "cc": 6,
+      "ff": 5,
       "weapons": [
         {
-          "name": "n/a",
+          "name": "Phospex-Werfer",
           "modes": [
             {
-              "firepower": "n/a",
-              "specialRules": []
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
             }
           ]
         }
       ],
-      "specialRules": [
-        {
-          "name": "Dämonischer Fokus",
-          "description": [
-            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
-          ]
-        },
-        {
-          "name": "Verstärkte Beschwörung (+1)",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        }
-      ]
+      "specialRules": []
     },
     "dm-erz-heretek": {
       "name": "Erz-Heretek",
@@ -253,35 +251,6 @@
           "description": null
         }
       ]
-    },
-    "dm-phospexor": {
-      "name": "Phospexor",
-      "type": "INF",
-      "speed": 10,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Phospex-Werfer",
-          "modes": [
-            {
-              "firepower": "AP5+/AT5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                },
-                {
-                  "name": "D",
-                  "description": "Versprengen"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
     },
     "dm-krios-blitzpanzer": {
       "name": "Krios-Blitzpanzer",
@@ -601,6 +570,80 @@
         }
       ]
     },
+    "dm-ord-cyclothrathe": {
+      "name": "Ordinatus Cyclothrathe",
+      "type": "WE",
+      "speed": 10,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "crit": "Ordinatus wird zerstört, und alle Einheiten innerhalb von 5cm erleiden bei 4+ einen Treffer",
+      "weapons": [
+        {
+          "name": "Schwerer Bolter",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AP5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Laserkanone",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Terrebrax-Phospex-Batterie",
+          "modes": [
+            {
+              "firepower": "6BP",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "FxF",
+                  "description": "Fixed Forward"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität 4",
+          "description": null
+        },
+        {
+          "name": "Null-Schilde 4",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
     "chaos-rhino": {
       "name": "Chaos Rhino",
       "type": "AV",
@@ -623,6 +666,105 @@
       "specialRules": [
         {
           "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dm-triaros": {
+      "name": "Gepanzerter Triaros-Verwüster",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 6,
+      "ff": 4,
+      "notes": "Kann sechs Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+      "weapons": [
+        {
+          "name": "Phospex-Blaster",
+          "count": 3,
+          "modes": [
+            {
+              "firepower": "AP5+/AT5+",
+              "range": 30,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Transport",
+          "description": null
+        }
+      ]
+    },
+    "dm-hollenstreiter": {
+      "name": "Höllenstreiter",
+      "type": "AV",
+      "speed": 35,
+      "armour": 5,
+      "cc": 6,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Laserkanone",
+          "modes": [
+            {
+              "firepower": "AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Slaanesh)",
           "description": null
         }
       ]
@@ -679,7 +821,7 @@
         }
       ]
     },
-    "dm-hollenharpyien": {
+    "dm-hollengeissel": {
       "name": "Höllengeißel",
       "type": "H-AV",
       "speed": 30,
@@ -816,8 +958,579 @@
         }
       ]
     },
+    "dm-verwuester-ritter": {
+      "name": "Verwüster-Ritter",
+      "type": "WE",
+      "speed": 20,
+      "armour": 5,
+      "cc": 5,
+      "ff": 4,
+      "crit": "Der Schänder-Ritter wird zerstört.",
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verderber-Gatlingkanone",
+          "modes": [
+            {
+              "firepower": "6x AP6+/AT6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hyperwellenhorn",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Tzeentch)",
+          "description": null
+        }
+      ]
+    },
+    "dm-rampager-ritter": {
+      "name": "Rampager-Ritter",
+      "type": "WE",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "crit": "Der Rampager-Ritter wird zerstört.",
+      "weapons": [
+        {
+          "name": "Stormspear-Raketenbehälter",
+          "modes": [
+            {
+              "firepower": "AT5+/AT5+",
+              "range": 45,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Verdammnishandschuh",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            },
+            {
+              "firepower": "Sturmwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "TK(1)",
+                  "description": "Titanen-Killer (TK)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Renegade Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Khorne)",
+          "description": null
+        }
+      ]
+    },
+    "dm-abtruenniger-ritter": {
+      "name": "Abtrünniger Ritter",
+      "type": "H-AV",
+      "speed": 25,
+      "armour": 5,
+      "cc": 3,
+      "ff": 4,
+      "weapons": [
+        {
+          "name": "Schnellfeuer Kampfgeschütz",
+          "modes": [
+            {
+              "firepower": "2x AP4+/AT4+",
+              "range": 60,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP4+/AT6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Renegade Kettenschwert",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "dm-tyrannenritter": {
+      "name": "Tyrannenritter",
+      "type": "WE",
+      "speed": 20,
+      "armour": 4,
+      "cc": 4,
+      "ff": 3,
+      "crit": "Der Tyrannenritter wird zerstört.",
+      "weapons": [
+        {
+          "name": "Blitzkanone",
+          "modes": [
+            {
+              "firepower": "MW2+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Schildbrecher",
+                  "description": "Schildbrecher"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pulsar-Füsil",
+          "modes": [
+            {
+              "firepower": "2x AT3+/AT5+",
+              "range": 60,
+              "specialRules": [
+                {
+                  "name": "Lanze",
+                  "description": "Lanze"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Verdammnisschlag-Rakete",
+          "count": 2,
+          "modes": [
+            {
+              "firepower": "3BP",
+              "range": "Unbegrenzt",
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                },
+                {
+                  "name": "Ind",
+                  "description": "Indirektes Feuer (Indirekt)"
+                },
+                {
+                  "name": "SS",
+                  "description": "Einzelschuss"
+                },
+                {
+                  "name": "FwA",
+                  "description": "Forward Arc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hyperwellenhorn",
+          "modes": [
+            {
+              "firepower": "AP6+/AT6+/AA6+",
+              "range": 45,
+              "specialRules": [
+                {
+                  "name": "D",
+                  "description": "Versprengen"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Schadenskapazität: 2",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Panzerung",
+          "description": null
+        },
+        {
+          "name": "Verstärkte Heckpanzerung",
+          "description": null
+        },
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "dm-doomglaive-ritter": {
+      "name": "Doomglaive-Ritter",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Multimelter",
+          "modes": [
+            {
+              "firepower": "MW4+",
+              "range": 15,
+              "specialRules": []
+            },
+            {
+              "firepower": "Handfeuerwaffen",
+              "join": "und",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Schnitter-Kettenspalter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffe",
+              "specialRules": [
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "dm-perfidor-ritter": {
+      "name": "Perfidor-Ritter",
+      "type": "AV",
+      "speed": 30,
+      "armour": 5,
+      "cc": 4,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zwillings-Reaper-Maschinenkanone",
+          "modes": [
+            {
+              "firepower": "AP3+/AT5+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        },
+        {
+          "name": "Schwerer Maschinengewehr",
+          "modes": [
+            {
+              "firepower": "AP6+",
+              "range": 30,
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Geländegängig",
+          "description": null
+        },
+        {
+          "name": "Aufklärer",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        },
+        {
+          "name": "Dämonenmaschine (Ungeteiltes Chaos)",
+          "description": null
+        }
+      ]
+    },
+    "dm-chrono-gladiatoren": {
+      "name": "Chrono-Gladiatoren",
+      "type": "INF",
+      "speed": 15,
+      "armour": 5,
+      "cc": 5,
+      "weapons": [
+        {
+          "name": "Energie-Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                },
+                {
+                  "name": "MW",
+                  "description": "Makrowaffe"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Infiltratoren",
+          "description": null
+        },
+        {
+          "name": "Furchtlos",
+          "description": null
+        }
+      ]
+    },
+    "dm-ikon": {
+      "name": "Chaos-Ikone",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "n/a",
+          "modes": [
+            {
+              "firepower": "n/a",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Dämonischer Fokus",
+          "description": [
+            "Einheiten mit Dämonischer Fokus dürfen beliebige oder alle vom Verband beschworenen Einheiten im Spiel halten. Beschworene Einheiten verschwinden nach dem Sammelversuch des Verbands nicht in den Warp zurück. Dämonischer Fokus kann nicht verwendet werden, um beschworene Einheiten im Spiel zu halten, wenn der Verband aufgerieben ist. Mehrfaches Dämonischer Fokus hat keinen zusätzlichen Effekt."
+          ]
+        },
+        {
+          "name": "Verstärkte Beschwörung (+1)",
+          "description": null
+        },
+        {
+          "name": "Anführer",
+          "description": null
+        }
+      ]
+    },
     "dm-Chaos Warbringer": {
-      "name": "Chaos Warbringer",
+      "name": "Chaos-Warbringer",
       "type": "WE",
       "speed": 20,
       "armour": 4,
@@ -1149,26 +1862,22 @@
         }
       ]
     },
-    "dm-chrono-gladiatoren": {
-      "name": "Chrono-Gladiatoren",
+    "dm-daemonetten": {
+      "name": "Dämonetten des Slaanesh",
       "type": "INF",
-      "speed": 15,
-      "armour": 5,
-      "cc": 5,
+      "speed": 20,
+      "armour": 4,
+      "cc": 3,
       "weapons": [
         {
-          "name": "Energie-Klauen",
+          "name": "Durchbohrend Klauen",
           "modes": [
             {
               "firepower": "Sturmwaffen",
               "specialRules": [
                 {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
+                  "name": "FS",
+                  "description": "Erstschlag"
                 }
               ]
             }
@@ -1177,11 +1886,129 @@
       ],
       "specialRules": [
         {
-          "name": "Infiltratoren",
+          "name": "Entbehrlich",
           "description": null
         },
         {
-          "name": "Furchtlos",
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dm-seuchenhueter": {
+      "name": "Seuchenhüter des Nurgle",
+      "type": "INF",
+      "speed": 15,
+      "armour": 3,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Seuchenschwerter",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dm-zerfleischer": {
+      "name": "Zerfleischer des Khorne",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 4,
+      "weapons": [
+        {
+          "name": "Höllenklingen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+1)",
+                  "description": "Zusätzliche Angriffe +1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dm-horrors": {
+      "name": "Horrors des Tzeentch",
+      "type": "INF",
+      "speed": 15,
+      "armour": 4,
+      "cc": 5,
+      "ff": 5,
+      "weapons": [
+        {
+          "name": "Zauberbolzen",
+          "modes": [
+            {
+              "firepower": "Handfeuerwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
+          "description": null
+        }
+      ]
+    },
+    "dm-bestien": {
+      "name": "Dämonische Bestien des ungeteilten Chaos",
+      "type": "INF",
+      "speed": 30,
+      "armour": 5,
+      "cc": 3,
+      "weapons": [
+        {
+          "name": "Klauen",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": []
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Entbehrlich",
+          "description": null
+        },
+        {
+          "name": "Unmodifizierter Rettungswurf",
           "description": null
         }
       ]

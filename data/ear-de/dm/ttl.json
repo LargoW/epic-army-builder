@@ -34,90 +34,95 @@
     "ttl-lasterbringer-titan": {
       "name": "Lasterbringer-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-finsternisbringer-titan": {
       "name": "Finsternisbringer-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-zwistbringer-titan": {
       "name": "Zwistbringer-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-wandelbringer-titan": {
       "name": "Wandelbringer-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-schmerzensfuerst-titan": {
       "name": "Schmerzensfürst-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-seuchenfuerst-titan": {
       "name": "Seuchenfürst-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-verderbensfuerst-titan": {
       "name": "Verderbensfürst-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-warpfuerst-titan": {
       "name": "Warp-Fürst-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-reviler-titan": {
       "name": "Reviler-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-abscheulicher-titan": {
       "name": "Abscheulicher Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-verwueter-titan": {
       "name": "Verwüster-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-mutator-titan": {
       "name": "Mutator-Titan",
       "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-seuchenhund": {
-      "name": "Seuchenhund",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-bluthund": {
-      "name": "Bluthund",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
-    },
-    "ttl-warp-hund": {
-      "name": "Warp-Hound",
-      "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
     "ttl-chaos-warhound": {
       "name": "Chaos-Warhound",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
-    "ttl-Chaos Warbringer": {
-      "name": "Chaos-Warbringer",
+    "ttl-seuchenhund": {
+      "name": "Seuchenhund",
       "from": "traitortitanlegions.json",
-      "type": "AV"
+      "type": "WE"
     },
-    "ttl-cerberit": {
-      "name": "Cerberit",
+    "ttl-bluthund": {
+      "name": "Bluthund",
+      "from": "traitortitanlegions.json",
+      "type": "WE"
+    },
+    "ttl-warp-hound": {
+      "name": "Warp-Hound",
+      "from": "traitortitanlegions.json",
+      "type": "WE"
+    },
+    "ttl-questor": {
+      "name": "Questor",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "ttl-unterwerfer": {
+      "name": "Unterwerfer",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "ttl-entwuerdiger": {
+      "name": "Entwürdiger",
       "from": "darkmechanicus.json",
       "type": "AV"
     },
@@ -126,32 +131,32 @@
       "from": "darkmechanicus.json",
       "type": "AV"
     },
+    "ttl-schaender": {
+      "name": "Schänder",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "ttl-taeuscher": {
+      "name": "Täuscher",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "ttl-cerberit": {
+      "name": "Cerberit",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "ttl-schlaechterbestie": {
+      "name": "Schlächterbestie",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
     "ttl-schmiedebestie": {
       "name": "Schmiedebestie",
       "from": "darkmechanicus.json",
       "type": "AV"
     },
-    "ttl-questor": {
-      "name": "Questor",
-      "from": "darkmechanicus.json",
-      "type": "AV"
-    },
-    "ttl-unterwerfer": {
-      "name": "Unterwerfer",
-      "from": "darkmechanicus.json",
-      "type": "AV"
-    },
-    "ttl-entwuerdiger": {
-      "name": "Entwürdiger",
-      "from": "darkmechanicus.json",
-      "type": "AV"
-    },
-    "ttl-schaender": {
-      "name": "Täuscher",
-      "from": "darkmechanicus.json",
-      "type": "AV"
-    },
-    "ttl-geisel": {
+    "ttl-geissel": {
       "name": "Geißel",
       "from": "darkmechanicus.json",
       "type": "AV"
@@ -159,14 +164,14 @@
     "ttl-hollenschmied": {
       "name": "Höllenschmied",
       "from": "darkmechanicus.json",
-      "type": "AV"
+      "type": "CH"
     },
     "ttl-chaoszwerge": {
       "name": "Chaoszwerge",
       "from": "darkmechanicus.json",
-      "type": "AV"
+      "type": "INF"
     },
-    "ttl-chaos-rhino": {
+    "chaos-rhino": {
       "name": "Chaos Rhino",
       "from": "darkmechanicus.json",
       "type": "AV"
@@ -184,13 +189,14 @@
     "ttl-schlachtschiff": {
       "name": "Schlachtschiff der Despoiler-Klasse",
       "from": "chaosnavy.json",
-      "type": "AV"
+      "type": "WE"
     }
   },
   "sections": [
     {
       "id": "titan",
       "name": "Kampftitan-Verbände",
+      "rule": "Die Armee darf keine Verbände des Nurgle und Tzeentch oder des Slaanesh und Khorne miteinander kombinieren.",
       "formations": [
         "ttl-chaos-imperator-titan",
         "ttl-chaos-warlord-titan",
@@ -200,6 +206,7 @@
     {
       "id": "support",
       "name": "Unterstützungsformationen",
+      "rule": "Für jeden Kampftitan dürfen bis zu vier Unterstützungsformationen gewählt werden. Die Armee darf keine Verbände des Nurgle und Tzeentch oder des Slaanesh und Khorne miteinander kombinieren.",
       "formations": [
         "ttl-chaos-warhound",
         "ttl-slaanesh-spaehtitan",
@@ -208,6 +215,7 @@
         "ttl-entweiher-des-nurgle",
         "ttl-taeuscher-des-tzeentch",
         "ttl-cerberiten-des-ungeteilten-chaos",
+        "ttl-schlaechterbestien-des-ungeteilten-chaos",
         "ttl-schmiedebestien-des-ungeteilten-chaos",
         "ttl-verwuener-des-ungeteilten-chaos",
         "ttl-hollenschmiede-manipel"
@@ -216,6 +224,7 @@
     {
       "id": "fleet",
       "name": "Chaosflotte",
+      "rule": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
       "formations": [
         "ttl-hollendrachen",
         "ttl-harbringer",
@@ -226,11 +235,8 @@
   "formations": [
     {
       "id": "ttl-chaos-imperator-titan",
-      "name": "Chaos-Imperator-Titan",
+      "name": "0–1 Chaos-Imperator-Titan",
       "pts": 900,
-      "tags": [
-        "titan"
-      ],
       "units": [
         {
           "oneOf": [
@@ -243,15 +249,15 @@
           "mixed": true
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-auge-der-goetter",
+        "ttl-upgrade-chaos-herolde"
+      ]
     },
     {
       "id": "ttl-chaos-warlord-titan",
       "name": "Chaos-Warlord-Titan",
       "pts": 750,
-      "tags": [
-        "titan"
-      ],
       "units": [
         {
           "oneOf": [
@@ -264,15 +270,15 @@
           "mixed": true
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-auge-der-goetter",
+        "ttl-upgrade-chaos-herolde"
+      ]
     },
     {
       "id": "ttl-chaos-reaver-titan",
-      "name": "Chaos Reaver-Titan",
+      "name": "Chaos-Reaver-Titan",
       "pts": 600,
-      "tags": [
-        "titan"
-      ],
       "units": [
         {
           "oneOf": [
@@ -285,105 +291,110 @@
           "mixed": true
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-chaos-herolde"
+      ]
     },
     {
       "id": "ttl-chaos-warhound",
       "name": "Chaos-Warhound",
       "pts": 275,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
-          "unit": "ttl-chaos-warhound",
-          "count": 1
+          "oneOf": [
+            "ttl-chaos-warhound",
+            "ttl-seuchenhund",
+            "ttl-bluthund",
+            "ttl-warp-hound"
+          ],
+          "count": 1,
+          "mixed": true
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-warhound",
+        "ttl-upgrade-chaos-herolde"
+      ]
     },
     {
       "id": "ttl-slaanesh-spaehtitan",
       "name": "Slaanesh-Spähtitan",
       "pts": 275,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
-          "unit": "ttl-chaos-warhound",
-          "count": 1
+          "oneOf": [
+            "ttl-questor",
+            "ttl-unterwerfer"
+          ],
+          "count": 1,
+          "mixed": true
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-slaanesh-scout",
+        "ttl-upgrade-chaos-herolde"
+      ]
     },
     {
       "id": "ttl-entwuendiger-des-slaanesh",
       "name": "Entwürdiger des Slaanesh",
       "pts": 225,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
           "unit": "ttl-entwuerdiger",
           "count": 4
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-entwuerdiger"
+      ]
     },
     {
       "id": "ttl-schlachtbestien-des-khorne",
       "name": "Schlachtbestien des Khorne",
       "pts": 200,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
           "unit": "ttl-schlachtbestie",
           "count": 4
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-schlachtbestie"
+      ]
     },
     {
       "id": "ttl-entweiher-des-nurgle",
       "name": "Entweiher des Nurgle",
       "pts": 225,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
-          "unit": "ttl-entwuerdiger",
+          "unit": "ttl-schaender",
           "count": 4
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-schaender"
+      ]
     },
     {
       "id": "ttl-taeuscher-des-tzeentch",
       "name": "Täuscher des Tzeentch",
       "pts": 200,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
-          "unit": "ttl-schaender",
+          "unit": "ttl-taeuscher",
           "count": 3
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-taeuscher"
+      ]
     },
     {
       "id": "ttl-cerberiten-des-ungeteilten-chaos",
       "name": "Cerberiten des Ungeteilten Chaos",
       "pts": 175,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
           "unit": "ttl-cerberit",
@@ -393,12 +404,21 @@
       "upgrades": []
     },
     {
+      "id": "ttl-schlaechterbestien-des-ungeteilten-chaos",
+      "name": "Schlächterbestien des Ungeteilten Chaos",
+      "pts": 200,
+      "units": [
+        {
+          "unit": "ttl-schlaechterbestie",
+          "count": 4
+        }
+      ],
+      "upgrades": []
+    },
+    {
       "id": "ttl-schmiedebestien-des-ungeteilten-chaos",
       "name": "Schmiedebestien des Ungeteilten Chaos",
       "pts": 225,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
           "unit": "ttl-schmiedebestie",
@@ -411,24 +431,20 @@
       "id": "ttl-verwuener-des-ungeteilten-chaos",
       "name": "Verwüster des Ungeteilten Chaos",
       "pts": 225,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
-          "unit": "ttl-verwueter-titan",
+          "unit": "ttl-geissel",
           "count": 4
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-extra-geissel"
+      ]
     },
     {
       "id": "ttl-hollenschmiede-manipel",
       "name": "Höllenschmiede-Manipel",
       "pts": 225,
-      "tags": [
-        "support"
-      ],
       "units": [
         {
           "unit": "ttl-hollenschmied",
@@ -436,18 +452,17 @@
         },
         {
           "unit": "ttl-chaoszwerge",
-          "count": 6
+          "count": 11
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ttl-upgrade-hollenschmiede-rhinos"
+      ]
     },
     {
       "id": "ttl-hollendrachen",
       "name": "Höllendrachen",
       "pts": 225,
-      "tags": [
-        "fleet"
-      ],
       "units": [
         {
           "unit": "ttl-hollendrachen",
@@ -460,9 +475,6 @@
       "id": "ttl-harbringer",
       "name": "Harbringer",
       "pts": 300,
-      "tags": [
-        "fleet"
-      ],
       "units": [
         {
           "unit": "ttl-harbringer",
@@ -473,11 +485,8 @@
     },
     {
       "id": "ttl-chaos-schlachtschiff",
-      "name": "Chaos Schlachtschiff",
+      "name": "0–1 Chaos-Schlachtschiff",
       "pts": 200,
-      "tags": [
-        "fleet"
-      ],
       "units": [
         {
           "unit": "ttl-schlachtschiff",
@@ -496,13 +505,7 @@
           "id": "1",
           "label": "Der Verband erhält die Sonderregel Oberbefehlshaber",
           "pts": 50,
-          "effects": [
-            {
-              "op": "add",
-              "unit": "ttl-hollenschmied",
-              "count": 1
-            }
-          ]
+          "effects": []
         }
       ]
     },
@@ -514,11 +517,197 @@
           "id": "1",
           "label": "Der Verband erhält die Sonderregel Anführer",
           "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-warhound",
+      "name": "Zusätzlicher Chaos-Warhound",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Chaos-Warhound hinzu",
+          "pts": 200,
           "effects": [
             {
               "op": "add",
-              "unit": "ttl-Chaos Warbringer",
+              "unit": "ttl-chaos-warhound",
               "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge 1 Seuchenhund hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-seuchenhund",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Füge 1 Bluthund hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-bluthund",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "Füge 1 Warp-Hound hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-warp-hound",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-slaanesh-scout",
+      "name": "Zusätzlicher Slaanesh-Spähtitan",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Questor hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-questor",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge 1 Unterwerfer hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-unterwerfer",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-entwuerdiger",
+      "name": "Zusätzlicher Entwürdiger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen zusätzlichen Entwürdiger hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-entwuerdiger",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-schlachtbestie",
+      "name": "Zusätzliche Schlachtbestie",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge eine zusätzliche Schlachtbestie hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-schlachtbestie",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-schaender",
+      "name": "Zusätzlicher Entweiher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen zusätzlichen Entweiher hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-schaender",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-taeuscher",
+      "name": "Zusätzlicher Täuscher",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen zusätzlichen Täuscher hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-taeuscher",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-extra-geissel",
+      "name": "Zusätzlicher Verwüster",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge eine zusätzliche Geißel hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ttl-geissel",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ttl-upgrade-hollenschmiede-rhinos",
+      "name": "Chaos-Rhinos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge sechs Chaos-Rhinos hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-rhino",
+              "count": 6
             }
           ]
         }

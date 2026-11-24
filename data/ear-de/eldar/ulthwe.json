@@ -401,16 +401,17 @@
       ],
       "units": [
         {
-          "unit": "ulthwe-kobra",
-          "count": 1,
           "oneOf": [
             "ulthwe-kobra",
             "ulthwe-skorpion",
             "ulthwe-sturmserpent"
-          ]
+          ],
+          "count": 1
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "ulthwe-upgrade-kriegsmaschinen-vaul"
+      ]
     },
     {
       "id": "ulthwe-illum-zar-trupp",
@@ -757,6 +758,84 @@
             {
               "op": "add",
               "unit": "ulthwe-kampflaeuer",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ulthwe-upgrade-kriegsmaschinen-vaul",
+      "name": "Zusätzliche Kriegsmaschinen von Vaul",
+      "variants": [
+        {
+          "id": "kobra-1",
+          "label": "Füge 1 Kobra hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-kobra",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "skorpion-1",
+          "label": "Füge 1 Skorpion hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-skorpion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-1",
+          "label": "Füge 1 Sturmserpent hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-sturmserpent",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "kobra-2",
+          "label": "Füge 2 Kobra hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-kobra",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "skorpion-2",
+          "label": "Füge 2 Skorpion hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-skorpion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-2",
+          "label": "Füge 2 Sturmserpent hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "ulthwe-sturmserpent",
               "count": 2
             }
           ]

@@ -65,7 +65,7 @@ test("all units referenced in formations and upgrade effects resolve to an exist
     const unitIds = new Set(Object.keys(d.units || {}));
     for (const f of d.formations || []) {
       for (const u of f.units || []) {
-        const slots = u.oneOf ? u.oneOf : (u.unit ? [u.unit] : []);
+        const slots = u.oneOf ? u.oneOf.map((x) => (typeof x === "string" ? x : x.unit)) : (u.unit ? [u.unit] : []);
         for (const uid of slots) {
           if (!unitIds.has(uid)) issues.push(`${a.id} formation ${f.id}: missing unit ${uid}`);
         }

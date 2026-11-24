@@ -176,6 +176,11 @@
       "name": "Voidweaver",
       "from": "HQ.json",
       "type": "LV"
+    },
+    "de-solitaer": {
+      "name": "Solitär",
+      "from": "HQ.json",
+      "type": "CH"
     }
   },
   "sections": [
@@ -255,7 +260,10 @@
       ],
       "upgrades": [
         "de-upgrade-inkubi",
-        "de-upgrade-add-kabalenkrieger"
+        "de-upgrade-add-kabalenkrieger",
+        "de-upgrade-add-schattenjaeger",
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-transporter"
       ]
     },
     {
@@ -293,7 +301,10 @@
         }
       ],
       "upgrades": [
-        "de-upgrade-add-kabalenkrieger"
+        "de-upgrade-add-kabalenkrieger",
+        "de-upgrade-add-schattenjaeger",
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-transporter"
       ]
     },
     {
@@ -336,7 +347,9 @@
       ],
       "upgrades": [
         "de-upgrade-add-groteske",
-        "de-upgrade-add-talos"
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-talos",
+        "de-upgrade-transporter"
       ]
     },
     {
@@ -352,7 +365,9 @@
           "count": 4
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-talos"
+      ]
     },
     {
       "id": "de-harpyien-flugstaffel",
@@ -395,7 +410,9 @@
         }
       ],
       "upgrades": [
-        "de-upgrade-add-skyweaver"
+        "de-upgrade-harlekin-infanterie",
+        "de-upgrade-add-skyweaver",
+        "de-upgrade-add-solitaer"
       ]
     },
     {
@@ -512,7 +529,7 @@
     },
     {
       "id": "de-upgrade-add-kabalenkrieger",
-      "name": "Füge zwei Drukhari-Kabalenkrieger hinzu",
+      "name": "Kabalenkrieger",
       "variants": [
         {
           "id": "1",
@@ -530,12 +547,24 @@
     },
     {
       "id": "de-upgrade-add-schattenjaeger",
-      "name": "Füge bis zu zwei Drukhari-Schattenjäger hinzu",
+      "name": "Schattenjäger",
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Drukhari-Schattenjäger hinzu",
+          "label": "Füge einen Schattenjäger hinzu",
           "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenjaeger",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Schattenjäger hinzu",
+          "pts": 100,
           "effects": [
             {
               "op": "add",
@@ -547,48 +576,24 @@
       ]
     },
     {
-      "id": "de-upgrade-add-mandrak",
-      "name": "Füge bis zu zwei Mandraks hinzu",
+      "id": "de-upgrade-talos",
+      "name": "Talos",
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Mandraks hinzu",
-          "pts": 25,
+          "label": "Füge einen Talos hinzu",
+          "pts": 50,
           "effects": [
             {
               "op": "add",
-              "unit": "de-mandrak",
+              "unit": "de-talos",
               "count": 1
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "de-upgrade-add-groteske",
-      "name": "Füge bis zu zwei Grotesquen hinzu",
-      "variants": [
+        },
         {
-          "id": "1",
-          "label": "Füge bis zu zwei Grotesquen hinzu",
-          "pts": 25,
-          "effects": [
-            {
-              "op": "add",
-              "unit": "de-groteske",
-              "count": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "de-upgrade-add-talos",
-      "name": "Füge bis zu zwei Talos hinzu",
-      "variants": [
-        {
-          "id": "1",
-          "label": "Füge bis zu zwei Talos hinzu",
+          "id": "2",
+          "label": "Füge zwei Talos hinzu",
           "pts": 75,
           "effects": [
             {
@@ -601,18 +606,264 @@
       ]
     },
     {
+      "id": "de-upgrade-add-mandrak",
+      "name": "Füge bis zu zwei Mandraks hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Mandrak hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-mandrak",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Mandraks hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-mandrak",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-add-groteske",
+      "name": "Füge bis zu zwei Grotesquen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge eine Grotesque hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-groteske",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Grotesquen hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-groteske",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "de-upgrade-add-skyweaver",
       "name": "Füge bis zu drei Skyweaver-Jetbikes hinzu",
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu drei Skyweaver-Jetbikes hinzu",
+          "label": "Füge ein Skyweaver-Jetbike hinzu",
           "pts": 25,
           "effects": [
             {
               "op": "add",
               "unit": "de-skyweaver-jetbikes",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Skyweaver-Jetbikes hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-skyweaver-jetbikes",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Füge drei Skyweaver-Jetbikes hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-skyweaver-jetbikes",
               "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-harlekin-infanterie",
+      "name": "Harlekin-Infanterie statt Starweaver",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze vier Starweaver durch zwei Harlekin-Trupps und einen Todesnarren",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "de-starweaver",
+              "count": 4,
+              "to": "de-harlekin-trupp",
+              "toCount": 2
+            },
+            {
+              "op": "add",
+              "unit": "de-todesnarren",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-add-solitaer",
+      "name": "0–1 Solitär",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einer Harlekin-Trupp einen Solitär hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-solitaer",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-tragbares-netzportal",
+      "name": "(0–1 pro Armee) Tragbares Netzportal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tragbares Netzportal",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-transporter",
+      "name": "Wraithkind-Transporter",
+      "variants": [
+        {
+          "id": "barke-1",
+          "label": "1 Schattenbarke",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "barke-2",
+          "label": "2 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "barke-3",
+          "label": "3 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "barke-4",
+          "label": "4 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "tantalus-1",
+          "label": "1 Tantalus",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-tantalus",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "tantalus-2",
+          "label": "2 Tantalus",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-tantalus",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "lustbarke",
+          "label": "0–1 Vergnügungsbarke",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-vernuegbarke",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "barke-2-lustbarke",
+          "label": "2 Schattenbarken und 0–1 Vergnügungsbarke",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 2
+            },
+            {
+              "op": "add",
+              "unit": "de-vernuegbarke",
+              "count": 1
             }
           ]
         }

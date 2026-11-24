@@ -27,25 +27,171 @@
     }
   ],
   "units": {
-    "dm-hollenschmied": { "name": "Höllenschmied", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-chaoszwerge": { "name": "Chaoszwerge", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-ikon": { "name": "Chaos-Ikone", "from": "darkmechanicus.json", "type": "CH" },
-    "dm-erz-heretek": { "name": "Erz-Heretek", "from": "darkmechanicus.json", "type": "CH" },
-    "dm-kaban-maschine": { "name": "Kaban-Maschine", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-phospexor": { "name": "Phospexor", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-krios-blitzpanzer": { "name": "Krios-Blitzpanzer", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-krios-venator": { "name": "Krios Venator", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-ord-hereticus": { "name": "Ordinatus Hereticus", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-ord-hereticus-majoris": { "name": "Ordinatus HereticusMajoris", "from": "darkmechanicus.json", "type": "AV" },
-    "chaos-rhino": { "name": "Chaos Rhino", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-hollenritter": { "name": "Höllenritter", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-hollenharpyien": { "name": "Höllengeißel", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-schander-ritter": { "name": "Schänder-Ritter", "from": "darkmechanicus.json", "type": "AV" },
-    "dm-Chaos Warbringer": { "name": "Chaos-Warbringer", "from": "traitortitanlegions.json", "type": "AV" },
-    "dm-hollendrachen": { "name": "Höllendrache", "from": "chaosnavy.json", "type": "AV" },
-    "dm-harbringer": { "name": "Harbringer-Bomber (B)", "from": "chaosnavy.json", "type": "AV" },
-    "dm-chaos-schlachtschiff": { "name": "Schlachtschiff der Despoiler-Klasse", "from": "chaosnavy.json", "type": "AV" },
-    "dm-chrono-gladiatoren": { "name": "Chrono-Gladiatoren", "from": "darkmechanicus.json", "type": "AV" }
+    "dm-hollenschmied": {
+      "name": "Höllenschmied",
+      "from": "darkmechanicus.json",
+      "type": "CH"
+    },
+    "dm-chaoszwerge": {
+      "name": "Chaoszwerge",
+      "from": "darkmechanicus.json",
+      "type": "INF"
+    },
+    "dm-phospexor": {
+      "name": "Phospexor",
+      "from": "darkmechanicus.json",
+      "type": "INF"
+    },
+    "dm-erz-heretek": {
+      "name": "Erz-Heretek",
+      "from": "darkmechanicus.json",
+      "type": "CH"
+    },
+    "dm-kaban-maschine": {
+      "name": "Kaban-Maschine",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-krios-blitzpanzer": {
+      "name": "Krios-Blitzpanzer",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-krios-venator": {
+      "name": "Krios Venator",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-ord-hereticus": {
+      "name": "Ordinatus Hereticus",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-ord-hereticus-majoris": {
+      "name": "Ordinatus HereticusMajoris",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-ord-cyclothrathe": {
+      "name": "Ordinatus Cyclothrathe",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "chaos-rhino": {
+      "name": "Chaos Rhino",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-triaros": {
+      "name": "Gepanzerter Triaros-Verwüster",
+      "from": "darkmechanicus.json",
+      "type": "H-AV"
+    },
+    "dm-hollenstreiter": {
+      "name": "Höllenstreiter",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-hollenritter": {
+      "name": "Höllenritter",
+      "from": "darkmechanicus.json",
+      "type": "H-AV"
+    },
+    "dm-hollengeissel": {
+      "name": "Höllengeißel",
+      "from": "darkmechanicus.json",
+      "type": "H-AV"
+    },
+    "dm-schander-ritter": {
+      "name": "Schänder-Ritter",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-verwuester-ritter": {
+      "name": "Verwüster-Ritter",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-rampager-ritter": {
+      "name": "Rampager-Ritter",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-abtruenniger-ritter": {
+      "name": "Abtrünniger Ritter",
+      "from": "darkmechanicus.json",
+      "type": "H-AV"
+    },
+    "dm-tyrannenritter": {
+      "name": "Tyrannenritter",
+      "from": "darkmechanicus.json",
+      "type": "WE"
+    },
+    "dm-doomglaive-ritter": {
+      "name": "Doomglaive-Ritter",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-perfidor-ritter": {
+      "name": "Perfidor-Ritter",
+      "from": "darkmechanicus.json",
+      "type": "AV"
+    },
+    "dm-chrono-gladiatoren": {
+      "name": "Chrono-Gladiatoren",
+      "from": "darkmechanicus.json",
+      "type": "INF"
+    },
+    "dm-ikon": {
+      "name": "Chaos-Ikone",
+      "from": "darkmechanicus.json",
+      "type": "CH"
+    },
+    "dm-Chaos Warbringer": {
+      "name": "Chaos-Warbringer",
+      "from": "traitortitanlegions.json",
+      "type": "WE"
+    },
+    "dm-hollendrachen": {
+      "name": "Höllendrache",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    },
+    "dm-harbringer": {
+      "name": "Harbringer-Bomber (B)",
+      "from": "chaosnavy.json",
+      "type": "AV"
+    },
+    "dm-chaos-schlachtschiff": {
+      "name": "Schlachtschiff der Despoiler-Klasse",
+      "from": "chaosnavy.json",
+      "type": "WE"
+    },
+    "dm-daemonetten": {
+      "name": "Dämonetten des Slaanesh",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "dm-seuchenhueter": {
+      "name": "Seuchenhüter des Nurgle",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "dm-zerfleischer": {
+      "name": "Zerfleischer des Khorne",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "dm-horrors": {
+      "name": "Horrors des Tzeentch",
+      "from": "daemons.json",
+      "type": "INF"
+    },
+    "dm-bestien": {
+      "name": "Dämonische Bestien des ungeteilten Chaos",
+      "from": "daemons.json",
+      "type": "INF"
+    }
   },
   "sections": [
     {
@@ -58,6 +204,7 @@
     {
       "id": "banner",
       "name": "Dämonische Bannerformationen",
+      "rule": "Für jede Höllenschmiede-Kernformation dürfen bis zu drei dämonische Bannerformationen gewählt werden. Die Armee darf keine Verbände des Nurgle und Tzeentch oder des Slaanesh und Khorne miteinander kombinieren.",
       "formations": [
         "dm-hollenritter-des-slaanesh",
         "dm-hollengegseln-des-slaanesh",
@@ -73,6 +220,7 @@
     {
       "id": "support",
       "name": "Höllenschmiede-Unterstützung, Verräter-Titanen und Verbündete der Chaosflotte",
+      "rule": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden.",
       "formations": [
         "dm-chrono-gladiatoren",
         "dm-ord-hereticus",
@@ -86,6 +234,7 @@
     {
       "id": "daemon-pool",
       "name": "Dämonenvorrat",
+      "rule": "Für Punkte des Daemon Pool darf ein beliebiger Punktewert ausgegeben werden.",
       "formations": [
         "dm-pool-niedere-daemonen"
       ]
@@ -96,60 +245,75 @@
       "id": "dm-hollenschmiede-manipel",
       "name": "Höllenschmiede-Manipel",
       "pts": 225,
-      "tags": [
-        "core"
-      ],
       "units": [
-        { "unit": "dm-hollenschmied", "count": 1 },
-        { "unit": "dm-chaoszwerge", "count": 6 }
+        {
+          "unit": "dm-hollenschmied",
+          "count": 1
+        },
+        {
+          "unit": "dm-chaoszwerge",
+          "count": 11
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-phospexor",
+        "qt-upgrade-krios-ordinatus",
+        "dm-upgrade-erz-heretek",
+        "dm-upgrade-kaban",
+        "dm-upgrade-transporter"
+      ]
     },
     {
       "id": "dm-hollenritter-des-slaanesh",
       "name": "Höllenritter des Slaanesh",
       "pts": 300,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 2 }
+        {
+          "unit": "dm-hollenritter",
+          "count": 2
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-extra-hollenritter"
+      ]
     },
     {
       "id": "dm-hollengegseln-des-slaanesh",
       "name": "Höllengeißeln des Slaanesh",
       "pts": 300,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenharpyien", "count": 2 }
+        {
+          "unit": "dm-hollengeissel",
+          "count": 2
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-extra-hollengeissel"
+      ]
     },
     {
       "id": "dm-hollensitzer-des-slaanesh",
       "name": "Höllenstreiter des Slaanesh",
       "pts": 250,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 4 }
+        {
+          "unit": "dm-hollenstreiter",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-extra-hell-strider"
+      ]
     },
     {
       "id": "dm-schander-ritter-des-tzeentch",
       "name": "Schänder-Ritter des Tzeentch",
       "pts": 350,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-schander-ritter", "count": 2 }
+        {
+          "unit": "dm-schander-ritter",
+          "count": 2
+        }
       ],
       "upgrades": [
         "dm-upgrade-ikon"
@@ -159,11 +323,11 @@
       "id": "dm-entweiher-ritter-des-nurgle",
       "name": "Entweiher-Ritter des Nurgle",
       "pts": 350,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 2 }
+        {
+          "unit": "dm-verwuester-ritter",
+          "count": 2
+        }
       ],
       "upgrades": [
         "dm-upgrade-ikon"
@@ -173,11 +337,11 @@
       "id": "dm-rampager-ritter-des-khorne",
       "name": "Rampager-Ritter des Khorne",
       "pts": 350,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 2 }
+        {
+          "unit": "dm-rampager-ritter",
+          "count": 2
+        }
       ],
       "upgrades": [
         "dm-upgrade-ikon"
@@ -187,11 +351,11 @@
       "id": "dm-abtruenner-ritter-des-ungeteilten-chaos",
       "name": "Abtrünnige Ritter des Ungeteilten Chaos",
       "pts": 350,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 2 }
+        {
+          "unit": "dm-abtruenniger-ritter",
+          "count": 2
+        }
       ],
       "upgrades": [
         "dm-upgrade-ikon"
@@ -201,11 +365,11 @@
       "id": "dm-tyrannenritter-des-ungeteilten-chaos",
       "name": "Tyrannenritter des Ungeteilten Chaos",
       "pts": 275,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 1 }
+        {
+          "unit": "dm-tyrannenritter",
+          "count": 1
+        }
       ],
       "upgrades": [
         "dm-upgrade-ikon"
@@ -215,25 +379,28 @@
       "id": "dm-armiger-des-ungeteilten-chaos",
       "name": "Armiger des Ungeteilten Chaos",
       "pts": 250,
-      "tags": [
-        "banner"
-      ],
       "units": [
-        { "unit": "dm-hollenritter", "count": 4 }
+        {
+          "oneOf": [
+            "dm-doomglaive-ritter",
+            "dm-perfidor-ritter"
+          ],
+          "count": 4
+        }
       ],
       "upgrades": [
-        "dm-upgrade-ikon"
+        "qt-upgrade-extra-armiger"
       ]
     },
     {
       "id": "dm-chrono-gladiatoren",
       "name": "Chrono-Gladiatoren",
       "pts": 200,
-      "tags": [
-        "support"
-      ],
       "units": [
-        { "unit": "dm-chrono-gladiatoren", "count": 6 }
+        {
+          "unit": "dm-chrono-gladiatoren",
+          "count": 6
+        }
       ],
       "upgrades": []
     },
@@ -241,35 +408,41 @@
       "id": "dm-ord-hereticus",
       "name": "Ordinatus Hereticus",
       "pts": 325,
-      "tags": [
-        "support"
-      ],
       "units": [
-        { "unit": "dm-ord-hereticus", "count": 2 }
+        {
+          "unit": "dm-ord-hereticus",
+          "count": 2
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-unterstuetzungswaffe",
+        "dm-upgrade-kaban"
+      ]
     },
     {
       "id": "dm-ord-hereticus-majoris",
-      "name": "Ordinatus HereticusMajoris",
+      "name": "0–1 Ordinatus HereticusMajoris",
       "pts": 425,
-      "tags": [
-        "support"
-      ],
       "units": [
-        { "unit": "dm-ord-hereticus-majoris", "count": 1 }
+        {
+          "unit": "dm-ord-hereticus-majoris",
+          "count": 1
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "qt-upgrade-majoris-weapon",
+        "dm-upgrade-erz-heretek"
+      ]
     },
     {
       "id": "dm-Chaos Warbringer",
-      "name": "Chaos Warbringer",
+      "name": "Chaos-Warbringer",
       "pts": 650,
-      "tags": [
-        "support"
-      ],
       "units": [
-        { "unit": "dm-Chaos Warbringer", "count": 1 }
+        {
+          "unit": "dm-Chaos Warbringer",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -277,11 +450,11 @@
       "id": "dm-hollendrachen",
       "name": "Höllendrachen",
       "pts": 225,
-      "tags": [
-        "fleet"
-      ],
       "units": [
-        { "unit": "dm-hollendrachen", "count": 2 }
+        {
+          "unit": "dm-hollendrachen",
+          "count": 2
+        }
       ],
       "upgrades": []
     },
@@ -289,78 +462,349 @@
       "id": "dm-harbringer",
       "name": "Harbringer",
       "pts": 300,
-      "tags": [
-        "fleet"
-      ],
       "units": [
-        { "unit": "dm-harbringer", "count": 1 }
+        {
+          "unit": "dm-harbringer",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
     {
       "id": "dm-chaos-schlachtschiff",
-      "name": "Chaos Schlachtschiff",
+      "name": "0–1 Chaos Schlachtschiff",
       "pts": 200,
-      "tags": [
-        "fleet"
-      ],
       "units": [
-        { "unit": "dm-chaos-schlachtschiff", "count": 1 }
+        {
+          "unit": "dm-chaos-schlachtschiff",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
     {
       "id": "dm-pool-niedere-daemonen",
-      "name": "Pool niedere Dämonen",
+      "name": "Pool niederer Dämonen",
       "pts": 15,
       "tags": [
         "daemon-pool"
       ],
       "units": [
-        { "unit": "dm-hollenschmied", "count": 1 }
+        {
+          "oneOf": [
+            "dm-daemonetten",
+            "dm-seuchenhueter",
+            "dm-zerfleischer",
+            "dm-horrors",
+            "dm-bestien"
+          ],
+          "count": 1
+        }
       ],
       "upgrades": []
     }
   ],
   "upgrades": [
     {
+      "id": "qt-upgrade-phospexor",
+      "name": "Phospexors",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze vier Chaos-Squats durch vier Phospexors",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "dm-chaoszwerge",
+              "count": 4,
+              "to": "dm-phospexor",
+              "toCount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qt-upgrade-krios-ordinatus",
+      "name": "Unterstützungspanzer",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge zwei Krios Lightning hinzu",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-krios-blitzpanzer",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Krios Venators hinzu",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-krios-venator",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "Füge ein Ordinatus Hereticus hinzu",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-ord-hereticus",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dm-upgrade-erz-heretek",
+      "name": "(0–1 pro Armee) Oberbefehlshaber / Erz-Heretek",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Erz-Heretek hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-erz-heretek",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dm-upgrade-kaban",
+      "name": "(0–1 pro Armee) Kaban-Maschine",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge die Kaban-Maschine hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-kaban-maschine",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dm-upgrade-transporter",
+      "name": "Höllenschmiede-Transporter",
+      "variants": [
+        {
+          "id": "rhino-1",
+          "label": "1 Chaos Rhino",
+          "pts": 10,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-rhino",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "rhino-2",
+          "label": "2 Chaos Rhinos",
+          "pts": 20,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-rhino",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "rhino-3",
+          "label": "3 Chaos Rhinos",
+          "pts": 30,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-rhino",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "rhino-6",
+          "label": "6 Chaos Rhinos",
+          "pts": 60,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "chaos-rhino",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "id": "triaros",
+          "label": "Gepanzerter Triaros-Despoiler",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-triaros",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "dm-upgrade-ikon",
       "name": "Chaos-Ikone",
       "variants": [
         {
           "id": "1",
-          "label": "Füge 1 Chaos-Ikone hinzu",
+          "label": "Füge eine Chaos-Ikone hinzu",
           "pts": 50,
           "effects": [
-            { "op": "add", "unit": "dm-ikon", "count": 1 }
+            {
+              "op": "add",
+              "unit": "dm-ikon",
+              "count": 1
+            }
           ]
         }
       ]
     },
     {
-      "id": "dm-upgrade-oberebefehlshaber",
-      "name": "0–1 Oberbefehlshaber",
+      "id": "qt-upgrade-extra-hollenritter",
+      "name": "Zusätzlicher Höllenritter",
       "variants": [
         {
           "id": "1",
-          "label": "Füge einem Verband einen Erz-Heretek hinzu",
+          "label": "Füge einen zusätzlichen Höllenritter hinzu",
           "pts": 100,
           "effects": [
-            { "op": "add", "unit": "dm-erz-heretek", "count": 1 }
+            {
+              "op": "add",
+              "unit": "dm-hollenritter",
+              "count": 1
+            }
           ]
         }
       ]
     },
     {
-      "id": "dm-upgrade-kaban-maschine",
-      "name": "Kaban-Maschine",
+      "id": "qt-upgrade-extra-hollengeissel",
+      "name": "Zusätzliche Höllengeißel",
       "variants": [
         {
           "id": "1",
-          "label": "Füge der Verband die Kaban-Maschine hinzu",
-          "pts": 200,
+          "label": "Füge eine zusätzliche Höllengeißel hinzu",
+          "pts": 100,
           "effects": [
-            { "op": "add", "unit": "dm-kaban-maschine", "count": 1 }
+            {
+              "op": "add",
+              "unit": "dm-hollengeissel",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qt-upgrade-extra-hell-strider",
+      "name": "Zusätzlicher Höllenstreiter",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen zusätzlichen Höllenstreiter hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-hollenstreiter",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qt-upgrade-extra-armiger",
+      "name": "Zusätzlicher Armiger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen zusätzlichen Doomglaive-Ritter hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-doomglaive-ritter",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge einen zusätzlichen Perfidor-Ritter hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "dm-perfidor-ritter",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qt-upgrade-unterstuetzungswaffe",
+      "name": "Unterstützungswaffe",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Werte eine Battle Weapon zu einer Unterstützungswaffe auf",
+          "pts": 25,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "qt-upgrade-majoris-weapon",
+      "name": "Majoris-Aufwertung",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Werte zu Ordinatus Temporia auf",
+          "pts": 25,
+          "effects": []
+        },
+        {
+          "id": "2",
+          "label": "Werte zu Ordinatus Cyclothrathe auf",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "dm-ord-hereticus-majoris",
+              "count": 1,
+              "to": "dm-ord-cyclothrathe",
+              "toCount": 1
+            }
           ]
         }
       ]

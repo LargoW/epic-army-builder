@@ -257,16 +257,16 @@
       ],
       "units": [
         {
-          "unit": "yml-kobra",
-          "count": 1,
           "oneOf": [
             "yml-kobra",
             "yml-skorpion",
             "yml-sturmserpent"
-          ]
+          ],
+          "count": 1
         }
       ],
       "upgrades": [
+        "yml-upgrade-kriegsmaschinen-vaul",
         "yml-upgrade-knochensaenger"
       ]
     },
@@ -284,7 +284,8 @@
         }
       ],
       "upgrades": [
-        "yml-upgrade-feuersturm"
+        "yml-upgrade-feuersturm",
+        "yml-upgrade-gardisten-schwerter"
       ]
     },
     {
@@ -675,6 +676,102 @@
               "from": "yml-phantomschiff",
               "to": "yml-drachschiff",
               "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yml-upgrade-kriegsmaschinen-vaul",
+      "name": "Zusätzliche Kriegsmaschinen von Vaul",
+      "variants": [
+        {
+          "id": "kobra-1",
+          "label": "Füge 1 Kobra hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-kobra",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "skorpion-1",
+          "label": "Füge 1 Skorpion hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-skorpion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-1",
+          "label": "Füge 1 Sturmserpent hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-sturmserpent",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "kobra-2",
+          "label": "Füge 2 Kobra hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-kobra",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "skorpion-2",
+          "label": "Füge 2 Skorpion hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-skorpion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-2",
+          "label": "Füge 2 Sturmserpent hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-sturmserpent",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yml-upgrade-gardisten-schwerter",
+      "name": "Füge sechs Gardisten hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge sechs Gardisten zur Verband hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "yml-gardisten",
+              "count": 6
             }
           ]
         }

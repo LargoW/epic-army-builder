@@ -1377,6 +1377,40 @@
           ]
         }
       ]
+    },
+    "de-solitaer": {
+      "name": "Solitär",
+      "type": "CH",
+      "weapons": [
+        {
+          "name": "Kuss des Harlekins",
+          "modes": [
+            {
+              "firepower": "Sturmwaffen",
+              "specialRules": [
+                {
+                  "name": "EA(+2)",
+                  "description": "Zusätzliche Angriffe +2"
+                },
+                {
+                  "name": "FS",
+                  "description": "Erstschlag"
+                },
+                {
+                  "name": "S",
+                  "description": "Scharfschütze"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "specialRules": [
+        {
+          "name": "Inspirierend",
+          "description": null
+        }
+      ]
     }
   }
 }

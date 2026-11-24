@@ -200,6 +200,26 @@
       "name": "Ranger",
       "from": "EL.json",
       "type": "INF"
+    },
+    "iy-feuersturm": {
+      "name": "Feuersturm",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "iy-wellenschlange": {
+      "name": "Wellenschlange",
+      "from": "EL.json",
+      "type": "AV"
+    },
+    "iy-skorpion": {
+      "name": "Skorpion",
+      "from": "EL.json",
+      "type": "WE"
+    },
+    "iy-sturmserpent": {
+      "name": "Sturmserpent",
+      "from": "EL.json",
+      "type": "WE"
     }
   },
   "sections": [
@@ -298,7 +318,8 @@
         "iy-upgrade-phantome",
         "iy-upgrade-phantomlord",
         "iy-upgrade-phantomklingen",
-        "iy-upgrade-phantomseher"
+        "iy-upgrade-phantomseher",
+        "iy-upgrade-wellenschlange"
       ]
     },
     {
@@ -322,7 +343,8 @@
         "iy-upgrade-phantome",
         "iy-upgrade-phantomlord",
         "iy-upgrade-phantomklingen",
-        "iy-upgrade-phantomseher"
+        "iy-upgrade-phantomseher",
+        "iy-upgrade-wellenschlange"
       ]
     },
     {
@@ -347,7 +369,8 @@
         "iy-upgrade-unterstuetzungswaffen",
         "iy-upgrade-phantome",
         "iy-upgrade-phantomklingen",
-        "iy-upgrade-phantomlord"
+        "iy-upgrade-phantomlord",
+        "iy-upgrade-wellenschlange"
       ]
     },
     {
@@ -385,11 +408,17 @@
       ],
       "units": [
         {
-          "unit": "iy-kobra",
+          "oneOf": [
+            "iy-kobra",
+            "iy-skorpion",
+            "iy-sturmserpent"
+          ],
           "count": 1
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "iy-upgrade-kriegsmaschinen-vaul"
+      ]
     },
     {
       "id": "iy-schwerter-vaul",
@@ -404,7 +433,9 @@
           "count": 1
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "iy-upgrade-falfeuersturm"
+      ]
     },
     {
       "id": "iy-illum-zar",
@@ -496,7 +527,9 @@
           "count": 2
         }
       ],
-      "upgrades": []
+      "upgrades": [
+        "iy-upgrade-nachtschwinge"
+      ]
     },
     {
       "id": "iy-hemlock-phantomjager",
@@ -772,6 +805,139 @@
               "from": "iy-phantomschiff",
               "to": "iy-drachschiff",
               "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iy-upgrade-kriegsmaschinen-vaul",
+      "name": "Zusätzliche Kriegsmaschinen von Vaul",
+      "variants": [
+        {
+          "id": "kobra-1",
+          "label": "Füge 1 Kobra hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-kobra",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "skorpion-1",
+          "label": "Füge 1 Skorpion hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-skorpion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-1",
+          "label": "Füge 1 Sturmserpent hinzu",
+          "pts": 200,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-sturmserpent",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "kobra-2",
+          "label": "Füge 2 Kobra hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-kobra",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "skorpion-2",
+          "label": "Füge 2 Skorpion hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-skorpion",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "sturmserpent-2",
+          "label": "Füge 2 Sturmserpent hinzu",
+          "pts": 400,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-sturmserpent",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iy-upgrade-falfeuersturm",
+      "name": "Ersetze Falcons durch Feuerstürme",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Ersetze bis zu zwei Falcons durch Feuerstürme",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "replace",
+              "from": "iy-falcon",
+              "to": "iy-feuersturm",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iy-upgrade-nachtschwinge",
+      "name": "Füge 1 Nachtschwinge-Abfangjäger hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge 1 Nachtschwinge-Abfangjäger hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-nachtschwinge",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iy-upgrade-wellenschlange",
+      "name": "Füge vier Wellenschlangen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge vier Wellenschlangen hinzu",
+          "pts": 150,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "iy-wellenschlange",
+              "count": 4
             }
           ]
         }

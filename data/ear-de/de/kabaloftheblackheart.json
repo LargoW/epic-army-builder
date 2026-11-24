@@ -30,32 +30,136 @@
     }
   ],
   "units": {
-    "de-archon": { "name": "Archon", "from": "DE.json", "type": "CH" },
-    "de-dracon": { "name": "Dracon", "from": "DE.json", "type": "CH" },
-    "de-succubus": { "name": "Succubus", "from": "DE.json", "type": "CH" },
-    "de-althaemo": { "name": "Ältester Haemonculus", "from": "DE.json", "type": "CH" },
-    "de-inkubi": { "name": "Inkubi", "from": "DE.json", "type": "CH" },
-    "de-kabalenkrieger": { "name": "Kabalenkrieger", "from": "DE.json", "type": "AV" },
-    "de-mandrak": { "name": "Mandraks", "from": "DE.json", "type": "AV" },
-    "de-harpyie": { "name": "Harpyien", "from": "DE.json", "type": "AV" },
-    "de-haemonculus": { "name": "Haemonculi", "from": "DE.json", "type": "AV" },
-    "de-folterer": { "name": "Folterer", "from": "DE.json", "type": "AV" },
-    "de-groteske": { "name": "Grotesquen", "from": "DE.json", "type": "AV" },
-    "de-hagashin": { "name": "Hagashîn", "from": "DE.json", "type": "AV" },
-    "de-warpbestien": { "name": "Warpbestien", "from": "DE.json", "type": "AV" },
-    "de-hellion": { "name": "Hellion-Himmelsbretter", "from": "DE.json", "type": "AV" },
-    "de-reaver": { "name": "Reaver-Jetbikes", "from": "DE.json", "type": "AV" },
-    "de-schattenviper": { "name": "Schattenviper", "from": "DE.json", "type": "AV" },
-    "de-schattenbarke": { "name": "Schattenbarke", "from": "DE.json", "type": "AV" },
-    "de-schattenjaeger": { "name": "Schattenjäger", "from": "DE.json", "type": "AV" },
-    "de-talos": { "name": "Talos", "from": "DE.json", "type": "AV" },
-    "de-vernuegbarke": { "name": "Vergnügungsbarke", "from": "DE.json", "type": "AV" },
-    "de-schmerzensschiff": { "name": "Schmerzensschiff", "from": "DE.json", "type": "AV" },
-    "de-henkerlandungsmodul": { "name": "Henker-Landungsmodul", "from": "DE.json", "type": "AV" },
-    "de-razorwing": { "name": "Razorwing-Abfangjäger", "from": "darkEldarNavy.json", "type": "AV" },
-    "de-voidraven": { "name": "Voidraven-Abfangjäger", "from": "darkEldarNavy.json", "type": "AV" },
-    "de-sklavenbringer": { "name": "Sklavenbringer-Angriffsboot", "from": "darkEldarNavy.json", "type": "AV" },
-    "de-kreuzer": { "name": "Kreuzer der Torture-Klasse", "from": "darkEldarNavy.json", "type": "AV" }
+    "de-archon": {
+      "name": "Archon",
+      "from": "DE.json",
+      "type": "CH"
+    },
+    "de-dracon": {
+      "name": "Dracon",
+      "from": "DE.json",
+      "type": "CH"
+    },
+    "de-succubus": {
+      "name": "Succubus",
+      "from": "DE.json",
+      "type": "CH"
+    },
+    "de-althaemo": {
+      "name": "Ältester Haemonculus",
+      "from": "DE.json",
+      "type": "CH"
+    },
+    "de-inkubi": {
+      "name": "Inkubi",
+      "from": "DE.json",
+      "type": "CH"
+    },
+    "de-kabalenkrieger": {
+      "name": "Kabalenkrieger",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-mandrak": {
+      "name": "Mandraks",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-harpyie": {
+      "name": "Harpyien",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-haemonculus": {
+      "name": "Haemonculi",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-folterer": {
+      "name": "Folterer",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-groteske": {
+      "name": "Grotesquen",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-hagashin": {
+      "name": "Hagashîn",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-warpbestien": {
+      "name": "Warpbestien",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-hellion": {
+      "name": "Hellion-Himmelsbretter",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-reaver": {
+      "name": "Reaver-Jetbikes",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-schattenviper": {
+      "name": "Schattenviper",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-schattenbarke": {
+      "name": "Schattenbarke",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-schattenjaeger": {
+      "name": "Schattenjäger",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-talos": {
+      "name": "Talos",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-vernuegbarke": {
+      "name": "Vergnügungsbarke",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-schmerzensschiff": {
+      "name": "Schmerzensschiff",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-henkerlandungsmodul": {
+      "name": "Henker-Landungsmodul",
+      "from": "DE.json",
+      "type": "AV"
+    },
+    "de-razorwing": {
+      "name": "Razorwing-Abfangjäger",
+      "from": "darkEldarNavy.json",
+      "type": "AV"
+    },
+    "de-voidraven": {
+      "name": "Voidraven-Abfangjäger",
+      "from": "darkEldarNavy.json",
+      "type": "AV"
+    },
+    "de-sklavenbringer": {
+      "name": "Sklavenbringer-Angriffsboot",
+      "from": "darkEldarNavy.json",
+      "type": "AV"
+    },
+    "de-kreuzer": {
+      "name": "Kreuzer der Torture-Klasse",
+      "from": "darkEldarNavy.json",
+      "type": "AV"
+    }
   },
   "sections": [
     {
@@ -119,11 +223,21 @@
         "core"
       ],
       "units": [
-        { "unit": "de-archon", "count": 1 },
-        { "unit": "de-inkubi", "count": 3 }
+        {
+          "unit": "de-archon",
+          "count": 1
+        },
+        {
+          "unit": "de-inkubi",
+          "count": 3
+        }
       ],
       "upgrades": [
-        "de-upgrade-inkubi"
+        "de-upgrade-inkubi",
+        "de-upgrade-schattenjaeger",
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-transporter",
+        "de-upgrade-krieger"
       ]
     },
     {
@@ -134,10 +248,21 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-dracon", "count": 1 },
-        { "unit": "de-kabalenkrieger", "count": 6 }
+        {
+          "unit": "de-dracon",
+          "count": 1
+        },
+        {
+          "unit": "de-kabalenkrieger",
+          "count": 6
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-schattenjaeger",
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-transporter",
+        "de-upgrade-krieger"
+      ]
     },
     {
       "id": "de-flottille-des-schwarzen-herzens",
@@ -147,9 +272,14 @@
         "fleet"
       ],
       "units": [
-        { "unit": "de-schattenjaeger", "count": 4 }
+        {
+          "unit": "de-schattenjaeger",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-schattenjaeger"
+      ]
     },
     {
       "id": "de-mandrake-kriegsschar",
@@ -159,7 +289,10 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-mandrak", "count": 4 }
+        {
+          "unit": "de-mandrak",
+          "count": 4
+        }
       ],
       "upgrades": [
         "de-upgrade-add-mandrak"
@@ -173,10 +306,14 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-hellion", "count": 4 }
+        {
+          "unit": "de-hellion",
+          "count": 4
+        }
       ],
       "upgrades": [
-        "de-upgrade-add-hellion"
+        "de-upgrade-add-hellion",
+        "de-upgrade-add-warpbestien"
       ]
     },
     {
@@ -187,10 +324,19 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-succubus", "count": 1 },
-        { "unit": "de-hagashin", "count": 4 }
+        {
+          "unit": "de-succubus",
+          "count": 1
+        },
+        {
+          "unit": "de-hagashin",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-transporter"
+      ]
     },
     {
       "id": "de-reaver-kriegsschar",
@@ -200,7 +346,10 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-reaver", "count": 6 }
+        {
+          "unit": "de-reaver",
+          "count": 6
+        }
       ],
       "upgrades": [
         "de-upgrade-add-reaver"
@@ -214,10 +363,25 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-haemonculus", "count": 2 },
-        { "unit": "de-folterer", "count": 4 }
+        {
+          "unit": "de-althaemo",
+          "count": 1
+        },
+        {
+          "unit": "de-haemonculus",
+          "count": 2
+        },
+        {
+          "unit": "de-folterer",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-add-groteske",
+        "de-upgrade-tragbares-netzportal",
+        "de-upgrade-talos",
+        "de-upgrade-transporter"
+      ]
     },
     {
       "id": "de-talos-schwarm",
@@ -227,9 +391,14 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-talos", "count": 4 }
+        {
+          "unit": "de-talos",
+          "count": 4
+        }
       ],
-      "upgrades": []
+      "upgrades": [
+        "de-upgrade-talos"
+      ]
     },
     {
       "id": "de-harpyien-kriegsschar",
@@ -239,7 +408,10 @@
         "elite"
       ],
       "units": [
-        { "unit": "de-harpyie", "count": 6 }
+        {
+          "unit": "de-harpyie",
+          "count": 6
+        }
       ],
       "upgrades": []
     },
@@ -251,7 +423,10 @@
         "fleet"
       ],
       "units": [
-        { "unit": "de-schmerzensschiff", "count": 1 }
+        {
+          "unit": "de-schmerzensschiff",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -263,31 +438,40 @@
         "fleet"
       ],
       "units": [
-        { "unit": "de-henkerlandungsmodul", "count": 1 }
+        {
+          "unit": "de-henkerlandungsmodul",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
     {
       "id": "de-razorwing-staffel",
-      "name": "Razorwing-Geschwader",
+      "name": "Razorwing-Staffel",
       "pts": 225,
       "tags": [
         "fleet"
       ],
       "units": [
-        { "unit": "de-razorwing", "count": 2 }
+        {
+          "unit": "de-razorwing",
+          "count": 2
+        }
       ],
       "upgrades": []
     },
     {
       "id": "de-voidraven-staffel",
-      "name": "Voidraven-Geschwader",
+      "name": "Voidraven-Staffel",
       "pts": 250,
       "tags": [
         "fleet"
       ],
       "units": [
-        { "unit": "de-voidraven", "count": 2 }
+        {
+          "unit": "de-voidraven",
+          "count": 2
+        }
       ],
       "upgrades": []
     },
@@ -299,7 +483,10 @@
         "fleet"
       ],
       "units": [
-        { "unit": "de-sklavenbringer", "count": 1 }
+        {
+          "unit": "de-sklavenbringer",
+          "count": 1
+        }
       ],
       "upgrades": []
     },
@@ -311,7 +498,10 @@
         "fleet"
       ],
       "units": [
-        { "unit": "de-kreuzer", "count": 1 }
+        {
+          "unit": "de-kreuzer",
+          "count": 1
+        }
       ],
       "upgrades": []
     }
@@ -326,7 +516,89 @@
           "label": "Füge zwei Inkubi hinzu",
           "pts": 75,
           "effects": [
-            { "op": "add", "unit": "de-inkubi", "count": 2 }
+            {
+              "op": "add",
+              "unit": "de-inkubi",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-krieger",
+      "name": "Krieger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge zwei Drukhari-Kabalenkrieger hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-kabalenkrieger",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-schattenjaeger",
+      "name": "Schattenjäger",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Schattenjäger hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenjaeger",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Schattenjäger hinzu",
+          "pts": 100,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenjaeger",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-talos",
+      "name": "Talos",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge einen Talos hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-talos",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Talos hinzu",
+          "pts": 75,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-talos",
+              "count": 2
+            }
           ]
         }
       ]
@@ -337,10 +609,26 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Mandraks hinzu",
+          "label": "Füge einen Mandrak hinzu",
           "pts": 25,
           "effects": [
-            { "op": "add", "unit": "de-mandrak", "count": 1 }
+            {
+              "op": "add",
+              "unit": "de-mandrak",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Mandraks hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-mandrak",
+              "count": 2
+            }
           ]
         }
       ]
@@ -351,10 +639,56 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Hellionen hinzu",
+          "label": "Füge ein Hellion-Himmelsbrett hinzu",
           "pts": 25,
           "effects": [
-            { "op": "add", "unit": "de-hellion", "count": 1 }
+            {
+              "op": "add",
+              "unit": "de-hellion",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Hellion-Himmelsbretter hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-hellion",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-add-warpbestien",
+      "name": "Füge bis zu zwei Warpbestien hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge eine Einheit Warpbestien hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-warpbestien",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Einheiten Warpbestien hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-warpbestien",
+              "count": 2
+            }
           ]
         }
       ]
@@ -365,10 +699,175 @@
       "variants": [
         {
           "id": "1",
-          "label": "Füge bis zu zwei Reaver-Jetbikes hinzu",
+          "label": "Füge ein Reaver-Jetbike hinzu",
           "pts": 25,
           "effects": [
-            { "op": "add", "unit": "de-reaver", "count": 1 }
+            {
+              "op": "add",
+              "unit": "de-reaver",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Reaver-Jetbikes hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-reaver",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-add-groteske",
+      "name": "Füge bis zu zwei Grotesquen hinzu",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Füge eine Grotesque hinzu",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-groteske",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "Füge zwei Grotesquen hinzu",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-groteske",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-tragbares-netzportal",
+      "name": "(0–1 pro Armee) Tragbares Netzportal",
+      "variants": [
+        {
+          "id": "1",
+          "label": "Tragbares Netzportal",
+          "pts": 50,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "de-upgrade-transporter",
+      "name": "Transporter des Schwarzen Herzens",
+      "variants": [
+        {
+          "id": "barke-1",
+          "label": "1 Schattenbarke",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "barke-2",
+          "label": "2 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "barke-3",
+          "label": "3 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "barke-4",
+          "label": "4 Schattenbarken",
+          "pts": 0,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "viper-2",
+          "label": "Zwei Schattenvipers",
+          "pts": 25,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenviper",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "viper-4",
+          "label": "Vier Schattenvipers",
+          "pts": 50,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenviper",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "lustbarke",
+          "label": "0–1 Vergnügungsbarke",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-vernuegbarke",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "barke-2-lustbarke",
+          "label": "2 Schattenbarken und 0–1 Vergnügungsbarke",
+          "pts": 125,
+          "effects": [
+            {
+              "op": "add",
+              "unit": "de-schattenbarke",
+              "count": 2
+            },
+            {
+              "op": "add",
+              "unit": "de-vernuegbarke",
+              "count": 1
+            }
           ]
         }
       ]
