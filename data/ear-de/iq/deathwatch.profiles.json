@@ -1,1234 +1,1234 @@
 {
-  "army": "ear-de/iq/deathwatch",
-  "source": {
-    "file": "lists_de/IQ/deathwatch.json",
-    "version": "0.6.0",
-    "commit": null
-  },
-  "specialRules": [
-    {
-      "name": "Ad-hoc-Kontingente",
-      "description": [
-        "Das Ordo Xenos musste aus der Notwendigkeit heraus zum Experten für Improvisation werden, rasch lokale Verbündete sammeln und sich an die ständig wechselnden Fähigkeiten und Mitglieder der Deathwatch anpassen. Deshalb dürfen Verbände mit Befehlshaber die Fähigkeit auch einsetzen, wenn ihr eigener oder ein anderer befreundeter Verband innerhalb von 5cm gegen einen Angriff verteidigt; erkläre beide Verbände dabei als vermischt (siehe 1.12.10). Nach der Erklärung als vermischt folgen die Verbände des Commanders genau denselben Regeln, als hätte der Gegner sie als vermischt erklärt. Beachte: Erklärt ein Spieler die Verbände als vermischt, gelten sie als vermischt."
-      ]
+    "army": "ear-de/iq/deathwatch",
+    "source": {
+        "file": "lists_de/IQ/deathwatch.json",
+        "version": "0.6.0",
+        "commit": null
     },
-    {
-      "name": "Teleportieren-Peilsender",
-      "description": [
-        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
-        "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
-        "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
-      ]
-    },
-    {
-      "name": "Schwingen des Himmelsengels",
-      "description": [
-        "Alle Deathwatch-Kontingente müssen das Spiel in Reserve beginnen und entweder in einem Dark-Hunter-Klasse-Zerstörer, einem Corvus-Blackstar-Landungsschiff oder einem Deathwatch-Thunderhawk-Transporter eingeschifft sein.",
-        "Gegen Corvus-Blackstar-Landungsschiffe erleiden alle Flugabwehrschüsse zusätzlich einen Trefferwurfmodifikator von -1."
-      ]
+    "specialRules": [
+        {
+            "name": "Ad-hoc-Kontingente",
+            "description": [
+                "Das Ordo Xenos musste aus der Notwendigkeit heraus zum Experten für Improvisation werden, rasch lokale Verbündete sammeln und sich an die ständig wechselnden Fähigkeiten und Mitglieder der Deathwatch anpassen. Deshalb dürfen Verbände mit Befehlshaber die Fähigkeit auch einsetzen, wenn ihr eigener oder ein anderer befreundeter Verband innerhalb von 5cm gegen einen Angriff verteidigt; erkläre beide Verbände dabei als vermischt (siehe 1.12.10). Nach der Erklärung als vermischt folgen die Verbände des Commanders genau denselben Regeln, als hätte der Gegner sie als vermischt erklärt. Beachte: Erklärt ein Spieler die Verbände als vermischt, gelten sie als vermischt."
+            ]
+        },
+        {
+            "name": "Teleportieren-Peilsender",
+            "description": [
+                "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+                "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+                "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+            ]
+        },
+        {
+            "name": "Schwingen des Himmelsengels",
+            "description": [
+                "Alle Deathwatch-Kontingente müssen das Spiel in Reserve beginnen und entweder in einem Dark-Hunter-Klasse-Zerstörer, einem Corvus-Blackstar-Landungsschiff oder einem Deathwatch-Thunderhawk-Transporter eingeschifft sein.",
+                "Gegen Corvus-Blackstar-Landungsschiffe erleiden alle Flugabwehrschüsse zusätzlich einen Trefferwurfmodifikator von -1."
+            ]
+        }
+    ],
+    "units": {
+        "dw-oraxenos-grossinquisitor": {
+            "name": "Ordo-Xenos-Großinquisitor",
+            "type": "INF",
+            "speed": 15,
+            "armour": 3,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Frag Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Energiewaffe",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Oberbefehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "dw-oraxenos-inquisitor": {
+            "name": "Ordo-Xenos-Inquisitor",
+            "type": "INF",
+            "speed": 15,
+            "armour": 3,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Frag Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Energiewaffe",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "dw-oraxenos-akolythen": {
+            "name": "Akolythen des Ordo Xenos",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Plasmageschütze",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT5+",
+                            "range": 15,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-oraxenos-arbitrator": {
+            "name": "Arbitratoren",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Granate Werfer",
+                    "modes": [
+                        {
+                            "firepower": "AP6+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Energiekeulen & Unterdrückungs Schilde",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-oraxenos-arbites": {
+            "name": "Arbites-Repressor",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann zwei Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren.",
+            "weapons": [
+                {
+                    "name": "Zwillings-Schwerer Maschinengewehr",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-befehlshaber": {
+            "name": "Deathwatch-Befehlshaber",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "Energiewaffe",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Oberbefehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "dw-sergeant": {
+            "name": "Deathwatch-Sergeant",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "n/a",
+                    "modes": [
+                        {
+                            "firepower": "n/a",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                }
+            ]
+        },
+        "dw-ordenspriester": {
+            "name": "Ordenspriester",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "Energiewaffe",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                }
+            ]
+        },
+        "dw-scriptor": {
+            "name": "Scriptor",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "Schmetterschlag",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                }
+            ]
+        },
+        "dw-taktische-trupps": {
+            "name": "Deathwatch-Taktische-Trupps",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Dragonfire-Schwere Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-sturmtrupps": {
+            "name": "Deathwatch-Sturmtrupps",
+            "type": "INF",
+            "speed": 30,
+            "armour": 4,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Boltpistolen",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Energie-Waffen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Sprungmodule",
+                    "description": null
+                }
+            ]
+        },
+        "dw-schwarze-schilde": {
+            "name": "Deathwatch-Schwarze-Schilde",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Bolter",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwere Donnerhämmer",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-devastortrupps": {
+            "name": "Deathwatch-Devastortrupps",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 5,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Dragonfire-Schwere Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Frag Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-terminatoren": {
+            "name": "Deathwatch-Terminatoren",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Sturmkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Frag Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Energie-Waffen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Heckpanzerung",
+                    "description": null
+                }
+            ]
+        },
+        "dw-cybot": {
+            "name": "Deathwatch-Cybot",
+            "type": "AV",
+            "speed": 15,
+            "armour": 3,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Energiefaust",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Frag Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                }
+            ]
+        },
+        "dw-trike": {
+            "name": "Deathwatch-Trike",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 5,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Dragonfire-Schwere Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Teleportieren-Peilsender",
+                    "description": [
+                        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+                        "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+                        "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+                    ]
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "dw-land-speeder-tornado": {
+            "name": "Deathwatch-Land-Speeder-Tornado",
+            "type": "LV",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Sturmkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Dragonfire-Schwere Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren-Peilsender",
+                    "description": [
+                        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+                        "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+                        "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+                    ]
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "dw-corvus": {
+            "name": "Corvus-Blackstar-Landungsschiff",
+            "type": "AC/WE",
+            "speed": "Jagdbomber (FB)",
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann 3 Infanterieeinheiten oder Trikes transportieren. Terminatoren zählen jeweils als 1,5 Einheiten (aufgerundet). Zusätzlich kann 1 Cybot oder Land Speeder mitgeführt werden.",
+            "weapons": [
+                {
+                    "name": "AC Zwillings-Sturmkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT4+/AA5+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC-Blackstar-Raketen",
+                    "modes": [
+                        {
+                            "firepower": "1BP",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "D",
+                                    "description": "Versprengen"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Hammerschlagwerfer",
+                    "modes": [
+                        {
+                            "firepower": "2x AP4+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 2",
+                    "description": null
+                },
+                {
+                    "name": "Planetfall",
+                    "description": null
+                },
+                {
+                    "name": "Schwingen des Himmelsengels",
+                    "description": [
+                        "Alle Deathwatch-Kontingente müssen das Spiel in Reserve beginnen und entweder in einem Dark-Hunter-Klasse-Zerstörer, einem Corvus-Blackstar-Landungsschiff oder einem Deathwatch-Thunderhawk-Transporter eingeschifft sein.",
+                        "Gegen Corvus-Blackstar-Landungsschiffe erleiden alle Flugabwehrschüsse zusätzlich einen Trefferwurfmodifikator von -1."
+                    ]
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-thunderhawk": {
+            "name": "Deathwatch-Thunderhawk-Transporter",
+            "type": "AC/WE",
+            "speed": "Bomber (B)",
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann bis zu 2 der folgenden Einheiten transportieren: Stalkers, Hunters, Predators, Razorbacks, Rhinos und Vindicators. Land Raiders zählen jeweils als 2 Einheiten. Außerdem dürfen darin transportierte Infanterieeinheiten mitgeführt werden; sie gelten beim Aussteigen als innerhalb dieser Fahrzeuge befindlich.",
+            "crit": "Thunderhawk-Transporter und alle transportierten Einheiten werden zerstört.",
+            "weapons": [
+                {
+                    "name": "AC-Zwillings-Dragonfire-Schwere Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT5+/AA5+",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "Left",
+                                    "description": "Left Arc"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC-Zwillings-Dragonfire-Schwere Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT5+/AA5+",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "Right",
+                                    "description": "Right Arc"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 2",
+                    "description": null
+                },
+                {
+                    "name": "Planetfall",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-dark-hunter": {
+            "name": "Dark-Hunter-Klasse-Zerstörer",
+            "type": "SC",
+            "notes": "Kann 4 Infanterieeinheiten transportieren. Diese dürfen das Spielfeld nur durch Teleportieren betreten. Zusätzlich dürfen 5 Corvus-Blackstar-Landungsschiffe und 3 Thunderhawk-Transporter samt den von ihnen transportierten Einheiten mitgeführt werden.",
+            "weapons": [
+                {
+                    "name": "Orbitalbombardement",
+                    "modes": [
+                        {
+                            "firepower": "1BP, MW"
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-vulture": {
+            "name": "Vulture",
+            "type": "AV",
+            "speed": 35,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Höllenschlagraketen",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AT2+",
+                            "range": 120,
+                            "specialRules": [
+                                {
+                                    "name": "SS",
+                                    "description": "Einzelschuss"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Zwillings-Maschinenkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT5+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                }
+            ]
+        },
+        "dw-vendetta": {
+            "name": "Vendetta",
+            "type": "AV",
+            "speed": 35,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann zwei Infanterieeinheiten oder einen Abwurf-Sentinel transportieren. Ogryns können nicht transportiert werden.",
+            "weapons": [
+                {
+                    "name": "Verdammnissturm-Rakete",
+                    "modes": [
+                        {
+                            "firepower": "AT2+",
+                            "range": 120,
+                            "specialRules": [
+                                {
+                                    "name": "SS",
+                                    "description": "Einzelschuss"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-pdf-infanterie": {
+            "name": "Infanterie der Planetaren Verteidigungsstreitkräfte",
+            "type": "INF",
+            "speed": 15,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Jede zweite Einheit (aufgerundet) ist mit einem Schweren Maschinengewehr bewaffnet.",
+            "weapons": [
+                {
+                    "name": "Schwerer Maschinengewehr",
+                    "modes": [
+                        {
+                            "firepower": "AP6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Automatikgewehre",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-flakteam": {
+            "name": "Flakteam",
+            "type": "INF",
+            "speed": 15,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Laserkanonenbatterie",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AT3+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-thudd": {
+            "name": "Thudd-Geschütz",
+            "type": "INF",
+            "speed": 10,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Thudd Geschütz",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT6+",
+                            "range": 45,
+                            "specialRules": [
+                                {
+                                    "name": "Ind",
+                                    "description": "Indirektes Feuer (Indirekt)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "dw-gepanzerter-sentinel": {
+            "name": "Gepanzerter Sentinel",
+            "type": "LV",
+            "speed": 15,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Maschinenkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                }
+            ]
+        },
+        "dw-lord-russ": {
+            "name": "Leman Russ Kampfpanzer",
+            "type": "AV",
+            "speed": 20,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Kampfgeschütz",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT4+",
+                            "range": 75,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Laserkanone",
+                    "modes": [
+                        {
+                            "firepower": "AT5+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "dw-lord-russ-thunderer": {
+            "name": "Leman Russ Thunderer",
+            "type": "AV",
+            "speed": 20,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Belagerungskanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                }
+            ]
+        },
+        "dw-landtransporter": {
+            "name": "Landtransporter",
+            "type": "LV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 6,
+            "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+            "weapons": [
+                {
+                    "name": "Schwerer Maschinengewehr",
+                    "modes": [
+                        {
+                            "firepower": "AP6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "dw-land-raider": {
+            "name": "Deathwatch-Land Raider",
+            "type": "AV",
+            "speed": 25,
+            "armour": 4,
+            "cc": 5,
+            "ff": 5,
+            "notes": "Kann 3 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Terminatoren zählen jeweils als 1,5 Einheiten (aufgerundet). Zählt beim Transport selbst als Land Raider.",
+            "weapons": [
+                {
+                    "name": "Zwillings-Dragonfire-Schwere Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Hurrikanbolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Heckpanzerung",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren-Peilsender",
+                    "description": [
+                        "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
+                        "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
+                        "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
+                    ]
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        }
     }
-  ],
-  "units": {
-    "dw-oraxenos-grossinquisitor": {
-      "name": "Ordo-Xenos-Großinquisitor",
-      "type": "INF",
-      "speed": 15,
-      "armour": 3,
-      "cc": 3,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Frag Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dw-oraxenos-inquisitor": {
-      "name": "Ordo-Xenos-Inquisitor",
-      "type": "INF",
-      "speed": 15,
-      "armour": 3,
-      "cc": 3,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Frag Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Befehlshaber",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dw-oraxenos-akolythen": {
-      "name": "Akolythen des Ordo Xenos",
-      "type": "INF",
-      "speed": 15,
-      "armour": 5,
-      "cc": 5,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Plasmageschütze",
-          "modes": [
-            {
-              "firepower": "AP5+/AT5+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-oraxenos-arbitrator": {
-      "name": "Arbitratoren",
-      "type": "INF",
-      "speed": 15,
-      "armour": 5,
-      "cc": 5,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Granate Werfer",
-          "modes": [
-            {
-              "firepower": "AP6+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Energiekeulen & Unterdrückungs Schilde",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-oraxenos-arbites": {
-      "name": "Arbites-Repressor",
-      "type": "AV",
-      "speed": 25,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten ohne Beritten oder Sprungmodule transportieren.",
-      "weapons": [
-        {
-          "name": "Zwillings-Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-befehlshaber": {
-      "name": "Deathwatch-Befehlshaber",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dw-sergeant": {
-      "name": "Deathwatch-Sergeant",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "n/a",
-          "modes": [
-            {
-              "firepower": "n/a",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Befehlshaber",
-          "description": null
-        }
-      ]
-    },
-    "dw-ordenspriester": {
-      "name": "Ordenspriester",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        }
-      ]
-    },
-    "dw-scriptor": {
-      "name": "Scriptor",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "Schmetterschlag",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        }
-      ]
-    },
-    "dw-taktische-trupps": {
-      "name": "Deathwatch-Taktische-Trupps",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Dragonfire-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-sturmtrupps": {
-      "name": "Deathwatch-Sturmtrupps",
-      "type": "INF",
-      "speed": 30,
-      "armour": 4,
-      "cc": 4,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Boltpistolen",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Energie-Waffen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Sprungmodule",
-          "description": null
-        }
-      ]
-    },
-    "dw-schwarze-schilde": {
-      "name": "Deathwatch-Schwarze-Schilde",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Bolter",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwere Donnerhämmer",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-devastortrupps": {
-      "name": "Deathwatch-Devastortrupps",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 5,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Dragonfire-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Frag Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-terminatoren": {
-      "name": "Deathwatch-Terminatoren",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 3,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Sturmkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Frag Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Energie-Waffen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Heckpanzerung",
-          "description": null
-        }
-      ]
-    },
-    "dw-cybot": {
-      "name": "Deathwatch-Cybot",
-      "type": "AV",
-      "speed": 15,
-      "armour": 3,
-      "cc": 3,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Energiefaust",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Frag Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "dw-trike": {
-      "name": "Deathwatch-Trike",
-      "type": "LV",
-      "speed": 35,
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Dragonfire-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Teleportieren-Peilsender",
-          "description": [
-            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
-            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
-            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
-          ]
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dw-land-speeder-tornado": {
-      "name": "Deathwatch-Land-Speeder-Tornado",
-      "type": "LV",
-      "speed": 35,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Sturmkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Dragonfire-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Teleportieren-Peilsender",
-          "description": [
-            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
-            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
-            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
-          ]
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "dw-Land Raider": {
-      "name": "Deathwatch-Land Raider",
-      "type": "AV",
-      "speed": 25,
-      "armour": 4,
-      "cc": 5,
-      "ff": 5,
-      "notes": "Kann 3 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Terminatoren zählen jeweils als 1,5 Einheiten (aufgerundet). Zählt beim Transport selbst als Land Raider.",
-      "weapons": [
-        {
-          "name": "Zwillings-Dragonfire-Schwere Bolter",
-          "modes": [
-            {
-              "firepower": "AP4+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Hurrikanbolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Heckpanzerung",
-          "description": null
-        },
-        {
-          "name": "Teleportieren-Peilsender",
-          "description": [
-            "Einheiten, die sich innerhalb von 15 cm zu einer befreundeten, nicht aufgeriebenen Einheit mit Teleportieren-Peilsender teleportieren (ausser teleportierende Verbände), dürfen beim Test auf eine Teleportieren-Fehlfunktion gewürfelte Einsen wiederholen.",
-            "Zusätzlich dürfen Verbände, die ausschliesslich aus Modellen mit Teleportieren bestehen, in einem gekauften Raumschiff aufgestellt werden. Von dort können sie entweder normal teleportieren oder ihren Teleportieren mit der Aktivierung des Raumschiffs koordinieren.",
-            "Mit der Aktivierung eines Raumschiffs koordinierte Teleportierens finden statt, nachdem das Orbitale Sperrfeuer, Punktziel-Angriffe und alle Ereignisse im Zusammenhang mit der Planetaren Landung von Verbänden abgehandelt wurden. Alle diese Teleportierens gelten als gleichzeitig und nicht nacheinander. Der gesamte Verband muss innerhalb von 15 cm zu einer Einheit mit der Sonderregel Teleportieren-Peilsender aufgestellt werden. Ist er dazu nicht in der Lage oder nicht bereit, muss er warten und in einer späteren Runde normal teleportieren."
-          ]
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-corvus": {
-      "name": "Corvus-Blackstar-Landungsschiff",
-      "type": "AC/WE",
-      "speed": "Jagdbomber (FB)",
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann 3 Infanterieeinheiten oder Trikes transportieren. Terminatoren zählen jeweils als 1,5 Einheiten (aufgerundet). Zusätzlich kann 1 Cybot oder Land Speeder mitgeführt werden.",
-      "weapons": [
-        {
-          "name": "AC Zwillings-Sturmkanone",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+/AA5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC-Blackstar-Raketen",
-          "modes": [
-            {
-              "firepower": "1BP",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "D",
-                  "description": "Versprengen"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hammerschlagwerfer",
-          "modes": [
-            {
-              "firepower": "2x AP4+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 2",
-          "description": null
-        },
-        {
-          "name": "Planetfall",
-          "description": null
-        },
-        {
-          "name": "Schwingen des Himmelsengels",
-          "description": [
-            "Alle Deathwatch-Kontingente müssen das Spiel in Reserve beginnen und entweder in einem Dark-Hunter-Klasse-Zerstörer, einem Corvus-Blackstar-Landungsschiff oder einem Deathwatch-Thunderhawk-Transporter eingeschifft sein.",
-            "Gegen Corvus-Blackstar-Landungsschiffe erleiden alle Flugabwehrschüsse zusätzlich einen Trefferwurfmodifikator von -1."
-          ]
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-thunderhawk": {
-      "name": "Deathwatch-Thunderhawk-Transporter",
-      "type": "AC/WE",
-      "speed": "Bomber (B)",
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann bis zu 2 der folgenden Einheiten transportieren: Stalkers, Hunters, Predators, Razorbacks, Rhinos und Vindicators. Land Raiders zählen jeweils als 2 Einheiten. Außerdem dürfen darin transportierte Infanterieeinheiten mitgeführt werden; sie gelten beim Aussteigen als innerhalb dieser Fahrzeuge befindlich.",
-      "crit": "Thunderhawk-Transporter und alle transportierten Einheiten werden zerstört.",
-      "weapons": [
-        {
-          "name": "AC-Zwillings-Dragonfire-Schwere Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+/AT5+/AA5+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "Left",
-                  "description": "Left Arc"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC-Zwillings-Dragonfire-Schwere Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+/AT5+/AA5+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "Right",
-                  "description": "Right Arc"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 2",
-          "description": null
-        },
-        {
-          "name": "Planetfall",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-dark-hunter": {
-      "name": "Dark-Hunter-Klasse-Zerstörer",
-      "type": "SC",
-      "notes": "Kann 4 Infanterieeinheiten transportieren. Diese dürfen das Spielfeld nur durch Teleportieren betreten. Zusätzlich dürfen 5 Corvus-Blackstar-Landungsschiffe und 3 Thunderhawk-Transporter samt den von ihnen transportierten Einheiten mitgeführt werden.",
-      "weapons": [
-        {
-          "name": "Orbitalbombardement",
-          "modes": [
-            {
-              "firepower": "1BP, MW"
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-vulture": {
-      "name": "Vulture",
-      "type": "AV",
-      "speed": 35,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Höllenschlagraketen",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT2+",
-              "range": 120,
-              "specialRules": [
-                {
-                  "name": "SS",
-                  "description": "Einzelschuss"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP4+/AT5+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Aufklärer",
-          "description": null
-        }
-      ]
-    },
-    "dw-vendetta": {
-      "name": "Vendetta",
-      "type": "AV",
-      "speed": 35,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten oder einen Abwurf-Sentinel transportieren. Ogryns können nicht transportiert werden.",
-      "weapons": [
-        {
-          "name": "Verdammnissturm-Rakete",
-          "modes": [
-            {
-              "firepower": "AT2+",
-              "range": 120,
-              "specialRules": [
-                {
-                  "name": "SS",
-                  "description": "Einzelschuss"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "dw-pdf-infanterie": {
-      "name": "Infanterie der Planetaren Verteidigungsstreitkräfte",
-      "type": "INF",
-      "speed": 15,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Jede zweite Einheit (aufgerundet) ist mit einem Schweren Maschinengewehr bewaffnet.",
-      "weapons": [
-        {
-          "name": "Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Automatikgewehre",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-flakteam": {
-      "name": "Flakteam",
-      "type": "INF",
-      "speed": 15,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Laserkanonenbatterie",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT3+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-thudd": {
-      "name": "Thudd-Geschütz",
-      "type": "INF",
-      "speed": 10,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Thudd Geschütz",
-          "modes": [
-            {
-              "firepower": "AP4+/AT6+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "dw-gepanzerter-sentinel": {
-      "name": "Gepanzerter Sentinel",
-      "type": "LV",
-      "speed": 15,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "dw-lord-russ": {
-      "name": "Leman Russ Kampfpanzer",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 6,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Kampfgeschütz",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+",
-              "range": 75,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "dw-lord-russ-thunderer": {
-      "name": "Leman Russ Thunderer",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 6,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Belagerungskanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        }
-      ]
-    },
-    "dw-landtransporter": {
-      "name": "Landtransporter",
-      "type": "LV",
-      "speed": 30,
-      "armour": 5,
-      "cc": 6,
-      "ff": 6,
-      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
-      "weapons": [
-        {
-          "name": "Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    }
-  }
 }

@@ -224,7 +224,8 @@
                 "aq-repentance",
                 "aq-dominus",
                 "aq-stormlord"
-            ]
+            ],
+            "description": "Pro Adepta-Sororitas-Kernformation dürfen zwei Adepta-Sororitas-Unterstützungsformationen gewählt werden."
         },
         {
             "id": "orco",
@@ -233,7 +234,8 @@
                 "aq-vulture",
                 "aq-redemption",
                 "aq-infernus"
-            ]
+            ],
+            "description": "Pro Adepta-Sororitas-Kernformation darf eine Ordo-Hereticus-Verband gewählt werden."
         },
         {
             "id": "fleet",
@@ -242,7 +244,8 @@
                 "aq-blitzschlag",
                 "aq-marauder",
                 "aq-lunar-kreuzer"
-            ]
+            ],
+            "description": "Bis zu ein Drittel der verfügbaren Punkte darf für Verbände der Imperial Flotte ausgegeben werden."
         }
     ],
     "formations": [
@@ -264,6 +267,7 @@
                 }
             ],
             "upgrades": [
+                "aq-upgrade-exorzist-prioris",
                 "aq-upgrade-orco-hereticus",
                 "aq-upgrade-hunter",
                 "aq-upgrade-transport"
@@ -368,6 +372,10 @@
             ],
             "units": [
                 {
+                    "unit": "aq-paladine",
+                    "count": 1
+                },
+                {
                     "unit": "aq-retributor-schwestern",
                     "count": 4
                 },
@@ -377,7 +385,7 @@
                 }
             ],
             "upgrades": [
-                "aq-upgrade-transport"
+                "aq-upgrade-repressor"
             ]
         },
         {
@@ -420,7 +428,9 @@
                     "count": 2
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "aq-upgrade-repressor"
+            ]
         },
         {
             "id": "aq-stormlord",
@@ -473,7 +483,9 @@
                     "count": 4
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "aq-upgrade-redemption-laeuterer"
+            ]
         },
         {
             "id": "aq-infernus",
@@ -544,7 +556,7 @@
             "name": "Ordo Hereticus Superior (0–1 pro Armee)",
             "variants": [
                 {
-                    "id": "1",
+                    "id": "prinzipalin",
                     "label": "Ersetze einen Palatine durch eine Prinzipalin",
                     "pts": 50,
                     "effects": [
@@ -552,6 +564,19 @@
                             "op": "replace",
                             "from": "aq-paladine",
                             "to": "aq-prinzipalin",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "grossinquisitor",
+                    "label": "Ersetze den Ordo-Hereticus-Inquisitor durch einen Ordo-Hereticus-Großinquisitor",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-orco-inquisitor",
+                            "to": "aq-orco-grossinquisitor",
                             "count": 1
                         }
                     ]
@@ -662,12 +687,24 @@
                 {
                     "id": "1",
                     "label": "Füge 1 Höllenhund hinzu",
-                    "pts": 50,
+                    "pts": 25,
                     "effects": [
                         {
                             "op": "add",
                             "unit": "aq-hoellenhund",
                             "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Höllenhunde hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "aq-hoellenhund",
+                            "count": 2
                         }
                     ]
                 }
@@ -729,10 +766,139 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "aq-upgrade-exorzist-prioris",
+            "name": "Exorzist-Prioris",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze zwei Einheiten Sororitas-Kampfschwestern durch zwei Exorzist-Prioris",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-sororitas-schwestern",
+                            "to": "aq-prioris",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-repressor",
+            "name": "Sororitas-Repressor",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze zwei Sororitas-Rhinos durch zwei Sororitas-Repressors",
+                    "pts": 20,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "aq-sororitas-rhino",
+                            "to": "aq-sororitas-repressor",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "aq-upgrade-redemption-laeuterer",
+            "name": "Arco-Flagellanten oder Läuterer",
+            "variants": [
+                {
+                    "id": "arco",
+                    "label": "Ersetze vier Ordo-Hereticus-Landtransporter und vier Redemptionisten durch sechs Arco-Flagellanten",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "remove",
+                            "unit": "aq-orco-landtransporter",
+                            "count": 4
+                        },
+                        {
+                            "op": "replace",
+                            "from": "aq-redemptionisten",
+                            "to": "aq-arco-flagellanten",
+                            "count": 4,
+                            "toCount": 6
+                        }
+                    ]
+                },
+                {
+                    "id": "laeuterer",
+                    "label": "Ersetze vier Ordo-Hereticus-Landtransporter und vier Redemptionisten durch vier Läuterer",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "remove",
+                            "unit": "aq-orco-landtransporter",
+                            "count": 4
+                        },
+                        {
+                            "op": "replace",
+                            "from": "aq-redemptionisten",
+                            "to": "aq-laeuterer",
+                            "count": 4,
+                            "toCount": 4
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "transport": [],
-    "formationConstraints": [],
+    "formationConstraints": [
+        {
+            "id": "inquisitor-gefolge-once",
+            "from": [
+                "aq-orco-inquisitor-gefolge"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "support-per-core",
+            "from": [
+                "tag:support"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 2
+        },
+        {
+            "id": "ordo-per-core",
+            "from": [
+                "tag:orco"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "fleet-share",
+            "from": [
+                "tag:fleet"
+            ],
+            "maxShare": [
+                1,
+                3
+            ]
+        },
+        {
+            "id": "orbital-once",
+            "from": [
+                "aq-lunar-kreuzer"
+            ],
+            "max": 1,
+            "perArmy": true
+        }
+    ],
     "upgradeConstraints": [
         {
             "id": "once-per-formation",
@@ -742,6 +908,22 @@
             "max": 1,
             "perUpgrade": true,
             "perFormation": true
+        },
+        {
+            "id": "orco-superior-once",
+            "from": [
+                "aq-upgrade-orco-hereticus"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "lebende-heilige-once",
+            "from": [
+                "aq-upgrade-lebende-heilige"
+            ],
+            "max": 1,
+            "perArmy": true
         }
     ]
 }

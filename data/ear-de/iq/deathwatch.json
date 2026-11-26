@@ -16,7 +16,10 @@
         {
             "formations": [
                 "dw-oraxenos-task-force",
-                "dw-planetarer-verdichtungszug"
+                "dw-oraxenos-akolythen",
+                "dw-planetarer-verdichtungszug",
+                "dw-leman-russ-staffel",
+                "dw-gepanzerte-sentinel-staffel"
             ],
             "value": "2+"
         },
@@ -113,11 +116,6 @@
             "from": "SM.json",
             "type": "LV"
         },
-        "dw-Land Raider": {
-            "name": "Deathwatch-Land Raider",
-            "from": "SM.json",
-            "type": "AV"
-        },
         "dw-corvus": {
             "name": "Corvus-Blackstar-Landungsschiff",
             "from": "SM.json",
@@ -177,6 +175,11 @@
             "name": "Landtransporter",
             "from": "IG.json",
             "type": "LV"
+        },
+        "dw-land-raider": {
+            "name": "Deathwatch-Land Raider",
+            "from": "SM.json",
+            "type": "AV"
         }
     },
     "sections": [
@@ -200,8 +203,8 @@
         },
         {
             "id": "orxenos",
-            "name": "Ordu-Xenos-Verbände",
-            "description": "Pro Deathwatch-Kernformation darf eine Ordu-Xenos-Verband gewählt werden.",
+            "name": "Ordo-Xenos-Verbände",
+            "description": "Pro Deathwatch-Kernformation darf eine Ordo-Xenos-Verband gewählt werden.",
             "formations": [
                 "dw-oraxenos-task-force",
                 "dw-oraxenos-akolythen",
@@ -249,6 +252,8 @@
                 }
             ],
             "upgrades": [
+                "dw-upgrade-kill-team-trupps",
+                "dw-upgrade-oberbefehlshaber",
                 "dw-upgrade-specialists",
                 "dw-upgrade-support"
             ]
@@ -275,6 +280,7 @@
                 }
             ],
             "upgrades": [
+                "dw-upgrade-oberbefehlshaber",
                 "dw-upgrade-specialists"
             ]
         },
@@ -296,6 +302,8 @@
                 }
             ],
             "upgrades": [
+                "dw-upgrade-tornado",
+                "dw-upgrade-oberbefehlshaber",
                 "dw-upgrade-specialists"
             ]
         },
@@ -317,6 +325,7 @@
                 }
             ],
             "upgrades": [
+                "dw-upgrade-oberbefehlshaber",
                 "dw-upgrade-specialists",
                 "dw-upgrade-support"
             ]
@@ -358,6 +367,7 @@
                 }
             ],
             "upgrades": [
+                "dw-upgrade-oberbefehlshaber",
                 "dw-upgrade-thunderer"
             ]
         },
@@ -412,7 +422,10 @@
             ],
             "units": [
                 {
-                    "unit": "dw-lord-russ",
+                    "oneOf": [
+                        "dw-lord-russ",
+                        "dw-lord-russ-thunderer"
+                    ],
                     "count": 4
                 }
             ],
@@ -500,13 +513,25 @@
             "name": "Deathwatch-Unterstützung",
             "variants": [
                 {
-                    "id": "1",
+                    "id": "cybot",
                     "label": "Füge 1 Deathwatch-Cybot hinzu",
                     "pts": 50,
                     "effects": [
                         {
                             "op": "add",
                             "unit": "dw-cybot",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "land-raider",
+                    "label": "Füge 1 Deathwatch-Land Raider hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dw-land-raider",
                             "count": 1
                         }
                     ]
@@ -537,7 +562,19 @@
             "variants": [
                 {
                     "id": "1",
-                    "label": "Füge bis zu 2 Vultures hinzu",
+                    "label": "Füge 1 Vulture hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dw-vulture",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Vultures hinzu",
                     "pts": 100,
                     "effects": [
                         {
@@ -551,18 +588,121 @@
         },
         {
             "id": "dw-upgrade-thudd",
-            "name": "Thudd-Geschütz",
+            "name": "Thudd-Geschütze oder Flakteams",
             "variants": [
                 {
-                    "id": "1",
-                    "label": "Ersetze bis zu 3 Landtransporter durch Thudd-Geschütze",
+                    "id": "thudd",
+                    "label": "Ersetze vier Kultisten-Landtransporter durch drei Thudd-Geschütze",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "remove",
+                            "unit": "dw-landtransporter",
+                            "count": 4
+                        },
+                        {
+                            "op": "add",
+                            "unit": "dw-thudd",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "flak",
+                    "label": "Ersetze vier Kultisten-Landtransporter durch drei Flakteams",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "remove",
+                            "unit": "dw-landtransporter",
+                            "count": 4
+                        },
+                        {
+                            "op": "add",
+                            "unit": "dw-flakteam",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dw-upgrade-oberbefehlshaber",
+            "name": "0–1 Oberbefehlshaber",
+            "variants": [
+                {
+                    "id": "inquisitor-lord",
+                    "label": "Ersetze einen Inquisitor des Ordo Xenos durch einen Inquisitor-Lord des Ordo Xenos",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dw-oraxenos-inquisitor",
+                            "to": "dw-oraxenos-grossinquisitor",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "watch-befehlshaber",
+                    "label": "Ersetze einen Deathwatch-Sergeant durch einen Deathwatch-Befehlshaber",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dw-sergeant",
+                            "to": "dw-befehlshaber",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dw-upgrade-kill-team-trupps",
+            "name": "Schwarze Schilde oder Devastortrupps",
+            "variants": [
+                {
+                    "id": "schwarze-schilde",
+                    "label": "Ersetze drei Deathwatch-Taktische-Trupps durch drei Deathwatch-Schwarze-Schilde",
                     "pts": 25,
                     "effects": [
                         {
                             "op": "replace",
-                            "from": "dw-landtransporter",
-                            "to": "dw-thudd",
+                            "from": "dw-taktische-trupps",
+                            "to": "dw-schwarze-schilde",
                             "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "devastortrupps",
+                    "label": "Ersetze drei Deathwatch-Taktische-Trupps durch drei Deathwatch-Devastortrupps",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dw-taktische-trupps",
+                            "to": "dw-devastortrupps",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dw-upgrade-tornado",
+            "name": "Deathwatch-Land-Speeder-Tornado",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Deathwatch-Land-Speeder-Tornado hinzu",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dw-land-speeder-tornado",
+                            "count": 1
                         }
                     ]
                 }
@@ -570,7 +710,52 @@
         }
     ],
     "transport": [],
-    "formationConstraints": [],
+    "formationConstraints": [
+        {
+            "id": "officio-once",
+            "from": [
+                "dw-officio-assassinorum"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "dark-hunter-once",
+            "from": [
+                "dw-dark-hunter"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "task-force-once",
+            "from": [
+                "dw-oraxenos-task-force"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "support-per-core",
+            "from": [
+                "tag:support"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "fleet-share",
+            "from": [
+                "tag:fleet"
+            ],
+            "maxShare": [
+                1,
+                3
+            ]
+        }
+    ],
     "upgradeConstraints": [
         {
             "id": "once-per-formation",
@@ -580,6 +765,14 @@
             "max": 1,
             "perUpgrade": true,
             "perFormation": true
+        },
+        {
+            "id": "oberbefehlshaber-once",
+            "from": [
+                "dw-upgrade-oberbefehlshaber"
+            ],
+            "max": 1,
+            "perArmy": true
         }
     ]
 }
