@@ -1,444 +1,1082 @@
 {
-  "schema": 0,
-  "ruleset": "ear-de",
-  "lang": "de",
-  "id": "ear-de/nid/dagon",
-  "name": "Schwarmflotte Dagon",
-  "faction": "Tyraniden",
-  "version": "1.0.beta-4",
-  "source": {
-    "file": "lists_de/NID/dagon.json",
+    "schema": 0,
+    "ruleset": "ear-de",
+    "lang": "de",
+    "id": "ear-de/nid/dagon",
+    "name": "Schwarmflotte Dagon",
+    "faction": "Tyraniden",
     "version": "1.0.beta-4",
-    "commit": null
-  },
-  "strategy": 1,
-  "initiative": [
-    {
-      "formations": [
-        "dag-nexus-swarm"
-      ],
-      "value": "1+"
+    "source": {
+        "file": "lists_de/NID/dagon.json",
+        "version": "1.0.beta-4",
+        "commit": null
     },
-    {
-      "formations": [
-        "*"
-      ],
-      "value": "2+"
-    }
-  ],
-  "units": {
-    "dag-dagon-dominatrix": {
-      "name": "Dagon-Dominatrix",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-schwarmtyrant": {
-      "name": "Schwarmtyrant",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-schwarmtyrant-shrike": {
-      "name": "Schwarmtyrant-Shrike",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-schwarmherrscher": {
-      "name": "Schwarmherrscher",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-schwarmherrscher-shrike": {
-      "name": "Schwarmherrscher-Shrike",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-dagon-oberherrscher": {
-      "name": "Dagon-Oberherrscher",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-dagon-oberherrscher-shrike": {
-      "name": "Dagon-Oberherrscher-Shrike",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-symbionten": {
-      "name": "Symbionten",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-liktor": {
-      "name": "Liktor",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-tyranidenkrieger": {
-      "name": "Tyranidenkrieger",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-tyranidenkrieger-shrike": {
-      "name": "Tyranidenkrieger-Shrikes",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-zoantroph": {
-      "name": "Zoantroph",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-alpha-venatoren": {
-      "name": "Alpha-Venatoren",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-venatoren": {
-      "name": "Venatoren",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-termaganten": {
-      "name": "Termaganten",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-stachelganten": {
-      "name": "Stachelganten",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-hornaganten": {
-      "name": "Hormaganten",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-gargoyles": {
-      "name": "Gargoyles",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-biovore": {
-      "name": "Biovore",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-harpyieie": {
-      "name": "Harpyieie",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-schwarmdrude": {
-      "name": "Schwarmdrude",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-dactylis": {
-      "name": "Dactylis",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-exocrine": {
-      "name": "Exocrine",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-haruspex": {
-      "name": "Haruspex",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-malefaktor": {
-      "name": "Malefaktor",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-stachel-carnifex": {
-      "name": "Stachel-Carnifex",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-kreischer-killer-carnifex": {
-      "name": "Kreischer-Killer-Carnifex",
-      "from": "NIDS.json",
-      "type": "AV"
-    },
-    "dag-schwarmwachen": {
-      "name": "Schwarmwachen",
-      "from": "NIDS.json",
-      "type": "INF"
-    },
-    "dag-tervigon": {
-      "name": "Tervigon",
-      "from": "NIDS.json",
-      "type": "H-AV"
-    },
-    "dag-tyrannofex": {
-      "name": "Tyrannofex",
-      "from": "NIDS.json",
-      "type": "H-AV"
-    },
-    "dag-viragon": {
-      "name": "Viragon",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-trygon-alpha": {
-      "name": "Trygon-Alpha",
-      "from": "NIDS.json",
-      "type": "H-AV"
-    },
-    "dag-trygon": {
-      "name": "Trygon",
-      "from": "NIDS.json",
-      "type": "H-AV"
-    },
-    "dag-harridan": {
-      "name": "Harridan",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-schwarm-harridan": {
-      "name": "Schwarm-Harridan",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-stachel-hierodule-alpha": {
-      "name": "Stachel-Hierodule-Alpha",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-stachel-hierodule": {
-      "name": "Stachel-Hierodule",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-sensen-hierodule-alpha": {
-      "name": "Sensen-Hierodule-Alpha",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-sensen-hierodule": {
-      "name": "Sensen-Hierodule",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-schwarmnest": {
-      "name": "Schwarmnest",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-bru": {
-      "name": "Brutnest",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-hydra-dominatrix": {
-      "name": "Hydra-Dominatrix",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-hierophant": {
-      "name": "Hierophant",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-hydraphant": {
-      "name": "Hydraphant",
-      "from": "NIDS.json",
-      "type": "WE"
-    },
-    "dag-dimachaeron": {
-      "name": "Dimachaeron",
-      "from": "NIDS.json",
-      "type": "LV"
-    },
-    "dag-landungsspore": {
-      "name": "Landungsspore",
-      "from": "nidsNavy.json",
-      "type": "Special"
-    },
-    "dag-razorfiend": {
-      "name": "Razorfiend",
-      "from": "nidsNavy.json",
-      "type": "SC"
-    },
-    "dag-schwarm-schiff": {
-      "name": "Schwarm-Schiff",
-      "from": "nidsNavy.json",
-      "type": "SC"
-    }
-  },
-  "sections": [
-    {
-      "id": "core",
-      "name": "Primäre Synapsenschwärme",
-      "formations": [
-        "dag-nexus-swarm",
-        "dag-tyrannenschwarm",
-        "dag-sturmschwarm",
-        "dag-symbiontenschwarm",
-        "dag-liktor-schwarm"
-      ]
-    },
-    {
-      "id": "elite",
-      "name": "Sekundäre und seltene Schwärme",
-      "formations": [
-        "dag-biotitan",
-        "dag-biovessel"
-      ]
-    }
-  ],
-  "formations": [
-    {
-      "id": "dag-nexus-swarm",
-      "name": "0–1 Nexus Swarm",
-      "pts": 400,
-      "tags": [
-        "core"
-      ],
-      "units": [
+    "strategy": 1,
+    "initiative": [
         {
-          "unit": "dag-dagon-dominatrix",
-          "count": 1
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-tyrannenschwarm",
-      "name": "Tyrannenschwarm",
-      "pts": 125,
-      "tags": [
-        "core"
-      ],
-      "units": [
-        {
-          "unit": "dag-schwarmtyrant",
-          "count": 1
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-sturmschwarm",
-      "name": "Sturmschwarm",
-      "pts": 100,
-      "tags": [
-        "core"
-      ],
-      "units": [
-        {
-          "unit": "dag-tyranidenkrieger",
-          "count": 2
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-symbiontenschwarm",
-      "name": "Symbiontenschwarm",
-      "pts": 175,
-      "tags": [
-        "core"
-      ],
-      "units": [
-        {
-          "unit": "dag-symbionten",
-          "count": 6
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-liktor-schwarm",
-      "name": "Liktor-Schwarm",
-      "pts": 225,
-      "tags": [
-        "core"
-      ],
-      "units": [
-        {
-          "unit": "dag-liktor",
-          "count": 4
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-biotitan",
-      "name": "Biotitan",
-      "pts": 325,
-      "tags": [
-        "elite"
-      ],
-      "units": [
-        {
-          "unit": "dag-hierophant",
-          "count": 1
-        }
-      ],
-      "upgrades": []
-    },
-    {
-      "id": "dag-biovessel",
-      "name": "Bio-Vessel",
-      "pts": 150,
-      "tags": [
-        "elite"
-      ],
-      "units": [
-        {
-          "unit": "dag-razorfiend",
-          "count": 1
-        }
-      ],
-      "upgrades": []
-    }
-  ],
-  "upgrades": [
-    {
-      "id": "dag-upgrade-instinktive",
-      "name": "Instinktive Schwärme",
-      "variants": [
-        {
-          "id": "1",
-          "label": "Füge fünf Termaganten hinzu",
-          "pts": 75,
-          "effects": [
-            {
-              "op": "add",
-              "unit": "dag-termaganten",
-              "count": 5
-            }
-          ]
+            "formations": [
+                "dag-nexus-swarm"
+            ],
+            "value": "1+"
         },
         {
-          "id": "2",
-          "label": "Füge vier Biovore hinzu",
-          "pts": 75,
-          "effects": [
-            {
-              "op": "add",
-              "unit": "dag-biovore",
-              "count": 4
-            }
-          ]
+            "formations": [
+                "*"
+            ],
+            "value": "2+"
         }
-      ]
-    }
-  ],
-  "transport": [],
-  "formationConstraints": [],
-  "upgradeConstraints": [
-    {
-      "id": "once-per-formation",
-      "from": [
-        "*"
-      ],
-      "max": 1,
-      "perUpgrade": true,
-      "perFormation": true
-    }
-  ]
+    ],
+    "units": {
+        "dag-dagon-dominatrix": {
+            "name": "Dagon-Dominatrix",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-schwarmtyrant": {
+            "name": "Schwarmtyrant",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-schwarmtyrant-shrike": {
+            "name": "Schwarmtyrant-Shrike",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-schwarmherrscher": {
+            "name": "Schwarmherrscher",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-schwarmherrscher-shrike": {
+            "name": "Schwarmherrscher-Shrike",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-dagon-oberherrscher": {
+            "name": "Dagon-Oberherrscher",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-dagon-oberherrscher-shrike": {
+            "name": "Dagon-Oberherrscher-Shrike",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-symbionten": {
+            "name": "Symbionten",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-liktor": {
+            "name": "Liktor",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-tyranidenkrieger": {
+            "name": "Tyranidenkrieger",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-tyranidenkrieger-shrike": {
+            "name": "Tyranidenkrieger-Shrikes",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-zoantroph": {
+            "name": "Zoantroph",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-alpha-venatoren": {
+            "name": "Alpha-Venatoren",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-venatoren": {
+            "name": "Venatoren",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-termaganten": {
+            "name": "Termaganten",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-stachelganten": {
+            "name": "Stachelganten",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-hornaganten": {
+            "name": "Hormaganten",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-gargoyles": {
+            "name": "Gargoyles",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-biovore": {
+            "name": "Biovore",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-harpyieie": {
+            "name": "Harpyieie",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-schwarmdrude": {
+            "name": "Schwarmdrude",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-dactylis": {
+            "name": "Dactylis",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-exocrine": {
+            "name": "Exocrine",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-haruspex": {
+            "name": "Haruspex",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-malefaktor": {
+            "name": "Malefaktor",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-stachel-carnifex": {
+            "name": "Stachel-Carnifex",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-kreischer-killer-carnifex": {
+            "name": "Kreischer-Killer-Carnifex",
+            "from": "NIDS.json",
+            "type": "AV"
+        },
+        "dag-schwarmwachen": {
+            "name": "Schwarmwachen",
+            "from": "NIDS.json",
+            "type": "INF"
+        },
+        "dag-tervigon": {
+            "name": "Tervigon",
+            "from": "NIDS.json",
+            "type": "H-AV"
+        },
+        "dag-tyrannofex": {
+            "name": "Tyrannofex",
+            "from": "NIDS.json",
+            "type": "H-AV"
+        },
+        "dag-viragon": {
+            "name": "Viragon",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-trygon-alpha": {
+            "name": "Trygon-Alpha",
+            "from": "NIDS.json",
+            "type": "H-AV"
+        },
+        "dag-trygon": {
+            "name": "Trygon",
+            "from": "NIDS.json",
+            "type": "H-AV"
+        },
+        "dag-harridan": {
+            "name": "Harridan",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-schwarm-harridan": {
+            "name": "Schwarm-Harridan",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-stachel-hierodule-alpha": {
+            "name": "Stachel-Hierodule-Alpha",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-stachel-hierodule": {
+            "name": "Stachel-Hierodule",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-sensen-hierodule-alpha": {
+            "name": "Sensen-Hierodule-Alpha",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-sensen-hierodule": {
+            "name": "Sensen-Hierodule",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-schwarmnest": {
+            "name": "Schwarmnest",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-bru": {
+            "name": "Brutnest",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-hydra-dominatrix": {
+            "name": "Hydra-Dominatrix",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-hierophant": {
+            "name": "Hierophant",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-hydraphant": {
+            "name": "Hydraphant",
+            "from": "NIDS.json",
+            "type": "WE"
+        },
+        "dag-dimachaeron": {
+            "name": "Dimachaeron",
+            "from": "NIDS.json",
+            "type": "LV"
+        },
+        "dag-landungsspore": {
+            "name": "Landungsspore",
+            "from": "nidsNavy.json",
+            "type": "Special"
+        },
+        "dag-razorfiend": {
+            "name": "Razorfiend",
+            "from": "nidsNavy.json",
+            "type": "SC"
+        },
+        "dag-schwarm-schiff": {
+            "name": "Schwarm-Schiff",
+            "from": "nidsNavy.json",
+            "type": "SC"
+        },
+        "dag-symbiarch": {
+            "name": "Symbiarch",
+            "from": "NIDS.json",
+            "type": "CH"
+        }
+    },
+    "sections": [
+        {
+            "id": "core",
+            "name": "Primäre Synapsenschwärme",
+            "formations": [
+                "dag-nexus-swarm",
+                "dag-tyrannenschwarm",
+                "dag-sturmschwarm"
+            ]
+        },
+        {
+            "id": "secondary",
+            "name": "Sekundäre Synapsenschwärme",
+            "description": "Pro Primärsynapsenschwarm darf bis zu ein Sekundärsynapsenschwarm gewählt werden.",
+            "formations": [
+                "dag-brutnestschwarm",
+                "dag-brecherschwarm",
+                "dag-befall-swarm",
+                "dag-stoerschwarm"
+            ]
+        },
+        {
+            "id": "independent",
+            "name": "Gewöhnliche unabhängige Schwärme",
+            "description": "Pro Primärsynapsenschwarm darf bis zu ein gewöhnlicher unabhängiger Schwarm gewählt werden. Diese Verbände dürfen höchstens ein Drittel der Armee ausmachen.",
+            "formations": [
+                "dag-symbiontenschwarm",
+                "dag-liktor-schwarm"
+            ]
+        },
+        {
+            "id": "rare",
+            "name": "Seltene unabhängige Schwärme",
+            "description": "Pro Primärsynapsenschwarm darf bis zu ein seltener unabhängiger Schwarm gewählt werden. Diese Verbände dürfen höchstens ein Drittel der Armee ausmachen.",
+            "formations": [
+                "dag-biotitan",
+                "dag-biovessel"
+            ]
+        }
+    ],
+    "formations": [
+        {
+            "id": "dag-nexus-swarm",
+            "name": "0–1 Nexus Swarm",
+            "pts": 400,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "dag-dagon-dominatrix",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-ganten",
+                "dag-upgrade-bio-unterstuetzung",
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-bio-flieger",
+                "dag-upgrade-carnifex",
+                "dag-upgrade-bio-artillerie",
+                "dag-upgrade-bio-angriff",
+                "dag-upgrade-breacher",
+                "dag-upgrade-graeber"
+            ]
+        },
+        {
+            "id": "dag-tyrannenschwarm",
+            "name": "Tyrannenschwarm",
+            "pts": 125,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "dag-schwarmtyrant",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-ganten",
+                "dag-upgrade-bio-unterstuetzung",
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-bio-flieger",
+                "dag-upgrade-carnifex",
+                "dag-upgrade-bio-artillerie",
+                "dag-upgrade-bio-angriff",
+                "dag-upgrade-breacher",
+                "dag-upgrade-graeber",
+                "dag-upgrade-tyrant-shrike",
+                "dag-upgrade-dagon-oberherrscher",
+                "dag-upgrade-landungsspore"
+            ]
+        },
+        {
+            "id": "dag-sturmschwarm",
+            "name": "Sturmschwarm",
+            "pts": 100,
+            "tags": [
+                "core"
+            ],
+            "units": [
+                {
+                    "unit": "dag-tyranidenkrieger",
+                    "count": 2
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-ganten",
+                "dag-upgrade-bio-unterstuetzung",
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-krieger-shrike",
+                "dag-upgrade-zoantroph",
+                "dag-upgrade-landungsspore"
+            ]
+        },
+        {
+            "id": "dag-brutnestschwarm",
+            "name": "Brutnestschwarm",
+            "pts": 150,
+            "tags": [
+                "secondary"
+            ],
+            "units": [
+                {
+                    "unit": "dag-schwarmnest",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-ganten",
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-bio-unterstuetzung",
+                "dag-upgrade-bio-artillerie"
+            ]
+        },
+        {
+            "id": "dag-brecherschwarm",
+            "name": "Brecherschwarm",
+            "pts": 125,
+            "tags": [
+                "secondary"
+            ],
+            "units": [
+                {
+                    "count": 1,
+                    "oneOf": [
+                        "dag-stachel-hierodule-alpha",
+                        "dag-sensen-hierodule-alpha"
+                    ]
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-ganten",
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-graeber",
+                "dag-upgrade-carnifex",
+                "dag-upgrade-bio-angriff"
+            ]
+        },
+        {
+            "id": "dag-befall-swarm",
+            "name": "Befall Swarm",
+            "pts": 150,
+            "tags": [
+                "secondary"
+            ],
+            "units": [
+                {
+                    "count": 1,
+                    "oneOf": [
+                        "dag-trygon-alpha",
+                        "dag-alpha-venatoren"
+                    ]
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-graeber"
+            ]
+        },
+        {
+            "id": "dag-stoerschwarm",
+            "name": "Störschwarm",
+            "pts": 175,
+            "tags": [
+                "secondary"
+            ],
+            "units": [
+                {
+                    "unit": "dag-harridan",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-gargoyles",
+                "dag-upgrade-bio-flieger",
+                "dag-upgrade-extra-harridan"
+            ]
+        },
+        {
+            "id": "dag-symbiontenschwarm",
+            "name": "Symbiontenschwarm",
+            "pts": 175,
+            "tags": [
+                "independent"
+            ],
+            "units": [
+                {
+                    "unit": "dag-symbiarch",
+                    "count": 1
+                },
+                {
+                    "unit": "dag-symbionten",
+                    "count": 6
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-symbionten"
+            ]
+        },
+        {
+            "id": "dag-liktor-schwarm",
+            "name": "Liktor-Schwarm",
+            "pts": 225,
+            "tags": [
+                "independent"
+            ],
+            "units": [
+                {
+                    "unit": "dag-liktor",
+                    "count": 4
+                }
+            ],
+            "upgrades": []
+        },
+        {
+            "id": "dag-biotitan",
+            "name": "Biotitan",
+            "pts": 325,
+            "tags": [
+                "rare"
+            ],
+            "units": [
+                {
+                    "unit": "dag-hierophant",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-hydraphant"
+            ]
+        },
+        {
+            "id": "dag-biovessel",
+            "name": "Bio-Vessel",
+            "pts": 150,
+            "tags": [
+                "rare"
+            ],
+            "units": [
+                {
+                    "unit": "dag-razorfiend",
+                    "count": 1
+                }
+            ],
+            "upgrades": [
+                "dag-upgrade-schwarm-schiff"
+            ]
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "dag-upgrade-ganten",
+            "name": "Ganten",
+            "variants": [
+                {
+                    "id": "termaganten",
+                    "label": "Füge 5 Termaganten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-termaganten",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "id": "stachelganten",
+                    "label": "Füge 5 Stachelganten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-stachelganten",
+                            "count": 5
+                        }
+                    ]
+                },
+                {
+                    "id": "hormaganten",
+                    "label": "Füge 5 Hormaganten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-hornaganten",
+                            "count": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-bio-unterstuetzung",
+            "name": "Bio-Unterstützung",
+            "variants": [
+                {
+                    "id": "biovores",
+                    "label": "Füge 4 Biovores hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-biovore",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-gargoyles",
+            "name": "Gargoyles",
+            "variants": [
+                {
+                    "id": "gargoyles",
+                    "label": "Füge 4 Gargoyles hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-gargoyles",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-bio-flieger",
+            "name": "Bio-Flieger",
+            "variants": [
+                {
+                    "id": "harpies",
+                    "label": "Füge 3 Harpyien hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-harpyieie",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "schwarmdrudes",
+                    "label": "Füge 3 Schwarmdrudes hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-schwarmdrude",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-carnifex",
+            "name": "Carnifex",
+            "variants": [
+                {
+                    "id": "barbed",
+                    "label": "Füge 2 Stachel-Carnifex hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-stachel-carnifex",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "screamer",
+                    "label": "Füge 2 Kreischer-Killer-Carnifex hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-kreischer-killer-carnifex",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-bio-artillerie",
+            "name": "Bio-Artillerie",
+            "variants": [
+                {
+                    "id": "dactylis",
+                    "label": "Füge 3 Dactylis hinzu",
+                    "pts": 125,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-dactylis",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-bio-angriff",
+            "name": "Bio-Angriff",
+            "variants": [
+                {
+                    "id": "haruspex",
+                    "label": "Füge 2 Haruspex hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-haruspex",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "exocrine",
+                    "label": "Füge 2 Exocrines hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-exocrine",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "malefaktor",
+                    "label": "Füge 2 Malefaktors hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-malefaktor",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-breacher",
+            "name": "Breacher",
+            "variants": [
+                {
+                    "id": "barbed-hierodule",
+                    "label": "Füge 1 Stachel-Hierodule hinzu",
+                    "pts": 125,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-stachel-hierodule",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "scythed-hierodule",
+                    "label": "Füge 1 Sensen-Hierodule hinzu",
+                    "pts": 125,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-sensen-hierodule",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-graeber",
+            "name": "Gräber",
+            "variants": [
+                {
+                    "id": "trygons",
+                    "label": "Füge 2 Trygons hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-trygon",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "venatoren",
+                    "label": "Füge 5 Venatoren hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-venatoren",
+                            "count": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-tyrant-shrike",
+            "name": "Schwarmtyrant-Shrike",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze den Schwarmtyrant durch einen Schwarmtyrant-Shrike",
+                    "pts": 0,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-schwarmtyrant",
+                            "to": "dag-schwarmtyrant-shrike",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-dagon-oberherrscher",
+            "name": "Dagon-Oberherrscher (0–1 pro Armee)",
+            "variants": [
+                {
+                    "id": "oberherrscher",
+                    "label": "Ersetze den Schwarmtyrant durch den Dagon-Oberherrscher",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-schwarmtyrant",
+                            "to": "dag-dagon-oberherrscher",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "oberherrscher-shrike",
+                    "label": "Ersetze den Schwarmtyrant durch einen Dagon-Oberherrscher-Shrike",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-schwarmtyrant",
+                            "to": "dag-dagon-oberherrscher-shrike",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-krieger-shrike",
+            "name": "Tyranidenkrieger-Shrikes",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze zwei Tyranidenkrieger durch Tyranidenkrieger-Shrikes",
+                    "pts": 0,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-tyranidenkrieger",
+                            "to": "dag-tyranidenkrieger-shrike",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-zoantroph",
+            "name": "Zoantrophen",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze zwei Tyranidenkrieger durch zwei Zoantrophen",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-tyranidenkrieger",
+                            "to": "dag-zoantroph",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-landungsspore",
+            "name": "Landungsspore",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Transportiere den Verband in einer Landungsspore",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-landungsspore",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-extra-harridan",
+            "name": "Zusätzlicher Harridan",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Harridan hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-harridan",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-symbionten",
+            "name": "Symbionten",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Symbiont hinzu",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-symbionten",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Symbionten hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-symbionten",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "label": "Füge 3 Symbionten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dag-symbionten",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-hydraphant",
+            "name": "Hydraphant-Biotitan",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze den Hierophant durch einen Hydraphant-Biotitan",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-hierophant",
+                            "to": "dag-hydraphant",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dag-upgrade-schwarm-schiff",
+            "name": "Schwarm-Schiff",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Ersetze die Razorfiend durch ein Schwarm-Schiff",
+                    "pts": 0,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "dag-razorfiend",
+                            "to": "dag-schwarm-schiff",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "transport": [],
+    "formationConstraints": [
+        {
+            "id": "nexus-swarm-once",
+            "from": [
+                "dag-nexus-swarm"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "secondary-per-primary",
+            "from": [
+                "tag:secondary"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "independent-per-primary",
+            "from": [
+                "tag:independent"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "rare-per-primary",
+            "from": [
+                "tag:rare"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "independent-share",
+            "from": [
+                "tag:independent",
+                "tag:rare"
+            ],
+            "maxShare": [
+                1,
+                3
+            ]
+        }
+    ],
+    "upgradeConstraints": [
+        {
+            "id": "once-per-formation",
+            "from": [
+                "*"
+            ],
+            "max": 1,
+            "perUpgrade": true,
+            "perFormation": true
+        },
+        {
+            "id": "oberherrscher-once",
+            "from": [
+                "dag-upgrade-dagon-oberherrscher"
+            ],
+            "max": 1,
+            "perArmy": true
+        }
+    ]
 }

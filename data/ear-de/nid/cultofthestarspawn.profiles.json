@@ -1,1339 +1,1339 @@
 {
-  "army": "ear-de/nid/cultofthestarspawn",
-  "source": {
-    "file": "lists_de/NID/cultofthestarspawn.json",
-    "version": "0.6.5",
-    "commit": null
-  },
-  "specialRules": [
-    {
-      "name": "Brutkult",
-      "description": [
-        "Die Armee muss einen Brutkult-Verband enthalten. Der Gegner gilt als hätte er das Siegesziel „Brecht Ihren Willen“ (BTS) erreicht, wenn er diesen oder den teuersten Verband der Armee zerstört."
-      ]
+    "army": "ear-de/nid/cultofthestarspawn",
+    "source": {
+        "file": "lists_de/NID/cultofthestarspawn.json",
+        "version": "0.6.5",
+        "commit": null
     },
-    {
-      "name": "Brutbewusstsein",
-      "description": [
-        "Alle Genestealer-Cult-Verbände mit einem Iconward, Magus, Primus, Patriarch oder Symbiontenlord erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive durchführen, sowie einen Bonus von +1 auf Sammeltests."
-      ]
-    },
-    {
-      "name": "Brutbrüder",
-      "description": [
-        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-      ]
-    },
-    {
-      "name": "Extreme Beweglichkeit (Kult der Sternengeborenen)",
-      "description": null
+    "specialRules": [
+        {
+            "name": "Brutkult",
+            "description": [
+                "Die Armee muss einen Brutkult-Verband enthalten. Der Gegner gilt als hätte er das Siegesziel „Brecht Ihren Willen“ (BTS) erreicht, wenn er diesen oder den teuersten Verband der Armee zerstört."
+            ]
+        },
+        {
+            "name": "Brutbewusstsein",
+            "description": [
+                "Alle Genestealer-Cult-Verbände mit einem Iconward, Magus, Primus, Patriarch oder Symbiontenlord erhalten einen Modifikator von +1 auf ihren Aktionstest, wenn sie eine Offensive durchführen, sowie einen Bonus von +1 auf Sammeltests."
+            ]
+        },
+        {
+            "name": "Brutbrüder",
+            "description": [
+                "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+            ]
+        },
+        {
+            "name": "Extreme Beweglichkeit (Kult der Sternengeborenen)",
+            "description": null
+        }
+    ],
+    "units": {
+        "cos-symbiontenpatriarch": {
+            "name": "Symbiontenpatriarch",
+            "type": "INF",
+            "speed": 15,
+            "armour": 3,
+            "cc": 4,
+            "weapons": [
+                {
+                    "name": "Groß Reiß Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                },
+                                {
+                                    "name": "FS",
+                                    "description": "Erstschlag"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Oberbefehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "cos-symbiontenmagus": {
+            "name": "Symbiontenmagus",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "Psionikerkräfte",
+                    "modes": [
+                        {
+                            "firepower": "MW5+",
+                            "range": 15,
+                            "specialRules": []
+                        },
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclavenlocus": {
+            "name": "Konklaven-Locus",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "n/a",
+                    "modes": [
+                        {
+                            "firepower": "n/a",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                }
+            ]
+        },
+        "cos-symbiontenlord": {
+            "name": "Symbiontenlord",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "n/a",
+                    "modes": [
+                        {
+                            "firepower": "n/a",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Anführer",
+                    "description": null
+                },
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "cos-hybridprimus": {
+            "name": "Hybrid-Primus",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Seismische Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Energiewaffe",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-akolythenhybriden": {
+            "name": "Akolythenhybriden",
+            "type": "INF",
+            "speed": 15,
+            "armour": 6,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Seismische Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-hybridaberranten": {
+            "name": "Hybrid-Aberranten",
+            "type": "INF",
+            "speed": 15,
+            "armour": 3,
+            "cc": 4,
+            "weapons": [
+                {
+                    "name": "Riesenkeulen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclavenbiker": {
+            "name": "Konklaven-Biker",
+            "type": "INF",
+            "speed": 35,
+            "armour": 5,
+            "cc": 4,
+            "ff": 6,
+            "weapons": [
+                {
+                    "name": "Laserpistolen",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Beritten",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclavenridgerunner": {
+            "name": "Konklaven-Ridgerunner",
+            "type": "LV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Seismische Kanone",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclavenlimousine": {
+            "name": "Konklaven-Limousine",
+            "type": "LV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und Symbiontenpatriarch zählen jeweils als zwei Einheiten.",
+            "weapons": [
+                {
+                    "name": "Zwillings-Schwerer Maschinengewehr",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclavenlimousine2": {
+            "name": "Konklaven-Limousine",
+            "type": "LV",
+            "speed": 30,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und Symbiontenpatriarch zählen jeweils als zwei Einheiten.",
+            "weapons": [
+                {
+                    "name": "Zwillings-Schwerer Maschinengewehr",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "cos-konclaven-goliath": {
+            "name": "Konklaven-Goliath",
+            "type": "AV",
+            "speed": 25,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und der Symbiontenpatriarch zählen jeweils als 2 Einheiten.",
+            "weapons": [
+                {
+                    "name": "Schwerer Bergbaulaser",
+                    "modes": [
+                        {
+                            "firepower": "AT4+",
+                            "range": 15,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultisteninfanterie": {
+            "name": "Kultisten-Infanterie",
+            "type": "INF",
+            "speed": 15,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Jede zweite Kult-Infanterieeinheit ist mit einer Maschinenkanone bewaffnet.",
+            "weapons": [
+                {
+                    "name": "Maschinenkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Lasergewehre",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-kultistenfeuerunterstuetzung": {
+            "name": "Kultisten-Feuerunterstützung",
+            "type": "INF",
+            "speed": 15,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Maschinenkanone",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-kultistenbaneblade": {
+            "name": "Kultisten-Baneblade",
+            "type": "WE",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+            "weapons": [
+                {
+                    "name": "Baneblade Kanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT3+",
+                            "range": 90,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Maschinenkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Belagerungskanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Laserkanone",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AT5+",
+                            "range": 45,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Zwillings-Schwere Bolter",
+                    "count": 3,
+                    "modes": [
+                        {
+                            "firepower": "AP4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 3",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenstormblade": {
+            "name": "Kultisten-Stormblade",
+            "type": "WE",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+            "weapons": [
+                {
+                    "name": "Stormblade-Blaster",
+                    "modes": [
+                        {
+                            "firepower": "2x MW2+",
+                            "range": 60,
+                            "specialRules": [
+                                {
+                                    "name": "Slow",
+                                    "description": "Langsames Feuern"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Laserkanone",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AT5+",
+                            "range": 45,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Zwillings-Schwere Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 3",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenshadowsword": {
+            "name": "Kultisten-Shadowsword",
+            "type": "WE",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
+            "weapons": [
+                {
+                    "name": "Volcano Kanone",
+                    "modes": [
+                        {
+                            "firepower": "MW2+",
+                            "range": 90,
+                            "specialRules": [
+                                {
+                                    "name": "TK(W3)",
+                                    "description": "Titanen-Killer (TK)"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Zwillings-Schwere Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 3",
+                    "description": null
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenlemanruss": {
+            "name": "Kultisten-Leman-Russ",
+            "type": "AV",
+            "speed": 20,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Kampfgeschütz",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT4+",
+                            "range": 75,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Laserkanone",
+                    "modes": [
+                        {
+                            "firepower": "AT5+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenlemanrussdemolisher": {
+            "name": "Kultisten-Leman-Russ-Demolisher",
+            "type": "AV",
+            "speed": 20,
+            "armour": 4,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+                {
+                    "name": "Belagerungskanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Laserkanone",
+                    "modes": [
+                        {
+                            "firepower": "AT5+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Plasmakanone",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                },
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenbasilisk": {
+            "name": "Kultisten-Basilisk",
+            "type": "AV",
+            "speed": 20,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Erdbebenkanone",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT4+",
+                            "range": 120,
+                            "specialRules": []
+                        },
+                        {
+                            "firepower": "1BP",
+                            "join": "oder",
+                            "specialRules": [
+                                {
+                                    "name": "Ind",
+                                    "description": "Indirektes Feuer (Indirekt)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-kultistenchimera": {
+            "name": "Kultisten-Chimäre",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
+            "weapons": [
+                {
+                    "name": "Multilaser",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "cos-kultistenhydra": {
+            "name": "Kultisten-Hydra",
+            "type": "AV",
+            "speed": 30,
+            "armour": 6,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Zwillings-Hydra Maschinenkanone",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AT5+/AA5+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-kultistenhoellenhund": {
+            "name": "Kultisten-Höllenhund",
+            "type": "AV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+                {
+                    "name": "Inferno Kanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-kultistengreif": {
+            "name": "Kultisten-Greif",
+            "type": "AV",
+            "speed": 30,
+            "armour": 6,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Schwerer Mörser",
+                    "modes": [
+                        {
+                            "firepower": "1BP",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "Ind",
+                                    "description": "Indirektes Feuer (Indirekt)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Schwerer Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Brutbrüder",
+                    "description": [
+                        "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
+                    ]
+                }
+            ]
+        },
+        "cos-symbionten": {
+            "name": "Symbionten",
+            "type": "INF",
+            "speed": 20,
+            "armour": 6,
+            "cc": 2,
+            "weapons": [
+                {
+                    "name": "Reiß Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "FS",
+                                    "description": "Erstschlag"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-metamorphhybriden": {
+            "name": "Metamorph-Hybriden",
+            "type": "INF",
+            "speed": 15,
+            "armour": 6,
+            "cc": 4,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Metamorph-Biomorphe",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        },
+                        {
+                            "firepower": "Sturmwaffen",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "FS",
+                                    "description": "Erstschlag"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-liktor": {
+            "name": "Liktor",
+            "type": "LV",
+            "speed": 15,
+            "armour": 5,
+            "cc": 3,
+            "ff": 6,
+            "weapons": [
+                {
+                    "name": "Fleischhaken",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Scythed Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "S",
+                                    "description": "Scharfschütze"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Erstschlag",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                },
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                }
+            ]
+        },
+        "cos-goliath": {
+            "name": "Konklaven-Goliath",
+            "type": "AV",
+            "speed": 25,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und der Symbiontenpatriarch zählen jeweils als 2 Einheiten.",
+            "weapons": [
+                {
+                    "name": "Schwerer Bergbaulaser",
+                    "modes": [
+                        {
+                            "firepower": "AT4+",
+                            "range": 15,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Transport",
+                    "description": null
+                }
+            ]
+        },
+        "cos-geländewagen": {
+            "name": "Konklaven-Geländewagen",
+            "type": "LV",
+            "speed": 30,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Zwillings-Schwerer-Maschinengewehr-Turm",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AA6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        },
+        "cos-symbiontenprimus": {
+            "name": "Symbiontenprimus",
+            "type": "CH",
+            "weapons": [
+                {
+                    "name": "Groß Reiß Klauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                },
+                                {
+                                    "name": "FS",
+                                    "description": "Erstschlag"
+                                },
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                }
+            ]
+        },
+        "cos-donnerkeiljaeger": {
+            "name": "Donnerkeil-Jäger",
+            "type": "AC",
+            "speed": "Jagdbomber (FB)",
+            "armour": 6,
+            "weapons": [
+                {
+                    "name": "AC-Multilaser",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+/AA5+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC Unterflügelraketen",
+                    "modes": [
+                        {
+                            "firepower": "AT4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC Sturmbolter",
+                    "modes": [
+                        {
+                            "firepower": "AP4+/AA5+",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": []
+        }
     }
-  ],
-  "units": {
-    "cos-symbiontenpatriarch": {
-      "name": "Symbiontenpatriarch",
-      "type": "INF",
-      "speed": 15,
-      "armour": 3,
-      "cc": 4,
-      "weapons": [
-        {
-          "name": "Groß Reiß Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                },
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        },
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "cos-symbiontenmagus": {
-      "name": "Symbiontenmagus",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "Psionikerkräfte",
-          "modes": [
-            {
-              "firepower": "MW5+",
-              "range": 15,
-              "specialRules": []
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclavenlocus": {
-      "name": "Konklaven-Locus",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "n/a",
-          "modes": [
-            {
-              "firepower": "n/a",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Inspirierend",
-          "description": null
-        }
-      ]
-    },
-    "cos-symbiontenlord": {
-      "name": "Symbiontenlord",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "n/a",
-          "modes": [
-            {
-              "firepower": "n/a",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "cos-hybridprimus": {
-      "name": "Hybrid-Primus",
-      "type": "INF",
-      "speed": 15,
-      "armour": 5,
-      "cc": 4,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Seismische Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Energiewaffe",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Befehlshaber",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "cos-akolythenhybriden": {
-      "name": "Akolythenhybriden",
-      "type": "INF",
-      "speed": 15,
-      "armour": 6,
-      "cc": 4,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Seismische Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "cos-hybridaberranten": {
-      "name": "Hybrid-Aberranten",
-      "type": "INF",
-      "speed": 15,
-      "armour": 3,
-      "cc": 4,
-      "weapons": [
-        {
-          "name": "Riesenkeulen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclavenbiker": {
-      "name": "Konklaven-Biker",
-      "type": "INF",
-      "speed": 35,
-      "armour": 5,
-      "cc": 4,
-      "ff": 6,
-      "weapons": [
-        {
-          "name": "Laserpistolen",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Beritten",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclavenridgerunner": {
-      "name": "Konklaven-Ridgerunner",
-      "type": "LV",
-      "speed": 30,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Seismische Kanone",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclavenlimousine": {
-      "name": "Konklaven-Limousine",
-      "type": "LV",
-      "speed": 30,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und Symbiontenpatriarch zählen jeweils als zwei Einheiten.",
-      "weapons": [
-        {
-          "name": "Zwillings-Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclavenlimousine2": {
-      "name": "Konklaven-Limousine",
-      "type": "LV",
-      "speed": 30,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und Symbiontenpatriarch zählen jeweils als zwei Einheiten.",
-      "weapons": [
-        {
-          "name": "Zwillings-Schwerer Maschinengewehr",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "cos-konclaven-goliath": {
-      "name": "Konklaven-Goliath",
-      "type": "AV",
-      "speed": 25,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und der Symbiontenpatriarch zählen jeweils als 2 Einheiten.",
-      "weapons": [
-        {
-          "name": "Schwerer Bergbaulaser",
-          "modes": [
-            {
-              "firepower": "AT4+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultisteninfanterie": {
-      "name": "Kultisten-Infanterie",
-      "type": "INF",
-      "speed": 15,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Jede zweite Kult-Infanterieeinheit ist mit einer Maschinenkanone bewaffnet.",
-      "weapons": [
-        {
-          "name": "Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Lasergewehre",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-kultistenfeuerunterstuetzung": {
-      "name": "Kultisten-Feuerunterstützung",
-      "type": "INF",
-      "speed": 15,
-      "cc": 6,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Maschinenkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-kultistenbaneblade": {
-      "name": "Kultisten-Baneblade",
-      "type": "WE",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 3,
-      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
-      "weapons": [
-        {
-          "name": "Baneblade Kanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT3+",
-              "range": 90,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Maschinenkanone",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Belagerungskanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwere Bolter",
-          "count": 3,
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenstormblade": {
-      "name": "Kultisten-Stormblade",
-      "type": "WE",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 4,
-      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
-      "weapons": [
-        {
-          "name": "Stormblade-Blaster",
-          "modes": [
-            {
-              "firepower": "2x MW2+",
-              "range": 60,
-              "specialRules": [
-                {
-                  "name": "Slow",
-                  "description": "Langsames Feuern"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwere Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenshadowsword": {
-      "name": "Kultisten-Shadowsword",
-      "type": "WE",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "crit": "Die Einheit wird zerstört. Alle Einheiten innerhalb von 5cm erleiden bei 6+ einen Treffer.",
-      "weapons": [
-        {
-          "name": "Volcano Kanone",
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "range": 90,
-              "specialRules": [
-                {
-                  "name": "TK(W3)",
-                  "description": "Titanen-Killer (TK)"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Zwillings-Schwere Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 3",
-          "description": null
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenlemanruss": {
-      "name": "Kultisten-Leman-Russ",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 6,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Kampfgeschütz",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+",
-              "range": 75,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenlemanrussdemolisher": {
-      "name": "Kultisten-Leman-Russ-Demolisher",
-      "type": "AV",
-      "speed": 20,
-      "armour": 4,
-      "cc": 6,
-      "ff": 3,
-      "weapons": [
-        {
-          "name": "Belagerungskanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Laserkanone",
-          "modes": [
-            {
-              "firepower": "AT5+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Plasmakanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        },
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenbasilisk": {
-      "name": "Kultisten-Basilisk",
-      "type": "AV",
-      "speed": 20,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Erdbebenkanone",
-          "modes": [
-            {
-              "firepower": "AP4+/AT4+",
-              "range": 120,
-              "specialRules": []
-            },
-            {
-              "firepower": "1BP",
-              "join": "oder",
-              "specialRules": [
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-kultistenchimera": {
-      "name": "Kultisten-Chimäre",
-      "type": "AV",
-      "speed": 30,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann zwei Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren.",
-      "weapons": [
-        {
-          "name": "Multilaser",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "cos-kultistenhydra": {
-      "name": "Kultisten-Hydra",
-      "type": "AV",
-      "speed": 30,
-      "armour": 6,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Zwillings-Hydra Maschinenkanone",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "AP4+/AT5+/AA5+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-kultistenhoellenhund": {
-      "name": "Kultisten-Höllenhund",
-      "type": "AV",
-      "speed": 30,
-      "armour": 5,
-      "cc": 6,
-      "ff": 3,
-      "weapons": [
-        {
-          "name": "Inferno Kanone",
-          "modes": [
-            {
-              "firepower": "AP3+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-kultistengreif": {
-      "name": "Kultisten-Greif",
-      "type": "AV",
-      "speed": 30,
-      "armour": 6,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Schwerer Mörser",
-          "modes": [
-            {
-              "firepower": "1BP",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "Ind",
-                  "description": "Indirektes Feuer (Indirekt)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Schwerer Bolter",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Brutbrüder",
-          "description": [
-            "Solange ein Verband einen Symbiontenpatriarch, Genestealer Primus, Symbiontenmagus oder Hybrid-Ikonwart enthält, verursachen Einheiten desselben Verbands mit der Sonderregel <i>Brutbrüder</i> weder bei ihrer Zerstörung noch bei einem Treffer durch eine Waffe mit der Sonderregel <i>Versprengen</i> Beschussmarken. Dies gilt auch für die zusätzliche Beschussmarke beim ersten Verlust durch Kreuzfeuer und für Einheiten, die nach einer Bewegung zerstört werden, weil sie sich ausserhalb der Verband befinden. Im Nahkampf getötete Einheiten mit <i>Brutbrüder</i> werden bei der Ermittlung des Ergebnisses mitgezählt."
-          ]
-        }
-      ]
-    },
-    "cos-symbionten": {
-      "name": "Symbionten",
-      "type": "INF",
-      "speed": 20,
-      "armour": 6,
-      "cc": 2,
-      "weapons": [
-        {
-          "name": "Reiß Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "cos-metamorphhybriden": {
-      "name": "Metamorph-Hybriden",
-      "type": "INF",
-      "speed": 15,
-      "armour": 6,
-      "cc": 4,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Metamorph-Biomorphe",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            },
-            {
-              "firepower": "Sturmwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Teleportieren",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "cos-liktor": {
-      "name": "Liktor",
-      "type": "LV",
-      "speed": 15,
-      "armour": 5,
-      "cc": 3,
-      "ff": 6,
-      "weapons": [
-        {
-          "name": "Fleischhaken",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Scythed Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "S",
-                  "description": "Scharfschütze"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Erstschlag",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        },
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        }
-      ]
-    },
-    "cos-goliath": {
-      "name": "Konklaven-Goliath",
-      "type": "AV",
-      "speed": 25,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Kann 2 Infanterieeinheiten ohne Sprungmodule oder Beritten transportieren. Hybrid-Aberranten und der Symbiontenpatriarch zählen jeweils als 2 Einheiten.",
-      "weapons": [
-        {
-          "name": "Schwerer Bergbaulaser",
-          "modes": [
-            {
-              "firepower": "AT4+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Transport",
-          "description": null
-        }
-      ]
-    },
-    "cos-geländewagen": {
-      "name": "Konklaven-Geländewagen",
-      "type": "LV",
-      "speed": 30,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Zwillings-Schwerer-Maschinengewehr-Turm",
-          "modes": [
-            {
-              "firepower": "AP5+/AA6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    },
-    "cos-symbiontenprimus": {
-      "name": "Symbiontenprimus",
-      "type": "CH",
-      "weapons": [
-        {
-          "name": "Groß Reiß Klauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                },
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                },
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        }
-      ]
-    },
-    "cos-donnerkeiljaeger": {
-      "name": "Donnerkeil-Jäger",
-      "type": "AC",
-      "speed": "Jagdbomber (FB)",
-      "armour": 6,
-      "weapons": [
-        {
-          "name": "AC-Multilaser",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+/AA5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Unterflügelraketen",
-          "modes": [
-            {
-              "firepower": "AT4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Sturmbolter",
-          "modes": [
-            {
-              "firepower": "AP4+/AA5+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": []
-    }
-  }
 }

@@ -150,6 +150,11 @@
             "name": "Cairn-Klasse Gruftschiff",
             "from": "necronNavy.json",
             "type": "SC"
+        },
+        "nst-aeonic-orb": {
+            "name": "Äonen-Sphäre",
+            "from": "NC.json",
+            "type": "WE"
         }
     },
     "sections": [
@@ -162,7 +167,7 @@
             ]
         },
         {
-            "id": "war-machines",
+            "id": "core",
             "name": "Phalanxen der Sautekh-Dynastie",
             "formations": [
                 "nst-geisterbarken-phalanx"
@@ -193,7 +198,8 @@
                 "nst-nachtsicheln",
                 "nst-todessicheln",
                 "nst-nachtmantelbomber"
-            ]
+            ],
+            "description": "Bis zu ein Drittel der verfügbaren Punkte darf für diese Verbände ausgegeben werden."
         }
     ],
     "formations": [
@@ -222,7 +228,7 @@
             "name": "Geisterbarken-Phalanx",
             "pts": 275,
             "tags": [
-                "war-machines"
+                "core"
             ],
             "units": [
                 {
@@ -287,11 +293,16 @@
             ],
             "units": [
                 {
-                    "unit": "nst-dominator-barke",
-                    "count": 5
+                    "count": 5,
+                    "oneOf": [
+                        "nst-dominator-barke",
+                        "nst-vernichtungsbarke"
+                    ]
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "nst-upgrade-iudicium"
+            ]
         },
         {
             "id": "nst-eques-manipel",
@@ -302,8 +313,12 @@
             ],
             "units": [
                 {
-                    "unit": "nst-destruktoren",
-                    "count": 6
+                    "count": 6,
+                    "mixed": true,
+                    "oneOf": [
+                        "nst-destruktoren",
+                        "nst-schwere-destruktoren"
+                    ]
                 }
             ],
             "upgrades": [
@@ -404,8 +419,11 @@
             ],
             "units": [
                 {
-                    "unit": "nst-abattoir",
-                    "count": 1
+                    "count": 1,
+                    "oneOf": [
+                        "nst-abattoir",
+                        "nst-aeonic-orb"
+                    ]
                 }
             ],
             "upgrades": []
@@ -485,6 +503,189 @@
                             "op": "add",
                             "unit": "nst-geisterbarke",
                             "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "annihilation-1",
+                    "label": "Füge 1 Annihilation Barge hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-vernichtungsbarke",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "annihilation-2",
+                    "label": "Füge 2 Annihilation Barges hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-vernichtungsbarke",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "annihilation-3",
+                    "label": "Füge 3 Annihilation Barges hinzu",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-vernichtungsbarke",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "dominator-1",
+                    "label": "Füge 1 Dominator-Barke hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-dominator-barke",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "dominator-2",
+                    "label": "Füge 2 Dominator-Barkes hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-dominator-barke",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "dominator-3",
+                    "label": "Füge 3 Dominator-Barkes hinzu",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-dominator-barke",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "phantome-1",
+                    "label": "Füge 1 Canoptek-Phantom hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-canoptek-phantome",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "phantome-2",
+                    "label": "Füge 2 Canoptek-Phantome hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-canoptek-phantome",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "phantome-3",
+                    "label": "Füge 3 Canoptek-Phantome hinzu",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-canoptek-phantome",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "stalker-1",
+                    "label": "Füge 1 Triarch-Stalker hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-triarch-stalker",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "stalker-2",
+                    "label": "Füge 2 Triarch-Stalkers hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-triarch-stalker",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "stalker-3",
+                    "label": "Füge 3 Triarch-Stalkers hinzu",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-triarch-stalker",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "extinktoren-1",
+                    "label": "Ersetze 1 Necronkrieger durch 1 Extinktor",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nst-necronkrieger",
+                            "to": "nst-extinktoren",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "extinktoren-2",
+                    "label": "Ersetze 2 Necronkrieger durch 2 Extinktoren",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nst-necronkrieger",
+                            "to": "nst-extinktoren",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "extinktoren-3",
+                    "label": "Ersetze 3 Necronkrieger durch 3 Extinktoren",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "replace",
+                            "from": "nst-necronkrieger",
+                            "to": "nst-extinktoren",
+                            "count": 3
                         }
                     ]
                 }
@@ -599,8 +800,20 @@
             "variants": [
                 {
                     "id": "1",
-                    "label": "Füge 0-2 Seraptek Heavy Construct hinzu",
+                    "label": "Füge 1 Seraptek Heavy Construct hinzu",
                     "pts": 125,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-seraptek-schweres-konstrukt",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Seraptek Heavy Constructs hinzu",
+                    "pts": 250,
                     "effects": [
                         {
                             "op": "add",
@@ -664,10 +877,86 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "nst-upgrade-iudicium",
+            "name": "Command Barge mit Lord",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Command Barge mit einem Lord-Charakter hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "nst-katakomben-kommandogleiter",
+                            "count": 1
+                        },
+                        {
+                            "op": "add",
+                            "unit": "nst-necronlord",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "transport": [],
-    "formationConstraints": [],
+    "formationConstraints": [
+        {
+            "id": "gruftkomplex-once",
+            "from": [
+                "nst-gruftkomplex"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "hochlord-once",
+            "from": [
+                "nst-hochlord"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "support-per-phalanx",
+            "from": [
+                "tag:support"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 3
+        },
+        {
+            "id": "fleet-share",
+            "from": [
+                "tag:fleet"
+            ],
+            "maxShare": [
+                1,
+                3
+            ]
+        },
+        {
+            "id": "erntemaschine-once",
+            "from": [
+                "nst-erntemaschine"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "raumschiff-once",
+            "from": [
+                "nst-raumschiff"
+            ],
+            "max": 1,
+            "perArmy": true
+        }
+    ],
     "upgradeConstraints": [
         {
             "id": "once-per-formation",

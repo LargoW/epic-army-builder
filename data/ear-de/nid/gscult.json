@@ -135,6 +135,31 @@
             "name": "Donnerkeil-Jäger",
             "from": "ImperialNavy.json",
             "type": "AC"
+        },
+        "cos-transportlasterkanone": {
+            "name": "Transportlasterkanone",
+            "from": "GS2.json",
+            "type": "WE"
+        },
+        "cos-sturm-bagger": {
+            "name": "Sturm-Bagger",
+            "from": "GS2.json",
+            "type": "WE"
+        },
+        "cos-schwerer-moerser": {
+            "name": "Kult-Schwerer-Mörser",
+            "from": "GS2.json",
+            "type": "INF"
+        },
+        "cos-kultisten-landtransporter": {
+            "name": "Landtransporter",
+            "from": "GS2.json",
+            "type": "LV"
+        },
+        "cos-konklaven-limousine": {
+            "name": "Konklaven-Limousine",
+            "from": "GS2.json",
+            "type": "LV"
         }
     },
     "sections": [
@@ -154,7 +179,8 @@
                 "cos-symbiontenschwarm",
                 "cos-sturmangriffs-konklave",
                 "cos-ridgerunner-staffel"
-            ]
+            ],
+            "description": "Pro Akolythenformation darf eine Eliteformation gewählt werden."
         },
         {
             "id": "support",
@@ -167,7 +193,8 @@
                 "cos-artilleriebatterie",
                 "cos-lermanuss-staffel",
                 "cos-donnerkeil-staffel"
-            ]
+            ],
+            "description": "Bis zu eine Unterstützungsformation pro Akolythenformation."
         }
     ],
     "formations": [
@@ -189,6 +216,7 @@
                 }
             ],
             "upgrades": [
+                "cos-upgrade-kulttransporter-brut",
                 "cos-upgrade-symbionten",
                 "cos-upgrade-bewaffneter-geländewagen"
             ]
@@ -217,7 +245,10 @@
             "upgrades": [
                 "cos-upgrade-aberranten",
                 "cos-upgrade-akolythenhybriden",
-                "cos-upgrade-konklavenfuehrer"
+                "cos-upgrade-konklavenfuehrer",
+                "cos-upgrade-kulttransporter-akolythen",
+                "cos-upgrade-schwere-bergbaumaschinen",
+                "cos-upgrade-bewaffneter-geländewagen"
             ]
         },
         {
@@ -238,9 +269,9 @@
                 }
             ],
             "upgrades": [
+                "cos-upgrade-konklavenfuehrer",
                 "cos-upgrade-quadbikes",
-                "cos-upgrade-bewaffneter-geländewagen",
-                "cos-upgrade-konklavenfuehrer"
+                "cos-upgrade-bewaffneter-geländewagen"
             ]
         },
         {
@@ -290,7 +321,8 @@
                 }
             ],
             "upgrades": [
-                "cos-upgrade-aberranten"
+                "cos-upgrade-konklavenfuehrer",
+                "cos-upgrade-bewaffneter-geländewagen"
             ]
         },
         {
@@ -329,7 +361,11 @@
                     "count": 3
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "cos-upgrade-konklavenfuehrer",
+                "cos-upgrade-flak",
+                "cos-upgrade-hoellenhunde"
+            ]
         },
         {
             "id": "cos-neophytenkompanie",
@@ -348,7 +384,10 @@
                     "count": 13
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "cos-upgrade-konklavenfuehrer",
+                "cos-upgrade-unterstuetzungswaffen"
+            ]
         },
         {
             "id": "cos-sentinel-staffel",
@@ -522,7 +561,31 @@
             "variants": [
                 {
                     "id": "1",
-                    "label": "Füge bis zu drei Symbionten hinzu",
+                    "label": "Füge 1 Symbiont hinzu",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-symbionten",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Symbionten hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-symbionten",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "label": "Füge 3 Symbionten hinzu",
                     "pts": 75,
                     "effects": [
                         {
@@ -559,7 +622,19 @@
             "variants": [
                 {
                     "id": "1",
-                    "label": "Füge bis zu zwei Bewaffnete Geländewagen hinzu",
+                    "label": "Füge 1 Bewaffneten Geländewagen hinzu",
+                    "pts": 20,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-bewaffneter-geländewagen",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Bewaffnete Geländewagen hinzu",
                     "pts": 40,
                     "effects": [
                         {
@@ -570,10 +645,213 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "cos-upgrade-schwere-bergbaumaschinen",
+            "name": "Schwere Bergbaumaschinen",
+            "variants": [
+                {
+                    "id": "sturm-bagger",
+                    "label": "Füge einen Sturm-Bagger hinzu",
+                    "pts": 125,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-sturm-bagger",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "transportlasterkanone",
+                    "label": "Füge eine Transportlasterkanone hinzu",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-transportlasterkanone",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-unterstuetzungswaffen",
+            "name": "Unterstützungswaffen",
+            "variants": [
+                {
+                    "id": "feuerunterstuetzung",
+                    "label": "Füge zwei Neophyten-Feuerunterstützungseinheiten hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-neophyten-feuerunterstuetzung",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "id": "moerser",
+                    "label": "Füge drei Kult-Schwerer-Mörser-Unterstützungseinheiten hinzu",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-schwerer-moerser",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-hoellenhunde",
+            "name": "Höllenhunde",
+            "variants": [
+                {
+                    "id": "1",
+                    "label": "Füge 1 Höllenhund hinzu",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-hollenhund",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "label": "Füge 2 Höllenhunde hinzu",
+                    "pts": 50,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-hollenhund",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-kulttransporter-brut",
+            "name": "Kulttransporter",
+            "variants": [
+                {
+                    "id": "limousine-4",
+                    "label": "Füge vier Konklaven-Limousinen hinzu",
+                    "pts": 60,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-konklaven-limousine",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "truck-4",
+                    "label": "Füge vier Goliath-Trucks hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-goliathtruck",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "schuerfer-4",
+                    "label": "Füge vier Goliath-Schürfer hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-goliathschuerfer",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "cos-upgrade-kulttransporter-akolythen",
+            "name": "Kulttransporter",
+            "variants": [
+                {
+                    "id": "landtransporter-4",
+                    "label": "Füge vier Kultisten-Landtransporter hinzu",
+                    "pts": 40,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-kultisten-landtransporter",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "truck-4",
+                    "label": "Füge vier Goliath-Trucks hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-goliathtruck",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "id": "schuerfer-4",
+                    "label": "Füge vier Goliath-Schürfer hinzu",
+                    "pts": 100,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "cos-goliathschuerfer",
+                            "count": 4
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "transport": [],
-    "formationConstraints": [],
+    "formationConstraints": [
+        {
+            "id": "brutkult-once",
+            "from": [
+                "cos-brutkult"
+            ],
+            "max": 1,
+            "perArmy": true
+        },
+        {
+            "id": "elite-per-akolythen",
+            "from": [
+                "tag:elite"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        },
+        {
+            "id": "support-per-akolythen",
+            "from": [
+                "tag:support"
+            ],
+            "forEach": [
+                "tag:core"
+            ],
+            "max": 1
+        }
+    ],
     "upgradeConstraints": [
         {
             "id": "once-per-formation",

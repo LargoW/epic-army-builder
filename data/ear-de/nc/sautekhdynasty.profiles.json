@@ -1,1356 +1,1443 @@
 {
-  "army": "ear-de/nc/sautekhdynasty",
-  "source": {
-    "file": "lists_de/NC/sautekhdynasty.json",
-    "version": "0.5.0",
-    "commit": null
-  },
-  "specialRules": [
-    {
-      "name": "Necron-Reserven",
-      "description": [
-        "Jeder Necron-Verband, der das Schlachtfeld durch Teleportation oder ein Necron-Portal betreten kann, darf in Reserve gehalten werden. Jeder Necron-Verband, der sich ab der Endphase der dritten Runde in Reserve befindet, gilt für Gleichstandsentscheidungen und das Turnierszenario-Ziel „Brecht Ihren Willen“ als zerstört."
-      ]
+    "army": "ear-de/nc/sautekhdynasty",
+    "source": {
+        "file": "lists_de/NC/sautekhdynasty.json",
+        "version": "0.5.0",
+        "commit": null
     },
-    {
-      "name": "Necron-Garnisonen",
-      "description": [
-        "In Epic-Turnierszenarien dürfen nur Necron-Phalanx- und Canoptek-Schwarm-Verbände als Garnison aufgestellt werden. Necron-Phalanx-Verbände dürfen nur von einem Tomb-Complex-Missionsziel aus als Garnison aufgestellt werden."
-      ]
-    },
-    {
-      "name": "Die Ungebetenen",
-      "description": [
-        "Necron-Armeen müssen mindestens einen Verband „Die Ungebetenen“ enthalten. Alpträume dürfen nur um Missionsziele konkurrieren, müssen das Spiel in Reserve beginnen und dürfen keine Necron-Portale verwenden."
-      ]
-    },
-    {
-      "name": "Necron-Portale",
-      "description": [
-        "Necron-Portale dürfen nur von INF sowie von AV- oder LV-Einheiten mit <i>Geländegängig</i> verwendet werden. Jedes Portal darf pro Runde entweder zum Betreten oder zum Verlassen des Schlachtfelds verwendet werden, aber nicht für beides.",
-        "Ein Verband in Reserve darf im Rahmen jeder bewegungserlaubenden Aktion durch eine Einheit mit <i>Portal</i> ins Spiel kommen. Miss seine Bewegung vom Mittelpunkt des Missionsziels (bei einem Gruftkomplex) oder von der Kante der Einheit aus. Verbände dürfen das Spielfeld auch durch ein Portal verlassen und in die Reserve zurückkehren. Ein Portal kann Einheiten außerdem ähnlich wie ein Lufttransporter aufnehmen. Endet die Aktion einer Einheit mit <i>Portal</i> innerhalb von 5cm zu allen Einheiten eines befreundeten Verbands, darf der Necron-Spieler das Portal aktivieren, um diesen Verband in Reserve zu versetzen. Aufgeriebene Einheiten mit <i>Portal</i> dürfen nicht auf diese Weise Verbände aufnehmen.",
-        "Wenn ein Verband in Reserve versetzt wird, darf er sofort durch ein anderes <i>Portal</i> wieder ins Spiel kommen oder in Reserve bleiben. Das Betreten oder Verlassen eines <i>Portals</i> erfordert eine vollständige Bewegung: Ein Verband mit einer Doppelaktion darf das Schlachtfeld also mit der ersten Bewegung verlassen und mit der zweiten durch ein anderes <i>Portal</i> wieder betreten. Bei Vorrücken oder einer Offensive darf ein Verband jedoch nicht im Rahmen derselben Bewegung ein Portal betreten und ein anderes verlassen. Einheiten, die sich am Ende einer Bewegung außerhalb der Verband befinden, werden zerstört. Ein durch ein <i>Portal</i> aufgenommener Verband muss in Reserve bleiben, bis er aktiviert werden kann, um ins Spiel zurückzukehren. Er darf in derselben Runde wieder aktiviert werden, in der er aufgenommen wurde, sofern er davor noch nicht aktiviert worden war.",
-        "Jedes Mal, wenn ein Verband ein <i>Portal</i> einer aufgeriebenen Einheit verwendet, erhält er eine Beschussmarke. Dies gilt auch für aufgeriebene Verbände, die ein aufgeriebenes Portal verwenden; dabei geht eine Einheit verloren, sofern nicht alle Einheiten Furchtlos sind.",
-        "Befindet sich ein <i>Portal</i> in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den blockierenden Verband offensiv angreifen. Befindet sich das Portal zudem direkt unter einer gegnerischen Einheit, darf der Verband das Schlachtfeld weiterhin durch das Portal betreten, muss aber so viel Basekontakt wie möglich mit den blockierenden Einheiten herstellen."
-      ]
-    },
-    {
-      "name": "Unaufhaltsamer Vormarsch",
-      "description": [
-        "Necron-Verbände erhalten einen Bonus von +1, wenn sie versuchen, Ordnen durchzuführen, erleiden jedoch einen Malus von -1, wenn sie versuchen, einen Marsch durchzuführen."
-      ]
-    },
-    {
-      "name": "Phasenausfall",
-      "description": [
-        "Am Ende einer beliebigen Aktion wird ein aufgeriebener Necron-Verband, der mindestens die Hälfte seiner ursprünglichen Einheitenzahl verloren hat, aus der Phase genommen. Das bedeutet, dass er vom Schlachtfeld entfernt wird und für Siegesbedingungen als zerstört gilt."
-      ]
+    "specialRules": [
+        {
+            "name": "Necron-Reserven",
+            "description": [
+                "Jeder Necron-Verband, der das Schlachtfeld durch Teleportation oder ein Necron-Portal betreten kann, darf in Reserve gehalten werden. Jeder Necron-Verband, der sich ab der Endphase der dritten Runde in Reserve befindet, gilt für Gleichstandsentscheidungen und das Turnierszenario-Ziel „Brecht Ihren Willen“ als zerstört."
+            ]
+        },
+        {
+            "name": "Necron-Garnisonen",
+            "description": [
+                "In Epic-Turnierszenarien dürfen nur Necron-Phalanx- und Canoptek-Schwarm-Verbände als Garnison aufgestellt werden. Necron-Phalanx-Verbände dürfen nur von einem Tomb-Complex-Missionsziel aus als Garnison aufgestellt werden."
+            ]
+        },
+        {
+            "name": "Die Ungebetenen",
+            "description": [
+                "Necron-Armeen müssen mindestens einen Verband „Die Ungebetenen“ enthalten. Alpträume dürfen nur um Missionsziele konkurrieren, müssen das Spiel in Reserve beginnen und dürfen keine Necron-Portale verwenden."
+            ]
+        },
+        {
+            "name": "Necron-Portale",
+            "description": [
+                "Necron-Portale dürfen nur von INF sowie von AV- oder LV-Einheiten mit <i>Geländegängig</i> verwendet werden. Jedes Portal darf pro Runde entweder zum Betreten oder zum Verlassen des Schlachtfelds verwendet werden, aber nicht für beides.",
+                "Ein Verband in Reserve darf im Rahmen jeder bewegungserlaubenden Aktion durch eine Einheit mit <i>Portal</i> ins Spiel kommen. Miss seine Bewegung vom Mittelpunkt des Missionsziels (bei einem Gruftkomplex) oder von der Kante der Einheit aus. Verbände dürfen das Spielfeld auch durch ein Portal verlassen und in die Reserve zurückkehren. Ein Portal kann Einheiten außerdem ähnlich wie ein Lufttransporter aufnehmen. Endet die Aktion einer Einheit mit <i>Portal</i> innerhalb von 5cm zu allen Einheiten eines befreundeten Verbands, darf der Necron-Spieler das Portal aktivieren, um diesen Verband in Reserve zu versetzen. Aufgeriebene Einheiten mit <i>Portal</i> dürfen nicht auf diese Weise Verbände aufnehmen.",
+                "Wenn ein Verband in Reserve versetzt wird, darf er sofort durch ein anderes <i>Portal</i> wieder ins Spiel kommen oder in Reserve bleiben. Das Betreten oder Verlassen eines <i>Portals</i> erfordert eine vollständige Bewegung: Ein Verband mit einer Doppelaktion darf das Schlachtfeld also mit der ersten Bewegung verlassen und mit der zweiten durch ein anderes <i>Portal</i> wieder betreten. Bei Vorrücken oder einer Offensive darf ein Verband jedoch nicht im Rahmen derselben Bewegung ein Portal betreten und ein anderes verlassen. Einheiten, die sich am Ende einer Bewegung außerhalb der Verband befinden, werden zerstört. Ein durch ein <i>Portal</i> aufgenommener Verband muss in Reserve bleiben, bis er aktiviert werden kann, um ins Spiel zurückzukehren. Er darf in derselben Runde wieder aktiviert werden, in der er aufgenommen wurde, sofern er davor noch nicht aktiviert worden war.",
+                "Jedes Mal, wenn ein Verband ein <i>Portal</i> einer aufgeriebenen Einheit verwendet, erhält er eine Beschussmarke. Dies gilt auch für aufgeriebene Verbände, die ein aufgeriebenes Portal verwenden; dabei geht eine Einheit verloren, sofern nicht alle Einheiten Furchtlos sind.",
+                "Befindet sich ein <i>Portal</i> in einer gegnerischen Kontrollzone, muss jeder hindurchkommende Verband den blockierenden Verband offensiv angreifen. Befindet sich das Portal zudem direkt unter einer gegnerischen Einheit, darf der Verband das Schlachtfeld weiterhin durch das Portal betreten, muss aber so viel Basekontakt wie möglich mit den blockierenden Einheiten herstellen."
+            ]
+        },
+        {
+            "name": "Unaufhaltsamer Vormarsch",
+            "description": [
+                "Necron-Verbände erhalten einen Bonus von +1, wenn sie versuchen, Ordnen durchzuführen, erleiden jedoch einen Malus von -1, wenn sie versuchen, einen Marsch durchzuführen."
+            ]
+        },
+        {
+            "name": "Phasenausfall",
+            "description": [
+                "Am Ende einer beliebigen Aktion wird ein aufgeriebener Necron-Verband, der mindestens die Hälfte seiner ursprünglichen Einheitenzahl verloren hat, aus der Phase genommen. Das bedeutet, dass er vom Schlachtfeld entfernt wird und für Siegesbedingungen als zerstört gilt."
+            ]
+        }
+    ],
+    "units": {
+        "nst-necron-hochlord": {
+            "name": "Necron-Hochlord",
+            "type": "INF",
+            "speed": 15,
+            "armour": 3,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Strahlenstab",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "Sturmwaffe",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "TK(1)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Oberbefehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-necronlord": {
+            "name": "Necronlord",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Lichtstab",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "Sturmwaffe",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Anführer",
+                    "description": null
+                },
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                }
+            ]
+        },
+        "nst-destruktoren": {
+            "name": "Destruktoren",
+            "type": "INF",
+            "speed": 25,
+            "armour": 4,
+            "cc": 5,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Gauss-Kanonen",
+                    "modes": [
+                        {
+                            "firepower": "2x AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Beritten",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                }
+            ]
+        },
+        "nst-schwere-destruktoren": {
+            "name": "Schwere Destruktoren",
+            "type": "INF",
+            "speed": 25,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Schwere Gauss-Kanonen",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT3+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Beritten",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                }
+            ]
+        },
+        "nst-extinktoren": {
+            "name": "Extinktoren",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 5,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Gauss-Blaster",
+                    "modes": [
+                        {
+                            "firepower": "2x AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                }
+            ]
+        },
+        "nst-necronkrieger": {
+            "name": "Necronkrieger",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 5,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Gauss-Flayer",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Maschinengeist",
+                    "description": [
+                        "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+                    ]
+                },
+                {
+                    "name": "Entbehrlich",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                }
+            ]
+        },
+        "nst-canoptek-phantome": {
+            "name": "Canoptek-Phantome",
+            "type": "INF",
+            "speed": 15,
+            "armour": 5,
+            "cc": 4,
+            "weapons": [
+                {
+                    "name": "Phantomklauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "FS",
+                                    "description": "Erstschlag"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Maschinengeist",
+                    "description": [
+                        "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+                    ]
+                },
+                {
+                    "name": "Entbehrlich",
+                    "description": null
+                },
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-monolith": {
+            "name": "Monolith",
+            "type": "AV",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Teilchenpeitsche",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT4+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Gauss-Flussbogen",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Lebendes Metall",
+                    "description": [
+                        "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Portal",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-obelisk": {
+            "name": "Obelisk",
+            "type": "AV",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Teilchenflegel",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT4+",
+                            "range": 60,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Gravitationsimpuls",
+                    "modes": [
+                        {
+                            "firepower": "AA6+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Lebendes Metall",
+                    "description": [
+                        "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-canoptek-gruftspinne": {
+            "name": "Canoptek-Gruftspinne",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 5,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Teilchenstrahler",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Gruftspinnenklauen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-todesboten": {
+            "name": "Todesboten",
+            "type": "INF",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Synaptic Desintegrator",
+                    "modes": [
+                        {
+                            "firepower": "AP5+/AT6+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "S",
+                                    "description": "Scharfschütze"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Aufklärer",
+                    "description": null
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-gruftklingen": {
+            "name": "Gruftklingen",
+            "type": "INF",
+            "speed": 35,
+            "armour": 4,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Zwillings-Tesla Karabiner",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Beritten",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                }
+            ]
+        },
+        "nst-triarchat-praeotorianer": {
+            "name": "Triarchat-Prätorianer",
+            "type": "INF",
+            "speed": 30,
+            "armour": 4,
+            "cc": 3,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Stäbe des Bundes",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": []
+                        },
+                        {
+                            "firepower": "Sturmwaffe",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Sprungmodule",
+                    "description": null
+                }
+            ]
+        },
+        "nst-geisterbarke": {
+            "name": "Geisterbarke",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "notes": "Transport: 2 Infanterieeinheiten",
+            "weapons": [
+                {
+                    "name": "Gauss-Flayer-Batterie",
+                    "modes": [
+                        {
+                            "firepower": "2x AP4+/AT6+",
+                            "range": 15,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-vernichtungsbarke": {
+            "name": "Vernichtungsbarke",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+                {
+                    "name": "Zwillings-Tesla Zerstörer",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Tesla Kanone",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-katakomben-kommandogleiter": {
+            "name": "Katakomben-Kommandogleiter",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 3,
+            "weapons": [
+                {
+                    "name": "Gauss-Kanonen",
+                    "modes": [
+                        {
+                            "firepower": "2x AP5+/AT5+",
+                            "range": 30,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                },
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                }
+            ]
+        },
+        "nst-dominator-barke": {
+            "name": "Dominator-Barke",
+            "type": "AV",
+            "speed": 25,
+            "armour": 5,
+            "cc": 6,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Necron Doomsday Kanone",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT3+",
+                            "range": 75,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Gauss-Flayer-Batterie",
+                    "modes": [
+                        {
+                            "firepower": "2x AP4+/AT6+",
+                            "range": 15,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verstärkte Panzerung",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-triarch-stalker": {
+            "name": "Triarch-Stalker",
+            "type": "LV",
+            "speed": 15,
+            "armour": 5,
+            "cc": 5,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Hitzestrahl",
+                    "modes": [
+                        {
+                            "firepower": "MW5+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-wachposten-pylone": {
+            "name": "Wachposten-Pylonen",
+            "type": "AV",
+            "speed": "Immobile",
+            "armour": 4,
+            "ff": 5,
+            "weapons": [
+                {
+                    "name": "Gauss-Vernichter",
+                    "modes": [
+                        {
+                            "firepower": "AT5+/AA5+",
+                            "range": 60,
+                            "specialRules": []
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Maschinengeist",
+                    "description": [
+                        "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+                    ]
+                },
+                {
+                    "name": "Teleportieren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-ctan-fragment": {
+            "name": "C'tan-Fragment",
+            "type": "H-AV",
+            "speed": 25,
+            "armour": 3,
+            "cc": 4,
+            "ff": 2,
+            "notes": "Wird der C'tan-Splitter aufgerieben, wird er sofort zerstört, verursacht jedoch keine zusätzlichen Beschussmarken.",
+            "weapons": [
+                {
+                    "name": "Transdimensionaler Bolter",
+                    "modes": [
+                        {
+                            "firepower": "MW2+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "Schildbohrer",
+                                    "description": "Schildbohrer"
+                                },
+                                {
+                                    "name": "TK(1)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Entropische Berührung",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffe",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "TK(1)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Feuersplitter",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Anführer",
+                    "description": null
+                },
+                {
+                    "name": "Befehlshaber",
+                    "description": null
+                },
+                {
+                    "name": "Inspirierend",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                }
+            ]
+        },
+        "nst-seraptek-schweres-konstrukt": {
+            "name": "Seraptek-Schweres Konstrukt",
+            "type": "H-AV",
+            "speed": 15,
+            "armour": 4,
+            "cc": 4,
+            "ff": 4,
+            "weapons": [
+                {
+                    "name": "Singularitätsgenerator",
+                    "count": 2,
+                    "modes": [
+                        {
+                            "firepower": "MW4+",
+                            "range": 45,
+                            "specialRules": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Titanische Vordergliedmaßen",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffe",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+1)",
+                                    "description": "Zusätzliche Angriffe +1"
+                                },
+                                {
+                                    "name": "TK(1)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Maschinengeist",
+                    "description": [
+                        "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
+                    ]
+                },
+                {
+                    "name": "Entbehrlich",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Geländegängig",
+                    "description": null
+                },
+                {
+                    "name": "Infiltratoren",
+                    "description": null
+                }
+            ]
+        },
+        "nst-nachtsicheltransporter": {
+            "name": "Nachtsichel-Transporter",
+            "type": "WE/AC",
+            "speed": "Bomber (B)",
+            "armour": 5,
+            "weapons": [
+                {
+                    "name": "AC Zwillings-Tesla Zerstörer",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT5+/AA4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC Wurmlochportal",
+                    "modes": [
+                        {
+                            "firepower": "Spec[*]",
+                            "specialRules": [
+                                {
+                                    "name": "SS",
+                                    "description": "Einzelschuss"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität: 1",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Regeneration",
+                    "description": [
+                        "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                },
+                {
+                    "name": "[*]Portal. Darf nur verwendet werden, um das Schlachtfeld zu betreten, nicht um in die Reserve zu wechseln. Darf nur im gelandeten Zustand verwendet werden.",
+                    "description": null
+                }
+            ]
+        },
+        "nst-todessicheljaeger": {
+            "name": "Todessichel-Jäger",
+            "type": "AC",
+            "speed": "Jagdbomber (FB)",
+            "armour": 5,
+            "weapons": [
+                {
+                    "name": "AC Zwillings-Tesla Zerstörer",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT5+/AA4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC Todesstrahl",
+                    "modes": [
+                        {
+                            "firepower": "MW5+",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-nachtmantelbomber": {
+            "name": "Nachtmantel-Bomber (B)",
+            "type": "AC",
+            "speed": "Bomber (B)",
+            "armour": 4,
+            "weapons": [
+                {
+                    "name": "AC Zwillings-Tesla Zerstörer",
+                    "modes": [
+                        {
+                            "firepower": "AP3+/AT5+/AA4+",
+                            "range": 30,
+                            "specialRules": [
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "AC Todessphären",
+                    "modes": [
+                        {
+                            "firepower": "3BP",
+                            "range": 15,
+                            "specialRules": [
+                                {
+                                    "name": "D",
+                                    "description": "Versprengen"
+                                },
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Unmodifizierter Rettungswurf",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-abattoir": {
+            "name": "Abattoir",
+            "type": "WE",
+            "speed": 20,
+            "armour": 4,
+            "cc": 2,
+            "ff": 4,
+            "crit": "Das Portal des Abattoir wird zerstört. Weitere kritische Treffer verursachen 1 zusätzlichen Schaden.",
+            "weapons": [
+                {
+                    "name": "Gauss-Flussbatterie",
+                    "modes": [
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+3)",
+                                    "description": "Zusätzliche Angriffe +3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Ernteranken",
+                    "modes": [
+                        {
+                            "firepower": "Sturmwaffen",
+                            "specialRules": [
+                                {
+                                    "name": "EA(+2)",
+                                    "description": "Zusätzliche Angriffe +2"
+                                },
+                                {
+                                    "name": "TK(1)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 6",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Lebendes Metall",
+                    "description": [
+                        "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Portal",
+                    "description": null
+                },
+                {
+                    "name": "Antigrav",
+                    "description": null
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        },
+        "nst-cairnkgruftschiff": {
+            "name": "Cairn-Klasse Gruftschiff",
+            "type": "SC",
+            "weapons": [
+                {
+                    "name": "Orbitalbombardement",
+                    "modes": [
+                        {
+                            "firepower": "4BP, MW"
+                        }
+                    ]
+                },
+                {
+                    "name": "Präzisionsschuss",
+                    "count": 1,
+                    "modes": [
+                        {
+                            "firepower": "MW2+",
+                            "specialRules": [
+                                {
+                                    "name": "TK(W3)",
+                                    "description": "Titanen-Killer (TK)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Verzögerte Ankunft (darf erst ab Runde 2 auf dem Schlachtfeld eintreffen)",
+                    "description": null
+                }
+            ]
+        },
+        "nst-aeonic-orb": {
+            "name": "Äonen-Sphäre",
+            "type": "WE",
+            "speed": 15,
+            "armour": 5,
+            "ff": 6,
+            "crit": "Æonic Orb wird zerstört. Alle Einheiten innerhalb von 5cm erleiden einen Treffer.",
+            "weapons": [
+                {
+                    "name": "Sternenkäfig",
+                    "modes": [
+                        {
+                            "firepower": "MW3+",
+                            "range": 90,
+                            "specialRules": [
+                                {
+                                    "name": "TK(W6+1)",
+                                    "description": "Titanen-Killer (TK)"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "3BP",
+                            "join": "oder",
+                            "range": 60,
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                },
+                                {
+                                    "name": "IC",
+                                    "description": "Deckung ignorieren"
+                                },
+                                {
+                                    "name": "FxF",
+                                    "description": "Fixed Forward"
+                                }
+                            ]
+                        },
+                        {
+                            "firepower": "Handfeuerwaffen",
+                            "join": "und",
+                            "specialRules": [
+                                {
+                                    "name": "MW",
+                                    "description": "Makrowaffe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Schadenskapazität 6",
+                    "description": null
+                },
+                {
+                    "name": "Furchtlos",
+                    "description": null
+                },
+                {
+                    "name": "Lebendes Metall",
+                    "description": [
+                        "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
+                    ]
+                },
+                {
+                    "name": "Hilfstransportschiff",
+                    "description": [
+                        "Hilfstransportschiff sind Antigravfahrzeuge und gelten für Sichtlinien und Gelände stets als aufgetaucht. Verfügt das Hilfstransportschiff über eine Transportoption, darf es Einheiten wie üblich ein- und ausschiffen. Eingeschiffte Einheiten dürfen einen Schutzwurf ablegen (siehe 1.7.5), wenn das Hilfstransportschiff zerstört wird.",
+                        "Hilfstransportschiff blockieren keine Sichtlinie und müssen bei Offensiven stets ihre Antigravfähigkeit einsetzen, um ein Feuergefecht zu erzwingen. Infanterie in Basekontakt mit einem Hilfstransportschiff kann dieses nicht als Deckung nutzen."
+                    ]
+                },
+                {
+                    "name": "Ausdauernd",
+                    "description": [
+                        "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
+                    ]
+                }
+            ]
+        }
     }
-  ],
-  "units": {
-    "nst-necron-hochlord": {
-      "name": "Necron-Hochlord",
-      "type": "INF",
-      "speed": 15,
-      "armour": 3,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Strahlenstab",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            },
-            {
-              "firepower": "Sturmwaffe",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "TK(1)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Oberbefehlshaber",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-necronlord": {
-      "name": "Necronlord",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Lichtstab",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            },
-            {
-              "firepower": "Sturmwaffe",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Befehlshaber",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        }
-      ]
-    },
-    "nst-destruktoren": {
-      "name": "Destruktoren",
-      "type": "INF",
-      "speed": 25,
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Gauss-Kanonen",
-          "modes": [
-            {
-              "firepower": "2x AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Beritten",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        }
-      ]
-    },
-    "nst-schwere-destruktoren": {
-      "name": "Schwere Destruktoren",
-      "type": "INF",
-      "speed": 25,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Schwere Gauss-Kanonen",
-          "modes": [
-            {
-              "firepower": "AP5+/AT3+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Beritten",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        }
-      ]
-    },
-    "nst-extinktoren": {
-      "name": "Extinktoren",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Gauss-Blaster",
-          "modes": [
-            {
-              "firepower": "2x AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        }
-      ]
-    },
-    "nst-necronkrieger": {
-      "name": "Necronkrieger",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 5,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Gauss-Flayer",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Maschinengeist",
-          "description": [
-            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
-          ]
-        },
-        {
-          "name": "Entbehrlich",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        }
-      ]
-    },
-    "nst-canoptek-phantome": {
-      "name": "Canoptek-Phantome",
-      "type": "INF",
-      "speed": 15,
-      "armour": 5,
-      "cc": 4,
-      "weapons": [
-        {
-          "name": "Phantomklauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "FS",
-                  "description": "Erstschlag"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Maschinengeist",
-          "description": [
-            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
-          ]
-        },
-        {
-          "name": "Entbehrlich",
-          "description": null
-        },
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "nst-monolith": {
-      "name": "Monolith",
-      "type": "AV",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Teilchenpeitsche",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Gauss-Flussbogen",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Lebendes Metall",
-          "description": [
-            "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Portal",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        }
-      ]
-    },
-    "nst-obelisk": {
-      "name": "Obelisk",
-      "type": "AV",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Teilchenflegel",
-          "modes": [
-            {
-              "firepower": "AP3+/AT4+",
-              "range": 60,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Gravitationsimpuls",
-          "modes": [
-            {
-              "firepower": "AA6+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Lebendes Metall",
-          "description": [
-            "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        }
-      ]
-    },
-    "nst-canoptek-gruftspinne": {
-      "name": "Canoptek-Gruftspinne",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 5,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Teilchenstrahler",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Gruftspinnenklauen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "nst-todesboten": {
-      "name": "Todesboten",
-      "type": "INF",
-      "speed": 15,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Synaptic Desintegrator",
-          "modes": [
-            {
-              "firepower": "AP5+/AT6+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "S",
-                  "description": "Scharfschütze"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Aufklärer",
-          "description": null
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        }
-      ]
-    },
-    "nst-gruftklingen": {
-      "name": "Gruftklingen",
-      "type": "INF",
-      "speed": 35,
-      "armour": 4,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Zwillings-Tesla Karabiner",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Beritten",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        }
-      ]
-    },
-    "nst-triarchat-praeotorianer": {
-      "name": "Triarchat-Prätorianer",
-      "type": "INF",
-      "speed": 30,
-      "armour": 4,
-      "cc": 3,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Stäbe des Bundes",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": []
-            },
-            {
-              "firepower": "Sturmwaffe",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Sprungmodule",
-          "description": null
-        }
-      ]
-    },
-    "nst-geisterbarke": {
-      "name": "Geisterbarke",
-      "type": "AV",
-      "speed": 25,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "notes": "Transport: 2 Infanterieeinheiten",
-      "weapons": [
-        {
-          "name": "Gauss-Flayer-Batterie",
-          "modes": [
-            {
-              "firepower": "2x AP4+/AT6+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-vernichtungsbarke": {
-      "name": "Vernichtungsbarke",
-      "type": "AV",
-      "speed": 25,
-      "armour": 5,
-      "cc": 6,
-      "ff": 3,
-      "weapons": [
-        {
-          "name": "Zwillings-Tesla Zerstörer",
-          "modes": [
-            {
-              "firepower": "AP3+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Tesla Kanone",
-          "modes": [
-            {
-              "firepower": "AP5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-katakomben-kommandogleiter": {
-      "name": "Katakomben-Kommandogleiter",
-      "type": "AV",
-      "speed": 25,
-      "armour": 5,
-      "cc": 6,
-      "ff": 3,
-      "weapons": [
-        {
-          "name": "Gauss-Kanonen",
-          "modes": [
-            {
-              "firepower": "2x AP5+/AT5+",
-              "range": 30,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        },
-        {
-          "name": "Befehlshaber",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        }
-      ]
-    },
-    "nst-dominator-barke": {
-      "name": "Dominator-Barke",
-      "type": "AV",
-      "speed": 25,
-      "armour": 5,
-      "cc": 6,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Necron Doomsday Kanone",
-          "modes": [
-            {
-              "firepower": "AP3+/AT3+",
-              "range": 75,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Gauss-Flayer-Batterie",
-          "modes": [
-            {
-              "firepower": "2x AP4+/AT6+",
-              "range": 15,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verstärkte Panzerung",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-triarch-stalker": {
-      "name": "Triarch-Stalker",
-      "type": "LV",
-      "speed": 15,
-      "armour": 5,
-      "cc": 5,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Hitzestrahl",
-          "modes": [
-            {
-              "firepower": "MW5+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            },
-            {
-              "firepower": "Handfeuerwaffen",
-              "join": "und",
-              "specialRules": [
-                {
-                  "name": "MW",
-                  "description": "Makrowaffe"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "nst-wachposten-pylone": {
-      "name": "Wachposten-Pylonen",
-      "type": "AV",
-      "speed": "Immobile",
-      "armour": 4,
-      "ff": 5,
-      "weapons": [
-        {
-          "name": "Gauss-Vernichter",
-          "modes": [
-            {
-              "firepower": "AT5+/AA5+",
-              "range": 60,
-              "specialRules": []
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Maschinengeist",
-          "description": [
-            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
-          ]
-        },
-        {
-          "name": "Teleportieren",
-          "description": null
-        }
-      ]
-    },
-    "nst-ctan-fragment": {
-      "name": "C'tan-Fragment",
-      "type": "H-AV",
-      "speed": 25,
-      "armour": 3,
-      "cc": 4,
-      "ff": 2,
-      "notes": "Wird der C'tan-Splitter aufgerieben, wird er sofort zerstört, verursacht jedoch keine zusätzlichen Beschussmarken.",
-      "weapons": [
-        {
-          "name": "Transdimensionaler Bolter",
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "Schildbohrer",
-                  "description": "Schildbohrer"
-                },
-                {
-                  "name": "TK(1)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Entropische Berührung",
-          "modes": [
-            {
-              "firepower": "Sturmwaffe",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "TK(1)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Feuersplitter",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Anführer",
-          "description": null
-        },
-        {
-          "name": "Befehlshaber",
-          "description": null
-        },
-        {
-          "name": "Inspirierend",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        }
-      ]
-    },
-    "nst-seraptek-schweres-konstrukt": {
-      "name": "Seraptek-Schweres Konstrukt",
-      "type": "H-AV",
-      "speed": 15,
-      "armour": 4,
-      "cc": 4,
-      "ff": 4,
-      "weapons": [
-        {
-          "name": "Singularitätsgenerator",
-          "count": 2,
-          "modes": [
-            {
-              "firepower": "MW4+",
-              "range": 45,
-              "specialRules": []
-            }
-          ]
-        },
-        {
-          "name": "Titanische Vordergliedmaßen",
-          "modes": [
-            {
-              "firepower": "Sturmwaffe",
-              "specialRules": [
-                {
-                  "name": "EA(+1)",
-                  "description": "Zusätzliche Angriffe +1"
-                },
-                {
-                  "name": "TK(1)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Maschinengeist",
-          "description": [
-            "Ein Verband, der ausschließlich aus Einheiten mit <i>Maschinengeist</i> besteht, darf nur die Aktionen Halten, Offensive, Ordnen, Dauerfeuer und Feuerbereitschaft durchführen. Außerdem dürfen solche Verbände nur um Missionsziele konkurrieren und gelten bei Sammelversuchen immer als höchstens 30 cm von einem gegnerischen Verband entfernt."
-          ]
-        },
-        {
-          "name": "Entbehrlich",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Geländegängig",
-          "description": null
-        },
-        {
-          "name": "Infiltratoren",
-          "description": null
-        }
-      ]
-    },
-    "nst-nachtsicheltransporter": {
-      "name": "Nachtsichel-Transporter",
-      "type": "WE/AC",
-      "speed": "Bomber (B)",
-      "armour": 5,
-      "weapons": [
-        {
-          "name": "AC Zwillings-Tesla Zerstörer",
-          "modes": [
-            {
-              "firepower": "AP3+/AT5+/AA4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Wurmlochportal",
-          "modes": [
-            {
-              "firepower": "Spec[*]",
-              "specialRules": [
-                {
-                  "name": "SS",
-                  "description": "Einzelschuss"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität: 1",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Regeneration",
-          "description": [
-            "Regeneration funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 5+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        },
-        {
-          "name": "[*]Portal. Darf nur verwendet werden, um das Schlachtfeld zu betreten, nicht um in die Reserve zu wechseln. Darf nur im gelandeten Zustand verwendet werden.",
-          "description": null
-        }
-      ]
-    },
-    "nst-todessicheljaeger": {
-      "name": "Todessichel-Jäger",
-      "type": "AC",
-      "speed": "Jagdbomber (FB)",
-      "armour": 5,
-      "weapons": [
-        {
-          "name": "AC Zwillings-Tesla Zerstörer",
-          "modes": [
-            {
-              "firepower": "AP3+/AT5+/AA4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Todesstrahl",
-          "modes": [
-            {
-              "firepower": "MW5+",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-nachtmantelbomber": {
-      "name": "Nachtmantel-Bomber (B)",
-      "type": "AC",
-      "speed": "Bomber (B)",
-      "armour": 4,
-      "weapons": [
-        {
-          "name": "AC Zwillings-Tesla Zerstörer",
-          "modes": [
-            {
-              "firepower": "AP3+/AT5+/AA4+",
-              "range": 30,
-              "specialRules": [
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "AC Todessphären",
-          "modes": [
-            {
-              "firepower": "3BP",
-              "range": 15,
-              "specialRules": [
-                {
-                  "name": "D",
-                  "description": "Versprengen"
-                },
-                {
-                  "name": "IC",
-                  "description": "Deckung ignorieren"
-                },
-                {
-                  "name": "FxF",
-                  "description": "Fixed Forward"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Unmodifizierter Rettungswurf",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-abattoir": {
-      "name": "Abattoir",
-      "type": "WE",
-      "speed": 20,
-      "armour": 4,
-      "cc": 2,
-      "ff": 4,
-      "crit": "Das Portal des Abattoir wird zerstört. Weitere kritische Treffer verursachen 1 zusätzlichen Schaden.",
-      "weapons": [
-        {
-          "name": "Gauss-Flussbatterie",
-          "modes": [
-            {
-              "firepower": "Handfeuerwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+3)",
-                  "description": "Zusätzliche Angriffe +3"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Ernteranken",
-          "modes": [
-            {
-              "firepower": "Sturmwaffen",
-              "specialRules": [
-                {
-                  "name": "EA(+2)",
-                  "description": "Zusätzliche Angriffe +2"
-                },
-                {
-                  "name": "TK(1)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Schadenskapazität 6",
-          "description": null
-        },
-        {
-          "name": "Furchtlos",
-          "description": null
-        },
-        {
-          "name": "Lebendes Metall",
-          "description": [
-            "Lebendes Metall funktioniert genau wie Unverwundbar, bietet jedoch einen Schutzwurf von 4+ statt 6+. Gegen Titan-Killer-Angriffe müssen WE und H-AV für jeden Schadenspunkt einen Unverwundbar-Schutzwurf ablegen."
-          ]
-        },
-        {
-          "name": "Portal",
-          "description": null
-        },
-        {
-          "name": "Antigrav",
-          "description": null
-        },
-        {
-          "name": "Ausdauernd",
-          "description": [
-            "Necron-Verbände mit Einheiten, die <i>Ausdauernd</i> besitzen, werden nicht <i>aus der Phase genommen</i>. Hat der Verband alle Einheiten mit <i>Ausdauernd</i> verloren, wird er wie üblich aus der Phase genommen."
-          ]
-        }
-      ]
-    },
-    "nst-cairnkgruftschiff": {
-      "name": "Cairn-Klasse Gruftschiff",
-      "type": "SC",
-      "weapons": [
-        {
-          "name": "Orbitalbombardement",
-          "modes": [
-            {
-              "firepower": "4BP, MW"
-            }
-          ]
-        },
-        {
-          "name": "Präzisionsschuss",
-          "count": 1,
-          "modes": [
-            {
-              "firepower": "MW2+",
-              "specialRules": [
-                {
-                  "name": "TK(W3)",
-                  "description": "Titanen-Killer (TK)"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "specialRules": [
-        {
-          "name": "Verzögerte Ankunft (darf erst ab Runde 2 auf dem Schlachtfeld eintreffen)",
-          "description": null
-        }
-      ]
-    }
-  }
 }
