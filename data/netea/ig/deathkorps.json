@@ -741,39 +741,14 @@
             "name": "Tank Squadron",
             "variants": [
                 {
-                    "id": "thunderers",
-                    "label": "Add three Thunderers",
-                    "pts": 140,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "dk-thunderer",
-                            "count": 3
-                        }
-                    ]
-                },
-                {
-                    "id": "l-russ",
-                    "label": "Add three Leman Russ",
-                    "pts": 200,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "dk-leman-russ",
-                            "count": 3
-                        }
-                    ]
-                },
-                {
-                    "id": "l-russ-dem",
-                    "label": "Add three Leman Russ Demolishers",
-                    "pts": 200,
-                    "effects": [
-                        {
-                            "op": "add",
-                            "unit": "dk-leman-russ-demolisher",
-                            "count": 3
-                        }
+                    "id": "sqd",
+                    "label": "Add three tanks in any combination.",
+                    "pts": 80,
+                    "count": 3,
+                    "oneOf": [
+                        { "unit": "dk-thunderer", "pts": 0 },
+                        { "unit": "dk-leman-russ", "pts": 20 },
+                        { "unit": "dk-leman-russ-demolisher", "pts": 20 }
                     ]
                 }
             ]

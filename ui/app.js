@@ -290,11 +290,9 @@ function choiceControls(entry, def) {
 }
 
 function upgradeControls(entry, def) {
-if (!def.upgrades || !def.upgrades.length) return "";
+    if (!def.upgrades || !def.upgrades.length) return "";
     const canTransport = (data.transport || []).find((tr) => matches(tr.appliesTo, def));
-    const mult = (sizeOf(def, entry) || {
-        mult: 1
-    }).mult;
+    const mult = (sizeOf(def, entry) || { mult: 1 }).mult;
     return `<h3>${t("upgrades")}</h3>` + def.upgrades.map((id) => {
         const u = upgradeById[id];
         const sel = entry.upgrades.find((x) => x.upgrade === id);
@@ -304,14 +302,28 @@ if (!def.upgrades || !def.upgrades.length) return "";
             return `<div class="row"><label for="u${entry.uid}-${id}">${esc(v0.label)} (+${v0.pts} je${v0.max != null ? `, 0–${v0.max * mult}` : ""})</label>
         <input id="u${entry.uid}-${id}" type="number" min="0"${max} inputmode="numeric" value="${sel ? sel.count || 1 : 0}" data-act="perunit" data-uid="${entry.uid}" data-upgrade="${id}" data-variant="${v0.id}"></div>`;
         }
-        return `<div class="row"><label for="u${entry.uid}-${id}">${esc(u.name)}</label>
+        
+        let html = `<div class="row"><label for="u${entry.uid}-${id}">${esc(u.name)}</label>
       <select id="u${entry.uid}-${id}" data-act="upgrade" data-uid="${entry.uid}" data-upgrade="${id}">
         <option value="">–</option>
         ${u.variants.map((v) => `<option value="${v.id}"${sel && sel.variant === v.id ? " selected" : ""}>${esc(v.label)} (+${v.pts})</option>`).join("")}
       </select>
-      ${sel && u.transportable && canTransport ? `<div class="sub"><label for="c${entry.uid}-${id}">${t("chimera", { pts: canTransport.pts })}</label>
+      ${sel && u.transportable && canTransport ? `<div class="sub"><label for="c${entry.uid}-${id}">${t("chimera", {pts: canTransport.pts})}</label>
         <input id="c${entry.uid}-${id}" type="number" min="0" inputmode="numeric" value="${sel.chimeras || 0}" data-act="chimeras" data-uid="${entry.uid}" data-upgrade="${id}"></div>` : ""}
     </div>`;
+
+        // NEU: Rendern der Mix-Felder, falls das gewählte Upgrade "oneOf" nutzt
+        if (sel) {
+            const v = u.variants.find(x => x.id === sel.variant);
+            if (v && v.oneOf) {
+                const dist = sel.choices || { [v.oneOf[0].unit]: v.count };
+                html += `<div class="sub" style="flex-direction: column; align-items: stretch;">`;
+                html += v.oneOf.map(opt => `<div class="row"><label for="uc-${entry.uid}-${id}-${opt.unit}">${esc(unitName(opt.unit))} ${opt.pts ? `(+${opt.pts} ${t("pts")})` : ""}</label>
+                  <input id="uc-${entry.uid}-${id}-${opt.unit}" type="number" min="0" max="${opt.max || v.count}" inputmode="numeric" value="${dist[opt.unit] || 0}" data-act="upgrade-choice" data-uid="${entry.uid}" data-upgrade="${id}" data-unit="${opt.unit}"></div>`).join("");
+                html += `<p class="note">${t("sum_must_be", { count: v.count })}</p></div>`;
+            }
+        }
+        return html;
     }).join("");
 }
 
@@ -1090,6 +1102,14 @@ document.addEventListener("change", (e) => {
             const sel = entry.upgrades.find((x) => x.upgrade === el.dataset.upgrade);
             update(setUpgrade(state, uid, el.dataset.upgrade, sel.variant, Math.max(0, parseInt(el.value, 10) ||
                 0)));
+            break;
+        }
+        case "upgrade-choice": {
+            const sel = entry.upgrades.find((x) => x.upgrade === el.dataset.upgrade);
+            if (!sel) break;
+            const choices = { ...(sel.choices || {}) };
+            choices[el.dataset.unit] = Math.max(0, parseInt(el.value, 10) || 0);
+            update(setUpgrade(state, uid, el.dataset.upgrade, sel.variant, sel.chimeras || 0, sel.count || 1, choices));
             break;
         }
         case "choice-single":

@@ -94,10 +94,10 @@ export function sortFormations(data, state, mode) {
 export const setChoice = (state, uid, slot, distribution) =>
   mapEntry(state, uid, (e) => ({ ...e, choices: { ...e.choices, [slot]: distribution } }));
 
-export const setUpgrade = (state, uid, upgrade, variant, chimeras = 0, count = 1) =>
+export const setUpgrade = (state, uid, upgrade, variant, chimeras = 0, count = 1, choices = undefined) =>
   mapEntry(state, uid, (e) => ({
     ...e,
-    upgrades: [...e.upgrades.filter((u) => u.upgrade !== upgrade), { upgrade, variant, chimeras, count }],
+    upgrades: [...e.upgrades.filter((u) => u.upgrade !== upgrade), { upgrade, variant, chimeras, count, choices }],
   }));
 
 // Switching size resets unit choices, because slot totals change with the size.
@@ -140,14 +140,14 @@ export function computeEntry(data, entry) {
   const size = sizeOf(def, entry);
   const mult = size ? size.mult : 1;
   let pts = size ? size.pts : def.pts;
-  //Forced show on overview tab
   const forceShow = new Set();
 
   const slots = unitSlots(def, entry);
-   slots.forEach((slot, i) => {
+  slots.forEach((slot, i) => {
     const slotCount = slot.count * mult;
     if (!slot.oneOf) return add(slot.unit, slotCount);
     
+    // Normalisiert Strings zu Objekten, um Punkte und Max-Limits zu unterstützen
     const options = slot.oneOf.map(u => typeof u === 'string' ? { unit: u } : u);
     const defaultUnit = options[0].unit;
     const dist = entry.choices[i] || { [defaultUnit]: slotCount };
@@ -163,9 +163,10 @@ export function computeEntry(data, entry) {
     Object.entries(dist).forEach(([u, n]) => {
       add(u, n);
       const opt = options.find(x => x.unit === u);
-      if (opt && opt.pts) pts += opt.pts * n;
+      if (opt && opt.pts) pts += opt.pts * n; // Punkte für mixed units addieren
     });
     
+    // Max-Limits innerhalb des Slots prüfen (z.B. max 1 Vanquisher)
     options.forEach(opt => {
       if (opt.max != null && (dist[opt.unit] || 0) > opt.max) {
         problems.push({ code: "variant-max", params: { label: opt.unit, max: opt.max }, refs: { uid: entry.uid } });
@@ -177,8 +178,10 @@ export function computeEntry(data, entry) {
   const rules = transportRules(data, def);
   let addedCarriable;
   const upgradeCounts = {};
+  
   // Apply upgrades in the order the formation lists them, so replace effects do not depend on the order of selection.
   const rank = (sel) => { const i = (def.upgrades || []).indexOf(sel.upgrade); return i < 0 ? 9999 : i; };
+  
   [...entry.upgrades].sort((x, y) => rank(x) - rank(y)).forEach((sel) => {
     const upDef = upgrades[sel.upgrade];
     if (upDef && upDef.show) {
@@ -190,37 +193,67 @@ export function computeEntry(data, entry) {
     const variant = upDef && upDef.variants.find((v) => v.id === sel.variant);
     if (!upDef) return problems.push({ code: "unknown-upgrade", params: { upgrade: sel.upgrade }, refs: { uid: entry.uid } });
     if (!variant) return problems.push({ code: "unknown-variant", params: { upgrade: sel.upgrade, variant: sel.variant }, refs: { uid: entry.uid } });
-    if (!def.upgrades.includes(sel.upgrade))
+    if (!(def.upgrades || []).includes(sel.upgrade))
       problems.push({ code: "upgrade-not-allowed", params: { upgrade: sel.upgrade }, refs: { uid: entry.uid } });
 
     // perUnit variants ("add any number") are priced and applied per chosen unit; limits scale with formation size.
     const n = variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
     if (variant.max != null && n > variant.max * mult)
       problems.push({ code: "variant-max", params: { label: variant.label, max: variant.max * mult }, refs: { uid: entry.uid } });
+    
     pts += variant.pts * n;
     addedCarriable = 0;
-    variant.effects.forEach((fx) => {
-      if (fx.op === "add") {
-        add(fx.unit, fx.count * n);
-        if (rule && isCarriable(data, rule, fx.unit)) addedCarriable += fx.count * n;
-      } else if (fx.op === "replace") {
-  // perUnit: each replaced unit replaces fx.count units
-  const want = fx.count * n;
-  const have = roster[fx.from] || 0;
-  if (have < want)
-    problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: want }, refs: { uid: entry.uid } });
-  const swapped = Math.min(want, have);
-  roster[fx.from] = have - swapped;
-  if (fx.to) {
-    const toAdd = fx.toCount !== undefined ? fx.toCount * n : swapped;
-    add(fx.to, toAdd);
-  }
-} else if (fx.op === "remove") {
-  const want = fx.count * n;
-  const have = roster[fx.unit || fx.from] || 0;
-  roster[fx.unit || fx.from] = Math.max(0, have - want);
-}
-    });
+
+    // NEU: Logik für gemischte Upgrades (z.B. Tank Squadron mit 3 Einheiten)
+    if (variant.oneOf) {
+      const limit = (variant.count || 1) * n;
+      const dist = sel.choices || { [variant.oneOf[0].unit]: limit };
+      
+      let sum = 0;
+      variant.oneOf.forEach(opt => {
+        const count = dist[opt.unit] || 0;
+        if (count > 0) {
+          add(opt.unit, count);
+          pts += (opt.pts || 0) * count;
+          sum += count;
+          if (rule && isCarriable(data, rule, opt.unit)) addedCarriable += count;
+          
+          if (opt.max != null && count > opt.max) {
+            problems.push({ code: "variant-max", params: { label: opt.unit, max: opt.max }, refs: { uid: entry.uid } });
+          }
+        }
+      });
+      
+      // Prüfen, ob der Spieler auch exakt die geforderte Anzahl (z.B. 3) verteilt hat
+      if (sum !== limit) {
+        problems.push({ code: "choice-invalid", params: { slot: { name: upDef.name } }, refs: { uid: entry.uid } });
+      }
+    } 
+    // Alte Logik für Standard-Effekte (add / replace / remove)
+    else if (variant.effects) {
+      variant.effects.forEach((fx) => {
+        if (fx.op === "add") {
+          add(fx.unit, fx.count * n);
+          if (rule && isCarriable(data, rule, fx.unit)) addedCarriable += fx.count * n;
+        } else if (fx.op === "replace") {
+          // perUnit: each replaced unit replaces fx.count units
+          const want = fx.count * n;
+          const have = roster[fx.from] || 0;
+          if (have < want)
+            problems.push({ code: "replace-insufficient", params: { upgrade: sel.upgrade, from: fx.from, count: want }, refs: { uid: entry.uid } });
+          const swapped = Math.min(want, have);
+          roster[fx.from] = have - swapped;
+          if (fx.to) {
+            const toAdd = fx.toCount !== undefined ? fx.toCount * n : swapped;
+            add(fx.to, toAdd);
+          }
+        } else if (fx.op === "remove") {
+          const want = fx.count * n;
+          const have = roster[fx.unit || fx.from] || 0;
+          roster[fx.unit || fx.from] = Math.max(0, have - want);
+        }
+      });
+    }
 
     const chimeras = sel.chimeras || 0;
     if (chimeras > 0) {
@@ -241,7 +274,7 @@ export function computeEntry(data, entry) {
   entry.upgrades.forEach((sel) => {
     const variant = upgrades[sel.upgrade] && upgrades[sel.upgrade].variants.find((v) => v.id === sel.variant);
     const n = variant && variant.perUnit ? Math.max(1, Math.floor(sel.count || 1)) : 1;
-    const own = (u) => variant.effects.reduce((a, fx) => a + ((fx.op === "add" && fx.unit === u) || (fx.op === "replace" && fx.to === u) ? fx.count * n : 0), 0);
+    const own = (u) => variant && variant.effects ? variant.effects.reduce((a, fx) => a + ((fx.op === "add" && fx.unit === u) || (fx.op === "replace" && fx.to === u) ? fx.count * n : 0), 0) : 0;
     if (variant && variant.requires && !variant.requires.some((u) => (roster[u] || 0) - own(u) > 0))
       problems.push({ code: "variant-requires", params: { label: variant.label, units: variant.requires }, refs: { uid: entry.uid } });
   });
@@ -306,7 +339,6 @@ export function computeEntry(data, entry) {
     if (l.max != null && count > l.max * k) problems.push({ code: "unit-group-max", params: { ...params, max: l.max * k }, refs: { uid: entry.uid } });
   });
 
-  //Object.keys(roster).forEach((u) => roster[u] <= 0 && delete roster[u]);
   Object.keys(roster).forEach((u) => {
     if (roster[u] < 0 || (roster[u] === 0 && !forceShow.has(u))) {
       delete roster[u];
@@ -398,7 +430,8 @@ export function validate(data, state) {
     }
     for (const e of known) {
       if (c.appliesTo && !matches(c.appliesTo, formations[e.formation])) continue;
-const ups = e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade]) && upgrades[u.upgrade].countsAsUpgrade !== false);      const counts = {};
+      const ups = e.upgrades.filter((u) => upgrades[u.upgrade] && matches(c.from, upgrades[u.upgrade]) && upgrades[u.upgrade].countsAsUpgrade !== false);
+      const counts = {};
       ups.forEach((u) => (counts[u.upgrade] = (counts[u.upgrade] || 0) + 1));
       const tooMany = c.maxTotal != null && ups.length > c.maxTotal;
       const dup = c.max != null && (c.perUpgrade ? Object.values(counts).some((n) => n > c.max) : ups.length > c.max);
