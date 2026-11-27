@@ -253,12 +253,10 @@
                 }
             ],
             "upgrades": ["u-dk-fire-support-battery",
-                "u-dk-gorgon-siege-transporters",
                 "u-dk-heavy-tank",
                 "u-dk-hellhound-squadron",
                 "u-dk-infantry-platoon",
-                "u-dk-tank-squadron",
-                "u-dk-trenchworks"]
+                "u-dk-tank-squadron"]
         },
         {
             "id": "f-dk-infantry-company",
