@@ -132,11 +132,15 @@
         },
         "dk-macharius": {
             "name": "Macharius",
-            "type": "H-AV"
+            "type": "WE"
         },
-        "dk-macharius-command": {
-            "name": "Macharius Command",
-            "type": "H-AV"
+        "dk-macharius-commandVan": {
+            "name": "Macharius Command  (Vanquisher)",
+            "type": "WE"
+        },
+        "dk-macharius-commandVul": {
+            "name": "Macharius Command  (Vulcan Mega-Bolter)",
+            "type": "WE"
         },
         "dk-shadowsword": {
             "name": "Shadowsword",
@@ -436,12 +440,16 @@
             ],
             "units": [
                 {
-                    "unit": "dk-macharius-command",
-                    "count": 1
-                },
-                {
                     "unit": "dk-macharius",
                     "count": 2
+                },
+                {
+                    "oneOf":[
+                    "dk-macharius-commandVan",
+                    "dk-macharius-commandVul"
+                ],
+                "count":1,
+                "mixed":false
                 }
             ],
             "upgrades": []

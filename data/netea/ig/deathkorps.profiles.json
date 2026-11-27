@@ -1026,8 +1026,8 @@
                 }
             ]
         },
-        "dk-macharius-command": {
-            "name": "Macharius Command",
+        "dk-macharius-commandVan": {
+            "name": "Macharius Command (Vanquisher)",
             "type": "WE",
             "speed": 15,
             "armour": 4,
@@ -1044,6 +1044,46 @@
                         }
                     ]
                 },
+                {
+                    "name": "2× Heavy Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30
+                        }
+                    ]
+                },
+                {
+                    "name": "Twin Heavy Stubber",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30
+                        }
+                    ]
+                }
+            ],
+            "specialRules": [
+                {
+                    "name": "Damage Capacity 2",
+                    "description": null
+                },
+                {
+                    "name": "Reinforced Armour",
+                    "description": null
+                }
+            ]
+        },
+        "dk-macharius-commandVul": {
+            "name": "Macharius Command (Vulcan Mega-Bolter)",
+            "type": "WE",
+            "speed": 15,
+            "armour": 4,
+            "cc": 6,
+            "ff": 4,
+            "crit": "Destroyed.",
+            "weapons": [
+                
                 {
                     "name": "Vulcan Mega-Bolter",
                     "modes": [
@@ -1079,10 +1119,6 @@
                 },
                 {
                     "name": "Reinforced Armour",
-                    "description": null
-                },
-                {
-                    "name": "Supreme Commander",
                     "description": null
                 }
             ]
