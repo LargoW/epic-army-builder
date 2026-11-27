@@ -837,22 +837,26 @@
             "armour": 4,
             "cc": 6,
             "ff": 4,
-            "crit": "Destroyed.",
+            "crit": "Destroyed. All units within 5cm take a MW4+ hit.",
             "weapons": [
                 {
-                    "name": "Deathstrike Missile",
+                    "name": "Deathstrike Missiles",
                     "modes": [
                         {
-                            "firepower": "MW2+",
-                            "range": 120,
+                            "firepower": "2× MW2+",
+                            "range": "Unlimited",
                             "specialRules": [
                                 {
-                                    "name": "FxF",
-                                    "description": "Fixed Forward"
+                                    "name": "Ind",
+                                    "description": "Indirect Fire"
                                 },
                                 {
-                                    "name": "Single Shot",
-                                    "description": null
+                                    "name": "SS",
+                                    "description": "Single Shot"
+                                },
+                                {
+                                    "name": "TK(D6)",
+                                    "description": "Titan Killer (D6)"
                                 }
                             ]
                         }
@@ -861,7 +865,7 @@
             ],
             "specialRules": [
                 {
-                    "name": "Damage Capacity 3",
+                    "name": "Damage Capacity 2",
                     "description": null
                 }
             ]
@@ -872,14 +876,23 @@
             "speed": 20,
             "armour": 4,
             "cc": 6,
-            "ff": 6,
-            "crit": "Immobilised. 1D3 random transported units suffer a hit. Further critical hits destroy.",
+            "ff": 5,
+            "crit": "Immobilised and D6 units being transported are hit. Subsequent critical hits destroy the unit.",
             "weapons": [
                 {
-                    "name": "4× Twin Heavy Stubber",
+                    "name": "2× Twin Heavy Stubber",
                     "modes": [
                         {
                             "firepower": "AP5+",
+                            "range": 30
+                        }
+                    ]
+                },
+                {
+                    "name": "2× Twin Heavy Bolter",
+                    "modes": [
+                        {
+                            "firepower": "AP4+",
                             "range": 30
                         }
                     ]
@@ -896,7 +909,11 @@
                 },
                 {
                     "name": "Transport",
-                    "description": "May transport 10 infantry units."
+                    "description": "May transport ten infantry units without Jump Packs or Mounted."
+                },
+                {
+                    "name": "Walker",
+                    "description": null
                 }
             ]
         },
@@ -907,7 +924,7 @@
             "armour": 4,
             "cc": 6,
             "ff": 6,
-            "crit": "Immobilised. 1D3 random transported units suffer a hit. Further critical hits destroy.",
+            "crit": "Immobilised and D6 units being transported are hit. Subsequent critical hits destroy the unit.",
             "weapons": [
                 {
                     "name": "Gorgon Mortars",
@@ -917,25 +934,23 @@
                             "range": 30,
                             "specialRules": [
                                 {
-                                    "name": "IC",
-                                    "description": "Ignores Cover"
+                                    "name": "FwA",
+                                    "description": "Fixed Forward Arc"
                                 },
                                 {
                                     "name": "Ind",
                                     "description": "Indirect Fire"
                                 },
                                 {
-                                    "name": "FwA"
-                                },
-                                {
-                                    "name": "Single Shot"
+                                    "name": "SS",
+                                    "description": "Single Shot"
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "name": "4× Twin Heavy Stubber",
+                    "name": "2× Twin Heavy Stubber",
                     "modes": [
                         {
                             "firepower": "AP5+",
@@ -955,17 +970,22 @@
                 },
                 {
                     "name": "Transport",
-                    "description": "May transport 10 infantry units."
+                    "description": "May transport ten infantry units without Jump Packs or Mounted."
+                },
+                {
+                    "name": "Walker",
+                    "description": null
                 }
             ]
         },
         "dk-macharius": {
             "name": "Macharius",
             "type": "WE",
-            "speed": 20,
+            "speed": 15,
             "armour": 4,
             "cc": 6,
             "ff": 4,
+            "crit": "Destroyed.",
             "weapons": [
                 {
                     "name": "2× Battle Cannon",
@@ -984,9 +1004,22 @@
                             "range": 30
                         }
                     ]
+                },
+                {
+                    "name": "Twin Heavy Stubber",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30
+                        }
+                    ]
                 }
             ],
             "specialRules": [
+                {
+                    "name": "Damage Capacity 2",
+                    "description": null
+                },
                 {
                     "name": "Reinforced Armour",
                     "description": null
@@ -996,17 +1029,27 @@
         "dk-macharius-command": {
             "name": "Macharius Command",
             "type": "WE",
-            "speed": 20,
+            "speed": 15,
             "armour": 4,
             "cc": 6,
             "ff": 4,
+            "crit": "Destroyed.",
             "weapons": [
                 {
-                    "name": "2× Battle Cannon",
+                    "name": "2× Vanquisher",
                     "modes": [
                         {
-                            "firepower": "AP4+/AT4+",
+                            "firepower": "AP4+/AT2+",
                             "range": 75
+                        }
+                    ]
+                },
+                {
+                    "name": "Vulcan Mega-Bolter",
+                    "modes": [
+                        {
+                            "firepower": "4× AP3+/AT5+",
+                            "range": 45
                         }
                     ]
                 },
@@ -1018,9 +1061,22 @@
                             "range": 30
                         }
                     ]
+                },
+                {
+                    "name": "Twin Heavy Stubber",
+                    "modes": [
+                        {
+                            "firepower": "AP5+",
+                            "range": 30
+                        }
+                    ]
                 }
             ],
             "specialRules": [
+                {
+                    "name": "Damage Capacity 2",
+                    "description": null
+                },
                 {
                     "name": "Reinforced Armour",
                     "description": null

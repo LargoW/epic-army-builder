@@ -416,7 +416,10 @@
                     "mixed": true
                 }
             ],
-            "upgrades": []
+            "upgrades": [
+                "u-dk-heavy-support-battery-options",
+                "u-dk-heavy-support-battery-trojans"
+            ]
         },
         {
             "id": "f-dk-heavy-tank-platoon",
@@ -665,18 +668,13 @@
                 },
                 {
                     "id": "mortars",
-                    "label": "Add one Gorgon and one Gorgon Mortar",
-                    "pts": 200,
+                    "label": "Add two Gorgon Mortars",
+                    "pts": 225,
                     "effects": [
                         {
                             "op": "add",
-                            "unit": "dk-gorgon",
-                            "count": 1
-                        },
-                        {
-                            "op": "add",
                             "unit": "dk-gorgon-mortars",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -743,12 +741,21 @@
                 {
                     "id": "sqd",
                     "label": "Add three tanks in any combination.",
-                    "pts": 80,
+                    "pts": 140,
                     "count": 3,
                     "oneOf": [
-                        { "unit": "dk-thunderer", "pts": 0 },
-                        { "unit": "dk-leman-russ", "pts": 20 },
-                        { "unit": "dk-leman-russ-demolisher", "pts": 20 }
+                        {
+                            "unit": "dk-thunderer",
+                            "pts": 0
+                        },
+                        {
+                            "unit": "dk-leman-russ",
+                            "pts": 20
+                        },
+                        {
+                            "unit": "dk-leman-russ-demolisher",
+                            "pts": 20
+                        }
                     ]
                 }
             ]
@@ -819,6 +826,75 @@
                             "op": "replace",
                             "from": "dk-centaur",
                             "to": "dk-trench"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-dk-heavy-support-battery-options",
+            "name": "Heavy Support Battery Options",
+            "variants": [
+                {
+                    "id": "aa-hydra",
+                    "label": "Add three Heavy AA or Hydra Platforms",
+                    "pts": 0,
+                    "oneOf": [
+                        {
+                            "unit": "dk-heavy-aa-platform",
+                            "pts": 0
+                        },
+                        {
+                            "unit": "dk-hydra-platform",
+                            "pts": 0
+                        }
+                    ],
+                    "count": 3
+                },
+                {
+                    "id": "earthshaker",
+                    "label": "Add three Earthshaker Platforms",
+                    "pts": 75,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dk-earthshaker-platform",
+                            "count": 3
+                        }
+                    ]
+                },
+                {
+                    "id": "medusa",
+                    "label": "Add three Medusa Platforms",
+                    "pts": 150,
+                    "effects": [
+                        {
+                            "op": "add",
+                            "unit": "dk-medusa-platform",
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "u-dk-heavy-support-battery-trojans",
+            "name": "Replace Gun Emplacements",
+            "variants": [
+                {
+                    "id": "trojans",
+                    "label": "Replace three Gun Emplacements with three Trojans",
+                    "pts": 25,
+                    "effects": [
+                        {
+                            "op": "remove",
+                            "unit": "dk-gun-emplacement",
+                            "count": 3
+                        },
+                        {
+                            "op": "add",
+                            "unit": "dk-trojan",
+                            "count": 3
                         }
                     ]
                 }
